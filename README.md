@@ -22,10 +22,11 @@ A modern tool to search on web. Quickly search in multiple search engines, use s
 * Local
 * News
 * Torrent
+*
+### Search Functions
+* Auto Suggest
+* Voice Recognition
+* Privacy
 
-## Licenses
-
-Copyright © 2016 INBLUG. 
-
-* All content is under  [Creative Commons](http://creativecommons.org/licenses/by-nc-sa/4.0/).
-* All source code is under [MIT License](http://mit-license.org/).
+## License
+Copyright © 2016 INBLUG. All content and source code is under [Creative Commons](http://creativecommons.org/licenses/by-nc-sa/4.0/).
