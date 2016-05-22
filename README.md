@@ -11,7 +11,7 @@ A modern tool to search on web. Quickly search in multiple search engines, use s
 * Ask
 * Baidu
 * Yandex
-* 
+
 ### Search Modules
 * Web
 * Social
