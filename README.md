@@ -22,7 +22,7 @@ A modern tool to search on web. Quickly search in multiple search engines, use s
 * Local
 * News
 * Torrent
-*
+
 ### Search Functions
 * Auto Suggest
 * Voice Recognition
