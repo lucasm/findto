@@ -2,6 +2,12 @@
 
 A modern tool to search on web. Quickly search in multiple search engines (Goolge, Bing, Yahoo), use search modules (Web, Social, Video, Music, Image) to find any contents direct at source. With voice search, auto suggest and total privacy.
 
+### Search Engines
+
+* All content is under
+* * All content is under* All content is under
+
+
 ## Licenses
 
 Copyright © 2016 INBLUG. 
