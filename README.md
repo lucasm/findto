@@ -1,6 +1,6 @@
 # [Searchy](http://inblug.com/searchy)
 
-A modern tool to search on web. Quickly search in multiple search engines (Goolge, Bing, Yahoo), use search modules (Web, Social, Video, Music, Image) to find any contents direct at source. With voice search, auto suggest and total privacy.
+A modern tool to search on web. Quickly search in multiple search engines, use search modules to find any content direct at source. With voice search, auto suggest and total privacy.
 
 ### Search Engines
 * Google
@@ -11,7 +11,17 @@ A modern tool to search on web. Quickly search in multiple search engines (Goolg
 * Ask
 * Baidu
 * Yandex
-
+* 
+### Search Modules
+* Web
+* Social
+* Video
+* Music
+* Images
+* Shopping
+* Local
+* News
+* Torrent
 
 ## Licenses
 
