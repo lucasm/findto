@@ -28,5 +28,8 @@ A modern tool to search on web. Quickly search in multiple search engines, use s
 * Voice Recognition
 * Privacy
 
+## Contributing
+Feel free to contribute. Please take a moment to review the [guidelines for contributing](http://inblug.com/legal#contributing).
+
 ## License
-Copyright © 2016 INBLUG. All content and source code is under [Creative Commons](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+Copyright © 2016 INBLUG. All content is under [Creative Commons](http://creativecommons.org/licenses/by-nc-sa/4.0/). All source code is under [MIT License](http://mit-license.org/).
