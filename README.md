@@ -1,6 +1,6 @@
-# [Searchy](http://inblug.com/searchy)
+# [INBLUG Search](http://inblug.com/search)
 
-Searchy is a modern tool that makes very easy to search on web. You can quickly search in multiple search engines, or use search modules to find any multimedia content direct at source. Searchy also offers a beautiful user interface, voice recognition, auto suggest and total privacy.
+INBLUG Search is a modern tool that makes very easy to search on web. You can quickly search in multiple search engines, or use search modules to find any multimedia content direct at source. Searchy also offers a beautiful user interface, voice recognition, auto suggest and total privacy.
 
 ### Search Engines
 * Google
