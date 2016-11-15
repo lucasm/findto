@@ -1,0 +1,7 @@
+.layer {
+  background-image: linear-gradient(45deg,#02b3e4 0,#7934ff 75%);
+}
+
+header.scroll {
+  background: linear-gradient(45deg,#02b3e4 0,#7934ff 75%);
+}
