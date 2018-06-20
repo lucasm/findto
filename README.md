@@ -1,7 +1,7 @@
 
 # Findto
 
-A web search tool. Quickly find any content using multiple search engines and modules with popular sites. More than a search concept or a visual experience, a tool for help internet beginners and pro nerds discover and encourage diversity on the web. Findto have the mission to make searches trully free, putting people in control of the search algorithms, and not the inverse.
+A web search tool. Quickly find any content using the power of multiple search engines and modules with popular sites. More than a visual search concept experience, a tool for help discover and encourage diversity on the web. Findto have the mission to make searches trully free, putting people in control of the search algorithms, and not the inverse.
  
 ## Key features
 
@@ -17,25 +17,25 @@ A web search tool. Quickly find any content using multiple search engines and mo
 
 * **No Ads** - Without annoying ads.
 
-* **Privacy** - This app don't track/collect any of searches or sell/share this with third parties. A total of 0 (zero) bytes of user data are stored. Privacy is a universal human right and we respect this.
+* **Privacy** - Privacy is a universal human right. This app don't track/collect any of searches or sell/share this with third parties. A total of 0 (zero) bytes of user data are stored.
 
-* **Accessbility** - Everyone should be able to access and enjoy the functions of this web search tool, with no limitations (even offline!).
+* **Accessbility** - Everyone should be able to access and enjoy the functions of this app, without limitations, even offline.
 
 * **Open Source** - You can inspect source code and help improve it <3
 
 ## Search modules
 
-* Web - Default module. Find anything on the web using search engines: Google, Bing, DuckDuckGo, searx, Qwant, Yahoo, Ixquick, Yandex, Baidu and Ask.
+* **Web** - Default module. Find anything on the web using search engines: Google, Bing, DuckDuckGo, searx, Qwant, Yahoo, Ixquick, Yandex, Baidu and Ask.
 
-* Social - Find people, posts, stories and more on social media networks: Facebook, Twitter, Instagram, Snapchat, Pinterest, Tumblr, LinkedIn, Medium, reddit, Google+, Meetup, VK, Badoo, Myspace and Ello.
+* **Social** - Find people, posts, stories and more on social media networks: Facebook, Twitter, Instagram, Snapchat, Pinterest, Tumblr, LinkedIn, Medium, reddit, Google+, Meetup, VK, Badoo, Myspace and Ello.
 
-* Video - Find videos, channels, live streams and more on streaming services like: YouTube, Twitch, Periscope, Vimeo, Dailymotin, Netflix, Hulu, Vevo, TED, Ustream, Metacafe, MSN, AOL, VUDU, Break, Veoh and Viewster.
+* **Video** - Find videos, channels, live streams and more on streaming services like: YouTube, Twitch, Periscope, Vimeo, Dailymotin, Netflix, Hulu, Vevo, TED, Ustream, Metacafe, MSN, AOL, VUDU, Break, Veoh and Viewster.
 
-* Music - Find songs, artists, lyrics, podcasts and radio stations at: Spotify, SoundCloud, Deezer, Pandora, iHeartRadio, TuneIn, SHOUTcast, Genius, Musixmatch, 8tracks, Hype Machine and Bandcamp.
+* **Music** - Find songs, artists, lyrics, podcasts and radio stations at: Spotify, SoundCloud, Deezer, Pandora, iHeartRadio, TuneIn, SHOUTcast, Genius, Musixmatch, 8tracks, Hype Machine and Bandcamp.
 
-* Photos - Find royalty-free or paid images, illustrations and 3d models at stock sites: Flickr, Imgur, 500px, SmugMug, Shutterstock, Getty Images, Adobe Stock, Photobucket, Pixabay, Unsplash, Pexels, Freepik, Poly and DeviantArt.
+* **Photos** - Find royalty-free or paid images, illustrations and 3d models at stock sites: Flickr, Imgur, 500px, SmugMug, Shutterstock, Getty Images, Adobe Stock, Photobucket, Pixabay, Unsplash, Pexels, Freepik, Poly and DeviantArt.
 
-* Shopping - Find products and services at common ecommerce stores: Amazon, eBay, AliExpress, Groupon, Walmart, Etsy, Target, BEST BUY and Craigslist.
+* **Shopping** - Find products and services at common ecommerce stores: Amazon, eBay, AliExpress, Groupon, Walmart, Etsy, Target, BEST BUY and Craigslist.
 
 * Local - [in progress]
 
@@ -62,4 +62,4 @@ You can help to maintain this project alive [making a donation](#) directly for 
 ## License
 Copyright (c) 2018 Inblug. All rights reserved. Findto is licensed under the [MIT License](http://mitlicense.org/).
 
-**Importatn notice** - All trademarks, APIs and content of third parties found in this application belong to the respective owners and are following their own rules of use. All rights reserved to the owners. If you believe that your brand are incorrectly used, send an email for legal@inblug.com, we are glad to help.
+**Important notice** - All trademarks, APIs and content of third parties found in this application belong to the respective owners and are following their own rules of use. All rights reserved to the owners. If you believe that your brand are incorrectly used, send an email for legal@inblug.com, we are glad to help.
