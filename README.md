@@ -1,7 +1,7 @@
 
 # Findto
 
-A web search tool. Quickly find any content using the power of multiple search engines and modules with popular sites. More than a visual search concept experience, a tool for help discover and encourage diversity on the web. Findto have the mission to make searches trully free, putting people in control of the search algorithms, and not the inverse.
+A web search tool. Quickly find any content using the power of multiple search engines and modules with popular sites. More than a visual search concept, a tool for help discover new things encouraging diversity on the web, with the mission to make searches trully free, putting people in control of the search algorithms (and not the inverse).
  
 ## Key features
 
@@ -37,15 +37,15 @@ A web search tool. Quickly find any content using the power of multiple search e
 
 * **Shopping** - Find products and services at common ecommerce stores: Amazon, eBay, AliExpress, Groupon, Walmart, Etsy, Target, BEST BUY and Craigslist.
 
-* Local - [in progress]
+* **Local** - [in progress]
 
-* News - Find breaking and archived news at: Reuters, CNN, New York Times, BBC, HuffPost, The Guardian, Whashgton Post, Forbes, Bloomberg, Al Jazeera, USA Today, AFP, Flipboard, Feedlt and WikiLeaks.
+* **News** - Find breaking and archived news at: Reuters, CNN, New York Times, BBC, HuffPost, The Guardian, Whashgton Post, Forbes, Bloomberg, Al Jazeera, USA Today, AFP, Flipboard, Feedlt and WikiLeaks.
 
-* Knowledge - Find definitions, scientific and academic publications at: Wikipedia, Quora, Google Scholar, Microsoft Academic, WolframAlpha, AcademiaEdu, SciELO, ScienceDirect and Internet Archive.
+* **Knowledge** - Find definitions, scientific and academic publications at: Wikipedia, Quora, Google Scholar, Microsoft Academic, WolframAlpha, AcademiaEdu, SciELO, ScienceDirect and Internet Archive.
 
-* Projects - [experimental] Find digital projects and creative works at sites  of code hosting, design share, product discover and crowdfunding, like: GitHub, CodePen, Dribbble, Behance, ProductHunt, Kickstarter and Indiegogo.
+* **Projects** - [experimental] Find digital projects and creative works at sites  of code hosting, design share, product discover and crowdfunding, like: GitHub, CodePen, Dribbble, Behance, ProductHunt, Kickstarter and Indiegogo.
 
-* Torrent - [unavailable] Even though we legally do not respond by content found in third party sites, some files on torrent sites may infringe applicable copyright law. To avoid misinterpretations or even lawsuit, for while, we’re still evaluating the possibility of including this module.
+* **Torrent** - [unavailable] Even though we legally do not respond by content found in third party sites, some files on torrent sites may infringe applicable copyright law. To avoid misinterpretations or even lawsuit, for while, we’re still evaluating the possibility of including this module.
 
 ## Changelog
 
