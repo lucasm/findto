@@ -1,8 +1,6 @@
 # Findto
 
-A web search tool for quickly find any content using multiple search engines and modules with popular sites. More than a search concept or a visual experience, a useful tool for help internet beginners and pro nerds (like us) discover and encourage diversity on the web.
-
-Findto have the mission to make searches more free, putting people in control of the search algorithms - and not the inverse.
+A web search tool for quickly find any content using multiple search engines and modules with popular sites. More than a search concept or a visual experience, a useful tool for help internet beginners and pro nerds (like us) discover and encourage diversity on the web. Findto have the mission to make searches more free, putting people in control of the search algorithms - and not the inverse.
  
 ## Features
 
@@ -54,15 +52,13 @@ For a history of all notable changes on this project, see the [Changelog](#CHANG
 
 ## Contributing
 
-Contributions are always welcome! Please read [Contributing](Contributing.md) before to send Pull Requests, view the opened [Issues](https://github.com/inblug/findto/issues) or create a new.
+Contributions are always welcome! Please view the opened [Issues](https://github.com/inblug/findto/issues) or create a new. Read [Contributing](Contributing.md) before send Pull Requests.
 
 ## Donation
 
-Do you love use Findto and would like to support? 
 You can help to maintain this project alive [making a donation](#) directly for the developer.
 
 ## License
-Copyright (c) 2018 Inblug. All rights reserved.
-Findto is licensed under the [MIT License](http://mitlicense.org/).
+Copyright (c) 2018 Inblug. All rights reserved. Findto is licensed under the [MIT License](http://mitlicense.org/).
 
 **Notice** - All trademarks, APIs and content of third parties found in this application belong to the respective owners and are following their own rules of use. All rights reserved to the owners. If you believe that your brand are incorrectly used, send an email for legal@inblug.com, we are glad to help.
