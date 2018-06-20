@@ -1,7 +1,7 @@
 
 # Findto
 
-A web search tool. Quickly find any content using the power of multiple search engines and modules with popular sites. More than a visual search concept, a tool for help discover new things encouraging diversity on the web, with the mission to make searches trully free, putting people in control of the search algorithms (and not the inverse).
+A web search tool. Quickly find any content using the power of multiple search engines and modules with popular sites. More than a visual search concept, a tool for help discover new things encouraging diversity on the web. Findto have the mission to make searches truly free, putting people in control of the search algorithms (and not the inverse).
  
 ## Key features
 
@@ -17,7 +17,7 @@ A web search tool. Quickly find any content using the power of multiple search e
 
 * **No Ads** - Without annoying ads.
 
-* **Privacy** - Privacy is a universal human right. This app don't track/collect any of searches or sell/share this with third parties. A total of 0 (zero) bytes of user data are stored.
+* **Privacy** - An universal human right. This app don't track/collect any of searches or sell/share this with third parties.
 
 * **Accessbility** - Everyone should be able to access and enjoy the functions of this app, without limitations, even offline.
 
@@ -60,6 +60,6 @@ Please view the opened [Issues](https://github.com/inblug/findto/issues) or crea
 You can help to maintain this project alive [making a donation](#) directly for the developer.
 
 ## License
-Copyright (c) 2018 Inblug. All rights reserved. Findto is licensed under the [MIT License](http://mitlicense.org/).
+Copyright (c) 2018 Inblug. Findto is licensed under the [MIT License](http://mitlicense.org/).
 
 **Important notice** - All trademarks, APIs and content of third parties found in this application belong to the respective owners and are following their own rules of use. All rights reserved to the owners. If you believe that your brand are incorrectly used, send an email for legal@inblug.com, we are glad to help.
