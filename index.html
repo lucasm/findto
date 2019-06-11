@@ -1,192 +1,884 @@
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<html lang="en">
+
 <head>
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<title>Searchy</title>
-  	<meta name="description" content="A simple tool to help search on web.">
-  	<meta name="keywords" content="new search experience, web search, search web, search engines, multiple search">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 
-  	<link href="http://inblug.com/styles/projects.css" rel="stylesheet" type="text/css"/>
-  	<link href="styles/main.css" rel="stylesheet" type="text/css"/>
+	<title>Findto.app | A web search tool for diversity</title>
+	<meta name="description" content="A web search tool for diversity and privacy. Find anything with the power of multiple search engines and sites.">
+	<meta name="keywords" content="web search tool, search interface concept, open source search">
 
-    <link rel="shortcut icon" href="favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
 
-	<script src="http://inblug.com/scripts/headroom.js" type="text/javascript"></script>
+	<link rel="shortcut icon" type="image/png" href="images/icons/icon-192x192.png">
+	<link rel="manifest" href="manifest.json">
+
+	<meta name="application-name" content="Findto">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="theme-color" content="#fff">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/icon-192x192.png">
+
+	<meta name="apple-mobile-web-app-title" content="Findto">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="msapplication-TileColor" content="#333">
+	<meta name="msapplication-TileImage" content="images/icons/ms-tile.png">
+	<meta name="msapplication-square70x70logo" content="images/icons/ms-smalltile.png">
+	<meta name="msapplication-square150x150logo" content="images/icons/ms-mediumtile.png">
+	<meta name="msapplication-wide310x150logo" content="images/icons/ms-widetile.png">
+	<meta name="msapplication-square310x310logo" content="images/icons/ms-largetile.png">
+
+	<meta itemprop="name" content="Findto.app">
+	<meta itemprop="description" content="A web search tool for diversity & privacy.">
+	<meta itemprop="image" content="https://findto.app/search/images/share.png">
+
+	<meta property="fb:admins" content="#">
+	<meta property="og:url" content="http://findto.app">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Findto.app">
+	<meta property="og:image" content="https://findto.app/images/share.png">
+	<meta property="og:description" content="A web search tool for diversity & privacy.">
+	<meta property="og:site_name" content="Findto.app">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@inblug">
+	<meta name="twitter:title" content="Findto.app">
+	<meta name="twitter:description" content="A web search tool for diversity & privacy.">
+	<meta name="twitter:image" content="https://findto.app/images/share.png">
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-35946153-2"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-35946153-2');
+	</script>
+
 </head>
 
-<body>
+<body id="body" class="main-color">
 
-    <header role="banner" id="header">
+	<header id="header">
 
-    	<a href="index.html" id="logo">Searchy</a>
+	    <!-- Menu -->
+	    <nav id="menu-nav" class="nav-menu">
 
-        <button id="menu-button" onclick="openMenu();"></button>
+	   		<button id="menu-button" type="button">Menu</button>
 
-        <button id="share-button" onclick="openShare();"></button>
+		  	<ul>
+				<li>
+					<button id="default-tab" type="button" class="tab-button nav-btn icon-web" onclick="showEngines(); openTab(event, 'google-tab'); selectedButton(this); google()">Web</button>
+				</li>
+				<li>
+					<button type="button" class="tab-button nav-btn icon-social" onclick="hideEngines(); openTab(event, 'social-tab'); selectedButton(this); facebook()">Social</button>
+				</li>
+				<li>
+					<button type="button" class="tab-button nav-btn icon-video" onclick="hideEngines(); openTab(event, 'video-tab'); selectedButton(this); youtube()">Video</button>
+				</li>
+				<li>
+					<button type="button" class="tab-button nav-btn icon-image" onclick="hideEngines(); openTab(event, 'image-tab'); selectedButton(this); flickr()">Image</button>
+				</li>
+				<li>
+					<button type="button" class="tab-button nav-btn icon-music" onclick="hideEngines(); openTab(event, 'audio-tab'); selectedButton(this); spotify()">Audio</button>
+				</li>
+				<li>
+					<button type="button" class="tab-button nav-btn icon-local" onclick="hideEngines(); openTab(event, 'local-tab'); selectedButton(this); foursquare()">Local</button>
+				</li>
+				<li>
+					<button type="button" class="tab-button nav-btn icon-shopping" onclick="hideEngines(); openTab(event, 'shopping-tab'); selectedButton(this); amazon()">Shopping</button>
+				</li>
+				<li>
+					<button type="button" class="tab-button nav-btn icon-news" onclick="hideEngines(); openTab(event, 'news-tab'); selectedButton(this); reuters()">News</button>
+				</li>
+				<li>
+					<button type="button" class="tab-button nav-btn icon-knowledge" onclick="hideEngines(); openTab(event, 'knowledge-tab'); selectedButton(this); wikipedia()">Reference</button>
+				</li>
+				<li>
+					<button type="button" class="tab-button nav-btn icon-projects" onclick="hideEngines(); openTab(event, 'projects-tab'); selectedButton(this); github()">Projects</button>
+				</li>
+				<li>
+					<button type="button" class="tab-button nav-btn icon-torrent" onclick="hideEngines(); openTab(event, 'torrent-tab'); selectedButton(this); pirateBay()">Torrent</button>
+				</li>
+		    </ul>
 
-       	<div class="layer-menu" onclick="closeMenu();">
-			<button id="close-button" onclick="closeMenu();"></button>
-		</div>
+		    <button id="info-button" data-fancybox data-src="#info">Settings</button>
 
-		<nav role="navigation">
-			<ul>
- 			    <li><a href="br">Brasil</a></li>
-			    <li><a href="us">United States</a></li>
-			</ul>
-		</nav>
-        
+	    </nav>
+
     </header>
 
 
-	<section class="full-screen" role="main">
+    <section class="full-screen" onclick="inputFocus()">
 
-		<div class="screen-container page layer">
+    	<div class="container">
 
-			<div class="home">
-				<figure class="icon"></figure>
-				<h1>Searchy</h1>
-				<p>A simple tool that makes it more productive search on web</p>
+			<!-- Voice Transcript -->
+			<div id="voice-transcript" onclick="closeVoiceTranscript(); inputFocus()">
+				<div>
+					<!-- <img id="status_img" src="mic.svg" alt="voice search"> -->
+					<p id="voice-transcript-text"></p>
+				</div>
 			</div>
 
-			<a href="#about" id="down"></a>
+			<!-- Tabs -->
+			<div id="tabs">
+
+				<!-- Engines -->
+				<div id="tab-engines" class="tab-engines">
+
+					<button type="button" id="default-engine" class="tab-button eng-btn icon-google" onclick="openTab(event, 'google-tab'); selectedEngine(this); google()" title="Google">Google</button>
+
+					<button type="button" class="tab-button eng-btn icon-bing" onclick="openTab(event, 'bing-tab'); selectedEngine(this); bing()" title="Bing">Bing</button>
+
+					<button type="button" class="tab-button eng-btn icon-duckduckgo" onclick="openTab(event, 'duckduckgo-tab'); selectedEngine(this); duckgo()" title="DuckDuckGo">DuckDuckGo</button>
+
+					<button type="button" class="tab-button eng-btn icon-yahoo" onclick="openTab(event, 'yahoo-tab'); selectedEngine(this); yahoo()" title="Yahoo">Yahoo</button>
+
+					<button type="button" class="tab-button eng-btn icon-startpage" onclick="openTab(event, 'startpage-tab'); selectedEngine(this); startpage()" title="Startpage">Startpage</button>
+
+					<button type="button" class="tab-button eng-btn icon-qwant" onclick="openTab(event, 'qwant-tab'); selectedEngine(this); qwant()" title="Qwant">Qwant</button>
+
+					<button type="button" class="tab-button eng-btn icon-searx" onclick="openTab(event, 'searx-tab'); selectedEngine(this); searx()" title="searx">searx</button>
+
+					<button type="button" class="tab-button eng-btn icon-yandex" onclick="openTab(event, 'yandex-tab'); selectedEngine(this); yandex()" title="Yandex">Yandex</button>
+
+					<button type="button" class="tab-button eng-btn icon-baidu" onclick="openTab(event, 'baidu-tab'); selectedEngine(this); baidu()" title="Baidu">Baidu</button>
+
+				</div>
+
+				<!-- Google -->
+				<div class="tab" id="google-tab">
+
+					<input type="radio" name="google" id="google" onclick="google()" checked>
+					<label for="google">Web</label>
+
+					<input type="radio" name="google" id="google_images" onclick="q(); googleImages()">
+					<label for="google_images">Images</label>
+
+					<input type="radio" name="google" id="google_videos" onclick="q(); googleVideos()">
+					<label for="google_videos">Videos</label>
+
+					<input type="radio" name="google" id="google_news" onclick="q(); googleNews()">
+					<label for="google_news">News</label>
+
+					<input type="radio" name="google" id="google_maps" onclick="googleMaps()">
+					<label for="google_maps">Maps</label>
+
+					<input type="radio" name="google" id="google_shopping" onclick="q(); googleShopping()">
+					<label for="google_shopping">Shopping</label>
+
+					<input type="radio" name="google" id="google_books" onclick="q(); googleBooks()">
+					<label for="google_books">Books</label>
+
+					<input type="radio" name="google" id="google_translate" onclick="googleTranslate()">
+					<label for="google_translate">Translate</label>
+
+				</div>
+
+				<!-- Bing -->
+				<div class="tab" id="bing-tab">
+
+					<input type="radio" name="bing" id="bing" onclick="bing()" checked>
+					<label for="bing">Web</label>
+
+					<input type="radio" name="bing" id="bing_images" onclick="q(); bingImages()">
+					<label for="bing_images">Images</label>
+
+					<input type="radio" name="bing" id="bing_videos" onclick="q(); bingVideos()">
+					<label for="bing_videos">Videos</label>
+
+					<input type="radio" name="bing" id="bing_news" onclick="q(); bingNews()">
+					<label for="bing_news">News</label>
+
+					<input type="radio" name="bing" id="bing_maps" onclick="q(); bingMaps()">
+					<label for="bing_maps">Maps</label>
+
+					<input type="radio" name="bing" id="bing_translator" onclick="bingTranslator()">
+					<label for="bing_translator">Translator</label>
+
+					<input type="radio" name="bing" id="bing_events" onclick="q(); bingEvents()">
+					<label for="bing_events">Events</label>
+
+				</div>
+
+				<!-- Yahoo -->
+				<div class="tab" id="yahoo-tab">
+
+					<input type="radio" name="yahoo" id="yahoo" onclick="yahoo()" checked>
+					<label for="yahoo">Web</label>
+
+					<input type="radio" name="yahoo" id="yahoo-images" onclick="q(); yahooImages()">
+					<label for="yahoo-images">Images</label>
+
+					<input type="radio" name="yahoo" id="yahoo-videos" onclick="q(); yahooVideos()">
+					<label for="yahoo-videos">Video</label>
+
+					<input type="radio" name="yahoo" id="yahoo-news" onclick="q(); yahooNews()">
+					<label for="yahoo-news">News</label>
+
+					<input type="radio" name="yahoo" id="yahoo-local" onclick="q(); yahooLocal()">
+					<label for="yahoo-local">Local</label>
+
+					<input type="radio" name="yahoo" id="yahoo-answers" onclick="q(); yahooAnswers()">
+					<label for="yahoo-answers">Answers</label>
+
+					<input type="radio" name="yahoo" id="yahoo-shopping" onclick="q(); yahooShopping()">
+					<label for="yahoo-shopping">Shopping</label>
+
+					<input type="radio" name="yahoo" id="yahoo-finance" onclick="q(); yahooFinance()">
+					<label for="yahoo-finance">Finance</label>
+
+				</div>
+
+				<!-- DuckDuckGo -->
+				<div class="tab" id="duckduckgo-tab">
+
+					<input type="radio" name="duckgo" id="duckgo" onclick="duckgo()" checked>
+					<label for="duckgo">Web</label>
+					
+					<input type="radio" name="duckgo" id="duckgo_images" onclick="q(); duckgoImages()">
+					<label for="duckgo_images">Images</label>
+
+					<input type="radio" name="duckgo" id="duckgo_videos" onclick="q(); duckgoVideos()">
+					<label for="duckgo_videos">Videos</label>
+
+					<input type="radio" name="duckgo" id="duckgo_news" onclick="q(); duckgoNews()">
+					<label for="duckgo_news">News</label>
+
+					<input type="radio" name="duckgo" id="duckgo_meanings" onclick="q(); duckgoMeanings()">
+					<label for="duckgo_meanings">Meanings</label>
+
+					<input type="radio" name="duckgo" id="duckgo_stock" onclick="q(); duckgoStock()">
+					<label for="duckgo_stock">Stock</label>
+
+				</div>
+
+				<!-- Startpage -->
+				<div class="tab" id="startpage-tab">
+
+					<input type="radio" name="startpage" id="startpage" onclick="startpage()" checked>
+					<label for="startpage">Web</label>
+
+					<input type="radio" name="startpage" id="startpage_images" onclick="startpageImages()">
+					<label for="startpage_images">Images</label>
+
+					<input type="radio" name="startpage" id="startpage_videos" onclick="startpageVideos()">
+					<label for="startpage_videos">Videos</label>
+
+				</div>
+
+				<!-- Qwant -->
+				<div class="tab" id="qwant-tab">
+
+					<input type="radio" name="qwant" id="qwant" onclick="qwant()" checked>
+					<label for="qwant">Web</label>
+
+					<input type="radio" name="qwant" id="qwant_images" onclick="q(); qwantImages()">
+					<label for="qwant_images">Images</label>
+
+					<input type="radio" name="qwant" id="qwant_videos" onclick="q(); qwantVideos()">
+					<label for="qwant_videos">Videos</label>
+
+					<input type="radio" name="qwant" id="qwant_news" onclick="q(); qwantNews()">
+					<label for="qwant_news">News</label>
+
+					<input type="radio" name="qwant" id="qwant_social" onclick="q(); qwantSocial()">
+					<label for="qwant_social">Social</label>
+
+					<input type="radio" name="qwant" id="qwant_music" onclick="q(); qwantMusic(); clearHelper()">
+					<label for="qwant_music">Music</label>
+
+					<input type="radio" name="qwant" id="qwant_shopping" onclick="q(); qwantShopping()">
+					<label for="qwant_shopping">Shopping</label>
+
+				</div>
+
+				<!-- searx -->
+				<div class="tab" id="searx-tab">
+
+					<input type="radio" name="searx" id="searx" onclick="searx()" checked>
+					<label for="searx">Web</label>
+
+					<input type="radio" name="searx" id="searx_images" onclick="q(); searxImages()">
+					<label for="searx_images">Images</label>
+
+					<input type="radio" name="searx" id="searx_video" onclick="q(); searxVideo()">
+					<label for="searx_video">Videos</label>
+
+					<input type="radio" name="searx" id="searx_news" onclick="q(); searxNews()">
+					<label for="searx_news">News</label>
+
+					<input type="radio" name="searx" id="searx_map" onclick="q(); searxMap()">
+					<label for="searx_map">Map</label>
+
+					<input type="radio" name="searx" id="searx_music" onclick="q(); searxMusic()">
+					<label for="searx_music">Music</label>
+
+					<input type="radio" name="searx" id="searx_files" onclick="q(); searxFiles()">
+					<label for="searx_files">Files</label>
+
+					<input type="radio" name="searx" id="searx_it" onclick="q(); searxIt()">
+					<label for="searx_it">IT</label>
+
+					<input type="radio" name="searx" id="searx_science" onclick="q(); searxScience()">
+					<label for="searx_science">Science</label>
+
+				</div>
+
+				<!-- Baidu -->
+				<div class="tab" id="baidu-tab">
+
+					<input type="radio" id="baidu" name="baidu" onclick="baidu()" checked>
+					<label for="baidu">Web</label>
+
+					<input type="radio" id="baidu2" name="baidu" onclick="inputFocus(); baiduImages()">
+					<label for="baidu2">Images</label>
+
+					<input type="radio" id="baidu3" name="baidu" onclick="inputFocus(); baiduVideos()">
+					<label for="baidu3">Videos</label>
+
+					<input type="radio" id="baidu4" name="baidu" onclick="inputFocus(); baiduNews()">
+					<label for="baidu4">News</label>
+
+					<input type="radio" id="baidu5" name="baidu" onclick="inputFocus(); baiduMaps()">
+					<label for="baidu5">Maps</label>
+
+					<input type="radio" id="baidu6" name="baidu" onclick="inputFocus(); baiduMusic()">
+					<label for="baidu6">Music</label>
+
+				</div>
+
+				<!-- Yandex -->
+				<div class="tab" id="yandex-tab">
+
+					<input type="radio" id="yandex1" name="yandex" onclick="yandex()" checked>
+					<label for="yandex1">Web</label>
+					
+					<input type="radio" id="yandex2" name="yandex" onclick="inputFocus(); yandexImages()">
+					<label for="yandex2">Images</label>
+					
+					<input type="radio" id="yandex3" name="yandex" onclick="inputFocus(); yandexVideos()">
+					<label for="yandex3">Videos</label>
+
+					<input type="radio" id="yandex7" name="yandex" onclick="inputFocus(); yandexNews()">
+					<label for="yandex7">News</label>
+
+					<input type="radio" id="yandex4" name="yandex" onclick="inputFocus(); yandexMaps()">
+					<label for="yandex4">Maps</label>
+					
+					<input type="radio" id="yandex5" name="yandex" onclick="inputFocus(); yandexTranslate()">
+					<label for="yandex5">Translate</label>
+
+					<input type="radio" id="yandex6" name="yandex" onclick="inputFocus(); yandexMusic()">
+					<label for="yandex6">Music</label>
+
+				</div>
+
+				<!-- Social -->
+				<div class="tab" id="social-tab">
+
+					<input type="radio" name="social" id="facebook" onclick="facebook()" checked>
+					<label for="facebook">Facebook</label>
+
+					<input type="radio" name="social" id="twitter" onclick="twitter()">
+					<label for="twitter">Twitter</label>
+
+					<input type="radio" name="social" id="instagram" onclick="instagram()">
+					<label for="instagram">Instagram</label>
+
+					<input type="radio" name="social" id="pinterst" onclick="pinterest()">
+					<label for="pinterst">Pinterest</label>
+
+					<input type="radio" name="social" id="linkedin" onclick="linkedin()">
+					<label for="linkedin">LinkedIn</label>
+
+					<input type="radio" name="social" id="medium" onclick="medium()">
+					<label for="medium">Medium</label>
+
+					<input type="radio" name="social" id="reddit" onclick="reddit()">
+					<label for="reddit">Reddit</label>
+
+					<input type="radio" name="social" id="tumblr" onclick="tumblr()">
+					<label for="tumblr">Tumblr</label>
+
+					<input type="radio" name="social" id="meetup" onclick="meetup()">
+					<label for="meetup">Meetup</label>
+
+					<input type="radio" name="social" id="ello" onclick="ello()">
+					<label for="ello">Ello</label>
+
+					<input type="radio" name="social" id="myspace" onclick="myspace()">
+					<label for="myspace">Myspace</label>
+
+					<input type="radio" name="social" id="vk" onclick="vk()">
+					<label for="vk">VK</label>
+
+					<input type="radio" name="social" id="snapchat" onclick="snapchat()">
+					<label for="snapchat">Snapchat</label>
+
+					<input type="radio" name="social" id="periscope" onclick="periscope()">
+					<label for="periscope">Periscope</label>
+
+				</div>
+
+				<!-- Video -->
+				<div class="tab" id="video-tab">
+
+					<input type="radio" name="video" id="youtube" onclick="youtube()" checked>
+					<label for="youtube">YouTube</label>
+
+					<input type="radio" name="video" id="twitch" onclick="twitch()">
+					<label for="twitch">Twitch</label>
+
+					<input type="radio" name="video" id="netflix" onclick="netflix()">
+					<label for="netflix">Netflix</label>
+
+					<input type="radio" name="video" id="dailymotion" onclick="dailymotion()">
+					<label for="dailymotion">Dailymotion</label>
+
+					<input type="radio" name="video" id="vimeo" onclick="vimeo()">
+					<label for="vimeo">Vimeo</label>
+
+					<input type="radio" name="video" id="hulu" onclick="hulu()">
+					<label for="hulu">Hulu</label>
+
+					<input type="radio" name="video" id="ted" onclick="ted()">
+					<label for="ted">TED</label>
+
+					<input type="radio" name="video" id="vudu" onclick="vudu()">
+					<label for="vudu">VUDU</label>
+
+					<input type="radio" name="video" id="msn-video" onclick="msnVideo()">
+					<label for="msn-video">MSN</label>
+
+					<input type="radio" name="video" id="aol-video" onclick="aolVideo()">
+					<label for="aol-video">AOL</label>
+
+					<input type="radio" name="video" id="metacafe" onclick="metacafe()">
+					<label for="metacafe">Metacafe</label>
+
+					<input type="radio" name="video" id="viewster" onclick="viewster()">
+					<label for="viewster">Viewster</label>
+
+				</div>
+
+				<!-- Image -->
+				<div class="tab" id="image-tab">
+
+					<input type="radio" name="image" id="flickr" onclick="flickr()" checked>
+					<label for="flickr">Flickr</label>
+
+					<input type="radio" name="image" id="imgur" onclick="imgur()">
+					<label for="imgur">Imgur</label>
+
+					<input type="radio" name="image" id="giphy" onclick="giphy()">
+					<label for="giphy">GIPHY</label>
+
+					<input type="radio" name="image" id="freepik" onclick="freepik()">
+					<label for="freepik">Freepik</label>
+
+					<input type="radio" name="image" id="unsplash" onclick="unsplash()">
+					<label for="unsplash">Unsplash</label>
+
+					<input type="radio" name="image" id="pixabay" onclick="pixabay()">
+					<label for="pixabay">Pixabay</label>
+
+					<input type="radio" name="image" id="pexels" onclick="pexels()">
+					<label for="pexels">Pexels</label>
+
+					<input type="radio" name="image" id="itock" onclick="shutterstock()">
+					<label for="itock">Shutterstock</label>
+
+					<input type="radio" name="image" id="gettyimages" onclick="gettyImages()">
+					<label for="gettyimages">Getty Images</label>
+
+					<input type="radio" name="image" id="adobestock" onclick="adobeStock()">
+					<label for="adobestock">Adobe Stock</label>
+
+					<input type="radio" name="image" id="deviantart" onclick="deviantArt()">
+					<label for="deviantart">DeviantArt</label>
+
+					<input type="radio" name="image" id="smugmug" onclick="smugMug()">
+					<label for="smugmug">SmugMug</label>
+
+					<input type="radio" name="image" id="500px" onclick="_500px()">
+					<label for="500px">500px</label>
+
+					<input type="radio" name="image" id="poly" onclick="poly()">
+					<label for="poly">Poly</label>
+
+				</div>
+
+				<!-- Audio -->
+				<div class="tab" id="audio-tab">
+
+					<input type="radio" name="music" id="spotify" onclick="spotify()" checked>
+					<label for="spotify">Spotify</label>
+
+					<input type="radio" name="music" id="soundcloud" onclick="soundcloud()">
+					<label for="soundcloud">SoundCloud</label>
+
+					<input type="radio" name="music" id="pandora" onclick="pandora()">
+					<label for="pandora">Pandora</label>
+
+					<input type="radio" name="music" id="lastfm" onclick="lastfm()">
+					<label for="lastfm">Last.fm</label>
+
+					<input type="radio" name="music" id="tunein" onclick="tunein()">
+					<label for="tunein">TuneIn</label>
+
+					<input type="radio" name="music" id="iheart" onclick="iheart()">
+					<label for="iheart">iHeartRadio</label>
+
+					<input type="radio" name="music" id="deezer" onclick="deezer()">
+					<label for="deezer">Deezer</label>
+
+					<!-- <input type="radio" name="music" id="shazam" onclick="shazam()">
+					<label for="shazam">Shazam</label> -->
+
+					<input type="radio" name="music" id="tidal" onclick="tidal()">
+					<label for="tidal">TIDAL</label>
+
+					<input type="radio" name="music" id="shoutcast" onclick="shoutcast()">
+					<label for="shoutcast">Shoutcast</label>
+
+					<input type="radio" name="music" id="napster" onclick="napster()">
+					<label for="napster">Napster</label>
+
+					<input type="radio" name="music" id="_8tracks" onclick="_8tracks()">
+					<label for="_8tracks">8tracks</label>
+
+					<input type="radio" name="music" id="genius" onclick="genius()">
+					<label for="genius">Genius</label>
+
+					<input type="radio" name="music" id="musixmatch" onclick="musixmatch()">
+					<label for="musixmatch">Musixmatch</label>
+
+					<input type="radio" name="music" id="hypemachine" onclick="hypemachine()">
+					<label for="hypemachine">Hype Machine</label>
+
+					<input type="radio" name="music" id="bandcamp" onclick="bandcamp()">
+					<label for="bandcamp">Bandcamp</label>
+
+				</div>
+
+				<!-- Shopping -->
+				<div class="tab" id="shopping-tab">
+
+					<input type="radio" name="shopping" id="amazon" onclick="amazon()" checked>
+					<label for="amazon">Amazon</label>
+
+					<input type="radio" name="shopping" id="ebay" onclick="ebay()">
+					<label for="ebay">eBay</label>
+
+					<input type="radio" name="shopping" id="aliexpress" onclick="aliExpress()">
+					<label for="aliexpress">AliExpress</label>
+
+					<input type="radio" name="shopping" id="craigslist" onclick="craigslist()">
+					<label for="craigslist">Craigslist</label>
+
+					<input type="radio" name="shopping" id="walmart" onclick="walmart()">
+					<label for="walmart">Walmart</label>
+
+					<input type="radio" name="shopping" id="etsy" onclick="etsy()">
+					<label for="etsy">Etsy</label>
+
+					<input type="radio" name="shopping" id="bestbuy" onclick="bestBuy()">
+					<label for="bestbuy">BEST BUY</label>
+
+					<input type="radio" name="shopping" id="target" onclick="target()">
+					<label for="target">Target</label>
+
+					<input type="radio" name="shopping" id="groupon" onclick="groupon()">
+					<label for="groupon">Groupon</label>
+
+					<input type="radio" name="shopping" id="wish" onclick="wish()">
+					<label for="wish">Wish</label>
+
+					<input type="radio" name="shopping" id="macys" onclick="macys()">
+					<label for="macys">Macys</label>
+
+				</div>
+
+				<!-- Local -->
+				<div class="tab" id="local-tab">
+
+					<input type="radio" id="foursquare" name="local" onclick="foursquare()" checked>
+					<label for="foursquare">Foursquare</label>
+
+					<input type="radio" id="g_maps" name="local" onclick="googleMaps2()">
+					<label for="g_maps">Google Maps</label>
+
+					<input type="radio" id="b_maps" name="local" onclick="bingMaps()">
+					<label for="b_maps">Bing Maps</label>
+
+					<input type="radio" id="yelp" name="local" onclick="yelp()">
+					<label for="yelp">Yelp</label>
+
+					<input type="radio" id="moovit" name="local" onclick="moovit()">
+					<label for="moovit">Moovit</label>
+
+					<input type="radio" id="mapquest" name="local" onclick="mapQuest()">
+					<label for="mapquest">MapQuest</label>
+
+					<input type="radio" id="here" name="local" onclick="here()">
+					<label for="here">HERE WeGo</label>
+
+					<input type="radio" id="airbnb" name="local" onclick="airbnb()">
+					<label for="airbnb">Airbnb</label>
+
+					<input type="radio" id="tripadvisor" name="local" onclick="tripAdvisor()">
+					<label for="tripadvisor">TripAdvisor</label>
+
+				</div>
+
+				<!-- News -->
+				<div class="tab" id="news-tab">
+
+					<input type="radio" name="news" id="reuters" onclick="reuters()" checked>
+					<label for="reuters">Reuters</label>
+
+					<input type="radio" name="news" id="cnn" onclick="cnn()">
+					<label for="cnn">CNN</label>
+
+					<input type="radio" name="news" id="nyt" onclick="nyt()">
+					<label for="nyt">New York Times</label>
+
+					<input type="radio" name="news" id="bbc" onclick="bbc()">
+					<label for="bbc">BBC</label>
+
+					<input type="radio" name="news" id="guardian" onclick="theGuardian()">
+					<label for="guardian">The Guardian</label>
+
+					<input type="radio" name="news" id="huffpost" onclick="huffPost()">
+					<label for="huffpost">HuffPost</label>
+
+					<input type="radio" name="news" id="washingtonpost" onclick="washPost()">
+					<label for="washingtonpost">Washington Post</label>
+
+					<input type="radio" name="news" id="forbes" onclick="forbes()">
+					<label for="forbes">Forbes</label>
+
+					<input type="radio" name="news" id="bloomberg" onclick="bloomberg()">
+					<label for="bloomberg">Bloomberg</label>
+
+					<input type="radio" name="news" id="aljazeera" onclick="aljazeera()">
+					<label for="aljazeera">Aljazeera</label>
+
+					<input type="radio" name="news" id="afp" onclick="afp()">
+					<label for="afp">AFP</label>
+
+					<input type="radio" name="news" id="digg" onclick="digg()">
+					<label for="digg">Digg</label>
+
+					<input type="radio" name="news" id="flipboard" onclick="flipboard()">
+					<label for="flipboard">Flipboard</label>
+
+				</div>
+
+				<!-- Reference -->
+				<div class="tab" id="knowledge-tab">
+
+					<input type="radio" name="knowledge" id="wikipedia" onclick="wikipedia()" checked>
+					<label for="wikipedia">Wikipedia</label>
+
+					<input type="radio" name="knowledge" id="wolframalpha" onclick="q(); clearHelper(); wolframAlpha()">
+					<label for="wolframalpha">Wolfram Alpha</label>
+
+					<input type="radio" name="knowledge" id="quora" onclick="quora()">
+					<label for="quora">Quora</label>
+
+					<input type="radio" name="knowledge" id="stack-exchange" onclick="stackExchange()">
+					<label for="stack-exchange">Stack Exchange</label>
+
+					<input type="radio" name="knowledge" id="internet-archive" onclick="internetArchive()">
+					<label for="internet-archive">Internet Archive</label>
+
+					<input type="radio" name="knowledge" id="google-scholar" onclick="googleScholar()">
+					<label for="google-scholar">Google Scholar</label>
+
+					<input type="radio" name="knowledge" id="academia" onclick="academia()">
+					<label for="academia">Academia</label>
+
+					<input type="radio" name="knowledge" id="microsoft-academic" onclick="microsoftAcademic()">
+					<label for="microsoft-academic">Microsoft Academic</label>
+
+					<input type="radio" name="knowledge" id="plosone" onclick="plosone()">
+					<label for="plosone">PLOS ONE</label>
+
+					<input type="radio" name="knowledge" id="researchgate" onclick="researchgate()">
+					<label for="researchgate">ResearchGate</label>
+
+					<input type="radio" name="knowledge" id="arxiv" onclick="arxiv()">
+					<label for="arxiv">arXiv</label>
+
+				</div>
+
+				<!-- Projects -->
+				<div class="tab" id="projects-tab">
+
+					<input type="radio" name="projects" id="github" onclick="github()" checked>
+					<label for="github">GitHub</label>
+
+					<input type="radio" name="projects" id="codepen" onclick="codepen()">
+					<label for="codepen">CodePen</label>
+
+					<input type="radio" name="projects" id="dribbble" onclick="dribbble()">
+					<label for="dribbble">Dribbble</label>
+
+					<input type="radio" name="projects" id="behance" onclick="behance()">
+					<label for="behance">Behance</label>
+
+					<input type="radio" name="projects" id="producthunt" onclick="producthunt()">
+					<label for="producthunt">ProductHunt</label>
+
+					<input type="radio" name="projects" id="kickstarter" onclick="kickstarter()">
+					<label for="kickstarter">Kickstarter</label>
+
+					<input type="radio" name="projects" id="indiegogo" onclick="indiegogo()">
+					<label for="indiegogo">Indiegogo</label>
+
+				</div>
+
+				<!-- Torrent -->
+				<div class="tab" id="torrent-tab">
+
+					<input type="radio" id="piratebay" name="torrent" onclick="pirateBay()" checked>
+					<label for="piratebay">Pirate Bay</label>
+
+					<input type="radio" id="rarbg" name="torrent" onclick="rarbg()">
+					<label for="rarbg">RARBG</label>
+	
+					<input type="radio" id="zooqle" name="torrent" onclick="zooqle()">
+					<label for="zooqle">Zooqle</label>
+
+					<input type="radio" id="torrentz2" name="torrent" onclick="torrentz2()">
+					<label for="torrentz2">Torrentz2</label>
+
+					<input type="radio" id="extratorrent" name="torrent" onclick="extraTorrent()">
+					<label for="extratorrent">ExtraTorrent</label>
+	
+					<input type="radio" id="yts" name="torrent" onclick="yts()">
+					<label for="yts">YTS</label>
+	
+					<input type="radio" id="1337x" name="torrent" onclick="_1337x()">
+					<label for="1337x">1337x</label>
+	
+					<input type="radio" id="eztv" name="torrent" onclick="eztv()">
+					<label for="eztv">EZTV</label>
+	
+				</div>
+
+			</div>
+
+			<!-- Search Form -->
+			<form id="search-form" method="GET" action="https://www.google.com/search?q=" accept-charset="UTF-8" role="search">
+
+				<div id="search-img"></div>
+
+				<input id="search-input" type="text" name="q" value="" placeholder="" onkeypress="checkValue()" onkeyup="checkValue()" onchange="checkValue()" maxlength="100" autocomplete="on" autofocus required>
+				
+				<input id="reset-button" type="reset" value="Reset" onclick="resetForm()" aria-label="Clear search field" title="Reset">
+				
+				<input id="search-button" type="submit" value="Search" onclick="this.form.target='_blank';" aria-label="Search" title="Search">
+
+				<input id="helper" type="hidden" name="" value="">
+				
+				<div id="voice-container">
+					<span id="voice-animation"></span>
+					<button id="voice-button" onclick="reco.toggleStartStop(); openVoiceTranscript()" aria-label="Voice search">Voice</button>
+				</div>
+
+			</form>
 
 		</div>
 
 	</section>
 
 
-	<section id="about">
-
-    	<h2>A new experience to help search on web</h2>
-
-    	<p>Searchy is a simple tool that makes it easier and more productive to search on web. Allow you to use the power of multiple search engines to quickly search on web and modules to search any content directly on your favorite source.</p>
-
-	</section>
-
-
+	<!-- Widgets -->
 	<section>
 
-		<h2>Functions</h2>
-		<p>All you can do with Searchy.</p>
+		<div class="widgets">
 
-		<div class="card">
+			<!-- Trends -->
+			<div class="widget widget-trends">
 
-			<a href="#">
-				<div>
-					<figure class="icon-find-refresh"></figure>
-					<h3>Multiple Search Engines</h3>
-					<p>Google, Bing, Yahoo, DuckDuckGo, WolframAlpha, Baidu and Yandex.</p>
+				<figure><h2>Search Trends</h2></figure>
+				
+				<div id="trends-container">
+					<ol data-rss-feed="https://trends.google.com/trends/trendingsearches/daily/rss"></ol>
 				</div>
-			</a>
 
-			<a href="#">
-				<div>
-					<figure class="icon-voice"></figure>
-					<h3>Voice Search</h3>
-					<p>Allows to use voice recognition to search in many sites.</p>
-				</div>
-			</a>
+		  	</div>
 
-			<a href="#">
-				<div>
-					<figure class="icon-apps"></figure>
-					<h3>Search by Modules</h3>
-					<p>Web, Social, Video, Music, Images, News, Shopping, Local and Torrents.</p>
-				</div>
-			</a>
+			<!-- Clock -->
+			<div class="widget widget-clock">
 
-			<a href="#">
-				<div>
-					<figure class="icon-bubble"></figure>
-					<h3>Dynamic Info</h3>
-					<p>Displays dynamic information related to time and weather.</p>
-				</div>
-			</a>
+				<figure><h2><span id="wkDay"></span>, <span id="month"></span> <span id="day"></span><!-- , <span id="year"></span> --></h2></figure>
 
-			<a href="#">
-				<div>
-					<figure class="icon-text"></figure>
-					<h3>Auto Suggest</h3>
-					<p>Predictions of possible terms you can use to search, related to what you’re typing.</p>
-				</div>
-			</a>
+				<p><span id="time"></span></p>				
+			</div>
 
-			<a href="#">
-				<div>
-					<figure class="icon-accessibility"></figure>
-					<h3>Accessibility</h3>
-					<p>Everyone should be able to access and enjoy the functions of this web search tool.</p>
-				</div>
-			</a>
+			<!-- Share -->
+			<div class="widget widget-share">
 
-			<a href="#">
-				<div>
-					<figure class="icon-lock"></figure>
-					<h3>Total Privacy</h3>
-					<p>Zero bytes of user data are collected, like search history, location and cookies.</p>
-				</div>
-			</a>
+				<figure><h2>Share</h2></figure>
 
-			<a href="#">
-				<div>
-					<figure class="icon-not"></figure>
-					<h3>No Ads and Tracking</h3>
-					<p>No annoying advertising is displayed and not tracking user behavior.</p>
-				</div>
-			</a>
+				<a href="https://twitter.com/intent/tweet?url=https://findto.app&amp;text=Findto.app — A web search tool for diversity and privacy" onclick="window.open(this.href, 'twitter-share', 'width=520,height=245');return false;" class="icon-twitter" title="Twitter" aria-label="Tweet on Twitter">Tweet</a>
+				<a href="https://www.facebook.com/sharer/sharer.php?u=https://findto.app" onclick="window.open(this.href, 'facebook-share','width=580,height=420');return false;" class="icon-facebook" title="Facebook" aria-label="Share on Facebook">Share</a>
+				<a href="https://github.com/inblug/findto/" target="_blank" rel="noopener" title="GitHub" aria-label="Star on GitHub">Star</a>
 
-			<a href="#">
-				<div>
-					<figure class="icon-code"></figure>
-					<h3>Open Source</h3>
-					<p>You are free to contribute and help improve this search tool.</p>
+			</div>
+
+			<!-- Weather -->
+			<div class="widget widget-weather" >
+
+				<!-- Elements will be added with JS -->
+				<figure id="test"></figure>
+				<div id="weatherBlock">
+					<h2 id="weather-load-warning">Please allow Localization access</h2>
 				</div>
-			</a>
+				
+			</div>
 
 		</div>
 		
 	</section>
 
+	<!-- Settings -->
+	<div id="info" style="display:none;">
 
-<!-- 	<section>
+		<h1>Findto.app v1.0</h1>
+		<p>A web search tool for diversity and privacy</p>
 
-		<h2>Access from anywhere</h2>
-		<p>Searchy is available for free on web, Android, iOS, and Windows.</p>
+		<p>Made with love by <a href="https://lucasmaues.com" target="_blank" rel="noopener">Lucas Maués</a></p>
+		<p>Brought to you by <a href="https://inblug.com" target="_blank" rel="noopener">Inblug</a></p>
 
-		<div class="card">
-			<figure class="icon-web"></figure>
-			<figure class="icon-android"></figure>
-			<figure class="icon-apple"></figure>
-			<figure class="icon-windows"></figure>
-		</div>
+	</div>
 
-	</section> -->
-
-
-	<section>
-
-		<h2>Interested?</h2>
-		<p>Try the Beta version right now and send your feedback to help improve Searchy before its official launch.</p>
-
-		<a href="app" class="button">Try Beta version</a>
-
-	</section>
-
-
-	<footer class="layer">
-		<p><!-- Made with <span class="love">♡</span> by Lucas Mauess. --> &copy; Copyright 2016 INBLUG. All rights reserved.</p>
+	<footer>
+		<p><a data-fancybox data-src="#about" href="javascript:;">About</a> · <a data-fancybox data-src="#privacy" href="javascript:;">Privacy</a> · <a data-fancybox data-src="#terms" href="javascript:;">Terms</a> · <a data-fancybox data-src="#license" href="javascript:;">Licenses</a>  · <a data-fancybox data-src="#feedback" href="javascript:;">Feedback</a></p>
 	</footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="http://inblug.com/scripts/scroll.js"></script>
-<script src="http://inblug.com/scripts/menu.js"></script>
-<script src="http://inblug.com/scripts/header.js"></script>
-<script src="http://inblug.com/scripts/pace.js"></script>
-
-<!-- Google Analytics -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="scripts/parameters.js"></script>
+	<script src="scripts/functions.js"></script>
+	<script src="scripts/autocomplete.js"></script>
+	<script src="scripts/speech.js"></script>
+	<script src="scripts/trends.js"></script>
+	<script src="scripts/clock.js"></script>
+	<script src="scripts/weather.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 
 </body>
 
