@@ -1,78 +1,140 @@
-# [Findto.app](https://findto.app)
+# Findto.app
 
-A web search tool for diversity and privacy.
+A search tool for the Web diversity.
 
-Use the power of multiple search engines and popular sites to quickly find any content at the web. More than a visual search concept, a tool for help people discover new possibilities, encouraging diversity and choice for privacy on the web.
-
-Findto.app have one mission: make searches free, putting people in control of the search algorithms, and not the inverse.
-
-Why do this?
-
-Because the web is bigger than biggest players - and this is beautiful.
+Findto is a open source visual search tool, with one mission: put people in control of the search algorithms, encouraging discoverability and choice on the Web. You can use the power of multiple search engines, sites and apps to quickly find any content on the Web.
 
 
-## Features
+### Features
 
-*  **Multiple Search Engines** - Quickly search - the same term - in multiple search engines.
+- **Search Categories** — Quickly search - the same term - in multiple search engines, or find exactly what you are looking for directly on the most popular sites and apps.
 
-*  **Popular Sites** - Find exactly what you are looking for searching directly in the most popular sites, classified by categories.
+- **Trends** — Trending searches, content and places nearby you.
 
-*  **Trust Ranking** - View a index that ranks tech companies on respect for users privacy and freedom of expression.
+- **Privacy Score** — A rank of how committed is the search provider (or tech company behind them) about your privacy and treating personal data.
 
-*  **Widgets** - Some helpful informations: worldwide search trends, local time and weather.
+- **Weather** — Local date, time and weather.
 
-*  **Autocomplete** - Suggested words as you type.
+- **Autosuggestions** — Search terms suggestions as you type.
 
-*  **Speech Recognition** - Use your voice to search in any engine or site.
+- **Speech Recognition** — Use your voice to search, anywhere.
 
-*  **Privacy** - This app don't track your searches and is designed to make it difficult for third party services to do so by sending clean URL parameters to confuse them. (Even with this effort, they can still collect and sell your data using other methods to identify you.)
-
-*  **Accessbility** - Everyone should be able to access and enjoy this functions, without limitations, even offline.
-
-*  **Open Source** - You can inspect source code and help improve it.
+- **Accessibility** — Light and dark theme, access keys, declarative labels and mutable layout.
 
 
-## Modules
+### Motivations
 
-*  **Web** - (default) Find anything using search engines: Google, Bing, DuckDuckGo, searx, Qwant, Yahoo, StartPage, Baidu and Yandex.
+Ok, why do this?
 
-*  **Social** - Find people, posts and stories at: Twitter, Facebook, Instagram, LinkedIn, Medium, reddit, Pinterest, Tumblr, Snapchat, Periscope, Meetup, Ello, VK and Myspace.
+Because the Web is bigger than biggest players. Sometimes we forgot of how this is important for strengthen our democracies, our own knowledge and to support - or become inspired using - new and innovative digital experiences.
 
-*  **Video** - Find videos, channels and live streams at: YouTube, Twitch, Periscope, Vimeo, Dailymotin, Netflix, Hulu, Vevo, TED, Ustream, Metacafe, MSN, AOL, VUDU, Break, Veoh and Viewster.
+How make searches really free? How bring a way to put people in control of the search algorithms, and not the inverse? How privative is this search? What are others searching on this subject? Where else can I search? This is the questions that motivated me to create Findto.
 
-*  **Audio** - Find songs, lyrics, podcasts and radio stations at: Spotify, SoundCloud, Deezer, Pandora, iHeartRadio, TuneIn, SHOUTcast, Genius, Musixmatch, 8tracks, Hype Machine and Bandcamp.
+And also as a personal challenge for me. To develop a PWA using vanilla JavaScript, CSS and HTML on the front-end. And a Express server to pre-process APIs for the app on the back-end.
 
-*  **Image** - Find royalty-free or paid stock photos, illustrations and 3D models at: Flickr, Imgur, 500px, SmugMug, Shutterstock, Getty Images, Adobe Stock, Photobucket, Pixabay, Unsplash, Pexels, Freepik, Poly and DeviantArt.
 
-*  **Local** - Find places, routes, maps and accommodations with: Foursquare, Google Maps, Bing Maps, Yelp, Moovit, MapQuest, HERE WeGo, Airbnb and TripAdvisor.
+### Search Categories
 
-*  **Shopping** - Find products and services at: Amazon, eBay, AliExpress, Groupon, Walmart, Etsy, Target, BEST BUY and Craigslist.
+For chose the items available on the search categories, I used the comparatives tools of Alexa, SimilarWeb and AlternativeTo to find the the most popular services on the Web and alternatives for them.
 
-*  **News** - Find breaking news and archived articles at: Reuters, CNN, New York Times, BBC, HuffPost, The Guardian, Whashgton Post, Forbes, Bloomberg, Al Jazeera, USA Today, AFP, Flipboard, Feedly and WikiLeaks.
+- **Web** — Find everything with search engines.
+```
+Google, Bing, DuckDuckGo, Yahoo, Qwant, Startpage, searx, Yandex, Baidu, Info, Yippy, Mojeek, Swisscows, Gibiru
+```
 
-*  **Reference** - Find definitions, scientific researches and academic publications at: Wikipedia, Wolfram|Alpha, Quora, Google Scholar, Academia.edu, ResearchGate, arXiv, Microsoft Academic and Internet Archive.
+-  **Social** — Find posts, profiles, pages and stories.
+```
+Twitter, Facebook, Instagram, LinkedIn, Pinterest, reddit, TikTok, Tumblr, Snapchat, Periscope, Meetup, VK, Ello, Myspace
+```
 
-*  **Projects** - Find creative works and digital projects at: GitHub, CodePen, Dribbble, Behance, ProductHunt, Kickstarter and Indiegogo.
+-  **Video** — Find videos, movies, TV shows, channels and live streams.
+```
+YouTube, Twitch, Netflix, Prime Video, Dailymotion, Vimeo, Hulu, Disney+, TED, Fandango, Plex, Vudu, Metacafe, Veoh, Aol
+```
 
-*  **Torrent** - (unavailable) Even though we legally don't respond by content found in third party pages, some files on torrent sites may infringe copyright laws. To avoid misinterpretations or even lawsuit, for while, this module is disabled.
+*  **Audio** — Find songs, artists, albums, lyrics, podcasts and radio stations.
+```
+Spotify, SoundCloud, Apple Music, Last.fm, Pandora, TuneIn, Deezer, TIDAL, Genius, Musixmatch, iHeartRadio, Shoutcast, Hype Machine, Bandcamp
+```
 
+*  **Image** — Find GIFs, stock photos, illustrations, 3D models and paints.
+```
+GIPHY, Flickr, Unsplash, Pexels, Freepik, Pixabay, Shutterstock, Getty Images, Adobe Stock, SmugMug, 500px, Poly, CC, Imgur, DeviantArt, Dribbble, Behance
+```
+
+*  **Local** — Find places, events, maps, routes and accommodations.
+```
+Foursquare, Google Maps, Bing Maps, Yelp, Tripadvisor, Booking, Airbnb, Moovit, Uber, HERE WeGo, Mapquest
+```
+
+*  **Shopping** — Find products.
+```
+Amazon, AliExpress, Ebay, Walmart, Target, Best Buy, Etsy, Wish, Macys, Groupon, Craigslist
+```
+
+*  **News** — Find news.
+```
+Pocket, Medium, Flipboard, Digg, Feedly, Reuters, CNN, NY Times, BBC, Guardian, HuffPost, Forbes, Bloomberg, Washington Post, Aljazeera, AP
+```
+
+*  **Academic** — Find definitions, scientific publications, researches and Q&As.
+```
+Wikipedia, Google Scholar, Microsoft Academic, Academia, ResearchGate, arxiv, PLOS ONE, CORE, BASE, Stack Exchange, Quora, Brainly, Wolfram Alpha, Golden
+```
+
+*  **Code** — Find repositories, packages and modules.
+```
+GitHub, Stack Overflow, GitLab, Bitbucket, CodePen, searchcode, npm, Yarn, PyPI, NuGet, Packagist, RubyGems, Crates
+```
+
+*  **Jobs** — Find permanent, remote or freelance work.
+```
+USAJOBS, Upwork,
+```
+
+*  **Torrent** — Find shared files.
+``` 
+UNRELEASED - Some files on torrent sites may infringe copyright. To avoid misinterpretations or even lawsuit, this category is current suspended.
+```
 
 ## Contributing
-Please view the opened [issues](https://github.com/inblug/findto/issues) or create a new, before send pull requests.
 
+View the [opened issues](https://github.com/lucasmezs/findto/issues) or create a new, before send pull requests.
 
-## Donate
+**Donate** — If you would like to support the development by making a donation you can do so! [Become a supporter on Patreon](https://www.patreon.com/lucasmezs) for help pay app costs (domain, hosting and APIs calls). You also help build next features!
 
-If you would like to support development by [making a donation](#) you can do so.
+**Feedback** — [Send your feedback](https://lucasmezs.typeform.com/to/YRBtGI) <3
 
+## Privacy
 
-## Changelog
+Findto just redirect you to external services, by design, sending clean URLs parameters to avoid default tracking of search services. Note that, even with this effort, some of them can still track your searches and collect your personal data using other methods to identify you, like cookies and device fingerprint.
 
-For a history of all notable changes, see the [changelog](CHANGELOD.md).
+Public user info, like browser language and country, or private info, like geolocation and microphone access (when enabled by user), are used as parameters for display contextual data on the app. To safeguard users' privacy, Findto uses a back-end layer called 'API Service' to process all APIs requests in isolation, without identify user, to try avoid third parties track, store or combine user data.
 
+Findto uses cookies only to save user preferences and temporarily store contextual data. Also has a analytics tool enabled to anonymously improve the user experience, as described in [Privacy Policy](https://github.com/lucasmezs/findto/blob/master/PRIVACY.md).
 
-## License
+## Legal
 
-Findto.app is available under the [MIT license](LICENSE.md).
+Licensed under [MIT license](https://github.com/lucasmezs/findto/blob/master/LICENSE.md).
 
-**Notice:** All trademarks, APIs and materials from third parties found on this application belong to their respective owners and are following their own rules of use. All rights reserved to the owners. If you believe that your property has been used incorrectly, email to legal@inblug.com.
+**External APIs** — Contextual data in the app is made possible by them. Thanks to:
+
+- [Web Speech API](https://developer.mozilla.org/docs/Web/API/Web_Speech_API) — speech recognition
+- [Web Storage API](https://developer.mozilla.org/docs/Web/API/Web_Storage_API) — caching
+- [Bing Autosuggest API](https://azure.microsoft.com/services/cognitive-services/autosuggest) — autosuggestions
+- [Privacy Monitor API](https://www.privacymonitor.com/api) — privacy scores
+- [OpenWeatherMap API](https://openweathermap.org) —  weather forecasting
+- [Google Trends RSS](https://trends.google.com/trends/trendingsearches/daily) — search trends
+- [Twitter API](https://developer.twitter.com/products/twitter-api) — trending topics
+- [TMDb API](https://developers.themoviedb.org) / [YouTube API](https://developers.google.com/youtube) — videos
+- [Tenor GIF API](https://tenor.com/gifapi) — image terms
+- [Last.fm API](https://www.last.fm/api) / [iTunes RSS](http://rss.itunes.apple.com/) — music and podcasts
+- [Best Buy API](https://developer.bestbuy.com) — products
+- [Geolocation API](https://developer.mozilla.org/docs/Web/API/Geolocation_API) / [Foursquare Places API](https://developer.foursquare.com/places) — location and places
+- [News API](https://newsapi.org) — news headlines
+- [GitHub Trending API](https://github.com/huchenme/github-trending-api) / [DEV API](https://docs.dev.to/api) — repos and programming articles
+- [Microsoft Academic API](https://academic.microsoft.com/topics) — topics and citations
+
+**Copyright and Service Violation** — All trademarks and external services found on this app belong to their respective owners and have attribution to the original source. All rights reserved to the owners. If you believe that your intelectual property or a service has been used incorrectly, please, mail to legal@lucasm.dev.
+
+**Content Removal** — Even though Findto have links for third-party websites and applications, is impossible to revise the content of each them. For any law violation or bad conduct by some service, please, consider report this as a issue.
