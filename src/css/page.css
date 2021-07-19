@@ -1,0 +1,12 @@
+/*
+	Fullscreen
+*/
+.fullscreen {
+	padding: 0;
+	display: table;
+	height: 60%;
+}
+.fullscreen-container {
+	display: table-cell;
+	vertical-align: middle;
+}

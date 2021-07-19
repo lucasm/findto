@@ -1,7 +1,7 @@
 {
-  "name": "Findto.app",
+  "name": "Findto",
   "short_name": "Findto",
-  "description": "A web search tool for diversity and privacy",
+  "description": "A search tool for web diversity and privacy.",
   "icons": [
     {
       "src": "images/icons/icon-48x48.png",
