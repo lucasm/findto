@@ -8,10 +8,11 @@
 </h1>
 <p align="center">
 <img alt="Languages" src="https://img.shields.io/badge/languages available -1-ffdb56">
-<img alt="Issues" src="https://img.shields.io/github/issues/lucasm/findto?color=ff5c5c">
-<img alt="License" src="https://img.shields.io/github/license/lucasm/findto?color=37bf5d">
-<img alt="Patrons" src="https://img.shields.io/badge/patrons -3-1491de">
-<img alt="Discord" src="https://img.shields.io/discord/866829154032812073?color=ff6485">
+<a href="https://github.com/lucasm/findto/issues" target="_blank"><img alt="Issues" src="https://img.shields.io/github/issues/lucasm/findto?color=ff5c5c"></a>
+<a href="https://github.com/lucasm/findto/blob/master/LICENSE.md" target="_blank"><img alt="License" src="https://img.shields.io/github/license/lucasm/findto?color=37bf5d"></a>
+<a href="https://patreon.com/lucasm" target="_blank"><img alt="Patrons" src="https://img.shields.io/badge/patrons -3-1491de"></a>
+<a href="https://discord.gg/JgmDXhGP" target="_blank"><img alt="Discord" src="https://img.shields.io/discord/866829154032812073?color=ff6485"></a>
+
 
 </p>
 <p align="center">
@@ -19,23 +20,25 @@ The open source Web search app<br>
 </p>
 
 
-## Opening the Web search
+## 🌎 Opening the Web searches
 
 Findto is a Web search app made to do more productive searches. You can use the power of multiple search engines and sources to find anything, with freedom and privacy.
 
-Findto have the mission to make searches truly free, **putting people in control of the search algorithms** — and not the inverse. Findto proposes a new Web search experience, being open and collaborative tool, encouraging diversity and discoverability on the Web.
+Findto have the mission to make searches truly free, **putting people in control of the search algorithms** — and not the inverse. Findto proposes a new Web search experience, being an open and collaborative search tool, to encourage choice, diversity and discoverability on the Web.
 
-### Features
+## 🌈 Features
 
-- **Search Categories** — Quickly search the same term in multiple search engines and categories to find exactly what you are looking for in the most pouplar sources.
+- **Multiple  Search** — Quickly search the same term in multiple search engines.
 
-- **Trends** — Trending searches, contents and places nearby you. Local weather info.
+- **Categories** — Explore the search categories to find exactly what you are looking for in most popular sources.
 
-- **Privacy Rank** — Get a score of how compromised the search provider is about your privacy.
+- **Trends** — Trending searches, contents, weather and places nearby you.
+
+- **Privacy Rank** — Get a privacy score of how compromised the search provider is about treat your personal data.
 
 - **Autocomplete** — Auto suggestions of search terms as you type.
 
-- **Voice Search** — Universal speech recognition enable use voice to search anywhere.
+- **Voice Search** — Use your voice to search anywhere.
 
 - **Accessibility** — Hight contrast, dark theme, mutable layout and access keys.
 
@@ -43,39 +46,46 @@ Findto have the mission to make searches truly free, **putting people in control
 
 - **Internationalization** — COMING SOON.
 
-### Search providers
 
-The [search providers](https://github.com/lucasm/findto/wiki/List-of-Search-Providers) available on Findto are chosen by the popularity and relevance for the open Web.
+## 🔍 Search providers
 
-### Motivation
+The  search providers available in Findto are chosen by the relevance for the open Web and popularity — and grouped into categories: `Web, Social, Video, Image, Audio, Academic, Local, Shopping, News, Jobs, Stock, Code, Torrent` and others.
+
+Read the [Documentation](https://github.com/lucasm/findto/wiki) for details.
 
 
-The centralization of the Web is not positive. The Web is bigger than the biggest players. Sometimes we forgot how important is bring new digital solutions and experiences, for diversity, inspiration, competition, personal knowledge and even strengthen our democracies.
+## 💡 Motivation
+
+The centralization of the Web in Big Techs is not positive.
+
+The Web is bigger than the biggest players.
+
+Sometimes we forgot how important is bring new digital solutions and experiences, for diversity, inspiration, competition, personal knowledge and even strengthen our democracies.
 
 How make searches really free? How to put people in control of the search algorithms (not the inverse)? How privative is this search? What are others searching on this subject? Where else can I search?
 
 These questions brought Findto to life.
 
-## Contribute
 
-Findto is open source. You can [become a supporter on Patreon](https://patreon.com/lucasm) to help maintain active development and get benefits as early Beta access.
+## 💗 Contributing
 
-Visit the [Discord channel](https://discord.gg/JgmDXhGP) or [Discussions forum](https://github.com/lucasm/findto/discussions).
+Findto is open source.
+
+You can [become a supporter on Patreon](https://patreon.com/lucasm) to help maintain active development and get benefits as early Beta access
+
+- Join on [Discord](https://discord.gg/JgmDXhGP) community channel
+- Participate on public [Discussions](https://github.com/lucasm/findto/discussions) forum
+- Follow on  [Twitter](https://twitter.com/findtoapp) for updates
 
 For bugs and features, view the [Project board](https://github.com/lucasm/findto/projects) and check opened issues before create a new or send pull requests.
 
-### Special thanks
 
- Thanks to Lucas Vasconcelos, Gabriel Monteiro and Carlos Trindade!
-
-
-## Legal
-
-Findto is a front-end Web application powered by a back-end Web service that pre-process data from [external APIs](https://github.com/lucasm/findto/wiki/List-of-External-APIs). Read the [Documentation](https://github.com/lucasm/findto/wiki) for details.
+## 📜 Legal
 
 - Source code is MIT licensed
+- External data powered by [amazing APIs](https://github.com/lucasm/findto/wiki/List-of-External-APIs)
 - [Privacy Policy](https://github.com/lucasm/findto/wiki/Privacy-Policy)
 - [Terms of Service](https://github.com/lucasm/findto/wiki/Terms-of-Service)
-- Project by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app)
+- Findto is a project by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app)
 
 Happy searches!
