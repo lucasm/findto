@@ -7,78 +7,75 @@
 <a href="https://findto.app/">Findto</a>
 </h1>
 <p align="center">
-<img alt="Languages" src="https://img.shields.io/badge/languages available -1-37bf5d">
-<img alt="Issues" src="https://img.shields.io/github/issues/lucasm/findto?color=37bf5d">
+<img alt="Languages" src="https://img.shields.io/badge/languages available -1-ffdb56">
+<img alt="Issues" src="https://img.shields.io/github/issues/lucasm/findto?color=ff5c5c">
 <img alt="License" src="https://img.shields.io/github/license/lucasm/findto?color=37bf5d">
+<img alt="Patrons" src="https://img.shields.io/badge/patrons -3-1491de">
+<img alt="Discord" src="https://img.shields.io/discord/866829154032812073?color=ff6485">
+
 </p>
 <p align="center">
 The open source Web search app<br>
 </p>
 
 
-## Web search refined
+## Opening the Web search
 
-Findto is a Web search tool made for people that want to do more productive searches. You can use the power of multiple search engines and sources to find anything, with freedom and privacy.
+Findto is a Web search app made to do more productive searches. You can use the power of multiple search engines and sources to find anything, with freedom and privacy.
 
-Findto have the mission to make searches truly free, **putting people in control of the search algorithms** — and not the inverse.
-
-Findto proposes a new Web search experience, being open and collaborative tool, encouraging the diversity and discoverability on the Web.
+Findto have the mission to make searches truly free, **putting people in control of the search algorithms** — and not the inverse. Findto proposes a new Web search experience, being open and collaborative tool, encouraging diversity and discoverability on the Web.
 
 ### Features
 
-- **Search categories** — Quickly search ~ the same term ~ in multiple search engines, or explore categories to find exactly what you are looking for in the most popular sites and apps.
+- **Search Categories** — Quickly search the same term in multiple search engines and categories to find exactly what you are looking for in the most pouplar sources.
 
-- **Voice search** — Universal speech recognition enable use your voice to search anywhere.
+- **Trends** — Trending searches, contents and places nearby you. Local weather info.
 
-- **Auto suggestions** — Type less and do more with autocomplete of search terms.
+- **Privacy Rank** — Get a score of how compromised the search provider is about your privacy.
 
-- **Trends** — Trending searches, contents, places, events and weather nearby you.
+- **Autocomplete** — Auto suggestions of search terms as you type.
 
-- **Privacy rank** — A privacy rank of how committed the search provider are about treating your personal data.
+- **Voice Search** — Universal speech recognition enable use voice to search anywhere.
 
-- **Accessibility** — Hight contrast and dark theme, mutable layout and access keys.
+- **Accessibility** — Hight contrast, dark theme, mutable layout and access keys.
 
-- **Visual search** — COMING SOON.
+- **Visual Search** — COMING SOON.
 
 - **Internationalization** — COMING SOON.
 
 ### Search providers
 
-The search providers available on Findto are chosen by the popularity and relevance for the open Web. Learn more on [search providers](https://github.com/lucasm/findto/wiki/List-of-Search-Providers).
+The [search providers](https://github.com/lucasm/findto/wiki/List-of-Search-Providers) available on Findto are chosen by the popularity and relevance for the open Web.
 
-### Motivations
+### Motivation
 
-How make searches really free? How bring a way to put people in control of the search algorithms — and not the inverse? How privative is this search? What are others searching on this subject? Where else can I search?
+
+The centralization of the Web is not positive. The Web is bigger than the biggest players. Sometimes we forgot how important is bring new digital solutions and experiences, for diversity, inspiration, competition, personal knowledge and even strengthen our democracies.
+
+How make searches really free? How to put people in control of the search algorithms (not the inverse)? How privative is this search? What are others searching on this subject? Where else can I search?
 
 These questions brought Findto to life.
 
-The increasing centralization of the Web is not positive for us. Web is bigger than the biggest players. And is important bring new digital solutions and experiences, to strength diversity, inspiration, competition, personal knowledge and even our democracies.
+## Contribute
 
+Findto is open source. You can [become a supporter on Patreon](https://patreon.com/lucasm) to help maintain active development and get benefits as early Beta access.
 
-## Contributing
+Visit the [Discord channel](https://discord.gg/JgmDXhGP) or [Discussions forum](https://github.com/lucasm/findto/discussions).
 
-You can become a [supporter on Patreon](https://patreon.com/lucasm) to help pay app costs, maintain active development and get benefits as early Beta access.
+For bugs and features, view the [Project board](https://github.com/lucasm/findto/projects) and check opened issues before create a new or send pull requests.
 
-Visit the public [Discussions forum](https://github.com/lucasm/findto/discussions).
+### Special thanks
 
-For bugs and features, view the [Project board](https://github.com/lucasm/findto/projects) and opened issues before create a new or send pull requests.
+ Thanks to Lucas Vasconcelos, Gabriel Monteiro and Carlos Trindade!
 
 
 ## Legal
 
-Findto is a static Web application powered by a Web service that pre-process external data from [amazing APIs](https://github.com/lucasm/findto/wiki/List-of-External-APIs). Read the [Documentation](https://github.com/lucasm/findto/wiki) for details.
+Findto is a front-end Web application powered by a back-end Web service that pre-process data from [external APIs](https://github.com/lucasm/findto/wiki/List-of-External-APIs). Read the [Documentation](https://github.com/lucasm/findto/wiki) for details.
 
 - Source code is MIT licensed
 - [Privacy Policy](https://github.com/lucasm/findto/wiki/Privacy-Policy)
 - [Terms of Service](https://github.com/lucasm/findto/wiki/Terms-of-Service)
-- Author: [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app)
+- Project by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app)
 
-## Thank you!
-
-Findto is maintained by the open source community. Special thanks to: 
-- Lucas Vasconcelos
-- Gabriel Monteiro
-- Carlos Trindade
-
-Happy searches <3
-
+Happy searches!
