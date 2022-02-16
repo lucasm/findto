@@ -858,6 +858,12 @@ const searchParams = {
 			"color": "#468cff"
 		},
 		{
+			"name": "Apple Maps",
+			"action": "http://maps.apple.com/",
+			"query": "q",
+			"color": "#4cb69a"
+		},
+		{
 			"name": "Bing Maps",
 			"action": "https://www.bing.com/maps",
 			"query": "q",
