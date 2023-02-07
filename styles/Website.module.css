@@ -1,0 +1,218 @@
+/* Header */
+.header {
+  position: relative;
+  width: 100%;
+  height: 3.5rem;
+  background: var(--color-white);
+  color: var(--color-black);
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Logo */
+.logo {
+  position: relative;
+  line-height: 3.5rem;
+  margin: 0;
+  background: transparent;
+  font-size: var(--font-size);
+}
+.logo svg {
+  margin: 0 0.75rem -0.5rem 0;
+  width: 1.75rem;
+}
+
+/* Nav */
+.nav {
+  display: flex;
+}
+.nav ul {
+  display: flex;
+}
+.nav li {
+  display: flex;
+  line-height: 0;
+}
+.nav ul li a {
+  margin: 0 0 0 0.5rem;
+  padding: 1.1rem;
+}
+.nav ul li:last-child a {
+  margin-left: 1.5rem;
+  color: var(--color-white);
+  background: var(--color-black);
+  border-radius: var(--radius);
+}
+.nav ul li:last-child a:hover {
+  background: var(--color-black) !important;
+}
+
+/* Container */
+.container {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 6rem 0;
+  width: 100%;
+  max-width: 1024px;
+  background: transparent;
+}
+
+/* PageLayout component */
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.page h1 {
+  padding-bottom: 2.5rem;
+}
+.page p {
+  margin: 0;
+}
+.page h2 {
+  line-height: 1.25;
+  margin-bottom: 2rem;
+}
+.page h3 {
+  margin-bottom: 1.5rem;
+}
+.page p {
+  font-size: var(--font-size-big);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/* App Icon */
+.icon {
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+  margin: 0 0 2rem;
+  background-image: url('/images/findto-icon-black.svg');
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 33.3%;
+  box-shadow: 0 18px 64px 0 rgba(0, 0, 0, 0.1);
+}
+.icon img {
+  height: 12rem;
+}
+
+/* Card Duos */
+.cardDuos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 7rem;
+}
+.cardDuos div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+  text-align: left;
+}
+.cardDuos figure {
+  max-width: 400px;
+}
+.cardDuos h2 {
+  float: left;
+  width: 100%;
+}
+
+/* Card Feats */
+.cardFeats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5rem;
+  padding: 3rem 0 1rem;
+  text-align: left;
+}
+.cardFeats figure {
+  margin-bottom: 2rem;
+  padding: 1.35rem;
+  background: var(--color-white-translucent);
+  height: 74px;
+  width: 74px;
+  border-radius: 33.3%;
+  box-shadow: 0 18px 64px 0 rgba(0, 0, 0, 0.1);
+}
+.cardFeats svg {
+  width: 32px;
+  height: 32px;
+  stroke-width: 2.5px;
+}
+.cardFeats h3 {
+  position: relative;
+}
+.cardFeats p {
+  font-size: var(--font-size-big);
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  margin: 2rem 0;
+  padding: 18px 34px 17px;
+  width: auto;
+  height: auto;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 200px;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+}
+
+/* Footer */
+.footer {
+  background: var(--color-white);
+  height: 5rem;
+  padding: 0 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer ul {
+  display: flex;
+  grid-gap: 2rem;
+}
+.footer p,
+.footer a {
+  font-size: var(--font-size);
+}
+.footer p {
+  margin: 0;
+}
+
+/* Social Icons */
+.socialIcons {
+  display: flex;
+}
+.socialIcons a {
+  padding: 0.3rem 0.6rem;
+  font-size: 0;
+}
+.socialIcons svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  stroke-width: 2.5;
+}
+
+/* Mobile */
+@media only screen and (max-width: 720px) {
+  .header {
+    background-color: red;
+  }
+}

@@ -1,39 +1,30 @@
 {
-  "name": "findto",
-  "version": "1.0.0",
-  "description": "A search tool for the Web diversity.",
-  "main": "index.html",
+  "name": "findto-app",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lucasmezs/findto.git"
-  },
-  "keywords": [
-    "web",
-    "search",
-    "finder",
-    "websearch"
-  ],
-  "author": "Lucas Menezes",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/lucasmezs/findto/issues"
-  },
-  "homepage": "https://github.com/lucasmezs/findto#readme",
-  "devDependencies": {
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^6.2.0",
-    "mini-css-extract-plugin": "^2.1.0",
-    "style-loader": "^3.1.0",
-    "svg-url-loader": "^7.1.1",
-    "webpack": "^5.45.1",
-    "webpack-cli": "^4.7.2"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "feather-icons": "^4.28.0",
-    "gaugeJS": "^1.3.7"
+    "axios": "^0.27.2",
+    "next": "^13.1.6",
+    "next-pwa": "^5.5.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-feather": "^2.0.9",
+    "rss-parser": "^3.12.0",
+    "swr": "^2.0.3",
+    "woeid": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.30",
+    "@types/react": "^18.0.8",
+    "eslint": "8.23.0",
+    "eslint-config-next": "^13.1.6",
+    "prettier": "2.7.1",
+    "typescript": "^4.6.4"
   }
 }

@@ -1,0 +1,232 @@
+:root {
+  font-size: 16px;
+  --active-color: #000;
+  --text-color: #000;
+  --color-white: #fff;
+  --color-gray: #717171;
+  --color-grey: #f2f2f2;
+  --color-black: #000;
+  --color-dark: #313340;
+  --color-green: #0ae7ab;
+  --color-yellow: #fff45b;
+  --color-red: #ff6370;
+  --color-purple: #b983ff;
+  --color-blue: #56bbff;
+  --color-white-translucent: rgba(255, 255, 255, 0.2);
+  --color-white-translucent-2: rgba(255, 255, 255, 0.25);
+  --color-black-translucent: rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%);
+  --opacity: 0.6;
+  --font: 'Source Code Pro', sans-serif;
+  --font-size: 1rem;
+  --font-size-small: 0.85rem;
+  --font-size-big: 1.2rem;
+  --radius: 0.75rem;
+  --radius-full: 75rem;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font);
+  outline-color: var(--color-black);
+}
+
+a,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+select,
+option {
+  font-weight: bold;
+  font-family: var(--font);
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+header button {
+  font-size: 0;
+  background: transparent;
+  border: none;
+  padding: 1rem;
+  opacity: var(--opacity);
+}
+header button:hover,
+header button:focus {
+  opacity: 1;
+}
+
+p {
+  font-size: var(--font-size);
+}
+h1 {
+  font-size: 4.5rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+
+article {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 800px;
+}
+article h2 {
+  margin: 4rem 0 1.5rem;
+}
+article ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+article li {
+  margin-bottom: 1rem;
+}
+article hr {
+  margin-top: 2rem;
+  border: 0;
+}
+
+/* Transitions */
+a,
+#logo,
+#nav button,
+#searchApp,
+#searchApp a,
+#searchApp button,
+#searchApp input {
+  transition: hover, background-color 0.2s;
+  -webkit-transition: hover, background-color 0.2s;
+  -moz-transition: hover, background-color 0.2s;
+  -ms-transition: hover, background-color 0.2s;
+  -o-transition: hover, background-color 0.2s;
+}
+
+/* Colors Animation */
+.colors {
+  animation: colorsAnimation 60s ease alternate infinite;
+}
+@keyframes colorsAnimation {
+  0% {
+    background: var(--color-green);
+  }
+  25% {
+    background: var(--color-yellow);
+  }
+  50% {
+    background: var(--color-red);
+  }
+  75% {
+    background: var(--color-purple);
+  }
+  100% {
+    background: var(--color-blue);
+  }
+}
+.colorsSvg {
+  animation: colorsAnimationSvg 60s ease alternate infinite;
+}
+@keyframes colorsAnimationSvg {
+  0% {
+    fill: var(--color-green);
+  }
+  25% {
+    fill: var(--color-yellow);
+  }
+  50% {
+    fill: var(--color-red);
+  }
+  75% {
+    fill: var(--color-purple);
+  }
+  100% {
+    fill: var(--color-blue);
+  }
+}
+
+/* Select */
+::-moz-selection {
+  color: var(--color-white);
+  background: var(--color-black);
+}
+::selection {
+  color: var(--color-white);
+  background: var(--color-black);
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari */
+  color: var(--color-gray);
+  opacity: 1;
+}
+/* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+  color: var(--color-gray);
+}
+/* Microsoft Edge */
+::-ms-input-placeholder {
+  color: var(--color-gray);
+}
+
+.dark {
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
+/* Trends  */
+#trends ul li:nth-child(1) button {
+  font-size: 3rem;
+}
+#trends ul li:nth-child(2) button {
+  font-size: 2.4rem;
+}
+#trends ul li:nth-child(3) button {
+  font-size: 2rem;
+}
+#trends ul li:nth-child(4) button {
+  font-size: 1.8rem;
+}
+#trends ul li:nth-child(5) button {
+  font-size: 1.7rem;
+}
+#trends ul li:nth-child(6) button {
+  font-size: 1.6rem;
+}
+#trends ul li:nth-child(7) button {
+  font-size: 1.5rem;
+}
+#trends ul li:nth-child(8) button {
+  font-size: 1.4rem;
+}
+#trends ul li:nth-child(9) button {
+  font-size: 1.3rem;
+}

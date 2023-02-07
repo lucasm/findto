@@ -1,0 +1,48 @@
+{
+  "name": "Findto",
+  "short_name": "Findto",
+  "description": "Decentralized Search App",
+  "start_url": "/?utm_source=pwa",
+  "id": "/?utm_source=pwa",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "orientation": "portrait-primary",
+  "shortcuts": [
+    {
+      "name": "Search",
+      "url": "/",
+      "description": "Search decentralized on the web",
+      "icons": [{ "src": "/images/today.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Trends",
+      "url": "/",
+      "description": "Today's popular search topics",
+      "icons": [{ "src": "/images/today.png", "sizes": "192x192" }]
+    }
+  ],
+  "icons": [
+    {
+      "src": "/images/icon-vector.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/images/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/images/icon-maskable.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
