@@ -5,6 +5,7 @@ import SvgLogo from '../components/website/SvgLogo'
 import { useState } from 'react'
 import { useSearch } from '../contexts/SearchContext'
 import { normalizeId } from '../utils/formats'
+import SelectLanguage from './SelectLanguage'
 
 export default function AppHeader() {
   const {
@@ -16,13 +17,12 @@ export default function AppHeader() {
     category,
     setCategory,
     color,
-    setTrends,
     refSearchTabs,
     refSearchInput,
   } = useSearch()
+
   const [menuActive, setMenuActive] = useState<boolean>(false)
 
-  // Theme Color
   function toggleTheme() {
     if (theme == 'light') {
       setTheme('dark')
@@ -33,7 +33,6 @@ export default function AppHeader() {
     }
     console.log(theme)
   }
-  // Theme Layout
   function toggleLayout() {
     if (layout == '1') {
       setLayout('2')
@@ -44,19 +43,18 @@ export default function AppHeader() {
     }
     console.log(layout)
   }
-  // Menu
   function toggleMenu() {
     setMenuActive(!menuActive)
+    refSearchInput.current.focus()
   }
-  // Category
+
   function handleCategory(category: string, name_trends: string) {
     setCategory(category)
     window.localStorage.setItem('category', category)
-    setTrends(name_trends)
 
     refSearchTabs?.current?.['tab_' + category].click()
   }
-  function setCategoryIcon(category: string) {
+  function handleCategoryIcon(category: string) {
     switch (category) {
       case 'Web':
         return <Icon.Globe />
@@ -108,8 +106,9 @@ export default function AppHeader() {
         <SvgLogo fill={color} />
         Findto
       </Link>
-      <nav className={Style.nav} id="nav">
-        {/* Categories */}
+
+      {/* Categories */}
+      <nav id="nav" className={Style.nav}>
         <ul>
           {data?.categories?.map(
             (item: any, index: number) =>
@@ -119,7 +118,7 @@ export default function AppHeader() {
                     className={category == item.name ? Style.activeLink : null}
                     onClick={() => handleCategory(item.name, item.name_trends)}
                     name={normalizeId(item.name)}>
-                    {setCategoryIcon(item.name)}
+                    {handleCategoryIcon(item.name)}
                     {item.name_translated ? item.name_translated : item.name}
                   </button>
                 </li>
@@ -132,36 +131,46 @@ export default function AppHeader() {
       <div className={Style.iconSettings}>
         <button onClick={toggleMenu}>
           <Icon.Settings />
-          Settings
+          {data?.t?.settings ?? 'Settings'}
         </button>
       </div>
 
       {/* Settings Popup */}
-      <div className={menuActive ? Style.menuBox + ' ' + Style.menuBoxActive : Style.menuBox}>
+      <div className={menuActive ? Style.menuPopup + ' ' + Style.menuPopupActive : Style.menuPopup}>
         <div className={Style.menu}>
-          <button className={Style.close} onClick={toggleMenu}>
+          <button onClick={toggleMenu} className={Style.menuClose}>
             <Icon.X />
             Close
           </button>
 
-          <h3>Settings</h3>
+          <h3>{data?.t?.settings ?? 'Settings'}</h3>
 
+          <h4>{data?.t?.theme ?? 'Theme'}</h4>
           <div className={Style.menuBlock}>
-            <h4>Appearance</h4>
-
-            <button onClick={toggleLayout}>
-              {layout == '1' ? <Icon.Grid /> : <Icon.Layout />}
-              {layout == '1' ? 'Icons' : 'List'}
-            </button>
-
             <button onClick={toggleTheme}>
-              {theme == 'dark' ? <Icon.Moon /> : <Icon.Sun />}
-              {theme == 'dark' ? 'Dark' : 'Light'}
+              {theme == 'light' ? <Icon.Moon /> : <Icon.Sun />}
+              {theme == 'light' ? 'Dark' : 'Light'}
+            </button>
+            <button onClick={toggleLayout}>
+              {layout == '2' ? <Icon.Grid /> : <Icon.Layout />}
+              {layout == '2' ? 'Icons' : 'Menu'}
             </button>
           </div>
 
+          <h4>{data?.t?.language ?? 'Language'}</h4>
           <div className={Style.menuBlock}>
-            <h4>Language</h4>
+            <SelectLanguage />
+          </div>
+
+          <h4>{data?.t?.contribute ?? 'Contribute'}</h4>
+          <div className={Style.menuBlock}>
+            <a href="https://github.com/sponsors/lucasm" target="_blank" rel="noopener noreferrer">
+              <Icon.Heart />
+              Sponsor
+            </a>
+            <button>
+              <Icon.MessageSquare /> Feedback
+            </button>
           </div>
         </div>
       </div>

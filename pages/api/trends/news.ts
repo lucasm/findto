@@ -12,7 +12,9 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
     let url =
       'https://newsapi.org/v2/top-headlines?country=' +
       String(country).toLowerCase() +
-      '&apiKey=b0593413b4c848afb4a1bedeaf90cfba&pageSize=11'
+      '&apiKey=' +
+      process.env.NEXT_API_KEY_NEWSAPI +
+      '&pageSize=11'
 
     await axios
       .get(url)

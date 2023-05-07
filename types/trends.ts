@@ -1,9 +1,10 @@
 export interface ITrends {
   credits_title: string
   credits_url: string
-  data: IItem[]
+  data: ITrendsItem[]
 }
-export interface IItem {
+export interface ITrendsItem {
   title: string
-  url: string
+  url?: string
+  rank?: number
 }

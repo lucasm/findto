@@ -1,10 +1,23 @@
 {
   "country": "Brasil",
   "country_code": "BR",
+  "t": {
+    "trends": "Popular",
+    "settings": "Ajustes",
+    "theme": "Tema",
+    "language": "Idioma",
+    "powered": "Fornecido por",
+    "about": "Sobre",
+    "contribute": "Contribua",
+    "terms": "Termos",
+    "privacy": "Privacidade",
+    "copyright": "Findto é um aplicativo de busca descentralizada na web com IA, gratuito e de código aberto, que redireciona para fontes originais externas e respeita a sua privacidade. Todos os direitos reservados as marcas registradas. Feito por",
+    "about_title": "A nova busca na web",
+    "contribute_title": "Contribua com o Findto"
+  },
   "categories": [
     {
       "name": "Web",
-      "name_trends": "Popular na web",
       "active": true,
       "data": [
         {
@@ -186,21 +199,12 @@
           ]
         },
         {
-          "name": "Mojeek",
-          "action": "https://www.mojeek.com/search",
+          "name": "Ecosia",
+          "action": "https://www.ecosia.org/search",
           "query": "q",
-          "color": "#9cdb5c",
-          "child": [
-            {
-              "name": "Images",
-              "additional": ["fmt", "images"]
-            },
-            {
-              "name": "News",
-              "additional": ["fmt", "news"]
-            }
-          ]
+          "color": "#74d47b"
         },
+
         {
           "name": "Yandex",
           "action": "https://www.yandex.com/search/",
@@ -270,6 +274,22 @@
           ]
         },
         {
+          "name": "Mojeek",
+          "action": "https://www.mojeek.com/search",
+          "query": "q",
+          "color": "#9cdb5c",
+          "child": [
+            {
+              "name": "Images",
+              "additional": ["fmt", "images"]
+            },
+            {
+              "name": "News",
+              "additional": ["fmt", "news"]
+            }
+          ]
+        },
+        {
           "name": "Info",
           "action": "https://www.info.com/serp",
           "query": "q",
@@ -296,46 +316,6 @@
           "color": "#ff6161"
         },
         {
-          "name": "searx",
-          "action": "https://searx.xyz/",
-          "query": "q",
-          "color": "#4ddfa5",
-          "child": [
-            {
-              "name": "Images",
-              "additional": ["categories", "images"]
-            },
-            {
-              "name": "Videos",
-              "additional": ["categories", "videos"]
-            },
-            {
-              "name": "News",
-              "additional": ["categories", "news"]
-            },
-            {
-              "name": "Files",
-              "additional": ["categories", "files"]
-            },
-            {
-              "name": "IT",
-              "additional": ["categories", "it"]
-            },
-            {
-              "name": "Maps",
-              "additional": ["categories", "map"]
-            },
-            {
-              "name": "Music",
-              "additional": ["categories", "music"]
-            },
-            {
-              "name": "Science",
-              "additional": ["categories", "science"]
-            }
-          ]
-        },
-        {
           "name": "Gibiru",
           "action": "https://gibiru.com/results.html",
           "query": "q",
@@ -344,320 +324,32 @@
       ]
     },
     {
-      "name": "Videos",
-      "name_translated": "Vídeos",
-      "name_trends": "Produções populares",
+      "name": "AI",
+      "name_translated": "IA",
       "active": true,
       "data": [
         {
-          "name": "YouTube",
-          "action": "https://www.youtube.com/results/",
-          "query": "search_query",
-          "color": "#ff5e5e"
-        },
-        {
-          "name": "TikTok",
-          "action": "https://www.tiktok.com/search",
+          "name": "ChatGPT",
+          "action": "https://chat.openai.com/",
           "query": "q",
-          "color": "#ff6986"
+          "color": "#0dcfa0"
         },
         {
-          "name": "Twitch",
-          "action": "https://www.twitch.tv/search",
-          "query": "term",
-          "color": "#aa72ff"
-        },
-        {
-          "name": "Globoplay",
-          "action": "https://globoplay.globo.com/busca/",
+          "name": "Perplexity",
+          "action": "https://www.perplexity.ai/",
           "query": "q",
-          "color": "#ff6248"
+          "color": "#c4c4c4"
         },
         {
-          "name": "Netflix",
-          "action": "https://www.netflix.com/search",
+          "name": "Talk to Books",
+          "action": "https://books.google.com/talktobooks/query",
           "query": "q",
-          "color": "#ff525b"
-        },
-        {
-          "name": "Prime Video",
-          "action": "https://www.primevideo.com/region/na/search/",
-          "query": "phrase",
-          "color": "#33bcea"
-        },
-        {
-          "name": "Disney+",
-          "action": "https://disneyplus.com/",
-          "query": "q",
-          "color": "#5a7dff"
-        },
-        {
-          "name": "HBO Max",
-          "action": "https://play.hbomax.com/search",
-          "query": "q",
-          "color": "#9181f8"
-        },
-        {
-          "name": "Crunchyroll",
-          "action": "https://www.crunchyroll.com/pt-br/search",
-          "query": "q",
-          "color": "#ff944c"
-        },
-        {
-          "name": "Libreflix",
-          "action": "https://libreflix.org/busca/",
-          "query": false,
-          "color": "#3ec2e2"
-        },
-        {
-          "name": "Dailymotion",
-          "action": "https://www.dailymotion.com/search/",
-          "query": false,
-          "color": "#ddd"
-        },
-        {
-          "name": "Vimeo",
-          "action": "https://vimeo.com/search",
-          "query": "q",
-          "color": "#2fc6ff"
-        },
-        {
-          "name": "IMDb",
-          "action": "https://www.imdb.com/find/",
-          "query": "q",
-          "color": "#f5c518"
-        },
-        {
-          "name": "TMDB",
-          "action": "https://www.themoviedb.org/search",
-          "query": "query",
-          "color": "#46c2c0"
-        },
-        {
-          "name": "Letterboxd",
-          "action": "https://letterboxd.com/search/avril+lavigne/",
-          "query": false,
-          "color": "#6ee373"
-        },
-        {
-          "name": "Plex",
-          "action": "https://app.plex.tv/desktop#!/search",
-          "query": "query",
-          "color": "#ffa334"
-        }
-      ]
-    },
-    {
-      "name": "Images",
-      "name_translated": "Imagens",
-      "name_trends": "Imagens em alta",
-      "active": true,
-      "data": [
-        {
-          "name": "Pinterest",
-          "action": "https://br.pinterest.com/search/pins/",
-          "query": "q",
-          "color": "#ff5860"
-        },
-        {
-          "name": "GIPHY",
-          "action": "https://giphy.com/search/",
-          "query": false,
-          "color": "#8b84ff"
-        },
-        {
-          "name": "Flickr",
-          "action": "https://www.flickr.com/search",
-          "query": "q",
-          "color": "#ff73bc"
-        },
-        {
-          "name": "Unsplash",
-          "action": "https://unsplash.com/s/photos/",
-          "query": false,
-          "color": "#eee"
-        },
-        {
-          "name": "Openverse",
-          "action": "https://wordpress.org/openverse/search/",
-          "query": "q",
-          "color": "#fde034"
-        },
-        {
-          "name": "Pexels",
-          "action": "https://www.pexels.com/search/",
-          "query": false,
-          "color": "#35dfbd"
-        },
-        {
-          "name": "Freepik",
-          "action": "https://www.freepik.com/search",
-          "query": "query",
-          "color": "#4296ff"
-        },
-        {
-          "name": "Pixabay",
-          "action": "https://pixabay.com/photos/search/",
-          "query": false,
-          "color": "#5ee887"
-        },
-        {
-          "name": "Adobe Stock",
-          "action": "https://stock.adobe.com/search",
-          "query": "k",
-          "color": "#ddd"
-        },
-        {
-          "name": "Shutterstock",
-          "action": "https://www.shutterstock.com/search",
-          "query": "searchterm",
-          "color": "#ff6055"
-        },
-        {
-          "name": "Getty Images",
-          "action": "https://www.gettyimages.com/photos/",
-          "query": false,
-          "color": "#FAE9CD"
-        },
-        {
-          "name": "SmugMug",
-          "action": "https://www.smugmug.com/search/",
-          "query": "q",
-          "color": "#b6ff23"
-        },
-        {
-          "name": "500px",
-          "action": "https://500px.com/search",
-          "query": "q",
-          "color": "#0099e5"
-        },
-        {
-          "name": "Imgur",
-          "action": "https://imgur.com/search",
-          "query": "q",
-          "color": "#3cea99"
-        },
-        {
-          "name": "DeviantArt",
-          "action": "https://www.deviantart.com/",
-          "query": "q",
-          "color": "#37ffbe"
-        },
-        {
-          "name": "Dribbble",
-          "action": "https://dribbble.com/search",
-          "query": "q",
-          "color": "#f082ac"
-        },
-        {
-          "name": "Behance",
-          "action": "https://www.behance.net/search",
-          "query": "search",
-          "color": "#377cff"
-        }
-      ]
-    },
-    {
-      "name": "Music",
-      "name_translated": "Músicas",
-      "name_trends": "Músicas em alta",
-      "active": true,
-      "data": [
-        {
-          "name": "Spotify",
-          "action": "https://open.spotify.com/search/",
-          "query": false,
-          "color": "#58e087"
-        },
-        {
-          "name": "SoundCloud",
-          "action": "https://soundcloud.com/search",
-          "query": "q",
-          "color": "#ff7d3e"
-        },
-        {
-          "name": "Apple Music",
-          "action": "https://music.apple.com/search",
-          "query": "term",
-          "color": "#ff6a7a"
-        },
-        {
-          "name": "YouTube Music",
-          "action": "https://music.youtube.com/search",
-          "query": "q",
-          "color": "#ff5454"
-        },
-        {
-          "name": "Letras",
-          "action": "https://www.letras.mus.br/",
-          "query": "q",
-          "color": "#dcdf3e"
-        },
-        {
-          "name": "Vagalume",
-          "action": "https://www.vagalume.com.br/search",
-          "query": "q",
-          "color": "#ccf230"
-        },
-        {
-          "name": "Genius",
-          "action": "https://genius.com/search",
-          "query": "q",
-          "color": "#f5f575"
-        },
-        {
-          "name": "Musixmatch",
-          "action": "https://www.musixmatch.com/search/",
-          "query": false,
-          "color": "#ff7171"
-        },
-        {
-          "name": "Lastfm",
-          "action": "https://www.last.fm/search",
-          "query": "q",
-          "color": "#ff5151"
-        },
-        {
-          "name": "TuneIn",
-          "action": "https://tunein.com/search/",
-          "query": "query",
-          "color": "#36d7cd"
-        },
-        {
-          "name": "iHeart",
-          "action": "https://www.iheart.com/search/",
-          "query": "q",
-          "color": "#ff606b"
-        },
-        {
-          "name": "Deezer",
-          "action": "https://www.deezer.com/search/",
-          "query": false,
-          "color": "#eee"
-        },
-        {
-          "name": "TIDAL",
-          "action": "https://listen.tidal.com/search",
-          "query": "q",
-          "color": "#eee"
-        },
-        {
-          "name": "Bandcamp",
-          "action": "https://bandcamp.com/search",
-          "query": "q",
-          "color": "#4ab1cd"
-        },
-        {
-          "name": "Hype Machine",
-          "action": "http://hypem.com/search/",
-          "query": false,
-          "color": "#9ed664"
+          "color": "#ff6e63"
         }
       ]
     },
     {
       "name": "Social",
-      "name_trends": "Tópicos em alta",
       "active": true,
       "data": [
         {
@@ -741,7 +433,7 @@
           "name": "VK",
           "action": "https://vk.com/search",
           "query": "q",
-          "color": "#55a4ff"
+          "color": "#3794ff"
         },
         {
           "name": "Myspace",
@@ -752,9 +444,323 @@
       ]
     },
     {
+      "name": "Videos",
+      "name_translated": "Vídeo",
+      "active": true,
+      "data": [
+        {
+          "name": "YouTube",
+          "action": "https://www.youtube.com/results/",
+          "query": "search_query",
+          "color": "#ff5e5e"
+        },
+        {
+          "name": "TikTok",
+          "action": "https://www.tiktok.com/search",
+          "query": "q",
+          "color": "#ff6986"
+        },
+        {
+          "name": "Twitch",
+          "action": "https://www.twitch.tv/search",
+          "query": "term",
+          "color": "#aa72ff"
+        },
+        {
+          "name": "Globoplay",
+          "action": "https://globoplay.globo.com/busca/",
+          "query": "q",
+          "color": "#ff6248"
+        },
+        {
+          "name": "Netflix",
+          "action": "https://www.netflix.com/search",
+          "query": "q",
+          "color": "#ff525b"
+        },
+        {
+          "name": "Prime Video",
+          "action": "https://www.primevideo.com/region/na/search/",
+          "query": "phrase",
+          "color": "#33bcea"
+        },
+        {
+          "name": "Disney+",
+          "action": "https://disneyplus.com/",
+          "query": "q",
+          "color": "#5a7dff"
+        },
+        {
+          "name": "HBO Max",
+          "action": "https://play.hbomax.com/search",
+          "query": "q",
+          "color": "#9181f8"
+        },
+        {
+          "name": "Apple TV+",
+          "action": "https://tv.apple.com/search",
+          "query": "term",
+          "color": "#eee"
+        },
+        {
+          "name": "Crunchyroll",
+          "action": "https://www.crunchyroll.com/pt-br/search",
+          "query": "q",
+          "color": "#ff944c"
+        },
+        {
+          "name": "Libreflix",
+          "action": "https://libreflix.org/busca/",
+          "query": false,
+          "color": "#3ec2e2"
+        },
+        {
+          "name": "Dailymotion",
+          "action": "https://www.dailymotion.com/search/",
+          "query": false,
+          "color": "#ddd"
+        },
+        {
+          "name": "Vimeo",
+          "action": "https://vimeo.com/search",
+          "query": "q",
+          "color": "#2fc6ff"
+        },
+        {
+          "name": "IMDb",
+          "action": "https://www.imdb.com/find/",
+          "query": "q",
+          "color": "#f5c518"
+        },
+        {
+          "name": "TMDB",
+          "action": "https://www.themoviedb.org/search",
+          "query": "query",
+          "color": "#46c2c0"
+        },
+        {
+          "name": "Letterboxd",
+          "action": "https://letterboxd.com/search/avril+lavigne/",
+          "query": false,
+          "color": "#6ee373"
+        },
+        {
+          "name": "Plex",
+          "action": "https://app.plex.tv/desktop#!/search",
+          "query": "query",
+          "color": "#ffa334"
+        }
+      ]
+    },
+    {
+      "name": "Images",
+      "name_translated": "Imagem",
+      "active": true,
+      "data": [
+        {
+          "name": "Pinterest",
+          "action": "https://br.pinterest.com/search/pins/",
+          "query": "q",
+          "color": "#ff6970"
+        },
+        {
+          "name": "Flickr",
+          "action": "https://www.flickr.com/search",
+          "query": "q",
+          "color": "#ff73bc"
+        },
+        {
+          "name": "Unsplash",
+          "action": "https://unsplash.com/s/photos/",
+          "query": false,
+          "color": "#eee"
+        },
+        {
+          "name": "Pexels",
+          "action": "https://www.pexels.com/search/",
+          "query": false,
+          "color": "#1ac7a5"
+        },
+        {
+          "name": "GIPHY",
+          "action": "https://giphy.com/search/",
+          "query": false,
+          "color": "#8b84ff"
+        },
+        {
+          "name": "Openverse",
+          "action": "https://openverse.org/search/",
+          "query": "q",
+          "color": "#fde034"
+        },
+        {
+          "name": "Freepik",
+          "action": "https://www.freepik.com/search",
+          "query": "query",
+          "color": "#4296ff"
+        },
+        {
+          "name": "Pixabay",
+          "action": "https://pixabay.com/photos/search/",
+          "query": false,
+          "color": "#5ee887"
+        },
+        {
+          "name": "Adobe Stock",
+          "action": "https://stock.adobe.com/search",
+          "query": "k",
+          "color": "#ddd"
+        },
+        {
+          "name": "Shutterstock",
+          "action": "https://www.shutterstock.com/search",
+          "query": "searchterm",
+          "color": "#ff6055"
+        },
+        {
+          "name": "Getty Images",
+          "action": "https://www.gettyimages.com/photos/",
+          "query": false,
+          "color": "#FAE9CD"
+        },
+        {
+          "name": "SmugMug",
+          "action": "https://www.smugmug.com/search/",
+          "query": "q",
+          "color": "#b9e75d"
+        },
+        {
+          "name": "500px",
+          "action": "https://500px.com/search",
+          "query": "q",
+          "color": "#0099e5"
+        },
+        {
+          "name": "Imgur",
+          "action": "https://imgur.com/search",
+          "query": "q",
+          "color": "#3cea99"
+        },
+        {
+          "name": "DeviantArt",
+          "action": "https://www.deviantart.com/",
+          "query": "q",
+          "color": "#37ffbe"
+        },
+        {
+          "name": "Dribbble",
+          "action": "https://dribbble.com/search",
+          "query": "q",
+          "color": "#f082ac"
+        },
+        {
+          "name": "Behance",
+          "action": "https://www.behance.net/search",
+          "query": "search",
+          "color": "#377cff"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "name_translated": "Áudio",
+      "active": true,
+      "data": [
+        {
+          "name": "Spotify",
+          "action": "https://open.spotify.com/search/",
+          "query": false,
+          "color": "#58e087"
+        },
+        {
+          "name": "SoundCloud",
+          "action": "https://soundcloud.com/search",
+          "query": "q",
+          "color": "#ff7d3e"
+        },
+        {
+          "name": "Apple Music",
+          "action": "https://music.apple.com/search",
+          "query": "term",
+          "color": "#ff6a7a"
+        },
+        {
+          "name": "YouTube Music",
+          "action": "https://music.youtube.com/search",
+          "query": "q",
+          "color": "#ff5454"
+        },
+        {
+          "name": "Deezer",
+          "action": "https://www.deezer.com/search/",
+          "query": false,
+          "color": "#eee"
+        },
+        {
+          "name": "Letras",
+          "action": "https://www.letras.mus.br/",
+          "query": "q",
+          "color": "#dcdf3e"
+        },
+        {
+          "name": "Vagalume",
+          "action": "https://www.vagalume.com.br/search",
+          "query": "q",
+          "color": "#ccf230"
+        },
+        {
+          "name": "Genius",
+          "action": "https://genius.com/search",
+          "query": "q",
+          "color": "#f5f575"
+        },
+        {
+          "name": "Musixmatch",
+          "action": "https://www.musixmatch.com/search/",
+          "query": false,
+          "color": "#ff7171"
+        },
+        {
+          "name": "Last.fm",
+          "action": "https://www.last.fm/search",
+          "query": "q",
+          "color": "#ff5151"
+        },
+        {
+          "name": "TuneIn",
+          "action": "https://tunein.com/search/",
+          "query": "query",
+          "color": "#36d7cd"
+        },
+        {
+          "name": "TIDAL",
+          "action": "https://listen.tidal.com/search",
+          "query": "q",
+          "color": "#eee"
+        },
+        {
+          "name": "Bandcamp",
+          "action": "https://bandcamp.com/search",
+          "query": "q",
+          "color": "#4ab1cd"
+        },
+        {
+          "name": "Hype Machine",
+          "action": "http://hypem.com/search/",
+          "query": false,
+          "color": "#9ed664"
+        },
+        {
+          "name": "iHeart",
+          "action": "https://www.iheart.com/search/",
+          "query": "q",
+          "color": "#ff606b"
+        }
+      ]
+    },
+    {
       "name": "Shopping",
       "name_translated": "Compras",
-      "name_trends": "Compras em alta",
       "active": true,
       "data": [
         {
@@ -794,6 +800,12 @@
           "color": "#ff3f66"
         },
         {
+          "name": "Casas Bahia",
+          "action": "https://www.casasbahia.com.br/",
+          "query": false,
+          "color": "#638cff"
+        },
+        {
           "name": "Shopee",
           "action": "https://shopee.com.br/search",
           "query": "keyword",
@@ -804,12 +816,6 @@
           "action": "https://www.aliexpress.com/wholesale",
           "query": "SearchText",
           "color": "#ff6363"
-        },
-        {
-          "name": "Casas Bahia",
-          "action": "https://www.casasbahia.com.br/",
-          "query": false,
-          "color": "#638cff"
         },
         {
           "name": "Netshoes",
@@ -869,7 +875,6 @@
     },
     {
       "name": "Local",
-      "name_trends": "Eventos em alta",
       "active": true,
       "data": [
         {
@@ -891,76 +896,69 @@
           "color": "#37c3e3"
         },
         {
+          "name": "Airbnb",
+          "action": "https://www.airbnb.com/s/",
+          "query": false,
+          "color": "#ff607d"
+        },
+        {
+          "name": "Tripadvisor",
+          "action": "https://www.tripadvisor.com/Search",
+          "query": "q",
+          "color": "#40d59c"
+        },
+        {
+          "name": "Booking",
+          "action": "https://www.booking.com/searchresults.pt-br.html",
+          "query": "ss",
+          "color": "#2681ff"
+        },
+        {
+          "name": "Sympla",
+          "action": "https://www.sympla.com.br/eventos",
+          "query": "s",
+          "color": "#5bbcff"
+        },
+        {
+          "name": "Ingresso.com",
+          "action": "https://www.ingresso.com/busca/resultado",
+          "query": "q",
+          "color": "#ff963f"
+        },
+        {
+          "name": "Yelp",
+          "action": "https://www.yelp.com.br/search",
+          "query": "find_desc",
+          "color": "#ff5454"
+        },
+        {
           "name": "Foursquare",
           "action": "https://foursquare.com/explore",
           "query": "q",
           "color": "#6388f3"
         },
         {
-          "name": "Tripadvisor",
-          "action": "https://www.tripadvisor.com/Search",
-          "query": "q",
-          "color": "#34e0a1"
-        },
-        {
-          "name": "Yelp",
-          "action": "https://www.yelp.com/search",
-          "query": "find_desc",
-          "color": "#ff5454"
-        },
-        {
-          "name": "Booking",
-          "action": "https://www.booking.com/",
+          "name": "Mapquest",
+          "action": "https://www.mapquest.com/search/",
           "query": false,
-          "color": "#2681ff"
-        },
-        {
-          "name": "Airbnb",
-          "action": "https://www.airbnb.com/s/",
-          "query": false,
-          "color": "#FF5A5F"
-        },
-        {
-          "name": "Moovit",
-          "action": "https://moovitapp.com/",
-          "query": "from",
-          "color": "#ff7f58"
-        },
-        {
-          "name": "Uber",
-          "action": "https://uber.com/",
-          "query": "q",
-          "color": "#eee"
+          "color": "#5ec279"
         },
         {
           "name": "HERE WeGo",
           "action": "https://wego.here.com/search/",
           "query": false,
           "color": "#01b6b2"
-        },
-        {
-          "name": "Mapquest",
-          "action": "https://www.mapquest.com/search/results",
-          "query": "query",
-          "color": "#c6de63"
         }
       ]
     },
     {
       "name": "Academic",
       "name_translated": "Acadêmico",
-      "name_trends": "Tópicos em alta",
       "active": true,
       "data": [
         {
-          "name": "Oasisbr",
-          "action": "https://oasisbr.ibict.br/vufind/Search/Results",
-          "query": "lookfor",
-          "color": "#79c765"
-        },
-        {
-          "name": "Wikipedia",
-          "action": "https://en.wikipedia.org/w/index.php",
+          "name": "Wikipédia",
+          "action": "https://pt.wikipedia.org/w/index.php",
           "query": "search",
           "color": "#ddd"
         },
@@ -971,34 +969,40 @@
           "color": "#649fff"
         },
         {
+          "name": "Oasisbr",
+          "action": "https://oasisbr.ibict.br/vufind/Search/Results",
+          "query": "lookfor",
+          "color": "#8fd87c"
+        },
+        {
+          "name": "Periódicos",
+          "action": "https://capes-primo.ezl.periodicos.capes.gov.br/primo-explore/search?tab=default_tab&search_scope=default_scope&vid=CAPES_V3&lang=pt_BR&offset=0&query=any,contains,",
+          "query": false,
+          "color": "#ff6a81"
+        },
+        {
           "name": "SciELO",
           "action": "https://search.scielo.org/",
           "query": "q",
-          "color": "#ff707a"
+          "color": "#ff6b6b"
+        },
+        {
+          "name": "JSTOR",
+          "action": "https://www.jstor.org/action/doBasicSearch",
+          "query": "Query",
+          "color": "#ff6764"
         },
         {
           "name": "ResearchGate",
           "action": "https://www.researchgate.net/search",
           "query": "q",
-          "color": "#00e1cf"
+          "color": "#00d6c5"
         },
         {
-          "name": "Academia",
-          "action": "https://www.academia.edu/people/search",
+          "name": "CORE",
+          "action": "https://core.ac.uk/search",
           "query": "q",
-          "color": "#eee"
-        },
-        {
-          "name": "Brainly",
-          "action": "https://brainly.com.br/app/ask",
-          "query": "q",
-          "color": "#60d399"
-        },
-        {
-          "name": "Wolfram Alpha",
-          "action": "https://www.wolframalpha.com/input",
-          "query": "i",
-          "color": "#ff9c56"
+          "color": "#ff9c48"
         },
         {
           "name": "PLOS ONE",
@@ -1008,10 +1012,9 @@
         },
         {
           "name": "arXiv",
-          "action": "https://arxiv.org/search/",
-          "query": "query",
-          "color": "#ff5959",
-          "additional": ["searchtype", "all"]
+          "action": "https://arxiv.org/search/?searchtype=all&query=",
+          "query": false,
+          "color": "#ff5959"
         },
         {
           "name": "ScienceDirect",
@@ -1020,10 +1023,10 @@
           "color": "#ff8d38"
         },
         {
-          "name": "CORE",
-          "action": "https://core.ac.uk/search",
-          "query": "q",
-          "color": "#ff9c48"
+          "name": "Springer",
+          "action": "https://link.springer.com/search",
+          "query": "query",
+          "color": "#ffa44e"
         },
         {
           "name": "BASE",
@@ -1032,16 +1035,46 @@
           "color": "#ffc457"
         },
         {
-          "name": "Golden",
-          "action": "https://golden.com/search/",
+          "name": "Mendeley",
+          "action": "https://www.mendeley.com/search/",
+          "query": "query",
+          "color": "#ff7173"
+        },
+        {
+          "name": "Scopus",
+          "action": "https://www.scopus.com/results/authorNamesList.uri?s=AUTHLASTNAME&st1=",
           "query": false,
-          "color": "#efbf54"
+          "color": "#ff8d38"
         },
         {
           "name": "ORCID",
           "action": "https://orcid.org/orcid-search/search",
           "query": "searchQuery",
           "color": "#a5cd38"
+        },
+        {
+          "name": "Wolfram Alpha",
+          "action": "https://www.wolframalpha.com/input",
+          "query": "i",
+          "color": "#ff9c55"
+        },
+        {
+          "name": "Academia",
+          "action": "https://www.academia.edu/people/search",
+          "query": "q",
+          "color": "#ccc"
+        },
+        {
+          "name": "Brainly",
+          "action": "https://brainly.com.br/app/ask",
+          "query": "q",
+          "color": "#60d399"
+        },
+        {
+          "name": "Golden",
+          "action": "https://golden.com/search/",
+          "query": false,
+          "color": "#efbf54"
         },
         {
           "name": "Stack Exchange",
@@ -1058,9 +1091,117 @@
       ]
     },
     {
+      "name": "Code",
+      "name_translated": "Código",
+      "active": true,
+      "data": [
+        {
+          "name": "Stack Overflow",
+          "action": "https://pt.stackoverflow.com/search",
+          "query": "q",
+          "color": "#ffa055"
+        },
+        {
+          "name": "GitHub",
+          "action": "https://github.com/search",
+          "query": "q",
+          "color": "#becad8"
+        },
+        {
+          "name": "GitLab",
+          "action": "https://gitlab.com/public",
+          "query": "name",
+          "color": "#ff8b50"
+        },
+        {
+          "name": "Bitbucket",
+          "action": "https://bitbucket.org/repo/all/",
+          "query": "name",
+          "color": "#61a1ff"
+        },
+        {
+          "name": "Docker Hub",
+          "action": "https://hub.docker.com/search",
+          "query": "q",
+          "color": "#4bbfff"
+        },
+        {
+          "name": "npm",
+          "action": "https://www.npmjs.com/search",
+          "query": "q",
+          "color": "#ff6565"
+        },
+        {
+          "name": "Yarn",
+          "action": "https://yarnpkg.com/",
+          "query": "q",
+          "color": "#30beff"
+        },
+        {
+          "name": "PyPI",
+          "action": "https://pypi.org/search/",
+          "query": "q",
+          "color": "#47a4da"
+        },
+        {
+          "name": "NuGet",
+          "action": "https://www.nuget.org/packages",
+          "query": "q",
+          "color": "#4bb0ff"
+        },
+        {
+          "name": "Packagist",
+          "action": "https://packagist.org/",
+          "query": "query",
+          "color": "#ffae51"
+        },
+        {
+          "name": "RubyGems",
+          "action": "https://rubygems.org/search",
+          "query": "query",
+          "color": "#ff735d"
+        },
+        {
+          "name": "Crates",
+          "action": "https://crates.io/search",
+          "query": "q",
+          "color": "#19a974"
+        },
+        {
+          "name": "Go",
+          "action": "https://pkg.go.dev/search",
+          "query": "q",
+          "color": "#50b7e0"
+        },
+        {
+          "name": "CodePen",
+          "action": "https://codepen.io/search/pens",
+          "query": "q",
+          "color": "#cbd5f9"
+        },
+        {
+          "name": "Glitch",
+          "action": "https://glitch.com/search",
+          "query": "q",
+          "color": "#f7a4ff"
+        },
+        {
+          "name": "Sourcegraph",
+          "action": "https://sourcegraph.com/search",
+          "query": "q",
+          "color": "#da7bff"
+        },
+        {
+          "name": "searchcode",
+          "action": "https://searchcode.com/",
+          "query": "q",
+          "color": "#1EAEDB"
+        }
+      ]
+    },
+    {
       "name": "Jobs",
-      "name_translated": "Vagas",
-      "name_trends": "Vagas em alta",
+      "name_translated": "Empregos",
       "active": true,
       "data": [
         {
@@ -1152,14 +1293,13 @@
     {
       "name": "News",
       "name_translated": "Notícias",
-      "name_trends": "Notícias em alta",
       "active": true,
       "data": [
         {
           "name": "Globo",
           "action": "https://www.globo.com/busca/",
           "query": "q",
-          "color": "#7aafff"
+          "color": "#5086ff"
         },
         {
           "name": "UOL",
@@ -1211,110 +1351,7 @@
         }
       ]
     },
-    {
-      "name": "Code",
-      "name_translated": "Código",
-      "name_trends": "Repositórios em alta",
-      "active": true,
-      "data": [
-        {
-          "name": "Stack Overflow",
-          "action": "https://pt.stackoverflow.com/search",
-          "query": "q",
-          "color": "#ffa055"
-        },
-        {
-          "name": "GitHub",
-          "action": "https://github.com/search",
-          "query": "q",
-          "color": "#becad8"
-        },
-        {
-          "name": "GitLab",
-          "action": "https://gitlab.com/public",
-          "query": "name",
-          "color": "#ff8b50"
-        },
-        {
-          "name": "Bitbucket",
-          "action": "https://bitbucket.org/repo/all/",
-          "query": "name",
-          "color": "#61a1ff"
-        },
-        {
-          "name": "Docker Hub",
-          "action": "https://hub.docker.com/search",
-          "query": "q",
-          "color": "#4bbfff"
-        },
-        {
-          "name": "npm",
-          "action": "https://www.npmjs.com/search",
-          "query": "q",
-          "color": "#ff6565"
-        },
-        {
-          "name": "Yarn",
-          "action": "https://yarnpkg.com/",
-          "query": "q",
-          "color": "#30beff"
-        },
-        {
-          "name": "PyPI",
-          "action": "https://pypi.org/search/",
-          "query": "q",
-          "color": "#47a4da"
-        },
-        {
-          "name": "NuGet",
-          "action": "https://www.nuget.org/packages",
-          "query": "q",
-          "color": "#4bb0ff"
-        },
-        {
-          "name": "Packagist",
-          "action": "https://packagist.org/",
-          "query": "query",
-          "color": "#ffae51"
-        },
-        {
-          "name": "RubyGems",
-          "action": "https://rubygems.org/search",
-          "query": "query",
-          "color": "#ff735d"
-        },
-        {
-          "name": "Crates",
-          "action": "https://crates.io/search",
-          "query": "q",
-          "color": "#74c574"
-        },
-        {
-          "name": "CodePen",
-          "action": "https://codepen.io/search/pens",
-          "query": "q",
-          "color": "#cbd5f9"
-        },
-        {
-          "name": "Glitch",
-          "action": "https://glitch.com/search",
-          "query": "q",
-          "color": "#f7a4ff"
-        },
-        {
-          "name": "searchcode",
-          "action": "https://searchcode.com/",
-          "query": "q",
-          "color": "#1EAEDB"
-        },
-        {
-          "name": "Sourcegraph",
-          "action": "https://sourcegraph.com/search",
-          "query": "q",
-          "color": "#da7bff"
-        }
-      ]
-    },
+
     {
       "name": "Torrent",
       "active": false,
@@ -1377,27 +1414,8 @@
       ]
     },
     {
-      "name": "AI",
-      "name_translated": "IA",
-      "active": false,
-      "data": [
-        {
-          "name": "Perplexity",
-          "action": "https://www.perplexity.ai/",
-          "query": "q",
-          "color": "#c4c4c4"
-        },
-        {
-          "name": "Talk to Books",
-          "action": "https://books.google.com/talktobooks/query",
-          "query": "q",
-          "color": "#ff6e63"
-        }
-      ]
-    },
-    {
       "name": "NFTs",
-      "active": true,
+      "active": false,
       "data": [
         {
           "name": "OpenSea",
@@ -1415,7 +1433,6 @@
     },
     {
       "name": "Apps",
-      "name_translated": "Aplicativos",
       "active": false,
       "data": [
         {
@@ -1475,7 +1492,7 @@
           "color": "#8ad151"
         },
         {
-          "name": "Governo do Brasil",
+          "name": "Governo Brasil",
           "action": "https://www.gov.br/pt-br/search",
           "query": "SearchableText",
           "color": "#00C8FF",

@@ -9,7 +9,6 @@ import { ISearchCategory, ISearch, ISearchChild } from '../types/search'
 
 export default function SearchApp() {
   const { locale, locales, defaultLocale } = useRouter()
-  // console.log(locale)
   const {
     data,
     category,
@@ -63,7 +62,6 @@ export default function SearchApp() {
     const source = getSearchSource(id)
     return (
       <select className={Style.searchChild}>
-        <Icon.ArrowDown />
         {source?.child?.map((item: ISearchChild, index: number) => (
           <option key={index}>{item.name}</option>
         ))}
@@ -130,7 +128,7 @@ export default function SearchApp() {
 
   return (
     <section>
-      <div style={{ backgroundColor: color }} id="searchApp">
+      <div id="searchApp">
         {/* Tabs */}
         <div id={Style.tabs}>
           {data?.categories?.map((itemCategory: ISearchCategory, index: number) => (
@@ -171,7 +169,6 @@ export default function SearchApp() {
           {/* Input */}
           <div className={Style.searchInput}>
             <label htmlFor="searchInput">Search input</label>
-            <Icon.Search />
             <input
               ref={refSearchInput}
               type="text"
@@ -189,6 +186,19 @@ export default function SearchApp() {
               required
             />
 
+            {/* Button Send */}
+            <a
+              ref={refSendButton}
+              href={searchUrl}
+              target="_blank"
+              onClick={isInputActive ? undefined : (event) => inputFocus(event)}
+              rel="noopener"
+              className={Style.searchButton}
+              accessKey="q">
+              <Icon.Search />
+              Send
+            </a>
+
             {/* Button Reset */}
             <button
               type="reset"
@@ -198,26 +208,13 @@ export default function SearchApp() {
               <Icon.X />
               Reset
             </button>
-
-            {/* Button Send */}
-            <a
-              style={{ backgroundColor: color }}
-              ref={refSendButton}
-              href={searchUrl}
-              target="_blank"
-              onClick={isInputActive ? undefined : (event) => inputFocus(event)}
-              rel="noopener"
-              className={Style.searchButton}
-              accessKey="q">
-              <Icon.ArrowRight />
-              Send
-            </a>
           </div>
 
           <SearchSuggestions locale={locale} term={inputValue} />
 
           {/* Button Voice */}
-          <div>
+          {/* onClick="reco.toggleStartStop(); openVoiceTranscript()" */}
+          {/* <div>
             <button
               id="voice-button"
               className={Style.voiceButton}
@@ -227,8 +224,7 @@ export default function SearchApp() {
               <Icon.Mic />
               Voice
             </button>
-            {/* onClick="reco.toggleStartStop(); openVoiceTranscript()" */}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 :root {
   font-size: 16px;
+  --background-color: #fff;
   --active-color: #000;
   --text-color: #000;
   --color-white: #fff;
@@ -7,6 +8,7 @@
   --color-grey: #f2f2f2;
   --color-black: #000;
   --color-dark: #313340;
+  --color-dark-2: #202123;
   --color-green: #0ae7ab;
   --color-yellow: #fff45b;
   --color-red: #ff6370;
@@ -15,14 +17,20 @@
   --color-white-translucent: rgba(255, 255, 255, 0.2);
   --color-white-translucent-2: rgba(255, 255, 255, 0.25);
   --color-black-translucent: rgba(0, 0, 0, 0.1);
-  --box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%);
+  --box-shadow: 0 1.8px 3.8px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%);
   --opacity: 0.6;
   --font: 'Source Code Pro', sans-serif;
   --font-size: 1rem;
   --font-size-small: 0.85rem;
   --font-size-big: 1.2rem;
-  --radius: 0.75rem;
+  --font-size-1: 4rem;
+  --radius: 1rem;
   --radius-full: 75rem;
+  --size-small: 34px;
+  --size-medium: 40px;
+  --size-large: 48px;
+  --size-header: 240px;
+  --transition-hover: hover, background-color 0.2s;
 }
 *,
 *:before,
@@ -35,6 +43,10 @@ html {
   scroll-behavior: smooth;
   font-family: var(--font);
   outline-color: var(--color-black);
+}
+body {
+  background-color: var(--background-color);
+  transition: var(--transition-hover);
 }
 
 a,
@@ -50,7 +62,14 @@ select,
 option {
   font-weight: bold;
   font-family: var(--font);
+  letter-spacing: -0.25px;
 }
+
+/* a:focus,
+button:focus,
+select:focus {
+  outline: 2.5px solid #000;
+} */
 
 ol,
 ul {
@@ -87,7 +106,7 @@ p {
   font-size: var(--font-size);
 }
 h1 {
-  font-size: 4.5rem;
+  font-size: var(--font-size-1);
 }
 h2 {
   font-size: 2.5rem;
@@ -116,6 +135,27 @@ article hr {
   border: 0;
 }
 
+select {
+  cursor: pointer;
+  font-size: 1rem;
+  height: var(--size-medium);
+  padding: 0 1rem;
+  line-height: 1.2rem;
+  margin: 0;
+  border-radius: var(--radius);
+  border: none;
+  color: var(--color-black);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' %3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 1.2rem;
+  background-position: 95% 52%;
+  background-color: var(--color-grey);
+  padding-right: 4rem;
+}
+
 /* Transitions */
 a,
 #logo,
@@ -124,11 +164,7 @@ a,
 #searchApp a,
 #searchApp button,
 #searchApp input {
-  transition: hover, background-color 0.2s;
-  -webkit-transition: hover, background-color 0.2s;
-  -moz-transition: hover, background-color 0.2s;
-  -ms-transition: hover, background-color 0.2s;
-  -o-transition: hover, background-color 0.2s;
+  transition: var(--transition-hover);
 }
 
 /* Colors Animation */
@@ -202,31 +238,40 @@ a,
   color: var(--color-white);
 }
 
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* Trends  */
 #trends ul li:nth-child(1) button {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 #trends ul li:nth-child(2) button {
   font-size: 2.4rem;
 }
 #trends ul li:nth-child(3) button {
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 #trends ul li:nth-child(4) button {
-  font-size: 1.8rem;
+  font-size: 2.3rem;
 }
 #trends ul li:nth-child(5) button {
-  font-size: 1.7rem;
+  font-size: 2.1rem;
 }
 #trends ul li:nth-child(6) button {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 #trends ul li:nth-child(7) button {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 #trends ul li:nth-child(8) button {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
 }
 #trends ul li:nth-child(9) button {
+  font-size: 1.5rem;
+}
+#trends ul li:nth-child(10) button {
   font-size: 1.3rem;
 }

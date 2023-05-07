@@ -12,7 +12,10 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
     let url =
       'https://api.adzuna.com/v1/api/jobs/' +
       String(country).toLowerCase() +
-      '/categories?app_id=d855780c&app_key=b20f1047ca4ed4a3e36c5811949bb614'
+      '/categories?app_id=' +
+      process.env.NEXT_API_KEY_ADZUNA_ID +
+      '&app_key=' +
+      process.env.NEXT_API_KEY_ADZUNA
 
     await axios
       .get(url)

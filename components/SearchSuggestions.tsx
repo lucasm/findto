@@ -10,9 +10,12 @@ type Props = {
 }
 
 export default function SearchSuggestions(props: Props) {
-  const { putValue } = useSearch()
-  function shouldFetch(): boolean {
-    if (props.locale && props.term.length > 2) {
+  const { putValue, inputValue } = useSearch()
+
+  console.log(inputValue)
+
+  function isValid(): boolean {
+    if (props.locale && props.term.length > 1 && props.term.length < 50) {
       return true
     } else {
       return false
@@ -27,18 +30,17 @@ export default function SearchSuggestions(props: Props) {
   // }, [])
 
   const { data, error, isLoading } = useSWR(
-    shouldFetch() ? '/api/suggestions/?locale=' + props.locale + '&term=' + props.term : null,
+    isValid() ? '/api/suggestions/?locale=' + props.locale + '&term=' + props.term : null,
     fetcher
   )
 
   return (
-    <div className={Style.container + ' ' + Style.widgetSearchSuggestions} id="autocomplete">
-      {error && <div>Error</div>}
-      {isLoading && <div>...</div>}
-
+    <div className={Style.searchSuggestions}>
+      {/* {error && <div>Error</div>} */}
+      {/* {isLoading && <div>...</div>} */}
       {data && (
         <ul>
-          {data.slice(0, 5).map((item: string, index: number) => (
+          {data.slice(0, 8).map((item: string, index: number) => (
             <li key={index}>
               <a href="#" onClick={() => putValue(item)}>
                 {item}

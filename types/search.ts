@@ -1,3 +1,10 @@
+export interface ISearchJson {
+  name: string
+  name_translated: string
+  name_trends: string
+  active: boolean
+  data: ISearch[]
+}
 export interface ISearchCategory {
   name: string
   name_translated: string

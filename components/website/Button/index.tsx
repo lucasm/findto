@@ -1,13 +1,13 @@
 import Link from 'next/link'
 
-const styleButton = {
+const Styles = {
   display: 'inline-block',
   margin: '.5rem 0 0',
-  padding: '1rem 2rem',
+  padding: '1.2rem 2.8rem',
   color: '#000',
-  fontSize: '1rem',
+  fontSize: 'var(--font-size-big)',
   border: 'none',
-  borderRadius: '.75rem',
+  borderRadius: 'var(--radius)',
   lineHeight: '1',
   transition: 'all 0.25s ease-in-out',
 }
@@ -15,15 +15,13 @@ const styleButton = {
 type Props = {
   url?: string
   color?: string
-  text: string
+  children: string
 }
 
 export default function Button(props: Props) {
   return (
-    <Link href="{props.url}">
-      <div style={styleButton} className={props.color}>
-        {props.text}
-      </div>
+    <Link href={props.url} style={Styles} className={props.color}>
+      {props.children}
     </Link>
   )
 }

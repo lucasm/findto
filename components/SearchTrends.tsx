@@ -1,29 +1,27 @@
 import Style from '../styles/App.module.css'
 import { fetcher } from '../utils/http'
 import useSWR from 'swr'
-import Link from 'next/link'
-import Image from 'next/image'
 import { useSearch } from '../contexts/SearchContext'
 import { TrendingUp } from 'react-feather'
 import Loader from './website/Loader'
-import { ITrends, IItem } from '../types/trends'
+import { ITrends, ITrendsItem } from '../types/trends'
 
 export default function SearchTrends() {
-  const { category, putValue, trends, country, locale } = useSearch()
+  const { data, category, putValue, country, locale } = useSearch()
 
-  function renderItems(data: ITrends) {
+  function renderItems(trends: ITrends) {
     return (
       <ul>
-        {data.data?.map((item: IItem, index: number) => (
+        {trends.data?.map((item: ITrendsItem, index: number) => (
           <li key={index}>
             <button onClick={() => putValue(item.title)}>{item.title}</button>
           </li>
         ))}
         <p>
-          Powered by
-          {/*eslint-disable-next-line react/jsx-no-target-blank*/}
-          <a href={data.credits_url} target="_blank" rel="noopener">
-            {data.credits_title}
+          {data?.t?.powered ?? 'Powered by'}
+
+          <a href={trends.credits_url} target="_blank" rel="noopener">
+            {trends.credits_title}
           </a>
         </p>
       </ul>
@@ -166,7 +164,73 @@ export default function SearchTrends() {
     )
   }
 
-  function renderByCategory() {
+  // Shopping
+  function useApiShopping() {
+    const { data, error } = useSWR(category === 'Shopping' ? `/api/trends/shopping` : null, fetcher)
+
+    return {
+      dataShopping: data,
+      isLoadingShopping: !error && !data,
+      isErrorShopping: error,
+    }
+  }
+  const { dataShopping, isLoadingShopping, isErrorShopping } = useApiShopping()
+  function getShopping() {
+    return (
+      <>
+        {isErrorShopping && <div>Error</div>}
+        {isLoadingShopping && <Loader />}
+        {dataShopping && renderItems(dataShopping)}
+      </>
+    )
+  }
+
+  // Code
+  function useApiCode() {
+    const { data, error } = useSWR(category === 'Code' ? `/api/trends/code` : null, fetcher)
+
+    return {
+      dataCode: data,
+      isLoadingCode: !error && !data,
+      isErrorCode: error,
+    }
+  }
+  const { dataCode, isLoadingCode, isErrorCode } = useApiCode()
+  function getCode() {
+    return (
+      <>
+        {isErrorCode && <div>Error</div>}
+        {isLoadingCode && <Loader />}
+        {dataCode && renderItems(dataCode)}
+      </>
+    )
+  }
+
+  // Academic
+  function useApiAcademic() {
+    const { data, error } = useSWR(
+      country && category === 'Academic' ? `/api/trends/academic?country=${country}` : null,
+      fetcher
+    )
+
+    return {
+      dataAcademic: data,
+      isLoadingAcademic: !error && !data,
+      isErrorAcademic: error,
+    }
+  }
+  const { dataAcademic, isLoadingAcademic, isErrorAcademic } = useApiAcademic()
+  function getAcademic() {
+    return (
+      <>
+        {isErrorAcademic && <div>Error</div>}
+        {isLoadingAcademic && <Loader />}
+        {dataAcademic && renderItems(dataAcademic)}
+      </>
+    )
+  }
+
+  function renderTrendsCategory() {
     switch (category) {
       case 'Web': {
         return getWeb()
@@ -183,8 +247,17 @@ export default function SearchTrends() {
       case 'News': {
         return getNews()
       }
+      case 'Shopping': {
+        return getShopping()
+      }
+      case 'Code': {
+        return getCode()
+      }
       case 'Jobs': {
         return getJobs()
+      }
+      case 'Academic': {
+        return getAcademic()
       }
       default: {
         return getWeb()
@@ -193,13 +266,11 @@ export default function SearchTrends() {
   }
 
   return (
-    <section>
-      <div className={Style.widgetSearchTrends + ' ' + Style.container} id="trends">
-        <h2>
-          <TrendingUp /> {trends}
-        </h2>
-        {renderByCategory()}
-      </div>
-    </section>
+    <div className={Style.widgetSearchTrends + ' container'} id="trends">
+      <h2>
+        <TrendingUp /> {data?.t?.trends ?? 'Trends'}
+      </h2>
+      {renderTrendsCategory()}
+    </div>
   )
 }

@@ -4,12 +4,10 @@ import PageLayout from '../components/website/PageLayout'
 export default function Terms() {
   return (
     <PageLayout title="Terms of Service">
-      <section className={Style.colors}>
+      <section className="colors">
         <div className={Style.container}>
-          <div className={Style.pageTitle}>
-            <h1>Terms of Service</h1>
-            <p>Last update: January 10, 2021</p>
-          </div>
+          <h1>Terms of Service</h1>
+          <p>Last update: January 10, 2021</p>
         </div>
       </section>
 

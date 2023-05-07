@@ -10,8 +10,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0 2rem;
+  max-width: 1200px;
 }
 
 /* Logo */
@@ -61,6 +61,17 @@
   max-width: 1024px;
   background: transparent;
 }
+.actionContainer {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.actionContainer h2 {
+  font-size: var(--font-size-1);
+}
+
+.section {
+  background: var(--color-white);
+}
 
 /* PageLayout component */
 .page {
@@ -72,9 +83,6 @@
 }
 .page h1 {
   padding-bottom: 2.5rem;
-}
-.page p {
-  margin: 0;
 }
 .page h2 {
   line-height: 1.25;
@@ -101,7 +109,7 @@
   background-position: center;
   background-color: rgba(255, 255, 255, 0.15);
   border-radius: 33.3%;
-  box-shadow: 0 18px 64px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 18px 32px 0 rgba(0, 0, 0, 0.1);
 }
 .icon img {
   height: 12rem;
@@ -118,6 +126,7 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 5rem;
   text-align: left;
+  align-items: center;
 }
 .cardDuos figure {
   max-width: 400px;
@@ -142,7 +151,7 @@
   height: 74px;
   width: 74px;
   border-radius: 33.3%;
-  box-shadow: 0 18px 64px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 18px 32px 0 rgba(0, 0, 0, 0.1);
 }
 .cardFeats svg {
   width: 32px;
@@ -177,7 +186,7 @@
 
 /* Footer */
 .footer {
-  background: var(--color-white);
+  background: lightblue;
   height: 5rem;
   padding: 0 2.5rem;
   display: flex;

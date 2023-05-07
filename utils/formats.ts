@@ -10,5 +10,6 @@ export function normalizeId(value: string): string {
     .replace('ú', 'u')
     .replace('ó', 'o')
     .replace(/\s/g, '-')
+    .replace(/\./g, '')
   return id
 }

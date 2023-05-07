@@ -8,8 +8,8 @@ export default function CardFeats() {
         <figure>
           <Icon.Search />
         </figure>
-        <h3>Multiple sources</h3>
-        <p>Find anything everywhere using the power of multiple search sources by category.</p>
+        <h3>Multiple search</h3>
+        <p>Use the same term to search on multiple providers and categories.</p>
       </div>
 
       <div>
@@ -17,23 +17,23 @@ export default function CardFeats() {
           <Icon.TrendingUp />
         </figure>
         <h3>Trends</h3>
-        <p>See what&apos;s trending on searches, contents and nearby you.</p>
+        <p>Trending on topics, searches, contents, events and places nearby you.</p>
       </div>
 
       <div>
         <figure>
           <Icon.Shield />
         </figure>
-        <h3>Privacy rank</h3>
-        <p>See the privacy level before search on the selected source.</p>
+        <h3>Privacy ranking</h3>
+        <p>See the privacy level of selected search provider.</p>
       </div>
 
       <div>
         <figure>
           <Icon.AlignLeft />
         </figure>
-        <h3>Suggestions</h3>
-        <p>Get suggestions of popular search terms as you type.</p>
+        <h3>AI suggestions</h3>
+        <p>Get suggestions of search terms as you type.</p>
       </div>
 
       <div>
@@ -41,7 +41,7 @@ export default function CardFeats() {
           <Icon.Mic />
         </figure>
         <h3>Voice search</h3>
-        <p>Use your voice to search.</p>
+        <p>Use your voice to search anywhere.</p>
       </div>
 
       <div>
@@ -65,7 +65,7 @@ export default function CardFeats() {
           <Icon.ToggleRight />
         </figure>
         <h3>Accessibility</h3>
-        <p>Dark/light theme, mutable layout and quickly access keys.</p>
+        <p>Change the color theme, layout, or use quickly access keys.</p>
       </div>
 
       <div>

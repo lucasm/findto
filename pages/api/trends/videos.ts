@@ -12,7 +12,7 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
     // https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&regionCode=' + country + '&maxResults=16&key=AIzaSyBa7bR595t6tjXgbBJBcJ7PM9iEhGw39Yo
 
     let url =
-      'https://api.themoviedb.org/3/trending/all/week?language=' +
+      'https://api.themoviedb.org/3/trending/all/day?language=' +
       country +
       '&api_key=37da347aab868bdaea01903e2387f1ad'
 

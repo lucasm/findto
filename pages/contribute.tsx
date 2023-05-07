@@ -4,11 +4,11 @@ import PageLayout from '../components/website/PageLayout'
 export default function Contribute() {
   return (
     <PageLayout title="Contribute">
-      <section className={Style.colors}>
+      <section className="colors">
         <div className={Style.container}>
-          <div className={Style.pageTitle}>
+          <div className={Style.actionContainer}>
             <h1>Contribute</h1>
-            <p>Help us make decentralized Web searches better.</p>
+            <p>Help make Findto search app better and accessible for everyone.</p>
           </div>
         </div>
       </section>
@@ -43,8 +43,9 @@ export default function Contribute() {
             <h2>Sponsor</h2>
 
             <p>
-              Findto is open source and all work is volunteered. When you make a donation, you are helping maintain active development and
-              pay app costs. Thanks for considering supporting!
+              Findto is open source and all work is volunteered. When you make a donation, you are
+              helping maintain active development and pay app costs. Thanks for considering
+              supporting!
             </p>
             <ul>
               <li>
@@ -77,7 +78,10 @@ export default function Contribute() {
               </li>
               <li>
                 Feature requests: start a topic on{' '}
-                <a href="https://github.com/lucasm/findto/discussions" target="_blank" rel="noreferrer">
+                <a
+                  href="https://github.com/lucasm/findto/discussions"
+                  target="_blank"
+                  rel="noreferrer">
                   discussions
                 </a>
               </li>

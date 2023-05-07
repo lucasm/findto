@@ -1,28 +1,20 @@
 /* Header */
 .header {
   z-index: 999;
-  background: #202123;
-}
-
-/* Container */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+  background: var(--color-dark-2);
 }
 
 /* Page */
 .page {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
   text-align: center;
 }
 .page h1 {
   padding-bottom: 2.5rem;
 }
 .page h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   line-height: 1.25;
 }
 .page h3 {
@@ -36,7 +28,7 @@
 .main svg,
 .header svg {
   width: 18px;
-  stroke-width: 2.75;
+  stroke-width: 2.5;
 }
 .main svg {
   color: var(--color-black);
@@ -48,10 +40,9 @@
   color: var(--color-white) !important;
   opacity: 1;
   align-items: center;
-  justify-content: center;
 }
 .logo svg {
-  width: 36px;
+  width: 34px;
   margin-right: 0.75rem;
 }
 
@@ -83,63 +74,6 @@
   background-color: var(--color-white-translucent);
 }
 
-/* Menu */
-.menu {
-  position: relative;
-  background: var(--color-white);
-  height: auto;
-  min-width: 320px;
-  padding: 2rem 4rem;
-  z-index: 3;
-  border-radius: var(--radius);
-  box-shadow: var(--box-shadow);
-  z-index: 1009;
-}
-.menu h3 {
-  font-size: 1.25rem;
-  margin-bottom: 3rem;
-}
-.menu p {
-  font-size: 1rem;
-  margin: 0;
-}
-
-.menuBox {
-  visibility: hidden;
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  top: 0;
-  left: 0;
-  transition: visibility 0s, opacity 0.25s ease;
-  z-index: 1000;
-}
-.menuBoxActive {
-  visibility: visible;
-}
-
-.close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  color: var(--color-black);
-}
-.menuBlock {
-  padding: 0;
-}
-.menuBlock button {
-  font-size: 1rem;
-  font-weight: bold;
-}
-.menuBlock svg {
-  margin: 0 0.4rem -0.4rem 0;
-}
-
 /* Button */
 .button {
   position: relative;
@@ -169,24 +103,24 @@
 
 /* Tabs */
 #tabs {
-  padding: 1.5rem 5%;
+  padding: 1.5rem 0;
 }
 #tabs ul {
   display: none;
 }
 #tabs ul li {
-  display: inline-block;
+  display: inline-flex;
 }
 #tabs ul li button {
   display: inline-block;
-  float: none;
-  padding: 1rem;
+  height: var(--size-small);
+  padding: 0 1rem;
   margin: 0.1rem;
   background: transparent;
   color: var(--color-black);
   font-size: 1rem;
   line-height: 0;
-  border-radius: var(--radius);
+  border-radius: var(--radius-full);
   border: 0;
   opacity: var(--opacity);
 }
@@ -213,11 +147,11 @@
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  height: 80px;
-  margin: 0 0 1.5rem;
+  height: 64px;
+  margin: 0 0 2rem;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 180px;
+  background-size: 160px;
 }
 .searchImg svg .a,
 .searchImg svg .cls-1 {
@@ -230,9 +164,9 @@
   float: none;
   height: auto;
   width: 100%;
-  line-height: 58px;
+  line-height: 60px;
   margin: 0;
-  padding: 0 100px 0 3.2rem;
+  padding: 0 4rem 0;
   border: none;
   outline: none;
   color: #000;
@@ -242,7 +176,7 @@
   text-align: left;
   background: var(--color-white-translucent);
   box-shadow: var(--box-shadow);
-  border-radius: var(--radius-full);
+  border-radius: var(--radius);
 }
 .searchInput input:hover {
   background: rgba(255, 255, 255, 0.25);
@@ -251,17 +185,12 @@
   background: #fff;
 }
 
-.searchInput svg:nth-child(2) {
-  z-index: 1;
-  margin: 1.05rem 0 0 1.25rem;
+.searchButton,
+.resetButton {
   position: absolute;
-  stroke-width: 3.25;
-  color: var(--color-gray);
-}
-
-.searchButton {
-  position: absolute;
-  margin: 8px 0 0 -52px;
+  left: 0;
+  margin-top: 0.56rem;
+  margin-left: 0.75rem;
   font-size: 0;
   display: inline-flex;
   align-items: center;
@@ -269,23 +198,18 @@
   height: 42px;
   width: 42px;
   background: transparent;
-  border-radius: var(--radius-full);
+  border: 0;
+  border-radius: var(--radius);
 }
-
 .resetButton {
   display: none;
-  position: absolute;
-  margin: 0 0 0 -90px;
-  width: 32px;
-  height: 58px;
-  border: 0;
+  left: unset;
+  margin-left: -3.25rem;
   font-size: 0;
-  background: transparent;
 }
-
 .searchButton svg,
 .resetButton svg {
-  color: var(--color-gray);
+  color: var(--color-black);
   stroke-width: 3.25;
 }
 
@@ -312,16 +236,8 @@
 .searchChild {
   float: right;
   padding: 0 3rem 0 1rem;
-  height: 32px;
-  line-height: 1;
-  border-radius: var(--radius);
-  border: 0;
+  height: var(--size-small);
   font-size: var(--font-size-small);
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.25' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-  background-repeat: no-repeat;
   background-position: 92% 58%;
   background-color: var(--color-white-translucent);
   box-shadow: var(--box-shadow);
@@ -393,8 +309,11 @@
 
 /* Trends */
 .widgetSearchTrends {
-  background: transparent;
-  padding: 4rem;
+  background: var(--color-white);
+  padding: 3em;
+  margin-top: 3rem;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--radius);
 }
 .widgetSearchTrends ul {
   filter: grayscale(100%);
@@ -426,11 +345,11 @@
   font-size: 1rem;
 }
 .widgetSearchTrends h2 svg {
-  margin-right: 1rem;
+  margin-right: 1.2rem;
 }
 
 .widgetSearchTrends ul p {
-  margin-top: 1rem;
+  margin-top: 2rem;
   font-size: var(--font-size-small);
   width: 100%;
   text-align: right;
@@ -497,28 +416,36 @@
 }
 
 /* Suggestions */
-.widgetSearchSuggestions {
+.searchSuggestions {
   position: absolute;
   width: 100%;
   text-align: left;
-  padding: 0rem 1rem;
   font-size: var(--font-size);
+  margin-top: 1rem;
   z-index: 9;
+  background: var(--color-white);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--radius);
 }
-.widgetSearchSuggestions ul li {
+.searchSuggestions ul {
+  padding: 1rem 2rem 1.5rem;
+}
+.searchSuggestions ul li {
   margin-top: 0.5rem;
 }
-.widgetSearchSuggestions ul li a {
+.searchSuggestions ul li a {
   font-weight: lighter;
   width: 100%;
+  color: var(--color-black);
+  opacity: 0.75;
 }
 
 /* Infos */
 .infos {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
-  padding: 4rem;
+  grid-gap: 3rem;
+  margin: 3rem 0;
 }
 .infos h2 {
   text-align: left;
@@ -531,11 +458,10 @@
   padding: 4rem 5rem;
   background: var(--color-white-translucent);
   border-radius: var(--radius);
+  box-shadow: var(--box-shadow);
 }
 .infos a:hover {
   background: var(--color-white);
-  border-radius: var(--radius);
-  box-shadow: var(--box-shadow);
 }
 .infos p {
   display: flex;
@@ -550,16 +476,12 @@
   color: #fff;
 }
 
-.infosLegal {
-  font-size: var(--font-size-small);
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-bottom: 3rem;
-}
-
 /* 
-  Layout 1 - (Icons Top)
+  Layout 1 (top icons)
 */
+.theme1 .main {
+  padding: 0 4rem;
+}
 .theme1 .header {
   position: relative;
   display: flex;
@@ -569,33 +491,25 @@
   justify-content: space-between;
   height: 100%;
   width: 100%;
-  padding: 1rem;
+  padding: 0.75rem 1rem;
 }
 .theme1 .nav {
   overflow-y: auto;
 }
 .theme1 .nav ul {
-  float: left;
-  width: 100%;
-  font-size: 0;
+  padding: 0 0.25rem;
 }
 .theme1 .nav li {
   display: inline-block;
 }
-.theme1 .header button {
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  margin: 0;
+.theme1 .nav button,
+.theme1 .header .iconSettings button {
+  width: var(--size-large);
+  height: var(--size-large);
+  margin: 0.25rem 0;
   padding: 0;
   font-size: 0;
   text-align: center;
-}
-.theme1 .header button svg {
-  top: 0.8rem;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
 }
 
 .theme1 #tabs {
@@ -603,15 +517,16 @@
 }
 
 /*
-  Layout 2 - (Nav Left)
+  Layout 2 (left nav)
 */
 .theme2 .main {
-  margin-left: 240px;
+  margin-left: var(--size-header);
+  padding: 0 4rem;
 }
 .theme2 .header {
   position: fixed;
   height: 100%;
-  width: 240px;
+  width: var(--size-header);
   padding: 0 0.75rem;
 }
 
@@ -621,21 +536,24 @@
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
+  padding-bottom: 10.5rem;
 }
-.theme2 .header button {
+.theme2 .nav button,
+.theme2 .header .iconSettings button {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  height: 38px;
+  height: var(--size-medium);
   font-size: 1rem;
 }
-.theme2 .header button svg {
+.theme2 .nav button svg,
+.theme2 .header .iconSettings button svg {
   margin-right: 1rem;
 }
 
 .theme2 .logo {
-  margin: 2rem 0;
+  margin: 1.5rem 0.75rem;
 }
 .theme2 .iconSettings {
   position: absolute;
@@ -654,6 +572,83 @@
 }
 .activeLink svg {
   color: var(--color-black) !important;
+}
+
+/* Menu */
+.menu {
+  position: relative;
+  background: var(--color-white);
+  height: auto;
+  min-width: 320px;
+  padding: 2rem 2rem 1rem;
+  z-index: 3;
+  border-radius: var(--radius);
+  box-shadow: var(--box-shadow);
+  z-index: 1009;
+}
+.menu h3 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+.menu h4 {
+  font-size: 1.25rem;
+  text-align: left;
+}
+.menu p {
+  font-size: 1rem;
+  margin: 0;
+}
+.menu button.menuClose {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  width: var(--size-large);
+  height: var(--size-large);
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  justify-content: end;
+}
+.menuPopup {
+  visibility: hidden;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  transition: visibility 0s, opacity 0.25s ease;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+}
+.menuPopupActive {
+  visibility: visible;
+}
+
+.menuBlock {
+  display: grid;
+  grid-gap: 0.5rem;
+  padding: 1rem 0 2rem;
+}
+.header .menuBlock button,
+.header .menuBlock a {
+  border-radius: var(--radius);
+  padding: 1rem;
+  display: flex;
+  height: var(--size-medium);
+  min-width: 10.25rem;
+  font-size: 1rem;
+  background: var(--color-grey);
+  align-items: center;
+  opacity: 1;
+}
+.header .menuBlock button svg,
+.header .menuBlock a svg {
+  margin-right: 1rem;
 }
 
 /* Media Queries */

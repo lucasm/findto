@@ -7,13 +7,13 @@ const SearchContext = createContext<any>({})
 // export as Provider
 export function SearchContextProvider({ children }) {
   // default states
-  const { locale } = useRouter()
+  const { locale, pathname } = useRouter()
   const [data, setData] = useState<any>({})
   const [layout, setLayout] = useState<string>('2')
   const [theme, setTheme] = useState<string>('light')
   const [category, setCategory] = useState<string>('Web')
   const [search, setSearch] = useState<string>('google')
-  const [color, setColor] = useState<string>('#fff]]')
+  const [color, setColor] = useState<string>('#fff')
   const [trends, setTrends] = useState<string>('Trends')
   const [country, setCountry] = useState<string>('US')
   const [inputValue, setInputValue] = useState<string>('')
@@ -21,7 +21,7 @@ export function SearchContextProvider({ children }) {
   const refSearchTabs = useRef([])
 
   // load search data by file
-  const searchData = require('../locales/search/' + locale + '.json')
+  const searchData = require('../locales/' + locale + '.json')
 
   // scroll to top
   function scrollToTop() {
@@ -40,7 +40,8 @@ export function SearchContextProvider({ children }) {
   useEffect(() => {
     setData(searchData)
     // console.log('LOCALE + DATA SEARCH', locale, searchData)
-  }, [searchData, locale])
+    setTrends(data?.t?.trends)
+  }, [searchData, locale, trends])
 
   useEffect(() => {
     setCountry(data?.country_code)
@@ -64,6 +65,17 @@ export function SearchContextProvider({ children }) {
 
     storageSearch ? setSearch(storageSearch) : window.localStorage.setItem('search', search)
   }, [category, search])
+
+  // main body color
+  useEffect(() => {
+    if (color) {
+      document.body.style.setProperty('background-color', color)
+    }
+
+    if (pathname != '/') {
+      document.body.style.setProperty('background-color', '#fff ')
+    }
+  }, [color, pathname])
 
   return (
     <SearchContext.Provider

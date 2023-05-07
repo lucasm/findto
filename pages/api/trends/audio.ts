@@ -4,7 +4,9 @@ import { ITrends } from '../../../types/trends'
 
 export default async function endpoint(req: NextApiRequest, res: NextApiResponse): Promise<void> {
   let url =
-    'https://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&limit=12&api_key=3303c213411084e0e361b39f0a7a780c&format=json'
+    'https://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&limit=12&api_key=' +
+    process.env.NEXT_API_KEY_LASTFM +
+    '&format=json'
 
   await axios
     .get(url)

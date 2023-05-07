@@ -10,15 +10,15 @@ export default function PageAbout() {
       <section className="colors">
         <div className={Style.container}>
           <figure className={Style.icon}></figure>
-          <h1>Decentralized web search</h1>
+          <h1>Decentralized web search with AI</h1>
           <p>
-            Findto is an open source decentralized search app to make Web more diverse, private,
-            productive and free.
+            Findto is a free and open source decentralized search app with AI to encourage web
+            diversity, privacy and productivity.
           </p>
         </div>
       </section>
 
-      <section>
+      <section className={Style.section}>
         <div className={Style.container}>
           <div className={Style.cardDuos}>
             <div>
@@ -29,19 +29,19 @@ export default function PageAbout() {
               <article>
                 <h2>Search algorithms working for you</h2>
                 <p>
-                  Findto puts people in control of the search algorithms — not the other way around.
-                  You can quickly find anything everywhere using the power of multiple sources. Web
-                  searches truly free and more productive.
+                  Findto puts people in control of search algorithms — not the other way around.
+                  With the power of multiple sources, you can quickly find anything on the web.
+                  Searches are truly free and more productive.
                 </p>
               </article>
             </div>
 
             <div>
               <article>
-                <h2>More results with privacy</h2>
+                <h2>Better results with privacy and AI</h2>
                 <p>
-                  Findto empower people to discover more diverse search results while achieving
-                  privacy. You can see the privacy level before search on each source.
+                  Findto empowers people to see the privacy ranking of each search provider and
+                  receive AI suggestions before making a search. Get more accurate results.
                 </p>
               </article>
 
@@ -59,7 +59,8 @@ export default function PageAbout() {
                 <h2>Welcome to the decentralized web</h2>
                 <p>
                   The centralized web where a few big companies dominate our digital lives is dying.
-                  Findto encourages people to discover and choose a more democratic and healthy web.
+                  Findto encourages people to discover and choose a more healthy, diverse and
+                  democratic web.
                 </p>
               </article>
             </div>
@@ -77,9 +78,13 @@ export default function PageAbout() {
 
       <section>
         <div className={Style.container}>
-          <h2>Start using Findto</h2>
-          <p>A new era on web search experience. Built for people.</p>
-          <Button url="/" text="Try the app" color={Style.colors}></Button>
+          <div className={Style.actionContainer}>
+            <h2>Next level web searches</h2>
+            <p>A search experience built for people.</p>
+            <Button url="/" color="colors">
+              Get Started
+            </Button>
+          </div>
         </div>
       </section>
     </PageLayout>

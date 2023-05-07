@@ -3,7 +3,9 @@ import axios from 'axios'
 import { ITrends } from '../../../types/trends'
 
 export default async function endpoint(req: NextApiRequest, res: NextApiResponse): Promise<void> {
-  let url = 'https://api.bestbuy.com/beta/products/trendingViewed?apiKey=eLpEVDgbhjtUB5paswTx21P0'
+  let url =
+    'https://api.bestbuy.com/beta/products/trendingViewed?apiKey=' +
+    process.env.NEXT_API_KEY_BESTBUY
 
   await axios
     .get(url)

@@ -1,7 +1,7 @@
 import Style from '../../styles/Website.module.css'
 import Head from 'next/head'
 import Link from 'next/link'
-import Footer from './Footer'
+import AppFooter from '../app/Footer'
 import SvgLogo from '../../components/website/SvgLogo'
 
 import { useSearch } from '../../contexts/SearchContext'
@@ -49,7 +49,7 @@ export default function PageLayout(props) {
                 <Link href="/contribute">Contribute</Link>
               </li>
               <li>
-                <Link href="/">Open the App</Link>
+                <Link href="/">Open App</Link>
               </li>
             </ul>
           </nav>
@@ -58,7 +58,7 @@ export default function PageLayout(props) {
 
       <main>{props.children}</main>
 
-      <Footer />
+      <AppFooter />
     </div>
   )
 }
