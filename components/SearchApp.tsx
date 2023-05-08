@@ -14,6 +14,8 @@ export default function SearchApp() {
     category,
     search,
     setSearch,
+    searchUrl,
+    setSearchUrl,
     color,
     setColor,
     refSearchInput,
@@ -25,7 +27,6 @@ export default function SearchApp() {
   const refSendButton = useRef(null)
   const [isInputActive, setInputActive] = useState<boolean>(false)
   const [isChild, setIsChild] = useState<boolean>(false)
-  const [searchUrl, setSearchUrl] = useState<string>('')
 
   // focus
   const inputFocus = useCallback(
@@ -44,7 +45,7 @@ export default function SearchApp() {
     setInputActive(false)
   }
 
-  // get search source
+  // get search provider
   function getSearchSource(id: string) {
     for (const i in data?.categories) {
       if (category == data?.categories[i].name) {
@@ -79,17 +80,15 @@ export default function SearchApp() {
     inputFocus()
 
     // url
-    const urlQuery: string = searchSource?.query ? '?' + searchSource?.query + '=' : '?q='
-    const urlAdditional: string = searchSource?.additional ? searchSource?.additional : ''
-    const urlSource: string = '&utm_source=findto_app'
+    const query: string = searchSource?.query ? '?' + searchSource?.query + '=' : '?q='
+    const additional: string = searchSource?.additional ?? ''
+    const credits: string = '&utm_source=findto_app'
 
-    if (searchSource?.query === false) {
-      setSearchUrl(searchSource?.action + inputValue + urlAdditional)
-    } else {
-      setSearchUrl(searchSource?.action + urlQuery + inputValue + urlAdditional + urlSource)
-    }
+    searchSource?.query === false
+      ? setSearchUrl(searchSource?.action + inputValue + additional)
+      : setSearchUrl(searchSource?.action + query + inputValue + additional + credits)
 
-    // child
+    // child select options
     if (searchSource?.child) {
       setIsChild(true)
     } else {

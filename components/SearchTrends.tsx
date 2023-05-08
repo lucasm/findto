@@ -266,7 +266,7 @@ export default function SearchTrends() {
   }
 
   return (
-    <div className={Style.widgetSearchTrends + ' container'} id="trends">
+    <div className={Style.widgetSearchTrends + ' ' + Style.widget + ' container'} id="trends">
       <h2>
         <TrendingUp /> {data?.t?.trends ?? 'Trends'}
       </h2>

@@ -25,6 +25,6 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
       })
   } else {
     // error
-    res.status(405).end('Missing parameters LOCALE or TERM - ' + locale + ' ' + term)
+    res.status(405).end('Missing parameters. LOCALE: ' + locale + ' TERM: ' + term)
   }
 }

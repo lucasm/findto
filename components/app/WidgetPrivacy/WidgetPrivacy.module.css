@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@keyframes donut-chart-fill {
+  to {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.donut {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  font-size: 1rem;
+}
+.donut p {
+  position: absolute;
+  top: 6.2rem;
+  right: 0;
+  left: 0;
+  font-weight: bold;
+}
+.donut figure {
+  position: absolute;
+  top: 3.6rem;
+  right: 0;
+  left: 0;
+}
+.donut figure svg {
+  height: 32px;
+  stroke: var(--color-white-translucent-3);
+  stroke-width: 3.5px;
+}
+.donut svg {
+  width: auto;
+}
+.donutSegment {
+  animation: donut-chart-fill 1s reverse ease-in;
+  transition: stroke-dasharray 1.5s ease;
+}
+.donutPercent {
+  line-height: 1;
+  font-size: 6px;
+  font-weight: bold;
+  fill: var(--color-white-translucent-3);
+}

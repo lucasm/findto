@@ -12,7 +12,7 @@ type Props = {
 export default function SearchSuggestions(props: Props) {
   const { putValue, inputValue } = useSearch()
 
-  console.log(inputValue)
+  // console.log(inputValue)
 
   function isValid(): boolean {
     if (props.locale && props.term.length > 1 && props.term.length < 50) {

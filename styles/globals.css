@@ -16,6 +16,7 @@
   --color-blue: #56bbff;
   --color-white-translucent: rgba(255, 255, 255, 0.2);
   --color-white-translucent-2: rgba(255, 255, 255, 0.25);
+  --color-white-translucent-3: rgba(255, 255, 255, 0.4);
   --color-black-translucent: rgba(0, 0, 0, 0.1);
   --box-shadow: 0 1.8px 3.8px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%);
   --opacity: 0.6;
@@ -30,6 +31,7 @@
   --size-medium: 40px;
   --size-large: 48px;
   --size-header: 240px;
+  --max-size-container: 1200px;
   --transition-hover: hover, background-color 0.2s;
 }
 *,

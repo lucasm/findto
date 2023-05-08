@@ -18,6 +18,6 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
         res.status(400).json({ err })
       })
   } else {
-    res.status(405).end('Missing parameters URL - ' + url)
+    res.status(405).end('Missing parameters. URL: ' + url)
   }
 }

@@ -31,9 +31,9 @@
 
 .socialIcons {
   display: flex;
+  gap: 1rem;
 }
 .socialIcons a {
-  padding-right: 1rem;
   font-size: 0;
 }
 .socialIcons svg {

@@ -13,6 +13,7 @@ export function SearchContextProvider({ children }) {
   const [theme, setTheme] = useState<string>('light')
   const [category, setCategory] = useState<string>('Web')
   const [search, setSearch] = useState<string>('google')
+  const [searchUrl, setSearchUrl] = useState<string>('')
   const [color, setColor] = useState<string>('#fff')
   const [trends, setTrends] = useState<string>('Trends')
   const [country, setCountry] = useState<string>('US')
@@ -92,6 +93,8 @@ export function SearchContextProvider({ children }) {
         setTheme,
         search,
         setSearch,
+        searchUrl,
+        setSearchUrl,
         category,
         setCategory,
         color,
