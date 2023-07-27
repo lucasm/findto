@@ -1,0 +1,170 @@
+/* Header */
+.header {
+  position: relative;
+  width: 100%;
+  height: 3.5rem;
+  background: var(--color-white);
+  color: var(--color-black);
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  max-width: var(--max-size-container);
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  line-height: 3.5rem;
+  gap: 0.75rem;
+  font-size: var(--font-size);
+  align-items: center;
+}
+.logo svg {
+  width: 28px;
+}
+
+/* Nav */
+.nav {
+  display: flex;
+}
+.nav ul {
+  display: flex;
+}
+.nav li {
+  display: flex;
+  line-height: 0;
+}
+.nav ul li a {
+  margin: 0 0 0 0.5rem;
+  padding: 1rem;
+}
+.nav ul li:last-child a {
+  margin-left: 1.5rem;
+  color: var(--color-white);
+  background: var(--color-black);
+  border-radius: var(--radius-full);
+}
+.nav ul li:last-child a:hover {
+  background: var(--color-black) !important;
+}
+
+/* Container */
+.container {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 6rem 0;
+  width: 100%;
+  max-width: 1024px;
+  background: transparent;
+}
+.actionContainer {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.actionContainer h2 {
+  font-size: var(--font-size-1);
+}
+
+/* PageLayout component */
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.page section,
+.page footer {
+  background: var(--color-white);
+}
+
+.page section h1 {
+  padding-bottom: 2.5rem;
+}
+.page section h2 {
+  line-height: 1.25;
+  margin-bottom: 2rem;
+}
+.page section h3 {
+  margin-bottom: 1.5rem;
+}
+.page section p {
+  font-size: var(--font-size-big);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/* App Icon */
+.icon {
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+  margin: 0 0 2rem;
+  background-image: url('/images/findto-icon-black.svg');
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--color-white-translucent);
+  border-radius: 33.3%;
+  box-shadow: var(--shadow-2);
+}
+.icon img {
+  height: 12rem;
+}
+
+/* Card Duos */
+.cardDuos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 7rem;
+}
+.cardDuos div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+  text-align: left;
+  align-items: center;
+}
+.cardDuos figure {
+  max-width: 400px;
+}
+.cardDuos h2 {
+  float: left;
+  width: 100%;
+}
+
+/* Card Feats */
+.cardFeats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5rem;
+  padding: 4rem 0 1rem;
+  text-align: left;
+}
+.cardFeats figure {
+  display: flex;
+  margin-bottom: 2rem;
+  padding: 1.35rem;
+  background: var(--color-white-translucent);
+  height: 5rem;
+  width: 5rem;
+  border-radius: 33.3%;
+  box-shadow: var(--shadow-2);
+  align-items: center;
+  justify-content: center;
+}
+.cardFeats svg {
+  stroke-width: 2.4;
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Mobile */
+@media only screen and (max-width: 720px) {
+  .header {
+    background-color: red;
+  }
+}

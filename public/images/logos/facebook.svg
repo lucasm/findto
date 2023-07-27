@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 80 80" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<path d="M0 0L80 0L80 80L0 80L0 0Z" fill="#000000" fill-opacity="0" fill-rule="nonzero" opacity="1" stroke="none"/>
+<g id="Sem-Título">
+<path d="M80 40.2427C80 18.016 62.0933 0 40 0C17.9067 0 0 18.016 0 40.2427C0 60.3333 14.624 76.9813 33.7493 80L33.7493 51.8773L23.5947 51.8773L23.5947 40.24L33.7493 40.24L33.7493 31.376C33.7493 21.2907 39.72 15.7173 48.8587 15.7173C53.232 15.7173 57.8133 16.504 57.8133 16.504L57.8133 26.408L52.7653 26.408C47.7973 26.408 46.2507 29.512 46.2507 32.696L46.2507 40.2427L57.344 40.2427L55.5707 51.8747L46.2507 51.8747L46.2507 80C65.376 76.9813 80 60.3333 80 40.2427Z" fill="#000000" fill-rule="nonzero" opacity="1" stroke="none"/>
+</g>
+</svg>

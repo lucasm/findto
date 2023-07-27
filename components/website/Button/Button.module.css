@@ -1,0 +1,17 @@
+.button {
+  display: inline-block;
+  margin: 0.5rem 0 0;
+  padding: 1.2rem 2.8rem;
+  color: var(--color-black);
+  font-size: var(--font-size-big);
+  border: none;
+  border-radius: var(--radius);
+  line-height: 1;
+  transition: all 0.25s ease-in-out;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+  box-shadow: var(--box-shadow);
+}

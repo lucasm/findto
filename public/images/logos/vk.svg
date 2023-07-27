@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 80 80" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<path d="M0 0L80 0L80 80L0 80L0 0Z" fill="#000000" fill-opacity="0" fill-rule="nonzero" opacity="1" stroke="none"/>
+<g id="Sem-Título">
+<path d="M74.5 5.5C68.75 0 59.75 0 41.5 0L38.25 0C20.25 0 11.25 0 5.5 5.5C0 11.25 0 20.25 0 38.5L0 41.75C0 59.75 0 69 5.5 74.5C11 80 20.25 80 38.5 80L41.75 80C59.75 80 69 80 74.5 74.5C80 68.75 80 59.75 80 41.5L80 38.25C80 20.25 80 11.25 74.5 5.5ZM57.25 58.25C55.25 52 50.25 47 43.75 46.25L43.75 58.25L42.75 58.25C24.75 58.25 13.75 45.75 13.25 25L22.5 25C22.75 40.25 29.75 46.75 35 48L35 25L43.75 25L43.75 38.25C49 37.75 54.25 31.75 56 25L64.75 25C63.25 33.25 57.5 39.25 53.25 41.5C57.5 43.5 64 48.75 66.75 58.25L57.25 58.25Z" fill="#000000" fill-rule="nonzero" opacity="1" stroke="none"/>
+</g>
+</svg>

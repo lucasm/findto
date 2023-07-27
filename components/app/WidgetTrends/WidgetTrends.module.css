@@ -1,0 +1,60 @@
+.container ul {
+  filter: grayscale(100%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+}
+.container ul li button {
+  font-size: 1.1rem;
+  border: 0;
+  background: transparent;
+  margin: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  transition: var(--transition-hover);
+  letter-spacing: -1px;
+}
+.container ul li button:hover,
+.container ul li button:focus {
+  background: var(--color-grey);
+}
+
+.container ul li:nth-child(1) button {
+  font-size: 2.6rem;
+}
+.container ul li:nth-child(2) button {
+  font-size: 2.4rem;
+}
+.container ul li:nth-child(3) button {
+  font-size: 2.2rem;
+}
+.container ul li:nth-child(4) button {
+  font-size: 2rem;
+}
+.container ul li:nth-child(5) button {
+  font-size: 1.9rem;
+}
+.container ul li:nth-child(6) button {
+  font-size: 1.8rem;
+}
+.container ul li:nth-child(7) button {
+  font-size: 1.7rem;
+}
+.container ul li:nth-child(8) button {
+  font-size: 1.6rem;
+}
+.container ul li:nth-child(9) button {
+  font-size: 1.5rem;
+}
+.container ul li:nth-child(10) button {
+  font-size: 1.4rem;
+}
+.container ul li:nth-child(11) button {
+  font-size: 1.3rem;
+}
+.container ul li:nth-child(12) button {
+  font-size: 1.2rem;
+}

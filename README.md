@@ -1,91 +1,75 @@
 <div align="center">
 <a href="https://findto.app/">
-<img height="128" src="https://findto.app/images/findto-logo-color.svg">
+<img height="128" src="https://raw.githubusercontent.com/lucasm/findto/dev/public/images/icon-512.svg">
 </a>
 </div>
+
 <h1 align="center">
-<a href="https://findto.app/">Findto</a>
+Findto
 </h1>
+
 <p align="center">
-<img alt="Languages" src="https://img.shields.io/badge/languages available -1-ffdb56">
+<a href="https://findto.app" target="_blank"><img alt="Languages" src="https://img.shields.io/badge/languages available -2-ffdb56"></a>
 <a href="https://github.com/lucasm/findto/issues" target="_blank"><img alt="Issues" src="https://img.shields.io/github/issues/lucasm/findto?color=ff5c5c"></a>
+<a href="https://discord.gg/XbZcvNuQ6F" target="_blank"><img alt="Community" src="https://img.shields.io/discord/866829154032812073?color=bc86ff&label=community"></a>
+<a href="https://github.com/sponsors/lucasm" target="_blank"><img alt="Sponsors" src="https://img.shields.io/github/sponsors/lucasm?color=1491de"></a>
 <a href="https://github.com/lucasm/findto/blob/master/LICENSE.md" target="_blank"><img alt="License" src="https://img.shields.io/github/license/lucasm/findto?color=37bf5d"></a>
-<a href="https://patreon.com/lucasm" target="_blank"><img alt="Patrons" src="https://img.shields.io/badge/patrons -3-1491de"></a>
-<a href="https://discord.gg/JgmDXhGP" target="_blank"><img alt="Discord" src="https://img.shields.io/discord/866829154032812073?color=ff6485"></a>
-
-
 </p>
+
 <p align="center">
-The open source Web search app<br>
+Decentralized Web Search with AI<br>
 </p>
 
+## 🌎 Unlocking web searches
 
-## 🌎 Opening the Web searches
+Findto is a decentralized web search app with AI.
 
-Findto is a Web search app made to do more productive searches. You can use the power of multiple search engines and sources to find anything, with freedom and privacy.
+Findto mission is to make truly free searches and more productive, putting people in control of search algorithms and AIs — not the other way around.
 
-Findto have the mission to make searches truly free, **putting people in control of the search algorithms** — and not the inverse. Findto proposes a new Web search experience, being an open and collaborative search tool, to encourage choice, diversity and discoverability on the Web.
+Findto proposes a new Web search experience: you are on control of multiple powerful sources and get better results.
+
+The centralized Web, where our searches are monopolized, it's a limiting and exhausting experience. Findto is encouraging everyone to rediscover the Web, for a more diverse, healthier and democratic use of them. Where your choices matter.
+
+Findto is free, open source and built by community.
 
 ## 🌈 Features
 
-- **Multiple  Search** — Quickly search the same term in multiple search engines.
+- **Decentralized search** — Quickly search, the same term, on multiple search providers and categories.
 
-- **Categories** — Explore the search categories to find exactly what you are looking for in most popular sources.
+- **AI suggestions** — Get AI suggestions to help autocomplete terms as you type.
 
-- **Trends** — Trending searches, contents, weather and places nearby you.
+- **Trends** — See trending topics, contents, events and places nearby you.
 
-- **Privacy Rank** — Get a privacy score of how compromised the search provider is about treat your personal data.
+- **Privacy ranking** — See the privacy score of each search provider, know how much they are compromised with your data.
 
-- **Autocomplete** — Auto suggestions of search terms as you type.
+- **Accessibility** — Switch the color theme and layout, view ehanced contrast and navigate with keyboard.
 
-- **Voice Search** — Use your voice to search anywhere.
+- **Internationalization** — Chose your country for local sources or use global search.
 
-- **Accessibility** — Hight contrast, dark theme, mutable layout and access keys.
+- **Voice search** — Use your voice to search anywhere.
 
-- **Visual Search** — COMING SOON.
+- **Visual search** — ** COMING SOON ** Use a image to search on supported sources.
 
-- **Internationalization** — COMING SOON.
-
+- **Social action** — ** COMING SOON ** Instead ads, see a social cause to act.
 
 ## 🔍 Search providers
 
-The  search providers available in Findto are chosen by the relevance for the open Web and popularity — and grouped into categories: `Web, Social, Video, Image, Audio, Academic, Local, Shopping, News, Jobs, Stock, Code, Torrent` and others.
+All the search providers available on Findto are chosen by the: 1) popularity 2) commitment with open access 3) privacy. The search providers are grouped in main navigable categories, like: `Web`, `AI`, `Social`, `Video`, `Image`, `Audio`, `Academic`, `Local`, `Shopping`, `Jobs`, `Code` and others.
 
-Read the [Documentation](https://github.com/lucasm/findto/wiki) for details.
+For more technical details, read the [Wiki](https://github.com/lucasm/findto/wiki).
 
+## 💖 Community
 
-## 💡 Motivation
+Findto is made collaboratively.
 
-The centralization of the Web in Big Techs is not positive.
+To support active development ✨ [become a Sponsor and get exclusive benefits](https://github.com/sponsors/lucasm) ✨
 
-The Web is bigger than the biggest players.
+- For updates follow on [Twitter](https://twitter.com/findtoapp)
+- For discussions join on [Discord](https://discord.gg/JgmDXhGP)
+- For code bugs or new features, view the [Projects](https://github.com/lucasm/findto/projects) board and check opened [Issues](https://github.com/lucasm/findto/issues) before send pull requests.
 
-Sometimes we forgot how important is bring new digital solutions and experiences, for diversity, inspiration, competition, personal knowledge and even strengthen our democracies.
+## 🔒 Privacy
 
-How make searches really free? How to put people in control of the search algorithms (not the inverse)? How privative is this search? What are others searching on this subject? Where else can I search?
+Findto is built for privacy. Findto do not store searches or any personal users info. Redirect to third-party services may cause collection of your personal info, which is why Findto show a Privacy Ranking of every search provider. Please, see the [Privacy Policy](https://findto.app/privacy).
 
-These questions brought Findto to life.
-
-
-## 💗 Contributing
-
-Findto is open source.
-
-You can [become a supporter on Patreon](https://patreon.com/lucasm) to help maintain active development and get benefits as early Beta access
-
-- Join on [Discord](https://discord.gg/JgmDXhGP) community channel
-- Participate on public [Discussions](https://github.com/lucasm/findto/discussions) forum
-- Follow on  [Twitter](https://twitter.com/findtoapp) for updates
-
-For bugs and features, view the [Project board](https://github.com/lucasm/findto/projects) and check opened issues before create a new or send pull requests.
-
-
-## 📜 Legal
-
-- Source code is MIT licensed
-- External data powered by [amazing APIs](https://github.com/lucasm/findto/wiki/List-of-External-APIs)
-- [Privacy Policy](https://github.com/lucasm/findto/wiki/Privacy-Policy)
-- [Terms of Service](https://github.com/lucasm/findto/wiki/Terms-of-Service)
-- Findto is a project by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app)
-
-Happy searches!
+Findto is made by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app).

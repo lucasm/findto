@@ -1,0 +1,37 @@
+.loader {
+  width: 3rem;
+  height: 1.8rem;
+  display: inline-block;
+  margin: auto;
+  position: relative;
+  border-radius: var(--radius);
+  color: var(--color-black-translucent);
+  background: currentColor;
+  animation: loader 0.6s 0.3s ease infinite alternate;
+}
+.loader::after,
+.loader::before {
+  content: '';
+  width: 3rem;
+  height: 1.8rem;
+  background: currentColor;
+  position: absolute;
+  border-radius: var(--radius);
+  top: 0;
+  right: 115%;
+  animation: loader 0.6s ease infinite alternate;
+}
+.loader::after {
+  left: 115%;
+  right: auto;
+  animation-delay: 0.6s;
+}
+
+@keyframes loader {
+  0% {
+    width: 3rem;
+  }
+  100% {
+    width: 6rem;
+  }
+}
