@@ -1124,7 +1124,7 @@
           "color": "#60d399"
         },
         {
-          "name": "Wolfram Alpha",
+          "name": "WolframAlpha",
           "action": "https://www.wolframalpha.com/input",
           "query": "i",
           "color": "#ff9c56"

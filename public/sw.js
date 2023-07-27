@@ -81,10 +81,10 @@ define(['./workbox-327c579b'], (function (workbox) { 'use strict';
         event,
         state
       }) => {
-        if (response && response.type === 'opaqueredirect') {
+        if (response && response.type === "opaqueredirect") {
           return new Response(response.body, {
             status: 200,
-            statusText: 'OK',
+            statusText: "OK",
             headers: response.headers
           });
         }

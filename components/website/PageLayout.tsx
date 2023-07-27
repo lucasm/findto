@@ -3,32 +3,17 @@ import Head from 'next/head'
 import Link from 'next/link'
 import AppFooter from '../app/Footer'
 import SvgLogo from '../../components/website/SvgLogo'
-
 import { useSearch } from '../../contexts/SearchContext'
+import { LayoutProps } from '../../interfaces/pages'
 
-export default function PageLayout(props) {
-  const { theme } = useSearch()
+export default function LayoutPage(props: LayoutProps) {
+  const { data, theme } = useSearch()
 
   return (
     <div className={Style.page + ' ' + theme}>
       <Head>
-        <title>{props.title} – Findto</title>
+        <title>{props.title && props.title} | Findto</title>
         <meta name="description" content={props.description} />
-        <link rel="icon" href="/favicon.ico" />
-
-        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=[Tracking ID]" />
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '[Tracking ID]');
-            `,
-        }}
-      /> */}
-
-        <meta name="viewport" content="width=device-width, user-scalable=no" />
       </Head>
 
       <header className={Style.header}>
@@ -43,13 +28,18 @@ export default function PageLayout(props) {
           <nav className={Style.nav}>
             <ul>
               <li>
-                <Link href="/about">About</Link>
+                <Link href="/about">{data?.t?.about ?? 'About'}</Link>
               </li>
               <li>
-                <Link href="/contribute">Contribute</Link>
+                <Link href="/community">{data?.t?.community ?? 'Community'}</Link>
               </li>
               <li>
-                <Link href="/">Open App</Link>
+                <a href="https://patreon.com/lucasm" target="_blank">
+                  {data?.t?.donate ?? 'Donate'}
+                </a>
+              </li>
+              <li>
+                <Link href="/">{data?.t?.open ?? 'Open app'} </Link>
               </li>
             </ul>
           </nav>

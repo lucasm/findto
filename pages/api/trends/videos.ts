@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import axios from 'axios'
-import { ITrends } from '../../../types/trends'
+import { ITrends } from '../../../interfaces/trends'
 
 export default async function endpoint(req: NextApiRequest, res: NextApiResponse): Promise<void> {
   // parameters
@@ -9,12 +9,13 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
   } = req
 
   if (country) {
-    // https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&regionCode=' + country + '&maxResults=16&key=AIzaSyBa7bR595t6tjXgbBJBcJ7PM9iEhGw39Yo
+    // https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&regionCode=' + country + '&maxResults=16&key=
 
     let url =
       'https://api.themoviedb.org/3/trending/all/day?language=' +
       country +
-      '&api_key=37da347aab868bdaea01903e2387f1ad'
+      '&api_key=' +
+      process.env.NEXT_API_KEY_TMDB
 
     await axios
       .get(url)
@@ -24,7 +25,6 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
         data.results.forEach((item) => {
           a.push({
             title: item.title ? item.title : item.name,
-            url: item.media_type + '/' + item.id,
           })
         })
 

@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import axios from 'axios'
-import { ITrends } from '../../../types/trends'
+import { ITrends } from '../../../interfaces/trends'
 
 export default async function endpoint(req: NextApiRequest, res: NextApiResponse): Promise<void> {
   // parameters
@@ -23,7 +23,7 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
 
         data.articles.forEach((item) => {
           a.push({
-            title: item.title,
+            title: item.title.split('-')[0],
             url: item.url,
           })
         })

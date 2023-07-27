@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with Vectornator (http://vectornator.io/) -->
-<svg height="80.0pt" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 200 80" width="200.0pt" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 200 80" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs/>
+<path d="M0 0L200 0L200 80L0 80L0 0Z" fill="#000000" fill-opacity="0" fill-rule="nonzero" opacity="1" stroke="none"/>
 <g id="Sem-Título">
 <g opacity="1">
 <path d="M11.7749 56.533C7.72313 56.58 3.70824 55.7592 0 54.1258L0.841065 48.0933C4.07887 50.1177 7.81158 51.2114 11.6299 51.2545C17.8074 51.2545 20.3306 47.7163 20.3306 44.323C20.4466 35.7964 0.377029 34.5783 0.377029 21.7303C0.377029 14.8568 4.90138 9.28833 15.4582 9.28833C19.2159 9.22837 22.9433 9.96989 26.392 11.4635L26.102 17.496C22.8582 15.6402 19.195 14.6421 15.4582 14.5957C8.96169 14.5957 7.01854 18.134 7.01854 21.5273C7.01854 30.2279 27.0881 31.9971 27.0881 44.149C27.0591 51.0225 21.4906 56.533 11.7749 56.533Z" fill="#000000" fill-rule="nonzero" opacity="1" stroke="none"/>

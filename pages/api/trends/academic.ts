@@ -1,6 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-
-import { ITrends } from '../../../types/trends'
+import { ITrends } from '../../../interfaces/trends'
 
 export default function endpoint(req: NextApiRequest, res: NextApiResponse) {
   // parameters
@@ -9,7 +8,7 @@ export default function endpoint(req: NextApiRequest, res: NextApiResponse) {
   } = req
 
   if (country) {
-    let x = {}
+    let x: ITrends
 
     if (country === 'US') {
       x = {

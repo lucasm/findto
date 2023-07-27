@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import axios from 'axios'
-import { ITrends } from '../../../types/trends'
+import { ITrends } from '../../../interfaces/trends'
 
 export default async function endpoint(req: NextApiRequest, res: NextApiResponse): Promise<void> {
   let url =
@@ -15,8 +15,7 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
 
       for (var i in data.tracks.track) {
         a.push({
-          title: data.tracks.track[i].name + ', ' + data.tracks.track[i].artist.name,
-          url: data.tracks.track[i].url,
+          title: data.tracks.track[i].artist.name + ': ' + data.tracks.track[i].name,
         })
       }
 

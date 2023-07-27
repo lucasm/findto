@@ -1,6 +1,6 @@
 import Parser from 'rss-parser'
 const parser = new Parser()
-import { ITrends } from '../../../types/trends'
+import { ITrends } from '../../../interfaces/trends'
 
 // parameters
 let userCountry: string

@@ -9,14 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@imbios/next-pwa": "^1.1.1",
     "axios": "^0.27.2",
     "next": "^13.1.6",
-    "next-pwa": "^5.5.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-feather": "^2.0.9",
+    "react-speech-recognition": "^3.10.0",
+    "regenerator-runtime": "^0.13.11",
     "rss-parser": "^3.12.0",
-    "styled-components": "^5.3.9",
     "swr": "^2.0.3",
     "woeid": "^2.0.3"
   },

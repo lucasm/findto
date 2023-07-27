@@ -1,11 +1,12 @@
-import Style from '../styles/App.module.css'
+import Style from '../../../styles/App.module.css'
 import * as Icon from 'react-feather'
 import Link from 'next/link'
-import SvgLogo from '../components/website/SvgLogo'
+import SvgLogo from '../../website/SvgLogo'
 import { useState } from 'react'
-import { useSearch } from '../contexts/SearchContext'
-import { normalizeId } from '../utils/formats'
-import SelectLanguage from './SelectLanguage'
+import { useSearch } from '../../../contexts/SearchContext'
+import { normalizeId } from '../../../utils/formats'
+import SelectLanguage from '../SelectLanguage'
+import Popup from '../Popup'
 
 export default function AppHeader() {
   const {
@@ -16,13 +17,16 @@ export default function AppHeader() {
     setTheme,
     category,
     setCategory,
-    color,
     refSearchTabs,
     refSearchInput,
   } = useSearch()
 
-  const [menuActive, setMenuActive] = useState<boolean>(false)
+  const [showPopup, setShowPopup] = useState<boolean>(false)
 
+  function togglePopup() {
+    setShowPopup(!showPopup)
+    refSearchInput.current.focus()
+  }
   function toggleTheme() {
     if (theme == 'light') {
       setTheme('dark')
@@ -42,10 +46,6 @@ export default function AppHeader() {
       window.localStorage.setItem('layout', '1')
     }
     console.log(layout)
-  }
-  function toggleMenu() {
-    setMenuActive(!menuActive)
-    refSearchInput.current.focus()
   }
 
   function handleCategory(category: string, name_trends: string) {
@@ -97,17 +97,17 @@ export default function AppHeader() {
 
   return (
     <header className={Style.header}>
-      {/* Logo */}
+      {/* Link Logo */}
       <Link
         href="/"
         id="logo"
         className={Style.logo}
         onClick={() => refSearchInput.current.focus()}>
-        <SvgLogo fill={color} />
+        <SvgLogo />
         Findto
       </Link>
 
-      {/* Categories */}
+      {/* Nav Categories */}
       <nav id="nav" className={Style.nav}>
         <ul>
           {data?.categories?.map(
@@ -127,25 +127,19 @@ export default function AppHeader() {
         </ul>
       </nav>
 
-      {/* Settings */}
+      {/* Settings - Button  */}
       <div className={Style.iconSettings}>
-        <button onClick={toggleMenu}>
+        <button onClick={togglePopup}>
           <Icon.Settings />
           {data?.t?.settings ?? 'Settings'}
         </button>
       </div>
 
-      {/* Settings Popup */}
-      <div className={menuActive ? Style.menuPopup + ' ' + Style.menuPopupActive : Style.menuPopup}>
-        <div className={Style.menu}>
-          <button onClick={toggleMenu} className={Style.menuClose}>
-            <Icon.X />
-            Close
-          </button>
+      {/* Settings - Popup  */}
+      <Popup title={data?.t?.settings ?? 'Settings'} show={showPopup} onClose={togglePopup}>
+        <div>
+          <h3>{data?.t?.theme ?? 'Theme'}</h3>
 
-          <h3>{data?.t?.settings ?? 'Settings'}</h3>
-
-          <h4>{data?.t?.theme ?? 'Theme'}</h4>
           <div className={Style.menuBlock}>
             <button onClick={toggleTheme}>
               {theme == 'light' ? <Icon.Moon /> : <Icon.Sun />}
@@ -157,23 +151,23 @@ export default function AppHeader() {
             </button>
           </div>
 
-          <h4>{data?.t?.language ?? 'Language'}</h4>
+          <h3>{data?.t?.language ?? 'Language'}</h3>
           <div className={Style.menuBlock}>
             <SelectLanguage />
           </div>
 
-          <h4>{data?.t?.contribute ?? 'Contribute'}</h4>
+          <h3>{data?.t?.contribute ?? 'Contribute'}</h3>
           <div className={Style.menuBlock}>
             <a href="https://github.com/sponsors/lucasm" target="_blank" rel="noopener noreferrer">
               <Icon.Heart />
               Sponsor
             </a>
-            <button>
+            <a href="https://github.com/sponsors/lucasm" target="_blank" rel="noopener noreferrer">
               <Icon.MessageSquare /> Feedback
-            </button>
+            </a>
           </div>
         </div>
-      </div>
+      </Popup>
     </header>
   )
 }

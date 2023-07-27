@@ -1,10 +1,10 @@
-import Style from '../../../styles/App.module.css'
-import StyleWidget from '../WidgetPrivacy/WidgetPrivacy.module.css'
+import styles from '../WidgetPrivacy/WidgetPrivacy.module.css'
 import useSWR from 'swr'
 import { fetcher } from '../../../utils/http'
 import { useSearch } from '../../../contexts/SearchContext'
-import { Eye, AlertTriangle, ThumbsUp, Shield } from 'react-feather'
-import { ReactNode, useEffect, useState } from 'react'
+import { Shield, Eye, AlertTriangle, ThumbsUp } from 'react-feather'
+import { useEffect, useState } from 'react'
+import WidgetContainer from '../WidgetContainer'
 
 interface IApiPrivacy {
   name: string
@@ -15,22 +15,11 @@ interface IApiPrivacy {
 }
 
 export default function WidgetPrivacy() {
-  const { searchUrl } = useSearch()
+  const { data, searchUrl } = useSearch()
 
   const [domain, setDomain] = useState<string | null>(null)
-  const [icon, setIcon] = useState<ReactNode>(null)
   const [label, setLabel] = useState<string>()
-  const [percents, setPercents] = useState<string[]>(['0', '100'])
-
-  // function extractDomain(url: string) {
-  //   try {
-  //     const domain = new URL(url).hostname.replace(/^www\./, '')
-  //     return domain
-  //   } catch (error) {
-  //     console.error('Erro ao extrair o domínio:', error.message)
-  //     return null
-  //   }
-  // }
+  const [percents, setPercents] = useState<string[]>(['30', '70'])
 
   function isValidUrl(url: string) {
     try {
@@ -69,40 +58,36 @@ export default function WidgetPrivacy() {
 
     return hostname
   }
-  function calcPercent(valor: number) {
-    if (valor < 300 || valor > 850) {
-      return ['0', '100']
+  function definePercents(valor: number) {
+    if (valor) {
+      if (valor > 300 || valor < 850) {
+        const porcentagem = ((valor - 300) / (850 - 300)) * 100
+        const sobraPorcentagem = 100 - porcentagem
+        return [porcentagem.toFixed(0), sobraPorcentagem.toFixed(0)]
+      }
     } else {
-      const porcentagem = ((valor - 300) / (850 - 300)) * 100
-      const sobraPorcentagem = 100 - porcentagem
-      return [porcentagem.toFixed(0), sobraPorcentagem.toFixed(0)]
+      return ['30', '70']
     }
   }
   function defineLabels(score: number) {
     if (score) {
       if (score >= 300 && score <= 579) {
-        setLabel('Very poor')
-        setIcon(<AlertTriangle />)
+        setLabel('Very Poor')
       }
       if (score >= 580 && score <= 669) {
         setLabel('Fair')
-        setIcon(<AlertTriangle />)
       }
       if (score >= 670 && score <= 739) {
         setLabel('Good')
-        setIcon(<ThumbsUp />)
       }
       if (score >= 740 && score <= 799) {
-        setLabel('Very good')
-        setIcon(<ThumbsUp />)
+        setLabel('Very Good')
       }
       if (score >= 800 && score <= 850) {
         setLabel('Exceptional')
-        setIcon(<Shield />)
       }
     } else {
-      setLabel('Not found')
-      setIcon(null)
+      setLabel('Unavailable')
     }
   }
 
@@ -115,61 +100,69 @@ export default function WidgetPrivacy() {
     }
   }, [searchUrl])
 
-  const { data, error, isLoading } = useSWR(domain ? '/api/privacy?url=' + domain : null, fetcher, {
-    revalidateIfStale: false,
-    revalidateOnFocus: false,
-    revalidateOnReconnect: false,
-  })
+  function usePrivacy() {
+    const { data, error } = useSWR<IApiPrivacy>(
+      domain ? '/api/privacy?url=' + domain : null,
+      fetcher,
+      {
+        revalidateIfStale: false,
+        revalidateOnFocus: false,
+        revalidateOnReconnect: false,
+      }
+    )
+
+    return {
+      dataPrivacy: data,
+      isLoadingPrivacy: !error && !data,
+      isErrorPrivacy: error,
+    }
+  }
+  const { dataPrivacy, isLoadingPrivacy, isErrorPrivacy } = usePrivacy()
 
   useEffect(() => {
-    // console.log(data)
-
-    defineLabels(data?.score)
-    setPercents(calcPercent(data?.score))
-  }, [data])
+    // console.log(dataPrivacy)
+    defineLabels(dataPrivacy?.score)
+    setPercents(definePercents(dataPrivacy?.score))
+  }, [dataPrivacy])
 
   return (
-    <div className={Style.widget}>
-      <h2>
-        <Eye /> Privacy
-      </h2>
-      <div className={StyleWidget.container}>
-        <div className={StyleWidget.donut}>
-          <figure>{icon}</figure>
-          <p>{isLoading ? '...' : label}</p>
-
-          <svg width="100%" height="100%" viewBox="0 0 40 40" className={StyleWidget.donut}>
-            <circle cx="20" cy="20" r="14.4" fill="rgb(255 255 255 / 5%)"></circle>
+    <WidgetContainer
+      title={data?.t?.privacy ?? 'Privacy'}
+      icon={<Shield />}
+      creditTitle="Privacy Monitor"
+      creditUrl="https://www.privacymonitor.com/?utm_source=findto_app">
+      <div className={styles.container}>
+        <div className={styles.donut}>
+          <svg width="100%" height="100%" viewBox="0 0 40 40" className={styles.donut}>
+            <circle cx="20" cy="20" r="15" fill="rgb(0 0 0 / 2.5%)"></circle>
+            {/* for change donut, change dasharray */}
             <circle
+              className={styles.donutSegment}
               cx="20"
               cy="20"
               r="15.91549430918954"
               fill="transparent"
-              strokeWidth="3.5"></circle>
-            {/* for change donut make changes here in dasharray */}
-            <circle
-              className={StyleWidget.donutSegment}
-              cx="20"
-              cy="20"
-              r="15.91549430918954"
-              fill="transparent"
-              strokeWidth="3.5"
-              strokeDasharray={data ? percents[0] + ' ' + percents[1] : '0 100'}
+              stroke="#000"
+              strokeWidth="2"
+              strokeDasharray={percents[0] + ' ' + percents[1]}
               strokeDashoffset="25"
-              stroke="rgb(255 255 255 / 30%)"
+              strokeLinecap="round"
               rx="250"></circle>
             <g>
-              <text y="50%" transform="translate(0, 8.5)">
-                <tspan x="50%" textAnchor="middle" className={StyleWidget.donutPercent}>
-                  {data ? percents[0] : ''}
+              <text y="50%" x="50%" transform="translate(0, 1.5)">
+                <tspan textAnchor="middle" className={styles.donutPercent}>
+                  {dataPrivacy ? percents[0] : '?'}
                 </tspan>
+                {dataPrivacy && <tspan className={styles.donutPercentSymbol}>%</tspan>}
               </text>
             </g>
           </svg>
         </div>
 
-        {error && <div>Score not found to {domain}</div>}
+        <p>{isLoadingPrivacy ? '...' : label}</p>
+        {/* {dataPrivacy && <p>{domain}</p>} */}
+        {/* {isErrorPrivacy && <p> Error {domain}</p>} */}
       </div>
-    </div>
+    </WidgetContainer>
   )
 }

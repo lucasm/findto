@@ -6,14 +6,16 @@
     "settings": "Ajustes",
     "theme": "Tema",
     "language": "Idioma",
-    "powered": "Fornecido por",
+    "powered": "Via",
     "about": "Sobre",
+    "open": "Abrir",
     "contribute": "Contribua",
+    "community": "Comunidade",
+    "donate": "Doar ♥",
     "terms": "Termos",
     "privacy": "Privacidade",
-    "copyright": "Findto é um aplicativo de busca descentralizada na web com IA, gratuito e de código aberto, que redireciona para fontes originais externas e respeita a sua privacidade. Direitos reservados as marcas registradas. Feito por",
-    "about_title": "A nova busca na web",
-    "contribute_title": "Contribua com o Findto"
+    "copyright": "Findto é um aplicativo open source de busca descentralizada na web com IA, privacidade e diversas fontes. Todos os direitos reservados as marcas registradas e recursos externos. Feito por ",
+    "link_feedback": "https://forms.gle/6kh9NoNxf63qsQSk8"
   },
   "categories": [
     {
@@ -26,6 +28,10 @@
           "query": "q",
           "color": "#649fff",
           "child": [
+            {
+              "name": "Tudo",
+              "additional": ["tbm", "isch"]
+            },
             {
               "name": "Images",
               "additional": ["tbm", "isch"]
@@ -65,7 +71,7 @@
           "name": "Bing",
           "action": "https://www.bing.com/search",
           "query": "q",
-          "color": "#37c3e3",
+          "color": "#4dd1f0",
           "child": [
             {
               "name": "Images",
@@ -98,7 +104,7 @@
           "name": "DuckDuckGo",
           "action": "https://duckduckgo.com/",
           "query": "q",
-          "color": "#ff755f",
+          "color": "#ff825e",
           "child": [
             {
               "name": "Images",
@@ -126,7 +132,7 @@
           "name": "Yahoo",
           "action": "https://br.search.yahoo.com/search",
           "query": "p",
-          "color": "#b071ff",
+          "color": "#B980FF",
           "child": [
             {
               "name": "Images",
@@ -204,7 +210,12 @@
           "query": "q",
           "color": "#74d47b"
         },
-
+        {
+          "name": "You",
+          "action": "https://you.com/search",
+          "query": "q",
+          "color": "#6186ff"
+        },
         {
           "name": "Yandex",
           "action": "https://www.yandex.com/search/",
@@ -335,10 +346,34 @@
           "color": "#0dcfa0"
         },
         {
+          "name": "Google Bard",
+          "action": "https://bard.google.com/",
+          "query": "question",
+          "color": "#cb83e0"
+        },
+        {
+          "name": "Bing Chat",
+          "action": "https://www.bing.com/search?q=Bing+AI&showconv=1",
+          "query": "q",
+          "color": "#1db6da"
+        },
+        {
           "name": "Perplexity",
           "action": "https://www.perplexity.ai/",
           "query": "q",
           "color": "#c4c4c4"
+        },
+        {
+          "name": "You Chat",
+          "action": "https://you.com/search",
+          "query": "fromSearchBar=true&tbm=youchat&q",
+          "color": "#6b8dff"
+        },
+        {
+          "name": "Phind",
+          "action": "https://www.phind.com/agent",
+          "query": "q",
+          "color": "#8275ff"
         },
         {
           "name": "Talk to Books",
@@ -354,15 +389,15 @@
       "data": [
         {
           "name": "Twitter",
-          "action": "https://twitter.com/search",
-          "query": "q",
+          "action": "https://twitter.com/search/",
+          "query": "src=typed_query&q",
           "color": "#4abaff"
         },
         {
           "name": "Facebook",
           "action": "https://www.facebook.com/public",
           "query": "query",
-          "color": "#7da2ff",
+          "color": "#509CFF",
           "child": [
             {
               "name": "Watch",
@@ -385,13 +420,13 @@
           "name": "Instagram",
           "action": "https://www.instagram.com/explore/tags/",
           "query": false,
-          "color": "#ff83cd"
+          "color": "#FD70B0"
         },
         {
-          "name": "LinkedIn",
-          "action": "https://www.linkedin.com/search/results/index/",
-          "query": "keywords",
-          "color": "#1da6ee"
+          "name": "TikTok",
+          "action": "https://www.tiktok.com/search",
+          "query": "q",
+          "color": "#ff6986"
         },
         {
           "name": "Reddit",
@@ -400,10 +435,16 @@
           "color": "#ff713a"
         },
         {
+          "name": "LinkedIn",
+          "action": "https://www.linkedin.com/search/results/index/",
+          "query": "keywords",
+          "color": "#39BAFF"
+        },
+        {
           "name": "Discord",
           "action": "https://discord.com/guild-discovery",
           "query": "query",
-          "color": "#7681ff"
+          "color": "#8791FF"
         },
         {
           "name": "Snapchat",
@@ -412,16 +453,28 @@
           "color": "#fffd5e"
         },
         {
+          "name": "Tumblr",
+          "action": "https://www.tumblr.com/search/",
+          "query": false,
+          "color": "#5084bf"
+        },
+        {
           "name": "Quora",
           "action": "https://www.quora.com/search",
           "query": "q",
           "color": "#ff6966"
         },
         {
+          "name": "Substack",
+          "action": "https://substack.com/search/",
+          "query": false,
+          "color": "#ff7934"
+        },
+        {
           "name": "Mastodon",
           "action": "https://mastodon.social/search",
           "query": "q",
-          "color": "#7a7bff"
+          "color": "#8F8FFF"
         },
         {
           "name": "Meetup",
@@ -434,12 +487,6 @@
           "action": "https://vk.com/search",
           "query": "q",
           "color": "#3794ff"
-        },
-        {
-          "name": "Myspace",
-          "action": "https://myspace.com/search",
-          "query": "q",
-          "color": "#f5f5f5"
         }
       ]
     },
@@ -452,25 +499,19 @@
           "name": "YouTube",
           "action": "https://www.youtube.com/results/",
           "query": "search_query",
-          "color": "#ff5e5e"
-        },
-        {
-          "name": "TikTok",
-          "action": "https://www.tiktok.com/search",
-          "query": "q",
-          "color": "#ff6986"
+          "color": "#FF6B6B"
         },
         {
           "name": "Twitch",
           "action": "https://www.twitch.tv/search",
           "query": "term",
-          "color": "#aa72ff"
+          "color": "#B888FF"
         },
         {
           "name": "Globoplay",
           "action": "https://globoplay.globo.com/busca/",
           "query": "q",
-          "color": "#ff6248"
+          "color": "#FF765E"
         },
         {
           "name": "Netflix",
@@ -500,7 +541,7 @@
           "name": "Apple TV+",
           "action": "https://tv.apple.com/search",
           "query": "term",
-          "color": "#eee"
+          "color": "#c8c8c8"
         },
         {
           "name": "Crunchyroll",
@@ -515,6 +556,18 @@
           "color": "#3ec2e2"
         },
         {
+          "name": "IMDb",
+          "action": "https://www.imdb.com/find/",
+          "query": "q",
+          "color": "#f5c518"
+        },
+        {
+          "name": "Letterboxd",
+          "action": "https://letterboxd.com/search/",
+          "query": false,
+          "color": "#6ee373"
+        },
+        {
           "name": "Dailymotion",
           "action": "https://www.dailymotion.com/search/",
           "query": false,
@@ -527,28 +580,16 @@
           "color": "#2fc6ff"
         },
         {
-          "name": "IMDb",
-          "action": "https://www.imdb.com/find/",
-          "query": "q",
-          "color": "#f5c518"
-        },
-        {
           "name": "TMDB",
           "action": "https://www.themoviedb.org/search",
           "query": "query",
           "color": "#46c2c0"
         },
         {
-          "name": "Letterboxd",
-          "action": "https://letterboxd.com/search/avril+lavigne/",
-          "query": false,
-          "color": "#6ee373"
-        },
-        {
           "name": "Plex",
           "action": "https://app.plex.tv/desktop#!/search",
           "query": "query",
-          "color": "#ffa334"
+          "color": "#ffb518"
         }
       ]
     },
@@ -676,7 +717,7 @@
           "name": "SoundCloud",
           "action": "https://soundcloud.com/search",
           "query": "q",
-          "color": "#ff7d3e"
+          "color": "#FF8B51"
         },
         {
           "name": "Apple Music",
@@ -695,6 +736,12 @@
           "action": "https://www.deezer.com/search/",
           "query": false,
           "color": "#eee"
+        },
+        {
+          "name": "Last.fm",
+          "action": "https://www.last.fm/search",
+          "query": "q",
+          "color": "#ff5050"
         },
         {
           "name": "Letras",
@@ -718,19 +765,20 @@
           "name": "Musixmatch",
           "action": "https://www.musixmatch.com/search/",
           "query": false,
-          "color": "#ff7171"
+          "color": "#ff6b6b"
         },
-        {
-          "name": "Last.fm",
-          "action": "https://www.last.fm/search",
-          "query": "q",
-          "color": "#ff5151"
-        },
+
         {
           "name": "TuneIn",
           "action": "https://tunein.com/search/",
           "query": "query",
           "color": "#36d7cd"
+        },
+        {
+          "name": "Amazon Music",
+          "action": "https://music.amazon.com.br/search/",
+          "query": false,
+          "color": "#25d1da"
         },
         {
           "name": "TIDAL",
@@ -749,6 +797,18 @@
           "action": "http://hypem.com/search/",
           "query": false,
           "color": "#9ed664"
+        },
+        {
+          "name": "Audius",
+          "action": "https://audius.co/search/avril%20lavigne",
+          "query": "q",
+          "color": "#bb65ff"
+        },
+        {
+          "name": "Google Podcasts",
+          "action": "https://podcasts.google.com/search/",
+          "query": false,
+          "color": "#4193ff"
         },
         {
           "name": "iHeart",
@@ -782,12 +842,6 @@
           "color": "#b065ff"
         },
         {
-          "name": "iFood",
-          "action": "https://www.ifood.com.br/busca",
-          "query": "q",
-          "color": "#ff515d"
-        },
-        {
           "name": "Magazine Luiza",
           "action": "https://www.magazineluiza.com.br/busca/",
           "query": false,
@@ -806,6 +860,18 @@
           "color": "#638cff"
         },
         {
+          "name": "iFood",
+          "action": "https://www.ifood.com.br/busca",
+          "query": "q",
+          "color": "#ff515d"
+        },
+        {
+          "name": "Rappi",
+          "action": "https://www.rappi.com.br/search",
+          "query": "query",
+          "color": "#ff6243"
+        },
+        {
           "name": "Shopee",
           "action": "https://shopee.com.br/search",
           "query": "keyword",
@@ -818,6 +884,12 @@
           "color": "#ff6363"
         },
         {
+          "name": "SHEIN",
+          "action": "https://br.shein.com/",
+          "query": false,
+          "color": "#ddd"
+        },
+        {
           "name": "Netshoes",
           "action": "https://www.netshoes.com.br/busca2",
           "query": "q",
@@ -828,12 +900,6 @@
           "action": "https://www.centauro.com.br/busca",
           "query": "q",
           "color": "#ff6363"
-        },
-        {
-          "name": "SHEIN",
-          "action": "https://br.shein.com/",
-          "query": false,
-          "color": "#ddd"
         },
         {
           "name": "Renner",
@@ -890,8 +956,8 @@
           "color": "#4cb69a"
         },
         {
-          "name": "Bing Maps",
-          "action": "https://www.bing.com/maps",
+          "name": "Bing Travel",
+          "action": "https://bing.com/travel/place-information",
           "query": "q",
           "color": "#37c3e3"
         },
@@ -908,10 +974,22 @@
           "color": "#40d59c"
         },
         {
+          "name": "Kayak",
+          "action": "https://www.kayak.com.br/explore/",
+          "query": false,
+          "color": "#ff853c"
+        },
+        {
           "name": "Booking",
           "action": "https://www.booking.com/searchresults.pt-br.html",
           "query": "ss",
           "color": "#2681ff"
+        },
+        {
+          "name": "Ingresso.com",
+          "action": "https://www.ingresso.com/busca/resultado",
+          "query": "q",
+          "color": "#ff963f"
         },
         {
           "name": "Sympla",
@@ -920,9 +998,15 @@
           "color": "#5bbcff"
         },
         {
-          "name": "Ingresso.com",
-          "action": "https://www.ingresso.com/busca/resultado",
-          "query": "q",
+          "name": "Eventim",
+          "action": "https://www.eventim.com.br/search",
+          "query": "searchterm",
+          "color": "#8592ff"
+        },
+        {
+          "name": "Ticket360",
+          "action": "https://www.ticket360.com.br/eventos/pesquisar",
+          "query": "s",
           "color": "#ff963f"
         },
         {
@@ -978,7 +1062,7 @@
           "name": "Periódicos",
           "action": "https://capes-primo.ezl.periodicos.capes.gov.br/primo-explore/search?tab=default_tab&search_scope=default_scope&vid=CAPES_V3&lang=pt_BR&offset=0&query=any,contains,",
           "query": false,
-          "color": "#ff6a81"
+          "color": "#FF7287"
         },
         {
           "name": "SciELO",
@@ -1053,7 +1137,7 @@
           "color": "#a5cd38"
         },
         {
-          "name": "Wolfram Alpha",
+          "name": "WolframAlpha",
           "action": "https://www.wolframalpha.com/input",
           "query": "i",
           "color": "#ff9c55"
@@ -1091,124 +1175,15 @@
       ]
     },
     {
-      "name": "Code",
-      "name_translated": "Código",
-      "active": true,
-      "data": [
-        {
-          "name": "Stack Overflow",
-          "action": "https://pt.stackoverflow.com/search",
-          "query": "q",
-          "color": "#ffa055"
-        },
-        {
-          "name": "GitHub",
-          "action": "https://github.com/search",
-          "query": "q",
-          "color": "#becad8"
-        },
-        {
-          "name": "GitLab",
-          "action": "https://gitlab.com/public",
-          "query": "name",
-          "color": "#ff8b50"
-        },
-        {
-          "name": "Bitbucket",
-          "action": "https://bitbucket.org/repo/all/",
-          "query": "name",
-          "color": "#61a1ff"
-        },
-        {
-          "name": "Docker Hub",
-          "action": "https://hub.docker.com/search",
-          "query": "q",
-          "color": "#4bbfff"
-        },
-        {
-          "name": "npm",
-          "action": "https://www.npmjs.com/search",
-          "query": "q",
-          "color": "#ff6565"
-        },
-        {
-          "name": "Yarn",
-          "action": "https://yarnpkg.com/",
-          "query": "q",
-          "color": "#30beff"
-        },
-        {
-          "name": "PyPI",
-          "action": "https://pypi.org/search/",
-          "query": "q",
-          "color": "#47a4da"
-        },
-        {
-          "name": "NuGet",
-          "action": "https://www.nuget.org/packages",
-          "query": "q",
-          "color": "#4bb0ff"
-        },
-        {
-          "name": "Packagist",
-          "action": "https://packagist.org/",
-          "query": "query",
-          "color": "#ffae51"
-        },
-        {
-          "name": "RubyGems",
-          "action": "https://rubygems.org/search",
-          "query": "query",
-          "color": "#ff735d"
-        },
-        {
-          "name": "Crates",
-          "action": "https://crates.io/search",
-          "query": "q",
-          "color": "#19a974"
-        },
-        {
-          "name": "Go",
-          "action": "https://pkg.go.dev/search",
-          "query": "q",
-          "color": "#50b7e0"
-        },
-        {
-          "name": "CodePen",
-          "action": "https://codepen.io/search/pens",
-          "query": "q",
-          "color": "#cbd5f9"
-        },
-        {
-          "name": "Glitch",
-          "action": "https://glitch.com/search",
-          "query": "q",
-          "color": "#f7a4ff"
-        },
-        {
-          "name": "Sourcegraph",
-          "action": "https://sourcegraph.com/search",
-          "query": "q",
-          "color": "#da7bff"
-        },
-        {
-          "name": "searchcode",
-          "action": "https://searchcode.com/",
-          "query": "q",
-          "color": "#1EAEDB"
-        }
-      ]
-    },
-    {
       "name": "Jobs",
-      "name_translated": "Empregos",
+      "name_translated": "Vagas",
       "active": true,
       "data": [
         {
           "name": "LinkedIn",
           "action": "https://www.linkedin.com/jobs/search/",
           "query": "keywords",
-          "color": "#1da6ee"
+          "color": "#39BAFF"
         },
         {
           "name": "Glassdoor",
@@ -1226,13 +1201,13 @@
           "name": "Gupy",
           "action": "https://portal.gupy.io/job-search/term=",
           "query": false,
-          "color": "#3dc5f1"
+          "color": "#5c9eff"
         },
         {
           "name": "Infojobs",
           "action": "https://www.infojobs.com.br/empregos.aspx",
           "query": "palabra",
-          "color": "#6fa9ff"
+          "color": "#2391ff"
         },
         {
           "name": "Indeed",
@@ -1291,67 +1266,120 @@
       ]
     },
     {
-      "name": "News",
-      "name_translated": "Notícias",
+      "name": "Code",
+      "name_translated": "Código",
       "active": true,
       "data": [
         {
-          "name": "Globo",
-          "action": "https://www.globo.com/busca/",
+          "name": "Stack Overflow",
+          "action": "https://pt.stackoverflow.com/search",
           "query": "q",
-          "color": "#5086ff"
+          "color": "#ffa055"
         },
         {
-          "name": "UOL",
-          "action": "https://busca.uol.com.br/result.html",
-          "query": "term",
-          "color": "#ffa545"
-        },
-        {
-          "name": "Medium",
-          "action": "https://medium.com/search",
+          "name": "GitHub",
+          "action": "https://github.com/search",
           "query": "q",
-          "color": "#f0f0f0"
+          "color": "#becad8"
         },
         {
-          "name": "Flipboard",
-          "action": "https://flipboard.com/search/",
-          "query": false,
-          "color": "#ff5b5b"
+          "name": "GitLab",
+          "action": "https://gitlab.com/public",
+          "query": "name",
+          "color": "#ff8b50"
         },
         {
-          "name": "Feedly",
-          "action": "https://feedly.com/i/search/",
-          "query": false,
-          "color": "#59e076"
+          "name": "Bitbucket",
+          "action": "https://bitbucket.org/repo/all/",
+          "query": "name",
+          "color": "#61a1ff"
         },
         {
-          "name": "Pocket",
-          "action": "https://getpocket.com/saves/search",
+          "name": "Sourcegraph",
+          "action": "https://sourcegraph.com/search",
+          "query": "q",
+          "color": "#da7bff"
+        },
+        {
+          "name": "searchcode",
+          "action": "https://searchcode.com/",
+          "query": "q",
+          "color": "#1EAEDB"
+        },
+        {
+          "name": "Docker Hub",
+          "action": "https://hub.docker.com/search",
+          "query": "q",
+          "color": "#4bbfff"
+        },
+        {
+          "name": "npm",
+          "action": "https://www.npmjs.com/search",
+          "query": "q",
+          "color": "#ff6565"
+        },
+        {
+          "name": "Yarn",
+          "action": "https://yarnpkg.com/",
+          "query": "q",
+          "color": "#30beff"
+        },
+        {
+          "name": "PyPI",
+          "action": "https://pypi.org/search/",
+          "query": "q",
+          "color": "#47a4da"
+        },
+        {
+          "name": "NuGet",
+          "action": "https://www.nuget.org/packages",
+          "query": "q",
+          "color": "#4bb0ff"
+        },
+        {
+          "name": "Packagist",
+          "action": "https://packagist.org/",
           "query": "query",
-          "color": "#ff576c"
+          "color": "#ffae51"
         },
         {
-          "name": "BBC",
-          "action": "https://www.bbc.co.uk/search",
+          "name": "RubyGems",
+          "action": "https://rubygems.org/search",
+          "query": "query",
+          "color": "#ff735d"
+        },
+        {
+          "name": "Crates",
+          "action": "https://crates.io/search",
           "query": "q",
-          "color": "#eee"
+          "color": "#19a974"
         },
         {
-          "name": "CNN",
-          "action": "https://www.cnnbrasil.com.br/",
-          "query": "s",
-          "color": "#ff5959"
+          "name": "Go",
+          "action": "https://pkg.go.dev/search",
+          "query": "q",
+          "color": "#50b7e0"
         },
         {
-          "name": "Reuters",
-          "action": "https://www.reuters.com/search/news",
-          "query": "blob",
-          "color": "#ffa54b"
+          "name": "Pub.dev",
+          "action": "https://pub.dev/packages",
+          "query": "q",
+          "color": "#25a8ff"
+        },
+        {
+          "name": "CodePen",
+          "action": "https://codepen.io/search/pens",
+          "query": "q",
+          "color": "#cbd5f9"
+        },
+        {
+          "name": "Glitch",
+          "action": "https://glitch.com/search",
+          "query": "q",
+          "color": "#f7a4ff"
         }
       ]
     },
-
     {
       "name": "Torrent",
       "active": false,
@@ -1554,6 +1582,67 @@
           "action": "https://www.mpf.mp.br/@@search",
           "query": "SearchableText",
           "color": "#61a4db"
+        }
+      ]
+    },
+    {
+      "name": "News",
+      "name_translated": "Notícias",
+      "active": true,
+      "data": [
+        {
+          "name": "Globo",
+          "action": "https://www.globo.com/busca/",
+          "query": "q",
+          "color": "#5086ff"
+        },
+        {
+          "name": "UOL",
+          "action": "https://busca.uol.com.br/result.html",
+          "query": "term",
+          "color": "#ffa545"
+        },
+        {
+          "name": "Medium",
+          "action": "https://medium.com/search",
+          "query": "q",
+          "color": "#f0f0f0"
+        },
+        {
+          "name": "Flipboard",
+          "action": "https://flipboard.com/search/",
+          "query": false,
+          "color": "#ff5b5b"
+        },
+        {
+          "name": "Feedly",
+          "action": "https://feedly.com/i/search/",
+          "query": false,
+          "color": "#59e076"
+        },
+        {
+          "name": "Pocket",
+          "action": "https://getpocket.com/saves/search",
+          "query": "query",
+          "color": "#ff576c"
+        },
+        {
+          "name": "BBC",
+          "action": "https://www.bbc.co.uk/search",
+          "query": "q",
+          "color": "#eee"
+        },
+        {
+          "name": "CNN",
+          "action": "https://www.cnnbrasil.com.br/",
+          "query": "s",
+          "color": "#ff5959"
+        },
+        {
+          "name": "Reuters",
+          "action": "https://www.reuters.com/search/news",
+          "query": "blob",
+          "color": "#ffa54b"
         }
       ]
     }

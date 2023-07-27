@@ -19,7 +19,7 @@ export default function AppFooter() {
         <div>
           <p>
             {data?.t?.copyright ??
-              'Findto is a free and open source app for decentralized web search with AI, thats redirects you to external original sources. All rights reserved to trademarks.'}{' '}
+              'Findto is a free and open source AI powered decentralized web search app. Redirects to original external sources and displays trademarks. All rights reserved to their respective owners. Made by '}{' '}
             <a href="https://lucasm.dev" target="_blank" rel="noreferrer">
               Lucas Menezes
             </a>
@@ -31,7 +31,12 @@ export default function AppFooter() {
               <Link href="/about">{data?.t?.about ?? 'About'}</Link>
             </li>
             <li>
-              <Link href="/contribute">{data?.t?.contribute ?? 'Contribute'}</Link>
+              <Link href="/community">{data?.t?.community ?? 'Community'}</Link>
+            </li>
+            <li>
+              <a href="https://patreon.com/lucasm" target="_blank">
+                {data?.t?.donate ?? 'Donate'}
+              </a>
             </li>
             <li>
               <Link href="/privacy">{data?.t?.privacy ?? 'Privacy'}</Link>
@@ -78,8 +83,9 @@ export default function AppFooter() {
                   <circle cx="15" cy="12" r="1" />
                 </svg>
               </a>
+            </div>
 
-              {/* <a
+            {/* <a
                 href="https://instagram.com/findtoapp"
                 target="_blank"
                 rel="noreferrer"
@@ -87,7 +93,7 @@ export default function AppFooter() {
                 <Instagram />
               </a> */}
 
-              {/* <a
+            {/* <a
                 href="https://linkedin.com/company/findto/"
                 target="_blank"
                 rel="noopener"
@@ -96,7 +102,7 @@ export default function AppFooter() {
                 <Linkedin />
               </a> */}
 
-              {/* <a
+            {/* <a
                 href="https://facebook.com/findtoapp"
                 target="_blank"
                 rel="noopener"
@@ -105,7 +111,7 @@ export default function AppFooter() {
                 <Facebook />
               </a> */}
 
-              {/* <a
+            {/* <a
                 href="https://youtube.com/findtoapp"
                 target="_blank"
                 rel="noopener"
@@ -113,7 +119,6 @@ export default function AppFooter() {
                 YouTube
                 <Youtube />
               </a> */}
-            </div>
           </ul>
         </div>
       </div>

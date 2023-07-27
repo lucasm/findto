@@ -1,14 +1,15 @@
 import React, { useRef, useCallback, useState, useEffect } from 'react'
-import Style from '../styles/App.module.css'
+import Style from '../../../styles/App.module.css'
 import * as Icon from 'react-feather'
-import { normalizeId } from '../utils/formats'
-import { useSearch } from '../contexts/SearchContext'
+import { normalizeId } from '../../../utils/formats'
+import { useSearch } from '../../../contexts/SearchContext'
 import { useRouter } from 'next/router'
-import SearchSuggestions from './SearchSuggestions'
-import { ISearchCategory, ISearch, ISearchChild } from '../types/search'
+import SearchSuggestions from '../SearchSuggestions'
+import SearchVoice from '../SearchVoice'
+import { ISearchCategory, ISearch, ISearchChild } from '../../../interfaces/search'
 
 export default function SearchApp() {
-  const { locale, locales, defaultLocale } = useRouter()
+  const { locale } = useRouter()
   const {
     data,
     category,
@@ -71,7 +72,7 @@ export default function SearchApp() {
   }
 
   // handle search
-  const handleSearchSource = (id: string) => {
+  const handleSearchProvider = (id: string) => {
     const searchSource = getSearchSource(id)
 
     setSearch(id)
@@ -88,12 +89,8 @@ export default function SearchApp() {
       ? setSearchUrl(searchSource?.action + inputValue + additional)
       : setSearchUrl(searchSource?.action + query + inputValue + additional + credits)
 
-    // child select options
-    if (searchSource?.child) {
-      setIsChild(true)
-    } else {
-      setIsChild(false)
-    }
+    // child options select
+    setIsChild(searchSource?.child ? true : false)
   }
 
   // handle input active + value
@@ -118,16 +115,17 @@ export default function SearchApp() {
     }
   }
 
-  // state
+  // cache: state
   useEffect(() => {
     if (window.localStorage.getItem('search')) {
-      handleSearchSource(window.localStorage.getItem('search'))
+      handleSearchProvider(window.localStorage.getItem('search'))
     }
-  }, [handleSearchSource])
+  }, [handleSearchProvider])
 
   return (
-    <section>
-      <div id="searchApp">
+    <section id="searchApp">
+      {/* Search */}
+      <div className={Style.searchContainer} style={{ background: color }}>
         {/* Tabs */}
         <div id={Style.tabs}>
           {data?.categories?.map((itemCategory: ISearchCategory, index: number) => (
@@ -138,7 +136,7 @@ export default function SearchApp() {
                 <li key={index}>
                   <button
                     className={search == normalizeId(item.name) ? Style.activeLink : null}
-                    onClick={() => handleSearchSource(normalizeId(item.name))}
+                    onClick={() => handleSearchProvider(normalizeId(item.name))}
                     ref={
                       index === 0
                         ? (element) => {
@@ -154,15 +152,15 @@ export default function SearchApp() {
           ))}
         </div>
 
-        {/* Search */}
-        <div className={Style.searchContainer}>
+        <div className={Style.searchInputContainer}>
+          {/* Image */}
           <figure
             className={Style.searchImg}
             style={{
               backgroundImage: 'url(/images/logos/' + search + '.svg)',
             }}>
             {/* Child */}
-            {isChild ? renderChild(search) : null}
+            {isChild && renderChild(search)}
           </figure>
 
           {/* Input */}
@@ -185,7 +183,7 @@ export default function SearchApp() {
               required
             />
 
-            {/* Button Send */}
+            {/* Button Search */}
             <a
               ref={refSendButton}
               href={searchUrl}
@@ -195,7 +193,7 @@ export default function SearchApp() {
               className={Style.searchButton}
               accessKey="q">
               <Icon.Search />
-              Send
+              Search
             </a>
 
             {/* Button Reset */}
@@ -210,20 +208,7 @@ export default function SearchApp() {
           </div>
 
           <SearchSuggestions locale={locale} term={inputValue} />
-
-          {/* Button Voice */}
-          {/* onClick="reco.toggleStartStop(); openVoiceTranscript()" */}
-          {/* <div>
-            <button
-              id="voice-button"
-              className={Style.voiceButton}
-              accessKey="2"
-              aria-label="Voice search"
-              title="Voice search">
-              <Icon.Mic />
-              Voice
-            </button>
-          </div> */}
+          <SearchVoice />
         </div>
       </div>
     </section>

@@ -7,7 +7,7 @@ const SearchContext = createContext<any>({})
 // export as Provider
 export function SearchContextProvider({ children }) {
   // default states
-  const { locale, pathname } = useRouter()
+  const { locale } = useRouter()
   const [data, setData] = useState<any>({})
   const [layout, setLayout] = useState<string>('2')
   const [theme, setTheme] = useState<string>('light')
@@ -66,17 +66,6 @@ export function SearchContextProvider({ children }) {
 
     storageSearch ? setSearch(storageSearch) : window.localStorage.setItem('search', search)
   }, [category, search])
-
-  // main body color
-  useEffect(() => {
-    if (color) {
-      document.body.style.setProperty('background-color', color)
-    }
-
-    if (pathname != '/') {
-      document.body.style.setProperty('background-color', '#fff ')
-    }
-  }, [color, pathname])
 
   return (
     <SearchContext.Provider

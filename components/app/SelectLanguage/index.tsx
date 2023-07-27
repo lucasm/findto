@@ -1,10 +1,11 @@
 import { useRouter } from 'next/router'
 
-export default function SelectLocale() {
+export default function SelectLanguage() {
   const router = useRouter()
   const { locale } = router
+  // locales, defaultLocale
 
-  function changeLanguage(e) {
+  function changeLanguage(e: { target: { value: string } }) {
     const locale = e.target.value
     router.push(router.pathname, router.asPath, { locale })
   }

@@ -1,5 +1,7 @@
-const runtimeCaching = require('next-pwa/cache')
-const withPWA = require('next-pwa')({
+/** @type {import('next').NextConfig} */
+
+const runtimeCaching = require('@imbios/next-pwa/cache')
+const withPWA = require('@imbios/next-pwa')({
   dest: 'public',
 })
 

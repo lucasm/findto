@@ -2,23 +2,21 @@
 import Style from '../styles/Website.module.css'
 import PageLayout from '../components/website/PageLayout'
 
-export default function Privacy() {
+export default function PagePrivacy() {
   return (
     <PageLayout
       title="Privacy Policy"
-      description="See how Findto respects your privacy and public user data.">
+      description="See how Findto respects your privacy and the users data.">
       <section className="colors">
         <div className={Style.container}>
           <div className={Style.pageTitle}>
             <h1>Privacy Policy</h1>
             <p>
-              TL;DR: Findto only collect public non-personal data with purpose to provide web search
-              functionality. We don't store any users search. We don't store personal users info,
-              except for those who chose to send feedback identifying themselves. Redirect to
-              third-party services may cause collection and storage of your personal info, which is
-              why we show a privacy ranking of every search provider.{' '}
+              Findto is built for privacy. We don't store any searches. Redirect to third-party
+              services may cause collection and storage of your personal data, which is why Findto
+              show a "privacy ranking" of every search provider.
             </p>
-            <p>Last update: May 6, 2023</p>
+            <p>Effective date: June 10, 2023</p>
           </div>
         </div>
       </section>
@@ -26,12 +24,12 @@ export default function Privacy() {
       <section>
         <div className={Style.container}>
           <article>
-            <h2>1. Your privacy matter</h2>
+            <h2>1. Privacy is a right</h2>
 
             <p>
               The mission of Findto is encourage the diversity and peoples choice for a democratic
               and healthier internet. This policy respect your privacy regarding any information we
-              may collect from you across our apps and websites accessible at{' '}
+              may collect from you across our services accessible at{' '}
               <a href="http://findto.app">http://findto.app</a> ("Findto").
             </p>
 
@@ -46,7 +44,8 @@ export default function Privacy() {
             <h2>2. Automatically collected information</h2>
 
             <p>
-              Findto only collect public non-personal information. Such as pages that you access,
+              Findto automatically collect and store minimal public information (non personal data)
+              with purpose to provide web search functionality. Such as pages that you access,
               location (country and city), device specs (operational system and browser), internet
               service provider, IP address, referral URL, exit pages, time stamp, and similar data
               about its use and interaction.
@@ -55,10 +54,10 @@ export default function Privacy() {
             <h2>3. Information that you provide</h2>
 
             <p>
-              Findto only receives and stores personally identifiable information when you send and
-              choose to identify yourself. Data that you enter on contact or feedback forms or give
-              in any other way, including but not limited to: your name, email address and phone
-              number.
+              Findto only receives and stores identifiable information (personal data) for those who
+              chose identify themselves. Data that you enter on contact or feedback forms, donations
+              platforms or give in any other way, including but not limited to: your name, email
+              address and phone number.
             </p>
 
             <p>
@@ -69,12 +68,20 @@ export default function Privacy() {
 
             <h2>4. Use of your information</h2>
 
+            <p>Findto only use your information with the purpose of: </p>
+
             <p>
-              Findto only use your information with the purpose of: i) communicate with you to
-              understand your feedback, respond to inquiries and provide requested content; ii)
-              anonymously analyze the users behavior to personalize and improve user experience;
-              iii) detect and prevent activities that be illegal, harmful to people and
-              organizations or violate copyright and intellectual property rights.
+              a) communicate with you to understand your feedback, respond to inquiries and provide
+              requested content;
+            </p>
+
+            <p>
+              b) anonymously analyze the users behavior to personalize and improve user experience;
+            </p>
+
+            <p>
+              c) detect and prevent activities that be illegal, harmful to people and organizations
+              or violate copyright and intellectual property rights.
             </p>
 
             <h2>5. Cookies and tracking technologies</h2>
@@ -88,6 +95,13 @@ export default function Privacy() {
             <p>
               The{' '}
               <a
+                href="https://privacy.microsoft.com/privacystatement"
+                target="_blank"
+                rel="noopener noreferrer">
+                Microsoft Clarity
+              </a>
+              ,{' '}
+              <a
                 href="https://support.google.com/analytics/answer/6004245"
                 target="_blank"
                 rel="noopener noreferrer">
@@ -100,10 +114,14 @@ export default function Privacy() {
                 rel="noopener noreferrer">
                 Cloudflare
               </a>{' '}
-              services are used to optimize Findto, but can put their own cookies in your browser.
+              services are used to optimize Findto, and can put their own cookies in your browser.
               This policy not covers use of cookies by third parties. Click on the links above to
-              read their privacy policies. If you use an "ad blocker" extension or have enabled some
-              "do not track" functionality on your browser settings, the cookies maybe are not set.
+              read their privacy policies.{' '}
+            </p>
+
+            <p>
+              If you use an "ad blocker" browser extension or have enabled some "do not track"
+              functionality on settings, the cookies maybe are not set.
             </p>
 
             <h2>6. Sharing your information</h2>
@@ -141,7 +159,7 @@ export default function Privacy() {
               convenience of search functionality. Please be aware, that Findto not endorse, have no
               control over the content and practices of any third party internet resources, and
               cannot accept liability or responsibility for their respective privacy policies, that
-              are not operated by Findto. Is advised you to review the privacy policy of every them,
+              are not operated by Findto. We advised you to review the privacy policy of every them,
               as possible.
             </p>
 
@@ -158,11 +176,11 @@ export default function Privacy() {
 
             <p>
               If you have any questions about how Findto handle public user data (unidentifiable)
-              and personal information (identifiable), or data requests, contact by email at{' '}
+              and personal information (identifiable), or data requests, contact sending an email at{' '}
               <a href="mailto:legal@findto.app">legal@findto.app</a>.
             </p>
 
-            <p>Thank you for reading. Happy searches.</p>
+            <p>Thanks for reading. Happy searches!</p>
           </article>
         </div>
       </section>

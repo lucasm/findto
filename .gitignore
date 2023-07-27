@@ -33,3 +33,11 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# next-pwa
+**/public/workbox-*.js
+**/public/workbox-*.js.map
+**/public/sw.js
+**/public/sw.js.map
+**/public/worker-*.js
+**/public/worker-*.js.map

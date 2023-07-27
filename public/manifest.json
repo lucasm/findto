@@ -1,7 +1,7 @@
 {
   "name": "Findto",
   "short_name": "Findto",
-  "description": "AI Decentralized Search App",
+  "description": "Decentralized web search",
   "start_url": "/?utm_source=pwa",
   "id": "/?utm_source=pwa",
   "display": "standalone",

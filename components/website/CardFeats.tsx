@@ -8,24 +8,8 @@ export default function CardFeats() {
         <figure>
           <Icon.Search />
         </figure>
-        <h3>Multiple search</h3>
-        <p>Use the same term to search on multiple providers and categories.</p>
-      </div>
-
-      <div>
-        <figure>
-          <Icon.TrendingUp />
-        </figure>
-        <h3>Trends</h3>
-        <p>Trending on topics, searches, contents, events and places nearby you.</p>
-      </div>
-
-      <div>
-        <figure>
-          <Icon.Shield />
-        </figure>
-        <h3>Privacy ranking</h3>
-        <p>See the privacy level of selected search provider.</p>
+        <h3>Decentralized search</h3>
+        <p>Search the same term on multiple categories and providers.</p>
       </div>
 
       <div>
@@ -33,7 +17,41 @@ export default function CardFeats() {
           <Icon.AlignLeft />
         </figure>
         <h3>AI suggestions</h3>
-        <p>Get suggestions of search terms as you type.</p>
+        <p>Get AI suggestions to help you as you type.</p>
+      </div>
+
+      <div>
+        <figure>
+          <Icon.Shield />
+        </figure>
+        <h3>Privacy ranking</h3>
+        <p>See the privacy level of each search provider.</p>
+      </div>
+
+      <div>
+        <figure>
+          <Icon.TrendingUp />
+        </figure>
+        <h3>Trends</h3>
+        <p>Trending on topics, contents, events and places nearby you.</p>
+      </div>
+
+      <div>
+        <figure>
+          <Icon.ToggleRight />
+        </figure>
+        <h3>Accessibility</h3>
+        <p>
+          Switch layout and color theme, enhanced contrast, ready to voice and keyboard navigation.
+        </p>
+      </div>
+
+      <div>
+        <figure>
+          <Icon.Globe />
+        </figure>
+        <h3>Internationalization</h3>
+        <p>Chose your country for local sources or use global search.</p>
       </div>
 
       <div>
@@ -58,22 +76,6 @@ export default function CardFeats() {
         </figure>
         <h3>Social action</h3>
         <p>** COMING SOON ** Instead ads, see a social cause to act.</p>
-      </div>
-
-      <div>
-        <figure>
-          <Icon.ToggleRight />
-        </figure>
-        <h3>Accessibility</h3>
-        <p>Change the color theme, layout, or use quickly access keys.</p>
-      </div>
-
-      <div>
-        <figure>
-          <Icon.Globe />
-        </figure>
-        <h3>Internationalized</h3>
-        <p>Local or global search sources, you choice.</p>
       </div>
     </div>
   )

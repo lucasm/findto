@@ -1,28 +1,22 @@
 .container {
-  display: flex;
-  gap: 4rem;
-  text-align: left;
-  align-items: center;
-  padding: 5rem 0 3rem;
-}
-.container p {
-  font-size: var(--font-size-small) !important;
-  margin: 0 !important;
+  text-align: center;
+  padding: 5rem 2rem 3rem;
 }
 .container figure {
   font-size: 0;
 }
 .container figure svg {
   width: 28px;
+  margin-bottom: 2rem;
 }
 
 .container ul {
-  font-size: var(--font-size-small);
   display: flex;
   gap: 2rem;
   margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
 }
-
 .container ul li:last-child {
   display: flex;
   align-items: center;
@@ -37,7 +31,7 @@
   font-size: 0;
 }
 .socialIcons svg {
-  width: 1.1rem;
-  height: 1.1rem;
-  stroke-width: 2.5;
+  width: 1rem;
+  height: 1rem;
+  stroke-width: 2.6;
 }
