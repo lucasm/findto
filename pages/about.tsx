@@ -1,6 +1,6 @@
 import Style from '../styles/Website.module.css'
-import PageLayout from '../components/website/PageLayout'
-import CardFeats from '../components/website/CardFeats'
+import PageLayout from '../components/website/LayoutPage'
+import CardsFeat from '../components/website/CardsFeat'
 import Button from '../components/website/Button'
 import Svg from '../components/website/Svg'
 
@@ -12,10 +12,10 @@ export default function PageAbout() {
       <section className="colors">
         <div className={Style.container}>
           <figure className={Style.icon}></figure>
-          <h1>Web search decentralized</h1>
+          <h1>Opening the Web search</h1>
           <p>
-            Findto is a free and open source decentralized search app with AI, privacy and diverse
-            sources, to encourage a more productive and healthier web.
+            Findto is a decentralized search app with AI, privacy and diverse sources, to encourage
+            a more productive and healthier Web.
           </p>
         </div>
       </section>
@@ -29,21 +29,21 @@ export default function PageAbout() {
               </figure>
 
               <article>
-                <h2>Search algorithms working for you</h2>
+                <h2>Search algorithms and AI working for you</h2>
                 <p>
-                  Findto puts people in control of search algorithms — not the other way around.
-                  Quickly find anything, with the power of multiple sources. Web searches are truly
-                  free and more productive.
+                  Findto puts people in control of web search — not the other way around. Quickly
+                  switch between diverse sources to find anything. More productive and accessible
+                  searches.
                 </p>
               </article>
             </div>
 
             <div>
               <article>
-                <h2>Better results with AI and privacy</h2>
+                <h2>Better results and privacy</h2>
                 <p>
-                  Findto shows AI suggestions before making a search and the privacy ranking of each
-                  search provider. Choose better results.
+                  AI suggestions when you type to search. Privacy ranking of provider before search.
+                  Choose better results.
                 </p>
               </article>
 
@@ -58,7 +58,7 @@ export default function PageAbout() {
               </figure>
 
               <article>
-                <h2>Welcome to the decentralized web</h2>
+                <h2>Welcome to the decentralized Web</h2>
                 <p>
                   The centralized web, where our searches are monopolized, is over. Findto
                   encourages people to discover a more diverse, healthier and democratic web.
@@ -73,17 +73,19 @@ export default function PageAbout() {
         <div className={Style.container}>
           <h2>Features</h2>
 
-          <CardFeats />
+          <CardsFeat />
+
+          {/* <h2>For free and open source</h2> */}
         </div>
       </section>
 
       <section>
         <div className={Style.container}>
           <div className={Style.actionContainer}>
-            <h2>Next level web searches</h2>
-            <p>A search experience built for people.</p>
+            <h2>Next level Web searches</h2>
+            <p>A new search experience, built for people.</p>
             <Button url="/" color="colors">
-              Get started
+              Start now
             </Button>
           </div>
         </div>

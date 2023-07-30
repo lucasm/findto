@@ -1,5 +1,5 @@
 import Style from '../styles/Website.module.css'
-import PageLayout from '../components/website/PageLayout'
+import PageLayout from '../components/website/LayoutPage'
 
 export default function PageTerms() {
   return (
@@ -8,7 +8,7 @@ export default function PageTerms() {
         <div className={Style.container}>
           <h1>Terms of Use</h1>
 
-          <p>Effective date: June 10, 2022.</p>
+          <p>Effective date: June 10, 2023.</p>
         </div>
       </section>
 

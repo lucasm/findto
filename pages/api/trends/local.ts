@@ -5,17 +5,19 @@ import { ITrends } from '../../../interfaces/trends'
 export default async function endpoint(req: NextApiRequest, res: NextApiResponse): Promise<void> {
   // parameters
   const {
-    query: { country },
+    query: { latitude, longitude, language },
   } = req
 
-  if (country) {
-    // https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&regionCode=' + country + '&maxResults=16&key=
-
+  if (latitude && longitude && language) {
     let url =
-      'https://api.themoviedb.org/3/trending/all/day?language=' +
-      country +
-      '&api_key=' +
-      process.env.NEXT_PUBLIC_API_TMDB
+      'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' +
+      latitude +
+      ',' +
+      longitude +
+      '&language=' +
+      language +
+      '&radius=1500&key=' +
+      process.env.NEXT_PUBLIC_API_GOOGLEMAPS
 
     await axios
       .get(url)
@@ -24,13 +26,14 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
 
         data.results.forEach((item) => {
           a.push({
-            title: item.title ? item.title : item.name,
+            title: item.name,
+            url: 'https://www.google.com/maps/place/?q=place_id:' + item.place_id,
           })
         })
 
         const x: ITrends = {
-          credits_title: 'TMDB',
-          credits_url: 'https://www.themoviedb.org/',
+          credits_title: 'Google Maps',
+          credits_url: 'https://maps.google.com',
           data: a,
         }
 
@@ -40,6 +43,6 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
         res.status(400).json({ err })
       })
   } else {
-    res.status(405).end('Missing parameters COUNTRY_CODE - ' + country)
+    res.status(405).end('Missing parameters *latitude, *longitude: ' + latitude + ', ' + longitude)
   }
 }

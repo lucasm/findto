@@ -7,9 +7,10 @@ import Loader from '../Loader'
 import WidgetContainer from '../WidgetContainer'
 import { ITrends, ITrendsItem } from '../../../interfaces/trends'
 import { useEffect, useState } from 'react'
+import ButtonGeolocation from '../ButtonGeolocation'
 
 export default function SearchTrends() {
-  const { data, category, putValue, country, locale } = useSearch()
+  const { data, category, putValue, country, locale, latitude, longitude } = useSearch()
   const [dataTrends, setDataTrends] = useState<ITrends>(null)
   const [errorTrends, setErrorTrends] = useState<any>(null)
 
@@ -90,7 +91,10 @@ export default function SearchTrends() {
 
   // Shopping
   function useApiShopping() {
-    const { data, error } = useSWR(category === 'Shopping' ? `/api/trends/shopping` : null, fetcher)
+    const { data, error } = useSWR(
+      category === 'Shopping' ? `/api/trends/shopping?country=${country}` : null,
+      fetcher
+    )
 
     return {
       dataShopping: data,
@@ -98,6 +102,26 @@ export default function SearchTrends() {
     }
   }
   const { dataShopping, errorShopping } = useApiShopping()
+
+  // Local
+  function useApiLocal() {
+    const { data, error } = useSWR(
+      category === 'Local'
+        ? `/api/trends/local?latitude=${latitude}&longitude=${longitude}&language=${locale}`
+        : null,
+      fetcher,
+      {
+        revalidateOnFocus: false,
+      }
+    )
+
+    return {
+      dataLocal: data,
+      loadingLocal: !data && !error,
+      errorLocal: error,
+    }
+  }
+  const { dataLocal, errorLocal, loadingLocal } = useApiLocal()
 
   // Code
   function useApiCode() {
@@ -138,7 +162,7 @@ export default function SearchTrends() {
   }
   const { dataJobs, errorJobs } = useApiJobs()
 
-  // change API
+  // call API
   useEffect(() => {
     setDataTrends(null)
     setErrorTrends(null)
@@ -172,6 +196,14 @@ export default function SearchTrends() {
         {
           dataShopping && setDataTrends(dataShopping)
           errorShopping && setErrorTrends(errorShopping)
+        }
+        break
+      case 'Local':
+        {
+          if (latitude && longitude) {
+            dataLocal && setDataTrends(dataLocal)
+            errorLocal && setErrorTrends(errorLocal)
+          }
         }
         break
       case 'Academic':
@@ -217,6 +249,10 @@ export default function SearchTrends() {
     errorAudio,
     dataShopping,
     errorShopping,
+    dataLocal,
+    errorLocal,
+    latitude,
+    longitude,
     dataAcademic,
     errorAcademic,
     dataJobs,
@@ -232,9 +268,12 @@ export default function SearchTrends() {
       title={data?.t?.trends ?? 'Trends'}
       icon={<TrendingUp />}
       creditTitle={dataTrends?.credits_title ?? ''}
-      creditUrl={dataTrends?.credits_url ?? ''}>
+      creditUrl={dataTrends?.credits_url ? dataTrends?.credits_url + '?utm_source=findto_app' : ''}>
       <>
-        {!dataTrends && !errorTrends && <Loader />}
+        {category === 'Local' && <ButtonGeolocation />}
+        {category === 'Local' && loadingLocal && <Loader />}
+
+        {!dataTrends && !errorTrends && category != 'Local' && <Loader />}
         {errorTrends && <div>Error</div>}
         {dataTrends && (
           <div className={Styles.container}>

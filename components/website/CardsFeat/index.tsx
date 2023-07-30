@@ -1,14 +1,14 @@
-import Style from '../../styles/Website.module.css'
+import Style from './CardsFeat.module.css'
 import * as Icon from 'react-feather'
 
-export default function CardFeats() {
+export default function CardsFeat() {
   return (
-    <div className={Style.cardFeats}>
+    <div className={Style.card}>
       <div>
         <figure>
           <Icon.Search />
         </figure>
-        <h3>Decentralized search</h3>
+        <h3>Decentralized Search</h3>
         <p>Search the same term on multiple categories and providers.</p>
       </div>
 
@@ -16,15 +16,15 @@ export default function CardFeats() {
         <figure>
           <Icon.AlignLeft />
         </figure>
-        <h3>AI suggestions</h3>
-        <p>Get AI suggestions to help you as you type.</p>
+        <h3>AI Suggestions</h3>
+        <p>Get instant AI suggestions to help you as you type.</p>
       </div>
 
       <div>
         <figure>
           <Icon.Shield />
         </figure>
-        <h3>Privacy ranking</h3>
+        <h3>Privacy Ranking</h3>
         <p>See the privacy level of each search provider.</p>
       </div>
 
@@ -38,11 +38,12 @@ export default function CardFeats() {
 
       <div>
         <figure>
-          <Icon.ToggleRight />
+          <Icon.User />
         </figure>
         <h3>Accessibility</h3>
         <p>
-          Switch layout and color theme, enhanced contrast, ready to voice and keyboard navigation.
+          Changeable layout and theme, color contrast enhanced, keyboard and screen reader
+          navigation.
         </p>
       </div>
 
@@ -58,7 +59,7 @@ export default function CardFeats() {
         <figure>
           <Icon.Mic />
         </figure>
-        <h3>Voice search</h3>
+        <h3>Voice Search</h3>
         <p>Use your voice to search anywhere.</p>
       </div>
 
@@ -66,15 +67,15 @@ export default function CardFeats() {
         <figure>
           <Icon.Camera />
         </figure>
-        <h3>Image search</h3>
-        <p>** COMING SOON ** Use a image to search on supported sources.</p>
+        <h3>Visual Search</h3>
+        <p>** COMING SOON ** Use an image to search on supported sources.</p>
       </div>
 
       <div>
         <figure>
           <Icon.CheckCircle />
         </figure>
-        <h3>Social action</h3>
+        <h3>Social Action</h3>
         <p>** COMING SOON ** Instead ads, see a social cause to act.</p>
       </div>
     </div>

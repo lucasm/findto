@@ -1,19 +1,36 @@
-import Style from '../../styles/Website.module.css'
+import Style from '../../../styles/Website.module.css'
 import Head from 'next/head'
 import Link from 'next/link'
-import AppFooter from '../app/Footer'
-import SvgLogo from '../../components/website/SvgLogo'
-import { useSearch } from '../../contexts/SearchContext'
-import { LayoutProps } from '../../interfaces/pages'
+import AppFooter from '../../app/Footer'
+import SvgLogo from '../SvgLogo'
+import { useSearch } from '../../../contexts/SearchContext'
+import { LayoutProps } from '../../../interfaces/pages'
+import { useRouter } from 'next/router'
 
 export default function LayoutPage(props: LayoutProps) {
+  const { asPath } = useRouter()
   const { data, theme } = useSearch()
+
+  const title = props.title + ' | Findto'
+  const url = 'http://findto.app' + asPath
 
   return (
     <div className={Style.page + ' ' + theme}>
       <Head>
-        <title>{props.title && props.title} | Findto</title>
+        {/* Browser */}
+        <title>{title}</title>
         <meta name="description" content={props.description} />
+
+        {/* Social */}
+        <meta itemProp="name" content={title} />
+        <meta itemProp="description" content={props.description} />
+
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={props.description} />
+        <meta property="og:url" content={url} />
+
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={props.description} />
       </Head>
 
       <header className={Style.header}>
@@ -33,11 +50,11 @@ export default function LayoutPage(props: LayoutProps) {
               <li>
                 <Link href="/community">{data?.t?.community ?? 'Community'}</Link>
               </li>
-              <li>
-                <a href="https://patreon.com/lucasm" target="_blank">
+              {/* <li>
+                <a href="https://ko-fi.com/findto" target="_blank">
                   {data?.t?.donate ?? 'Donate'}
                 </a>
-              </li>
+              </li> */}
               <li>
                 <Link href="/">{data?.t?.open ?? 'Open app'} </Link>
               </li>

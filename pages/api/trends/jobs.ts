@@ -13,9 +13,9 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
       'https://api.adzuna.com/v1/api/jobs/' +
       String(country).toLowerCase() +
       '/categories?app_id=' +
-      process.env.NEXT_API_KEY_ADZUNA_ID +
+      process.env.NEXT_PUBLIC_API_ADZUNA_ID +
       '&app_key=' +
-      process.env.NEXT_API_KEY_ADZUNA
+      process.env.NEXT_PUBLIC_API_ADZUNA
 
     await axios
       .get(url)
@@ -25,7 +25,6 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
         data.results.slice(0, 22).forEach((item) => {
           a.push({
             title: item.label.replace('Vagas em ', ''),
-            url: item.tag,
           })
         })
 

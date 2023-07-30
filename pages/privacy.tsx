@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Style from '../styles/Website.module.css'
-import PageLayout from '../components/website/PageLayout'
+import PageLayout from '../components/website/LayoutPage'
 
 export default function PagePrivacy() {
   return (
