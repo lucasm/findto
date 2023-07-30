@@ -1,9 +1,9 @@
 import Style from '../styles/Website.module.css'
-import PageLayout from '../components/website/LayoutPage'
+import LayoutPage from '../components/website/LayoutPage'
 
 export default function PageTerms() {
   return (
-    <PageLayout title="Terms of Use" description="See how to use Findto for the common good">
+    <LayoutPage title="Terms of Use" description="See how to use Findto for the common good">
       <section className="colors">
         <div className={Style.container}>
           <h1>Terms of Use</h1>
@@ -118,6 +118,6 @@ export default function PageTerms() {
           </article>
         </div>
       </section>
-    </PageLayout>
+    </LayoutPage>
   )
 }

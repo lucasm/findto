@@ -1,12 +1,12 @@
 import Style from '../styles/Website.module.css'
-import PageLayout from '../components/website/LayoutPage'
+import LayoutPage from '../components/website/LayoutPage'
 import CardsLink from '../components/website/CardsLink'
 
 export default function PageCommunity() {
   const description = 'Help make the Web searches open and accessible for everyone!'
 
   return (
-    <PageLayout title="Community" description={description}>
+    <LayoutPage title="Community" description={description}>
       <section className="colors">
         <div className={Style.container}>
           <div className={Style.actionContainer}>
@@ -67,6 +67,6 @@ export default function PageCommunity() {
           </article>
         </div>
       </section>
-    </PageLayout>
+    </LayoutPage>
   )
 }

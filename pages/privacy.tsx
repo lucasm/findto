@@ -1,10 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import Style from '../styles/Website.module.css'
-import PageLayout from '../components/website/LayoutPage'
+import LayoutPage from '../components/website/LayoutPage'
 
 export default function PagePrivacy() {
   return (
-    <PageLayout
+    <LayoutPage
       title="Privacy Policy"
       description="See how Findto respects your privacy and the users data.">
       <section className="colors">
@@ -184,6 +184,6 @@ export default function PagePrivacy() {
           </article>
         </div>
       </section>
-    </PageLayout>
+    </LayoutPage>
   )
 }

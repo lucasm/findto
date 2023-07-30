@@ -1,12 +1,12 @@
 import Style from '../styles/Website.module.css'
-import PageLayout from '../components/website/LayoutPage'
+import LayoutPage from '../components/website/LayoutPage'
 import CardsFeat from '../components/website/CardsFeat'
 import Button from '../components/website/Button'
 import Svg from '../components/website/Svg'
 
 export default function PageAbout() {
   return (
-    <PageLayout
+    <LayoutPage
       title="About"
       description="About Findto, a decentralized web search app with AI, privacy and diverse sources">
       <section className="colors">
@@ -90,6 +90,6 @@ export default function PageAbout() {
           </div>
         </div>
       </section>
-    </PageLayout>
+    </LayoutPage>
   )
 }
