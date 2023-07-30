@@ -36,7 +36,7 @@ export default function Document() {
         <meta name="twitter:image" content="https://findto.app/share.png" />
 
         {/* Scripts */}
-        {process.env.VERCEL_ENV === 'production' && (
+        {process.env.NEXT_PUBLIC_ENV_FINDTO === 'production' && (
           <>
             <Script
               id="MICROSOFT-CLARITY"
