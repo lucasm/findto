@@ -17,6 +17,9 @@ export function SearchContextProvider({ children }) {
   const [color, setColor] = useState<string>('#fff')
   const [trends, setTrends] = useState<string>('Trends')
   const [country, setCountry] = useState<string>('US')
+  const [permissionLocation, setPermissionLocation] = useState<boolean>(false)
+  const [latitude, setLatitude] = useState<number>()
+  const [longitude, setLongitude] = useState<number>()
   const [inputValue, setInputValue] = useState<string>('')
   const refSearchInput = useRef(null)
   const refSearchTabs = useRef([])
@@ -92,6 +95,12 @@ export function SearchContextProvider({ children }) {
         setTrends,
         country,
         locale,
+        permissionLocation,
+        setPermissionLocation,
+        latitude,
+        setLatitude,
+        longitude,
+        setLongitude,
       }}>
       {children}
     </SearchContext.Provider>

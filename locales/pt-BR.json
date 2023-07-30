@@ -8,10 +8,10 @@
     "language": "Idioma",
     "powered": "Via",
     "about": "Sobre",
-    "open": "Abrir",
+    "open": "Abrir app",
     "contribute": "Contribua",
-    "community": "Comunidade",
-    "donate": "Doar ♥",
+    "community": "Comunidade ♥",
+    "donate": "Doar",
     "terms": "Termos",
     "privacy": "Privacidade",
     "copyright": "Findto é um aplicativo open source de busca descentralizada na web com IA, privacidade e diversas fontes. Todos os direitos reservados as marcas registradas e recursos externos. Feito por ",
@@ -364,7 +364,7 @@
           "color": "#c4c4c4"
         },
         {
-          "name": "You Chat",
+          "name": "You",
           "action": "https://you.com/search",
           "query": "fromSearchBar=true&tbm=youchat&q",
           "color": "#6b8dff"
@@ -1036,6 +1036,67 @@
       ]
     },
     {
+      "name": "News",
+      "name_translated": "Notícias",
+      "active": true,
+      "data": [
+        {
+          "name": "Globo",
+          "action": "https://www.globo.com/busca/",
+          "query": "q",
+          "color": "#5086ff"
+        },
+        {
+          "name": "UOL",
+          "action": "https://busca.uol.com.br/result.html",
+          "query": "term",
+          "color": "#ffa545"
+        },
+        {
+          "name": "Medium",
+          "action": "https://medium.com/search",
+          "query": "q",
+          "color": "#f0f0f0"
+        },
+        {
+          "name": "Flipboard",
+          "action": "https://flipboard.com/search/",
+          "query": false,
+          "color": "#ff5b5b"
+        },
+        {
+          "name": "Feedly",
+          "action": "https://feedly.com/i/search/",
+          "query": false,
+          "color": "#59e076"
+        },
+        {
+          "name": "Pocket",
+          "action": "https://getpocket.com/saves/search",
+          "query": "query",
+          "color": "#ff576c"
+        },
+        {
+          "name": "BBC",
+          "action": "https://www.bbc.co.uk/search",
+          "query": "q",
+          "color": "#eee"
+        },
+        {
+          "name": "CNN",
+          "action": "https://www.cnnbrasil.com.br/",
+          "query": "s",
+          "color": "#ff5959"
+        },
+        {
+          "name": "Reuters",
+          "action": "https://www.reuters.com/search/news",
+          "query": "blob",
+          "color": "#ffa54b"
+        }
+      ]
+    },
+    {
       "name": "Academic",
       "name_translated": "Acadêmico",
       "active": true,
@@ -1266,6 +1327,102 @@
       ]
     },
     {
+      "name": "Finance",
+      "name_translated": "Bolsa",
+      "active": false,
+      "data": [
+        {
+          "name": "finviz",
+          "action": "https://finviz.com/search.ashx",
+          "query": "p",
+          "color": "#d8d8d8"
+        }
+      ]
+    },
+    {
+      "name": "Legal",
+      "name_translated": "Legal",
+      "active": true,
+      "data": [
+        {
+          "name": "Escavador",
+          "action": "https://www.escavador.com/busca/",
+          "query": "q",
+          "color": "#f5bd1d"
+        },
+        {
+          "name": "Jusbrasil",
+          "action": "https://www.jusbrasil.com.br/busca",
+          "query": "q",
+          "color": "#8ad151"
+        },
+        {
+          "name": "Governo Brasil",
+          "action": "https://www.gov.br/pt-br/search",
+          "query": "SearchableText",
+          "color": "#00C8FF",
+          "child": [
+            {
+              "name": "Gov.br"
+            },
+            {
+              "name": "Transparência",
+              "action": "https://portaldatransparencia.gov.br/busca",
+              "query": "termo"
+            },
+            {
+              "name": "Diário Oficial",
+              "action": "https://www.in.gov.br/consulta/-/buscar/dou",
+              "query": "q"
+            }
+          ]
+        },
+        {
+          "name": "Congresso Nacional",
+          "action": "https://www6g.senado.leg.br/busca-congresso/",
+          "query": "q",
+          "color": "#79a4ff",
+          "child": [
+            {
+              "name": "Propostas"
+            },
+            {
+              "name": "Normas",
+              "action": "https://normas.leg.br/busca?q=parque",
+              "query": "q"
+            }
+          ]
+        },
+        {
+          "name": "Supremo Tribunal",
+          "action": "https://jurisprudencia.stf.jus.br/pages/search",
+          "query": "queryString",
+          "color": "#00b8ff",
+          "child": [
+            {
+              "name": "Jurisprudência"
+            },
+            {
+              "name": "Notícias",
+              "action": "https://normas.leg.br/busca?q=parque",
+              "query": "q"
+            },
+            {
+              "name": "Repercussão Geral",
+              "action": "https://normas.leg.br/busca?q=parque",
+              "query": "q"
+            }
+          ]
+        },
+        {
+          "name": "Ministério Público",
+          "action": "https://www.mpf.mp.br/@@search",
+          "query": "SearchableText",
+          "color": "#61a4db"
+        }
+      ]
+    },
+    {
       "name": "Code",
       "name_translated": "Código",
       "active": true,
@@ -1293,6 +1450,18 @@
           "action": "https://bitbucket.org/repo/all/",
           "query": "name",
           "color": "#61a1ff"
+        },
+        {
+          "name": "CodePen",
+          "action": "https://codepen.io/search/pens",
+          "query": "q",
+          "color": "#cbd5f9"
+        },
+        {
+          "name": "Glitch",
+          "action": "https://glitch.com/search",
+          "query": "q",
+          "color": "#f7a4ff"
         },
         {
           "name": "Sourcegraph",
@@ -1365,18 +1534,6 @@
           "action": "https://pub.dev/packages",
           "query": "q",
           "color": "#25a8ff"
-        },
-        {
-          "name": "CodePen",
-          "action": "https://codepen.io/search/pens",
-          "query": "q",
-          "color": "#cbd5f9"
-        },
-        {
-          "name": "Glitch",
-          "action": "https://glitch.com/search",
-          "query": "q",
-          "color": "#f7a4ff"
         }
       ]
     },
@@ -1486,163 +1643,6 @@
           "action": "https://www.patreon.com/search",
           "query": "q",
           "color": "#ff6069"
-        }
-      ]
-    },
-    {
-      "name": "Finance",
-      "name_translated": "Bolsa",
-      "active": false,
-      "data": [
-        {
-          "name": "finviz",
-          "action": "https://finviz.com/search.ashx",
-          "query": "p",
-          "color": "#d8d8d8"
-        }
-      ]
-    },
-    {
-      "name": "Legal",
-      "name_translated": "Legal",
-      "active": true,
-      "data": [
-        {
-          "name": "Escavador",
-          "action": "https://www.escavador.com/busca/",
-          "query": "q",
-          "color": "#f5bd1d"
-        },
-        {
-          "name": "Jusbrasil",
-          "action": "https://www.jusbrasil.com.br/busca",
-          "query": "q",
-          "color": "#8ad151"
-        },
-        {
-          "name": "Governo Brasil",
-          "action": "https://www.gov.br/pt-br/search",
-          "query": "SearchableText",
-          "color": "#00C8FF",
-          "child": [
-            {
-              "name": "Gov.br"
-            },
-            {
-              "name": "Transparência",
-              "action": "https://portaldatransparencia.gov.br/busca",
-              "query": "termo"
-            },
-            {
-              "name": "Diário Oficial",
-              "action": "https://www.in.gov.br/consulta/-/buscar/dou",
-              "query": "q"
-            }
-          ]
-        },
-        {
-          "name": "Congresso Nacional",
-          "action": "https://www6g.senado.leg.br/busca-congresso/",
-          "query": "q",
-          "color": "#79a4ff",
-          "child": [
-            {
-              "name": "Propostas"
-            },
-            {
-              "name": "Normas",
-              "action": "https://normas.leg.br/busca?q=parque",
-              "query": "q"
-            }
-          ]
-        },
-        {
-          "name": "Supremo Tribunal",
-          "action": "https://jurisprudencia.stf.jus.br/pages/search",
-          "query": "queryString",
-          "color": "#00b8ff",
-          "child": [
-            {
-              "name": "Jurisprudência"
-            },
-            {
-              "name": "Notícias",
-              "action": "https://normas.leg.br/busca?q=parque",
-              "query": "q"
-            },
-            {
-              "name": "Repercussão Geral",
-              "action": "https://normas.leg.br/busca?q=parque",
-              "query": "q"
-            }
-          ]
-        },
-        {
-          "name": "Ministério Público",
-          "action": "https://www.mpf.mp.br/@@search",
-          "query": "SearchableText",
-          "color": "#61a4db"
-        }
-      ]
-    },
-    {
-      "name": "News",
-      "name_translated": "Notícias",
-      "active": true,
-      "data": [
-        {
-          "name": "Globo",
-          "action": "https://www.globo.com/busca/",
-          "query": "q",
-          "color": "#5086ff"
-        },
-        {
-          "name": "UOL",
-          "action": "https://busca.uol.com.br/result.html",
-          "query": "term",
-          "color": "#ffa545"
-        },
-        {
-          "name": "Medium",
-          "action": "https://medium.com/search",
-          "query": "q",
-          "color": "#f0f0f0"
-        },
-        {
-          "name": "Flipboard",
-          "action": "https://flipboard.com/search/",
-          "query": false,
-          "color": "#ff5b5b"
-        },
-        {
-          "name": "Feedly",
-          "action": "https://feedly.com/i/search/",
-          "query": false,
-          "color": "#59e076"
-        },
-        {
-          "name": "Pocket",
-          "action": "https://getpocket.com/saves/search",
-          "query": "query",
-          "color": "#ff576c"
-        },
-        {
-          "name": "BBC",
-          "action": "https://www.bbc.co.uk/search",
-          "query": "q",
-          "color": "#eee"
-        },
-        {
-          "name": "CNN",
-          "action": "https://www.cnnbrasil.com.br/",
-          "query": "s",
-          "color": "#ff5959"
-        },
-        {
-          "name": "Reuters",
-          "action": "https://www.reuters.com/search/news",
-          "query": "blob",
-          "color": "#ffa54b"
         }
       ]
     }

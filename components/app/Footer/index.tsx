@@ -11,7 +11,7 @@ export default function AppFooter() {
     <footer className={Style.footer}>
       <div className={Style.container + ' container'}>
         <figure>
-          <Link href="/">
+          <Link href="/" title="Findto">
             <SvgLogo />
           </Link>
         </figure>
@@ -19,7 +19,7 @@ export default function AppFooter() {
         <div>
           <p>
             {data?.t?.copyright ??
-              'Findto is a free and open source AI powered decentralized web search app. Redirects to original external sources and displays trademarks. All rights reserved to their respective owners. Made by '}{' '}
+              'Findto is a free and open source decentralized web search app, with AI, privacy and diverse sources. All rights reserved to trademarks and external resources. Made by '}{' '}
             <a href="https://lucasm.dev" target="_blank" rel="noreferrer">
               Lucas Menezes
             </a>
@@ -33,11 +33,11 @@ export default function AppFooter() {
             <li>
               <Link href="/community">{data?.t?.community ?? 'Community'}</Link>
             </li>
-            <li>
+            {/* <li>
               <a href="https://patreon.com/lucasm" target="_blank">
                 {data?.t?.donate ?? 'Donate'}
               </a>
-            </li>
+            </li> */}
             <li>
               <Link href="/privacy">{data?.t?.privacy ?? 'Privacy'}</Link>
             </li>
@@ -45,7 +45,7 @@ export default function AppFooter() {
               <Link href="/terms">{data?.t?.terms ?? 'Terms'}</Link>
             </li>
 
-            <div className={Style.socialIcons}>
+            {/* <div className={Style.socialIcons}>
               <a
                 href="https://twitter.com/findtoapp"
                 target="_blank"
@@ -83,7 +83,7 @@ export default function AppFooter() {
                   <circle cx="15" cy="12" r="1" />
                 </svg>
               </a>
-            </div>
+            </div> */}
 
             {/* <a
                 href="https://instagram.com/findtoapp"

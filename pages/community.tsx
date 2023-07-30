@@ -1,16 +1,16 @@
 import Style from '../styles/Website.module.css'
-import PageLayout from '../components/website/PageLayout'
+import PageLayout from '../components/website/LayoutPage'
+import CardsLink from '../components/website/CardsLink'
 
 export default function PageCommunity() {
-  const description =
-    'Join on Findto Community to make Web searches open and accessible for everyone!'
+  const description = 'Help make the Web searches open and accessible for everyone!'
 
   return (
     <PageLayout title="Community" description={description}>
       <section className="colors">
         <div className={Style.container}>
           <div className={Style.actionContainer}>
-            <h1>Findto Community</h1>
+            <h1>Join the community</h1>
             <p>{description}</p>
           </div>
         </div>
@@ -18,72 +18,52 @@ export default function PageCommunity() {
 
       <section>
         <div className={Style.container}>
+          <CardsLink />
+
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+
           <article>
             <h3>Code of Conduct</h3>
 
             <p>
-              Before contributing, read our{' '}
+              We expect that all Findto community members be kind and agree to the{' '}
               <a
                 href="https://www.contributor-covenant.org/version/2/1/code_of_conduct/"
                 target="_blank"
                 rel="noreferrer">
                 Code of Conduct
+              </a>{' '}
+              for the common good =)
+            </p>
+
+            <br />
+
+            {/* <h3>* Supporting</h3>
+            <p>
+              You can choose your favorite platform to support Findto and enjoy exclusive benefits:
+            </p>
+
+            <p>
+              <a href="https://patreon.com/findto" target="_blank" rel="noreferrer">
+                Support us via Patreon
               </a>
-              . We expect that all members agree and adhere to this guidelines for the common good
-              of Findto Community interactions.
             </p>
 
-            <h2>Social</h2>
-
-            <ul>
-              <li>
-                <p>
-                  Follow on{' '}
-                  <a href="https://twitter.com/findtoapp" target="_blank" rel="noreferrer">
-                    Twitter
-                  </a>{' '}
-                </p>
-              </li>
-              <li>
-                <p>
-                  Join on{' '}
-                  <a href="https://discord.gg/XbZcvNuQ6F" target="_blank" rel="noreferrer">
-                    Discord
-                  </a>
-                </p>
-              </li>
-            </ul>
-
-            <h2>Sponsor</h2>
-
-            <p>If you like or use Findto, please, consider supporting.</p>
+            <p>
+              <a href="https://ko-fi.com/findto" target="_blank" rel="noreferrer">
+                Support us via Ko-Fi
+              </a>
+            </p>
 
             <p>
-              {' '}
               <a href="https://github.com/sponsors/lucasm" target="_blank" rel="noreferrer">
-                Become a Sponsor
-              </a>{' '}
-              and enjoy exclusive benefits!
-            </p>
-
-            <p>
-              As a free and open source project all work is volunteered. Becoming a sponsor you help
-              pay costs and support active development.
-            </p>
-
-            <h2>Code</h2>
-
-            <p>
-              For code contributions, visit{' '}
-              <a href="https://github.com/lucasm/findto/projects" target="_blank" rel="noreferrer">
-                Projects
-              </a>{' '}
-              to stay updated with Findto development roadmap. Please, check opened{' '}
-              <a href="https://github.com/lucasm/findto/issues" target="_blank" rel="noreferrer">
-                Issues
-              </a>{' '}
-              before send a pull requests for bug fixes or new features.
-            </p>
+                Support us via GitHub Sponsors
+              </a>
+            </p> */}
           </article>
         </div>
       </section>

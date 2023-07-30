@@ -23,15 +23,17 @@ export default function WidgetContainer(props: Props) {
 
       {props.children}
 
-      <div className={Styles.credits}>
-        <p>
-          {data?.t?.powered ?? 'Powered by'}
+      {props.creditTitle && props.creditUrl && (
+        <div className={Styles.credits}>
+          <p>
+            {data?.t?.powered ?? 'Powered by'}
 
-          <a href={props.creditUrl} target="_blank" rel="noopener">
-            {props.creditTitle}
-          </a>
-        </p>
-      </div>
+            <a href={props.creditUrl} target="_blank" rel="noopener">
+              {props.creditTitle}
+            </a>
+          </p>
+        </div>
+      )}
     </div>
   )
 }

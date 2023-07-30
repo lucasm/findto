@@ -41,7 +41,7 @@ export default function endpoint(req: NextApiRequest, res: NextApiResponse) {
       }
     }
 
-    if (country == 'BR') {
+    if (country === 'BR') {
       x = {
         credits_title: 'Oasisbr',
         credits_url: 'https://oasisbr.ibict.br/',

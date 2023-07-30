@@ -12,10 +12,11 @@
 
 .container ul {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   margin-top: 2rem;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .container ul li:last-child {
   display: flex;

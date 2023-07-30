@@ -5,7 +5,7 @@ import { ITrends } from '../../../interfaces/trends'
 export default async function endpoint(req: NextApiRequest, res: NextApiResponse): Promise<void> {
   let url =
     'https://api.unsplash.com/topics?client_id=' +
-    process.env.NEXT_API_KEY_UNSPLASH +
+    process.env.NEXT_PUBLIC_API_UNSPLASH +
     '&per_page=18&order_by=featured'
 
   await axios

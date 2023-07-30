@@ -1,0 +1,64 @@
+/* Cards */
+.cards {
+  display: flex;
+  grid-gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cards a {
+  position: relative;
+  margin: 0;
+  padding: 2.5rem;
+  max-width: 380px;
+  min-height: 360px;
+  flex-basis: 100%;
+  color: inherit;
+  text-decoration: none;
+  border-radius: var(--radius);
+  background: var(--color-w);
+  top: 0;
+  transition: ease 0.25s;
+  overflow: hidden;
+}
+.cards a:hover,
+.cards a:focus {
+  top: -8px;
+  box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%);
+}
+
+.cards h3,
+.cards p {
+  margin: 0;
+  padding: 1.5rem 0 0;
+}
+.cards p {
+  margin-bottom: 2.5rem;
+}
+.cards h3 {
+  margin-top: 0;
+}
+.cards figure {
+  display: flex;
+  width: 124px;
+  height: 124px;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  margin: 0 auto;
+  background: var(--color-y);
+}
+.cards svg {
+  width: 48px;
+  height: 48px;
+}
+.cards span {
+  display: inline-block;
+  font-weight: normal;
+  font-size: var(--font-size-min);
+  background: var(--color-y);
+  color: var(--color-b);
+  padding: 0rem 0.6rem 0.2rem;
+  margin: 0.25rem 0.25rem 0 0;
+  border-radius: 5rem;
+  z-index: -1;
+}

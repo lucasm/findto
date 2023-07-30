@@ -158,11 +158,11 @@ export default function AppHeader() {
 
           <h3>{data?.t?.contribute ?? 'Contribute'}</h3>
           <div className={Style.menuBlock}>
-            <a href="https://github.com/sponsors/lucasm" target="_blank" rel="noopener noreferrer">
+            <a href="https://ko-fi.com/findto" target="_blank" rel="noopener noreferrer">
               <Icon.Heart />
-              Sponsor
+              Donate
             </a>
-            <a href="https://github.com/sponsors/lucasm" target="_blank" rel="noopener noreferrer">
+            <a href="https://patreon.com/lucasm" target="_blank" rel="noopener noreferrer">
               <Icon.MessageSquare /> Feedback
             </a>
           </div>

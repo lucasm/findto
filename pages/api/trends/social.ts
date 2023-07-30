@@ -17,7 +17,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         'https://api.twitter.com/1.1/trends/place.json?id=' + countryWoeid.woeid,
         {
           headers: {
-            Authorization: `Bearer ${process.env.NEXT_API_KEY_TWITTER_BEARER_TOKEN}`,
+            Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TWITTER}`,
           },
         }
       )

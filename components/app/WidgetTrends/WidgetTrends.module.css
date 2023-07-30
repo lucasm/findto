@@ -11,8 +11,8 @@
   font-size: 1.1rem;
   border: 0;
   background: transparent;
-  margin: 0.5rem 1.5rem;
-  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   border-radius: var(--radius);
   transition: var(--transition-hover);
   letter-spacing: -1px;

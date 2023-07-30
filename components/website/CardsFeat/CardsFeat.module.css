@@ -1,0 +1,24 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5rem;
+  padding: 4rem 0;
+  text-align: left;
+}
+.card figure {
+  display: flex;
+  margin-bottom: 2rem;
+  padding: 1.2rem;
+  background: var(--color-white-translucent);
+  height: 4rem;
+  width: 4rem;
+  border-radius: 33.3%;
+  box-shadow: var(--shadow-2);
+  align-items: center;
+  justify-content: center;
+}
+.card svg {
+  stroke-width: 2.4;
+  width: 2rem;
+  height: 2rem;
+}

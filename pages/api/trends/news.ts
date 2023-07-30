@@ -13,7 +13,7 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
       'https://newsapi.org/v2/top-headlines?country=' +
       String(country).toLowerCase() +
       '&apiKey=' +
-      process.env.NEXT_API_KEY_NEWSAPI +
+      process.env.NEXT_PUBLIC_API_NEWSAPI +
       '&pageSize=11'
 
     await axios

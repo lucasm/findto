@@ -105,9 +105,12 @@ export default function WidgetPrivacy() {
       domain ? '/api/privacy?url=' + domain : null,
       fetcher,
       {
-        revalidateIfStale: false,
         revalidateOnFocus: false,
-        revalidateOnReconnect: false,
+        revalidateOnMount: true,
+        revalidateOnReconnect: true,
+        refreshWhenOffline: false,
+        refreshWhenHidden: false,
+        refreshInterval: 0,
       }
     )
 

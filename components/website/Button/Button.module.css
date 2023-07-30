@@ -7,11 +7,11 @@
   border: none;
   border-radius: var(--radius);
   line-height: 1;
-  transition: all 0.25s ease-in-out;
+  transition: var(--transition);
 }
-
 .button:hover {
   transform: translateY(-2px);
+  /* transform: scale(1.025); */
   text-decoration: none;
   box-shadow: var(--box-shadow);
 }
