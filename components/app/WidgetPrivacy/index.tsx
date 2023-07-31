@@ -95,7 +95,7 @@ export default function WidgetPrivacy() {
     if (searchUrl) {
       if (isValidUrl(searchUrl)) {
         setDomain(extractDomain(searchUrl))
-        console.log('domain', searchUrl)
+        // console.log('domain', searchUrl)
       }
     }
   }, [searchUrl])
