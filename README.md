@@ -22,15 +22,15 @@ Decentralized Web Search with AI<br>
 
 ## 🌎 Unlocking web searches
 
-Findto is a decentralized web search app with AI.
+Findto is a decentralized Web search app with AI.
 
-Findto mission is to make truly free searches and more productive, putting people in control of search algorithms and generative AIs — not the other way around.
+Findto mission is to make truly free searches and more productive, putting people in control of search algorithms and AIs — not the other way around.
 
-Findto proposes a new Web search experience: you are on control of multiple powerful sources and get better results.
+Findto proposes a new Web search experience: you chose multiple powerful sources and get better results.
 
-The centralized Web, where our searches are monopolized, it's a limiting and exhausting experience. Findto is encouraging everyone to rediscover the Web, for a more diverse, healthier and democratic use of them. Where your choices matter.
+The centralized Web, where our searches are monopolized, it's a limiting and exhausting experience. Findto encourage everyone to rediscover the Web, for a more diverse, healthier and democratic use of them. Where your choices matter.
 
-Findto is free and open source.
+Findto is free and open source project - forever.
 
 ## 🌈 Features
 
@@ -54,26 +54,24 @@ Findto is free and open source.
 
 ## 🔍 Sources
 
-The search providers and data from external APIs available on Findto are chosen by the criteria: 1) service popularity 2) commitment with open access 3) respect of privacy and copyright.
-
-These sources are displayed inside the navigable categories, like: `Web`, `AI`, `Social`, `Video`, `Image`, `Audio`, `Academic`, `Local`, `Shopping`, `Jobs`, `Code` and others.
+The search providers and external data from APIs available on Findto are chosen by the criteria: 1) service popularity 2) commitment with open access 3) respect of privacy and copyright. All these sources are displayed inside the navigable categories on the app, and chosen by community.
 
 For more technical details, visit the [Wiki](https://github.com/lucasm/findto/wiki).
 
 ## 💖 Community
 
-Findto is supported and made collaboratively by community.
+Findto is supported collaboratively by community.
 
 You can choose your favorite platform to support and ✨ enjoy exclusive benefits ✨ (name attribution on repo, work-in-progress updates and more is coming, like access to the Beta versions!).
 
-- [Become a member via Patreon](https://patreon.com/findto)
-- [Become a member via Ko-Fi](https://ko-fi.com/findto)
-- [Become a member via GitHub Sponsors](https://github.com/sponsors/lucasm)
+- [Support via Patreon](https://patreon.com/findto)
+- [Support via Ko-Fi](https://ko-fi.com/findto)
+- [Support via GitHub Sponsors](https://github.com/sponsors/lucasm)
 
 For code contributions, like bug fixes or new features, check the [Projects](https://github.com/lucasm/findto/projects) board and opened [Issues](https://github.com/lucasm/findto/issues) before sending pull requests.
 
 ## 🔒 Privacy
 
-Findto is built on privacy and don't store searches. Please, read the [Privacy Policy](https://findto.app/privacy).
+Findto is built on privacy and don't store searches or users personal info. Please, read our [Privacy Policy](https://findto.app/privacy).
 
 Made by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app).

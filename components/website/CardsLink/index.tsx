@@ -12,13 +12,13 @@ interface ICardsLink {
 export default function CardsLink() {
   const cards: ICardsLink[] = [
     {
-      title: 'Follow on X/Twitter for updates ',
+      title: 'Follow on X (Twitter) for updates ',
       url: 'https://x.com/findtoapp',
       icon: svgTwitter,
       active: true,
     },
     {
-      title: 'Join on Discord for discussions',
+      title: 'Join on Discord community',
       url: 'https://discord.gg/gEDm5MU6pq',
       icon: svgDiscord,
       active: true,
