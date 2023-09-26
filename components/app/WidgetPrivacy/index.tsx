@@ -72,19 +72,19 @@ export default function WidgetPrivacy() {
   function defineLabels(score: number) {
     if (score) {
       if (score >= 300 && score <= 579) {
-        setLabel('VERY POOR')
+        setLabel('very poor')
       }
       if (score >= 580 && score <= 669) {
-        setLabel('FAIR')
+        setLabel('fair')
       }
       if (score >= 670 && score <= 739) {
-        setLabel('GOOD')
+        setLabel('good')
       }
       if (score >= 740 && score <= 799) {
-        setLabel('VERY GOOD')
+        setLabel('very good')
       }
       if (score >= 800 && score <= 850) {
-        setLabel('EXCEPTIONAL')
+        setLabel('exceptional')
       }
     } else {
       setLabel('Unavailable')
@@ -168,7 +168,7 @@ export default function WidgetPrivacy() {
             {dataPrivacy?.name} has a {label} privacy
           </p>
         )}
-        {isErrorPrivacy && <p> Ops, {domain} hasn't been analyzed yet</p>}
+        {isErrorPrivacy && <p> Ops, privacy of {domain} hasn't been analyzed yet</p>}
       </div>
     </WidgetContainer>
   )

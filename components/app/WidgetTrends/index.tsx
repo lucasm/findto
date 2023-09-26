@@ -165,6 +165,20 @@ export default function SearchTrends() {
   }
   const { dataJobs, errorJobs } = useApiJobs()
 
+  // Legal
+  function useApiLegal() {
+    const { data, error } = useSWR(
+      country && category === 'Legal' ? `/api/trends/legal?country=${country}` : null,
+      fetcher
+    )
+
+    return {
+      dataLegal: data,
+      errorLegal: error,
+    }
+  }
+  const { dataLegal, errorLegal } = useApiLegal()
+
   // Apps
   function useApiApps() {
     const { data, error } = useSWR(
@@ -247,6 +261,12 @@ export default function SearchTrends() {
           errorNews && setErrorTrends(errorNews)
         }
         break
+      case 'Legal':
+        {
+          dataLegal && setDataTrends(dataLegal)
+          errorLegal && setErrorTrends(errorLegal)
+        }
+        break
       case 'Apps':
         {
           dataApps && setDataTrends(dataApps)
@@ -286,6 +306,8 @@ export default function SearchTrends() {
     errorNews,
     dataApps,
     errorApps,
+    dataLegal,
+    errorLegal,
   ])
 
   return (
