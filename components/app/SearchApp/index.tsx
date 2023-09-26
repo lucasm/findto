@@ -147,7 +147,7 @@ export default function SearchApp() {
   return (
     <section className={Style.searchContainer}>
       <div
-        className={Style.searchContainerAgroup}
+        className={Style.searchContainer2}
         style={{
           backgroundColor: lightColor,
         }}>

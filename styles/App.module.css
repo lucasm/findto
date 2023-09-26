@@ -93,7 +93,7 @@
 .searchContainer select {
   margin-right: 1rem;
 }
-.searchContainerAgroup {
+.searchContainer2 {
   padding: 3.5rem;
   display: flex;
   flex-wrap: wrap;
@@ -348,7 +348,7 @@
 }
 
 .layout2 .searchContainer {
-  margin: 1.5rem 0 5rem;
+  margin: 2rem 0 5rem;
 }
 
 /* Mobile */
@@ -386,7 +386,7 @@
   .layout1 .main {
     padding: 0;
   }
-  .layout1 .searchContainer {
+  .layout1 .searchContainer2 {
     margin: 0 0 5rem;
     padding: 2rem 0 1rem;
     border-radius: 0;
