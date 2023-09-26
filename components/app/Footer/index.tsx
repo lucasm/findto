@@ -19,7 +19,7 @@ export default function AppFooter() {
         <div>
           <p>
             {data?.t?.copyright ??
-              'Findto is a free and open source assistant for decentralized web searches. All rights reserved to trademarks and external resources. Made with ❤︎ by '}{' '}
+              'Findto is an assistant for decentralized web search, free and open source. All rights reserved to trademarks and external resources. Made by '}{' '}
             <a href="https://lucasm.dev/?utm_source=findto_app" target="_blank" rel="noreferrer">
               Lucas Menezes
             </a>
@@ -38,7 +38,7 @@ export default function AppFooter() {
             </li> */}
             <li>
               <a href="https://ko-fi.com/findto" target="_blank">
-                {data?.t?.donate ?? 'Donate'}
+                {data?.t?.donate ?? 'Donate'} ❤︎
               </a>
             </li>
             <li>

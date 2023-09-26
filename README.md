@@ -34,7 +34,7 @@ Findto is a free and open source software - forever.
 
 ## 🌈 Features
 
-- **Decentralized web search** — Quickly search, the same term, on multiple categories and providers
+- **Decentralized web search** — Quickly search, the same term, on multiple categories and sources
 
 - **Suggestions** — Get instant AI suggestions to help autocomplete terms as you type
 
@@ -54,9 +54,7 @@ Findto is a free and open source software - forever.
 
 ## 🔍 Sources
 
-The search providers and external data from APIs available on Findto are chosen by the criteria: service popularity; commitment with open access; respect of privacy and copyright.
-
-All these sources are displayed inside the navigable categories on the app, and chosen by community. For more technical details, visit the [Wiki](https://github.com/lucasm/findto/wiki).
+The search providers and external data from APIs available on Findto are chosen by the criteria: service popularity; commitment with open access; respect of privacy and copyright. All these sources are displayed inside the navigable categories on the app, and chosen by community. For more technical details, visit [Wiki](https://github.com/lucasm/findto/wiki).
 
 ## 💖 Community
 
