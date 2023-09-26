@@ -3,14 +3,15 @@ import LayoutPage from '../components/website/LayoutPage'
 import CardsLink from '../components/website/CardsLink'
 
 export default function PageCommunity() {
-  const description = 'Help make the Web searches open and accessible for everyone!'
+  const description = 'Help make the decentralized web search accessible for everyone!'
 
   return (
     <LayoutPage title="Community" description={description}>
       <section className="colors">
         <div className={Style.container}>
           <div className={Style.actionContainer}>
-            <h1>Join the community</h1>
+            <h1>Join the Findto Community</h1>
+
             <p>{description}</p>
           </div>
         </div>
@@ -18,30 +19,38 @@ export default function PageCommunity() {
 
       <section>
         <div className={Style.container}>
-          <CardsLink />
-
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-
           <article>
-            <h3>Code of Conduct</h3>
+            <CardsLink />
+
+            <h3>Why support Findto?</h3>
+
+            <p>Findto is a free and open source project developed by community.</p>
 
             <p>
-              We expect that all Findto community members be kind and agree to the{' '}
+              Findto deliver an enhanced, high-performance, democratic and decentralized web search
+              experience that positively impacts everyone.
+            </p>
+
+            <p>
+              Findto also interested in researching solutions and partnerships that strengthen
+              technologies of open access, privacy, diversity, accessibility, ethical AI, and
+              environmental justice.
+            </p>
+
+            <br></br>
+            <br></br>
+
+            <h3>Code of Conduct</h3>
+            <p>
+              All community members agree to be kind to each other, following our{' '}
               <a
                 href="https://www.contributor-covenant.org/version/2/1/code_of_conduct/"
                 target="_blank"
                 rel="noreferrer">
                 Code of Conduct
               </a>{' '}
-              for the common good =)
+              for the common good.
             </p>
-
-            <br />
-
             {/* <h3>* Supporting</h3>
             <p>
               You can choose your favorite platform to support Findto and enjoy exclusive benefits:

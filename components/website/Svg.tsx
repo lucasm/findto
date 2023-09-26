@@ -1,6 +1,5 @@
 const cls1 = {
-  fill: '#f2f2f2',
-  // e6e6e6
+  fill: '#f2f2f282',
 }
 const cls2 = {
   fill: '#fff',

@@ -3,8 +3,8 @@
   position: relative;
   width: 100%;
   height: 3.5rem;
-  background: var(--color-white);
-  color: var(--color-black);
+  background: var(--color-bg-white);
+  color: var(--color-text-black);
 }
 .header .container {
   display: flex;
@@ -23,7 +23,7 @@
   align-items: center;
 }
 .logo svg {
-  width: 28px;
+  width: 24px;
 }
 
 /* Nav */
@@ -57,14 +57,15 @@
 .container {
   margin: 0 auto;
   display: inline-block;
-  padding: 6rem 0;
+  padding: 5rem 2rem;
   width: 100%;
   max-width: 1024px;
-  background: transparent;
+  /* background: lightblue; */
 }
 .actionContainer {
   max-width: 800px;
   margin: 0 auto;
+  color: var(--color-text-black);
 }
 .actionContainer h2 {
   font-size: var(--font-size-1);
@@ -80,7 +81,7 @@
 }
 .page section,
 .page footer {
-  background: var(--color-white);
+  background: var(--color-bg-white);
 }
 
 .page section h1 {
@@ -106,7 +107,7 @@
   height: 10rem;
   margin: 0 0 2rem;
   background-image: url('/images/findto-icon-black.svg');
-  background-size: 4rem;
+  background-size: 4.5rem;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--color-white-translucent);
@@ -139,8 +140,8 @@
 }
 
 /* Mobile */
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 940px) {
   .header {
-    background-color: red;
+    background: yellow;
   }
 }

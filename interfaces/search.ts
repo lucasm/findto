@@ -25,6 +25,6 @@ export interface ISearch {
 export interface ISearchChild {
   name: string
   action: string
-  query: string | boolean
+  query?: string
   additional?: string
 }

@@ -23,7 +23,7 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
 
         data.articles.forEach((item) => {
           a.push({
-            title: item.title.split('-')[0],
+            title: item.title.split(' -')[0],
             url: item.url,
           })
         })

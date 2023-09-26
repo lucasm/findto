@@ -10,13 +10,7 @@ export default function PagePrivacy() {
       <section className="colors">
         <div className={Style.container}>
           <div className={Style.pageTitle}>
-            <h1>Privacy Policy</h1>
-            <p>
-              Findto is built for privacy. We don't store any searches. Redirect to third-party
-              services may cause collection and storage of your personal data, which is why Findto
-              show a "privacy ranking" of every search provider.
-            </p>
-            <p>Effective date: June 10, 2023</p>
+            <h1>Privacy</h1>
           </div>
         </div>
       </section>
@@ -24,13 +18,15 @@ export default function PagePrivacy() {
       <section>
         <div className={Style.container}>
           <article>
-            <h2>1. Privacy is a right</h2>
+            <h2>1. Privacy Policy</h2>
+            <p>Effective date: June 10, 2023.</p>
 
             <p>
-              The mission of Findto is encourage the diversity and peoples choice for a democratic
-              and healthier internet. This policy respect your privacy regarding any information we
-              may collect from you across our services accessible at{' '}
-              <a href="http://findto.app">http://findto.app</a> ("Findto").
+              The Findto mission is encourage people choice a healthier web. We respect your privacy
+              regarding any information we may collect from you across our services accessible at{' '}
+              <a href="http://findto.app">http://findto.app</a> ("Findto"). Findto is built in
+              privacy and do not store searches. External sources and services may collect and store
+              personal data.
             </p>
 
             <p>
@@ -180,7 +176,7 @@ export default function PagePrivacy() {
               <a href="mailto:legal@findto.app">legal@findto.app</a>.
             </p>
 
-            <p>Thanks for reading. Happy searches!</p>
+            <p>Thanks for reading. Happy searches</p>
           </article>
         </div>
       </section>

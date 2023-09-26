@@ -1,82 +1,102 @@
 import Style from './CardsFeat.module.css'
-import * as Icon from 'react-feather'
+import {
+  IconAccessibility,
+  IconCheckOk,
+  IconLanguage,
+  IconMic,
+  IconSearch,
+  IconShield,
+  IconSparkle,
+  IconTrending,
+  IconVisualSearch,
+} from '../../app/SvgIcons'
+import Link from 'next/link'
 
 export default function CardsFeat() {
   return (
     <div className={Style.card}>
       <div>
         <figure>
-          <Icon.Search />
+          <IconSearch />
         </figure>
-        <h3>Decentralized Search</h3>
-        <p>Search the same term on multiple categories and providers.</p>
+        <h3>Decentralized web search</h3>
+        <p>Search the same term on diverse categories and sources</p>
       </div>
 
       <div>
         <figure>
-          <Icon.AlignLeft />
+          <IconSparkle />
         </figure>
-        <h3>AI Suggestions</h3>
-        <p>Get instant AI suggestions to help you as you type.</p>
+        <h3>Suggestions</h3>
+        <p>Get suggestions of search terms to help as you type</p>
+
+        {/* <p>
+          Go <Link href={'/pro'}>Pro</Link> to get unlimited access
+        </p> */}
       </div>
 
       <div>
         <figure>
-          <Icon.Shield />
+          <IconShield />
         </figure>
-        <h3>Privacy Ranking</h3>
-        <p>See the privacy level of each search provider.</p>
+        <h3>Privacy ranking</h3>
+        <p>View the privacy level of each search source before do a search</p>
       </div>
 
       <div>
         <figure>
-          <Icon.TrendingUp />
+          <IconTrending />
         </figure>
         <h3>Trends</h3>
-        <p>Trending on topics, contents, events and places nearby you.</p>
+        <p>Trending topics, contents, events, services and places nearby you</p>
+
+        {/* <p>
+          Go <Link href={'/pro'}>Pro</Link> to get unlimited access
+        </p> */}
       </div>
 
       <div>
         <figure>
-          <Icon.User />
+          <IconAccessibility />
         </figure>
         <h3>Accessibility</h3>
-        <p>
-          Changeable layout and theme, color contrast enhanced, keyboard and screen reader
-          navigation.
-        </p>
+        <p>Change layout and theme color, use keyboard or screen reader navigation</p>
       </div>
 
       <div>
         <figure>
-          <Icon.Globe />
+          <IconLanguage />
         </figure>
         <h3>Internationalization</h3>
-        <p>Chose your country for local sources or use global search.</p>
+        <p>Chose your country for local sources or use global search</p>
       </div>
 
       <div>
         <figure>
-          <Icon.Mic />
+          <IconMic />
         </figure>
-        <h3>Voice Search</h3>
-        <p>Use your voice to search anywhere.</p>
+        <h3>Voice search</h3>
+        <p>Use your voice to search anywhere</p>
       </div>
 
       <div>
         <figure>
-          <Icon.Camera />
+          <IconVisualSearch />
         </figure>
-        <h3>Visual Search</h3>
-        <p>** COMING SOON ** Use an image to search on supported sources.</p>
+        <h3>Visual search</h3>
+        <p>Use a image to search on the supported sources</p>
+
+        <p>* In development</p>
       </div>
 
       <div>
         <figure>
-          <Icon.CheckCircle />
+          <IconCheckOk />
         </figure>
-        <h3>Social Action</h3>
-        <p>** COMING SOON ** Instead ads, see a social cause to act.</p>
+        <h3>Social action</h3>
+        <p>Instead ads, see a social cause to act</p>
+
+        <p>* In development</p>
       </div>
     </div>
   )

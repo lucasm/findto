@@ -9,13 +9,13 @@ import { useRouter } from 'next/router'
 
 export default function LayoutPage(props: LayoutProps) {
   const { asPath } = useRouter()
-  const { data, theme } = useSearch()
+  const { data } = useSearch()
 
   const title = props.title + ' | Findto'
   const url = 'http://findto.app' + asPath
 
   return (
-    <div className={Style.page + ' ' + theme}>
+    <div className={Style.page}>
       <Head>
         {/* Browser */}
         <title>{title}</title>
@@ -51,10 +51,13 @@ export default function LayoutPage(props: LayoutProps) {
                 <Link href="/community">{data?.t?.community ?? 'Community'}</Link>
               </li>
               {/* <li>
+                <Link href="/pro">Pro</Link>
+              </li> */}
+              <li>
                 <a href="https://ko-fi.com/findto" target="_blank">
                   {data?.t?.donate ?? 'Donate'}
                 </a>
-              </li> */}
+              </li>
               <li>
                 <Link href="/">{data?.t?.open ?? 'Open app'} </Link>
               </li>

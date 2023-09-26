@@ -6,16 +6,17 @@ export default function PageTerms() {
     <LayoutPage title="Terms of Use" description="See how to use Findto for the common good">
       <section className="colors">
         <div className={Style.container}>
-          <h1>Terms of Use</h1>
-
-          <p>Effective date: June 10, 2023.</p>
+          <h1>Terms</h1>
         </div>
       </section>
 
       <section>
         <div className={Style.container}>
           <article>
-            <h2>1. Terms</h2>
+            <h2>1. Terms of Service</h2>
+
+            <p>Last update: June 10, 2023.</p>
+
             <p>
               By accessing the apps, websites and services at internet domain{' '}
               <a href="http://findto.app">http://findto.app</a> ("Findto"), you are agreeing to be
@@ -26,8 +27,8 @@ export default function PageTerms() {
 
             <h2>2. Use license</h2>
             <p>
-              The Findto software source code are open source. But there are materials contained on
-              Findto are protected by copyright and trademark laws.
+              The Findto source code is open source. But there are materials contained on Findto are
+              protected by copyright and trademark laws.
             </p>
 
             <p>

@@ -4,10 +4,11 @@
 }
 .container figure {
   font-size: 0;
+  margin-bottom: 2rem;
 }
 .container figure svg {
-  width: 28px;
-  margin-bottom: 2rem;
+  width: 24px;
+  color: var(--color-text-black);
 }
 
 .container ul {
@@ -17,11 +18,15 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  color: var(--color-text-black);
 }
 .container ul li:last-child {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+.container p {
+  color: var(--color-text-black);
 }
 
 .socialIcons {

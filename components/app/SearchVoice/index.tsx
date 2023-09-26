@@ -1,16 +1,16 @@
 import { useEffect, useState } from 'react'
 import Style from './SearchVoice.module.css'
-import * as Icon from 'react-feather'
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition'
 import { useSearch } from '../../../contexts/SearchContext'
+import { IconMic } from '../SvgIcons'
+import Tooltip from '../Tooltip'
 
 export default function SearchVoice() {
-  const { putValue } = useSearch()
-
+  const { data, putValue, isMobileViewport } = useSearch()
   const { transcript, listening, resetTranscript, browserSupportsSpeechRecognition } =
     useSpeechRecognition()
-
   const [hasVoiceSupport, setHasVoiceSupport] = useState<boolean>(false)
+  const title = data?.t?.voice ?? 'Voice search'
 
   useEffect(() => {
     if (typeof window !== 'undefined' && browserSupportsSpeechRecognition) {
@@ -34,22 +34,26 @@ export default function SearchVoice() {
   }
 
   return (
-    <div>
+    <>
       {hasVoiceSupport && (
-        <div>
-          <button
-            className={listening ? `${Style.button} ${Style.buttonActive}` : Style.button}
-            accessKey="2"
-            aria-label={listening ? 'Turn off microphone' : 'Voice search'}
-            aria-pressed={listening ? true : false}
-            title="Voice search"
-            onClick={handleSpeechRecognition}>
-            <Icon.Mic />
-            Voice search
-          </button>
-          <h2 className={Style.transcript}>{listening && transcript}</h2>
-        </div>
+        <>
+          <Tooltip text={title} disable={isMobileViewport}>
+            <button
+              className={listening ? `${Style.button} ${Style.buttonActive}` : Style.button}
+              accessKey="2"
+              aria-label={listening ? 'Turn off microphone' : title}
+              aria-pressed={listening ? true : false}
+              onClick={handleSpeechRecognition}>
+              <IconMic />
+              {title}
+            </button>
+          </Tooltip>
+
+          <div className={Style.transcriptContainer}>
+            <h2>{listening && transcript}</h2>
+          </div>
+        </>
       )}
-    </div>
+    </>
   )
 }

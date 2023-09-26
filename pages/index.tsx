@@ -7,7 +7,7 @@ import WidgetPrivacy from '../components/app/WidgetPrivacy'
 export default function Index() {
   return (
     <LayoutApp
-      title="AI decentralized web search"
+      title="Decentralized Search Assistant"
       description="Findto is a decentralized web search app with AI, privacy and diverse sources.">
       <SearchApp />
 

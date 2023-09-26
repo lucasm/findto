@@ -2,24 +2,30 @@
   "country": "Brasil",
   "country_code": "BR",
   "t": {
-    "trends": "Popular",
+    "placeholder": "Buscar em",
+    "search": "Buscar",
+    "trends": "Tendências",
     "settings": "Ajustes",
+    "clear": "Limpar",
+    "voice": "Voz",
     "theme": "Tema",
     "language": "Idioma",
-    "powered": "Via",
+    "powered": "Fornecido por",
     "about": "Sobre",
     "open": "Abrir app",
     "contribute": "Contribua",
-    "community": "Comunidade ♥",
-    "donate": "Doar",
+    "community": "Comunidade",
+    "donate": "Fazer doação",
+    "feedback": "Enviar feedback",
+    "link_feedback": "https://forms.gle/r6XAyB1ZLn9qzwp16",
     "terms": "Termos",
     "privacy": "Privacidade",
-    "copyright": "Findto é um aplicativo open source de busca descentralizada na web com IA, privacidade e diversas fontes. Todos os direitos reservados as marcas registradas e recursos externos. Feito por ",
-    "link_feedback": "https://forms.gle/6kh9NoNxf63qsQSk8"
+    "copyright": "Findto é um assistente de busca descentralizada na web. Todos os direitos reservados às marcas registradas e fontes externas. Feito com ❤︎ por "
   },
   "categories": [
     {
       "name": "Web",
+      "name_title": "Busca na Web",
       "active": true,
       "data": [
         {
@@ -285,6 +291,12 @@
           ]
         },
         {
+          "name": "Presearch",
+          "action": "https://presearch.com/search",
+          "query": "q",
+          "color": "#468cff"
+        },
+        {
           "name": "Mojeek",
           "action": "https://www.mojeek.com/search",
           "query": "q",
@@ -337,8 +349,21 @@
     {
       "name": "AI",
       "name_translated": "IA",
+      "name_title": "Busca em IA",
       "active": true,
       "data": [
+        {
+          "name": "Bing Chat",
+          "action": "https://www.bing.com/search?showconv=1&sendquery=1&q=",
+          "query": false,
+          "color": "#4dd1f0"
+        },
+        {
+          "name": "Perplexity",
+          "action": "https://www.perplexity.ai/",
+          "query": "q",
+          "color": "#38c8dc"
+        },
         {
           "name": "ChatGPT",
           "action": "https://chat.openai.com/",
@@ -352,16 +377,10 @@
           "color": "#cb83e0"
         },
         {
-          "name": "Bing Chat",
-          "action": "https://www.bing.com/search?q=Bing+AI&showconv=1",
+          "name": "HuggingChat",
+          "action": "https://huggingface.co/chat/",
           "query": "q",
-          "color": "#1db6da"
-        },
-        {
-          "name": "Perplexity",
-          "action": "https://www.perplexity.ai/",
-          "query": "q",
-          "color": "#c4c4c4"
+          "color": "#ffd942"
         },
         {
           "name": "You",
@@ -374,17 +393,12 @@
           "action": "https://www.phind.com/agent",
           "query": "q",
           "color": "#8275ff"
-        },
-        {
-          "name": "Talk to Books",
-          "action": "https://books.google.com/talktobooks/query",
-          "query": "q",
-          "color": "#ff6e63"
         }
       ]
     },
     {
       "name": "Social",
+      "name_title": "Busca Social",
       "active": true,
       "data": [
         {
@@ -432,7 +446,7 @@
           "name": "Reddit",
           "action": "https://www.reddit.com/search",
           "query": "q",
-          "color": "#ff713a"
+          "color": "#ff8353"
         },
         {
           "name": "LinkedIn",
@@ -453,27 +467,20 @@
           "color": "#fffd5e"
         },
         {
-          "name": "Tumblr",
-          "action": "https://www.tumblr.com/search/",
-          "query": false,
-          "color": "#5084bf"
-        },
-        {
           "name": "Quora",
           "action": "https://www.quora.com/search",
           "query": "q",
           "color": "#ff6966"
         },
         {
-          "name": "Substack",
-          "action": "https://substack.com/search/",
-          "query": false,
-          "color": "#ff7934"
+          "name": "Tumblr",
+          "action": "https://www.tumblr.com/search/",
+          "color": "#5084bf"
         },
         {
           "name": "Mastodon",
-          "action": "https://mastodon.social/search",
-          "query": "q",
+          "action": "https://mastodon.social/tags/",
+          "query": false,
           "color": "#8F8FFF"
         },
         {
@@ -483,16 +490,17 @@
           "color": "#ff5573"
         },
         {
-          "name": "VK",
-          "action": "https://vk.com/search",
-          "query": "q",
-          "color": "#3794ff"
+          "name": "Substack",
+          "action": "https://substack.com/search/",
+          "query": false,
+          "color": "#ff7934"
         }
       ]
     },
     {
       "name": "Videos",
       "name_translated": "Vídeo",
+      "name_title": "Busca de Vídeo",
       "active": true,
       "data": [
         {
@@ -594,8 +602,9 @@
       ]
     },
     {
-      "name": "Images",
+      "name": "Image",
       "name_translated": "Imagem",
+      "name_title": "Busca de Imagem",
       "active": true,
       "data": [
         {
@@ -614,7 +623,7 @@
           "name": "Unsplash",
           "action": "https://unsplash.com/s/photos/",
           "query": false,
-          "color": "#eee"
+          "color": "#cccccc"
         },
         {
           "name": "Pexels",
@@ -705,6 +714,7 @@
     {
       "name": "Music",
       "name_translated": "Áudio",
+      "name_title": "Busca de Áudio",
       "active": true,
       "data": [
         {
@@ -714,16 +724,16 @@
           "color": "#58e087"
         },
         {
-          "name": "SoundCloud",
-          "action": "https://soundcloud.com/search",
-          "query": "q",
-          "color": "#FF8B51"
-        },
-        {
           "name": "Apple Music",
           "action": "https://music.apple.com/search",
           "query": "term",
           "color": "#ff6a7a"
+        },
+        {
+          "name": "SoundCloud",
+          "action": "https://soundcloud.com/search",
+          "query": "q",
+          "color": "#FF8B51"
         },
         {
           "name": "YouTube Music",
@@ -732,10 +742,28 @@
           "color": "#ff5454"
         },
         {
+          "name": "Amazon Music",
+          "action": "https://music.amazon.com.br/search/",
+          "query": false,
+          "color": "#25d1da"
+        },
+        {
           "name": "Deezer",
           "action": "https://www.deezer.com/search/",
           "query": false,
-          "color": "#eee"
+          "color": "#cccccc"
+        },
+        {
+          "name": "TIDAL",
+          "action": "https://listen.tidal.com/search",
+          "query": "q",
+          "color": "#eeeeee"
+        },
+        {
+          "name": "TuneIn",
+          "action": "https://tunein.com/search/",
+          "query": "query",
+          "color": "#36d7cd"
         },
         {
           "name": "Last.fm",
@@ -766,25 +794,6 @@
           "action": "https://www.musixmatch.com/search/",
           "query": false,
           "color": "#ff6b6b"
-        },
-
-        {
-          "name": "TuneIn",
-          "action": "https://tunein.com/search/",
-          "query": "query",
-          "color": "#36d7cd"
-        },
-        {
-          "name": "Amazon Music",
-          "action": "https://music.amazon.com.br/search/",
-          "query": false,
-          "color": "#25d1da"
-        },
-        {
-          "name": "TIDAL",
-          "action": "https://listen.tidal.com/search",
-          "query": "q",
-          "color": "#eee"
         },
         {
           "name": "Bandcamp",
@@ -821,6 +830,7 @@
     {
       "name": "Shopping",
       "name_translated": "Compras",
+      "name_title": "Compras",
       "active": true,
       "data": [
         {
@@ -941,6 +951,7 @@
     },
     {
       "name": "Local",
+      "name_title": "Busca Local",
       "active": true,
       "data": [
         {
@@ -956,12 +967,6 @@
           "color": "#4cb69a"
         },
         {
-          "name": "Bing Travel",
-          "action": "https://bing.com/travel/place-information",
-          "query": "q",
-          "color": "#37c3e3"
-        },
-        {
           "name": "Airbnb",
           "action": "https://www.airbnb.com/s/",
           "query": false,
@@ -974,19 +979,25 @@
           "color": "#40d59c"
         },
         {
-          "name": "Kayak",
-          "action": "https://www.kayak.com.br/explore/",
-          "query": false,
-          "color": "#ff853c"
-        },
-        {
           "name": "Booking",
           "action": "https://www.booking.com/searchresults.pt-br.html",
           "query": "ss",
           "color": "#2681ff"
         },
         {
-          "name": "Ingresso.com",
+          "name": "Kayak",
+          "action": "https://www.kayak.com.br/explore/",
+          "query": false,
+          "color": "#ff853c"
+        },
+        {
+          "name": "Skyscanner",
+          "action": "https://www.booking.com/searchresults.pt-br.html",
+          "query": "ss",
+          "color": "#2681ff"
+        },
+        {
+          "name": "Ingresso",
           "action": "https://www.ingresso.com/busca/resultado",
           "query": "q",
           "color": "#ff963f"
@@ -1010,22 +1021,22 @@
           "color": "#ff963f"
         },
         {
+          "name": "Eventbrite",
+          "action": "https://www.eventbrite.com.br/d/brazil/",
+          "query": false,
+          "color": "#f05537"
+        },
+        {
           "name": "Yelp",
           "action": "https://www.yelp.com.br/search",
           "query": "find_desc",
           "color": "#ff5454"
         },
         {
-          "name": "Foursquare",
-          "action": "https://foursquare.com/explore",
+          "name": "Bing Travel",
+          "action": "https://www.bing.com/travel/place-information",
           "query": "q",
-          "color": "#6388f3"
-        },
-        {
-          "name": "Mapquest",
-          "action": "https://www.mapquest.com/search/",
-          "query": false,
-          "color": "#5ec279"
+          "color": "#37c3e3"
         },
         {
           "name": "HERE WeGo",
@@ -1038,6 +1049,7 @@
     {
       "name": "News",
       "name_translated": "Notícias",
+      "name_title": "Busca de Notícias",
       "active": true,
       "data": [
         {
@@ -1066,7 +1078,7 @@
         },
         {
           "name": "Feedly",
-          "action": "https://feedly.com/i/search/",
+          "action": "https://feedly.com/i/discover/sources/search/feed/",
           "query": false,
           "color": "#59e076"
         },
@@ -1099,13 +1111,14 @@
     {
       "name": "Academic",
       "name_translated": "Acadêmico",
+      "name_title": "Busca Acadêmica",
       "active": true,
       "data": [
         {
           "name": "Wikipédia",
           "action": "https://pt.wikipedia.org/w/index.php",
           "query": "search",
-          "color": "#ddd"
+          "color": "#a2a9b1"
         },
         {
           "name": "Google Scholar",
@@ -1207,19 +1220,13 @@
           "name": "Academia",
           "action": "https://www.academia.edu/people/search",
           "query": "q",
-          "color": "#ccc"
+          "color": "#428bca"
         },
         {
           "name": "Brainly",
           "action": "https://brainly.com.br/app/ask",
           "query": "q",
           "color": "#60d399"
-        },
-        {
-          "name": "Golden",
-          "action": "https://golden.com/search/",
-          "query": false,
-          "color": "#efbf54"
         },
         {
           "name": "Stack Exchange",
@@ -1232,12 +1239,19 @@
           "action": "https://archive.org/search.php",
           "query": "query",
           "color": "#d8d8d8"
+        },
+        {
+          "name": "Golden",
+          "action": "https://golden.com/search/",
+          "query": false,
+          "color": "#efbf54"
         }
       ]
     },
     {
-      "name": "Jobs",
+      "name": "Job",
       "name_translated": "Vagas",
+      "name_title": "Busca de Vagas",
       "active": true,
       "data": [
         {
@@ -1292,7 +1306,7 @@
           "name": "Vagas",
           "action": "https://www.vagas.com.br/vagas-de-",
           "query": false,
-          "color": "#26c69e"
+          "color": "#02a97f"
         },
         {
           "name": "Jooble",
@@ -1328,7 +1342,8 @@
     },
     {
       "name": "Finance",
-      "name_translated": "Bolsa",
+      "name_translated": "Finanças",
+      "name_title": "Busca Financeira",
       "active": false,
       "data": [
         {
@@ -1342,6 +1357,7 @@
     {
       "name": "Legal",
       "name_translated": "Legal",
+      "name_title": "Busca Legal",
       "active": true,
       "data": [
         {
@@ -1363,7 +1379,7 @@
           "color": "#00C8FF",
           "child": [
             {
-              "name": "Gov.br"
+              "name": "Portal Gov.br"
             },
             {
               "name": "Transparência",
@@ -1372,6 +1388,11 @@
             },
             {
               "name": "Diário Oficial",
+              "action": "https://www.in.gov.br/consulta/-/buscar/dou",
+              "query": "q"
+            },
+            {
+              "name": "Legislação",
               "action": "https://www.in.gov.br/consulta/-/buscar/dou",
               "query": "q"
             }
@@ -1394,7 +1415,7 @@
           ]
         },
         {
-          "name": "Supremo Tribunal",
+          "name": "STF",
           "action": "https://jurisprudencia.stf.jus.br/pages/search",
           "query": "queryString",
           "color": "#00b8ff",
@@ -1415,16 +1436,42 @@
           ]
         },
         {
-          "name": "Ministério Público",
+          "name": "MPF",
           "action": "https://www.mpf.mp.br/@@search",
           "query": "SearchableText",
           "color": "#61a4db"
+        },
+        {
+          "name": "SP",
+          "action": "https://www.saopaulo.sp.gov.br/",
+          "query": "s",
+          "color": "#ff0c19",
+          "child": [
+            {
+              "name": "Governo de SP"
+            },
+            {
+              "name": "Diário Oficial",
+              "action": "https://www.imprensaoficial.com.br/DO/BuscaDO2001Resultado_11_3.aspx",
+              "query": "filtropalavraschave"
+            },
+            {
+              "name": "Assembleia Legislativa",
+              "action": "https://www.al.sp.gov.br/alesp/pesquisa-proposicoes/?method=search&text="
+            },
+            {
+              "name": "Defensoria Pública",
+              "action": "https://www.defensoria.sp.def.br/busca",
+              "query": "q"
+            }
+          ]
         }
       ]
     },
     {
       "name": "Code",
       "name_translated": "Código",
+      "name_title": "Busca de Código",
       "active": true,
       "data": [
         {
@@ -1538,6 +1585,74 @@
       ]
     },
     {
+      "name": "Apps",
+      "name_title": "Busca de Apps",
+      "active": true,
+      "data": [
+        {
+          "name": "Google Play",
+          "action": "https://play.google.com/store/search",
+          "query": "q",
+          "color": "#00c78e"
+        },
+        {
+          "name": "App Store",
+          "action": "https://www.apple.com/br/search/",
+          "query": false,
+          "additional": "?src=globalnav",
+          "color": "#1db2f9"
+        },
+        {
+          "name": "Microsoft Store",
+          "action": "https://apps.microsoft.com/store/search/",
+          "query": false,
+          "color": "#219fff"
+        },
+        {
+          "name": "Chrome Web Store",
+          "action": "https://chromewebstore.google.com/search/",
+          "query": false,
+          "color": "#fabe0a"
+        },
+        {
+          "name": "Firefox Addons",
+          "action": "https://addons.mozilla.org/en-US/firefox/search/",
+          "query": "q",
+          "color": "#00c8d7"
+        },
+        {
+          "name": "Snap Store",
+          "action": "https://snapcraft.io/search",
+          "query": "q",
+          "color": "#e95420"
+        },
+        {
+          "name": "Flathub",
+          "action": "https://flathub.org/pt-BR/apps/search",
+          "query": "q",
+          "color": "#34aadc"
+        },
+        {
+          "name": "Product Hunt",
+          "action": "https://www.producthunt.com/search",
+          "query": "q",
+          "color": "#ff744c"
+        },
+        {
+          "name": "Kickstarter",
+          "action": "https://www.kickstarter.com/discover/advanced",
+          "query": "term",
+          "color": "#46e6a1"
+        },
+        {
+          "name": "Indiegogo",
+          "action": "https://www.indiegogo.com/explore/all",
+          "query": "q",
+          "color": "#f16fac"
+        }
+      ]
+    },
+    {
       "name": "Torrent",
       "active": false,
       "data": [
@@ -1613,36 +1728,6 @@
           "action": "https://rarible.com/explore/search/",
           "query": false,
           "color": "#fdda05"
-        }
-      ]
-    },
-    {
-      "name": "Apps",
-      "active": false,
-      "data": [
-        {
-          "name": "Product Hunt",
-          "action": "https://www.producthunt.com/search",
-          "query": "q",
-          "color": "#ff744c"
-        },
-        {
-          "name": "Kickstarter",
-          "action": "https://www.kickstarter.com/discover/advanced",
-          "query": "term",
-          "color": "#46e6a1"
-        },
-        {
-          "name": "Indiegogo",
-          "action": "https://www.indiegogo.com/explore/all",
-          "query": "q",
-          "color": "#f16fac"
-        },
-        {
-          "name": "Patreon",
-          "action": "https://www.patreon.com/search",
-          "query": "q",
-          "color": "#ff6069"
         }
       ]
     }

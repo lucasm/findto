@@ -2,9 +2,9 @@ import styles from '../WidgetPrivacy/WidgetPrivacy.module.css'
 import useSWR from 'swr'
 import { fetcher } from '../../../utils/http'
 import { useSearch } from '../../../contexts/SearchContext'
-import { Shield, Eye, AlertTriangle, ThumbsUp } from 'react-feather'
 import { useEffect, useState } from 'react'
 import WidgetContainer from '../WidgetContainer'
+import { IconShield } from '../SvgIcons'
 
 interface IApiPrivacy {
   name: string
@@ -72,19 +72,19 @@ export default function WidgetPrivacy() {
   function defineLabels(score: number) {
     if (score) {
       if (score >= 300 && score <= 579) {
-        setLabel('Very Poor')
+        setLabel('VERY POOR')
       }
       if (score >= 580 && score <= 669) {
-        setLabel('Fair')
+        setLabel('FAIR')
       }
       if (score >= 670 && score <= 739) {
-        setLabel('Good')
+        setLabel('GOOD')
       }
       if (score >= 740 && score <= 799) {
-        setLabel('Very Good')
+        setLabel('VERY GOOD')
       }
       if (score >= 800 && score <= 850) {
-        setLabel('Exceptional')
+        setLabel('EXCEPTIONAL')
       }
     } else {
       setLabel('Unavailable')
@@ -124,20 +124,20 @@ export default function WidgetPrivacy() {
 
   useEffect(() => {
     // console.log(dataPrivacy)
-    defineLabels(dataPrivacy?.score)
-    setPercents(definePercents(dataPrivacy?.score))
+    defineLabels(dataPrivacy?.score ?? dataPrivacy?.previousScore)
+    setPercents(definePercents(dataPrivacy?.score ?? dataPrivacy?.previousScore))
   }, [dataPrivacy])
 
   return (
     <WidgetContainer
       title={data?.t?.privacy ?? 'Privacy'}
-      icon={<Shield />}
+      icon={<IconShield />}
       creditTitle="Privacy Monitor"
       creditUrl="https://www.privacymonitor.com/?utm_source=findto_app">
       <div className={styles.container}>
         <div className={styles.donut}>
           <svg width="100%" height="100%" viewBox="0 0 40 40" className={styles.donut}>
-            <circle cx="20" cy="20" r="15" fill="rgb(0 0 0 / 2.5%)"></circle>
+            <circle cx="20" cy="20" r="15" fill="rgb(0 0 0 / 2%)"></circle>
             {/* for change donut, change dasharray */}
             <circle
               className={styles.donutSegment}
@@ -162,9 +162,13 @@ export default function WidgetPrivacy() {
           </svg>
         </div>
 
-        <p>{isLoadingPrivacy ? '...' : label}</p>
-        {/* {dataPrivacy && <p>{domain}</p>} */}
-        {/* {isErrorPrivacy && <p> Error {domain}</p>} */}
+        <p>{isLoadingPrivacy && '...'}</p>
+        {dataPrivacy && (
+          <p>
+            {dataPrivacy?.name} has a {label} privacy
+          </p>
+        )}
+        {isErrorPrivacy && <p> Ops, {domain} hasn't been analyzed yet</p>}
       </div>
     </WidgetContainer>
   )

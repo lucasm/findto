@@ -10,15 +10,20 @@
   margin-bottom: 2rem;
   padding: 1.2rem;
   background: var(--color-white-translucent);
-  height: 4rem;
-  width: 4rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 33.3%;
   box-shadow: var(--shadow-2);
   align-items: center;
   justify-content: center;
 }
 .card svg {
-  stroke-width: 2.4;
   width: 2rem;
   height: 2rem;
+}
+.card a {
+  padding: 0.3rem 0.6rem;
+  background: var(--color-white-translucent);
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-2);
 }

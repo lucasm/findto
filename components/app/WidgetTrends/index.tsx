@@ -2,12 +2,12 @@ import Styles from './WidgetTrends.module.css'
 import { fetcher } from '../../../utils/http'
 import useSWR from 'swr'
 import { useSearch } from '../../../contexts/SearchContext'
-import { TrendingUp } from 'react-feather'
 import Loader from '../Loader'
 import WidgetContainer from '../WidgetContainer'
 import { ITrends, ITrendsItem } from '../../../interfaces/trends'
 import { useEffect, useState } from 'react'
 import ButtonGeolocation from '../ButtonGeolocation'
+import { IconTrending } from '../SvgIcons'
 
 export default function SearchTrends() {
   const { data, category, putValue, country, locale, latitude, longitude } = useSearch()
@@ -55,7 +55,7 @@ export default function SearchTrends() {
 
   // Images
   function useApiImages() {
-    const { data, error } = useSWR(category === 'Images' && `/api/trends/images`, fetcher)
+    const { data, error } = useSWR(category === 'Image' && `/api/trends/images`, fetcher)
 
     return {
       dataImages: data,
@@ -66,7 +66,10 @@ export default function SearchTrends() {
 
   // Music
   function useApiAudio() {
-    const { data, error } = useSWR(category === 'Music' && `/api/trends/audio`, fetcher)
+    const { data, error } = useSWR(
+      country && category === 'Music' && `/api/trends/audio?country=${country}`,
+      fetcher
+    )
 
     return {
       dataAudio: data,
@@ -151,7 +154,7 @@ export default function SearchTrends() {
   // Jobs
   function useApiJobs() {
     const { data, error } = useSWR(
-      country && category === 'Jobs' ? `/api/trends/jobs?country=${country}` : null,
+      country && category === 'Job' ? `/api/trends/jobs?country=${country}` : null,
       fetcher
     )
 
@@ -161,6 +164,20 @@ export default function SearchTrends() {
     }
   }
   const { dataJobs, errorJobs } = useApiJobs()
+
+  // Apps
+  function useApiApps() {
+    const { data, error } = useSWR(
+      country && category === 'Apps' ? `/api/trends/apps?country=${country}` : null,
+      fetcher
+    )
+
+    return {
+      dataApps: data,
+      errorApps: error,
+    }
+  }
+  const { dataApps, errorApps } = useApiApps()
 
   // call API
   useEffect(() => {
@@ -180,7 +197,7 @@ export default function SearchTrends() {
           errorVideos && setErrorTrends(errorVideos)
         }
         break
-      case 'Images':
+      case 'Image':
         {
           dataImages && setDataTrends(dataImages)
           errorImages && setErrorTrends(errorImages)
@@ -218,7 +235,7 @@ export default function SearchTrends() {
           errorCode && setErrorTrends(errorCode)
         }
         break
-      case 'Jobs':
+      case 'Job':
         {
           dataJobs && setDataTrends(dataJobs)
           errorJobs && setErrorTrends(errorJobs)
@@ -228,6 +245,12 @@ export default function SearchTrends() {
         {
           dataNews && setDataTrends(dataNews)
           errorNews && setErrorTrends(errorNews)
+        }
+        break
+      case 'Apps':
+        {
+          dataApps && setDataTrends(dataApps)
+          errorApps && setErrorTrends(errorApps)
         }
         break
       default: {
@@ -261,12 +284,14 @@ export default function SearchTrends() {
     errorCode,
     dataNews,
     errorNews,
+    dataApps,
+    errorApps,
   ])
 
   return (
     <WidgetContainer
       title={data?.t?.trends ?? 'Trends'}
-      icon={<TrendingUp />}
+      icon={<IconTrending />}
       creditTitle={dataTrends?.credits_title ?? ''}
       creditUrl={dataTrends?.credits_url ? dataTrends?.credits_url + '?utm_source=findto_app' : ''}>
       <>

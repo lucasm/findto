@@ -8,15 +8,14 @@ import { useRouter } from 'next/router'
 
 export default function LayoutApp(props: LayoutProps) {
   const { asPath } = useRouter()
-  const { theme, layout } = useSearch()
+  const { layout } = useSearch()
 
   const title = 'Findto | ' + props.title
   const url = 'http://findto.app' + asPath
 
   return (
-    <div className={Style['theme' + layout] + ' ' + theme}>
+    <div className={Style['layout' + layout]}>
       <Head>
-        {/* Browser */}
         <title>{title}</title>
         <meta name="description" content={props.description} />
 

@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Created with Vectornator (http://vectornator.io/) -->
-<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 80 80" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<defs/>
-<path d="M0 0L80 0L80 80L0 80L0 0Z" fill="#000000" fill-opacity="0" fill-rule="nonzero" opacity="1" stroke="none"/>
-<g id="Sem-Título">
-<path d="M80 40.2427C80 18.016 62.0933 0 40 0C17.9067 0 0 18.016 0 40.2427C0 60.3333 14.624 76.9813 33.7493 80L33.7493 51.8773L23.5947 51.8773L23.5947 40.24L33.7493 40.24L33.7493 31.376C33.7493 21.2907 39.72 15.7173 48.8587 15.7173C53.232 15.7173 57.8133 16.504 57.8133 16.504L57.8133 26.408L52.7653 26.408C47.7973 26.408 46.2507 29.512 46.2507 32.696L46.2507 40.2427L57.344 40.2427L55.5707 51.8747L46.2507 51.8747L46.2507 80C65.376 76.9813 80 60.3333 80 40.2427Z" fill="#000000" fill-rule="nonzero" opacity="1" stroke="none"/>
-</g>
-</svg>
+<?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"><defs><style>.b{fill:none;}.b,.c{stroke-width:0px;}</style></defs><path class="c" d="m80,40C80,17.91,62.09,0,40,0S0,17.91,0,40c0,18.76,12.92,34.5,30.34,38.82v-26.6h-8.25v-12.22h8.25v-5.27c0-13.61,6.16-19.92,19.53-19.92,2.53,0,6.91.5,8.7.99v11.08c-.94-.1-2.58-.15-4.62-.15-6.56,0-9.09,2.48-9.09,8.94v4.32h13.07l-2.24,12.22h-10.82v27.48c19.8-2.39,35.15-19.26,35.15-39.71Z"/><path class="b" d="m55.67,52.22l2.24-12.22h-13.07v-4.32c0-6.46,2.53-8.94,9.09-8.94,2.04,0,3.68.05,4.62.15v-11.08c-1.79-.5-6.16-.99-8.7-.99-13.37,0-19.53,6.31-19.53,19.92v5.27h-8.25v12.22h8.25v26.6c3.09.77,6.33,1.18,9.66,1.18,1.64,0,3.26-.1,4.85-.29v-27.48s10.82,0,10.82,0Z"/></svg>

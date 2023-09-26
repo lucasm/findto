@@ -1,0 +1,26 @@
+.button {
+  position: relative;
+  margin: 1rem 0 0;
+  padding: 0 2rem;
+  color: var(--color-white);
+  background: var(--color-black);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: var(--font-size);
+  height: var(--size-small);
+}
+.button:hover,
+.button:focus {
+  background: var(--color-grey);
+  color: var(--color-black);
+}
+.button:hover svg,
+.button:focus svg {
+  color: var(--color-black);
+}
+.button svg {
+  color: var(--color-white);
+  margin-right: 0.5rem;
+  margin-bottom: -0.3rem;
+}

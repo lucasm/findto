@@ -6,10 +6,9 @@ const SearchContext = createContext<any>({})
 
 // export as Provider
 export function SearchContextProvider({ children }) {
-  // default states
   const { locale } = useRouter()
   const [data, setData] = useState<any>({})
-  const [layout, setLayout] = useState<string>('2')
+  const [layout, setLayout] = useState<string>('1')
   const [theme, setTheme] = useState<string>('light')
   const [category, setCategory] = useState<string>('Web')
   const [search, setSearch] = useState<string>('google')
@@ -21,13 +20,13 @@ export function SearchContextProvider({ children }) {
   const [latitude, setLatitude] = useState<number>()
   const [longitude, setLongitude] = useState<number>()
   const [inputValue, setInputValue] = useState<string>('')
+  const [isMobileViewport, setIsMobileViewport] = useState<boolean>(false)
   const refSearchInput = useRef(null)
   const refSearchTabs = useRef([])
 
   // load search data by file
   const searchData = require('../locales/' + locale + '.json')
 
-  // scroll to top
   function scrollToTop() {
     const isBrowser = () => typeof window !== 'undefined'
     if (!isBrowser()) return
@@ -41,6 +40,44 @@ export function SearchContextProvider({ children }) {
     scrollToTop()
   }
 
+  // viewport
+  function useWindowSize() {
+    // https://stackoverflow.com/questions/63406435/
+    const [windowSize, setWindowSize] = useState({
+      width: undefined,
+      height: undefined,
+    })
+
+    useEffect(() => {
+      function handleResize() {
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        })
+      }
+
+      window.addEventListener('resize', handleResize)
+
+      handleResize()
+
+      return () => window.removeEventListener('resize', handleResize)
+    }, [])
+    return windowSize
+  }
+  const sizeWindow = useWindowSize()
+
+  // mobile viewport
+  useEffect(() => {
+    if (sizeWindow) {
+      if (sizeWindow.width <= 940) {
+        setIsMobileViewport(true)
+      } else {
+        setIsMobileViewport(false)
+      }
+    }
+  }, [sizeWindow])
+
+  // locale
   useEffect(() => {
     setData(searchData)
     // console.log('LOCALE + DATA SEARCH', locale, searchData)
@@ -52,22 +89,45 @@ export function SearchContextProvider({ children }) {
     window.localStorage.setItem('country', data?.country_code)
   }, [data])
 
-  // keep Context updated with LocalStorage values
+  // theme
   useEffect(() => {
-    const storageLayout = window.localStorage.getItem('layout')
-    const storageTheme = window.localStorage.getItem('theme')
-    const storageCategory = window.localStorage.getItem('category')
-    const storageSearch = window.localStorage.getItem('search')
+    if (theme) {
+      const root = document.documentElement
 
-    storageLayout && setLayout(storageLayout)
+      root.style.setProperty(
+        '--color-bg-white',
+        theme === 'dark' ? 'var(--color-dark-2)' : 'var(--color-white)'
+      )
+      root.style.setProperty(
+        '--color-bg-grey',
+        theme === 'dark' ? 'var(--color-dark)' : 'var(--color-grey)'
+      )
+      root.style.setProperty(
+        '--color-text-black',
+        theme === 'dark' ? 'var(--color-white)' : 'var(--color-black)'
+      )
+      root.style.setProperty(
+        '--color-black-translucent',
+        theme === 'dark' ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0, 0, 0, 0.05)'
+      )
+    }
+  }, [theme])
 
-    storageTheme && setTheme(storageTheme)
+  // sync with LocalStorage
+  useEffect(() => {
+    const storedLayout = window.localStorage.getItem('layout')
+    const storedTheme = window.localStorage.getItem('theme')
+    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const storedCategory = window.localStorage.getItem('category')
+    const storedSearch = window.localStorage.getItem('search')
 
-    storageCategory
-      ? setCategory(storageCategory)
-      : window.localStorage.setItem('category', category)
+    storedLayout && setLayout(storedLayout)
 
-    storageSearch ? setSearch(storageSearch) : window.localStorage.setItem('search', search)
+    storedTheme ? setTheme(storedTheme) : setTheme(prefersDarkMode ? 'dark' : 'light')
+
+    storedCategory ? setCategory(storedCategory) : window.localStorage.setItem('category', category)
+
+    storedSearch ? setSearch(storedSearch) : window.localStorage.setItem('search', search)
   }, [category, search])
 
   return (
@@ -101,6 +161,7 @@ export function SearchContextProvider({ children }) {
         setLatitude,
         longitude,
         setLongitude,
+        isMobileViewport,
       }}>
       {children}
     </SearchContext.Provider>

@@ -1,0 +1,26 @@
+.tooltipContainer {
+  position: relative;
+  display: flex;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: var(--color-text-black);
+  font-size: var(--font-size-small);
+  color: var(--color-bg-white);
+  padding: 5px 0.75rem;
+  border-radius: var(--radius);
+  display: none;
+  bottom: -2.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  box-shadow: var(--box-shadow);
+  transition: opacity 0.25s ease-in-out; /* Adicione uma transição suave de opacidade */
+  pointer-events: none; /* Evite que o tooltip bloqueie eventos do mouse */
+}
+
+.tooltipContainer:hover .tooltip {
+  display: block;
+  opacity: 1; /* Torna o tooltip visível com uma animação suave */
+}

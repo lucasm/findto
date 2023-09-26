@@ -19,6 +19,7 @@
 }
 .donut svg {
   width: auto;
+  height: auto;
 }
 .donutSegment {
   animation: donut-chart-fill 1.25s reverse ease-in;

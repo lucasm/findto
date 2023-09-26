@@ -12,7 +12,10 @@ export default function SelectLanguage() {
 
   return (
     <form>
-      <select onChange={changeLanguage} defaultValue={locale}>
+      <label htmlFor="language" style={{ display: 'none' }}>
+        Select a language:
+      </label>
+      <select id="language" onChange={changeLanguage} defaultValue={locale}>
         <option value="en">English (International)</option>
         <option value="pt-BR">Português (Brasil)</option>
       </select>

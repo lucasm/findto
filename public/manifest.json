@@ -1,7 +1,7 @@
 {
   "name": "Findto",
   "short_name": "Findto",
-  "description": "Decentralized web search",
+  "description": "Decentralized Search Assistant",
   "start_url": "/?utm_source=pwa",
   "id": "/?utm_source=pwa",
   "display": "standalone",

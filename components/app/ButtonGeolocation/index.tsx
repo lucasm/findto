@@ -1,6 +1,7 @@
-import Style from '../../../styles/App.module.css'
+import Style from './ButtonGeolocation.module.css'
 import React, { useState } from 'react'
 import { useSearch } from '../../../contexts/SearchContext'
+import { IconLocationGps } from '../SvgIcons'
 
 export default function ButtonGeolocation() {
   const { setLatitude, setLongitude, permissionLocation, setPermissionLocation } = useSearch()
@@ -38,6 +39,7 @@ export default function ButtonGeolocation() {
       {!permissionLocation && (
         <>
           <button onClick={handleClick} className={Style.button}>
+            <IconLocationGps />
             View nearby places
           </button>
 

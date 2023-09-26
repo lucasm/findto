@@ -1,8 +1,8 @@
 .container {
-  background: var(--color-white);
-  padding: 2.5em;
+  background: var(--color-bg-white);
+  padding: 2.5rem;
+  border-radius: var(--radius-big);
   box-shadow: var(--box-shadow);
-  border-radius: var(--radius);
   width: 100%;
 }
 
@@ -11,10 +11,13 @@
   align-items: center;
   text-align: left;
   width: 100%;
-  font-size: 1rem;
+  font-size: var(--font-size);
+  margin-bottom: 2rem;
+  color: var(--color-text-black);
 }
 .title h2 svg {
   margin: -1px 0.75rem 0 0;
+  color: var(--color-text-black);
 }
 
 .credits p {
@@ -22,7 +25,15 @@
   font-size: var(--font-size-small);
   width: 100%;
   text-align: right;
+  color: var(--color-text-black);
 }
 .credits p a {
   margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 940px) {
+  .container {
+    padding: 2rem;
+    overflow: hidden;
+  }
 }

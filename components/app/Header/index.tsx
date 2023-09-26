@@ -2,11 +2,35 @@ import Style from '../../../styles/App.module.css'
 import * as Icon from 'react-feather'
 import Link from 'next/link'
 import SvgLogo from '../../website/SvgLogo'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useSearch } from '../../../contexts/SearchContext'
 import { normalizeId } from '../../../utils/formats'
 import SelectLanguage from '../SelectLanguage'
-import Popup from '../Popup'
+import Modal from '../Modal'
+import {
+  IconSettings,
+  IconGlobe,
+  IconImage,
+  IconVideo,
+  IconMusic,
+  IconPeople,
+  IconSparkle,
+  IconLocation,
+  IconCart,
+  IconCode,
+  IconBook,
+  IconBriefcase,
+  IconNews,
+  IconBank,
+  IconFeedback,
+  IconHeart,
+  IconMoon,
+  IconSun,
+  IconList,
+  IconCircles,
+  IconMoney,
+} from '../SvgIcons'
+import Tooltip from '../Tooltip'
 
 export default function AppHeader() {
   const {
@@ -19,9 +43,21 @@ export default function AppHeader() {
     setCategory,
     refSearchTabs,
     refSearchInput,
+    isMobileViewport,
   } = useSearch()
 
   const [showPopup, setShowPopup] = useState<boolean>(false)
+  const titleSettings = data?.t?.settings ?? 'Settings'
+
+  // change header in mobile viewport
+  useEffect(() => {
+    if (isMobileViewport) {
+      if (layout === '2') {
+        setLayout('1')
+        window.localStorage.setItem('layout', '1')
+      }
+    }
+  }, [isMobileViewport])
 
   function togglePopup() {
     setShowPopup(!showPopup)
@@ -57,39 +93,37 @@ export default function AppHeader() {
   function handleCategoryIcon(category: string) {
     switch (category) {
       case 'Web':
-        return <Icon.Globe />
+        return <IconGlobe />
       case 'AI':
-        return <Icon.Zap />
-      case 'Images':
-        return <Icon.Image />
+        return <IconSparkle />
+      case 'Image':
+        return <IconImage />
       case 'Videos':
-        return <Icon.Play />
+        return <IconVideo />
       case 'Music':
-        return <Icon.Music />
+        return <IconMusic />
       case 'Social':
-        return <Icon.Users />
+        return <IconPeople />
       case 'Local':
-        return <Icon.MapPin />
+        return <IconLocation />
       case 'Academic':
-        return <Icon.Book />
+        return <IconBook />
       case 'Shopping':
-        return <Icon.ShoppingCart />
+        return <IconCart />
       case 'News':
-        return <Icon.Rss />
-      case 'Jobs':
-        return <Icon.Briefcase />
+        return <IconNews />
+      case 'Job':
+        return <IconBriefcase />
       case 'Code':
-        return <Icon.Code />
+        return <IconCode />
+      case 'Legal':
+        return <IconBank />
       case 'Torrent':
         return <Icon.Download />
-      case 'NFTs':
-        return <Icon.Smile />
       case 'Apps':
         return <Icon.Package />
       case 'Finance':
-        return <Icon.DollarSign />
-      case 'Legal':
-        return <Icon.FileText />
+        return <IconMoney />
       default:
         return <Icon.Hexagon />
     }
@@ -97,12 +131,8 @@ export default function AppHeader() {
 
   return (
     <header className={Style.header}>
-      {/* Link Logo */}
-      <Link
-        href="/"
-        id="logo"
-        className={Style.logo}
-        onClick={() => refSearchInput.current.focus()}>
+      {/* Logo */}
+      <Link href="/" className={Style.logo} onClick={() => refSearchInput.current.focus()}>
         <SvgLogo />
         Findto
       </Link>
@@ -114,60 +144,67 @@ export default function AppHeader() {
             (item: any, index: number) =>
               item.active == true && (
                 <li key={index}>
-                  <button
-                    className={category == item.name ? Style.activeLink : null}
-                    onClick={() => handleCategory(item.name, item.name_trends)}
-                    name={normalizeId(item.name)}>
-                    {handleCategoryIcon(item.name)}
-                    {item.name_translated ? item.name_translated : item.name}
-                  </button>
+                  <Tooltip text={item.name_translated ?? item.name} disable={layout === '2'}>
+                    <button
+                      className={category == item.name ? Style.activeLink : null}
+                      onClick={() => handleCategory(item.name, item.name_trends)}
+                      name={normalizeId(item.name)}>
+                      {handleCategoryIcon(item.name)}
+                      {item.name_translated ?? item.name}
+                    </button>
+                  </Tooltip>
                 </li>
               )
           )}
         </ul>
       </nav>
 
-      {/* Settings - Button  */}
+      {/* Settings Button  */}
       <div className={Style.iconSettings}>
-        <button onClick={togglePopup}>
-          <Icon.Settings />
-          {data?.t?.settings ?? 'Settings'}
-        </button>
+        <Tooltip text={titleSettings} disable={isMobileViewport || layout === '2'}>
+          <button onClick={togglePopup}>
+            <IconSettings />
+            {titleSettings}
+          </button>
+        </Tooltip>
       </div>
 
-      {/* Settings - Popup  */}
-      <Popup title={data?.t?.settings ?? 'Settings'} show={showPopup} onClose={togglePopup}>
-        <div>
-          <h3>{data?.t?.theme ?? 'Theme'}</h3>
+      {/* Settings Modal */}
+      <Modal isOpen={showPopup} onClose={togglePopup} title={titleSettings}>
+        <h3>{data?.t?.theme ?? 'Theme'}</h3>
+        <div className={Style.containerSettings}>
+          <button onClick={toggleTheme}>
+            {theme == 'dark' ? <IconMoon /> : <IconSun />}
+            {theme == 'dark' ? 'Dark' : 'Light'}
+          </button>
 
-          <div className={Style.menuBlock}>
-            <button onClick={toggleTheme}>
-              {theme == 'light' ? <Icon.Moon /> : <Icon.Sun />}
-              {theme == 'light' ? 'Dark' : 'Light'}
-            </button>
+          {!isMobileViewport && (
             <button onClick={toggleLayout}>
-              {layout == '2' ? <Icon.Grid /> : <Icon.Layout />}
-              {layout == '2' ? 'Icons' : 'Menu'}
+              {layout == '1' ? <IconCircles /> : <IconList />}
+              {layout == '1' ? 'Icons' : 'List'}
             </button>
-          </div>
-
-          <h3>{data?.t?.language ?? 'Language'}</h3>
-          <div className={Style.menuBlock}>
-            <SelectLanguage />
-          </div>
-
-          <h3>{data?.t?.contribute ?? 'Contribute'}</h3>
-          <div className={Style.menuBlock}>
-            <a href="https://ko-fi.com/findto" target="_blank" rel="noopener noreferrer">
-              <Icon.Heart />
-              Donate
-            </a>
-            <a href="https://patreon.com/lucasm" target="_blank" rel="noopener noreferrer">
-              <Icon.MessageSquare /> Feedback
-            </a>
-          </div>
+          )}
         </div>
-      </Popup>
+
+        <h3>{data?.t?.language ?? 'Language'}</h3>
+        <div className={Style.containerSettings}>
+          <SelectLanguage />
+        </div>
+
+        <h3>{data?.t?.contribute ?? 'Contribute'}</h3>
+        <div className={Style.containerSettings}>
+          <a href="https://ko-fi.com/findto" target="_blank" rel="noopener noreferrer">
+            <IconHeart />
+            {data?.t?.donate ?? 'Donate'}
+          </a>
+          <a
+            href={data?.t?.link_feedback ?? 'https://forms.gle/US69JvUT1qxYkiF58'}
+            target="_blank"
+            rel="noopener noreferrer">
+            <IconFeedback /> {data?.t?.feedback ?? 'Feedback'}
+          </a>
+        </div>
+      </Modal>
     </header>
   )
 }

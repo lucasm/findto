@@ -380,12 +380,12 @@
           "name": "Perplexity",
           "action": "https://www.perplexity.ai/",
           "query": "q",
-          "color": "#333"
+          "color": "#38c8dc"
         }
       ]
     },
     {
-      "name": "Images",
+      "name": "Image",
       "active": true,
       "data": [
         {
@@ -861,7 +861,7 @@
           "name": "Mapquest",
           "action": "https://www.mapquest.com/search/results",
           "query": "query",
-          "color": "#c6de63"
+          "color": "#5ec279"
         }
       ]
     },
@@ -1075,12 +1075,6 @@
           "color": "#00e1cf"
         },
         {
-          "name": "Microsoft Academic",
-          "action": "https://academic.microsoft.com/search",
-          "query": "q",
-          "color": "#8393ff"
-        },
-        {
           "name": "Academia",
           "action": "https://www.academia.edu/people/search",
           "query": "q",
@@ -1134,6 +1128,12 @@
           "action": "https://golden.com/search/",
           "query": false,
           "color": "#efbf54"
+        },
+        {
+          "name": "Internet Archive",
+          "action": "https://archive.org/search.php",
+          "query": "query",
+          "color": "#d8d8d8"
         }
       ]
     },
@@ -1234,7 +1234,7 @@
       ]
     },
     {
-      "name": "Jobs",
+      "name": "Job",
       "active": true,
       "data": [
         {
@@ -1307,7 +1307,7 @@
     },
     {
       "name": "Torrent",
-      "active": true,
+      "active": false,
       "data": [
         {
           "name": "Pirate Bay",
@@ -1362,18 +1362,6 @@
           "action": "https://eztv.ag/search/",
           "query": false,
           "color": "#10559e"
-        }
-      ]
-    },
-    {
-      "name": "Archiving",
-      "active": false,
-      "data": [
-        {
-          "name": "Internet Archive",
-          "action": "https://archive.org/search.php",
-          "query": "query",
-          "color": "#d8d8d8"
         }
       ]
     },

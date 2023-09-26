@@ -29,12 +29,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       trends.forEach((item) => {
         a.push({
           title: item.name.replace(/#/g, ''),
-          url: item.url,
+          // url: item.url,
         })
       })
 
       const x: ITrends = {
-        credits_title: 'Twitter',
+        credits_title: 'X',
         credits_url: 'https://twitter.com/?utm_source=findto_app',
         data: a,
       }
