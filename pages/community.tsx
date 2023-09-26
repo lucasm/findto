@@ -42,7 +42,7 @@ export default function PageCommunity() {
 
             <h3>Code of Conduct</h3>
             <p>
-              All community members agree to be kind to each other, following our{' '}
+              All Findto Community members agree to be kind to each other, following our{' '}
               <a
                 href="https://www.contributor-covenant.org/version/2/1/code_of_conduct/"
                 target="_blank"

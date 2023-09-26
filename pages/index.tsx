@@ -8,7 +8,7 @@ export default function Index() {
   return (
     <LayoutApp
       title="Decentralized Search Assistant"
-      description="Findto is a decentralized web search app with AI, privacy and diverse sources.">
+      description="Findto is an assistant for decentralized web search with diverse sources, AI and privacy.">
       <SearchApp />
 
       <section className={Style.widgetContainer}>

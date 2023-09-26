@@ -84,23 +84,28 @@
 
 /* Search */
 .searchContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 3.5rem;
-  transition: var(--transition-hover);
-  border-radius: var(--radius-big);
-  box-shadow: var(--box-shadow);
   background: var(--color-white);
-  color: var(--color-text-black);
+  border-radius: var(--radius-big);
 }
 .searchContainer label {
   font-size: 0;
 }
 .searchContainer select {
   margin-right: 1rem;
+}
+.searchContainerAgroup {
+  padding: 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  transition: var(--transition-hover);
+  border-radius: var(--radius-big);
+  box-shadow: var(--box-shadow);
+  background: var(--color-white);
+  color: var(--color-text-black);
 }
 
 .searchInputContainer {

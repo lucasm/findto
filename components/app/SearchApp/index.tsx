@@ -129,7 +129,7 @@ export default function SearchApp() {
       const newColor = `rgba(${parseInt(color.slice(1, 3), 16)}, ${parseInt(
         color.slice(3, 5),
         16
-      )}, ${parseInt(color.slice(5, 7), 16)}, 0.75)`
+      )}, ${parseInt(color.slice(5, 7), 16)}, 0.8)`
 
       setLightColor(newColor)
     }
@@ -145,108 +145,110 @@ export default function SearchApp() {
   }, [data, category])
 
   return (
-    <section
-      className={Style.searchContainer}
-      style={{
-        backgroundColor: lightColor,
-      }}>
-      {/* Title */}
-      <h2>{title}</h2>
+    <section className={Style.searchContainer}>
+      <div
+        className={Style.searchContainerAgroup}
+        style={{
+          backgroundColor: lightColor,
+        }}>
+        {/* Title */}
+        <h2>{title}</h2>
 
-      {/* Tabs */}
-      <div className={Style.tabs}>
-        {data?.categories?.map((itemCategory: ISearchCategory, index: number) => (
-          <ul key={index} style={category == itemCategory.name ? { display: 'block' } : null}>
-            {itemCategory?.data.map((item: ISearch, index: number) => (
-              <li key={index}>
-                <button
-                  className={search == normalizeId(item.name) ? Style.activeLink : null}
-                  onClick={() => handleSearchProvider(normalizeId(item.name))}
-                  ref={
-                    index === 0
-                      ? (element) => {
-                          refSearchTabs.current['tab_' + itemCategory.name] = element
-                        }
-                      : undefined
-                  }>
-                  {item.name}
-                </button>
-              </li>
-            ))}
-          </ul>
-        ))}
-      </div>
-
-      <div className={Style.searchInputContainer}>
-        <div className={Style.searchInput}>
-          {/* Placeholder */}
-          <div
-            className={Style.searchPlaceholder}
-            onClick={() => inputFocus()}
-            style={{ display: inputValue != '' ? 'none' : 'flex' }}>
-            {!isMobileViewport && <figcaption>{data?.t?.placeholder ?? 'Search on'}</figcaption>}
-            <figure
-              style={{
-                backgroundImage: 'url(/images/logos/' + search + '.svg)',
-              }}></figure>
-          </div>
-
-          {/* Input */}
-          <label htmlFor="search">{search ? 'Search on ' + search : 'Search input'}</label>
-          <input
-            id="search"
-            ref={refSearchInput}
-            type="text"
-            value={inputValue}
-            aria-label="Search"
-            className={Style.searchInput}
-            placeholder=""
-            autoComplete="off"
-            maxLength={100}
-            onChange={handleInputChange}
-            onFocus={handleInputChange}
-            onKeyDown={handleKey}
-            autoFocus
-            required
-          />
-
-          <div className={Style.searchActions}>
-            {/* Button Search */}
-            <Tooltip text={data?.t?.search ?? 'Search'} disable={isMobileViewport}>
-              <a
-                ref={refSendButton}
-                href={searchUrl}
-                target="_blank"
-                onClick={isInputActive ? undefined : (event) => inputFocus(event)}
-                rel="noopener"
-                className={Style.searchButton}
-                accessKey="q">
-                <IconSend />
-                Search
-              </a>
-            </Tooltip>
-
-            {/* Options */}
-            {!isMobileViewport && isChild && renderChild(search)}
-
-            {/* Button Reset */}
-            <Tooltip text={data?.t?.clear ?? 'Clear'} disable={isMobileViewport}>
-              <button
-                type="reset"
-                onClick={inputReset}
-                className={Style.resetButton}
-                style={{ display: isInputActive ? 'inline-block' : 'none' }}>
-                <IconClose />
-                Clear
-              </button>
-            </Tooltip>
-          </div>
+        {/* Tabs */}
+        <div className={Style.tabs}>
+          {data?.categories?.map((itemCategory: ISearchCategory, index: number) => (
+            <ul key={index} style={category == itemCategory.name ? { display: 'block' } : null}>
+              {itemCategory?.data.map((item: ISearch, index: number) => (
+                <li key={index}>
+                  <button
+                    className={search == normalizeId(item.name) ? Style.activeLink : null}
+                    onClick={() => handleSearchProvider(normalizeId(item.name))}
+                    ref={
+                      index === 0
+                        ? (element) => {
+                            refSearchTabs.current['tab_' + itemCategory.name] = element
+                          }
+                        : undefined
+                    }>
+                    {item.name}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          ))}
         </div>
 
-        <SearchSuggestions locale={locale} term={inputValue} />
+        <div className={Style.searchInputContainer}>
+          <div className={Style.searchInput}>
+            {/* Placeholder */}
+            <div
+              className={Style.searchPlaceholder}
+              onClick={() => inputFocus()}
+              style={{ display: inputValue != '' ? 'none' : 'flex' }}>
+              {!isMobileViewport && <figcaption>{data?.t?.placeholder ?? 'Search on'}</figcaption>}
+              <figure
+                style={{
+                  backgroundImage: 'url(/images/logos/' + search + '.svg)',
+                }}></figure>
+            </div>
 
-        <div className={Style.footerActions}>
-          <SearchVoice />
+            {/* Input */}
+            <label htmlFor="search">{search ? 'Search on ' + search : 'Search input'}</label>
+            <input
+              id="search"
+              ref={refSearchInput}
+              type="text"
+              value={inputValue}
+              aria-label="Search"
+              className={Style.searchInput}
+              placeholder=""
+              autoComplete="off"
+              maxLength={100}
+              onChange={handleInputChange}
+              onFocus={handleInputChange}
+              onKeyDown={handleKey}
+              autoFocus
+              required
+            />
+
+            <div className={Style.searchActions}>
+              {/* Button Search */}
+              <Tooltip text={data?.t?.search ?? 'Search'} disable={isMobileViewport}>
+                <a
+                  ref={refSendButton}
+                  href={searchUrl}
+                  target="_blank"
+                  onClick={isInputActive ? undefined : (event) => inputFocus(event)}
+                  rel="noopener"
+                  className={Style.searchButton}
+                  accessKey="q">
+                  <IconSend />
+                  Search
+                </a>
+              </Tooltip>
+
+              {/* Options */}
+              {!isMobileViewport && isChild && renderChild(search)}
+
+              {/* Button Reset */}
+              <Tooltip text={data?.t?.clear ?? 'Clear'} disable={isMobileViewport}>
+                <button
+                  type="reset"
+                  onClick={inputReset}
+                  className={Style.resetButton}
+                  style={{ display: isInputActive ? 'inline-block' : 'none' }}>
+                  <IconClose />
+                  Clear
+                </button>
+              </Tooltip>
+            </div>
+          </div>
+
+          <SearchSuggestions locale={locale} term={inputValue} />
+
+          <div className={Style.footerActions}>
+            <SearchVoice />
+          </div>
         </div>
       </div>
     </section>
