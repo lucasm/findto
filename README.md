@@ -70,6 +70,6 @@ For code contributions, please, check the [Projects](https://github.com/lucasm/f
 
 ## 🔒 Privacy
 
-Findto is built on privacy and don't store searches or users personal info. Read the [Privacy Policy](https://findto.app/privacy).
+Findto respect privacy and don't store searches or users personal info. Read the [Privacy Policy](https://findto.app/privacy).
 
 Open source project created by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app).

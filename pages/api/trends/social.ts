@@ -12,7 +12,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const countryWoeid = woeid.getWoeid(country)
 
     try {
-      // Twitter API trends/place
+      // Twitter API Trends/Place
       const response = await axios.get(
         'https://api.twitter.com/1.1/trends/place.json?id=' + countryWoeid.woeid,
         {
@@ -22,7 +22,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         }
       )
 
-      // Extrair os dados relevantes da resposta
       const { trends } = response.data[0]
       var a = []
 
@@ -35,7 +34,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
       const x: ITrends = {
         credits_title: 'X',
-        credits_url: 'https://twitter.com/?utm_source=findto_app',
+        credits_url: 'https://twitter.com/',
         data: a,
       }
 
