@@ -59,15 +59,15 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
             url: 'https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/',
           },
           {
-            title: 'Opine sobre as propostas legislativas na Câmara dos Deputados',
+            title: 'Opinar sobre propostas legislativas na Câmara dos Deputados',
             url: 'https://www.camara.leg.br/enquetes/',
           },
           {
-            title: 'Proponha e apoie ideias de novas leis no Senado',
+            title: 'Propor e apoiar ideias de novas leis no Senado',
             url: 'https://www12.senado.leg.br/ecidadania/principalideia',
           },
           {
-            title: 'Manifeste solicitação ao Governo',
+            title: 'Manifestar solicitação ao Governo',
             url: 'https://falabr.cgu.gov.br/',
           },
         ],
