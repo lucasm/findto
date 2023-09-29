@@ -9,6 +9,7 @@ export function normalizeId(value: string): string {
     .replace('é', 'e')
     .replace('ú', 'u')
     .replace('ó', 'o')
+    .replace('ç', 'c')
     .replace(/\s/g, '-')
     .replace(/\./g, '')
   return id

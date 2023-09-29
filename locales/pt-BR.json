@@ -15,8 +15,8 @@
     "open": "Abrir app",
     "contribute": "Contribua",
     "community": "Comunidade",
-    "donate": "Fazer doação",
-    "feedback": "Enviar feedback",
+    "donate": "Doar",
+    "feedback": "Feedback",
     "link_feedback": "https://forms.gle/r6XAyB1ZLn9qzwp16",
     "terms": "Termos",
     "privacy": "Privacidade",
@@ -25,7 +25,7 @@
   "categories": [
     {
       "name": "Web",
-      "name_trends": "Buscas populares",
+      "name_trends": "Mais buscados",
       "active": true,
       "data": [
         {
@@ -196,7 +196,7 @@
         },
         {
           "name": "SearXNG",
-          "action": "http://priv.au/search?q=",
+          "action": "https://opnxng.com/search?q=",
           "color": "#5185ff"
         },
         {
@@ -354,7 +354,7 @@
     {
       "name": "AI",
       "name_translated": "IA",
-      "name_trends": "Buscas populares",
+      "name_trends": "Mais buscados",
       "active": true,
       "data": [
         {
@@ -403,7 +403,7 @@
     },
     {
       "name": "Social",
-      "name_trends": "Tendências nas redes",
+      "name_trends": "Tendências",
       "active": true,
       "data": [
         {
@@ -1054,7 +1054,7 @@
     {
       "name": "News",
       "name_translated": "Notícias",
-      "name_trends": "Notícias em alta",
+      "name_trends": "Notícias agora",
       "active": true,
       "data": [
         {
@@ -1362,7 +1362,7 @@
     {
       "name": "Legal",
       "name_translated": "Legal",
-      "name_trends": "Top serviços públicos",
+      "name_trends": "Serviços públicos",
       "active": true,
       "data": [
         {
@@ -1606,7 +1606,7 @@
     {
       "name": "Apps",
       "name_title": "Busca de Apps",
-      "name_trends": "Apps mais instalados",
+      "name_trends": "Aplicativos em alta",
       "active": true,
       "data": [
         {

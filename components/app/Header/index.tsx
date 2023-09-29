@@ -62,7 +62,7 @@ export default function AppHeader() {
 
   function togglePopup() {
     setShowPopup(!showPopup)
-    refSearchInput.current.focus()
+    !isMobileViewport && refSearchInput.current.focus()
   }
   function toggleTheme() {
     if (theme == 'light') {
