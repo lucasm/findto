@@ -2,7 +2,6 @@ import Style from './Footer.module.css'
 import Link from 'next/link'
 import SvgLogo from '../../website/SvgLogo'
 import { useSearch } from '../../../contexts/SearchContext'
-import { Twitter, GitHub } from 'react-feather'
 
 export default function AppFooter() {
   const { data } = useSearch()

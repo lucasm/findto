@@ -10,7 +10,7 @@ import ButtonGeolocation from '../ButtonGeolocation'
 import { IconTrending } from '../SvgIcons'
 
 export default function SearchTrends() {
-  const { data, category, putValue, country, locale, latitude, longitude } = useSearch()
+  const { category, titleTrends, putValue, country, locale, latitude, longitude } = useSearch()
   const [dataTrends, setDataTrends] = useState<ITrends>(null)
   const [errorTrends, setErrorTrends] = useState<any>(null)
 
@@ -312,7 +312,7 @@ export default function SearchTrends() {
 
   return (
     <WidgetContainer
-      title={data?.t?.trends ?? 'Trends'}
+      title={titleTrends ?? 'Trends'}
       icon={<IconTrending />}
       creditTitle={dataTrends?.credits_title ?? ''}
       creditUrl={dataTrends?.credits_url ? dataTrends?.credits_url + '?utm_source=findto_app' : ''}>

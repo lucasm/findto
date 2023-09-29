@@ -1,5 +1,4 @@
 import Style from '../../../styles/App.module.css'
-import * as Icon from 'react-feather'
 import Link from 'next/link'
 import SvgLogo from '../../website/SvgLogo'
 import { useEffect, useState } from 'react'
@@ -29,6 +28,8 @@ import {
   IconList,
   IconCircles,
   IconMoney,
+  IconApps,
+  Icon,
 } from '../SvgIcons'
 import Tooltip from '../Tooltip'
 
@@ -118,14 +119,12 @@ export default function AppHeader() {
         return <IconCode />
       case 'Legal':
         return <IconBank />
-      case 'Torrent':
-        return <Icon.Download />
       case 'Apps':
-        return <Icon.Package />
+        return <IconApps />
       case 'Finance':
         return <IconMoney />
       default:
-        return <Icon.Hexagon />
+        return <Icon />
     }
   }
 

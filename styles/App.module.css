@@ -93,6 +93,9 @@
 .searchContainer select {
   margin-right: 1rem;
 }
+.searchContainer h2 {
+  color: var(--color-black);
+}
 .searchContainer2 {
   padding: 3.5rem;
   display: flex;

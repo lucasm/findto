@@ -3,7 +3,7 @@ import LayoutPage from '../components/website/LayoutPage'
 import CardsLink from '../components/website/CardsLink'
 
 export default function PageCommunity() {
-  const description = 'Help make the decentralized web search accessible for everyone!'
+  const description = 'Help make the decentralized web search accessible for everyone.'
 
   return (
     <LayoutPage title="Community" description={description}>

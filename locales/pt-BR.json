@@ -25,7 +25,7 @@
   "categories": [
     {
       "name": "Web",
-      "name_title": "Busca na Web",
+      "name_trends": "Buscas populares",
       "active": true,
       "data": [
         {
@@ -195,6 +195,11 @@
           ]
         },
         {
+          "name": "SearXNG",
+          "action": "http://priv.au/search?q=",
+          "color": "#5185ff"
+        },
+        {
           "name": "Startpage",
           "action": "https://www.startpage.com/do/asearch",
           "query": "query",
@@ -349,7 +354,7 @@
     {
       "name": "AI",
       "name_translated": "IA",
-      "name_title": "Busca em IA",
+      "name_trends": "Buscas populares",
       "active": true,
       "data": [
         {
@@ -398,7 +403,7 @@
     },
     {
       "name": "Social",
-      "name_title": "Busca Social",
+      "name_trends": "Tendências nas redes",
       "active": true,
       "data": [
         {
@@ -500,7 +505,7 @@
     {
       "name": "Videos",
       "name_translated": "Vídeo",
-      "name_title": "Busca de Vídeo",
+      "name_trends": "Top filmes e séries",
       "active": true,
       "data": [
         {
@@ -604,7 +609,7 @@
     {
       "name": "Image",
       "name_translated": "Imagem",
-      "name_title": "Busca de Imagem",
+      "name_trends": "Termos populares",
       "active": true,
       "data": [
         {
@@ -714,7 +719,7 @@
     {
       "name": "Music",
       "name_translated": "Áudio",
-      "name_title": "Busca de Áudio",
+      "name_trends": "Top álbuns",
       "active": true,
       "data": [
         {
@@ -830,7 +835,7 @@
     {
       "name": "Shopping",
       "name_translated": "Compras",
-      "name_title": "Compras",
+      "name_trends": "Produtos mais comprados",
       "active": true,
       "data": [
         {
@@ -951,7 +956,7 @@
     },
     {
       "name": "Local",
-      "name_title": "Busca Local",
+      "name_trends": "Locais próximos",
       "active": true,
       "data": [
         {
@@ -1049,7 +1054,7 @@
     {
       "name": "News",
       "name_translated": "Notícias",
-      "name_title": "Busca de Notícias",
+      "name_trends": "Notícias em alta",
       "active": true,
       "data": [
         {
@@ -1111,7 +1116,7 @@
     {
       "name": "Academic",
       "name_translated": "Acadêmico",
-      "name_title": "Busca Acadêmica",
+      "name_trends": "Tópicos mais citados",
       "active": true,
       "data": [
         {
@@ -1251,7 +1256,7 @@
     {
       "name": "Job",
       "name_translated": "Vagas",
-      "name_title": "Busca de Vagas",
+      "name_trends": "Profissões em alta",
       "active": true,
       "data": [
         {
@@ -1357,7 +1362,7 @@
     {
       "name": "Legal",
       "name_translated": "Legal",
-      "name_title": "Busca Legal",
+      "name_trends": "Top serviços públicos",
       "active": true,
       "data": [
         {
@@ -1376,10 +1381,10 @@
           "name": "Governo Brasil",
           "action": "https://www.gov.br/pt-br/search",
           "query": "SearchableText",
-          "color": "#00C8FF",
+          "color": "#5193FF",
           "child": [
             {
-              "name": "Portal Gov.br"
+              "name": "Governo Brasil"
             },
             {
               "name": "Transparência",
@@ -1393,7 +1398,7 @@
             },
             {
               "name": "Legislação",
-              "action": "https://www.in.gov.br/consulta/-/buscar/dou",
+              "action": "https://legislacao.presidencia.gov.br/#",
               "query": "q"
             }
           ]
@@ -1415,63 +1420,77 @@
           ]
         },
         {
-          "name": "STF",
+          "name": "Supremo Tribunal",
           "action": "https://jurisprudencia.stf.jus.br/pages/search",
           "query": "queryString",
           "color": "#00b8ff",
           "child": [
             {
-              "name": "Jurisprudência"
+              "name": "STF Jurisprudência",
+              "action": "https://jurisprudencia.stf.jus.br/pages/search"
             },
             {
               "name": "Notícias",
-              "action": "https://normas.leg.br/busca?q=parque",
+              "action": "https://normas.leg.br/busca?q=",
               "query": "q"
             },
             {
               "name": "Repercussão Geral",
-              "action": "https://normas.leg.br/busca?q=parque",
+              "action": "https://normas.leg.br/busca?q=",
               "query": "q"
+            },
+            {
+              "name": "STJ",
+              "action": "https://www.stj.jus.br/sites/portalp/Paginas/inc/ResultadoDaBusca.aspx?q="
             }
           ]
         },
         {
-          "name": "MPF",
+          "name": "Justiça Eleitoral",
+          "action": "https://www.tse.jus.br/@@search-es?searchable_text=",
+          "color": "#ffd441"
+        },
+        {
+          "name": "Tribunal de Contas",
+          "action": "https://pesquisa.apps.tcu.gov.br/resultado/todas-bases/",
+          "color": "#4f86ff"
+        },
+        {
+          "name": "Ministério Público",
           "action": "https://www.mpf.mp.br/@@search",
           "query": "SearchableText",
           "color": "#61a4db"
         },
         {
-          "name": "SP",
-          "action": "https://www.saopaulo.sp.gov.br/",
-          "query": "s",
-          "color": "#ff0c19",
+          "name": "Defensoria Pública",
+          "action": "https://www.dpu.def.br/component/search/?searchword=",
+          "color": "#5cb12f",
           "child": [
             {
-              "name": "Governo de SP"
+              "name": "DPU",
+              "action": "https://www.dpu.def.br/component/search/?searchword="
             },
             {
-              "name": "Diário Oficial",
-              "action": "https://www.imprensaoficial.com.br/DO/BuscaDO2001Resultado_11_3.aspx",
-              "query": "filtropalavraschave"
+              "name": "DPE SP",
+              "action": "https://www.defensoria.sp.def.br/busca?q="
             },
             {
-              "name": "Assembleia Legislativa",
-              "action": "https://www.al.sp.gov.br/alesp/pesquisa-proposicoes/?method=search&text="
-            },
-            {
-              "name": "Defensoria Pública",
-              "action": "https://www.defensoria.sp.def.br/busca",
-              "query": "q"
+              "name": "DPE MG",
+              "action": "https://defensoria.mg.def.br/?s="
             }
           ]
+        },
+        {
+          "name": "Banco Central",
+          "action": "https://www.bcb.gov.br/resultadobusca?termo=inflacao",
+          "color": "#16a7ce"
         }
       ]
     },
     {
       "name": "Code",
       "name_translated": "Código",
-      "name_title": "Busca de Código",
+      "name_trends": "Top repositórios",
       "active": true,
       "data": [
         {
@@ -1587,6 +1606,7 @@
     {
       "name": "Apps",
       "name_title": "Busca de Apps",
+      "name_trends": "Apps mais instalados",
       "active": true,
       "data": [
         {

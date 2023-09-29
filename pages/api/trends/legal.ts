@@ -55,7 +55,7 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
             url: 'https://www.gov.br/pt-br/servicos/esclarecer-duvidas-sobre-protecao-de-dados-pessoais',
           },
           {
-            title: 'Atendimento eleitoral',
+            title: 'Obter atendimento eleitoral',
             url: 'https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/',
           },
           {

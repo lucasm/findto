@@ -14,7 +14,6 @@
     "next": "^13.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-feather": "^2.0.9",
     "react-speech-recognition": "^3.10.0",
     "regenerator-runtime": "^0.13.11",
     "rss-parser": "^3.12.0",

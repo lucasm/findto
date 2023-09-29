@@ -25,6 +25,7 @@ export default function SearchApp() {
     inputValue,
     setInputValue,
     isMobileViewport,
+    setTitleTrends,
   } = useSearch()
 
   const refSendButton = useRef(null)
@@ -137,11 +138,11 @@ export default function SearchApp() {
 
   // title
   useEffect(() => {
-    data &&
-      category &&
-      setTitle(
-        data?.categories?.find((item) => item.name === category)?.name_title ?? category + ' search'
-      )
+    if (data && category) {
+      const selected = data?.categories?.find((item) => item.name === category)
+      setTitle(selected?.name_translated ?? category)
+      setTitleTrends(selected?.name_trends)
+    }
   }, [data, category])
 
   return (

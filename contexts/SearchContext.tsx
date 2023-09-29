@@ -13,6 +13,7 @@ export function SearchContextProvider({ children }) {
   const [category, setCategory] = useState<string>('Web')
   const [search, setSearch] = useState<string>('google')
   const [searchUrl, setSearchUrl] = useState<string>('')
+  const [titleTrends, setTitleTrends] = useState<string>('')
   const [color, setColor] = useState<string>('#fff')
   const [trends, setTrends] = useState<string>('Trends')
   const [country, setCountry] = useState<string>('US')
@@ -162,6 +163,8 @@ export function SearchContextProvider({ children }) {
         longitude,
         setLongitude,
         isMobileViewport,
+        titleTrends,
+        setTitleTrends,
       }}>
       {children}
     </SearchContext.Provider>

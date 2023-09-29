@@ -22,7 +22,7 @@
   --shadow-2: 0px 6px 12px 0px rgba(0, 0, 0, 0.075);
   --shadow-hover: 0 0 2px rgba(0, 0, 0, 0.05), 0 8px 16px rgba(0, 0, 0, 0.08),
     inset 0 0 0px 5px var(--color-white);
-  --opacity: 0.55;
+  --opacity: 0.5;
   --font-size: 1rem;
   --font-size-small: 0.8rem;
   --font-size-big: 1.15rem;
