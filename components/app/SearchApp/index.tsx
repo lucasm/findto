@@ -84,7 +84,7 @@ export default function SearchApp() {
     setSearch(id)
     window.localStorage.setItem('search', id)
     setColor(searchSource?.color)
-    inputFocus()
+    !isMobileViewport && inputFocus()
 
     // url
     const query = searchSource?.query ? '?' + searchSource?.query + '=' : ''
