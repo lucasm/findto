@@ -360,7 +360,6 @@
         {
           "name": "Bing Chat",
           "action": "https://www.bing.com/search?showconv=1&sendquery=1&q=",
-          "query": false,
           "color": "#4dd1f0"
         },
         {
@@ -438,7 +437,6 @@
         {
           "name": "Instagram",
           "action": "https://www.instagram.com/explore/tags/",
-          "query": false,
           "color": "#FD70B0"
         },
         {
@@ -485,7 +483,6 @@
         {
           "name": "Mastodon",
           "action": "https://mastodon.social/tags/",
-          "query": false,
           "color": "#8F8FFF"
         },
         {
@@ -497,7 +494,6 @@
         {
           "name": "Substack",
           "action": "https://substack.com/search/",
-          "query": false,
           "color": "#ff7934"
         }
       ]
@@ -565,7 +561,6 @@
         {
           "name": "Libreflix",
           "action": "https://libreflix.org/busca/",
-          "query": false,
           "color": "#3ec2e2"
         },
         {
@@ -577,13 +572,11 @@
         {
           "name": "Letterboxd",
           "action": "https://letterboxd.com/search/",
-          "query": false,
           "color": "#6ee373"
         },
         {
           "name": "Dailymotion",
           "action": "https://www.dailymotion.com/search/",
-          "query": false,
           "color": "#ddd"
         },
         {
@@ -627,19 +620,16 @@
         {
           "name": "Unsplash",
           "action": "https://unsplash.com/s/photos/",
-          "query": false,
           "color": "#cccccc"
         },
         {
           "name": "Pexels",
           "action": "https://www.pexels.com/search/",
-          "query": false,
           "color": "#1ac7a5"
         },
         {
           "name": "GIPHY",
           "action": "https://giphy.com/search/",
-          "query": false,
           "color": "#8b84ff"
         },
         {
@@ -657,7 +647,6 @@
         {
           "name": "Pixabay",
           "action": "https://pixabay.com/photos/search/",
-          "query": false,
           "color": "#5ee887"
         },
         {
@@ -675,7 +664,6 @@
         {
           "name": "Getty Images",
           "action": "https://www.gettyimages.com/photos/",
-          "query": false,
           "color": "#FAE9CD"
         },
         {
@@ -725,7 +713,6 @@
         {
           "name": "Spotify",
           "action": "https://open.spotify.com/search/",
-          "query": false,
           "color": "#58e087"
         },
         {
@@ -749,13 +736,11 @@
         {
           "name": "Amazon Music",
           "action": "https://music.amazon.com.br/search/",
-          "query": false,
           "color": "#25d1da"
         },
         {
           "name": "Deezer",
           "action": "https://www.deezer.com/search/",
-          "query": false,
           "color": "#cccccc"
         },
         {
@@ -797,7 +782,6 @@
         {
           "name": "Musixmatch",
           "action": "https://www.musixmatch.com/search/",
-          "query": false,
           "color": "#ff6b6b"
         },
         {
@@ -809,7 +793,6 @@
         {
           "name": "Hype Machine",
           "action": "http://hypem.com/search/",
-          "query": false,
           "color": "#9ed664"
         },
         {
@@ -821,7 +804,6 @@
         {
           "name": "Google Podcasts",
           "action": "https://podcasts.google.com/search/",
-          "query": false,
           "color": "#4193ff"
         },
         {
@@ -847,7 +829,6 @@
         {
           "name": "Mercado Livre",
           "action": "https://lista.mercadolivre.com.br/",
-          "query": false,
           "color": "#e8dc62"
         },
         {
@@ -859,19 +840,16 @@
         {
           "name": "Magazine Luiza",
           "action": "https://www.magazineluiza.com.br/busca/",
-          "query": false,
           "color": "#40a4ff"
         },
         {
           "name": "Americanas",
           "action": "https://www.americanas.com.br/busca/",
-          "query": false,
           "color": "#ff3f66"
         },
         {
           "name": "Casas Bahia",
           "action": "https://www.casasbahia.com.br/",
-          "query": false,
           "color": "#638cff"
         },
         {
@@ -901,7 +879,6 @@
         {
           "name": "SHEIN",
           "action": "https://br.shein.com/",
-          "query": false,
           "color": "#ddd"
         },
         {
@@ -962,7 +939,6 @@
         {
           "name": "Google Maps",
           "action": "https://google.com/maps/search/",
-          "query": false,
           "color": "#649fff"
         },
         {
@@ -974,7 +950,6 @@
         {
           "name": "Airbnb",
           "action": "https://www.airbnb.com/s/",
-          "query": false,
           "color": "#ff607d"
         },
         {
@@ -992,7 +967,6 @@
         {
           "name": "Kayak",
           "action": "https://www.kayak.com.br/explore/",
-          "query": false,
           "color": "#ff853c"
         },
         {
@@ -1028,7 +1002,6 @@
         {
           "name": "Eventbrite",
           "action": "https://www.eventbrite.com.br/d/brazil/",
-          "query": false,
           "color": "#f05537"
         },
         {
@@ -1046,7 +1019,6 @@
         {
           "name": "HERE WeGo",
           "action": "https://wego.here.com/search/",
-          "query": false,
           "color": "#01b6b2"
         }
       ]
@@ -1078,13 +1050,11 @@
         {
           "name": "Flipboard",
           "action": "https://flipboard.com/search/",
-          "query": false,
           "color": "#ff5b5b"
         },
         {
           "name": "Feedly",
           "action": "https://feedly.com/i/discover/sources/search/feed/",
-          "query": false,
           "color": "#59e076"
         },
         {
@@ -1140,7 +1110,6 @@
         {
           "name": "Periódicos",
           "action": "https://capes-primo.ezl.periodicos.capes.gov.br/primo-explore/search?tab=default_tab&search_scope=default_scope&vid=CAPES_V3&lang=pt_BR&offset=0&query=any,contains,",
-          "query": false,
           "color": "#FF7287"
         },
         {
@@ -1176,7 +1145,6 @@
         {
           "name": "arXiv",
           "action": "https://arxiv.org/search/?searchtype=all&query=",
-          "query": false,
           "color": "#ff5959"
         },
         {
@@ -1206,7 +1174,6 @@
         {
           "name": "Scopus",
           "action": "https://www.scopus.com/results/authorNamesList.uri?s=AUTHLASTNAME&st1=",
-          "query": false,
           "color": "#ff8d38"
         },
         {
@@ -1248,7 +1215,6 @@
         {
           "name": "Golden",
           "action": "https://golden.com/search/",
-          "query": false,
           "color": "#efbf54"
         }
       ]
@@ -1280,7 +1246,6 @@
         {
           "name": "Gupy",
           "action": "https://portal.gupy.io/job-search/term=",
-          "query": false,
           "color": "#5c9eff"
         },
         {
@@ -1310,7 +1275,6 @@
         {
           "name": "Vagas",
           "action": "https://www.vagas.com.br/vagas-de-",
-          "query": false,
           "color": "#02a97f"
         },
         {
@@ -1618,20 +1582,17 @@
         {
           "name": "App Store",
           "action": "https://www.apple.com/br/search/",
-          "query": false,
           "additional": "?src=globalnav",
           "color": "#1db2f9"
         },
         {
           "name": "Microsoft Store",
           "action": "https://apps.microsoft.com/store/search/",
-          "query": false,
           "color": "#219fff"
         },
         {
           "name": "Chrome Web Store",
           "action": "https://chromewebstore.google.com/search/",
-          "query": false,
           "color": "#fabe0a"
         },
         {
@@ -1691,7 +1652,6 @@
         {
           "name": "1337X",
           "action": "https://www.1377x.to/search/",
-          "query": false,
           "additional": "/1/",
           "color": "#ff5d26"
         },
@@ -1716,7 +1676,6 @@
         {
           "name": "LimeTorrents",
           "action": "https://www.limetorrents.info/search/all/",
-          "query": false,
           "color": "#b6f240"
         },
         {
@@ -1728,7 +1687,6 @@
         {
           "name": "EZTV",
           "action": "https://eztv.ag/search/",
-          "query": false,
           "color": "#10559e"
         }
       ]
@@ -1746,7 +1704,6 @@
         {
           "name": "Rarible",
           "action": "https://rarible.com/explore/search/",
-          "query": false,
           "color": "#fdda05"
         }
       ]
