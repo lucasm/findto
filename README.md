@@ -5,7 +5,7 @@
 </div>
 
 <h1 align="center">
-Findto
+<a href="https://findto.app/" target="_blank">Findto</a>
 </h1>
 
 <p align="center">
@@ -18,24 +18,25 @@ Findto
 
 <p align="center">
 Decentralized search assistant<br>
-<a href="https://findto.app/" target="_blank">findto.app</a>
 </p>
 
 ## 🌎 Decentralized search assistant
 
-Findto is a free and open source assistant for decentralized web search powered by diverse sources, AI and privacy control.
+Findto is a free and open source assistant for decentralized web search.
 
-Findto mission is to make searches truly free and more productive, putting people in control of algorithms and AIs — not the other way around. Findto proposes a enhanced web search experience: you control sources, view the privacy score, discover trending contents and chose better results.
+Findto's mission is to make searches truly free and more productive, putting people in control of algorithms and AIs — not the other way around.
 
-The centralized web, where our searches are monopolized, it's over. Findto encourage everyone to discover a more diverse, healthier, private and democratic web. Where your choices matter.
+Findto proposes an enhanced web search experience: you control diverse sources, view the privacy score of them, discover trending contents, and choose better results.
+
+The centralized web, where our searches are monopolized, is over. Findto encourages everyone to discover a more diverse, healthier, secure, and democratic web. Where your choices matter.
 
 ## 🌈 Top features
 
 - **Decentralized web search** — Quickly search, the same term, on multiple categories and sources
 
-- **Privacy ranking** — See the privacy score of each search source, or how much your data are compromised
+- **Privacy ranking** — See the privacy score of selected source, or how much your data is protected
 
-- **Trends** — Explore trending topics, media contents, products, events and places nearby you
+- **Trends** — Explore trending topics, contents, products, events and places nearby you
 
 - **Autocomplete** — Get instant suggestions to help autocomplete terms as you type
 
@@ -43,9 +44,9 @@ The centralized web, where our searches are monopolized, it's over. Findto encou
 
 - **Internationalization** — Chose your country for local sources or use global search
 
-- **Voice search** — Use your voice to search anywhere
+- **Voice search** — Use voice to search anywhere
 
-- **Visual search** — Use an image to search on supported sources \* In development
+- **Visual search** — Use images to search on supported sources \* In development
 
 ## 🔍 Sources
 
