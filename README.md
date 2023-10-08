@@ -25,11 +25,9 @@ Decentralized search assistant<br>
 
 Findto is an assistant for decentralized web search powered by diverse sources, AI and privacy control.
 
-Findto mission is to make searches truly free and more productive, putting people in control of algorithms and AIs — not the other way around.
+Findto mission is to make searches truly free and more productive, putting people in control of algorithms and AIs — not the other way around. Findto proposes a new web search experience: you control powerful sources, view the privacy level and chose better results.
 
-Findto proposes a new web search experience: you control powerful sources, view the privacy level and chose better results.
-
-The centralized Web, where our searches are monopolized, it's over. Findto encourage everyone to discover a more diverse, healthier, private and democratic Web. Where your choices matter.
+The centralized Web, where our searches are monopolized, it's over. Findto encourage you to discover a more diverse, healthier, private and democratic Web. Where your choices matter.
 
 Findto is a free and open source software - forever.
 
@@ -39,7 +37,7 @@ Findto is a free and open source software - forever.
 
 - **Suggestions** — Get instant AI suggestions to help autocomplete terms as you type
 
-- **Privacy ranking** — See the privacy score of each search provider, know how much they are compromised with your data
+- **Privacy ranking** — See the privacy score of each search source, or how much your data are compromised
 
 - **Trends** — Trending topics, contents, events and places nearby you
 
@@ -55,9 +53,9 @@ Findto is a free and open source software - forever.
 
 ## 🔍 Sources
 
-All search sources and external data from APIs available on Findto are chosen by the criteria: 1) service popularity; 2) commitment with open access; 3) respect of privacy and copyright. All these sources are displayed inside the navigable categories on the app, and chosen by community. For more details, visit [Wiki](https://github.com/lucasm/findto/wiki).
+All search sources and external data from third party APIs available on Findto are chosen by the criteria: 1) service popularity; 2) commitment with open access; 3) respect of privacy and copyright. All these sources are displayed inside the navigable categories on the app, and chosen by community. For more details, visit [Wiki](https://github.com/lucasm/findto/wiki).
 
-## 💛 Community
+## 💜 Community
 
 Findto is supported by community.
 
