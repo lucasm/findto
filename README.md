@@ -23,13 +23,11 @@ Decentralized search assistant<br>
 
 ## 🌎 Decentralized search assistant
 
-Findto is an assistant for decentralized web search powered by diverse sources, AI and privacy control.
+Findto is a free and open source assistant for decentralized web search powered by diverse sources, AI and privacy control.
 
-Findto mission is to make searches truly free and more productive, putting people in control of algorithms and AIs — not the other way around. Findto proposes a new web search experience: you control powerful sources, view the privacy level and chose better results.
+Findto mission is to make searches truly free and more productive, putting people in control of algorithms and AIs — not the other way around. Findto proposes a enhanced web search experience: you control sources, view the privacy score, discover trending contents and chose better results.
 
-The centralized Web, where our searches are monopolized, it's over. Findto encourage you to discover a more diverse, healthier, private and democratic Web. Where your choices matter.
-
-Findto is a free and open source software - forever.
+The centralized web, where our searches are monopolized, it's over. Findto encourage everyone to discover a more diverse, healthier, private and democratic web. Where your choices matter.
 
 ## 🌈 Top features
 
@@ -59,16 +57,16 @@ All search sources and external data from third party APIs available on Findto a
 
 Findto is supported by community.
 
-You can choose your favorite platform to support and ✨ enjoy exclusive benefits ✨ like name and link attribution on this repository, work-in-progress updates, early access to Beta versions and more!
+Choose your favorite platform to support and ✨ enjoy exclusive benefits ✨ like name and link attribution on this repository, work-in-progress updates, early access to Beta versions and more!
 
 - [Support via Ko-Fi](https://ko-fi.com/findto)
 - [Support via Patreon](https://patreon.com/findto)
 - [Sponsor via GitHub Sponsors](https://github.com/sponsors/lucasm)
 
-For code contributions, check the [Projects](https://github.com/lucasm/findto/projects) board and opened [Issues](https://github.com/lucasm/findto/issues) before send pull requests.
+For code contributors: check the [Projects](https://github.com/lucasm/findto/projects) board and opened [Issues](https://github.com/lucasm/findto/issues) before send pull requests.
 
 ## 🔒 Privacy
 
-Findto respect users privacy. We don't store searches or personal info. Read the [Privacy Policy](https://findto.app/privacy) for details.
+Findto respects privacy and does not store any searches or personal information of users. Read the [Privacy Policy](https://findto.app/privacy) for details.
 
 Made in Brazil with love by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app).
