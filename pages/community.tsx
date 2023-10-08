@@ -3,14 +3,14 @@ import LayoutPage from '../components/website/LayoutPage'
 import CardsLink from '../components/website/CardsLink'
 
 export default function PageCommunity() {
-  const description = 'Help make the decentralized web search accessible for everyone.'
+  const description = 'Help make decentralized web search accessible to everyone'
 
   return (
     <LayoutPage title="Community" description={description}>
       <section className="colors">
         <div className={Style.container}>
           <div className={Style.actionContainer}>
-            <h1>Join the Findto Community</h1>
+            <h1>Join the Community</h1>
 
             <p>{description}</p>
           </div>

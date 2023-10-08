@@ -521,20 +521,17 @@
         },
         {
           "name": "Apple Music",
-          "action": "https://music.apple.com/search",
-          "query": "term",
+          "action": "https://music.apple.com/search?term=",
           "color": "#ff6a7a"
         },
         {
           "name": "SoundCloud",
-          "action": "https://soundcloud.com/search",
-          "query": "q",
+          "action": "https://soundcloud.com/search?q=",
           "color": "#FF8B51"
         },
         {
           "name": "YouTube Music",
-          "action": "https://music.youtube.com/search",
-          "query": "q",
+          "action": "https://music.youtube.com/search?q=",
           "color": "#ff5454"
         },
         {
@@ -549,38 +546,37 @@
         },
         {
           "name": "TIDAL",
-          "action": "https://listen.tidal.com/search",
-          "query": "q",
+          "action": "https://listen.tidal.com/search?q=",
           "color": "#999999"
         },
         {
           "name": "TuneIn",
-          "action": "https://tunein.com/search/",
-          "query": "query",
+          "action": "https://tunein.com/search/?query=",
           "color": "#36d7cd"
         },
         {
-          "name": "Last.fm",
-          "action": "https://www.last.fm/search",
-          "query": "q",
-          "color": "#ff5050"
-        },
-        {
           "name": "Letras",
-          "action": "https://www.letras.mus.br/",
-          "query": "q",
+          "action": "https://www.letras.mus.br/?q=",
           "color": "#dcdf3e"
         },
         {
           "name": "Vagalume",
-          "action": "https://www.vagalume.com.br/search",
-          "query": "q",
+          "action": "https://www.vagalume.com.br/search?q=",
           "color": "#ccf230"
         },
         {
+          "name": "Lastfm",
+          "action": "https://www.last.fm/search?q=",
+          "color": "#ff5050"
+        },
+        {
+          "name": "Discogs",
+          "action": "https://www.discogs.com/search/?q=",
+          "color": "#F5Df2E"
+        },
+        {
           "name": "Genius",
-          "action": "https://genius.com/search",
-          "query": "q",
+          "action": "https://genius.com/search?q=",
           "color": "#f5f575"
         },
         {
@@ -590,8 +586,7 @@
         },
         {
           "name": "Bandcamp",
-          "action": "https://bandcamp.com/search",
-          "query": "q",
+          "action": "https://bandcamp.com/search?q=",
           "color": "#4ab1cd"
         },
         {
@@ -601,15 +596,8 @@
         },
         {
           "name": "Audius",
-          "action": "https://audius.co/search/avril%20lavigne",
-          "query": "q",
+          "action": "https://audius.co/search/?q=",
           "color": "#bb65ff"
-        },
-        {
-          "name": "iHeart",
-          "action": "https://www.iheart.com/search/",
-          "query": "q",
-          "color": "#ff606b"
         }
       ]
     },
@@ -1036,7 +1024,7 @@
     {
       "name": "Job",
       "name_translated": "Vagas",
-      "name_trends": "Profissões em alta",
+      "name_trends": "Setores em alta",
       "active": true,
       "data": [
         {
@@ -1075,19 +1063,19 @@
           "color": "#39c74d"
         },
         {
-          "name": "Trampos",
-          "action": "https://trampos.co/oportunidades/?tr=",
-          "color": "#7575ff"
-        },
-        {
           "name": "Vagas",
           "action": "https://www.vagas.com.br/vagas-de-",
           "color": "#02a97f"
         },
         {
           "name": "Jooble",
-          "action": "https://br.jooble.org/SearchResult?p=",
+          "action": "https://br.jooble.org/SearchResult?ukw=",
           "color": "#87d644"
+        },
+        {
+          "name": "Trampos",
+          "action": "https://trampos.co/oportunidades/?tr=",
+          "color": "#7575ff"
         },
         {
           "name": "Talent",
@@ -1105,9 +1093,24 @@
           "color": "#2bdd89"
         },
         {
-          "name": "Concursos no Brasil",
-          "action": "https://concursosnobrasil.com/busca/?q=",
+          "name": "99freelas",
+          "action": "https://www.99freelas.com.br/projects?q=",
+          "color": "#00b8ff"
+        },
+        {
+          "name": "BNE",
+          "action": "https://www.bne.com.br/vagas-de-emprego/",
           "color": "#6199ed"
+        },
+        {
+          "name": "Trabalha Brasil",
+          "action": "https://www.trabalhabrasil.com.br/vagas-empregos/",
+          "color": "#ffc414"
+        },
+        {
+          "name": "Concursos Brasil",
+          "action": "https://concursosnobrasil.com/busca/?q=",
+          "color": "#2aa1ff"
         }
       ]
     },
@@ -1353,7 +1356,7 @@
         {
           "name": "Chrome Web Store",
           "action": "https://chromewebstore.google.com/search/",
-          "color": "#fabe0a"
+          "color": "#FFC412"
         },
         {
           "name": "Firefox Addons",
@@ -1363,7 +1366,7 @@
         {
           "name": "Snap Store",
           "action": "https://snapcraft.io/search?q=",
-          "color": "#e95420"
+          "color": "#FF7B4B"
         },
         {
           "name": "Flathub",
@@ -1378,7 +1381,7 @@
         {
           "name": "AlternativeTo",
           "action": "https://alternativeto.net/browse/search/?q=",
-          "color": "#00a3ff"
+          "color": "#33B4FF"
         },
         {
           "name": "Product Hunt",
@@ -1407,64 +1410,6 @@
           "name": "finviz",
           "action": "https://finviz.com/search.ashx?p=",
           "color": "#d8d8d8"
-        }
-      ]
-    },
-    {
-      "name": "Torrent",
-      "active": false,
-      "data": [
-        {
-          "name": "Pirate Bay",
-          "action": "https://pirate-bays.net/search",
-          "query": "q",
-          "color": "#e89d6a"
-        },
-        {
-          "name": "RARBG",
-          "action": "https://rarbgproxied.org/torrents.php",
-          "query": "search",
-          "color": "#749af2"
-        },
-        {
-          "name": "1337X",
-          "action": "https://www.1377x.to/search/",
-          "additional": "/1/",
-          "color": "#ff5d26"
-        },
-        {
-          "name": "Torrentz2",
-          "action": "https://torrentz2.eu/search",
-          "query": "f",
-          "color": "#369"
-        },
-        {
-          "name": "Zooqle",
-          "action": "https://zooqle.com/search",
-          "query": "q",
-          "color": "#b5b359"
-        },
-        {
-          "name": "YTS",
-          "action": "https://yts.su/movies",
-          "query": "keyword",
-          "color": "#6AC045"
-        },
-        {
-          "name": "LimeTorrents",
-          "action": "https://www.limetorrents.info/search/all/",
-          "color": "#b6f240"
-        },
-        {
-          "name": "ExtraTorrent",
-          "action": "http://extratorrent.cd/search/",
-          "query": "search",
-          "color": "#0067a9"
-        },
-        {
-          "name": "EZTV",
-          "action": "https://eztv.ag/search/",
-          "color": "#10559e"
         }
       ]
     }

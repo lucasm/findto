@@ -14,8 +14,8 @@ export default function PageAbout() {
           <figure className={Style.icon}></figure>
           <h1>Decentralized Search Assistant</h1>
           <p>
-            Findto is a free and open source decentralized search assistant with diverse sources, AI
-            and privacy for a more productive and healthier web.
+            Findto is a free and open source assistant for decentralized search with diverse
+            sources, AI and privacy for a more productive and healthier web.
           </p>
         </div>
       </section>
@@ -29,7 +29,7 @@ export default function PageAbout() {
               </figure>
 
               <article>
-                <h2>AI and algorithms working for you</h2>
+                <h2>Algorithms and AI working for you</h2>
                 <p>
                   Findto puts people in control of search — not the other way around. Quickly switch
                   between diverse sources to find anything. More accessible and productive web
@@ -40,7 +40,7 @@ export default function PageAbout() {
 
             <div>
               <article>
-                <h2>Discover more results with privacy</h2>
+                <h2>Discover results with more privacy</h2>
                 <p>
                   Get suggestions of search terms as you type and a privacy ranking of each source.
                   Discover more. Choose better.
@@ -60,9 +60,9 @@ export default function PageAbout() {
               <article>
                 <h2>Welcome to the decentralized search</h2>
                 <p>
-                  The centralized web — where our searches are monopolized — it's out there. Findto
-                  is here to encourages a truly free web experience when the peoples choices and
-                  democracy matter.
+                  The centralized web — where our searches are monopolized — it's over. Findto
+                  encourages a truly free web experience when the peoples choices and democracy
+                  matter.
                 </p>
               </article>
             </div>

@@ -24,6 +24,7 @@ module.exports = withPWA({
       't3.gstatic.com',
       'maps.gstatic.com',
       'm.media-amazon.com',
+      'pisces.bbystatic.com',
       'is1-ssl.mzstatic.com',
       'plus.unsplash.com',
       'images.unsplash.com',

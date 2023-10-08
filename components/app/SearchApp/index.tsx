@@ -32,8 +32,8 @@ export default function SearchApp() {
   const refSendButton = useRef(null)
   const [isInputActive, setInputActive] = useState<boolean>(false)
   const [isChild, setIsChild] = useState<boolean>(false)
-  const [lightColor, setLightColor] = useState<string>('#fff')
-  const [title, setTitle] = useState<string>('Busca')
+  const [lightColor, setLightColor] = useState<string>('transparent')
+  const [title, setTitle] = useState<string>()
 
   // focus
   const inputFocus = useCallback(
@@ -234,8 +234,8 @@ export default function SearchApp() {
                   ref={refSendButton}
                   href={searchUrl}
                   target="_blank"
-                  onClick={isInputActive ? undefined : (event) => inputFocus(event)}
                   rel="noopener"
+                  onClick={isInputActive ? undefined : (event) => inputFocus(event)}
                   className={Style.searchButton}
                   accessKey="q"
                   style={{ opacity: isInputActive || inputValue.length > 1 ? '1' : '.5' }}>

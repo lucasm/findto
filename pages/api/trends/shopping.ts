@@ -103,6 +103,7 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
             a.push({
               title: data.results[i]?.names?.title,
               url: data.results[i]?.links?.web,
+              image: data.results[i]?.images?.standard,
             })
           }
 

@@ -428,86 +428,87 @@
         {
           "name": "Spotify",
           "action": "https://open.spotify.com/search/",
-
           "color": "#58e087"
         },
         {
-          "name": "SoundCloud",
-          "action": "https://soundcloud.com/search",
-          "query": "q",
-          "color": "#ff7d3e"
-        },
-        {
           "name": "Apple Music",
-          "action": "https://music.apple.com/search",
-          "query": "term",
+          "action": "https://music.apple.com/search?term=",
           "color": "#ff5c6e"
         },
         {
+          "name": "SoundCloud",
+          "action": "https://soundcloud.com/search?q=",
+          "color": "#ff7d3e"
+        },
+        {
           "name": "YouTube Music",
-          "action": "https://music.youtube.com/search",
-          "query": "q",
+          "action": "https://music.youtube.com/search?q=",
           "color": "#ff5454"
+        },
+        {
+          "name": "Amazon Music",
+          "action": "https://music.amazon.com.br/search/",
+          "color": "#25d1da"
         },
         {
           "name": "Pandora",
           "action": "https://www.pandora.com/search/",
-
           "color": "#5d85ff"
+        },
+        {
+          "name": "iHeart",
+          "action": "https://www.iheart.com/search/?q=",
+          "color": "#ff606b"
+        },
+        {
+          "name": "TuneIn",
+          "action": "https://tunein.com/search/?query=",
+          "color": "#36d7cd"
         },
         {
           "name": "Deezer",
           "action": "https://www.deezer.com/search/",
-
-          "color": "#eee"
+          "color": "#dddddd"
         },
         {
           "name": "TIDAL",
-          "action": "https://listen.tidal.com/search",
-          "query": "q",
-          "color": "#eee"
+          "action": "https://listen.tidal.com/search?q=",
+          "color": "#999999"
         },
         {
-          "name": "Last.fm",
-          "action": "https://www.last.fm/search",
-          "query": "q",
-          "color": "#ff5151"
+          "name": "Lastfm",
+          "action": "https://www.last.fm/search?q=",
+          "color": "#ff5050"
+        },
+        {
+          "name": "Discogs",
+          "action": "https://www.discogs.com/search/?q=",
+          "color": "#F5Df2E"
         },
         {
           "name": "Genius",
-          "action": "https://genius.com/search",
-          "query": "q",
+          "action": "https://genius.com/search?q=",
           "color": "#f5f575"
         },
         {
           "name": "Musixmatch",
           "action": "https://www.musixmatch.com/search/",
-
-          "color": "#ff7171"
-        },
-        {
-          "name": "iHeartRadio",
-          "action": "https://www.iheart.com/search/",
-          "query": "q",
-          "color": "#ff606b"
+          "color": "#ff6b6b"
         },
         {
           "name": "Bandcamp",
-          "action": "https://bandcamp.com/search",
-          "query": "q",
+          "action": "https://bandcamp.com/search?q=",
           "color": "#4ab1cd"
         },
         {
           "name": "Hype Machine",
           "action": "http://hypem.com/search/",
-
           "color": "#9ed664"
         },
         {
-          "name": "TuneIn",
-          "action": "https://tunein.com/search/",
-          "query": "query",
-          "color": "#36d7cd"
+          "name": "Audius",
+          "action": "https://audius.co/search/?q=",
+          "color": "#bb65ff"
         }
       ]
     },
@@ -699,72 +700,62 @@
     },
     {
       "name": "Shopping",
+      "name_trends": "Trending products",
       "active": true,
       "data": [
         {
           "name": "Amazon",
-          "action": "https://www.amazon.com/s",
-          "query": "k",
+          "action": "https://www.amazon.com/s?k=",
           "color": "#ffba51"
         },
         {
           "name": "AliExpress",
-          "action": "https://www.aliexpress.com/wholesale",
-          "query": "SearchText",
+          "action": "https://www.aliexpress.com/wholesale?SearchText=",
           "color": "#ff6363"
         },
         {
           "name": "Ebay",
-          "action": "https://www.ebay.com/sch/i.html",
-          "query": "_nkw",
+          "action": "https://www.ebay.com/sch/i.html?_nkw=",
           "color": "#4ca0ff"
         },
         {
           "name": "Walmart",
-          "action": "https://www.walmart.com/search/",
-          "query": "query",
+          "action": "https://www.walmart.com/search/?query=",
           "color": "#ffc220"
         },
         {
+          "name": "Best Buy",
+          "action": "https://www.bestbuy.com/site/searchpage.jsp?st=",
+          "color": "#ead853"
+        },
+        {
           "name": "Etsy",
-          "action": "https://www.etsy.com/search",
-          "query": "q",
+          "action": "https://www.etsy.com/search?q=",
           "color": "#ff8b3b"
         },
         {
           "name": "Target",
-          "action": "https://www.target.com/s",
-          "query": "searchTerm",
+          "action": "https://www.target.com/s?searchTerm=",
           "color": "#ff5151"
-        },
-        {
-          "name": "Best Buy",
-          "action": "https://www.bestbuy.com/site/searchpage.jsp",
-          "query": "st",
-          "color": "#ead853"
         },
         {
           "name": "Wish",
           "action": "https://www.wish.com/search/",
-
           "color": "#35c7ff"
         },
         {
           "name": "Macys",
           "action": "https://www.macys.com/shop/featured/",
-
           "color": "#ff2b3b"
         },
         {
           "name": "Groupon",
-          "action": "https://www.groupon.com/browse/?",
-          "query": "query",
+          "action": "https://www.groupon.com/browse/?query=",
           "color": "#88cc56"
         },
         {
           "name": "Craigslist",
-          "action": "https://craigslist.org/search/sss",
-          "query": "query",
+          "action": "https://craigslist.org/search/sss?query=",
           "color": "#a96be2"
         }
       ]
@@ -964,6 +955,78 @@
       ]
     },
     {
+      "name": "Job",
+      "active": true,
+      "data": [
+        {
+          "name": "LinkedIn",
+          "action": "https://www.linkedin.com/jobs/search/",
+          "query": "keywords",
+          "color": "#1da6ee"
+        },
+        {
+          "name": "Indeed",
+          "action": "https://www.indeed.com/jobs",
+          "query": "q",
+          "color": "#3788ff"
+        },
+        {
+          "name": "Glassdoor",
+          "action": "https://www.glassdoor.com/Job/jobs.htm",
+          "query": "sc.keyword",
+          "color": "#4dda7d"
+        },
+        {
+          "name": "Upwork",
+          "action": "https://www.upwork.com/search/profiles/",
+          "query": "q",
+          "color": "#88f456"
+        },
+        {
+          "name": "Fiverr",
+          "action": "https://www.fiverr.com/search/gigs",
+          "query": "query",
+          "color": "#3fca89"
+        },
+        {
+          "name": "Monster",
+          "action": "https://www.monster.com/jobs/search/",
+          "query": "q",
+          "color": "#975ff0"
+        },
+        {
+          "name": "ZipRecruiter",
+          "action": "https://www.ziprecruiter.com/candidate/search",
+          "query": "search",
+          "color": "#b2e522"
+        },
+        {
+          "name": "LinkUp",
+          "action": "https://www.linkup.com/search/results/",
+
+          "color": "#b6f240"
+        },
+        {
+          "name": "Dice",
+          "action": "https://www.dice.com/jobs",
+          "query": "q",
+          "color": "#ff3a41"
+        },
+        {
+          "name": "CareerBuilder",
+          "action": "https://www.careerbuilder.com/jobs",
+          "query": "keywords",
+          "color": "#4aadfa"
+        },
+        {
+          "name": "SimplyHired",
+          "action": "https://www.simplyhired.com/search",
+          "query": "q",
+          "color": "#309fff"
+        }
+      ]
+    },
+    {
       "name": "Code",
       "name_trends": "Top repositories",
       "active": true,
@@ -1061,74 +1124,82 @@
       ]
     },
     {
-      "name": "Job",
+      "name": "Apps",
+      "name_trends": "Popular apps",
       "active": true,
       "data": [
         {
-          "name": "LinkedIn",
-          "action": "https://www.linkedin.com/jobs/search/",
-          "query": "keywords",
-          "color": "#1da6ee"
+          "name": "Google Play",
+          "action": "https://play.google.com/store/search?q=",
+          "color": "#00c78e"
         },
         {
-          "name": "Indeed",
-          "action": "https://www.indeed.com/jobs",
-          "query": "q",
-          "color": "#3788ff"
+          "name": "App Store",
+          "action": "https://www.apple.com/br/search/",
+          "additional": "?src=globalnav",
+          "color": "#1db2f9"
         },
         {
-          "name": "Glassdoor",
-          "action": "https://www.glassdoor.com/Job/jobs.htm",
-          "query": "sc.keyword",
-          "color": "#4dda7d"
+          "name": "Microsoft Store",
+          "action": "https://apps.microsoft.com/store/search/",
+          "color": "#219fff"
         },
         {
-          "name": "Upwork",
-          "action": "https://www.upwork.com/search/profiles/",
-          "query": "q",
-          "color": "#88f456"
+          "name": "Chrome Web Store",
+          "action": "https://chromewebstore.google.com/search/",
+          "color": "#FFC412"
         },
         {
-          "name": "Fiverr",
-          "action": "https://www.fiverr.com/search/gigs",
-          "query": "query",
-          "color": "#3fca89"
+          "name": "Firefox Addons",
+          "action": "https://addons.mozilla.org/en-US/firefox/search/?q=",
+          "color": "#00c8d7"
         },
         {
-          "name": "Monster",
-          "action": "https://www.monster.com/jobs/search/",
-          "query": "q",
-          "color": "#975ff0"
+          "name": "Snap Store",
+          "action": "https://snapcraft.io/search?q=",
+          "color": "#FF7B4B"
         },
         {
-          "name": "ZipRecruiter",
-          "action": "https://www.ziprecruiter.com/candidate/search",
-          "query": "search",
-          "color": "#b2e522"
+          "name": "Flathub",
+          "action": "https://flathub.org/pt-BR/apps/search?q=",
+          "color": "#34aadc"
         },
         {
-          "name": "LinkUp",
-          "action": "https://www.linkup.com/search/results/",
-
-          "color": "#b6f240"
+          "name": "Softonic",
+          "action": "https://www.softonic.com.br/s/",
+          "color": "#0bda8a"
         },
         {
-          "name": "Dice",
-          "action": "https://www.dice.com/jobs",
-          "query": "q",
-          "color": "#ff3a41"
+          "name": "AlternativeTo",
+          "action": "https://alternativeto.net/browse/search/?q=",
+          "color": "#33B4FF"
         },
         {
-          "name": "CareerBuilder",
-          "action": "https://www.careerbuilder.com/jobs",
-          "query": "keywords",
-          "color": "#4aadfa"
+          "name": "Product Hunt",
+          "action": "https://www.producthunt.com/search?q=",
+          "color": "#ff744c"
         },
         {
-          "name": "SimplyHired",
-          "action": "https://www.simplyhired.com/search",
-          "query": "q",
-          "color": "#309fff"
+          "name": "Kickstarter",
+          "action": "https://www.kickstarter.com/discover/advanced?term=",
+          "color": "#46e6a1"
+        },
+        {
+          "name": "Indiegogo",
+          "action": "https://www.indiegogo.com/explore/all?q=",
+          "color": "#f16fac"
+        }
+      ]
+    },
+    {
+      "name": "Finance",
+      "active": false,
+      "data": [
+        {
+          "name": "finviz",
+          "action": "https://finviz.com/search.ashx",
+          "query": "p",
+          "color": "#d8d8d8"
         }
       ]
     },
@@ -1189,86 +1260,6 @@
           "action": "https://eztv.ag/search/",
 
           "color": "#10559e"
-        }
-      ]
-    },
-    {
-      "name": "Apps",
-      "name_trends": "Popular apps",
-      "active": true,
-      "data": [
-        {
-          "name": "Google Play",
-          "action": "https://play.google.com/store/search?q=",
-          "color": "#00c78e"
-        },
-        {
-          "name": "App Store",
-          "action": "https://www.apple.com/br/search/",
-          "additional": "?src=globalnav",
-          "color": "#1db2f9"
-        },
-        {
-          "name": "Microsoft Store",
-          "action": "https://apps.microsoft.com/store/search/",
-          "color": "#219fff"
-        },
-        {
-          "name": "Chrome Web Store",
-          "action": "https://chromewebstore.google.com/search/",
-          "color": "#fabe0a"
-        },
-        {
-          "name": "Firefox Addons",
-          "action": "https://addons.mozilla.org/en-US/firefox/search/?q=",
-          "color": "#00c8d7"
-        },
-        {
-          "name": "Snap Store",
-          "action": "https://snapcraft.io/search?q=",
-          "color": "#e95420"
-        },
-        {
-          "name": "Flathub",
-          "action": "https://flathub.org/pt-BR/apps/search?q=",
-          "color": "#34aadc"
-        },
-        {
-          "name": "Product Hunt",
-          "action": "https://www.producthunt.com/search?q=",
-          "color": "#ff744c"
-        },
-        {
-          "name": "Patreon",
-          "action": "https://www.patreon.com/search?q=",
-          "color": "#ff6069"
-        },
-        {
-          "name": "Kickstarter",
-          "action": "https://www.kickstarter.com/discover/advanced?term=",
-          "color": "#46e6a1"
-        },
-        {
-          "name": "Indiegogo",
-          "action": "https://www.indiegogo.com/explore/all?q=",
-          "color": "#f16fac"
-        },
-        {
-          "name": "AlternativeTo",
-          "action": "https://alternativeto.net/browse/search/?q=",
-          "color": "#00a3ff"
-        }
-      ]
-    },
-    {
-      "name": "Finance",
-      "active": false,
-      "data": [
-        {
-          "name": "finviz",
-          "action": "https://finviz.com/search.ashx",
-          "query": "p",
-          "color": "#d8d8d8"
         }
       ]
     }
