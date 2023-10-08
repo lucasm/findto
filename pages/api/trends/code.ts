@@ -14,6 +14,7 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
         a.push({
           title: item.author + '/' + item.name,
           url: item.url,
+          image: item.avatar,
         })
       })
 

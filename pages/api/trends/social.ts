@@ -33,7 +33,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       })
 
       const x: ITrends = {
-        credits_title: 'X',
+        credits_title: 'Twitter',
         credits_url: 'https://twitter.com/',
         data: a,
       }

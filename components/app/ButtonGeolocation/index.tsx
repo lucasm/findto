@@ -1,5 +1,5 @@
 import Style from './ButtonGeolocation.module.css'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSearch } from '../../../contexts/SearchContext'
 import { IconLocationGps } from '../SvgIcons'
 
@@ -33,6 +33,10 @@ export default function ButtonGeolocation() {
       console.error('Geolocation not supported in this browser.')
     }
   }
+
+  useEffect(() => {
+    permissionLocation && handleClick()
+  }, [permissionLocation])
 
   return (
     <div>

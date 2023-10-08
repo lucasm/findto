@@ -1,7 +1,7 @@
 .container ul {
   filter: grayscale(100%);
   display: flex;
-  gap: 0;
+  gap: 0.5rem;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -9,74 +9,87 @@
   padding-left: 0;
 }
 .container ul li button {
-  font-size: var(--font-size);
-  background: transparent;
+  background: var(--color-bg-white);
   border: 0;
   margin: 0;
-  padding: 0.5rem 1.5rem;
+  padding: 1rem 1.5rem;
   border-radius: var(--radius);
   transition: var(--transition-hover);
   color: var(--color-text-black);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
 }
 .container ul li button:hover,
 .container ul li button:focus {
   background: var(--color-black-translucent);
 }
-
-.container ul li:nth-child(1) button {
-  font-size: 1.3rem;
-}
-.container ul li:nth-child(2) button {
-  font-size: 1.25rem;
-}
-.container ul li:nth-child(3) button {
-  font-size: 1.2rem;
-}
-.container ul li:nth-child(4) button {
-  font-size: 1.15rem;
-}
-.container ul li:nth-child(5) button {
-  font-size: 1.1rem;
+.container ul li button span {
+  text-align: left;
+  font-size: var(--font-size);
 }
 
-/* Mobile */
+.trends {
+  background: red;
+}
+
+/* Categories */
+.container .trendsWeb li button,
+.container .trendsAI li button {
+  flex-direction: row-reverse;
+}
+
+.container .trendsVideos li button,
+.container .trendsMusic li button {
+  padding: 1.75rem;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+.container .trendsVideos li button span,
+.container .trendsMusic li button span,
+.container .trendsNews li button span {
+  text-align: center;
+}
+
+/* News */
+.container .trendsNews li button {
+  padding: 1.75rem;
+  flex-direction: column;
+  max-width: 300px;
+}
+.container .trendsNews li button img {
+  width: 100%;
+}
+
+.container .trendsLocal li button img,
+.container .trendsApps li button img {
+  width: 48px;
+}
+
+.container .trendsCode li button img {
+  width: 32px;
+}
+
+.container .trendsShopping li button img {
+  padding: 1rem;
+  background: var(--color-white);
+}
+
+.container .trendsLocal li button img {
+  padding: 0.5rem;
+  background: var(--color-white);
+}
+
+/* Desktop */
 @media screen and (min-width: 940px) {
   .container ul {
-    gap: 0.5rem;
+    gap: 1rem;
   }
 
-  .container ul li button {
+  .container ul li button span {
+    font-size: var(--font-size-big);
     letter-spacing: -0.05rem;
-  }
-
-  .container ul li:nth-child(1) button {
-    font-size: 2rem;
-  }
-  .container ul li:nth-child(2) button {
-    font-size: 1.9rem;
-  }
-  .container ul li:nth-child(3) button {
-    font-size: 1.8rem;
-  }
-  .container ul li:nth-child(4) button {
-    font-size: 1.7rem;
-  }
-  .container ul li:nth-child(5) button {
-    font-size: 1.6rem;
-  }
-  .container ul li:nth-child(6) button {
-    font-size: 1.5rem;
-  }
-  .container ul li:nth-child(7) button {
-    font-size: 1.4rem;
-  }
-  .container ul li:nth-child(8) button {
-    font-size: 1.3rem;
-  }
-  .container ul li:nth-child(9) button {
-    font-size: 1.2rem;
-  }
-  .container ul li:nth-child(10) button {
-    font-size: 1.1rem;
   }
 }

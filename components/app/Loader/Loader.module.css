@@ -1,6 +1,6 @@
 .loader {
   width: 3rem;
-  height: 1.8rem;
+  height: 2rem;
   display: inline-block;
   margin: auto;
   position: relative;
@@ -13,7 +13,7 @@
 .loader::before {
   content: '';
   width: 3rem;
-  height: 1.8rem;
+  height: 2rem;
   background: currentColor;
   position: absolute;
   border-radius: var(--radius);

@@ -1,45 +1,68 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
-import axios from 'axios'
+import Parser from 'rss-parser'
+const parser = new Parser({
+  customFields: {
+    item: [
+      ['media:thumbnail', 'thumbnail'],
+      ['media:content', 'content'],
+    ],
+  },
+})
 import { ITrends } from '../../../interfaces/trends'
 
-export default async function endpoint(req: NextApiRequest, res: NextApiResponse): Promise<void> {
-  // parameters
+export default function endpoint(request, response) {
   const {
     query: { country },
-  } = req
+  } = request
+
+  async function getData(callback): Promise<void> {
+    let url: string
+    let credits: string[]
+
+    switch (country) {
+      case 'BR':
+        url = 'https://feeds.bbci.co.uk/portuguese/rss.xml'
+        credits = ['BBC News Brasil', 'https://www.bbc.com/portuguese']
+        break
+      default:
+        url = 'https://news.yahoo.com/rss'
+        credits = ['Yahoo News', 'https://news.yahoo.com/']
+        break
+    }
+
+    await parser.parseURL(url, (error, data) => {
+      if (error) {
+        console.log(error)
+        return callback([
+          {
+            title: 'Ops! Click to report error',
+            url: 'mailto:feedback@findto.app?subject=Findto%20Feedback&body=Error%20in%20NewsAPI',
+          },
+        ])
+      }
+
+      var a = []
+
+      data.items.slice(0, 14).forEach((item) => {
+        a.push({
+          title: item?.title,
+          image: country === 'BR' ? item?.thumbnail?.$?.url : item?.content?.$?.url,
+          url: item?.link,
+        })
+      })
+
+      return callback({
+        credits_title: credits[0],
+        credits_url: credits[1],
+        data: a,
+      })
+    })
+  }
 
   if (country) {
-    let url =
-      'https://newsapi.org/v2/top-headlines?country=' +
-      String(country).toLowerCase() +
-      '&apiKey=' +
-      process.env.NEXT_PUBLIC_API_NEWSAPI +
-      '&pageSize=11'
-
-    await axios
-      .get(url)
-      .then(({ data }) => {
-        var a = []
-
-        data.articles.forEach((item) => {
-          a.push({
-            title: item.title.split(' -')[0],
-            url: item.url,
-          })
-        })
-
-        const x: ITrends = {
-          credits_title: 'News API',
-          credits_url: 'https://newsapi.org/',
-          data: a,
-        }
-
-        res.status(200).send(x)
-      })
-      .catch(({ err }) => {
-        res.status(400).json({ err })
-      })
+    getData(function (data) {
+      response.status(200).send(data)
+    })
   } else {
-    res.status(405).end('Missing parameters COUNTRY_CODE - ' + country)
+    response.status(405).end('Error: missing parameter COUNTRY: ' + country)
   }
 }

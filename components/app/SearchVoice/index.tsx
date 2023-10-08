@@ -4,26 +4,20 @@ import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognitio
 import { useSearch } from '../../../contexts/SearchContext'
 import { IconMic } from '../SvgIcons'
 import Tooltip from '../Tooltip'
+import Modal from '../Modal'
 
 export default function SearchVoice() {
   const { data, putValue, isMobileViewport } = useSearch()
   const { transcript, listening, resetTranscript, browserSupportsSpeechRecognition } =
     useSpeechRecognition()
   const [hasVoiceSupport, setHasVoiceSupport] = useState<boolean>(false)
-  const title = data?.t?.voice ?? 'Voice search'
+  const title = data?.t?.voice ?? 'Voice'
 
   useEffect(() => {
     if (typeof window !== 'undefined' && browserSupportsSpeechRecognition) {
       setHasVoiceSupport(true)
     }
   }, [])
-
-  useEffect(() => {
-    if (!listening) {
-      putValue(transcript)
-      resetTranscript()
-    }
-  }, [listening])
 
   function handleSpeechRecognition() {
     if (listening) {
@@ -33,10 +27,26 @@ export default function SearchVoice() {
     }
   }
 
+  // voice
+  useEffect(() => {
+    if (!listening) {
+      putValue(transcript)
+      resetTranscript()
+    }
+  }, [listening])
+
   return (
     <>
       {hasVoiceSupport && (
-        <>
+        <div>
+          <Modal
+            isOpen={listening}
+            onClose={() => resetTranscript()}
+            title={data?.t?.voiceSearch[0] ?? 'Listening...'}>
+            <div className={Style.buttonListening}></div>
+            <h2 className={Style.transcriptContainer}>{transcript}</h2>
+          </Modal>
+
           <Tooltip text={title} disable={isMobileViewport}>
             <button
               className={listening ? `${Style.button} ${Style.buttonActive}` : Style.button}
@@ -48,11 +58,7 @@ export default function SearchVoice() {
               {title}
             </button>
           </Tooltip>
-
-          <div className={Style.transcriptContainer}>
-            <h2>{listening && transcript}</h2>
-          </div>
-        </>
+        </div>
       )}
     </>
   )

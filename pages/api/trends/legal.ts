@@ -15,7 +15,7 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
         credits_url: 'https://www.gov.br/pt-br',
         data: [
           {
-            title: 'Consultar restituição de imposto de renda',
+            title: 'Consultar restituição de imposto de renda DIRPF',
             url: 'https://www.gov.br/pt-br/servicos/consultar-restituicao-de-imposto-de-renda',
           },
           {
@@ -63,7 +63,7 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
             url: 'https://www.camara.leg.br/enquetes/',
           },
           {
-            title: 'Propor e apoiar ideias de novas leis no Senado',
+            title: 'Propor e apoiar leis no Senado',
             url: 'https://www12.senado.leg.br/ecidadania/principalideia',
           },
           {

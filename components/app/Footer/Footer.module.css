@@ -41,3 +41,9 @@
   height: 1rem;
   stroke-width: 2.6;
 }
+
+@media screen and (max-width: 600px) {
+  .container ul {
+    gap: 1rem;
+  }
+}

@@ -3,7 +3,6 @@ import axios from 'axios'
 import { ITrends } from '../../../interfaces/trends'
 
 export default async function endpoint(req: NextApiRequest, res: NextApiResponse): Promise<void> {
-  // parameters
   const {
     query: { latitude, longitude, language },
   } = req
@@ -28,6 +27,7 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
           a.push({
             title: item.name,
             url: 'https://www.google.com/maps/place/?q=place_id:' + item.place_id,
+            image: item.icon,
           })
         })
 
@@ -43,6 +43,15 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
         res.status(400).json({ err })
       })
   } else {
-    res.status(405).end('Missing parameters *latitude, *longitude: ' + latitude + ', ' + longitude)
+    res
+      .status(405)
+      .end(
+        'Missing parameters *latitude, *longitude, *language: ' +
+          latitude +
+          ', ' +
+          longitude +
+          ', ' +
+          language
+      )
   }
 }

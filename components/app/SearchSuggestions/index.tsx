@@ -32,7 +32,7 @@ export default function SearchSuggestions(props: Props) {
     }
 
     const isValid = () => {
-      if (props.locale && props.term.length > 1 && props.term.length < 50) {
+      if (props.locale && props.term.length > 0 && props.term.length < 50) {
         return true
       } else {
         return false

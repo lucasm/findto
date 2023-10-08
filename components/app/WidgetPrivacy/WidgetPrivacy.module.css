@@ -1,8 +1,49 @@
 .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+.container button {
+  position: relative;
+  height: var(--size-large);
+  background: var(--color-white-translucent);
+  border: 0;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size);
+  border-radius: var(--radius-full);
+  box-shadow: var(--box-shadow);
+  gap: 0.5rem;
+}
+.container button svg {
+  color: var(--color-bg-black);
+}
+.container button:hover,
+.container button:focus {
+  background: var(--color-white-translucent-2);
+}
+
+.containerDropdown {
+  position: absolute;
+  top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--color-bg-white);
+  border-radius: var(--radius);
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  width: 280px;
+  z-index: 1;
+}
+
+.container h3 {
+  margin: 1rem 0;
 }
 
 @keyframes donut-chart-fill {
@@ -10,24 +51,40 @@
     stroke-dasharray: 0 100;
   }
 }
-
 .donut {
-  position: relative;
-  width: 180px;
-  height: 180px;
-  font-weight: bold;
+  width: 120px;
+  height: 120px;
 }
 .donut svg {
   width: auto;
   height: auto;
 }
 .donutSegment {
-  animation: donut-chart-fill 1.25s reverse ease-in;
-  transition: stroke-dasharray 1.25s ease;
+  animation: donut-chart-fill 0.75s reverse ease-in;
+  transition: stroke-dasharray 0.75s ease;
 }
 .donutPercent {
-  font-size: 0.35rem;
+  fill: var(--color-text-black);
+  font-weight: bold;
+  font-size: 0.5rem;
 }
 .donutPercentSymbol {
-  font-size: 0.25rem;
+  fill: var(--color-text-black);
+  font-size: 0.35rem;
+}
+
+.credits {
+  text-align: right;
+  font-size: var(--font-size-small);
+}
+
+@media (max-width: 940px) {
+  .container button {
+    height: var(--size-small);
+    font-size: var(--font-size-small);
+  }
+
+  .containerDropdown {
+    top: 3rem;
+  }
 }

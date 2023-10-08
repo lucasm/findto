@@ -7,5 +7,6 @@ export interface ITrends {
 export interface ITrendsItem {
   title: string
   url?: string
+  image?: string
   rank?: number
 }

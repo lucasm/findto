@@ -6,7 +6,7 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
   let url =
     'https://api.unsplash.com/topics?client_id=' +
     process.env.NEXT_PUBLIC_API_UNSPLASH +
-    '&per_page=18&order_by=featured'
+    '&per_page=12&order_by=featured'
 
   await axios
     .get(url)
@@ -16,7 +16,8 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
       for (var i in data) {
         a.push({
           title: data[i].title,
-          url: data[i].links.html,
+          // url: data[i].links.html,
+          image: data[i].cover_photo.urls.small,
         })
       }
 

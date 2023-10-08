@@ -5,15 +5,16 @@
   color: var(--color-white);
   background: var(--color-black);
   border: none;
-  border-radius: var(--radius);
+  border-radius: var(--radius-full);
   cursor: pointer;
   font-size: var(--font-size);
-  height: var(--size-small);
+  height: var(--size-big);
 }
 .button:hover,
 .button:focus {
-  background: var(--color-grey);
+  background: var(--color-white);
   color: var(--color-black);
+  box-shadow: var(--box-shadow);
 }
 .button:hover svg,
 .button:focus svg {

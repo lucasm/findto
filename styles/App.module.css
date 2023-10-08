@@ -91,9 +91,14 @@
   font-size: 0;
 }
 .searchContainer select {
-  margin-right: 1rem;
+  background-color: var(--color-white-translucent);
+  height: var(--size-large);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--radius-full);
+  padding: 0 3rem 0 1.5rem;
 }
-.searchContainer h2 {
+.searchContainer h1 {
+  font-size: 1.8rem;
   color: var(--color-black);
 }
 .searchContainer2 {
@@ -128,9 +133,9 @@
   float: none;
   height: auto;
   width: 100%;
-  line-height: 4.25rem;
+  line-height: var(--size-input);
   margin: 0;
-  padding: 0 7.5rem 0 1.75rem;
+  padding: 0 10rem 0 1.75rem;
   border: none;
   outline: none;
   color: var(--color-black);
@@ -154,8 +159,6 @@
   display: flex;
   gap: 0;
   align-items: center;
-  margin: 0 1rem;
-  flex-direction: row-reverse;
 }
 
 .searchButton,
@@ -164,26 +167,26 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: var(--size-small);
-  width: var(--size-large);
-  background: var(--color-black);
+  height: var(--size-input);
+  width: 4.5rem;
+  background: transparent;
+  border-radius: var(--radius);
   border: 0;
-  border-radius: var(--radius-full);
 }
-.searchButton svg path {
-  fill: var(--color-white);
+.searchButton svg,
+.resetButton svg {
+  color: var(--color-black);
 }
 .resetButton {
   display: none;
+  width: var(--size-small);
   opacity: var(--opacity);
+  border-radius: 0;
   background: transparent;
 }
 .resetButton:focus,
 .resetButton:hover {
   opacity: 1;
-}
-.resetButton svg {
-  color: var(--color-black);
 }
 
 /* Placeholder */
@@ -219,8 +222,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .widgetContainer {
@@ -269,6 +273,12 @@
   width: 1.4rem;
   height: 1.4rem;
 }
+
+.layout1 .tabs button:hover,
+.layout1 .tabs button:focus {
+  background: var(--color-white-translucent);
+}
+
 .layout1 .searchContainer {
   margin: 0 0 5rem;
 }
@@ -388,9 +398,17 @@
   .layout1 .main {
     padding: 0;
   }
-  .layout1 .searchContainer2 {
-    margin: 0 0 5rem;
-    padding: 2rem 0 1rem;
+
+  .searchContainer {
+    margin: 0 0 3rem;
+    border-radius: 0;
+  }
+  .searchContainer h1 {
+    font-size: 1.5rem;
+  }
+  .searchContainer2 {
+    padding: 2rem 0;
+    gap: 1rem;
     border-radius: 0;
     box-shadow: none;
   }
@@ -441,7 +459,7 @@
 
   .layout1 .searchInput input {
     font-size: var(--font-size);
-    padding: 0 6rem 0 1.5rem;
+    padding: 0 6.5rem 0 1.25rem;
   }
   .layout1 .searchInput {
     line-height: 3rem;
@@ -449,10 +467,16 @@
 
   .searchButton,
   .resetButton {
-    height: 2rem;
+    height: 3rem;
     width: 2.75rem;
   }
+  .resetButton {
+    width: 2rem;
+  }
 
+  .searchPlaceholder {
+    margin: 1rem 1.5rem;
+  }
   .searchPlaceholder figure {
     height: 26px;
   }

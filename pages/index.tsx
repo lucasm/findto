@@ -10,11 +10,9 @@ export default function Index() {
       title="Decentralized Search Assistant"
       description="Findto is an assistant for decentralized web search. Get control of sources, AI and privacy.">
       <SearchApp />
+      <WidgetTrends />
 
-      <section className={Style.widgetContainer}>
-        <WidgetTrends />
-        <WidgetPrivacy />
-      </section>
+      {/* <section className={Style.widgetContainer}></section> */}
     </LayoutApp>
   )
 }

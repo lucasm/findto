@@ -29,6 +29,7 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
         data.feed.results.forEach((item) => {
           a.push({
             title: item.artistName + ' - ' + item.name,
+            image: item.artworkUrl100,
           })
         })
 

@@ -4,7 +4,7 @@ import Styles from './Widget.module.css'
 
 type Props = {
   title: string
-  icon: ReactNode
+  icon?: ReactNode
   children: ReactNode
   creditTitle: string
   creditUrl: string
@@ -17,7 +17,7 @@ export default function WidgetContainer(props: Props) {
     <div className={Styles.container}>
       <div className={Styles.title}>
         <h2>
-          {props.icon} {props.title}
+          {props.icon && props.icon} {props.title}
         </h2>
       </div>
 

@@ -2,12 +2,13 @@
   "country": "Brasil",
   "country_code": "BR",
   "t": {
-    "placeholder": "Buscar em",
+    "placeholder": "Buscar",
     "search": "Buscar",
     "trends": "Tendências",
     "settings": "Ajustes",
     "clear": "Limpar",
     "voice": "Voz",
+    "voiceSearch": ["Ouvindo"],
     "theme": "Tema",
     "language": "Idioma",
     "powered": "Fornecido por",
@@ -20,6 +21,15 @@
     "link_feedback": "https://forms.gle/r6XAyB1ZLn9qzwp16",
     "terms": "Termos",
     "privacy": "Privacidade",
+    "privacyScore": [
+      "muito pobre",
+      "justa",
+      "boa",
+      "muito boa",
+      "excepcional",
+      "indisponível",
+      "ainda não foi analisado"
+    ],
     "copyright": "Findto é um assistente para busca descentralizada na web. Todos os direitos reservados às marcas registradas e fontes externas. Criado por "
   },
   "categories": [
@@ -30,169 +40,100 @@
       "data": [
         {
           "name": "Google",
-          "action": "https://www.google.com/search",
-          "query": "q",
+          "action": "https://www.google.com/search?q=",
           "color": "#649fff",
           "child": [
             {
               "name": "Tudo",
-              "additional": ["tbm", "isch"]
+              "action": "https://www.google.com/search?q="
             },
             {
-              "name": "Images",
-              "additional": ["tbm", "isch"]
+              "name": "Imagens",
+              "additional": "&tbm=isch"
             },
             {
-              "name": "Videos",
-              "additional": ["tbm", "vid"]
+              "name": "Vídeos",
+              "additional": "&tbm=vid"
             },
             {
-              "name": "News",
-              "additional": ["tbm", "nws"]
+              "name": "Notícias",
+              "additional": "&tbm=nws"
             },
             {
-              "name": "Maps",
+              "name": "Mapas",
               "action": "https://google.com/maps/search/"
             },
             {
-              "name": "Shopping",
-              "additional": ["tbm", "shop"]
+              "name": "Compras",
+              "additional": "&tbm=shop"
             },
             {
-              "name": "Books",
-              "additional": ["tbm", "bks"]
+              "name": "Livros",
+              "additional": "&tbm=bks"
             },
             {
-              "name": "Translate",
-              "action": "https://translate.google.com/",
-              "query": "text"
+              "name": "Tradutor",
+              "action": "https://translate.google.com/?text="
             },
             {
-              "name": "Jobs",
-              "additional": ["ibp", "htl;jobs"]
+              "name": "Vagas",
+              "additional": "&ibp=htl;jobs"
             }
           ]
         },
         {
           "name": "Bing",
-          "action": "https://www.bing.com/search",
-          "query": "q",
+          "action": "https://www.bing.com/search?q=",
           "color": "#4dd1f0",
           "child": [
             {
-              "name": "Images",
+              "name": "Tudo",
+              "action": "https://www.bing.com/search?q="
+            },
+            {
+              "name": "Imagens",
               "action": "https://www.bing.com/images/search?="
             },
             {
-              "name": "Videos",
+              "name": "Vídeos",
               "action": "https://www.bing.com/videos/search?="
             },
             {
-              "name": "News",
+              "name": "Notícias",
               "action": "https://www.bing.com/news/search?="
             },
             {
-              "name": "Maps",
+              "name": "Mapas",
               "action": "https://www.bing.com/maps?q="
             },
             {
-              "name": "Events",
+              "name": "Viagens",
+              "action": "https://www.bing.com/travel/place-information?q="
+            },
+            {
+              "name": "Eventos",
               "action": "https://www.bing.com/events/search/?="
             },
             {
-              "name": "Translator",
-              "action": "https://www.bing.com/translator/",
-              "query": "text"
+              "name": "Tradutor",
+              "action": "https://www.bing.com/translator/?text="
             }
           ]
         },
         {
           "name": "DuckDuckGo",
-          "action": "https://duckduckgo.com/",
-          "query": "q",
-          "color": "#ff825e",
-          "child": [
-            {
-              "name": "Images",
-              "additional": ["ia", "images"]
-            },
-            {
-              "name": "Videos",
-              "additional": ["ia", "videos"]
-            },
-            {
-              "name": "News",
-              "additional": ["iar", "news"]
-            },
-            {
-              "name": "Meanings",
-              "additional": ["ia", "meanings"]
-            },
-            {
-              "name": "Stock",
-              "additional": ["ia", "stock"]
-            }
-          ]
+          "action": "https://duckduckgo.com/?q=",
+          "color": "#ff825e"
         },
         {
           "name": "Yahoo",
-          "action": "https://br.search.yahoo.com/search",
-          "query": "p",
-          "color": "#B980FF",
-          "child": [
-            {
-              "name": "Images",
-              "action": "https://images.search.yahoo.com/search/images?p="
-            },
-            {
-              "name": "Videos",
-              "action": "https://video.search.yahoo.com/search/video?p="
-            },
-            {
-              "name": "News",
-              "action": "https://news.search.yahoo.com/search?p="
-            },
-            {
-              "name": "Local",
-              "action": "https://search.yahoo.com/local/?p=",
-              "query": "p"
-            },
-            {
-              "name": "Answers",
-              "action": "https://answers.search.yahoo.com/search?p="
-            },
-            {
-              "name": "Shopping",
-              "action": "https://shopping.search.yahoo.com/search?p="
-            },
-            {
-              "name": "Finance",
-              "action": "https://finance.search.yahoo.com/search?p="
-            }
-          ]
+          "action": "https://br.search.yahoo.com/search?p=",
+          "color": "#B980FF"
         },
         {
           "name": "Brave",
-          "action": "https://search.brave.com/search",
-          "query": "q",
-          "color": "#ff6470",
-          "child": [
-            {
-              "name": "Images",
-              "action": "https://search.brave.com/images",
-              "query": "q"
-            },
-            {
-              "name": "Videos",
-              "action": "https://search.brave.com/videos",
-              "query": "q"
-            },
-            {
-              "name": "News",
-              "action": "https://search.brave.com/news",
-              "query": "q"
-            }
-          ]
+          "action": "https://search.brave.com/search?q=",
+          "color": "#ff6470"
         },
         {
           "name": "SearXNG",
@@ -201,153 +142,58 @@
         },
         {
           "name": "Startpage",
-          "action": "https://www.startpage.com/do/asearch",
-          "query": "query",
-          "color": "#8690ff",
-          "child": [
-            {
-              "name": "Images",
-              "additional": ["cat", "pics"]
-            },
-            {
-              "name": "Videos",
-              "additional": ["cat", "video"]
-            }
-          ]
+          "action": "https://www.startpage.com/do/asearch?query=",
+          "color": "#8690ff"
         },
         {
           "name": "Ecosia",
-          "action": "https://www.ecosia.org/search",
-          "query": "q",
+          "action": "https://www.ecosia.org/search?q=",
           "color": "#74d47b"
         },
         {
           "name": "You",
-          "action": "https://you.com/search",
-          "query": "q",
+          "action": "https://you.com/search?q=",
           "color": "#6186ff"
         },
         {
           "name": "Yandex",
-          "action": "https://www.yandex.com/search/",
-          "query": "text",
-          "color": "#f5d967",
-          "child": [
-            {
-              "name": "Images",
-              "action": "https://yandex.com/images/search"
-            },
-            {
-              "name": "Videos",
-              "action": "https://yandex.com/video/search"
-            },
-            {
-              "name": "News",
-              "action": "https://news.yandex.ru/yandsearch",
-              "additional": ["rpt", "nnews2"]
-            },
-            {
-              "name": "Maps",
-              "action": "https://maps.yandex.com"
-            },
-            {
-              "name": "Translate",
-              "action": "https://translate.yandex.com/"
-            },
-            {
-              "name": "Music",
-              "action": "https://music.yandex.ru/search"
-            }
-          ]
+          "action": "https://www.yandex.com/search/?text=",
+          "color": "#f5d967"
         },
         {
           "name": "Baidu",
-          "action": "https://www.baidu.com/s",
-          "query": "wd",
-          "color": "#748fff",
-          "child": [
-            {
-              "name": "Images",
-              "action": "http://image.baidu.com/search/index",
-              "query": "word",
-              "additional": ["tn", "baiduimage"]
-            },
-            {
-              "name": "Videos",
-              "action": "http://v.baidu.com/v",
-              "query": "word"
-            },
-            {
-              "name": "News",
-              "action": "https://news.baidu.com/ns",
-              "query": "word"
-            },
-            {
-              "name": "Maps",
-              "action": "http://map.baidu.com/m",
-              "query": "word",
-              "additional": ["fr", "ps01000"]
-            },
-            {
-              "name": "Music",
-              "action": "http://music.baidu.com/search",
-              "query": "key"
-            }
-          ]
-        },
-        {
-          "name": "Presearch",
-          "action": "https://presearch.com/search",
-          "query": "q",
-          "color": "#468cff"
+          "action": "https://www.baidu.com/s?wd=",
+          "color": "#748fff"
         },
         {
           "name": "Mojeek",
-          "action": "https://www.mojeek.com/search",
-          "query": "q",
-          "color": "#9cdb5c",
-          "child": [
-            {
-              "name": "Images",
-              "additional": ["fmt", "images"]
-            },
-            {
-              "name": "News",
-              "additional": ["fmt", "news"]
-            }
-          ]
+          "action": "https://www.mojeek.com/search?q=",
+          "color": "#9cdb5c"
         },
         {
           "name": "Info",
-          "action": "https://www.info.com/serp",
-          "query": "q",
-          "color": "#46b3fb",
-          "child": [
-            {
-              "name": "Images",
-              "additional": ["qc", "images"]
-            },
-            {
-              "name": "Videos",
-              "additional": ["qc", "video"]
-            },
-            {
-              "name": "News",
-              "additional": ["qc", "news"]
-            }
-          ]
+          "action": "https://www.info.com/serp?q=",
+          "color": "#46b3fb"
         },
         {
           "name": "Swisscows",
-          "action": "https://swisscows.com/web",
-          "query": "query",
+          "action": "https://swisscows.com/web?query=",
           "color": "#ff6161"
         },
         {
           "name": "Gibiru",
-          "action": "https://gibiru.com/results.html",
-          "query": "q",
+          "action": "https://gibiru.com/results.html?q=",
           "color": "#ec5265"
+        },
+        {
+          "name": "Presearch",
+          "action": "https://presearch.com/search?q=",
+          "color": "#468cff"
+        },
+        {
+          "name": "Yep",
+          "action": "https://yep.com/web?q=",
+          "color": "#FFF455"
         }
       ]
     },
@@ -364,39 +210,38 @@
         },
         {
           "name": "Perplexity",
-          "action": "https://www.perplexity.ai/",
-          "query": "q",
+          "action": "https://www.perplexity.ai/?q=",
           "color": "#38c8dc"
         },
         {
           "name": "ChatGPT",
-          "action": "https://chat.openai.com/",
-          "query": "q",
+          "action": "https://chat.openai.com/?q=",
           "color": "#0dcfa0"
         },
         {
           "name": "Google Bard",
-          "action": "https://bard.google.com/",
-          "query": "question",
+          "action": "https://bard.google.com/chat?prompt=",
           "color": "#cb83e0"
         },
         {
           "name": "HuggingChat",
-          "action": "https://huggingface.co/chat/",
-          "query": "q",
+          "action": "https://huggingface.co/chat?q=",
           "color": "#ffd942"
         },
         {
           "name": "You",
-          "action": "https://you.com/search",
-          "query": "fromSearchBar=true&tbm=youchat&q",
+          "action": "https://you.com/search?fromSearchBar=true&tbm=youchat&q=",
           "color": "#6b8dff"
         },
         {
           "name": "Phind",
-          "action": "https://www.phind.com/agent",
-          "query": "q",
+          "action": "https://www.phind.com/agent?q=",
           "color": "#8275ff"
+        },
+        {
+          "name": "Adobe Firefly",
+          "action": "https://firefly.adobe.com/generate/images?prompt=",
+          "color": "#FF584C"
         }
       ]
     },
@@ -407,32 +252,13 @@
       "data": [
         {
           "name": "Twitter",
-          "action": "https://twitter.com/search/",
-          "query": "src=typed_query&q",
+          "action": "https://twitter.com/search?src=typed_query&q=",
           "color": "#4abaff"
         },
         {
           "name": "Facebook",
-          "action": "https://www.facebook.com/public",
-          "query": "query",
-          "color": "#509CFF",
-          "child": [
-            {
-              "name": "Watch",
-              "action": "https://www.facebook.com/watch/search/",
-              "query": "query"
-            },
-            {
-              "name": "Marketplace",
-              "action": "https://www.facebook.com/marketplace/search/",
-              "query": "query"
-            },
-            {
-              "name": "Groups",
-              "action": "https://www.facebook.com/groups/search/groups_home/",
-              "query": "q"
-            }
-          ]
+          "action": "https://www.facebook.com/public?query=",
+          "color": "#509CFF"
         },
         {
           "name": "Instagram",
@@ -441,38 +267,32 @@
         },
         {
           "name": "TikTok",
-          "action": "https://www.tiktok.com/search",
-          "query": "q",
+          "action": "https://www.tiktok.com/search?q=",
           "color": "#ff6986"
         },
         {
           "name": "Reddit",
-          "action": "https://www.reddit.com/search",
-          "query": "q",
+          "action": "https://www.reddit.com/search?q=",
           "color": "#ff8353"
         },
         {
           "name": "LinkedIn",
-          "action": "https://www.linkedin.com/search/results/index/",
-          "query": "keywords",
+          "action": "https://www.linkedin.com/search/results/index/?keywords=",
           "color": "#39BAFF"
         },
         {
           "name": "Discord",
-          "action": "https://discord.com/guild-discovery",
-          "query": "query",
+          "action": "https://discord.com/guild-discovery?query=",
           "color": "#8791FF"
         },
         {
           "name": "Snapchat",
-          "action": "https://story.snapchat.com/search",
-          "query": "q",
+          "action": "https://story.snapchat.com/search?q=",
           "color": "#fffd5e"
         },
         {
           "name": "Quora",
-          "action": "https://www.quora.com/search",
-          "query": "q",
+          "action": "https://www.quora.com/search?q=",
           "color": "#ff6966"
         },
         {
@@ -487,8 +307,7 @@
         },
         {
           "name": "Meetup",
-          "action": "https://www.meetup.com/find/",
-          "query": "keywords",
+          "action": "https://www.meetup.com/find/?keywords=",
           "color": "#ff5573"
         },
         {
@@ -506,56 +325,47 @@
       "data": [
         {
           "name": "YouTube",
-          "action": "https://www.youtube.com/results/",
-          "query": "search_query",
+          "action": "https://www.youtube.com/results?search_query=",
           "color": "#FF6B6B"
         },
         {
           "name": "Twitch",
-          "action": "https://www.twitch.tv/search",
-          "query": "term",
+          "action": "https://www.twitch.tv/search?term=",
           "color": "#B888FF"
         },
         {
           "name": "Globoplay",
-          "action": "https://globoplay.globo.com/busca/",
-          "query": "q",
+          "action": "https://globoplay.globo.com/busca/?q=",
           "color": "#FF765E"
         },
         {
           "name": "Netflix",
-          "action": "https://www.netflix.com/search",
-          "query": "q",
+          "action": "https://www.netflix.com/search?q=",
           "color": "#ff525b"
         },
         {
           "name": "Prime Video",
-          "action": "https://www.primevideo.com/region/na/search/",
-          "query": "phrase",
+          "action": "https://www.primevideo.com/region/na/search/?phrase=",
           "color": "#33bcea"
         },
         {
           "name": "Disney+",
-          "action": "https://disneyplus.com/",
-          "query": "q",
+          "action": "https://disneyplus.com/?q=",
           "color": "#5a7dff"
         },
         {
           "name": "HBO Max",
-          "action": "https://play.hbomax.com/search",
-          "query": "q",
+          "action": "https://play.hbomax.com/search?q=",
           "color": "#9181f8"
         },
         {
           "name": "Apple TV+",
-          "action": "https://tv.apple.com/search",
-          "query": "term",
+          "action": "https://tv.apple.com/search?term=",
           "color": "#c8c8c8"
         },
         {
           "name": "Crunchyroll",
-          "action": "https://www.crunchyroll.com/pt-br/search",
-          "query": "q",
+          "action": "https://www.crunchyroll.com/pt-br/search?q=",
           "color": "#ff944c"
         },
         {
@@ -565,8 +375,7 @@
         },
         {
           "name": "IMDb",
-          "action": "https://www.imdb.com/find/",
-          "query": "q",
+          "action": "https://www.imdb.com/find/?q=",
           "color": "#f5c518"
         },
         {
@@ -577,45 +386,35 @@
         {
           "name": "Dailymotion",
           "action": "https://www.dailymotion.com/search/",
-          "color": "#ddd"
-        },
-        {
-          "name": "Vimeo",
-          "action": "https://vimeo.com/search",
-          "query": "q",
-          "color": "#2fc6ff"
+          "color": "#999999"
         },
         {
           "name": "TMDB",
-          "action": "https://www.themoviedb.org/search",
-          "query": "query",
+          "action": "https://www.themoviedb.org/search?query=",
           "color": "#46c2c0"
         },
         {
           "name": "Plex",
-          "action": "https://app.plex.tv/desktop#!/search",
-          "query": "query",
+          "action": "https://app.plex.tv/desktop#!/search?query=",
           "color": "#ffb518"
+        },
+        {
+          "name": "Vimeo",
+          "action": "https://vimeo.com/search?q=",
+          "color": "#2fc6ff"
         }
       ]
     },
     {
       "name": "Image",
       "name_translated": "Imagem",
-      "name_trends": "Termos populares",
+      "name_trends": "Tópicos populares",
       "active": true,
       "data": [
         {
           "name": "Pinterest",
-          "action": "https://br.pinterest.com/search/pins/",
-          "query": "q",
+          "action": "https://br.pinterest.com/search/pins/?q=",
           "color": "#ff6970"
-        },
-        {
-          "name": "Flickr",
-          "action": "https://www.flickr.com/search",
-          "query": "q",
-          "color": "#ff73bc"
         },
         {
           "name": "Unsplash",
@@ -623,14 +422,19 @@
           "color": "#cccccc"
         },
         {
-          "name": "Pexels",
-          "action": "https://www.pexels.com/search/",
-          "color": "#1ac7a5"
-        },
-        {
           "name": "GIPHY",
           "action": "https://giphy.com/search/",
           "color": "#8b84ff"
+        },
+        {
+          "name": "Flickr",
+          "action": "https://www.flickr.com/search?q=",
+          "color": "#ff73bc"
+        },
+        {
+          "name": "Pexels",
+          "action": "https://www.pexels.com/search/",
+          "color": "#1ac7a5"
         },
         {
           "name": "Openverse",
@@ -802,11 +606,6 @@
           "color": "#bb65ff"
         },
         {
-          "name": "Google Podcasts",
-          "action": "https://podcasts.google.com/search/",
-          "color": "#4193ff"
-        },
-        {
           "name": "iHeart",
           "action": "https://www.iheart.com/search/",
           "query": "q",
@@ -817,13 +616,12 @@
     {
       "name": "Shopping",
       "name_translated": "Compras",
-      "name_trends": "Produtos mais comprados",
+      "name_trends": "Produtos recomendados",
       "active": true,
       "data": [
         {
           "name": "Amazon",
-          "action": "https://www.amazon.com.br/s",
-          "query": "k",
+          "action": "https://www.amazon.com.br/s?k=",
           "color": "#ffba51"
         },
         {
@@ -838,7 +636,7 @@
           "color": "#b065ff"
         },
         {
-          "name": "Magazine Luiza",
+          "name": "Magalu",
           "action": "https://www.magazineluiza.com.br/busca/",
           "color": "#40a4ff"
         },
@@ -850,83 +648,88 @@
         {
           "name": "Casas Bahia",
           "action": "https://www.casasbahia.com.br/",
+          "additional": "/b",
           "color": "#638cff"
         },
         {
+          "name": "Carrefour",
+          "action": "https://www.carrefour.com.br/busca/",
+          "color": "#5895FF"
+        },
+        {
           "name": "iFood",
-          "action": "https://www.ifood.com.br/busca",
-          "query": "q",
+          "action": "https://www.ifood.com.br/busca?q=",
           "color": "#ff515d"
         },
         {
           "name": "Rappi",
-          "action": "https://www.rappi.com.br/search",
-          "query": "query",
+          "action": "https://www.rappi.com.br/search?query=",
           "color": "#ff6243"
         },
         {
           "name": "Shopee",
-          "action": "https://shopee.com.br/search",
-          "query": "keyword",
+          "action": "https://shopee.com.br/search?keyword=",
           "color": "#ff7546"
         },
         {
           "name": "AliExpress",
-          "action": "https://www.aliexpress.com/wholesale",
-          "query": "SearchText",
+          "action": "https://www.aliexpress.com/wholesale?SearchText=",
           "color": "#ff6363"
         },
         {
           "name": "SHEIN",
           "action": "https://br.shein.com/",
-          "color": "#ddd"
+          "color": "#999999"
+        },
+        {
+          "name": "Renner",
+          "action": "https://www.lojasrenner.com.br/b?Ntt=",
+          "color": "#ff666c"
+        },
+        {
+          "name": "C&A",
+          "action": "https://www.cea.com.br/search/",
+          "color": "#74abb9"
         },
         {
           "name": "Netshoes",
-          "action": "https://www.netshoes.com.br/busca2",
-          "query": "q",
+          "action": "https://www.netshoes.com.br/busca2?q=",
           "color": "#be61ff"
         },
         {
           "name": "Centauro",
-          "action": "https://www.centauro.com.br/busca",
-          "query": "q",
+          "action": "https://www.centauro.com.br/busca?q=",
           "color": "#ff6363"
         },
         {
-          "name": "Renner",
-          "action": "https://www.lojasrenner.com.br/b",
-          "query": "Ntt",
-          "color": "#ff666c"
-        },
-        {
           "name": "Dafiti",
-          "action": "htthttps://www.dafiti.com.br/catalog/",
-          "query": "q",
-          "color": "#ddd"
+          "action": "https://www.dafiti.com.br/catalog/?q=",
+          "color": "#dddddd"
         },
         {
           "name": "Boticário",
-          "action": "https://www.boticario.com.br/busca/",
-          "query": "q",
+          "action": "https://www.boticario.com.br/busca/?q=",
           "color": "#1cc38e"
         },
         {
+          "name": "Natura",
+          "action": "https://www.natura.com.br/s/produtos?busca=",
+          "color": "#ffb43b"
+        },
+        {
           "name": "Enjoei",
-          "action": "https://www.enjoei.com.br/s",
-          "query": "q",
+          "action": "https://www.enjoei.com.br/s?q=",
           "color": "#ff8098"
         },
         {
           "name": "Zoom",
-          "action": "https://www.zoom.com.br/search",
-          "query": "q",
+          "action": "https://www.zoom.com.br/search?q=",
           "color": "#a56adb"
         },
         {
           "name": "Pelando",
-          "action": "https://beta.pelando.com.br/busca",
-          "query": "q",
+          "action": "https://www.pelando.com.br/busca?q=",
+          "additional": "&type=publicacoes",
           "color": "#ff8934"
         }
       ]
@@ -1026,26 +829,74 @@
     {
       "name": "News",
       "name_translated": "Notícias",
-      "name_trends": "Notícias agora",
+      "name_trends": "Últimas notícias",
       "active": true,
       "data": [
         {
           "name": "Globo",
-          "action": "https://www.globo.com/busca/",
-          "query": "q",
-          "color": "#5086ff"
+          "action": "https://www.globo.com/busca/?q=",
+          "color": "#5F92FF"
         },
         {
           "name": "UOL",
-          "action": "https://busca.uol.com.br/result.html",
-          "query": "term",
+          "action": "https://busca.uol.com.br/result.html?term=",
           "color": "#ffa545"
         },
         {
+          "name": "CNN",
+          "action": "https://www.cnnbrasil.com.br/?s=",
+          "color": "#ff5959"
+        },
+        {
+          "name": "Folha",
+          "action": "https://search.folha.uol.com.br/?q=lula",
+          "color": "#00A1DC"
+        },
+        {
+          "name": "Estadão",
+          "action": "https://busca.estadao.com.br/?q=lula",
+          "color": "#398aff"
+        },
+        {
+          "name": "Poder360",
+          "action": "https://www.reuters.com/site-search/?query=",
+          "color": "#ff7245"
+        },
+        {
+          "name": "Veja",
+          "action": "https://veja.abril.com.br/?s=",
+          "color": "#ff4b44"
+        },
+        {
+          "name": "Nexo",
+          "action": "https://www.nexojornal.com.br/util/busca/?q=",
+          "color": "#3ec2cf"
+        },
+        {
+          "name": "Fórum",
+          "action": "https://revistaforum.com.br/noticias/buscar/?buscar=",
+          "color": "#ff4950"
+        },
+        {
+          "name": "Reuters",
+          "action": "https://www.reuters.com/site-search/?query=",
+          "color": "#ffa54b"
+        },
+        {
+          "name": "Agência Brasil",
+          "action": "https://busca.ebc.com.br/?q=",
+          "additional": "&site_id=agenciabrasil",
+          "color": "#778DFF"
+        },
+        {
+          "name": "BBC",
+          "action": "https://www.bbc.co.uk/search?q=",
+          "color": "#A9A9A9"
+        },
+        {
           "name": "Medium",
-          "action": "https://medium.com/search",
-          "query": "q",
-          "color": "#f0f0f0"
+          "action": "https://medium.com/search?q=",
+          "color": "#dddddd"
         },
         {
           "name": "Flipboard",
@@ -1059,27 +910,8 @@
         },
         {
           "name": "Pocket",
-          "action": "https://getpocket.com/saves/search",
-          "query": "query",
+          "action": "https://getpocket.com/saves/search?query=",
           "color": "#ff576c"
-        },
-        {
-          "name": "BBC",
-          "action": "https://www.bbc.co.uk/search",
-          "query": "q",
-          "color": "#eee"
-        },
-        {
-          "name": "CNN",
-          "action": "https://www.cnnbrasil.com.br/",
-          "query": "s",
-          "color": "#ff5959"
-        },
-        {
-          "name": "Reuters",
-          "action": "https://www.reuters.com/search/news",
-          "query": "blob",
-          "color": "#ffa54b"
         }
       ]
     },
@@ -1091,55 +923,47 @@
       "data": [
         {
           "name": "Wikipédia",
-          "action": "https://pt.wikipedia.org/w/index.php",
-          "query": "search",
+          "action": "https://pt.wikipedia.org/w/index.php?search=",
           "color": "#a2a9b1"
         },
         {
           "name": "Google Scholar",
-          "action": "https://scholar.google.com/scholar",
-          "query": "q",
+          "action": "https://scholar.google.com/scholar?q=",
           "color": "#649fff"
         },
         {
+          "name": "ResearchGate",
+          "action": "https://www.researchgate.net/search?q=",
+          "color": "#43d1ac"
+        },
+        {
           "name": "Oasisbr",
-          "action": "https://oasisbr.ibict.br/vufind/Search/Results",
-          "query": "lookfor",
+          "action": "https://oasisbr.ibict.br/vufind/Search/Results?lookfor=",
           "color": "#8fd87c"
         },
         {
           "name": "Periódicos",
-          "action": "https://capes-primo.ezl.periodicos.capes.gov.br/primo-explore/search?tab=default_tab&search_scope=default_scope&vid=CAPES_V3&lang=pt_BR&offset=0&query=any,contains,",
+          "action": "https://capes-primo.ezl.periodicos.capes.gov.br/primo-explore/search?vid=CAPES_V3&query=any,contains,",
           "color": "#FF7287"
         },
         {
           "name": "SciELO",
-          "action": "https://search.scielo.org/",
-          "query": "q",
+          "action": "https://search.scielo.org/?q=",
           "color": "#ff6b6b"
         },
         {
           "name": "JSTOR",
-          "action": "https://www.jstor.org/action/doBasicSearch",
-          "query": "Query",
+          "action": "https://www.jstor.org/action/doBasicSearch?Query=",
           "color": "#ff6764"
         },
         {
-          "name": "ResearchGate",
-          "action": "https://www.researchgate.net/search",
-          "query": "q",
-          "color": "#00d6c5"
-        },
-        {
           "name": "CORE",
-          "action": "https://core.ac.uk/search",
-          "query": "q",
+          "action": "https://core.ac.uk/search?q=",
           "color": "#ff9c48"
         },
         {
           "name": "PLOS ONE",
-          "action": "https://journals.plos.org/plosone/search",
-          "query": "q",
+          "action": "https://journals.plos.org/plosone/search?q=",
           "color": "#ff8bde"
         },
         {
@@ -1149,26 +973,22 @@
         },
         {
           "name": "ScienceDirect",
-          "action": "https://www.sciencedirect.com/search",
-          "query": "qs",
+          "action": "https://www.sciencedirect.com/search?qs=",
           "color": "#ff8d38"
         },
         {
           "name": "Springer",
-          "action": "https://link.springer.com/search",
-          "query": "query",
+          "action": "https://link.springer.com/search?query=",
           "color": "#ffa44e"
         },
         {
           "name": "BASE",
-          "action": "https://www.base-search.net/Search/Results",
-          "query": "lookfor",
+          "action": "https://www.base-search.net/Search/Results?lookfor=",
           "color": "#ffc457"
         },
         {
           "name": "Mendeley",
-          "action": "https://www.mendeley.com/search/",
-          "query": "query",
+          "action": "https://www.mendeley.com/search/?query=",
           "color": "#ff7173"
         },
         {
@@ -1178,44 +998,38 @@
         },
         {
           "name": "ORCID",
-          "action": "https://orcid.org/orcid-search/search",
-          "query": "searchQuery",
+          "action": "https://orcid.org/orcid-search/search?searchQuery=",
           "color": "#a5cd38"
         },
         {
           "name": "WolframAlpha",
-          "action": "https://www.wolframalpha.com/input",
-          "query": "i",
+          "action": "https://www.wolframalpha.com/input?i=",
           "color": "#ff9c55"
-        },
-        {
-          "name": "Academia",
-          "action": "https://www.academia.edu/people/search",
-          "query": "q",
-          "color": "#428bca"
-        },
-        {
-          "name": "Brainly",
-          "action": "https://brainly.com.br/app/ask",
-          "query": "q",
-          "color": "#60d399"
-        },
-        {
-          "name": "Stack Exchange",
-          "action": "https://stackexchange.com/search",
-          "query": "q",
-          "color": "#6bacff"
-        },
-        {
-          "name": "Internet Archive",
-          "action": "https://archive.org/search.php",
-          "query": "query",
-          "color": "#d8d8d8"
         },
         {
           "name": "Golden",
           "action": "https://golden.com/search/",
           "color": "#efbf54"
+        },
+        {
+          "name": "Academia",
+          "action": "https://www.academia.edu/search?q=",
+          "color": "#5a98ff"
+        },
+        {
+          "name": "Brainly",
+          "action": "https://brainly.com.br/app/ask?q=",
+          "color": "#60d399"
+        },
+        {
+          "name": "Passei Direto",
+          "action": "https://www.passeidireto.com/search?q=",
+          "color": "#FF8425"
+        },
+        {
+          "name": "Internet Archive",
+          "action": "https://archive.org/search.php?query=",
+          "color": "#999999"
         }
       ]
     },
@@ -1227,8 +1041,7 @@
       "data": [
         {
           "name": "LinkedIn",
-          "action": "https://www.linkedin.com/jobs/search/",
-          "query": "keywords",
+          "action": "https://www.linkedin.com/jobs/search/?=keywords",
           "color": "#39BAFF"
         },
         {
@@ -1310,98 +1123,76 @@
       ]
     },
     {
-      "name": "Finance",
-      "name_translated": "Finanças",
-      "name_title": "Busca Financeira",
-      "active": false,
-      "data": [
-        {
-          "name": "finviz",
-          "action": "https://finviz.com/search.ashx",
-          "query": "p",
-          "color": "#d8d8d8"
-        }
-      ]
-    },
-    {
       "name": "Legal",
       "name_translated": "Legal",
-      "name_trends": "Serviços públicos",
+      "name_trends": "Serviços populares",
       "active": true,
       "data": [
         {
           "name": "Escavador",
-          "action": "https://www.escavador.com/busca/",
-          "query": "q",
+          "action": "https://www.escavador.com/busca?q=",
           "color": "#f5bd1d"
         },
         {
           "name": "Jusbrasil",
-          "action": "https://www.jusbrasil.com.br/busca",
-          "query": "q",
+          "action": "https://www.jusbrasil.com.br/busca?q=",
           "color": "#8ad151"
         },
         {
-          "name": "Governo Brasil",
-          "action": "https://www.gov.br/pt-br/search",
-          "query": "SearchableText",
+          "name": "Gov.br",
+          "action": "https://www.gov.br/pt-br/search?SearchableText=",
           "color": "#5193FF",
           "child": [
             {
-              "name": "Governo Brasil"
+              "name": "Portal Gov.br"
             },
             {
               "name": "Transparência",
-              "action": "https://portaldatransparencia.gov.br/busca",
-              "query": "termo"
+              "action": "https://portaldatransparencia.gov.br/busca?termo="
             },
             {
               "name": "Diário Oficial",
-              "action": "https://www.in.gov.br/consulta/-/buscar/dou",
-              "query": "q"
+              "action": "https://www.in.gov.br/consulta/-/buscar/dou?q="
             },
             {
               "name": "Legislação",
-              "action": "https://legislacao.presidencia.gov.br/#",
-              "query": "q"
+              "action": "https://legislacao.presidencia.gov.br/?q="
             }
           ]
         },
         {
           "name": "Congresso Nacional",
-          "action": "https://www6g.senado.leg.br/busca-congresso/",
-          "query": "q",
+          "action": "https://www6g.senado.leg.br/busca-congresso/?q=",
           "color": "#79a4ff",
           "child": [
+            {
+              "name": "Congresso Nacional"
+            },
             {
               "name": "Propostas"
             },
             {
               "name": "Normas",
-              "action": "https://normas.leg.br/busca?q=parque",
-              "query": "q"
+              "action": "https://normas.leg.br/busca?q="
             }
           ]
         },
         {
-          "name": "Supremo Tribunal",
-          "action": "https://jurisprudencia.stf.jus.br/pages/search",
-          "query": "queryString",
+          "name": "STF",
+          "action": "https://jurisprudencia.stf.jus.br/pages/search?queryString=",
           "color": "#00b8ff",
           "child": [
             {
-              "name": "STF Jurisprudência",
+              "name": "Jurisprudência",
               "action": "https://jurisprudencia.stf.jus.br/pages/search"
             },
             {
               "name": "Notícias",
-              "action": "https://normas.leg.br/busca?q=",
-              "query": "q"
+              "action": "https://normas.leg.br/busca?q="
             },
             {
               "name": "Repercussão Geral",
-              "action": "https://normas.leg.br/busca?q=",
-              "query": "q"
+              "action": "https://normas.leg.br/busca?q="
             },
             {
               "name": "STJ",
@@ -1410,19 +1201,13 @@
           ]
         },
         {
-          "name": "Justiça Eleitoral",
-          "action": "https://www.tse.jus.br/@@search-es?searchable_text=",
-          "color": "#ffd441"
-        },
-        {
           "name": "Tribunal de Contas",
           "action": "https://pesquisa.apps.tcu.gov.br/resultado/todas-bases/",
           "color": "#4f86ff"
         },
         {
           "name": "Ministério Público",
-          "action": "https://www.mpf.mp.br/@@search",
-          "query": "SearchableText",
+          "action": "https://www.mpf.mp.br/@@search?SearchableText=",
           "color": "#61a4db"
         },
         {
@@ -1445,6 +1230,11 @@
           ]
         },
         {
+          "name": "Justiça Eleitoral",
+          "action": "https://www.tse.jus.br/@@search-es?searchable_text=",
+          "color": "#ffd441"
+        },
+        {
           "name": "Banco Central",
           "action": "https://www.bcb.gov.br/resultadobusca?termo=inflacao",
           "color": "#16a7ce"
@@ -1459,110 +1249,92 @@
       "data": [
         {
           "name": "Stack Overflow",
-          "action": "https://pt.stackoverflow.com/search",
-          "query": "q",
+          "action": "https://pt.stackoverflow.com/search?q=",
           "color": "#ffa055"
         },
         {
           "name": "GitHub",
-          "action": "https://github.com/search",
-          "query": "q",
+          "action": "https://github.com/search?q=",
           "color": "#becad8"
         },
         {
           "name": "GitLab",
-          "action": "https://gitlab.com/public",
-          "query": "name",
+          "action": "https://gitlab.com/public?name=",
           "color": "#ff8b50"
         },
         {
           "name": "Bitbucket",
-          "action": "https://bitbucket.org/repo/all/",
-          "query": "name",
+          "action": "https://bitbucket.org/repo/all/?name=",
           "color": "#61a1ff"
         },
         {
           "name": "CodePen",
-          "action": "https://codepen.io/search/pens",
-          "query": "q",
+          "action": "https://codepen.io/search/pens?q=",
           "color": "#cbd5f9"
         },
         {
           "name": "Glitch",
-          "action": "https://glitch.com/search",
-          "query": "q",
+          "action": "https://glitch.com/search?q=",
           "color": "#f7a4ff"
         },
         {
           "name": "Sourcegraph",
-          "action": "https://sourcegraph.com/search",
-          "query": "q",
+          "action": "https://sourcegraph.com/search?q=",
           "color": "#da7bff"
         },
         {
           "name": "searchcode",
-          "action": "https://searchcode.com/",
-          "query": "q",
+          "action": "https://searchcode.com/?q=",
           "color": "#1EAEDB"
         },
         {
           "name": "Docker Hub",
-          "action": "https://hub.docker.com/search",
-          "query": "q",
+          "action": "https://hub.docker.com/search?q=",
           "color": "#4bbfff"
         },
         {
           "name": "npm",
-          "action": "https://www.npmjs.com/search",
-          "query": "q",
+          "action": "https://www.npmjs.com/search?q=",
           "color": "#ff6565"
         },
         {
           "name": "Yarn",
-          "action": "https://yarnpkg.com/",
-          "query": "q",
+          "action": "https://yarnpkg.com/?q=",
           "color": "#30beff"
         },
         {
           "name": "PyPI",
-          "action": "https://pypi.org/search/",
-          "query": "q",
+          "action": "https://pypi.org/search/?q=",
           "color": "#47a4da"
         },
         {
           "name": "NuGet",
-          "action": "https://www.nuget.org/packages",
-          "query": "q",
+          "action": "https://www.nuget.org/packages?q=",
           "color": "#4bb0ff"
         },
         {
           "name": "Packagist",
-          "action": "https://packagist.org/",
-          "query": "query",
+          "action": "https://packagist.org/?query=",
           "color": "#ffae51"
         },
         {
           "name": "RubyGems",
-          "action": "https://rubygems.org/search",
-          "query": "query",
+          "action": "https://rubygems.org/search?query=",
           "color": "#ff735d"
         },
         {
           "name": "Crates",
-          "action": "https://crates.io/search",
-          "query": "q",
+          "action": "https://crates.io/search?q=",
           "color": "#19a974"
         },
         {
           "name": "Go",
-          "action": "https://pkg.go.dev/search",
-          "query": "q",
+          "action": "https://pkg.go.dev/search?q=",
           "color": "#50b7e0"
         },
         {
           "name": "Pub.dev",
-          "action": "https://pub.dev/packages",
-          "query": "q",
+          "action": "https://pub.dev/packages?q=",
           "color": "#25a8ff"
         }
       ]
@@ -1570,13 +1342,12 @@
     {
       "name": "Apps",
       "name_title": "Busca de Apps",
-      "name_trends": "Aplicativos em alta",
+      "name_trends": "Aplicativos populares",
       "active": true,
       "data": [
         {
           "name": "Google Play",
-          "action": "https://play.google.com/store/search",
-          "query": "q",
+          "action": "https://play.google.com/store/search?q=",
           "color": "#00c78e"
         },
         {
@@ -1597,39 +1368,51 @@
         },
         {
           "name": "Firefox Addons",
-          "action": "https://addons.mozilla.org/en-US/firefox/search/",
-          "query": "q",
+          "action": "https://addons.mozilla.org/en-US/firefox/search/?q=",
           "color": "#00c8d7"
         },
         {
           "name": "Snap Store",
-          "action": "https://snapcraft.io/search",
-          "query": "q",
+          "action": "https://snapcraft.io/search?q=",
           "color": "#e95420"
         },
         {
           "name": "Flathub",
-          "action": "https://flathub.org/pt-BR/apps/search",
-          "query": "q",
+          "action": "https://flathub.org/pt-BR/apps/search?q=",
           "color": "#34aadc"
         },
         {
           "name": "Product Hunt",
-          "action": "https://www.producthunt.com/search",
-          "query": "q",
+          "action": "https://www.producthunt.com/search?q=",
           "color": "#ff744c"
         },
         {
           "name": "Kickstarter",
-          "action": "https://www.kickstarter.com/discover/advanced",
-          "query": "term",
+          "action": "https://www.kickstarter.com/discover/advanced?term=",
           "color": "#46e6a1"
         },
         {
           "name": "Indiegogo",
-          "action": "https://www.indiegogo.com/explore/all",
-          "query": "q",
+          "action": "https://www.indiegogo.com/explore/all?q=",
           "color": "#f16fac"
+        },
+        {
+          "name": "AlternativeTo",
+          "action": "https://alternativeto.net/browse/search/?q=",
+          "color": "#00a3ff"
+        }
+      ]
+    },
+    {
+      "name": "Finance",
+      "name_translated": "Finanças",
+      "name_title": "Busca Financeira",
+      "active": false,
+      "data": [
+        {
+          "name": "finviz",
+          "action": "https://finviz.com/search.ashx?p=",
+          "color": "#d8d8d8"
         }
       ]
     },
@@ -1688,23 +1471,6 @@
           "name": "EZTV",
           "action": "https://eztv.ag/search/",
           "color": "#10559e"
-        }
-      ]
-    },
-    {
-      "name": "NFTs",
-      "active": false,
-      "data": [
-        {
-          "name": "OpenSea",
-          "action": "https://opensea.io/assets",
-          "query": "search[query]",
-          "color": "#5eaeff"
-        },
-        {
-          "name": "Rarible",
-          "action": "https://rarible.com/explore/search/",
-          "color": "#fdda05"
         }
       ]
     }

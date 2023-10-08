@@ -1,4 +1,4 @@
-import React, { useRef, useCallback, useState, useEffect, use } from 'react'
+import React, { useRef, useCallback, useState, useEffect } from 'react'
 import Style from '../../../styles/App.module.css'
 import { normalizeId } from '../../../utils/formats'
 import { useSearch } from '../../../contexts/SearchContext'
@@ -8,6 +8,7 @@ import SearchVoice from '../SearchVoice'
 import { ISearchCategory, ISearch, ISearchChild } from '../../../interfaces/search'
 import { IconClose, IconSend } from '../SvgIcons'
 import Tooltip from '../Tooltip'
+import WidgetPrivacy from '../WidgetPrivacy'
 
 export default function SearchApp() {
   const { locale } = useRouter()
@@ -152,8 +153,7 @@ export default function SearchApp() {
         style={{
           backgroundColor: lightColor,
         }}>
-        {/* Title */}
-        <h2>{title}</h2>
+        <h1>{title}</h1>
 
         {/* Tabs */}
         <div className={Style.tabs}>
@@ -186,7 +186,7 @@ export default function SearchApp() {
               className={Style.searchPlaceholder}
               onClick={() => inputFocus()}
               style={{ display: inputValue != '' ? 'none' : 'flex' }}>
-              {!isMobileViewport && <figcaption>{data?.t?.placeholder ?? 'Search on'}</figcaption>}
+              {!isMobileViewport && <figcaption>{data?.t?.placeholder ?? 'Search'}</figcaption>}
               <figure
                 style={{
                   backgroundImage: 'url(/images/logos/' + search + '.svg)',
@@ -194,7 +194,7 @@ export default function SearchApp() {
             </div>
 
             {/* Input */}
-            <label htmlFor="search">{search ? 'Search on ' + search : 'Search input'}</label>
+            <label htmlFor="search">{search ? 'Search ' + search : 'Search input'}</label>
             <input
               id="search"
               ref={refSearchInput}
@@ -213,24 +213,6 @@ export default function SearchApp() {
             />
 
             <div className={Style.searchActions}>
-              {/* Button Search */}
-              <Tooltip text={data?.t?.search ?? 'Search'} disable={isMobileViewport}>
-                <a
-                  ref={refSendButton}
-                  href={searchUrl}
-                  target="_blank"
-                  onClick={isInputActive ? undefined : (event) => inputFocus(event)}
-                  rel="noopener"
-                  className={Style.searchButton}
-                  accessKey="q">
-                  <IconSend />
-                  Search
-                </a>
-              </Tooltip>
-
-              {/* Options */}
-              {!isMobileViewport && isChild && renderChild(search)}
-
               {/* Button Reset */}
               <Tooltip text={data?.t?.clear ?? 'Clear'} disable={isMobileViewport}>
                 <button
@@ -242,13 +224,34 @@ export default function SearchApp() {
                   Clear
                 </button>
               </Tooltip>
+
+              {/* Button Voice */}
+              <SearchVoice />
+
+              {/* Button Search */}
+              <Tooltip text={data?.t?.search ?? 'Search'} disable={isMobileViewport}>
+                <a
+                  ref={refSendButton}
+                  href={searchUrl}
+                  target="_blank"
+                  onClick={isInputActive ? undefined : (event) => inputFocus(event)}
+                  rel="noopener"
+                  className={Style.searchButton}
+                  accessKey="q"
+                  style={{ opacity: isInputActive || inputValue.length > 1 ? '1' : '.5' }}>
+                  <IconSend />
+                  Search
+                </a>
+              </Tooltip>
             </div>
           </div>
 
           <SearchSuggestions locale={locale} term={inputValue} />
 
           <div className={Style.footerActions}>
-            <SearchVoice />
+            <WidgetPrivacy />
+            {/* Options */}
+            {!isMobileViewport && isChild && renderChild(search)}
           </div>
         </div>
       </div>

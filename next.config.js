@@ -17,6 +17,22 @@ module.exports = withPWA({
     defaultLocale: 'en',
   },
   images: {
-    domains: ['i.ytimg.com'],
+    domains: [
+      't0.gstatic.com',
+      't1.gstatic.com',
+      't2.gstatic.com',
+      't3.gstatic.com',
+      'maps.gstatic.com',
+      'm.media-amazon.com',
+      'is1-ssl.mzstatic.com',
+      'plus.unsplash.com',
+      'images.unsplash.com',
+      'image.tmdb.org',
+      'ichef.bbci.co.uk',
+      'media.zenfs.com',
+      's.yimg.com',
+      'github.com',
+      'cdn.vox-cdn.com',
+    ],
   },
 })

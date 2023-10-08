@@ -1,4 +1,5 @@
 import Styles from './WidgetTrends.module.css'
+import Image from 'next/image'
 import { fetcher } from '../../../utils/http'
 import useSWR from 'swr'
 import { useSearch } from '../../../contexts/SearchContext'
@@ -13,6 +14,13 @@ export default function SearchTrends() {
   const { category, titleTrends, putValue, country, locale, latitude, longitude } = useSearch()
   const [dataTrends, setDataTrends] = useState<ITrends>(null)
   const [errorTrends, setErrorTrends] = useState<any>(null)
+
+  const miniImage =
+    category === 'Web' ||
+    category === 'AI' ||
+    category === 'Local' ||
+    category === 'Code' ||
+    category === 'Apps'
 
   // Web
   function useApiWeb() {
@@ -313,7 +321,6 @@ export default function SearchTrends() {
   return (
     <WidgetContainer
       title={titleTrends ?? 'Trends'}
-      icon={<IconTrending />}
       creditTitle={dataTrends?.credits_title ?? ''}
       creditUrl={dataTrends?.credits_url ? dataTrends?.credits_url + '?utm_source=findto_app' : ''}>
       <>
@@ -324,14 +331,23 @@ export default function SearchTrends() {
         {errorTrends && <div>Error</div>}
         {dataTrends && (
           <div className={Styles.container}>
-            <ul>
-              {dataTrends.data?.map((item: ITrendsItem, index: number) => (
+            <ul className={Styles[`trends${category}`]}>
+              {dataTrends?.data?.map((item: ITrendsItem, index: number) => (
                 <li key={index}>
-                  {item.url ? (
-                    <button onClick={() => window.open(item.url, '_blank')}>{item.title}</button>
-                  ) : (
-                    <button onClick={() => putValue(item.title)}>{item.title}</button>
-                  )}
+                  <button
+                    onClick={() =>
+                      item.url ? window.open(item.url, '_blank') : putValue(item.title)
+                    }>
+                    {item.image && (
+                      <Image
+                        src={item.image}
+                        width={miniImage ? 60 : 120}
+                        height={100}
+                        alt={item.title}
+                      />
+                    )}
+                    {item.title && <span>{item.title}</span>}
+                  </button>
                 </li>
               ))}
             </ul>

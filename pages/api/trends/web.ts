@@ -1,18 +1,13 @@
 import Parser from 'rss-parser'
-const parser = new Parser()
+const parser = new Parser({
+  customFields: {
+    item: [['ht:picture', 'picture']],
+  },
+})
 import { ITrends } from '../../../interfaces/trends'
 
-// parameters
 let userCountry: string
 
-// set values
-function setValues(country: string) {
-  if (country) {
-    userCountry = country
-  }
-}
-
-// fetch data
 async function getData(callback): Promise<void> {
   // URL
   let url = 'https://trends.google.com/trends/trendingsearches/daily/rss?geo=' + userCountry
@@ -34,6 +29,7 @@ async function getData(callback): Promise<void> {
     data.items.slice(0, 19).forEach((item) => {
       a.push({
         title: item.title,
+        image: item.picture,
       })
     })
 
@@ -42,13 +38,10 @@ async function getData(callback): Promise<void> {
       credits_url: 'https://google.com/',
       data: a,
     }
-
-    console.log(x)
     return callback(x)
   })
 }
 
-// serve endpoint
 export default function endpoint(request, response) {
   // set query parameters
   const {
@@ -56,13 +49,11 @@ export default function endpoint(request, response) {
   } = request
 
   if (country) {
-    setValues(country)
+    userCountry = country
     getData(function (data) {
-      // success
       response.status(200).send(data)
     })
   } else {
-    // error
-    response.status(405).end('Error: missing parameter country: ' + country)
+    response.status(405).end('Error: missing parameter COUNTRY: ' + country)
   }
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, ReactNode, useRef, useCallback } from 'react'
+import React, { useState, useEffect, ReactNode, useRef } from 'react'
 import styles from './Modal.module.css'
 import { IconClose } from '../SvgIcons'
 
@@ -12,12 +12,29 @@ interface ModalProps {
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, title }) => {
   const [isModalOpen, setIsModalOpen] = useState(isOpen)
   const modalRef = useRef<HTMLDivElement>(null)
+  const lastFocusableElementRef = useRef(null)
 
   useEffect(() => {
     setIsModalOpen(isOpen)
 
+    // remove scroll from body
     if (typeof window !== 'undefined') {
       isOpen ? (document.body.style.overflow = 'hidden') : (document.body.style.overflow = 'auto')
+    }
+
+    // focus on modal
+    if (modalRef.current) {
+      modalRef.current.focus()
+    }
+
+    // Encontre todos os elementos clicáveis dentro do modal
+    const clickableElements = modalRef.current.querySelectorAll(
+      'button, a, input, [tabindex]:not([tabindex="-1"])'
+    )
+
+    // Se houver elementos clicáveis, defina o último elemento como ref
+    if (clickableElements.length > 0) {
+      lastFocusableElementRef.current = clickableElements[clickableElements.length - 1]
     }
   }, [isOpen])
 
@@ -32,23 +49,41 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, title }) => {
     }
   }
 
+  const handleTabKeyPress = (e: React.KeyboardEvent) => {
+    if (e.key === 'Tab' && isModalOpen) {
+      // Se a tecla "Tab" for pressionada dentro do modal
+      if (document.activeElement === lastFocusableElementRef.current) {
+        // Redireciona o foco de volta ao modal
+        modalRef.current.focus()
+        e.preventDefault() // Evita a tabulação normal
+      }
+    }
+  }
+
   return (
-    <>
+    <div
+      className={`${styles['modal-overlay']} ${isModalOpen ? styles.open : ''}`}
+      onClick={handleOverlayClick}
+      tabIndex={isModalOpen ? 0 : -1}
+      aria-label={'Modal ' + title}>
       <div
-        className={`${styles['modal-overlay']} ${isModalOpen ? styles.open : ''}`}
-        onClick={handleOverlayClick}>
-        <div className={`${styles.modal} ${isModalOpen ? styles.open : ''}`} ref={modalRef}>
-          <button className={styles['modal-close']} onClick={handleClose}>
-            <IconClose />
-            Fechar
-          </button>
-          <div className={`${styles['modal-content']} ${isModalOpen ? styles.open : ''}`}>
-            {title && <h2 className={styles.modalTitle}>{title}</h2>}
-            {children}
-          </div>
+        className={`${styles.modal} ${isModalOpen ? styles.open : ''}`}
+        ref={modalRef}
+        tabIndex={isModalOpen ? 0 : -1}
+        onKeyDown={handleTabKeyPress}>
+        <button
+          className={styles['modal-close']}
+          onClick={handleClose}
+          tabIndex={isModalOpen ? 0 : -1}>
+          <IconClose />
+          Fechar
+        </button>
+        <div className={`${styles['modal-content']} ${isModalOpen ? styles.open : ''}`}>
+          {title && <h2 className={styles.modalTitle}>{title}</h2>}
+          {children}
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

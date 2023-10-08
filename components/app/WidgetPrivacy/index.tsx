@@ -1,9 +1,8 @@
-import styles from '../WidgetPrivacy/WidgetPrivacy.module.css'
+import { useEffect, useRef, useState } from 'react'
+import Styles from '../WidgetPrivacy/WidgetPrivacy.module.css'
 import useSWR from 'swr'
 import { fetcher } from '../../../utils/http'
 import { useSearch } from '../../../contexts/SearchContext'
-import { useEffect, useState } from 'react'
-import WidgetContainer from '../WidgetContainer'
 import { IconShield } from '../SvgIcons'
 
 interface IApiPrivacy {
@@ -17,9 +16,20 @@ interface IApiPrivacy {
 export default function WidgetPrivacy() {
   const { data, searchUrl } = useSearch()
 
+  const [isOpen, setIsOpen] = useState<boolean>(false)
+  const dropdownRef = useRef<HTMLDivElement | null>(null)
   const [domain, setDomain] = useState<string | null>(null)
   const [label, setLabel] = useState<string>()
   const [percents, setPercents] = useState<string[]>(['30', '70'])
+
+  const handleButtonClick = () => {
+    setIsOpen(!isOpen)
+  }
+  const handleOutsideClick = (e: MouseEvent) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+      setIsOpen(false)
+    }
+  }
 
   function isValidUrl(url: string) {
     try {
@@ -66,40 +76,30 @@ export default function WidgetPrivacy() {
         return [porcentagem.toFixed(0), sobraPorcentagem.toFixed(0)]
       }
     } else {
-      return ['30', '70']
+      return ['100', '0']
     }
   }
   function defineLabels(score: number) {
     if (score) {
       if (score >= 300 && score <= 579) {
-        setLabel('very poor')
+        setLabel(data?.t?.privacyScore[0] ?? 'very poor')
       }
       if (score >= 580 && score <= 669) {
-        setLabel('fair')
+        setLabel(data?.t?.privacyScore[1] ?? 'fair')
       }
       if (score >= 670 && score <= 739) {
-        setLabel('good')
+        setLabel(data?.t?.privacyScore[2] ?? 'good')
       }
       if (score >= 740 && score <= 799) {
-        setLabel('very good')
+        setLabel(data?.t?.privacyScore[3] ?? 'very good')
       }
       if (score >= 800 && score <= 850) {
-        setLabel('exceptional')
+        setLabel(data?.t?.privacyScore[4] ?? 'exceptional')
       }
     } else {
-      setLabel('Unavailable')
+      setLabel(data?.t?.privacyScore[5] ?? 'unavailable')
     }
   }
-
-  useEffect(() => {
-    if (searchUrl) {
-      if (isValidUrl(searchUrl)) {
-        setDomain(extractDomain(searchUrl))
-        // console.log('domain', searchUrl)
-      }
-    }
-  }, [searchUrl])
-
   function usePrivacy() {
     const { data, error } = useSWR<IApiPrivacy>(
       domain ? '/api/privacy?url=' + domain : null,
@@ -123,53 +123,90 @@ export default function WidgetPrivacy() {
   const { dataPrivacy, isLoadingPrivacy, isErrorPrivacy } = usePrivacy()
 
   useEffect(() => {
-    // console.log(dataPrivacy)
+    if (searchUrl) {
+      if (isValidUrl(searchUrl)) {
+        setDomain(extractDomain(searchUrl))
+        // console.log('domain', searchUrl)
+      }
+    }
+  }, [searchUrl])
+
+  useEffect(() => {
     defineLabels(dataPrivacy?.score ?? dataPrivacy?.previousScore)
     setPercents(definePercents(dataPrivacy?.score ?? dataPrivacy?.previousScore))
   }, [dataPrivacy])
 
-  return (
-    <WidgetContainer
-      title={data?.t?.privacy ?? 'Privacy'}
-      icon={<IconShield />}
-      creditTitle="Privacy Monitor"
-      creditUrl="https://www.privacymonitor.com/?utm_source=findto_app">
-      <div className={styles.container}>
-        <div className={styles.donut}>
-          <svg width="100%" height="100%" viewBox="0 0 40 40" className={styles.donut}>
-            <circle cx="20" cy="20" r="15" fill="rgb(0 0 0 / 2%)"></circle>
-            {/* for change donut, change dasharray */}
-            <circle
-              className={styles.donutSegment}
-              cx="20"
-              cy="20"
-              r="15.91549430918954"
-              fill="transparent"
-              stroke="#000"
-              strokeWidth="2"
-              strokeDasharray={percents[0] + ' ' + percents[1]}
-              strokeDashoffset="25"
-              strokeLinecap="round"
-              rx="250"></circle>
-            <g>
-              <text y="50%" x="50%" transform="translate(0, 1.5)">
-                <tspan textAnchor="middle" className={styles.donutPercent}>
-                  {dataPrivacy ? percents[0] : '?'}
-                </tspan>
-                {dataPrivacy && <tspan className={styles.donutPercentSymbol}>%</tspan>}
-              </text>
-            </g>
-          </svg>
-        </div>
+  useEffect(() => {
+    if (isOpen) {
+      document.addEventListener('mousedown', handleOutsideClick)
+    } else {
+      document.removeEventListener('mousedown', handleOutsideClick)
+    }
+  }, [isOpen])
 
-        <p>{isLoadingPrivacy && '...'}</p>
-        {dataPrivacy && (
-          <p>
-            {dataPrivacy?.name} has a {label} privacy
+  return (
+    <div className={Styles.container} ref={dropdownRef}>
+      <button onClick={handleButtonClick} aria-expanded={isOpen}>
+        <IconShield />
+        {data?.t?.privacy ?? 'Privacy'}
+        {': '}
+        {dataPrivacy ? percents[0] + '%' : '---'}{' '}
+      </button>
+
+      {isOpen && (
+        <div className={Styles.containerDropdown}>
+          <div className={Styles.donut}>
+            <svg width="100%" height="100%" viewBox="0 0 40 40" className={Styles.donut}>
+              {/* for change donut, change dasharray */}
+              <circle
+                className={Styles.donutSegment}
+                cx="20"
+                cy="20"
+                r="16"
+                fill="transparent"
+                stroke="#000"
+                strokeWidth="2.5"
+                strokeDasharray={percents[0] + ' ' + percents[1]}
+                strokeDashoffset="25"
+                strokeLinecap="round"
+                rx="250"></circle>
+              <g>
+                <text y="50%" x="50%" transform="translate(0, 2)">
+                  <tspan textAnchor="middle" className={Styles.donutPercent}>
+                    {dataPrivacy ? percents[0] : '?'}
+                  </tspan>
+                  {dataPrivacy && <tspan className={Styles.donutPercentSymbol}>%</tspan>}
+                </text>
+              </g>
+            </svg>
+          </div>
+
+          {isLoadingPrivacy && <h3>...</h3>}
+
+          {dataPrivacy && (
+            <h3>
+              {data?.t?.privacy ?? 'Privacy'}
+              {':'} {label}
+            </h3>
+          )}
+
+          {isErrorPrivacy && (
+            <h3>
+              Ops, {domain} {data?.t?.privacyScore[6] ?? "hasn't been analyzed yet"}
+            </h3>
+          )}
+
+          <p className={Styles.credits}>
+            {data?.t?.powered ?? 'Powered by'}{' '}
+            <a
+              href="https://www.privacymonitor.com/?utm_source=findto_app"
+              target="_blank"
+              rel="noopener">
+              Privacy Monitor
+            </a>
           </p>
-        )}
-        {isErrorPrivacy && <p> Ops, privacy of {domain} hasn't been analyzed yet</p>}
-      </div>
-    </WidgetContainer>
+        </div>
+      )}
+    </div>
   )
 }

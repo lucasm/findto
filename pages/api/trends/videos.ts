@@ -25,6 +25,7 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
         data.results.forEach((item) => {
           a.push({
             title: item.title ? item.title : item.name,
+            image: 'https://image.tmdb.org/t/p/w500/' + item.poster_path,
           })
         })
 
