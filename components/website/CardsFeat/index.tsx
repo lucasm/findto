@@ -6,7 +6,7 @@ import {
   IconMic,
   IconSearch,
   IconShield,
-  IconSparkle,
+  IconText,
   IconTrending,
   IconVisualSearch,
 } from '../../app/SvgIcons'
@@ -25,22 +25,10 @@ export default function CardsFeat() {
 
       <div>
         <figure>
-          <IconSparkle />
-        </figure>
-        <h3>Suggestions</h3>
-        <p>Get suggestions of search terms to help as you type</p>
-
-        {/* <p>
-          Go <Link href={'/pro'}>Pro</Link> to get unlimited access
-        </p> */}
-      </div>
-
-      <div>
-        <figure>
           <IconShield />
         </figure>
         <h3>Privacy ranking</h3>
-        <p>View the privacy level of each search source before do a search</p>
+        <p>See the privacy level of selected source before start your search</p>
       </div>
 
       <div>
@@ -48,11 +36,19 @@ export default function CardsFeat() {
           <IconTrending />
         </figure>
         <h3>Trends</h3>
-        <p>Trending topics, contents, events, services and places nearby you</p>
+        <p>Explore trending topics, contents, events, services and places nearby you</p>
 
         {/* <p>
-          Go <Link href={'/pro'}>Pro</Link> to get unlimited access
+          Become <Link href={'/pro'}>Pro</Link> for unlimited access
         </p> */}
+      </div>
+
+      <div>
+        <figure>
+          <IconText />
+        </figure>
+        <h3>Autocomplete</h3>
+        <p>Get suggestions of search terms to help as you type</p>
       </div>
 
       <div>

@@ -33,11 +33,11 @@ The centralized web, where our searches are monopolized, it's over. Findto encou
 
 - **Decentralized web search** — Quickly search, the same term, on multiple categories and sources
 
-- **Suggestions** — Get instant AI suggestions to help autocomplete terms as you type
-
 - **Privacy ranking** — See the privacy score of each search source, or how much your data are compromised
 
-- **Trends** — Trending topics, contents, events and places nearby you
+- **Trends** — Explore trending topics, media contents, products, events and places nearby you
+
+- **Autocomplete** — Get instant suggestions to help autocomplete terms as you type
 
 - **Accessibility** — Changeable layout and theme, color contrast enhanced, keyboard and screen reader navigation
 
@@ -47,11 +47,15 @@ The centralized web, where our searches are monopolized, it's over. Findto encou
 
 - **Visual search** — Use an image to search on supported sources \* In development
 
-- **Social action** — Instead ads, see a social cause to act \* In development
-
 ## 🔍 Sources
 
-All search sources and external data from third party APIs available on Findto are chosen by the criteria: 1) service popularity; 2) commitment with open access; 3) respect of privacy and copyright. All these sources are displayed inside the navigable categories on the app, and chosen by community. For more details, visit [Wiki](https://github.com/lucasm/findto/wiki).
+Search sources and external data from APIs available on Findto are chosen by the criteria:
+
+1. service popularity;
+1. commitment with open access;
+1. respect of privacy and copyright.
+
+All these sources are displayed inside the navigable categories on the app, and chosen by community. For more details, visit [Wiki](https://github.com/lucasm/findto/wiki).
 
 ## 🩷 Community
 
@@ -67,6 +71,6 @@ For code contributors: check the [Projects](https://github.com/lucasm/findto/pro
 
 ## 🔒 Privacy
 
-Findto respects privacy and does not store any searches or personal information of users. Read the [Privacy Policy](https://findto.app/privacy) for details.
+Findto respects privacy and does not store any searches or personal information of users. Read the [Privacy Policy](https://findto.app/privacy).
 
 Made in Brazil with love by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app).
