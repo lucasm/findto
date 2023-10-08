@@ -4,14 +4,13 @@ import { fetcher } from '../../../utils/http'
 import useSWR from 'swr'
 import { useSearch } from '../../../contexts/SearchContext'
 import Loader from '../Loader'
-import WidgetContainer from '../WidgetContainer'
 import { ITrends, ITrendsItem } from '../../../interfaces/trends'
 import { useEffect, useState } from 'react'
 import ButtonGeolocation from '../ButtonGeolocation'
-import { IconTrending } from '../SvgIcons'
 
 export default function SearchTrends() {
-  const { category, titleTrends, putValue, country, locale, latitude, longitude } = useSearch()
+  const { data, category, titleTrends, putValue, country, locale, latitude, longitude } =
+    useSearch()
   const [dataTrends, setDataTrends] = useState<ITrends>(null)
   const [errorTrends, setErrorTrends] = useState<any>(null)
 
@@ -319,41 +318,52 @@ export default function SearchTrends() {
   ])
 
   return (
-    <WidgetContainer
-      title={titleTrends ?? 'Trends'}
-      creditTitle={dataTrends?.credits_title ?? ''}
-      creditUrl={dataTrends?.credits_url ? dataTrends?.credits_url + '?utm_source=findto_app' : ''}>
-      <>
-        {category === 'Local' && <ButtonGeolocation />}
-        {category === 'Local' && loadingLocal && <Loader />}
+    <section className={Styles.section}>
+      <div className={Styles.title}>
+        <h2>{titleTrends ?? 'Trends'}</h2>
+      </div>
 
-        {!dataTrends && !errorTrends && category != 'Local' && <Loader />}
-        {errorTrends && <div>Error</div>}
-        {dataTrends && (
-          <div className={Styles.container}>
-            <ul className={Styles[`trends${category}`]}>
-              {dataTrends?.data?.map((item: ITrendsItem, index: number) => (
-                <li key={index}>
-                  <button
-                    onClick={() =>
-                      item.url ? window.open(item.url, '_blank') : putValue(item.title)
-                    }>
-                    {item.image && (
-                      <Image
-                        src={item.image}
-                        width={miniImage ? 60 : 120}
-                        height={100}
-                        alt={item.title}
-                      />
-                    )}
-                    {item.title && <span>{item.title}</span>}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </>
-    </WidgetContainer>
+      {category === 'Local' && <ButtonGeolocation />}
+      {category === 'Local' && loadingLocal && <Loader />}
+
+      {!dataTrends && !errorTrends && category != 'Local' && <Loader />}
+      {errorTrends && <div>Error</div>}
+      {dataTrends && (
+        <div className={Styles.container}>
+          <ul className={Styles[`trends${category}`]}>
+            {dataTrends?.data?.map((item: ITrendsItem, index: number) => (
+              <li key={index}>
+                <button
+                  onClick={() =>
+                    item.url ? window.open(item.url, '_blank') : putValue(item.title)
+                  }>
+                  {item.image && (
+                    <Image
+                      src={item.image}
+                      width={miniImage ? 60 : 120}
+                      height={100}
+                      alt={item.title}
+                    />
+                  )}
+                  {item.title && <span>{item.title}</span>}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      <div className={Styles.credits}>
+        <p>
+          {data?.t?.powered ?? 'Powered by'}
+          <a
+            href={dataTrends?.credits_url ? dataTrends?.credits_url + '?utm_source=findto_app' : ''}
+            target="_blank"
+            rel="noopener">
+            {dataTrends?.credits_title ?? ''}
+          </a>
+        </p>
+      </div>
+    </section>
   )
 }

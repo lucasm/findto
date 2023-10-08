@@ -30,6 +30,8 @@
       "indisponível",
       "ainda não foi analisado"
     ],
+    "learnMore": "Saiba mais",
+    "banner": ["Estamos construindo uma Web melhor", "Pesquisas diversas, seguras e produtivas"],
     "copyright": "Findto é um assistente para busca descentralizada na web. Todos os direitos reservados às marcas registradas e fontes externas. Criado por "
   },
   "categories": [
@@ -1344,8 +1346,7 @@
         },
         {
           "name": "App Store",
-          "action": "https://www.apple.com/br/search/",
-          "additional": "?src=globalnav",
+          "action": "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?media=software&term=",
           "color": "#1db2f9"
         },
         {

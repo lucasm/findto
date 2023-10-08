@@ -7,8 +7,7 @@
   color: var(--color-black);
   font-size: var(--font-size-big);
   border: none;
-  border-radius: var(--radius);
-  line-height: 1;
+  border-radius: var(--radius-full);
   transition: var(--transition);
   justify-content: center;
   align-items: center;

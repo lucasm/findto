@@ -18,7 +18,7 @@ export default function PagePrivacy() {
       <section>
         <div className={Style.container}>
           <article>
-            <h2>1. Privacy Policy</h2>
+            <h2>1. Privacy policy</h2>
             <p>Effective date: June 10, 2023.</p>
 
             <p>

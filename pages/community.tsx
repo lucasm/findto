@@ -3,7 +3,7 @@ import LayoutPage from '../components/website/LayoutPage'
 import CardsLink from '../components/website/CardsLink'
 
 export default function PageCommunity() {
-  const description = 'Help make decentralized web search accessible to everyone'
+  const description = 'Help make decentralized web search accessible to everyone!'
 
   return (
     <LayoutPage title="Community" description={description}>
@@ -32,9 +32,9 @@ export default function PageCommunity() {
             </p>
 
             <p>
-              Findto also interested in researching solutions and partnerships that strengthen
-              technologies of open access, privacy, diversity, accessibility, ethical AI, and
-              environmental justice.
+              Findto also interested in researching and partnerships that strengthen technologies of
+              open access, privacy, diversity, accessibility, responsible AI, and environmental
+              justice.
             </p>
 
             <br></br>

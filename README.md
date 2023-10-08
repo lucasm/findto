@@ -4,9 +4,7 @@
 </a>
 </div>
 
-<h1 align="center">
-<a href="https://findto.app/" target="_blank">Findto</a>
-</h1>
+<h1 align="center">Findto</h1>
 
 <p align="center">
 <a href="https://findto.app" target="_blank"><img alt="Languages" src="https://img.shields.io/badge/languages available -2-ffdb56"></a>
@@ -24,7 +22,7 @@ Decentralized search assistant<br>
 
 Findto is a free and open source assistant for decentralized web search.
 
-Findto's mission is to make searches truly free and more productive, putting people in control of algorithms and AIs — not the other way around.
+The mission of Findto is to make searches truly free and more productive, putting people in control of algorithms and AIs — not the other way around.
 
 Findto proposes an enhanced web search experience: you control diverse sources, view the privacy score of them, discover trending contents, and choose better results.
 
@@ -34,7 +32,7 @@ The centralized web, where our searches are monopolized, is over. Findto encoura
 
 - **Decentralized web search** — Quickly search, the same term, on multiple categories and sources
 
-- **Privacy ranking** — See the privacy score of selected source, or how much your data is protected
+- **Privacy ranking** — See a privacy score of the selected source, or how much your data are protected
 
 - **Trends** — Explore trending topics, contents, products, events and places nearby you
 

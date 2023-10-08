@@ -1,8 +1,7 @@
-import Style from '../styles/App.module.css'
 import LayoutApp from '../components/app/LayoutApp'
 import SearchApp from '../components/app/SearchApp'
 import WidgetTrends from '../components/app/WidgetTrends'
-import WidgetPrivacy from '../components/app/WidgetPrivacy'
+import Banner from '../components/app/Banner'
 
 export default function Index() {
   return (
@@ -11,8 +10,7 @@ export default function Index() {
       description="Findto is an assistant for decentralized web search. Get control of sources, AI and privacy.">
       <SearchApp />
       <WidgetTrends />
-
-      {/* <section className={Style.widgetContainer}></section> */}
+      <Banner />
     </LayoutApp>
   )
 }

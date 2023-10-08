@@ -79,7 +79,7 @@ export default function AppHeader() {
   }
   function handleCategory(category: string) {
     try {
-      refSearchTabs?.current?.['tab_' + category].click()
+      refSearchTabs?.current?.['tab_' + category]?.click()
       setCategory(category)
       window.localStorage.setItem('category', category)
       router.push({
@@ -87,7 +87,7 @@ export default function AppHeader() {
       })
     } catch (error) {
       console.error('Error loading category ' + category, error)
-      refSearchTabs?.current?.['tab_Web'].click()
+      refSearchTabs?.current?.['tab_Web']?.click()
     }
   }
   function handleCategoryIcon(category: string) {

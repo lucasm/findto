@@ -36,8 +36,8 @@ export default function AppFooter() {
               <Link href="/pro">Pro</Link>
             </li> */}
             <li>
-              <a href="https://ko-fi.com/findto" target="_blank">
-                {data?.t?.donate ?? 'Donate'} ❤︎
+              <a href="https://ko-fi.com/findto" target="_blank" rel="noopener">
+                {data?.t?.donate ?? 'Donate'}
               </a>
             </li>
             <li>

@@ -13,7 +13,7 @@ export default function PageTerms() {
       <section>
         <div className={Style.container}>
           <article>
-            <h2>1. Terms of Service</h2>
+            <h2>1. Terms of service</h2>
 
             <p>Last update: June 10, 2023.</p>
 
