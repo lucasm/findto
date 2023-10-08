@@ -78,14 +78,17 @@ export default function AppHeader() {
     console.log(layout)
   }
   function handleCategory(category: string) {
-    setCategory(category)
-    window.localStorage.setItem('category', category)
-
-    refSearchTabs?.current?.['tab_' + category].click()
-
-    router.push({
-      query: { view: category },
-    })
+    try {
+      refSearchTabs?.current?.['tab_' + category].click()
+      setCategory(category)
+      window.localStorage.setItem('category', category)
+      router.push({
+        query: { view: category },
+      })
+    } catch (error) {
+      console.error('Error loading category ' + category, error)
+      refSearchTabs?.current?.['tab_Web'].click()
+    }
   }
   function handleCategoryIcon(category: string) {
     switch (category) {
