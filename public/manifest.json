@@ -6,53 +6,41 @@
   "id": "/?utm_source=pwa",
   "display": "standalone",
   "display_override": ["window-controls-overlay"],
-  "background_color": "#fff",
-  "theme_color": "#fff",
+  "background_color": "#f5f5f7",
+  "theme_color": "#f5f5f7",
   "icons": [
     {
-      "src": "images/icon-144.png",
-      "sizes": "144x144",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "images/icon-144-maskable.png",
-      "sizes": "144x144",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "/images/icon-192.png",
+      "src": "/icon-192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any"
     },
     {
-      "src": "/images/icon-192-maskable.png",
+      "src": "/icon-192-maskable.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/images/icon-512.png",
+      "src": "/icon-512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any"
     },
     {
-      "src": "/images/icon-512-maskable.png",
+      "src": "/icon-512-maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/images/icon-1024.png",
+      "src": "/icon-1024.png",
       "type": "image/png",
       "sizes": "1024x1024",
       "purpose": "any"
     },
     {
-      "src": "/images/icon-1024-maskable.png",
+      "src": "/icon-1024-maskable.png",
       "sizes": "1024x1024",
       "type": "image/png",
       "purpose": "maskable"

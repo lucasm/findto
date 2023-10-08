@@ -1,6 +1,6 @@
 <div align="center">
 <a href="https://findto.app/?utm_source=findto_repo">
-<img height="124" src="https://findto.app/favicon.svg">
+<img height="124" src="https://findto.app/icon.svg">
 </a>
 </div>
 
