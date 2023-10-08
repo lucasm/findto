@@ -551,7 +551,7 @@
           "name": "TIDAL",
           "action": "https://listen.tidal.com/search",
           "query": "q",
-          "color": "#eeeeee"
+          "color": "#999999"
         },
         {
           "name": "TuneIn",
@@ -1041,19 +1041,17 @@
       "data": [
         {
           "name": "LinkedIn",
-          "action": "https://www.linkedin.com/jobs/search/?=keywords",
+          "action": "https://www.linkedin.com/jobs/search/?keywords=",
           "color": "#39BAFF"
         },
         {
           "name": "Glassdoor",
-          "action": "https://www.glassdoor.com.br/Job/jobs.htm",
-          "query": "sc.keyword",
+          "action": "https://www.glassdoor.com.br/Job/jobs.htm?sc.keyword=",
           "color": "#46d074"
         },
         {
           "name": "Catho",
-          "action": "https://www.catho.com.br/vagas/",
-          "query": "q",
+          "action": "https://www.catho.com.br/vagas/?q=",
           "color": "#ff70ad"
         },
         {
@@ -1063,26 +1061,22 @@
         },
         {
           "name": "Infojobs",
-          "action": "https://www.infojobs.com.br/empregos.aspx",
-          "query": "palabra",
+          "action": "https://www.infojobs.com.br/empregos.aspx?palabra=",
           "color": "#2391ff"
         },
         {
           "name": "Indeed",
-          "action": "https://br.indeed.com/jobs/",
-          "query": "q",
+          "action": "https://br.indeed.com/jobs/?q=",
           "color": "#4689ff"
         },
         {
           "name": "Adzuna",
-          "action": "https://www.adzuna.com.br/search",
-          "query": "q",
+          "action": "https://www.adzuna.com.br/search?q=",
           "color": "#39c74d"
         },
         {
           "name": "Trampos",
-          "action": "https://trampos.co/oportunidades/",
-          "query": "tr",
+          "action": "https://trampos.co/oportunidades/?tr=",
           "color": "#7575ff"
         },
         {
@@ -1092,32 +1086,27 @@
         },
         {
           "name": "Jooble",
-          "action": "https://br.jooble.org/SearchResult",
-          "query": "p",
+          "action": "https://br.jooble.org/SearchResult?p=",
           "color": "#87d644"
         },
         {
           "name": "Talent",
-          "action": "https://br.talent.com/jobs",
-          "query": "k",
+          "action": "https://br.talent.com/jobs?k=",
           "color": "#ff6a54"
         },
         {
           "name": "Upwork",
-          "action": "https://www.upwork.com/search/profiles/",
-          "query": "q",
+          "action": "https://www.upwork.com/nx/jobs/search/?q=",
           "color": "#88f456"
         },
         {
           "name": "Fiverr",
-          "action": "https://www.fiverr.com/search/gigs",
-          "query": "query",
+          "action": "https://www.fiverr.com/search/gigs?query=",
           "color": "#2bdd89"
         },
         {
           "name": "Concursos no Brasil",
-          "action": "https://concursosnobrasil.com/",
-          "query": "s",
+          "action": "https://concursosnobrasil.com/busca/?q=",
           "color": "#6199ed"
         }
       ]
@@ -1285,7 +1274,7 @@
         {
           "name": "searchcode",
           "action": "https://searchcode.com/?q=",
-          "color": "#1EAEDB"
+          "color": "#22CBFF"
         },
         {
           "name": "Docker Hub",
@@ -1382,6 +1371,16 @@
           "color": "#34aadc"
         },
         {
+          "name": "Softonic",
+          "action": "https://www.softonic.com.br/s/",
+          "color": "#0bda8a"
+        },
+        {
+          "name": "AlternativeTo",
+          "action": "https://alternativeto.net/browse/search/?q=",
+          "color": "#00a3ff"
+        },
+        {
           "name": "Product Hunt",
           "action": "https://www.producthunt.com/search?q=",
           "color": "#ff744c"
@@ -1395,11 +1394,6 @@
           "name": "Indiegogo",
           "action": "https://www.indiegogo.com/explore/all?q=",
           "color": "#f16fac"
-        },
-        {
-          "name": "AlternativeTo",
-          "action": "https://alternativeto.net/browse/search/?q=",
-          "color": "#00a3ff"
         }
       ]
     },

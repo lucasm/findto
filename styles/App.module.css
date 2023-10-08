@@ -92,10 +92,11 @@
 }
 .searchContainer select {
   background-color: var(--color-white-translucent);
-  height: var(--size-large);
+  height: var(--size-small);
   box-shadow: var(--box-shadow);
   border-radius: var(--radius-full);
   padding: 0 3rem 0 1.5rem;
+  color: var(--color-black);
 }
 .searchContainer h1 {
   font-size: 1.8rem;
@@ -145,7 +146,7 @@
   text-align: left;
   background: var(--color-white);
   box-shadow: var(--box-shadow);
-  border-radius: var(--radius);
+  border-radius: var(--radius-full);
   transition: all ease-in-out 0.25s;
 }
 .searchInput input:hover,

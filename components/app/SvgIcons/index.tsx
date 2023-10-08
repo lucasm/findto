@@ -261,17 +261,16 @@ export function IconBook() {
 export function IconBriefcase() {
   return (
     <svg
-      width="32"
-      height="32"
-      viewBox="0 0 32 32"
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      stroke="currentColor"
+      strokeWidth="2.1"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      strokeWidth="1"
-      stroke="currentColor">
-      <path
-        d="M13 5H19C19.5523 5 20 5.44772 20 6V8H12V6C12 5.44772 12.4477 5 13 5ZM10 6V8H7.5C5.01472 8 3 10.0147 3 12.5V23.5C3 25.9853 5.01472 28 7.5 28H24.5C26.9853 28 29 25.9853 29 23.5V12.5C29 10.0147 26.9853 8 24.5 8H22V6C22 4.34315 20.6569 3 19 3H13C11.3431 3 10 4.34315 10 6ZM27 14C27 15.6569 25.6569 17 24 17H19V16.5C19 15.6716 18.3284 15 17.5 15H14.5C13.6716 15 13 15.6716 13 16.5V17H8C6.34315 17 5 15.6569 5 14V12.5C5 11.1193 6.11929 10 7.5 10H24.5C25.8807 10 27 11.1193 27 12.5V14ZM13 19V19.5C13 20.3284 13.6716 21 14.5 21H17.5C18.3284 21 19 20.3284 19 19.5V19H24C25.1256 19 26.1643 18.6281 27 18.0004V23.5C27 24.8807 25.8807 26 24.5 26H7.5C6.11929 26 5 24.8807 5 23.5V18.0004C5.83566 18.6281 6.87439 19 8 19H13Z"
-        fill="currentColor"
-      />
+      strokeLinecap="round"
+      strokeLinejoin="round">
+      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
     </svg>
   )
 }
