@@ -2,6 +2,7 @@ import Style from '../../../styles/App.module.css'
 import Link from 'next/link'
 import SvgLogo from '../../website/SvgLogo'
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 import { useSearch } from '../../../contexts/SearchContext'
 import { normalizeId } from '../../../utils/formats'
 import SelectLanguage from '../SelectLanguage'
@@ -34,6 +35,8 @@ import {
 import Tooltip from '../Tooltip'
 
 export default function AppHeader() {
+  const router = useRouter()
+  const { view } = router.query
   const {
     data,
     layout,
@@ -50,21 +53,11 @@ export default function AppHeader() {
   const [showPopup, setShowPopup] = useState<boolean>(false)
   const titleSettings = data?.t?.settings ?? 'Settings'
 
-  // change header in mobile viewport
-  useEffect(() => {
-    if (isMobileViewport) {
-      if (layout === '2') {
-        setLayout('1')
-        window.localStorage.setItem('layout', '1')
-      }
-    }
-  }, [isMobileViewport])
-
-  function togglePopup() {
+  const togglePopup = () => {
     setShowPopup(!showPopup)
     !isMobileViewport && refSearchInput.current.focus()
   }
-  function toggleTheme() {
+  const toggleTheme = () => {
     if (theme == 'light') {
       setTheme('dark')
       window.localStorage.setItem('theme', 'dark')
@@ -74,7 +67,7 @@ export default function AppHeader() {
     }
     console.log(theme)
   }
-  function toggleLayout() {
+  const toggleLayout = () => {
     if (layout == '1') {
       setLayout('2')
       window.localStorage.setItem('layout', '2')
@@ -84,12 +77,15 @@ export default function AppHeader() {
     }
     console.log(layout)
   }
-
-  function handleCategory(category: string, name_trends: string) {
+  function handleCategory(category: string) {
     setCategory(category)
     window.localStorage.setItem('category', category)
 
     refSearchTabs?.current?.['tab_' + category].click()
+
+    router.push({
+      query: { view: category },
+    })
   }
   function handleCategoryIcon(category: string) {
     switch (category) {
@@ -128,6 +124,24 @@ export default function AppHeader() {
     }
   }
 
+  // url
+  useEffect(() => {
+    if (view) {
+      const paramView = Array.isArray(view) ? view[0] : view
+      handleCategory(paramView)
+    }
+  }, [view])
+
+  // change header in mobile viewport
+  useEffect(() => {
+    if (isMobileViewport) {
+      if (layout === '2') {
+        setLayout('1')
+        window.localStorage.setItem('layout', '1')
+      }
+    }
+  }, [isMobileViewport])
+
   return (
     <header className={Style.header}>
       {/* Logo */}
@@ -146,7 +160,7 @@ export default function AppHeader() {
                   <Tooltip text={item.name_translated ?? item.name} disable={layout === '2'}>
                     <button
                       className={category == item.name ? Style.activeLink : null}
-                      onClick={() => handleCategory(item.name, item.name_trends)}
+                      onClick={() => handleCategory(item.name)}
                       name={normalizeId(item.name)}>
                       {handleCategoryIcon(item.name)}
                       {item.name_translated ?? item.name}
@@ -168,7 +182,7 @@ export default function AppHeader() {
         </Tooltip>
       </div>
 
-      {/* Settings Modal */}
+      {/* Settings */}
       <Modal isOpen={showPopup} onClose={togglePopup} title={titleSettings}>
         <h3>{data?.t?.theme ?? 'Theme'}</h3>
         <div className={Style.containerSettings}>

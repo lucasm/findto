@@ -39,7 +39,7 @@ The centralized web, where our searches are monopolized, it's over. Findto encou
 
 - **Autocomplete** — Get instant suggestions to help autocomplete terms as you type
 
-- **Accessibility** — Changeable layout and theme, color contrast enhanced, keyboard and screen reader navigation
+- **Accessibility** — Change layout and theme color, contrast enhanced, use keyboard or screen reader navigation
 
 - **Internationalization** — Chose your country for local sources or use global search
 
@@ -49,13 +49,7 @@ The centralized web, where our searches are monopolized, it's over. Findto encou
 
 ## 🔍 Sources
 
-Search sources and external data from APIs available on Findto are chosen by the criteria:
-
-1. service popularity;
-1. commitment with open access;
-1. respect of privacy and copyright.
-
-All these sources are displayed inside the navigable categories on the app, and chosen by community. For more details, visit [Wiki](https://github.com/lucasm/findto/wiki).
+Search sources and external data from APIs available on Findto are chosen by the criteria: 1) service popularity; 2) commitment with open access; 3) respect of privacy and copyright. All sources are displayed inside the navigable categories on the app, and chosen by community. For more details, visit [Wiki](https://github.com/lucasm/findto/wiki).
 
 ## 🩷 Community
 
@@ -65,7 +59,7 @@ Choose your favorite platform to support and ✨ enjoy exclusive benefits ✨ li
 
 - [Support via Ko-Fi](https://ko-fi.com/findto)
 - [Support via Patreon](https://patreon.com/findto)
-- [Sponsor via GitHub Sponsors](https://github.com/sponsors/lucasm)
+- [Sponsor via GitHub](https://github.com/sponsors/lucasm)
 
 For code contributors: check the [Projects](https://github.com/lucasm/findto/projects) board and opened [Issues](https://github.com/lucasm/findto/issues) before send pull requests.
 
