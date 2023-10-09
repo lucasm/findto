@@ -214,110 +214,85 @@
       ]
     },
     {
-      "name": "Image",
+      "name": "Social",
       "active": true,
       "data": [
         {
-          "name": "GIPHY",
-          "action": "https://giphy.com/search/",
-
-          "color": "#8b84ff"
+          "name": "Twitter",
+          "action": "https://twitter.com/search?src=typed_query&q=",
+          "color": "#4abaff"
         },
         {
-          "name": "Flickr",
-          "action": "https://www.flickr.com/search",
+          "name": "Facebook",
+          "action": "https://www.facebook.com/public?query=",
+          "color": "#509CFF"
+        },
+        {
+          "name": "Instagram",
+          "action": "https://www.instagram.com/explore/tags/",
+          "color": "#FD70B0"
+        },
+        {
+          "name": "TikTok",
+          "action": "https://www.tiktok.com/search?q=",
+          "color": "#ff6986"
+        },
+        {
+          "name": "Reddit",
+          "action": "https://www.reddit.com/search?q=",
+          "color": "#ff8353"
+        },
+        {
+          "name": "LinkedIn",
+          "action": "https://www.linkedin.com/search/results/index/?keywords=",
+          "color": "#39BAFF"
+        },
+        {
+          "name": "Discord",
+          "action": "https://discord.com/guild-discovery?query=",
+          "color": "#8791FF"
+        },
+        {
+          "name": "Snapchat",
+          "action": "https://story.snapchat.com/search?q=",
+          "color": "#fffd5e"
+        },
+        {
+          "name": "Quora",
+          "action": "https://www.quora.com/search?q=",
+          "color": "#ff6966"
+        },
+        {
+          "name": "Tumblr",
+          "action": "https://www.tumblr.com/search/",
+          "color": "#5084bf"
+        },
+        {
+          "name": "Mastodon",
+          "action": "https://mastodon.social/tags/",
+          "color": "#8F8FFF"
+        },
+        {
+          "name": "Meetup",
+          "action": "https://www.meetup.com/find/?keywords=",
+          "color": "#ff5573"
+        },
+        {
+          "name": "Substack",
+          "action": "https://substack.com/search/",
+          "color": "#ff7934"
+        },
+        {
+          "name": "VK",
+          "action": "https://vk.com/search",
           "query": "q",
-          "color": "#ff73bc"
+          "color": "#55a4ff"
         },
         {
-          "name": "Unsplash",
-          "action": "https://unsplash.com/s/photos/",
-
-          "color": "#eee"
-        },
-        {
-          "name": "Pexels",
-          "action": "https://www.pexels.com/search/",
-
-          "color": "#35dfbd"
-        },
-        {
-          "name": "Freepik",
-          "action": "https://www.freepik.com/search",
-          "query": "query",
-          "color": "#4296ff"
-        },
-        {
-          "name": "Pixabay",
-          "action": "https://pixabay.com/photos/search/",
-
-          "color": "#5ee887"
-        },
-        {
-          "name": "Adobe Stock",
-          "action": "https://stock.adobe.com/search",
-          "query": "k",
-          "color": "#ddd"
-        },
-        {
-          "name": "Shutterstock",
-          "action": "https://www.shutterstock.com/search",
-          "query": "searchterm",
-          "color": "#ff473a"
-        },
-        {
-          "name": "Getty Images",
-          "action": "https://www.gettyimages.com/photos/",
-
-          "color": "#ddd"
-        },
-        {
-          "name": "SmugMug",
-          "action": "https://www.smugmug.com/search/",
+          "name": "Myspace",
+          "action": "https://myspace.com/search",
           "query": "q",
-          "color": "#b6ff23"
-        },
-        {
-          "name": "500px",
-          "action": "https://500px.com/search",
-          "query": "q",
-          "color": "#0099e5"
-        },
-        {
-          "name": "Poly",
-          "action": "https://poly.google.com/search/",
-
-          "color": "#ff5172"
-        },
-        {
-          "name": "CC",
-          "action": "https://search.creativecommons.org/search",
-          "query": "q",
-          "color": "#5fd1fc"
-        },
-        {
-          "name": "Imgur",
-          "action": "https://imgur.com/search",
-          "query": "q",
-          "color": "#3cea99"
-        },
-        {
-          "name": "DeviantArt",
-          "action": "https://www.deviantart.com/",
-          "query": "q",
-          "color": "#37ffbe"
-        },
-        {
-          "name": "Dribbble",
-          "action": "https://dribbble.com/search",
-          "query": "q",
-          "color": "#f082ac"
-        },
-        {
-          "name": "Behance",
-          "action": "https://www.behance.net/search",
-          "query": "search",
-          "color": "#377cff"
+          "color": "#f5f5f5"
         }
       ]
     },
@@ -421,6 +396,97 @@
       ]
     },
     {
+      "name": "Image",
+      "active": true,
+      "data": [
+        {
+          "name": "Pinterest",
+          "action": "https://br.pinterest.com/search/pins/?q=",
+          "color": "#ff6970"
+        },
+        {
+          "name": "Unsplash",
+          "action": "https://unsplash.com/s/photos/",
+          "color": "#cccccc"
+        },
+        {
+          "name": "GIPHY",
+          "action": "https://giphy.com/search/",
+          "color": "#8b84ff"
+        },
+        {
+          "name": "Flickr",
+          "action": "https://www.flickr.com/search?q=",
+          "color": "#ff73bc"
+        },
+        {
+          "name": "Pexels",
+          "action": "https://www.pexels.com/search/",
+          "color": "#1ac7a5"
+        },
+        {
+          "name": "Openverse",
+          "action": "https://openverse.org/search/?q=",
+          "color": "#fde034"
+        },
+        {
+          "name": "Freepik",
+          "action": "https://www.freepik.com/search?query=",
+          "color": "#4296ff"
+        },
+        {
+          "name": "Pixabay",
+          "action": "https://pixabay.com/photos/search/",
+          "color": "#5ee887"
+        },
+        {
+          "name": "Adobe Stock",
+          "action": "https://stock.adobe.com/search?k=",
+          "color": "#ddd"
+        },
+        {
+          "name": "Shutterstock",
+          "action": "https://www.shutterstock.com/search?searchterm=",
+          "color": "#ff6055"
+        },
+        {
+          "name": "Getty Images",
+          "action": "https://www.gettyimages.com/photos/",
+          "color": "#FAE9CD"
+        },
+        {
+          "name": "SmugMug",
+          "action": "https://www.smugmug.com/search/?q=",
+          "color": "#b9e75d"
+        },
+        {
+          "name": "500px",
+          "action": "https://500px.com/search?q=",
+          "color": "#0099e5"
+        },
+        {
+          "name": "Imgur",
+          "action": "https://imgur.com/search?q=",
+          "color": "#3cea99"
+        },
+        {
+          "name": "DeviantArt",
+          "action": "https://www.deviantart.com/?q=",
+          "color": "#37ffbe"
+        },
+        {
+          "name": "Dribbble",
+          "action": "https://dribbble.com/search?q=",
+          "color": "#f082ac"
+        },
+        {
+          "name": "Behance",
+          "action": "https://www.behance.net/search?search=",
+          "color": "#377cff"
+        }
+      ]
+    },
+    {
       "name": "Music",
       "name_trends": "Top music albums",
       "active": true,
@@ -513,109 +579,64 @@
       ]
     },
     {
-      "name": "Social",
+      "name": "Shopping",
+      "name_trends": "Trending products",
       "active": true,
       "data": [
         {
-          "name": "Twitter",
-          "action": "https://twitter.com/search",
-          "query": "q",
-          "color": "#4abaff"
+          "name": "Amazon",
+          "action": "https://www.amazon.com/s?k=",
+          "color": "#ffba51"
         },
         {
-          "name": "Facebook",
-          "action": "https://www.facebook.com/public",
-          "query": "query",
-          "color": "#628fff",
-          "child": [
-            {
-              "name": "Watch",
-              "action": "https://www.facebook.com/watch/search/",
-              "query": "query"
-            },
-            {
-              "name": "Marketplace",
-              "action": "https://www.facebook.com/marketplace/search/",
-              "query": "query"
-            },
-            {
-              "name": "Groups",
-              "action": "https://www.facebook.com/groups/search/groups_home/",
-              "query": "q"
-            }
-          ]
+          "name": "AliExpress",
+          "action": "https://www.aliexpress.com/wholesale?SearchText=",
+          "color": "#ff6363"
         },
         {
-          "name": "Instagram",
-          "action": "https://www.instagram.com/explore/tags/",
-
-          "color": "#ff83cd"
+          "name": "Ebay",
+          "action": "https://www.ebay.com/sch/i.html?_nkw=",
+          "color": "#4ca0ff"
         },
         {
-          "name": "LinkedIn",
-          "action": "https://www.linkedin.com/search/results/index/",
-          "query": "keywords",
-          "color": "#1da6ee"
+          "name": "Walmart",
+          "action": "https://www.walmart.com/search/?query=",
+          "color": "#ffc220"
         },
         {
-          "name": "Pinterest",
-          "action": "https://pinterest.com/search/pins/",
-          "query": "q",
-          "color": "#ff5860"
+          "name": "Best Buy",
+          "action": "https://www.bestbuy.com/site/searchpage.jsp?st=",
+          "color": "#ead853"
         },
         {
-          "name": "reddit",
-          "action": "https://www.reddit.com/search",
-          "query": "q",
-          "color": "#ff713a"
+          "name": "Etsy",
+          "action": "https://www.etsy.com/search?q=",
+          "color": "#ff8b3b"
         },
         {
-          "name": "TikTok",
-          "action": "https://www.tiktok.com/tag/",
-
-          "color": "#ff5475"
+          "name": "Target",
+          "action": "https://www.target.com/s?searchTerm=",
+          "color": "#ff5151"
         },
         {
-          "name": "Discord",
-          "action": "https://discord.com/guild-discovery",
-          "query": "query",
-          "color": "#7681ff"
+          "name": "Wish",
+          "action": "https://www.wish.com/search/",
+          "color": "#35c7ff"
         },
         {
-          "name": "Snapchat",
-          "action": "https://story.snapchat.com/search",
-          "query": "q",
-          "color": "#fdf97d"
+          "name": "Macys",
+          "action": "https://www.macys.com/shop/featured/",
+          "color": "#ff2b3b"
         },
         {
-          "name": "Meetup",
-          "action": "https://www.meetup.com/find/",
-          "query": "keywords",
-          "color": "#ff5573"
+          "name": "Groupon",
+          "action": "https://www.groupon.com/browse/?query=",
+          "color": "#88cc56"
         },
         {
-          "name": "Quora",
-          "action": "https://www.quora.com/search",
-          "query": "q",
-          "color": "#ff6966"
-        },
-        {
-          "name": "VK",
-          "action": "https://vk.com/search",
-          "query": "q",
-          "color": "#55a4ff"
-        },
-        {
-          "name": "Myspace",
-          "action": "https://myspace.com/search",
-          "query": "q",
-          "color": "#f5f5f5"
-        },
-        {
-          "name": "Ello",
-          "action": "https://ello.co/search",
-          "query": "terms",
-          "color": "#fff"
+          "name": "Craigslist",
+          "action": "https://craigslist.org/search/sss?query=",
+          "color": "#a96be2"
         }
       ]
     },
@@ -695,68 +716,6 @@
           "action": "https://www.mapquest.com/search/results",
           "query": "query",
           "color": "#5ec279"
-        }
-      ]
-    },
-    {
-      "name": "Shopping",
-      "name_trends": "Trending products",
-      "active": true,
-      "data": [
-        {
-          "name": "Amazon",
-          "action": "https://www.amazon.com/s?k=",
-          "color": "#ffba51"
-        },
-        {
-          "name": "AliExpress",
-          "action": "https://www.aliexpress.com/wholesale?SearchText=",
-          "color": "#ff6363"
-        },
-        {
-          "name": "Ebay",
-          "action": "https://www.ebay.com/sch/i.html?_nkw=",
-          "color": "#4ca0ff"
-        },
-        {
-          "name": "Walmart",
-          "action": "https://www.walmart.com/search/?query=",
-          "color": "#ffc220"
-        },
-        {
-          "name": "Best Buy",
-          "action": "https://www.bestbuy.com/site/searchpage.jsp?st=",
-          "color": "#ead853"
-        },
-        {
-          "name": "Etsy",
-          "action": "https://www.etsy.com/search?q=",
-          "color": "#ff8b3b"
-        },
-        {
-          "name": "Target",
-          "action": "https://www.target.com/s?searchTerm=",
-          "color": "#ff5151"
-        },
-        {
-          "name": "Wish",
-          "action": "https://www.wish.com/search/",
-          "color": "#35c7ff"
-        },
-        {
-          "name": "Macys",
-          "action": "https://www.macys.com/shop/featured/",
-          "color": "#ff2b3b"
-        },
-        {
-          "name": "Groupon",
-          "action": "https://www.groupon.com/browse/?query=",
-          "color": "#88cc56"
-        },
-        {
-          "name": "Craigslist",
-          "action": "https://craigslist.org/search/sss?query=",
-          "color": "#a96be2"
         }
       ]
     },

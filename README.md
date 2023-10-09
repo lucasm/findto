@@ -50,7 +50,7 @@ The centralized web, where our searches are monopolized, is over. Findto encoura
 
 Search sources and external data from APIs available on Findto are chosen by the criteria: 1) service popularity; 2) commitment with open access; 3) respect of privacy and copyright. All sources are displayed inside the navigable categories on the app, and chosen by community. For more details, visit [Wiki](https://github.com/lucasm/findto/wiki).
 
-## 🩷 Community
+## 🧡 Community
 
 Findto is supported by community.
 

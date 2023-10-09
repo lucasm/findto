@@ -440,14 +440,12 @@
         },
         {
           "name": "Openverse",
-          "action": "https://openverse.org/search/",
-          "query": "q",
+          "action": "https://openverse.org/search/?q=",
           "color": "#fde034"
         },
         {
           "name": "Freepik",
-          "action": "https://www.freepik.com/search",
-          "query": "query",
+          "action": "https://www.freepik.com/search?query=",
           "color": "#4296ff"
         },
         {
@@ -457,14 +455,12 @@
         },
         {
           "name": "Adobe Stock",
-          "action": "https://stock.adobe.com/search",
-          "query": "k",
+          "action": "https://stock.adobe.com/search?k=",
           "color": "#ddd"
         },
         {
           "name": "Shutterstock",
-          "action": "https://www.shutterstock.com/search",
-          "query": "searchterm",
+          "action": "https://www.shutterstock.com/search?searchterm=",
           "color": "#ff6055"
         },
         {
@@ -474,38 +470,32 @@
         },
         {
           "name": "SmugMug",
-          "action": "https://www.smugmug.com/search/",
-          "query": "q",
+          "action": "https://www.smugmug.com/search/?q=",
           "color": "#b9e75d"
         },
         {
           "name": "500px",
-          "action": "https://500px.com/search",
-          "query": "q",
+          "action": "https://500px.com/search?q=",
           "color": "#0099e5"
         },
         {
           "name": "Imgur",
-          "action": "https://imgur.com/search",
-          "query": "q",
+          "action": "https://imgur.com/search?q=",
           "color": "#3cea99"
         },
         {
           "name": "DeviantArt",
-          "action": "https://www.deviantart.com/",
-          "query": "q",
+          "action": "https://www.deviantart.com/?q=",
           "color": "#37ffbe"
         },
         {
           "name": "Dribbble",
-          "action": "https://dribbble.com/search",
-          "query": "q",
+          "action": "https://dribbble.com/search?q=",
           "color": "#f082ac"
         },
         {
           "name": "Behance",
-          "action": "https://www.behance.net/search",
-          "query": "search",
+          "action": "https://www.behance.net/search?search=",
           "color": "#377cff"
         }
       ]
