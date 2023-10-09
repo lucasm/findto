@@ -18,23 +18,28 @@ export default function PagePrivacy() {
       <section>
         <div className={Style.container}>
           <article>
-            <h2>1. Findto Privacy Notice</h2>
+            <h2>1. Findto Privacy Pledge</h2>
 
             <p>
               The Findto mission is encourage people choice a healthy web. We respect your privacy
               regarding any information we may collect from you across our services accessible at{' '}
-              <a href="http://findto.app">http://findto.app</a> ("Findto"). Findto is built in
-              privacy and do not store searches. External sources and services may collect and store
-              personal data.
+              <a href="http://findto.app">http://findto.app</a> ("Findto"). Findto is built on
+              privacy and do not store searches.{' '}
             </p>
 
             <p>
-              This privacy policy have accordance with the General Data Protection Law (Brazil LGPD)
-              and General Data Protection Regulation (European Union GDPR). Findto endorses these
-              legislation's as they allow user control over their data.
+              External sources and services may collect and store personal data. Thinking about it,
+              Findto displays a "privacy ranking" of every search provider, whenever available.
             </p>
 
-            <p>Using Findto you are agreeing to be bound by this policy.</p>
+            <p>
+              This privacy policy have accordance with the General Data Protection Law (Brazil
+              LGPD), General Data Protection Regulation (European Union GDPR) and similar
+              regulations. Findto endorses these legislation's as they allow user control over their
+              data.
+            </p>
+
+            <p>Using Findto you are agreeing to be bound by this policy. </p>
 
             <h2>2. Automatically Collected Information</h2>
 
@@ -125,8 +130,7 @@ export default function PagePrivacy() {
               Findto do not share any personally identifying information with third-parties. But for
               technical reasons and unintentionally, it may share with the services listed above and
               when redirecting the user to a search provider. These entities may have access to
-              personal information to perform their functions. Thinking about it, Findto displays a
-              "privacy ranking" of every search provider, whenever available.
+              personal information to perform their functions.
             </p>
 
             <h2>7. Store and Protection of Your Information</h2>
