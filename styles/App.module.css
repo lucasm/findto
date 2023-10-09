@@ -65,9 +65,9 @@
   display: inline-flex;
 }
 .tabs button {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   padding: 0 1rem;
-  margin: 0;
   border: 0;
   font-size: var(--font-size);
   color: var(--color-black);

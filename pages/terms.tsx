@@ -119,7 +119,7 @@ export default function PageTerms() {
             </p>
 
             <p>
-              If you are a legal entity and believe that your intelectual property or service has
+              If you are a legal entity and believe that your intellectual property or service has
               been used incorrectly on Findto, please, mail to legal@findto.app. As a user, if you
               are facing law violations or bad conduct by some external service, please, consider
               report for properly removal.
