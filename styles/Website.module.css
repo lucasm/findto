@@ -1,8 +1,6 @@
 /* Header */
 .header {
   position: relative;
-  width: 100%;
-  height: 3.5rem;
   background: var(--color-bg-white);
   color: var(--color-text-black);
 }
@@ -29,6 +27,7 @@
 /* Nav */
 .nav {
   display: flex;
+  padding: 1rem 0;
 }
 .nav ul {
   display: flex;
@@ -44,7 +43,7 @@
   padding: 1rem;
 }
 .nav ul li:last-child a {
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   color: var(--color-white);
   background: var(--color-black);
   border-radius: var(--radius-full);
@@ -53,25 +52,24 @@
   background: var(--color-black) !important;
 }
 
-/* Container */
 .container {
   margin: 0 auto;
   display: inline-block;
-  padding: 5rem 2rem;
+  padding: 6rem 2rem;
   width: 100%;
   max-width: 1024px;
-  /* background: lightblue; */
 }
+
 .actionContainer {
   max-width: 800px;
   margin: 0 auto;
   color: var(--color-text-black);
 }
 .actionContainer h2 {
-  font-size: var(--font-size-1);
+  font-size: 2.5rem;
 }
 
-/* PageLayout component */
+/* PageLayout */
 .page {
   display: flex;
   flex-direction: column;
@@ -83,10 +81,6 @@
 .page footer {
   background: var(--color-bg-white);
 }
-
-.page section h1 {
-  padding-bottom: 2.5rem;
-}
 .page section h2 {
   line-height: 1.25;
   margin-bottom: 2rem;
@@ -95,23 +89,29 @@
   margin-bottom: 1.5rem;
 }
 .page section p {
-  font-size: var(--font-size-big);
+  font-size: var(--font-size);
   margin-bottom: 2rem;
   line-height: 1.5;
+}
+.page section h1 + p {
+  margin-top: 2.5rem;
+}
+.page section h1 ~ p {
+  margin-bottom: 1.5rem;
 }
 
 /* App Icon */
 .icon {
   display: inline-block;
-  width: 10rem;
-  height: 10rem;
-  margin: 0 0 2rem;
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 2rem;
+  background-size: 3rem;
   background-image: url('/images/findto-icon-black.svg');
-  background-size: 4.5rem;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--color-white-translucent);
-  border-radius: 33.3%;
+  background-color: var(--color-white-translucent-2);
+  border-radius: 33.333%;
   box-shadow: var(--shadow-2);
 }
 .icon img {
@@ -126,22 +126,43 @@
 }
 .cardDuos div {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 5rem;
-  text-align: left;
   align-items: center;
+}
+.cardDuos h2 {
+  margin-top: 0;
 }
 .cardDuos figure {
   max-width: 400px;
 }
-.cardDuos h2 {
-  float: left;
-  width: 100%;
+
+@media screen and (min-width: 640px) {
+  .icon {
+    width: 10rem;
+    height: 10rem;
+    background-size: 4rem;
+  }
+
+  .cardDuos div {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+  }
+  .cardDuos div:nth-child(2) article {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .cardDuos div:nth-child(2) figure {
+    grid-column: 2;
+  }
 }
 
-/* Mobile */
-@media only screen and (max-width: 940px) {
-  .header {
-    background: yellow;
+@media only screen and (min-width: 940px) {
+  .page section p {
+    font-size: var(--font-size-big);
+  }
+
+  .actionContainer h2 {
+    font-size: var(--font-size-1);
   }
 }

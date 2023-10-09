@@ -9,9 +9,8 @@
 .cards a {
   position: relative;
   margin: 0;
-  padding: 2.5rem;
-  max-width: 15.5em;
-  /* min-height: 4rem; */
+  padding: 1rem;
+  max-width: 10rem;
   flex-basis: 100%;
   color: inherit;
   text-decoration: none;
@@ -41,14 +40,14 @@
 }
 .cards figure {
   display: flex;
-  width: 124px;
-  height: 124px;
+  width: 5rem;
+  height: 5rem;
   align-items: center;
   justify-content: center;
   border-radius: var(--radius);
   margin: 0 auto;
 }
 .cards svg {
-  width: 48px;
-  height: 48px;
+  width: 2.5rem;
+  height: 2.5rem;
 }

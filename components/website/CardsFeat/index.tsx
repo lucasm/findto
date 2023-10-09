@@ -10,7 +10,6 @@ import {
   IconTrending,
   IconVisualSearch,
 } from '../../app/SvgIcons'
-import Link from 'next/link'
 
 export default function CardsFeat() {
   return (
@@ -19,7 +18,7 @@ export default function CardsFeat() {
         <figure>
           <IconSearch />
         </figure>
-        <h3>Decentralized web search</h3>
+        <h3>Decentralized search</h3>
         <p>Search the same term on diverse categories and sources</p>
       </div>
 

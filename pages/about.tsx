@@ -39,6 +39,10 @@ export default function PageAbout() {
             </div>
 
             <div>
+              <figure>
+                <Svg type="search" color="colorsSvg" />
+              </figure>
+
               <article>
                 <h2>Discover results with more privacy</h2>
                 <p>
@@ -46,10 +50,6 @@ export default function PageAbout() {
                   Discover more. Choose better.
                 </p>
               </article>
-
-              <figure>
-                <Svg type="search" color="colorsSvg" />
-              </figure>
             </div>
 
             <div>

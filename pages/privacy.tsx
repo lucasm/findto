@@ -10,7 +10,7 @@ export default function PagePrivacy() {
       <section className="colors">
         <div className={Style.container}>
           <div className={Style.pageTitle}>
-            <h1>Privacy</h1>
+            <h1>Privacy Policy</h1>
           </div>
         </div>
       </section>
@@ -18,11 +18,10 @@ export default function PagePrivacy() {
       <section>
         <div className={Style.container}>
           <article>
-            <h2>1. Privacy policy</h2>
-            <p>Effective date: June 10, 2023.</p>
+            <h2>1. Findto Privacy Notice</h2>
 
             <p>
-              The Findto mission is encourage people choice a healthier web. We respect your privacy
+              The Findto mission is encourage people choice a healthy web. We respect your privacy
               regarding any information we may collect from you across our services accessible at{' '}
               <a href="http://findto.app">http://findto.app</a> ("Findto"). Findto is built in
               privacy and do not store searches. External sources and services may collect and store
@@ -37,7 +36,7 @@ export default function PagePrivacy() {
 
             <p>Using Findto you are agreeing to be bound by this policy.</p>
 
-            <h2>2. Automatically collected information</h2>
+            <h2>2. Automatically Collected Information</h2>
 
             <p>
               Findto automatically collect and store minimal public information (non personal data)
@@ -47,7 +46,7 @@ export default function PagePrivacy() {
               about its use and interaction.
             </p>
 
-            <h2>3. Information that you provide</h2>
+            <h2>3. Information that You Provide</h2>
 
             <p>
               Findto only receives and stores identifiable information (personal data) for those who
@@ -62,7 +61,7 @@ export default function PagePrivacy() {
               let you know why we're collecting it and how it will be used.
             </p>
 
-            <h2>4. Use of your information</h2>
+            <h2>4. Use of Your Information</h2>
 
             <p>Findto only use your information with the purpose of: </p>
 
@@ -80,7 +79,7 @@ export default function PagePrivacy() {
               or violate copyright and intellectual property rights.
             </p>
 
-            <h2>5. Cookies and tracking technologies</h2>
+            <h2>5. Cookies and Tracking Technologies</h2>
 
             <p>
               Findto and it's related email communications, use cookies and similar technologies,
@@ -120,7 +119,7 @@ export default function PagePrivacy() {
               functionality on settings, the cookies maybe are not set.
             </p>
 
-            <h2>6. Sharing your information</h2>
+            <h2>6. Sharing Your Information</h2>
 
             <p>
               Findto do not share any personally identifying information with third-parties. But for
@@ -130,7 +129,7 @@ export default function PagePrivacy() {
               "privacy ranking" of every search provider, whenever available.
             </p>
 
-            <h2>7. Store and protection of your information</h2>
+            <h2>7. Store and Protection of Your Information</h2>
 
             <p>
               Findto only retain collected information for as long as necessary to provide to you
@@ -140,7 +139,7 @@ export default function PagePrivacy() {
               some of your desired services.
             </p>
 
-            <h2>8. Opting out</h2>
+            <h2>8. Opting Out</h2>
 
             <p>
               Findto strongly encourages you take a look on third parties privacy policies linked
@@ -148,7 +147,7 @@ export default function PagePrivacy() {
               and how proceed to opt out of them individually.
             </p>
 
-            <h2>9. External links</h2>
+            <h2>9. External Links</h2>
 
             <p>
               Findto redirects and contain links to external websites and applications just for your
@@ -159,7 +158,7 @@ export default function PagePrivacy() {
               as possible.
             </p>
 
-            <h2>10. Changes to this policy</h2>
+            <h2>10. Changes to This Policy</h2>
 
             <p>
               Note that this policy can be revised at any time without notice. However, significant
@@ -168,7 +167,7 @@ export default function PagePrivacy() {
               changes.
             </p>
 
-            <h2>11. Contact for questions or requests</h2>
+            <h2>11. Questions and Requests</h2>
 
             <p>
               If you have any questions about how Findto handle public user data (unidentifiable)
@@ -176,7 +175,9 @@ export default function PagePrivacy() {
               <a href="mailto:legal@findto.app">legal@findto.app</a>.
             </p>
 
-            <p>Thanks for reading. Happy searches</p>
+            <p>Happy searches!</p>
+
+            <p>Effective date: June 10, 2023.</p>
           </article>
         </div>
       </section>
