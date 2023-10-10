@@ -284,14 +284,12 @@
         },
         {
           "name": "VK",
-          "action": "https://vk.com/search",
-          "query": "q",
+          "action": "https://vk.com/search?q=",
           "color": "#55a4ff"
         },
         {
           "name": "Myspace",
-          "action": "https://myspace.com/search",
-          "query": "q",
+          "action": "https://myspace.com/search?q=",
           "color": "#f5f5f5"
         }
       ]
@@ -338,8 +336,7 @@
         },
         {
           "name": "Hulu",
-          "action": "https://www.hulu.com/search",
-          "query": "q",
+          "action": "https://www.hulu.com/search?q=",
           "color": "#30ca84"
         },
         {
@@ -359,8 +356,7 @@
         },
         {
           "name": "TED",
-          "action": "https://www.ted.com/search",
-          "query": "q",
+          "action": "https://www.ted.com/search?q=",
           "color": "#ff5c50"
         },
         {
@@ -647,74 +643,62 @@
       "data": [
         {
           "name": "Foursquare",
-          "action": "https://foursquare.com/explore",
-          "query": "q",
+          "action": "https://foursquare.com/explore?q=",
           "color": "#6388f3"
         },
         {
           "name": "Google Maps",
           "action": "https://google.com/maps/search/",
-
           "color": "#468cff"
         },
         {
           "name": "Apple Maps",
-          "action": "http://maps.apple.com/",
-          "query": "q",
+          "action": "http://maps.apple.com/?q=",
           "color": "#4cb69a"
         },
         {
           "name": "Bing Maps",
-          "action": "https://www.bing.com/maps",
-          "query": "q",
+          "action": "https://www.bing.com/maps?q=",
           "color": "#0ac9c9"
         },
         {
           "name": "Tripadvisor",
-          "action": "https://www.tripadvisor.com/Search",
-          "query": "q",
+          "action": "https://www.tripadvisor.com/Search?q=",
           "color": "#34e0a1"
         },
         {
           "name": "Yelp",
-          "action": "https://www.yelp.com/search",
-          "query": "find_desc",
+          "action": "https://www.yelp.com/search?find_desc=",
           "color": "#ff5454"
         },
         {
           "name": "Booking",
           "action": "https://www.booking.com/",
-
           "color": "#2681ff"
         },
         {
           "name": "Airbnb",
           "action": "https://www.airbnb.com/s/",
-
           "color": "#FF5A5F"
         },
         {
           "name": "Moovit",
-          "action": "https://moovitapp.com/",
-          "query": "from",
+          "action": "https://moovitapp.com/?from=",
           "color": "#ff7f58"
         },
         {
           "name": "Uber",
-          "action": "https://uber.com/",
-          "query": "q",
+          "action": "https://uber.com/?q=",
           "color": "#eee"
         },
         {
           "name": "HERE WeGo",
           "action": "https://wego.here.com/search/",
-
           "color": "#01b6b2"
         },
         {
           "name": "Mapquest",
-          "action": "https://www.mapquest.com/search/results",
-          "query": "query",
+          "action": "https://www.mapquest.com/search/results?query=",
           "color": "#5ec279"
         }
       ]
@@ -919,68 +903,57 @@
       "data": [
         {
           "name": "LinkedIn",
-          "action": "https://www.linkedin.com/jobs/search/",
-          "query": "keywords",
+          "action": "https://www.linkedin.com/jobs/search/?keywords=",
           "color": "#1da6ee"
         },
         {
           "name": "Indeed",
-          "action": "https://www.indeed.com/jobs",
-          "query": "q",
+          "action": "https://www.indeed.com/jobs?q=",
           "color": "#3788ff"
         },
         {
           "name": "Glassdoor",
-          "action": "https://www.glassdoor.com/Job/jobs.htm",
-          "query": "sc.keyword",
+          "action": "https://www.glassdoor.com/Job/jobs.htm?sc.keyword=",
           "color": "#4dda7d"
         },
         {
           "name": "Upwork",
-          "action": "https://www.upwork.com/search/profiles/",
-          "query": "q",
+          "action": "https://www.upwork.com/search/profiles/?q=",
           "color": "#88f456"
         },
         {
           "name": "Fiverr",
-          "action": "https://www.fiverr.com/search/gigs",
-          "query": "query",
+          "action": "https://www.fiverr.com/search/gigs?query=",
           "color": "#3fca89"
         },
         {
           "name": "Monster",
-          "action": "https://www.monster.com/jobs/search/",
-          "query": "q",
+          "action": "https://www.monster.com/jobs/search/?q=",
           "color": "#975ff0"
         },
         {
           "name": "ZipRecruiter",
-          "action": "https://www.ziprecruiter.com/candidate/search",
-          "query": "search",
+          "action": "https://www.ziprecruiter.com/candidate/search?search=",
           "color": "#b2e522"
         },
         {
           "name": "LinkUp",
           "action": "https://www.linkup.com/search/results/",
-
           "color": "#b6f240"
         },
         {
           "name": "Dice",
-          "action": "https://www.dice.com/jobs",
-          "query": "q",
+          "action": "https://www.dice.com/jobs?q=",
           "color": "#ff3a41"
         },
         {
           "name": "CareerBuilder",
-          "action": "https://www.careerbuilder.com/jobs",
-          "query": "keywords",
+          "action": "https://www.careerbuilder.com/jobs?keywords=",
           "color": "#4aadfa"
         },
         {
           "name": "SimplyHired",
-          "action": "https://www.simplyhired.com/search",
-          "query": "q",
+          "action": "https://www.simplyhired.com/search?q=",
           "color": "#309fff"
         }
       ]
@@ -1156,8 +1129,7 @@
       "data": [
         {
           "name": "finviz",
-          "action": "https://finviz.com/search.ashx",
-          "query": "p",
+          "action": "https://finviz.com/search.ashx?p=",
           "color": "#d8d8d8"
         }
       ]
@@ -1168,56 +1140,47 @@
       "data": [
         {
           "name": "Pirate Bay",
-          "action": "https://thepiratebay10.org/search/",
-
+          "action": "https://thepiratebay.org/search.php?q=",
           "color": "#e89d6a"
         },
         {
           "name": "RARBG",
-          "action": "https://rarbgproxied.org/torrents.php",
-          "query": "search",
+          "action": "https://rarbgproxied.org/torrents.php?search=",
           "color": "#3860bb"
         },
         {
           "name": "1337X",
           "action": "https://1337x.to/search/",
-
           "color": "#d63600"
         },
         {
           "name": "Torrentz2",
-          "action": "https://torrentz2.eu/search",
-          "query": "f",
+          "action": "https://torrentz2.eu/search?f=",
           "color": "#369"
         },
         {
           "name": "Zooqle",
-          "action": "https://zooqle.com/search",
-          "query": "q",
+          "action": "https://zooqle.com/search?q=",
           "color": "#b5b359"
         },
         {
           "name": "YTS",
-          "action": "https://yts.su/movies",
-          "query": "keyword",
+          "action": "https://yts.su/movies?keyword=",
           "color": "#6AC045"
         },
         {
           "name": "LimeTorrents",
           "action": "https://www.limetorrents.info/search/all/",
-
           "color": "#b6f240"
         },
         {
           "name": "ExtraTorrent",
-          "action": "http://extratorrent.cd/search/",
-          "query": "search",
+          "action": "http://extratorrent.cd/search/?search=",
           "color": "#0067a9"
         },
         {
           "name": "EZTV",
           "action": "https://eztv.ag/search/",
-
           "color": "#10559e"
         }
       ]

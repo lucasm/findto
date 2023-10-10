@@ -611,8 +611,7 @@
         },
         {
           "name": "OLX",
-          "action": "https://www.olx.com.br/brasil",
-          "query": "q",
+          "action": "https://www.olx.com.br/brasil?q=",
           "color": "#b065ff"
         },
         {
@@ -726,8 +725,7 @@
         },
         {
           "name": "Apple Maps",
-          "action": "http://maps.apple.com/",
-          "query": "q",
+          "action": "http://maps.apple.com/?q=",
           "color": "#4cb69a"
         },
         {
@@ -737,14 +735,12 @@
         },
         {
           "name": "Tripadvisor",
-          "action": "https://www.tripadvisor.com/Search",
-          "query": "q",
+          "action": "https://www.tripadvisor.com/Search?q=",
           "color": "#40d59c"
         },
         {
           "name": "Booking",
-          "action": "https://www.booking.com/searchresults.pt-br.html",
-          "query": "ss",
+          "action": "https://www.booking.com/searchresults.pt-br.html?ss=",
           "color": "#2681ff"
         },
         {
@@ -754,32 +750,27 @@
         },
         {
           "name": "Skyscanner",
-          "action": "https://www.booking.com/searchresults.pt-br.html",
-          "query": "ss",
+          "action": "https://www.skyscanner.com.br/",
           "color": "#2681ff"
         },
         {
           "name": "Ingresso",
-          "action": "https://www.ingresso.com/busca/resultado",
-          "query": "q",
+          "action": "https://www.ingresso.com/busca/resultado?q=",
           "color": "#ff963f"
         },
         {
           "name": "Sympla",
-          "action": "https://www.sympla.com.br/eventos",
-          "query": "s",
+          "action": "https://www.sympla.com.br/eventos?s=",
           "color": "#5bbcff"
         },
         {
           "name": "Eventim",
-          "action": "https://www.eventim.com.br/search",
-          "query": "searchterm",
+          "action": "https://www.eventim.com.br/search?searchterm=",
           "color": "#8592ff"
         },
         {
           "name": "Ticket360",
-          "action": "https://www.ticket360.com.br/eventos/pesquisar",
-          "query": "s",
+          "action": "https://www.ticket360.com.br/eventos/pesquisar?s=",
           "color": "#ff963f"
         },
         {
@@ -789,14 +780,12 @@
         },
         {
           "name": "Yelp",
-          "action": "https://www.yelp.com.br/search",
-          "query": "find_desc",
+          "action": "https://www.yelp.com.br/search?find_desc=",
           "color": "#ff5454"
         },
         {
           "name": "Bing Travel",
-          "action": "https://www.bing.com/travel/place-information",
-          "query": "q",
+          "action": "https://www.bing.com/travel/place-information?q=",
           "color": "#37c3e3"
         },
         {

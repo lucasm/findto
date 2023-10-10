@@ -36,7 +36,6 @@
   --size-large: 3.25rem;
   --size-big: 3.5rem;
   --size-header: 260px;
-  --size-input: 4.25rem;
   --max-size-container: 1072px;
   --max-size-container-2: 800px;
   --transition-hover: hover 0.2s, background 0.2s, opacity 0.2s, box-shadow 0.2s;
@@ -67,6 +66,7 @@ h1,
 h2,
 h3,
 p,
+textarea,
 input,
 select,
 option {

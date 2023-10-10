@@ -62,7 +62,7 @@ export default function SearchApp() {
       }
     }
   }
-  // render child
+  // render options
   function renderChild(id: string) {
     const source = getSearchSource(id)
     return (
@@ -88,21 +88,25 @@ export default function SearchApp() {
     !isMobileViewport && inputFocus()
 
     // url
-    const query = searchSource?.query ? '?' + searchSource?.query + '=' : ''
+    const action = searchSource?.action
     const additional = searchSource?.additional ?? ''
-    const credits = '&utm_source=findto_app'
 
-    searchSource?.query
-      ? setSearchUrl(searchSource?.action + query + inputValue + additional + credits)
-      : setSearchUrl(searchSource?.action + inputValue + additional)
+    setSearchUrl(
+      action?.includes('?')
+        ? action + inputValue + additional + '&utm_source=findto_app'
+        : action + inputValue + additional
+    )
 
     // options
     setIsChild(searchSource?.child ? true : false)
   }
-  // handle input
-  const handleInputChange = (event: any) => {
+  // handle change
+  const handleChange = (event: any) => {
     setInputValue(event.target.value)
     setInputActive(event.target.value !== '' ? true : false)
+
+    event.target.style.height = 'auto'
+    event.target.style.height = event.target.scrollHeight + 'px'
   }
   // handle key enter
   const handleKey = (event: any) => {
@@ -195,18 +199,18 @@ export default function SearchApp() {
 
             {/* Input */}
             <label htmlFor="search">{search ? 'Search ' + search : 'Search input'}</label>
-            <input
+            <textarea
               id="search"
               ref={refSearchInput}
-              type="text"
               value={inputValue}
               aria-label="Search"
               className={Style.searchInput}
               placeholder=""
               autoComplete="off"
-              maxLength={100}
-              onChange={handleInputChange}
-              onFocus={handleInputChange}
+              maxLength={2000}
+              rows={1}
+              onChange={handleChange}
+              onFocus={handleChange}
               onKeyDown={handleKey}
               autoFocus
               required
