@@ -339,7 +339,7 @@ export default function SearchTrends() {
       {category === 'Local' && loadingLocal && <Loader />}
 
       {!dataTrends && !errorTrends && category != 'Local' && <Loader />}
-      {errorTrends && <div>Error</div>}
+
       {dataTrends && (
         <div className={Styles.container}>
           <ul className={Styles[`trends${category}`]}>
@@ -360,16 +360,22 @@ export default function SearchTrends() {
         </div>
       )}
 
+      {errorTrends && <div>Error</div>}
+
       <div className={Styles.credits}>
-        <p>
-          {data?.t?.powered ?? 'Powered by'}
-          <a
-            href={dataTrends?.credits_url ? dataTrends?.credits_url + '?utm_source=findto_app' : ''}
-            target="_blank"
-            rel="noopener">
-            {dataTrends?.credits_title ?? ''}
-          </a>
-        </p>
+        {dataTrends && (
+          <p>
+            {data?.t?.powered ?? 'Powered by'}
+            <a
+              href={
+                dataTrends?.credits_url ? dataTrends?.credits_url + '?utm_source=findto_app' : ''
+              }
+              target="_blank"
+              rel="noopener">
+              {dataTrends?.credits_title ?? ''}
+            </a>
+          </p>
+        )}
       </div>
     </section>
   )

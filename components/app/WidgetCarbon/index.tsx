@@ -108,35 +108,29 @@ export default function WidgetCarbon() {
 
               <h4>
                 {'* '}
-                {data?.t?.carbonScore[4] ?? 'cleaner than other web pages'}
+                {data?.t?.carbonScore[0] ?? 'cleaner than other web pages'}
               </h4>
 
               <h3>
-                {data?.t?.carbon ?? 'Carbon'}
-                {': '}
-
                 {dataCarbon?.statistics?.co2?.grid?.grams
                   ? dataCarbon?.statistics?.co2?.grid?.grams.toFixed(2) + 'g '
                   : '?'}
 
                 {dataCarbon?.statistics?.co2?.grid?.grams &&
-                  (data?.t?.carbonScore[0] ?? 'per visit')}
+                  (data?.t?.carbonScore[1] ?? 'of carbon per visit')}
               </h3>
 
               <h4>
-                {data?.t?.carbonScore[1] ?? 'Energy'}
-                {': '}
-
                 {dataCarbon?.green
-                  ? data?.t?.carbonScore[2] ?? 'sustainable'
-                  : data?.t?.carbonScore[3] ?? 'dirty'}
+                  ? data?.t?.carbonScore[2] ?? 'Sustainable energy'
+                  : data?.t?.carbonScore[3] ?? 'Dirty energy'}
               </h4>
             </>
           )}
 
           {errorCarbon && (
             <h3>
-              Ops, {domain} {data?.t?.carbonScore[5] ?? "hasn't been analyzed yet"}
+              Ops, {domain} {data?.t?.carbonScore[4] ?? "hasn't been analyzed yet"}
             </h3>
           )}
 

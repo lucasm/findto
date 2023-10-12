@@ -32,7 +32,9 @@ The centralized web, where our searches are monopolized, is over. Findto encoura
 
 - **Decentralized web search** — Quickly search, the same term, on multiple categories and sources
 
-- **Privacy ranking** — See a privacy score of the selected source, or how much your data are protected
+- **Privacy level** — View the privacy level of selected source, or how much your data are protected
+
+- **Carbon footprint** — View the estimate carbon footprint of selected source
 
 - **Trends** — Explore trending topics, contents, products, events and places nearby you
 
@@ -58,7 +60,7 @@ Choose your favorite platform to support and ✨ enjoy exclusive benefits ✨ li
 
 - [Support via Ko-Fi](https://ko-fi.com/findto)
 - [Support via Patreon](https://patreon.com/findto)
-- [Sponsor via GitHub](https://github.com/sponsors/lucasm)
+- [Sponsor via GitHub Sponsors](https://github.com/sponsors/lucasm)
 
 For code contributors: check the [Projects](https://github.com/lucasm/findto/projects) board and opened [Issues](https://github.com/lucasm/findto/issues) before send pull requests.
 
