@@ -3,7 +3,8 @@ import LayoutPage from '../components/website/LayoutPage'
 import CardsLink from '../components/website/CardsLink'
 
 export default function PageCommunity() {
-  const description = 'Help make decentralized web search accessible to everyone.'
+  const description =
+    'Help make decentralized web search accessible for all people and friendly for the planet.'
 
   return (
     <LayoutPage title="Community" description={description}>
@@ -21,18 +22,28 @@ export default function PageCommunity() {
           <CardsLink />
 
           <article>
-            <h3>Get involved</h3>
+            <h3>Our mission</h3>
 
             <p>
               Findto is an assistant for decentralized web search, free and open source, developed
-              by community. Our mission is to deliver an enhanced, democratic and high-performance,
-              search experience that positively impacts everyone.
+              by community. Our mission is to deliver a high-performance and democratic search
+              experience that positively impacts people and the planet.
             </p>
 
             <p>
-              Findto also interested in researching and partnerships to strengthen technologies of
-              open access, privacy, diversity, accessibility, responsible AI, and environmental
+              Findto is committed to the United Nations 2030 Agenda for Sustainable Development,
+              signed by several countries.
+            </p>
+
+            <p>
+              We are interested in researching and partnerships to strengthen technologies of open
+              access, privacy, diversity, web accessibility, responsible AI, and environmental
               justice.
+            </p>
+
+            <p>
+              If you share this vision for a better Web contributing to a better planet, feel free
+              to help us build Findto.
             </p>
 
             <br></br>

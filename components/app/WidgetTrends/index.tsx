@@ -23,7 +23,12 @@ export default function SearchTrends() {
 
   // Web
   function useApiWeb() {
-    const { data, error } = useSWR(country ? `/api/trends/web/?country=${country}` : null, fetcher)
+    const { data, error } = useSWR(
+      (category === 'Web' || category === 'AI') && country
+        ? `/api/trends/web/?country=${country}`
+        : null,
+      fetcher
+    )
 
     return {
       dataWeb: data,
@@ -206,6 +211,12 @@ export default function SearchTrends() {
     setErrorTrends(null)
 
     switch (category) {
+      case 'Web':
+        {
+          dataWeb && setDataTrends(dataWeb)
+          errorWeb && setErrorTrends(errorWeb)
+        }
+        break
       case 'Social':
         {
           dataSocial && setDataTrends(dataSocial)
@@ -283,6 +294,7 @@ export default function SearchTrends() {
       default: {
         dataWeb && setDataTrends(dataWeb)
         errorWeb && setErrorTrends(errorWeb)
+        break
       }
     }
   }, [
@@ -338,12 +350,7 @@ export default function SearchTrends() {
                     item.url ? window.open(item.url, '_blank') : putValue(item.title)
                   }>
                   {item.image && (
-                    <Image
-                      src={item.image}
-                      width={miniImage ? 60 : 120}
-                      height={100}
-                      alt={item.title}
-                    />
+                    <img src={item.image} width={miniImage ? 60 : 120} alt={item.title} />
                   )}
                   {item.title && <span>{item.title}</span>}
                 </button>

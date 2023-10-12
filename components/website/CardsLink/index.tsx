@@ -32,7 +32,7 @@ export default function CardsLink() {
       title: 'Discord',
       url: 'https://discord.gg/gEDm5MU6pq',
       icon: svgDiscord,
-      active: true,
+      active: false,
     },
     {
       title: 'Get Pro version',

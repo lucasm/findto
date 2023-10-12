@@ -18,7 +18,7 @@ export default function AppFooter() {
         <div>
           <p>
             {data?.t?.copyright ??
-              'Findto is an assistant for decentralized web search, free and open source. All rights reserved to trademarks and external resources. Made by '}{' '}
+              'Findto is an assistant for decentralized web search with positive impact. All rights reserved to trademarks and external sources. Made by '}{' '}
             <a href="https://lucasm.dev/?utm_source=findto_app" target="_blank" rel="noreferrer">
               Lucas Menezes
             </a>

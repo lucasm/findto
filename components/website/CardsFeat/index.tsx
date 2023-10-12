@@ -3,6 +3,7 @@ import {
   IconAccessibility,
   IconCheckOk,
   IconLanguage,
+  IconLeaf,
   IconMic,
   IconSearch,
   IconShield,
@@ -26,8 +27,16 @@ export default function CardsFeat() {
         <figure>
           <IconShield />
         </figure>
-        <h3>Privacy ranking</h3>
-        <p>See the privacy level of selected source before start your search</p>
+        <h3>Privacy level</h3>
+        <p>View the privacy level of selected source</p>
+      </div>
+
+      <div>
+        <figure>
+          <IconLeaf />
+        </figure>
+        <h3>Carbon footprint</h3>
+        <p>View the estimate carbon footprint of selected source</p>
       </div>
 
       <div>
@@ -52,6 +61,14 @@ export default function CardsFeat() {
 
       <div>
         <figure>
+          <IconMic />
+        </figure>
+        <h3>Voice search</h3>
+        <p>Use your voice to search anywhere</p>
+      </div>
+
+      <div>
+        <figure>
           <IconAccessibility />
         </figure>
         <h3>Accessibility</h3>
@@ -68,14 +85,6 @@ export default function CardsFeat() {
 
       <div>
         <figure>
-          <IconMic />
-        </figure>
-        <h3>Voice search</h3>
-        <p>Use your voice to search anywhere</p>
-      </div>
-
-      <div>
-        <figure>
           <IconVisualSearch />
         </figure>
         <h3>Visual search</h3>
@@ -84,7 +93,7 @@ export default function CardsFeat() {
         <p>* In development</p>
       </div>
 
-      <div>
+      {/* <div>
         <figure>
           <IconCheckOk />
         </figure>
@@ -92,7 +101,7 @@ export default function CardsFeat() {
         <p>Instead ads, see a social cause to act</p>
 
         <p>* In development</p>
-      </div>
+      </div> */}
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import axios from 'axios'
 
-export default async function endpointPrivacy(
+export default async function endpointCarbon(
   req: NextApiRequest,
   res: NextApiResponse
 ): Promise<void> {
@@ -10,7 +10,7 @@ export default async function endpointPrivacy(
   } = req
 
   if (url) {
-    const api = 'https://api.privacymonitor.com/score/?q=' + url
+    const api = 'https://api.websitecarbon.com/site?url=' + url
 
     await axios
       .get(api)

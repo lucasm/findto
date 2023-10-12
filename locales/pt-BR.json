@@ -28,11 +28,21 @@
       "muito boa",
       "excepcional",
       "indisponível",
+      "ainda não foi analisado",
+      "Nível de privacidade"
+    ],
+    "carbon": "Carbono",
+    "carbonScore": [
+      "por visita",
+      "Energia",
+      "sustentável",
+      "suja",
+      "mais limpo que outros sites",
       "ainda não foi analisado"
     ],
     "learnMore": "Saiba mais",
-    "banner": ["Estamos construindo uma Web melhor", "Pesquisas diversas, seguras e produtivas"],
-    "copyright": "Findto é um assistente para busca descentralizada na web. Todos os direitos reservados às marcas registradas e fontes externas. Criado por "
+    "banner": ["Estamos construindo uma Web melhor", "Pesquise, descubra e ajude o planeta"],
+    "copyright": "Findto é um assistente para busca descentralizada na web e impacto positivo. Todos os direitos reservados às marcas registradas e fontes externas. Criado por "
   },
   "categories": [
     {
@@ -43,84 +53,12 @@
         {
           "name": "Google",
           "action": "https://www.google.com/search?q=",
-          "color": "#649fff",
-          "child": [
-            {
-              "name": "Tudo",
-              "action": "https://www.google.com/search?q="
-            },
-            {
-              "name": "Imagens",
-              "additional": "&tbm=isch"
-            },
-            {
-              "name": "Vídeos",
-              "additional": "&tbm=vid"
-            },
-            {
-              "name": "Notícias",
-              "additional": "&tbm=nws"
-            },
-            {
-              "name": "Mapas",
-              "action": "https://google.com/maps/search/"
-            },
-            {
-              "name": "Compras",
-              "additional": "&tbm=shop"
-            },
-            {
-              "name": "Livros",
-              "additional": "&tbm=bks"
-            },
-            {
-              "name": "Tradutor",
-              "action": "https://translate.google.com/?text="
-            },
-            {
-              "name": "Vagas",
-              "additional": "&ibp=htl;jobs"
-            }
-          ]
+          "color": "#649fff"
         },
         {
           "name": "Bing",
           "action": "https://www.bing.com/search?q=",
-          "color": "#4dd1f0",
-          "child": [
-            {
-              "name": "Tudo",
-              "action": "https://www.bing.com/search?q="
-            },
-            {
-              "name": "Imagens",
-              "action": "https://www.bing.com/images/search?="
-            },
-            {
-              "name": "Vídeos",
-              "action": "https://www.bing.com/videos/search?="
-            },
-            {
-              "name": "Notícias",
-              "action": "https://www.bing.com/news/search?="
-            },
-            {
-              "name": "Mapas",
-              "action": "https://www.bing.com/maps?q="
-            },
-            {
-              "name": "Viagens",
-              "action": "https://www.bing.com/travel/place-information?q="
-            },
-            {
-              "name": "Eventos",
-              "action": "https://www.bing.com/events/search/?="
-            },
-            {
-              "name": "Tradutor",
-              "action": "https://www.bing.com/translator/?text="
-            }
-          ]
+          "color": "#4dd1f0"
         },
         {
           "name": "DuckDuckGo",

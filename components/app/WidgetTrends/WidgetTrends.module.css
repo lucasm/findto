@@ -1,11 +1,6 @@
 .section {
-  /* background: var(--color-bg-white);
-  padding: 2.5rem;
-  border-radius: var(--radius-big);
-  box-shadow: var(--box-shadow); */
   width: 100%;
 }
-
 .container ul {
   filter: grayscale(100%);
   display: flex;
@@ -37,6 +32,9 @@
   text-align: left;
   font-size: var(--font-size-big);
   letter-spacing: -0.05rem;
+}
+.container ul li button img {
+  border-radius: 4px;
 }
 
 .trends {

@@ -29,7 +29,7 @@ export default function PagePrivacy() {
 
             <p>
               External sources and services may collect and store personal data. Thinking about it,
-              Findto displays a "privacy ranking" of every search provider, whenever available.
+              Findto displays a "Privacy Level" of every search provider, whenever available.
             </p>
 
             <p>

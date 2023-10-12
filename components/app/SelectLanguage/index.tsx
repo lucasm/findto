@@ -12,7 +12,7 @@ export default function SelectLanguage() {
 
   return (
     <form>
-      <label htmlFor="language" style={{ display: 'none' }}>
+      <label htmlFor="language" style={{ fontSize: '0' }}>
         Select a language:
       </label>
       <select id="language" onChange={changeLanguage} defaultValue={locale}>

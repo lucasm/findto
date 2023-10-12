@@ -9,6 +9,7 @@ import { ISearchCategory, ISearch, ISearchChild } from '../../../interfaces/sear
 import { IconClose, IconSend } from '../SvgIcons'
 import Tooltip from '../Tooltip'
 import WidgetPrivacy from '../WidgetPrivacy'
+import WidgetCarbon from '../WidgetCarbon'
 
 export default function SearchApp() {
   const { locale } = useRouter()
@@ -110,8 +111,11 @@ export default function SearchApp() {
   }
   // handle key enter
   const handleKey = (event: any) => {
-    if (event.key === 'Enter') {
+    if (event.key === 'Enter' && event.shiftKey) {
+      // prevents Enter from skipping a line without Shift
+    } else if (event.key === 'Enter') {
       if (isInputActive) {
+        event.preventDefault()
         refSendButton.current.click()
       } else {
         inputFocus(event)
@@ -254,6 +258,7 @@ export default function SearchApp() {
 
           <div className={Style.footerActions}>
             <WidgetPrivacy />
+            <WidgetCarbon />
             {/* Options */}
             {!isMobileViewport && isChild && renderChild(search)}
           </div>

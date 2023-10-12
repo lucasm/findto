@@ -10,84 +10,12 @@
         {
           "name": "Google",
           "action": "https://www.google.com/search?q=",
-          "color": "#649fff",
-          "child": [
-            {
-              "name": "All",
-              "action": "https://www.google.com/search?q="
-            },
-            {
-              "name": "Images",
-              "additional": "&tbm=isch"
-            },
-            {
-              "name": "Videos",
-              "additional": "&tbm=vid"
-            },
-            {
-              "name": "News",
-              "additional": "&tbm=nws"
-            },
-            {
-              "name": "Maps",
-              "action": "https://google.com/maps/search/"
-            },
-            {
-              "name": "Shopping",
-              "additional": "&tbm=shop"
-            },
-            {
-              "name": "Books",
-              "additional": "&tbm=bks"
-            },
-            {
-              "name": "Transator",
-              "action": "https://translate.google.com/?text="
-            },
-            {
-              "name": "Jobs",
-              "additional": "&ibp=htl;jobs"
-            }
-          ]
+          "color": "#649fff"
         },
         {
           "name": "Bing",
           "action": "https://www.bing.com/search?q=",
-          "color": "#4dd1f0",
-          "child": [
-            {
-              "name": "All",
-              "action": "https://www.bing.com/search?q="
-            },
-            {
-              "name": "Images",
-              "action": "https://www.bing.com/images/search?="
-            },
-            {
-              "name": "Videos",
-              "action": "https://www.bing.com/videos/search?="
-            },
-            {
-              "name": "News",
-              "action": "https://www.bing.com/news/search?="
-            },
-            {
-              "name": "Maps",
-              "action": "https://www.bing.com/maps?q="
-            },
-            {
-              "name": "Travel",
-              "action": "https://www.bing.com/travel/place-information?q="
-            },
-            {
-              "name": "Events",
-              "action": "https://www.bing.com/events/search/?="
-            },
-            {
-              "name": "Translator",
-              "action": "https://www.bing.com/translator/?text="
-            }
-          ]
+          "color": "#4dd1f0"
         },
         {
           "name": "DuckDuckGo",
@@ -642,14 +570,9 @@
       "active": true,
       "data": [
         {
-          "name": "Foursquare",
-          "action": "https://foursquare.com/explore?q=",
-          "color": "#6388f3"
-        },
-        {
           "name": "Google Maps",
           "action": "https://google.com/maps/search/",
-          "color": "#468cff"
+          "color": "#649fff"
         },
         {
           "name": "Apple Maps",
@@ -657,14 +580,39 @@
           "color": "#4cb69a"
         },
         {
-          "name": "Bing Maps",
-          "action": "https://www.bing.com/maps?q=",
-          "color": "#0ac9c9"
+          "name": "Airbnb",
+          "action": "https://www.airbnb.com/s/",
+          "color": "#ff607d"
         },
         {
           "name": "Tripadvisor",
           "action": "https://www.tripadvisor.com/Search?q=",
-          "color": "#34e0a1"
+          "color": "#40d59c"
+        },
+        {
+          "name": "Booking",
+          "action": "https://www.booking.com/searchresults.html?ss=",
+          "color": "#2681ff"
+        },
+        {
+          "name": "Kayak",
+          "action": "https://www.kayak.com/explore/",
+          "color": "#ff853c"
+        },
+        {
+          "name": "Skyscanner",
+          "action": "https://www.skyscanner.com/",
+          "color": "#2681ff"
+        },
+        {
+          "name": "Fandango",
+          "action": "https://www.fandango.com/search/results?q=lion",
+          "color": "#ff963f"
+        },
+        {
+          "name": "Eventbrite",
+          "action": "https://www.eventbrite.com/d/",
+          "color": "#f05537"
         },
         {
           "name": "Yelp",
@@ -672,24 +620,9 @@
           "color": "#ff5454"
         },
         {
-          "name": "Booking",
-          "action": "https://www.booking.com/",
-          "color": "#2681ff"
-        },
-        {
-          "name": "Airbnb",
-          "action": "https://www.airbnb.com/s/",
-          "color": "#FF5A5F"
-        },
-        {
-          "name": "Moovit",
-          "action": "https://moovitapp.com/?from=",
-          "color": "#ff7f58"
-        },
-        {
-          "name": "Uber",
-          "action": "https://uber.com/?q=",
-          "color": "#eee"
+          "name": "Bing Maps",
+          "action": "https://www.bing.com/maps?q=los+angles",
+          "color": "#0ac9c9"
         },
         {
           "name": "HERE WeGo",
@@ -700,6 +633,21 @@
           "name": "Mapquest",
           "action": "https://www.mapquest.com/search/results?query=",
           "color": "#5ec279"
+        },
+        {
+          "name": "Foursquare",
+          "action": "https://foursquare.com/explore?q=",
+          "color": "#6388f3"
+        },
+        {
+          "name": "Moovit",
+          "action": "https://moovitapp.com/?from=",
+          "color": "#ff7f58"
+        },
+        {
+          "name": "Uber",
+          "action": "https://uber.com/?q=",
+          "color": "#eee"
         }
       ]
     },

@@ -1,0 +1,32 @@
+@keyframes donutChartFill {
+  to {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.donut {
+  width: 120px;
+  height: 120px;
+}
+.donut svg {
+  width: auto;
+  height: auto;
+}
+.donut svg circle {
+  animation: donutChartFill 0.75s reverse ease-in;
+  transition: stroke-dasharray 0.75s ease;
+  stroke: var(--color-text-black);
+  stroke-linecap: round;
+  fill: transparent;
+  stroke-width: 2.5;
+}
+
+.donutPercent {
+  fill: var(--color-text-black);
+  font-weight: bold;
+  font-size: 0.5rem;
+}
+.donutPercentSymbol {
+  fill: var(--color-text-black);
+  font-size: 0.35rem;
+}

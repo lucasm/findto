@@ -22,6 +22,8 @@
 }
 .container button svg {
   color: var(--color-bg-black);
+  width: 18px;
+  height: 18px;
 }
 .container button:hover,
 .container button:focus {
@@ -46,41 +48,16 @@
 .container h3 {
   margin: 1rem 0;
 }
-
-@keyframes donut-chart-fill {
-  to {
-    stroke-dasharray: 0 100;
-  }
-}
-.donut {
-  width: 120px;
-  height: 120px;
-}
-.donut svg {
-  width: auto;
-  height: auto;
-}
-.donutSegment {
-  animation: donut-chart-fill 0.75s reverse ease-in;
-  transition: stroke-dasharray 0.75s ease;
-}
-.donutPercent {
-  fill: var(--color-text-black);
-  font-weight: bold;
-  font-size: 0.5rem;
-}
-.donutPercentSymbol {
-  fill: var(--color-text-black);
-  font-size: 0.35rem;
-}
-
 .credits {
   text-align: right;
   font-size: var(--font-size-small);
+  margin-top: 1rem;
 }
 
 @media (max-width: 940px) {
   .container button {
     font-size: var(--font-size-small);
+    height: 2rem;
+    padding: 0 1rem;
   }
 }
