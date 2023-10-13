@@ -32,16 +32,14 @@
   --radius-small: 0.75rem;
   --radius-big: 1.75rem;
   --radius-full: 75rem;
-  --size-small: 2.5rem;
-  --size-large: 3.25rem;
+  --size-small: 2.375rem;
+  --size-large: 3rem;
   --size-big: 3.5rem;
   --size-header: 260px;
   --max-size-container: 1072px;
   --max-size-container-2: 800px;
   --transition-hover: hover 0.2s, background 0.2s, opacity 0.2s, box-shadow 0.2s;
   --transition: all 200ms;
-
-  --viewport-mobile: 940px;
 }
 *,
 *:before,

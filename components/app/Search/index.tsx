@@ -11,7 +11,7 @@ import Tooltip from '../Tooltip'
 import WidgetPrivacy from '../WidgetPrivacy'
 import WidgetCarbon from '../WidgetCarbon'
 
-export default function SearchApp() {
+export default function Search() {
   const { locale } = useRouter()
   const {
     data,
@@ -30,40 +30,62 @@ export default function SearchApp() {
     setTitleTrends,
   } = useSearch()
 
-  const refSendButton = useRef(null)
-  const [isInputActive, setInputActive] = useState<boolean>(false)
+  const refSearchButton = useRef(null)
+  const [isValid, setIsValid] = useState<boolean>(false)
   const [isChild, setIsChild] = useState<boolean>(false)
   const [lightColor, setLightColor] = useState<string>('transparent')
   const [title, setTitle] = useState<string>()
 
-  // focus
-  const inputFocus = useCallback(
-    (event?: any) => {
-      if (event) {
-        event.preventDefault()
-      }
-      refSearchInput.current.focus()
-    },
-    [refSearchInput]
-  )
-  // reset
-  const inputReset = (): void => {
-    setInputValue('')
-    setInputActive(false)
+  const handleResize = () => {
+    if (refSearchInput) {
+      refSearchInput.current.style.height = 'auto'
+    }
   }
-  // get search provider
+  const handleFocus = () => {
+    refSearchInput && refSearchInput.current.focus()
+  }
+  const handleReset = () => {
+    setInputValue('')
+    setIsValid(false)
+    handleResize()
+  }
+
   function getSearchSource(id: string) {
-    for (const i in data?.categories) {
-      if (category == data?.categories[i].name) {
-        for (const j in data?.categories[i]?.data) {
-          if (id == normalizeId(data?.categories[i]?.data[j].name)) {
-            return data?.categories[i]?.data[j]
+    const categories = data?.categories
+
+    for (const i in categories) {
+      if (category === categories[i].name) {
+        for (const j in categories[i]?.data) {
+          if (id === normalizeId(categories[i]?.data[j].name)) {
+            return categories[i]?.data[j]
           }
         }
       }
     }
+
+    return null
   }
-  // render options
+  const handleSearchSource = (id: string) => {
+    const searchSource = getSearchSource(id)
+
+    setSearch(id)
+    window.localStorage.setItem('search', id)
+    setColor(searchSource?.color)
+    !isMobileViewport && handleFocus()
+
+    // url
+    const action = searchSource?.action
+    const additional = searchSource?.additional ?? ''
+
+    setSearchUrl(
+      action?.includes('?')
+        ? action + inputValue + additional + '&utm_source=findto_app'
+        : action + inputValue + additional
+    )
+
+    // options
+    setIsChild(searchSource?.child ? true : false)
+  }
   function renderChild(id: string) {
     const source = getSearchSource(id)
     return (
@@ -79,46 +101,23 @@ export default function SearchApp() {
       </div>
     )
   }
-  // handle search
-  const handleSearchProvider = (id: string) => {
-    const searchSource = getSearchSource(id)
 
-    setSearch(id)
-    window.localStorage.setItem('search', id)
-    setColor(searchSource?.color)
-    !isMobileViewport && inputFocus()
-
-    // url
-    const action = searchSource?.action
-    const additional = searchSource?.additional ?? ''
-
-    setSearchUrl(
-      action?.includes('?')
-        ? action + inputValue + additional + '&utm_source=findto_app'
-        : action + inputValue + additional
-    )
-
-    // options
-    setIsChild(searchSource?.child ? true : false)
-  }
-  // handle change
-  const handleChange = (event: any) => {
+  const handleValueChange = (event: any) => {
     setInputValue(event.target.value)
-    setInputActive(event.target.value !== '' ? true : false)
+    setIsValid(event.target.value !== '' ? true : false)
 
     event.target.style.height = 'auto'
     event.target.style.height = event.target.scrollHeight + 'px'
   }
-  // handle key enter
-  const handleKey = (event: any) => {
+  const handleKeyEnter = (event: React.KeyboardEvent) => {
     if (event.key === 'Enter' && event.shiftKey) {
       // prevents Enter from skipping a line without Shift
     } else if (event.key === 'Enter') {
-      if (isInputActive) {
-        event.preventDefault()
-        refSendButton.current.click()
+      event.preventDefault()
+      if (isValid) {
+        refSearchButton.current.click()
       } else {
-        inputFocus(event)
+        handleFocus()
       }
     }
   }
@@ -126,12 +125,11 @@ export default function SearchApp() {
     console.log(data?.categories?.find((item) => item.name === category)?.data)
   }
 
-  // cache: state
+  // cache
   useEffect(() => {
-    const storedSearch = window.localStorage.getItem('search')
-
-    storedSearch && handleSearchProvider(storedSearch)
-  }, [handleSearchProvider])
+    const storedSource = window.localStorage.getItem('search')
+    storedSource && handleSearchSource(storedSource)
+  }, [handleSearchSource])
 
   // color
   useEffect(() => {
@@ -154,12 +152,19 @@ export default function SearchApp() {
     }
   }, [data, category])
 
+  // resize
+  useEffect(() => {
+    if (isMobileViewport) {
+      handleResize()
+    }
+  }, [isMobileViewport])
+
   return (
     <section className={Style.searchContainer}>
       <div
         className={Style.searchContainer2}
         style={{
-          backgroundColor: lightColor,
+          background: lightColor,
         }}>
         <h1>{title}</h1>
 
@@ -171,7 +176,7 @@ export default function SearchApp() {
                 <li key={index}>
                   <button
                     className={search == normalizeId(item.name) ? Style.activeLink : null}
-                    onClick={() => handleSearchProvider(normalizeId(item.name))}
+                    onClick={() => handleSearchSource(normalizeId(item.name))}
                     ref={
                       index === 0
                         ? (element) => {
@@ -192,7 +197,7 @@ export default function SearchApp() {
             {/* Placeholder */}
             <div
               className={Style.searchPlaceholder}
-              onClick={() => inputFocus()}
+              onClick={handleFocus}
               style={{ display: inputValue != '' ? 'none' : 'flex' }}>
               {!isMobileViewport && <figcaption>{data?.t?.placeholder ?? 'Search'}</figcaption>}
               <figure
@@ -213,9 +218,9 @@ export default function SearchApp() {
               autoComplete="off"
               maxLength={2000}
               rows={1}
-              onChange={handleChange}
-              onFocus={handleChange}
-              onKeyDown={handleKey}
+              onChange={handleValueChange}
+              onFocus={handleValueChange}
+              onKeyDown={handleKeyEnter}
               autoFocus
               required
             />
@@ -225,9 +230,9 @@ export default function SearchApp() {
               <Tooltip text={data?.t?.clear ?? 'Clear'} disable={isMobileViewport}>
                 <button
                   type="reset"
-                  onClick={inputReset}
+                  onClick={handleReset}
                   className={Style.resetButton}
-                  style={{ display: isInputActive ? 'inline-block' : 'none' }}>
+                  style={{ display: isValid ? 'inline-block' : 'none' }}>
                   <IconClose />
                   Clear
                 </button>
@@ -239,14 +244,21 @@ export default function SearchApp() {
               {/* Button Search */}
               <Tooltip text={data?.t?.search ?? 'Search'} disable={isMobileViewport}>
                 <a
-                  ref={refSendButton}
+                  ref={refSearchButton}
+                  className={Style.searchButton}
                   href={searchUrl}
                   target="_blank"
                   rel="noopener"
-                  onClick={isInputActive ? undefined : (event) => inputFocus(event)}
-                  className={Style.searchButton}
-                  accessKey="q"
-                  style={{ opacity: isInputActive || inputValue.length > 1 ? '1' : '.5' }}>
+                  onClick={
+                    isValid
+                      ? undefined
+                      : (event) => {
+                          event.preventDefault()
+                          handleFocus()
+                        }
+                  }
+                  accessKey="s"
+                  style={{ opacity: isValid ? '1' : '.5' }}>
                   <IconSend />
                   Search
                 </a>

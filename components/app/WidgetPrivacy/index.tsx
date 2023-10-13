@@ -101,7 +101,7 @@ export default function WidgetPrivacy() {
       <button
         onClick={handleClick}
         aria-expanded={isOpen}
-        style={{ background: isOpen && 'white' }}>
+        className={isOpen ? Styles.openedButton : ''}>
         <IconShield />
         {data?.t?.privacy ?? 'Privacy'}
       </button>

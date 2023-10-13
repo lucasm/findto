@@ -252,6 +252,9 @@
   width: 100%;
   padding: 1.5rem 2rem;
 }
+.layout1 .nav {
+  margin-left: -4.75rem;
+}
 .layout1 .nav li {
   display: inline-block;
 }
@@ -379,11 +382,12 @@
     padding: 0 0 1rem 0;
     flex-direction: column;
   }
-
+  .layout1 .nav {
+    margin-left: 0;
+  }
   .layout1 .nav button {
     height: var(--size-small);
   }
-
   .layout1 .logo svg {
     width: 18px;
     height: 18px;

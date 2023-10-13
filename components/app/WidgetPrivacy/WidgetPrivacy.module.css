@@ -29,6 +29,9 @@
 .container button:focus {
   background: var(--color-white-translucent-2);
 }
+.container button.openedButton {
+  background: var(--color-white);
+}
 
 .containerDropdown {
   position: absolute;

@@ -71,7 +71,6 @@ export default function WidgetCarbon() {
     if (dataCarbon) {
       const percent = (dataCarbon?.cleanerThan % 1).toFixed(2).slice(2)
       const resto = 100 - Number(percent)
-      console.log(dataCarbon)
       setPercents([percent, String(resto)])
     }
   }, [dataCarbon])
@@ -89,7 +88,7 @@ export default function WidgetCarbon() {
       <button
         onClick={handleClick}
         aria-expanded={isOpen}
-        style={{ background: isOpen && 'white' }}>
+        className={isOpen ? Styles.openedButton : ''}>
         <IconLeaf />
         {data?.t?.carbon ?? 'Carbon'}
       </button>

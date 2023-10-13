@@ -33,13 +33,6 @@
   font-size: var(--font-size-big);
   letter-spacing: -0.05rem;
 }
-.container ul li button img {
-  border-radius: 4px;
-}
-
-.trends {
-  background: red;
-}
 
 /* Categories */
 .container .trendsWeb li button,
