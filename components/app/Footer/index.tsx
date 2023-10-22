@@ -18,7 +18,7 @@ export default function AppFooter() {
         <div>
           <p>
             {data?.t?.copyright ??
-              'Findto is an assistant for decentralized web search with positive impact. All rights reserved to trademarks and external sources. Made by'}{' '}
+              'Findto is an assistant for decentralized web search with positive impact. All rights reserved to trademarks and external sources. Open source project created by'}{' '}
             <a href="https://lucasm.dev/?utm_source=findto_app" target="_blank" rel="noreferrer">
               {'Lucas Menezes'}
             </a>

@@ -7,11 +7,12 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
+  align-items: center;
   text-align: left;
 }
 .container h3 {
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
+  margin-bottom: 0;
+  font-size: 2rem;
   color: var(--color-text-black);
 }
 .container p {
@@ -26,7 +27,7 @@
   background: var(--color-text-black);
   color: var(--color-bg-white);
   border: 3px solid transparent;
-  height: var(--size-big);
+  height: var(--size-large);
   padding: 0 2rem;
   border-radius: var(--radius-big);
   width: auto;
