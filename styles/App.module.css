@@ -375,15 +375,15 @@
   .footerActions {
     flex-direction: column;
   }
+  .layout1 .nav {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 940px) {
   .layout1 .header {
     padding: 0 0 1rem 0;
     flex-direction: column;
-  }
-  .layout1 .nav {
-    margin-left: 0;
   }
   .layout1 .nav button {
     height: var(--size-small);
@@ -494,5 +494,11 @@
 
   .footerActions {
     gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .layout1 .nav {
+    margin-left: 0;
   }
 }

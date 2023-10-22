@@ -70,6 +70,10 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
             title: 'Manifestar solicitação ao Governo',
             url: 'https://falabr.cgu.gov.br/',
           },
+          {
+            title: 'Como está votando cada parlamentar',
+            url: 'https://quemfoiquem.org.br/',
+          },
         ],
       }
 

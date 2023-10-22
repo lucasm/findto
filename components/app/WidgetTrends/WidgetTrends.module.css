@@ -2,7 +2,6 @@
   width: 100%;
 }
 .container ul {
-  filter: grayscale(100%);
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
@@ -32,6 +31,9 @@
   text-align: left;
   font-size: var(--font-size-big);
   letter-spacing: -0.05rem;
+}
+.container ul li button img {
+  filter: grayscale(100%);
 }
 
 /* Categories */
