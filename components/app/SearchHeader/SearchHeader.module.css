@@ -1,0 +1,23 @@
+.Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  /* background-color: yellow; */
+}
+
+.Container div:first-child,
+.Container div:last-child {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+.Container div:last-child {
+  gap: 0;
+}
+
+.Container h1 {
+  font-size: var(--font-size-2);
+  color: var(--color-black);
+}

@@ -58,15 +58,16 @@
 }
 
 /* Tabs */
+.tabs {
+  width: 100%;
+}
 .tabs ul {
   display: none;
-}
-.tabs ul li {
-  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: flex-start;
 }
 .tabs button {
-  display: flex;
-  align-items: center;
   padding: 0 1rem;
   border: 0;
   font-size: var(--font-size);
@@ -99,12 +100,8 @@
   padding: 0 3rem 0 1.5rem;
   color: var(--color-black);
 }
-.searchContainer h1 {
-  font-size: 1.8rem;
-  color: var(--color-black);
-}
 .searchContainer2 {
-  padding: 3rem 4rem;
+  padding: 4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -158,9 +155,9 @@
 
 .searchActions {
   position: absolute;
-  right: 0;
+  right: 0.8rem;
   display: flex;
-  gap: 0;
+  gap: 0.5rem;
   align-items: center;
 }
 
@@ -170,15 +167,14 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 4.25rem;
-  width: 4.5rem;
-  background: transparent;
-  border-radius: 0;
+  height: 2.8rem;
+  width: 4rem;
+  background: var(--color-black);
+  border-radius: var(--radius-full);
   border: 0;
 }
-.searchButton svg,
-.resetButton svg {
-  color: var(--color-black);
+.searchButton svg {
+  color: var(--color-white);
 }
 .resetButton {
   display: none;
@@ -210,24 +206,16 @@
   opacity: var(--opacity);
   cursor: text;
 }
-.searchPlaceholder figure {
-  width: 120px;
-  height: 32px;
-  background-repeat: no-repeat;
-  background-position: 0;
-  /* background-color: grey; */
-}
 .searchPlaceholder figcaption {
   color: var(--color-black);
 }
 
-.footerActions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2.5rem;
-  flex-wrap: wrap;
-  gap: 0.75rem;
+.searchPlaceholder figure {
+  width: 8rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 0;
+  /* background-color: yellow; */
 }
 
 .widgetContainer {
@@ -372,9 +360,6 @@
 
 /* Mobile */
 @media screen and (max-width: 440px) {
-  .footerActions {
-    flex-direction: column;
-  }
   .layout1 .nav {
     margin-left: 0;
   }
@@ -415,9 +400,6 @@
   .layout1 .searchContainer {
     margin: 0 0 3rem;
     border-radius: 0;
-  }
-  .searchContainer h1 {
-    font-size: 1.5rem;
   }
   .searchContainer2 {
     padding: 2.5rem 0;
@@ -490,10 +472,6 @@
   }
   .searchPlaceholder figure {
     height: 26px;
-  }
-
-  .footerActions {
-    gap: 0.5rem;
   }
 }
 

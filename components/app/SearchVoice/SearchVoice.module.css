@@ -7,13 +7,16 @@
   margin: 0;
   border: 0;
   background: transparent;
-  z-index: 9;
+  transition: var(--transition-hover);
+  opacity: 0.5;
 }
 .button:hover,
 .button:focus {
-  background: var(--color-white-translucent-2);
+  opacity: 1;
 }
 .button svg {
+  width: 26px;
+  height: 26px;
   color: var(--color-black);
 }
 

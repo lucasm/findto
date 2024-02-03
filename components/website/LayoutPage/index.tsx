@@ -53,11 +53,11 @@ export default function LayoutPage(props: LayoutProps) {
               {/* <li>
                 <Link href="/pro">Pro</Link>
               </li> */}
-              <li>
+              {/* <li>
                 <a href="https://ko-fi.com/findto" target="_blank">
                   {data?.t?.donate ?? 'Donate'}
                 </a>
-              </li>
+              </li> */}
               <li>
                 <Link href="/">{data?.t?.open ?? 'Open app'} </Link>
               </li>

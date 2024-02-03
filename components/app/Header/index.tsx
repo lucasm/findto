@@ -209,15 +209,15 @@ export default function AppHeader() {
 
         <h3>{data?.t?.contribute ?? 'Contribute'}</h3>
         <div className={Style.containerSettings}>
-          <a href="https://ko-fi.com/findto" target="_blank" rel="noopener noreferrer">
-            <IconHeart />
-            {data?.t?.donate ?? 'Donate'}
-          </a>
           <a
             href={data?.t?.link_feedback ?? 'https://forms.gle/US69JvUT1qxYkiF58'}
             target="_blank"
             rel="noopener noreferrer">
             <IconFeedback /> {data?.t?.feedback ?? 'Feedback'}
+          </a>
+          <a href="https://ko-fi.com/findto" target="_blank" rel="noopener noreferrer">
+            <IconHeart />
+            {data?.t?.donate ?? 'Donate'}
           </a>
         </div>
       </Modal>

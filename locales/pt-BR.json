@@ -2,7 +2,7 @@
   "country": "Brasil",
   "country_code": "BR",
   "t": {
-    "placeholder": "Buscar",
+    "placeholder": "Buscar em",
     "search": "Buscar",
     "trends": "Tendências",
     "settings": "Ajustes",
@@ -40,13 +40,16 @@
       "ainda não foi analisado"
     ],
     "learnMore": "Saiba mais",
-    "banner": ["Estamos construindo uma Web melhor", "Buscas mais produtivas e saudáveis"],
-    "copyright": "Findto é um assistente para busca descentralizada na web com impacto positivo. Todos os direitos reservados às marcas registradas e fontes externas. Projeto open source criado por"
+    "banner": [
+      "Obtenha controle dos algoritmos de busca e IA",
+      "Buscas mais produtivas e saudáveis"
+    ],
+    "copyright": "Findto é uma ferramenta de busca descentralizada na web para impacto positivo. Todos os direitos reservados às marcas registradas e fontes externas. Projeto de código aberto por"
   },
   "categories": [
     {
       "name": "Web",
-      "name_trends": "Mais buscados",
+      "name_trends": "Top buscas",
       "active": true,
       "data": [
         {
@@ -139,7 +142,7 @@
     {
       "name": "AI",
       "name_translated": "IA",
-      "name_trends": "Mais buscados",
+      "name_trends": "Top buscas",
       "active": true,
       "data": [
         {
@@ -212,7 +215,7 @@
         {
           "name": "Reddit",
           "action": "https://www.reddit.com/search?q=",
-          "color": "#ff8353"
+          "color": "#ff7744"
         },
         {
           "name": "LinkedIn",
@@ -225,19 +228,24 @@
           "color": "#8791FF"
         },
         {
-          "name": "Snapchat",
-          "action": "https://story.snapchat.com/search?q=",
-          "color": "#fffd5e"
+          "name": "Threads",
+          "action": "https://www.threads.net/search/?q=",
+          "color": "#999999"
         },
         {
-          "name": "Quora",
-          "action": "https://www.quora.com/search?q=",
-          "color": "#ff6966"
+          "name": "Snapchat",
+          "action": "https://www.snapchat.com/explore/",
+          "color": "#fffd5e"
         },
         {
           "name": "Tumblr",
           "action": "https://www.tumblr.com/search/",
           "color": "#5084bf"
+        },
+        {
+          "name": "Quora",
+          "action": "https://www.quora.com/search?q=",
+          "color": "#ff6966"
         },
         {
           "name": "Mastodon",
@@ -439,7 +447,7 @@
     },
     {
       "name": "Music",
-      "name_translated": "Áudio",
+      "name_translated": "Música",
       "name_trends": "Top álbuns",
       "active": true,
       "data": [
@@ -471,7 +479,7 @@
         {
           "name": "Deezer",
           "action": "https://www.deezer.com/search/",
-          "color": "#cccccc"
+          "color": "#c37eff"
         },
         {
           "name": "TIDAL",
@@ -525,7 +533,7 @@
         },
         {
           "name": "Audius",
-          "action": "https://audius.co/search/?q=",
+          "action": "https://audius.co/search/",
           "color": "#bb65ff"
         }
       ]
@@ -756,7 +764,7 @@
         {
           "name": "Folha",
           "action": "https://search.folha.uol.com.br/?q=lula",
-          "color": "#00A1DC"
+          "color": "#00afec"
         },
         {
           "name": "Estadão",
@@ -1152,9 +1160,76 @@
       ]
     },
     {
+      "name": "Apps",
+      "name_trends": "Aplicativos populares",
+      "active": true,
+      "data": [
+        {
+          "name": "Google Play",
+          "action": "https://play.google.com/store/search?q=",
+          "color": "#00c78e"
+        },
+        {
+          "name": "App Store",
+          "action": "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?media=software&term=",
+          "color": "#1db2f9"
+        },
+        {
+          "name": "Microsoft Store",
+          "action": "https://apps.microsoft.com/store/search/",
+          "color": "#219fff"
+        },
+        {
+          "name": "Chrome Web Store",
+          "action": "https://chromewebstore.google.com/search/",
+          "color": "#FFC412"
+        },
+        {
+          "name": "Firefox Addons",
+          "action": "https://addons.mozilla.org/en-US/firefox/search/?q=",
+          "color": "#00c8d7"
+        },
+        {
+          "name": "Snap Store",
+          "action": "https://snapcraft.io/search?q=",
+          "color": "#FF7B4B"
+        },
+        {
+          "name": "Flathub",
+          "action": "https://flathub.org/pt-BR/apps/search?q=",
+          "color": "#34aadc"
+        },
+        {
+          "name": "Softonic",
+          "action": "https://www.softonic.com.br/s/",
+          "color": "#0bda8a"
+        },
+        {
+          "name": "AlternativeTo",
+          "action": "https://alternativeto.net/browse/search/?q=",
+          "color": "#33B4FF"
+        },
+        {
+          "name": "Product Hunt",
+          "action": "https://www.producthunt.com/search?q=",
+          "color": "#ff744c"
+        },
+        {
+          "name": "Kickstarter",
+          "action": "https://www.kickstarter.com/discover/advanced?term=",
+          "color": "#46e6a1"
+        },
+        {
+          "name": "Indiegogo",
+          "action": "https://www.indiegogo.com/explore/all?q=",
+          "color": "#f16fac"
+        }
+      ]
+    },
+    {
       "name": "Code",
       "name_translated": "Código",
-      "name_trends": "Top repositórios",
+      "name_trends": "Repositórios populares",
       "active": true,
       "data": [
         {
@@ -1249,78 +1324,10 @@
         }
       ]
     },
-    {
-      "name": "Apps",
-      "name_title": "Busca de Apps",
-      "name_trends": "Aplicativos populares",
-      "active": true,
-      "data": [
-        {
-          "name": "Google Play",
-          "action": "https://play.google.com/store/search?q=",
-          "color": "#00c78e"
-        },
-        {
-          "name": "App Store",
-          "action": "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?media=software&term=",
-          "color": "#1db2f9"
-        },
-        {
-          "name": "Microsoft Store",
-          "action": "https://apps.microsoft.com/store/search/",
-          "color": "#219fff"
-        },
-        {
-          "name": "Chrome Web Store",
-          "action": "https://chromewebstore.google.com/search/",
-          "color": "#FFC412"
-        },
-        {
-          "name": "Firefox Addons",
-          "action": "https://addons.mozilla.org/en-US/firefox/search/?q=",
-          "color": "#00c8d7"
-        },
-        {
-          "name": "Snap Store",
-          "action": "https://snapcraft.io/search?q=",
-          "color": "#FF7B4B"
-        },
-        {
-          "name": "Flathub",
-          "action": "https://flathub.org/pt-BR/apps/search?q=",
-          "color": "#34aadc"
-        },
-        {
-          "name": "Softonic",
-          "action": "https://www.softonic.com.br/s/",
-          "color": "#0bda8a"
-        },
-        {
-          "name": "AlternativeTo",
-          "action": "https://alternativeto.net/browse/search/?q=",
-          "color": "#33B4FF"
-        },
-        {
-          "name": "Product Hunt",
-          "action": "https://www.producthunt.com/search?q=",
-          "color": "#ff744c"
-        },
-        {
-          "name": "Kickstarter",
-          "action": "https://www.kickstarter.com/discover/advanced?term=",
-          "color": "#46e6a1"
-        },
-        {
-          "name": "Indiegogo",
-          "action": "https://www.indiegogo.com/explore/all?q=",
-          "color": "#f16fac"
-        }
-      ]
-    },
+
     {
       "name": "Finance",
       "name_translated": "Finanças",
-      "name_title": "Busca Financeira",
       "active": false,
       "data": [
         {

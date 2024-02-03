@@ -347,7 +347,7 @@ export default function SearchTrends() {
               <li key={index}>
                 <button
                   onClick={() =>
-                    item.url ? window.open(item.url, '_blank') : putValue(item.title)
+                    item.url ? window.open(item.url, '_blank') : putValue(item.title.toLowerCase())
                   }>
                   {item.image && (
                     <img src={item.image} width={miniImage ? 60 : 120} alt={item.title} />

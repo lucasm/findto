@@ -15,7 +15,6 @@ export function SearchContextProvider({ children }) {
   const [searchUrl, setSearchUrl] = useState<string>('')
   const [titleTrends, setTitleTrends] = useState<string>('')
   const [color, setColor] = useState<string>('#fff')
-  const [trends, setTrends] = useState<string>('Trends')
   const [country, setCountry] = useState<string>('US')
   const [permissionLocation, setPermissionLocation] = useState<boolean>(false)
   const [latitude, setLatitude] = useState<number>()
@@ -82,8 +81,7 @@ export function SearchContextProvider({ children }) {
   useEffect(() => {
     setData(searchData)
     // console.log('LOCALE + DATA SEARCH', locale, searchData)
-    setTrends(data?.t?.trends)
-  }, [searchData, locale, trends])
+  }, [searchData, locale])
 
   useEffect(() => {
     setCountry(data?.country_code)
@@ -152,8 +150,6 @@ export function SearchContextProvider({ children }) {
         setCategory,
         color,
         setColor,
-        trends,
-        setTrends,
         country,
         locale,
         permissionLocation,

@@ -8,15 +8,15 @@
 .container button {
   position: relative;
   height: var(--size-small);
-  background: var(--color-white-translucent);
+  background: transparent;
   border: 0;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: var(--font-size);
   border-radius: var(--radius-full);
-  box-shadow: var(--box-shadow);
+  opacity: var(--opacity);
   gap: 0.5rem;
   color: var(--color-black);
 }
@@ -27,10 +27,12 @@
 }
 .container button:hover,
 .container button:focus {
-  background: var(--color-white-translucent-2);
+  background: var(--color-white-translucent);
+  opacity: 1;
 }
 .container button.openedButton {
   background: var(--color-white);
+  box-shadow: var(--box-shadow);
 }
 
 .containerDropdown {

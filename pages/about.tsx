@@ -12,10 +12,10 @@ export default function PageAbout() {
       <section className="colors">
         <div className={Style.container}>
           <figure className={Style.icon}></figure>
-          <h1>Decentralized search with positive impact</h1>
+          <h1>Findto: web searches with positive impact</h1>
           <p>
-            Findto is a free and open source assistant for decentralized search. Explore a healthier
-            web with control over search, AI, privacy, and carbon.
+            Findto is a decentralized search tool. Get control over search algorithms, AI, privacy
+            and carbon. Explore a healthier web.
           </p>
         </div>
       </section>
@@ -29,7 +29,7 @@ export default function PageAbout() {
               </figure>
 
               <article>
-                <h2>Search algorithms and AI working for you</h2>
+                <h2>Get control of search algorithms and AI</h2>
                 <p>
                   Findto puts people in control of search — not the other way around. Quickly switch
                   between diverse sources to find anything. More accessible and productive searches.
@@ -46,7 +46,7 @@ export default function PageAbout() {
                 <h2>Discover with more privacy and less carbon</h2>
                 <p>
                   View the privacy level and the estimate carbon footprint of each search source.
-                  Discover more. Choose better.
+                  Choose better. Discover more.
                 </p>
               </article>
             </div>
@@ -57,7 +57,7 @@ export default function PageAbout() {
               </figure>
 
               <article>
-                <h2>Welcome to a better Web</h2>
+                <h2>Welcome to a decentralized Web</h2>
                 <p>
                   The centralized web — where our searches are monopolized — it's not sustainable.
                   Findto encourages a truly free web search experience, where the democratic people
@@ -80,7 +80,7 @@ export default function PageAbout() {
       <section>
         <div className={Style.container}>
           <div className={Style.actionContainer}>
-            <h2>Positive impact searches</h2>
+            <h2>Positive impact search</h2>
             <p>Decentralized search. Built for people. Friendly for planet.</p>
             <Button url="/" color="colors">
               Get started

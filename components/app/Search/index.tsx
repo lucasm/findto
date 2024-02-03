@@ -1,4 +1,4 @@
-import React, { useRef, useCallback, useState, useEffect } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import Style from '../../../styles/App.module.css'
 import { normalizeId } from '../../../utils/formats'
 import { useSearch } from '../../../contexts/SearchContext'
@@ -8,8 +8,7 @@ import SearchVoice from '../SearchVoice'
 import { ISearchCategory, ISearch, ISearchChild } from '../../../interfaces/search'
 import { IconClose, IconSend } from '../SvgIcons'
 import Tooltip from '../Tooltip'
-import WidgetPrivacy from '../WidgetPrivacy'
-import WidgetCarbon from '../WidgetCarbon'
+import SearchHeader from '../SearchHeader'
 
 export default function Search() {
   const { locale } = useRouter()
@@ -27,14 +26,12 @@ export default function Search() {
     inputValue,
     setInputValue,
     isMobileViewport,
-    setTitleTrends,
   } = useSearch()
 
   const refSearchButton = useRef(null)
   const [isValid, setIsValid] = useState<boolean>(false)
   const [isChild, setIsChild] = useState<boolean>(false)
   const [lightColor, setLightColor] = useState<string>('transparent')
-  const [title, setTitle] = useState<string>()
 
   const handleResize = () => {
     if (refSearchInput) {
@@ -86,7 +83,7 @@ export default function Search() {
     // options
     setIsChild(searchSource?.child ? true : false)
   }
-  function renderChild(id: string) {
+  function renderOptions(id: string) {
     const source = getSearchSource(id)
     return (
       <div className={Style.searchChild}>
@@ -143,15 +140,6 @@ export default function Search() {
     }
   }, [color])
 
-  // title
-  useEffect(() => {
-    if (data && category) {
-      const selected = data?.categories?.find((item) => item.name === category)
-      setTitle(selected?.name_translated ?? category)
-      setTitleTrends(selected?.name_trends)
-    }
-  }, [data, category])
-
   // resize
   useEffect(() => {
     if (isMobileViewport) {
@@ -166,12 +154,14 @@ export default function Search() {
         style={{
           background: lightColor,
         }}>
-        <h1>{title}</h1>
+        <SearchHeader
+          additionalLeftElement={!isMobileViewport && isChild && renderOptions(search)}
+        />
 
         {/* Tabs */}
         <div className={Style.tabs}>
           {data?.categories?.map((itemCategory: ISearchCategory, index: number) => (
-            <ul key={index} style={category == itemCategory.name ? { display: 'block' } : null}>
+            <ul key={index} style={{ display: category == itemCategory.name ? 'flex' : 'none' }}>
               {itemCategory?.data.map((item: ISearch, index: number) => (
                 <li key={index}>
                   <button
@@ -199,7 +189,7 @@ export default function Search() {
               className={Style.searchPlaceholder}
               onClick={handleFocus}
               style={{ display: inputValue != '' ? 'none' : 'flex' }}>
-              {!isMobileViewport && <figcaption>{data?.t?.placeholder ?? 'Search'}</figcaption>}
+              {!isMobileViewport && <figcaption>{data?.t?.search ?? 'Search'}</figcaption>}
               <figure
                 style={{
                   backgroundImage: 'url(/images/logos/' + search + '.svg)',
@@ -258,7 +248,8 @@ export default function Search() {
                         }
                   }
                   accessKey="s"
-                  style={{ opacity: isValid ? '1' : '.5' }}>
+                  // style={{ opacity: isValid ? '1' : '.5' }}
+                >
                   <IconSend />
                   Search
                 </a>
@@ -267,13 +258,6 @@ export default function Search() {
           </div>
 
           <SearchSuggestions locale={locale} term={inputValue} />
-
-          <div className={Style.footerActions}>
-            <WidgetPrivacy />
-            <WidgetCarbon />
-            {/* Options */}
-            {!isMobileViewport && isChild && renderChild(search)}
-          </div>
         </div>
       </div>
     </section>
