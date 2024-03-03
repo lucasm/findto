@@ -9,7 +9,7 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
 
   if (country) {
     let url =
-      'https://rss.applemarketingtools.com/api/v2/' + country + '/music/most-played/20/albums.json'
+      'https://rss.applemarketingtools.com/api/v2/' + country + '/music/most-played/24/albums.json'
 
     // 'https://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&limit=12&api_key=' +
     // process.env.NEXT_PUBLIC_API_LASTFM +

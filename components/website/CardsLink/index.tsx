@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Styles from './CardsLink.module.css'
 import { svgTwitter, svgDiscord, svgGithub, svgPatreon, svgKofi } from '../../website/SvgSocial'
-import { IconFeedback, IconHeart, IconStar } from '../../app/SvgIcons'
+import { IconFeedback, IconHeart, IconStar, IconX } from '../../app/SvgIcons'
 import { useSearch } from '../../../contexts/SearchContext'
 
 interface ICardsLink {
@@ -17,22 +17,28 @@ export default function CardsLink() {
 
   const cards: ICardsLink[] = [
     {
-      title: 'Twitter',
-      url: 'https://twitter.com/findtoapp',
-      icon: svgTwitter,
+      title: data?.t?.donate ?? 'Donate',
+      url: 'https://ko-fi.com/findto',
+      icon: <IconHeart />,
       active: true,
     },
     {
-      title: 'GitHub',
+      title: 'Star on GitHub',
       url: 'https://github.com/lucasm/findto',
       icon: svgGithub,
       active: true,
     },
     {
-      title: 'Discord',
+      title: 'Follow on X',
+      url: 'https://x.com/findtoapp',
+      icon: <IconX />,
+      active: true,
+    },
+    {
+      title: 'Discord channel',
       url: 'https://discord.gg/gEDm5MU6pq',
       icon: svgDiscord,
-      active: false,
+      active: true,
     },
     {
       title: 'Get Pro version',
@@ -42,13 +48,7 @@ export default function CardsLink() {
       internal: true,
     },
     {
-      title: data?.t?.donate ?? 'Make a donation',
-      url: 'https://ko-fi.com/findto',
-      icon: <IconHeart />,
-      active: true,
-    },
-    {
-      title: data?.t?.feedback ?? 'Send feedback',
+      title: data?.t?.feedback ?? 'Feedback',
       url: data?.t?.link_feedback ?? 'https://forms.gle/US69JvUT1qxYkiF58',
       icon: <IconFeedback />,
       active: true,

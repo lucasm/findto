@@ -8,15 +8,15 @@
 .container button {
   position: relative;
   height: var(--size-small);
-  background: var(--color-white-translucent);
+  background: transparent;
   border: 0;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: var(--font-size);
   border-radius: var(--radius-full);
-  box-shadow: var(--box-shadow);
+  opacity: var(--opacity);
   gap: 0.5rem;
   color: var(--color-black);
 }
@@ -27,15 +27,18 @@
 }
 .container button:hover,
 .container button:focus {
-  background: var(--color-white-translucent-2);
+  background: var(--color-white-translucent);
+  opacity: 1;
 }
 .container button.openedButton {
   background: var(--color-white);
+  box-shadow: var(--box-shadow);
 }
 
 .containerDropdown {
   position: absolute;
   top: 3rem;
+  right: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,7 +48,7 @@
   box-shadow: var(--box-shadow);
   padding: 2rem;
   width: 280px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .container h3 {
@@ -55,12 +58,27 @@
   text-align: right;
   font-size: var(--font-size-small);
   margin-top: 1rem;
+  color: var(--color-black-translucent-50);
+}
+.credits a {
+  transition: var(--transition);
+}
+.credits a:hover,
+.credits a:focus {
+  color: var(--color-text-black);
 }
 
 @media (max-width: 940px) {
   .container button {
     font-size: var(--font-size-small);
-    height: 2rem;
-    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container button {
+    font-size: 0;
+    width: var(--size-small);
+    gap: 0;
+    padding: 0;
   }
 }

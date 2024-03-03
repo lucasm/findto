@@ -50,6 +50,8 @@ export default function endpoint(request, response) {
         })
       })
 
+      a.pop()
+
       return callback({
         credits_title: credits[0],
         credits_url: credits[1],

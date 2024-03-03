@@ -1,0 +1,186 @@
+.header {
+  z-index: 9;
+  position: fixed;
+  height: 100%;
+  width: var(--size-header);
+}
+.header svg {
+  width: 20px;
+  height: 20px;
+  color: var(--color-text-black);
+}
+.header button {
+  background: transparent;
+  border: none;
+  opacity: var(--opacity);
+}
+.header button:hover,
+.header button:focus,
+.header a:hover,
+.header a:focus {
+  opacity: 1;
+  background: var(--color-black-translucent);
+}
+
+.logo {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0 1rem;
+  margin: 1rem 0.75rem;
+  height: var(--size-big);
+  border-radius: var(--radius-full);
+  color: var(--color-text-black);
+}
+
+.nav {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0.1rem 0.75rem 0;
+}
+
+.nav button,
+.header .iconSettings button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: var(--size-big);
+  border-radius: var(--radius-full);
+  font-size: 1rem;
+  color: var(--color-text-black);
+}
+
+.nav button svg,
+.header .iconSettings button svg {
+  margin: 0 1rem;
+}
+
+.containerSettings {
+  display: grid;
+  grid-gap: 0.5rem;
+  margin-top: 1rem;
+}
+.containerSettings:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+.containerSettings button,
+.containerSettings a {
+  border-radius: var(--radius);
+  display: flex;
+  height: var(--size-small);
+  font-size: var(--font-size);
+  background: var(--color-bg-grey);
+  color: var(--color-text-black);
+  align-items: center;
+  opacity: 1;
+}
+.containerSettings button svg,
+.containerSettings a svg {
+  margin: 0 1rem;
+}
+
+.submenu {
+  position: relative;
+}
+.submenu ul {
+  align-items: flex-start;
+
+  background: var(--color-bg-white);
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: var(--size-big);
+  flex-direction: column;
+  border-radius: var(--radius-small);
+  box-shadow: var(--box-shadow);
+  /* padding: 0.5rem 0; */
+  overflow: hidden;
+}
+.submenu ul li button {
+  border-radius: 0;
+}
+
+@media screen and (max-width: 940px) {
+  .header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 0 0 1rem 0;
+    flex-direction: column;
+  }
+
+  .nav {
+    padding: 0;
+  }
+  .nav ul {
+    padding: 0 1rem;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    text-align: center;
+  }
+  .nav li {
+    display: inline-block;
+  }
+
+  .nav button,
+  .iconSettings button {
+    border-radius: var(--radius-full);
+    width: var(--size-large);
+    height: var(--size-large);
+    font-size: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .nav button svg,
+  .iconSettings button svg {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  .nav button {
+    height: var(--size-small);
+    margin: 0.25rem 0;
+  }
+
+  .logo svg {
+    width: 18px;
+    height: 18px;
+  }
+  .logo,
+  .iconSettings button {
+    height: 2.75rem;
+    margin: 0.5rem;
+  }
+
+  .header .iconSettings {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header .iconSettings button {
+    width: var(--size-big);
+    font-size: 0;
+    justify-content: center;
+  }
+
+  .containerSettings h3 {
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem 0;
+  }
+  .containerSettings button,
+  .containerSettings a {
+    font-size: var(--font-size-small);
+  }
+}

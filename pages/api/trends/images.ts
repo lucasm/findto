@@ -6,7 +6,7 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
   let url =
     'https://api.unsplash.com/topics?client_id=' +
     process.env.NEXT_PUBLIC_API_UNSPLASH +
-    '&per_page=12&order_by=featured'
+    '&per_page=20&order_by=featured'
 
   await axios
     .get(url)

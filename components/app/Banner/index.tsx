@@ -8,8 +8,10 @@ export default function Banner() {
   return (
     <section className={Styles.container}>
       <div>
-        <h3>{data?.t?.banner[0] ?? 'Building a better Web'}</h3>
-        {/* <p>{data?.t?.banner[1] ?? 'Search, discover and help the planet'}</p> */}
+        <h3>{data?.t?.banner[0] ?? 'Welcome to Findto'}</h3>
+        <p>
+          {data?.t?.banner[1] ?? 'Decentralized Web & AI search. Discover more. Help the planet.'}
+        </p>
       </div>
       <div>
         <Link href="/about">{data?.t?.learnMore ?? 'Learn more'}</Link>

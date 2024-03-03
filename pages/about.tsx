@@ -3,19 +3,21 @@ import LayoutPage from '../components/website/LayoutPage'
 import CardsFeat from '../components/website/CardsFeat'
 import Button from '../components/website/Button'
 import Svg from '../components/website/Svg'
+import { useSearch } from '../contexts/SearchContext'
 
 export default function PageAbout() {
+  const { data } = useSearch()
   return (
     <LayoutPage
       title="About"
-      description="About Findto, a decentralized web search app with AI, privacy and diverse sources">
+      description="Findto is a tool for decentralized Web & AI search. Get control over search algorithms, privacy and carbon.">
       <section className="colors">
         <div className={Style.container}>
           <figure className={Style.icon}></figure>
-          <h1>Decentralized search with positive impact</h1>
+          <h1>Decentralized Web & AI search with Findto</h1>
           <p>
-            Findto is a free and open source assistant for decentralized search. Explore a healthier
-            web with control over search, AI, privacy, and carbon.
+            Findto is an open source assistant for decentralized Web & AI search. Get control over
+            algorithms, privacy and carbon. Explore a healthy internet.
           </p>
         </div>
       </section>
@@ -29,10 +31,11 @@ export default function PageAbout() {
               </figure>
 
               <article>
-                <h2>Search algorithms and AI working for you</h2>
+                <h2>Get control over algorithms</h2>
                 <p>
-                  Findto puts people in control of search — not the other way around. Quickly switch
-                  between diverse sources to find anything. More accessible and productive searches.
+                  Findto puts people on control of the Web and AIs algorithms — not the other way
+                  around. Quickly switch between diverse sources and find anything. More productive
+                  and accessible searches.
                 </p>
               </article>
             </div>
@@ -43,10 +46,10 @@ export default function PageAbout() {
               </figure>
 
               <article>
-                <h2>Discover with more privacy and less carbon</h2>
+                <h2>More privacy and less carbon</h2>
                 <p>
-                  View the privacy level and the estimate carbon footprint of each search source.
-                  Discover more. Choose better.
+                  Findto displays the privacy level and estimated carbon footprint on top of every
+                  search source. Make better choices, for you and the planet.
                 </p>
               </article>
             </div>
@@ -57,11 +60,11 @@ export default function PageAbout() {
               </figure>
 
               <article>
-                <h2>Welcome to a better Web</h2>
+                <h2>Welcome to the decentralization</h2>
                 <p>
-                  The centralized web — where our searches are monopolized — it's not sustainable.
-                  Findto encourages a truly free web search experience, where the democratic people
-                  choices and the planet needs are together.
+                  The centralized internet — where monopoly wins — is unsustainable. Findto
+                  encourages a truly free search experience, where the people democratic choices and
+                  the planet needs walks together. As the internet should be.
                 </p>
               </article>
             </div>
@@ -80,10 +83,10 @@ export default function PageAbout() {
       <section>
         <div className={Style.container}>
           <div className={Style.actionContainer}>
-            <h2>Positive impact searches</h2>
-            <p>Decentralized search. Built for people. Friendly for planet.</p>
+            <h2>A better search experience</h2>
+            <p>Decentralized search. Crafted for people. Dedicated to the planet.</p>
             <Button url="/" color="colors">
-              Get started
+              {data?.t?.open ?? 'Open the app'}
             </Button>
           </div>
         </div>

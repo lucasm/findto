@@ -6,8 +6,8 @@ import Banner from '../components/app/Banner'
 export default function Index() {
   return (
     <LayoutApp
-      title="Decentralized Search Assistant"
-      description="Findto is a decentralized search assistant. Explore a healthier Web with control of search, AI, privacy and carbon.">
+      title="Decentralized Web & AI Search"
+      description="Findto is an assistant for decentralized Web & AI search. Explore a healthier internet with control over algorithms, privacy, and carbon.">
       <Search />
       <WidgetTrends />
       <Banner />

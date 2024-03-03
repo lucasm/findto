@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.container div:first-child,
+.container div:last-child {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+.container div:last-child {
+  gap: 0;
+}
+
+.container h1 {
+  font-size: var(--font-size-2);
+  color: var(--color-black);
+}
+
+@media screen and (max-width: 940px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .container h1 {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container h1 {
+    font-size: var(--font-size-3);
+  }
+}

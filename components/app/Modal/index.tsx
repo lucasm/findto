@@ -17,15 +17,11 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, title }) => {
   useEffect(() => {
     setIsModalOpen(isOpen)
 
-    // remove scroll from body
-    if (typeof window !== 'undefined') {
-      isOpen ? (document.body.style.overflow = 'hidden') : (document.body.style.overflow = 'auto')
-    }
+    // handle body scroll
+    document.body.style.overflow = isOpen ? 'hidden' : 'auto'
 
     // focus on modal
-    if (modalRef.current) {
-      modalRef.current.focus()
-    }
+    modalRef.current && modalRef.current.focus()
 
     // Encontre todos os elementos clicáveis dentro do modal
     const clickableElements = modalRef.current.querySelectorAll(
@@ -58,14 +54,16 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, title }) => {
         e.preventDefault() // Evita a tabulação normal
       }
     }
+
+    if (e.key === 'Escape') {
+      handleClose()
+    }
   }
 
   return (
     <div
       className={`${styles['modal-overlay']} ${isModalOpen ? styles.open : ''}`}
-      onClick={handleOverlayClick}
-      tabIndex={isModalOpen ? 0 : -1}
-      aria-label={'Modal ' + title}>
+      onClick={handleOverlayClick}>
       <div
         className={`${styles.modal} ${isModalOpen ? styles.open : ''}`}
         ref={modalRef}

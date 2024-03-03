@@ -2,7 +2,7 @@
   "country": "Brasil",
   "country_code": "BR",
   "t": {
-    "placeholder": "Buscar",
+    "placeholder": "Buscar em",
     "search": "Buscar",
     "trends": "Tendências",
     "settings": "Ajustes",
@@ -16,7 +16,7 @@
     "open": "Abrir app",
     "contribute": "Contribua",
     "community": "Comunidade",
-    "donate": "Doar",
+    "donate": "Doação",
     "feedback": "Feedback",
     "link_feedback": "https://forms.gle/r6XAyB1ZLn9qzwp16",
     "terms": "Termos",
@@ -39,9 +39,13 @@
       "Energia suja",
       "ainda não foi analisado"
     ],
+    "more": "Mais",
     "learnMore": "Saiba mais",
-    "banner": ["Estamos construindo uma Web melhor", "Buscas mais produtivas e saudáveis"],
-    "copyright": "Findto é um assistente para busca descentralizada na web com impacto positivo. Todos os direitos reservados às marcas registradas e fontes externas. Projeto open source criado por"
+    "banner": [
+      "Bem vindo(a) ao Findto",
+      "Busca descentralizada na Web e IAs. Descubra mais. Ajude o planeta."
+    ],
+    "copyright": ["Findto é feito por", "e pela comunidade de código aberto."]
   },
   "categories": [
     {
@@ -65,24 +69,24 @@
           "color": "#ff825e"
         },
         {
-          "name": "Yahoo",
-          "action": "https://br.search.yahoo.com/search?p=",
-          "color": "#B980FF"
-        },
-        {
           "name": "Brave",
           "action": "https://search.brave.com/search?q=",
           "color": "#ff6470"
         },
         {
-          "name": "SearXNG",
-          "action": "https://opnxng.com/search?q=",
-          "color": "#5185ff"
+          "name": "Yahoo",
+          "action": "https://br.search.yahoo.com/search?p=",
+          "color": "#B980FF"
         },
         {
           "name": "Startpage",
           "action": "https://www.startpage.com/do/asearch?query=",
           "color": "#8690ff"
+        },
+        {
+          "name": "SearXNG",
+          "action": "https://opnxng.com/search?q=",
+          "color": "#5185ff"
         },
         {
           "name": "Ecosia",
@@ -143,24 +147,24 @@
       "active": true,
       "data": [
         {
-          "name": "Bing Chat",
-          "action": "https://www.bing.com/search?showconv=1&sendquery=1&q=",
-          "color": "#4dd1f0"
-        },
-        {
-          "name": "Perplexity",
-          "action": "https://www.perplexity.ai/?q=",
-          "color": "#38c8dc"
-        },
-        {
           "name": "ChatGPT",
           "action": "https://chat.openai.com/?q=",
           "color": "#0dcfa0"
         },
         {
-          "name": "Google Bard",
-          "action": "https://bard.google.com/chat?prompt=",
-          "color": "#cb83e0"
+          "name": "Microsoft Copilot",
+          "action": "https://www.bing.com/search?showconv=1&sendquery=1&q=",
+          "color": "#e897ee"
+        },
+        {
+          "name": "Perplexity",
+          "action": "https://www.perplexity.ai/?q=",
+          "color": "#81ccd6"
+        },
+        {
+          "name": "Google Gemini",
+          "action": "https://gemini.google.com/app?q=",
+          "color": "#7ea4ff"
         },
         {
           "name": "HuggingChat",
@@ -190,9 +194,14 @@
       "active": true,
       "data": [
         {
-          "name": "Twitter",
-          "action": "https://twitter.com/search?src=typed_query&q=",
+          "name": "X",
+          "action": "https://x.com/search?src=typed_query&q=",
           "color": "#4abaff"
+        },
+        {
+          "name": "Reddit",
+          "action": "https://www.reddit.com/search?q=",
+          "color": "#ff7744"
         },
         {
           "name": "Facebook",
@@ -210,11 +219,6 @@
           "color": "#ff6986"
         },
         {
-          "name": "Reddit",
-          "action": "https://www.reddit.com/search?q=",
-          "color": "#ff8353"
-        },
-        {
           "name": "LinkedIn",
           "action": "https://www.linkedin.com/search/results/index/?keywords=",
           "color": "#39BAFF"
@@ -225,19 +229,29 @@
           "color": "#8791FF"
         },
         {
-          "name": "Snapchat",
-          "action": "https://story.snapchat.com/search?q=",
-          "color": "#fffd5e"
+          "name": "Bluesky",
+          "action": "https://bsky.app/search?q=",
+          "color": "#5797ff"
         },
         {
-          "name": "Quora",
-          "action": "https://www.quora.com/search?q=",
-          "color": "#ff6966"
+          "name": "Threads",
+          "action": "https://www.threads.net/search/?q=",
+          "color": "#999999"
+        },
+        {
+          "name": "Snapchat",
+          "action": "https://www.snapchat.com/explore/",
+          "color": "#fffd5e"
         },
         {
           "name": "Tumblr",
           "action": "https://www.tumblr.com/search/",
           "color": "#5084bf"
+        },
+        {
+          "name": "Quora",
+          "action": "https://www.quora.com/search?q=",
+          "color": "#ff6966"
         },
         {
           "name": "Mastodon",
@@ -288,14 +302,19 @@
           "color": "#33bcea"
         },
         {
+          "name": "Max",
+          "action": "https://play.hbomax.com/search?q=",
+          "color": "#9181f8"
+        },
+        {
           "name": "Disney+",
           "action": "https://disneyplus.com/?q=",
           "color": "#5a7dff"
         },
         {
-          "name": "HBO Max",
-          "action": "https://play.hbomax.com/search?q=",
-          "color": "#9181f8"
+          "name": "Paramount+",
+          "action": "https://www.paramountplus.com/br/search/?q=",
+          "color": "#6da6ff"
         },
         {
           "name": "Apple TV+",
@@ -323,14 +342,14 @@
           "color": "#6ee373"
         },
         {
-          "name": "Dailymotion",
-          "action": "https://www.dailymotion.com/search/",
-          "color": "#999999"
-        },
-        {
           "name": "TMDB",
           "action": "https://www.themoviedb.org/search?query=",
           "color": "#46c2c0"
+        },
+        {
+          "name": "Dailymotion",
+          "action": "https://www.dailymotion.com/search/",
+          "color": "#999999"
         },
         {
           "name": "Plex",
@@ -439,7 +458,7 @@
     },
     {
       "name": "Music",
-      "name_translated": "Áudio",
+      "name_translated": "Música",
       "name_trends": "Top álbuns",
       "active": true,
       "data": [
@@ -471,7 +490,7 @@
         {
           "name": "Deezer",
           "action": "https://www.deezer.com/search/",
-          "color": "#cccccc"
+          "color": "#c37eff"
         },
         {
           "name": "TIDAL",
@@ -525,7 +544,7 @@
         },
         {
           "name": "Audius",
-          "action": "https://audius.co/search/?q=",
+          "action": "https://audius.co/search/",
           "color": "#bb65ff"
         }
       ]
@@ -741,7 +760,7 @@
         {
           "name": "Globo",
           "action": "https://www.globo.com/busca/?q=",
-          "color": "#5F92FF"
+          "color": "#6494ff"
         },
         {
           "name": "UOL",
@@ -756,7 +775,7 @@
         {
           "name": "Folha",
           "action": "https://search.folha.uol.com.br/?q=lula",
-          "color": "#00A1DC"
+          "color": "#00afec"
         },
         {
           "name": "Estadão",
@@ -828,14 +847,14 @@
       "active": true,
       "data": [
         {
-          "name": "Wikipédia",
-          "action": "https://pt.wikipedia.org/w/index.php?search=",
-          "color": "#a2a9b1"
-        },
-        {
           "name": "Google Scholar",
           "action": "https://scholar.google.com/scholar?q=",
           "color": "#649fff"
+        },
+        {
+          "name": "Wikipédia",
+          "action": "https://pt.wikipedia.org/w/index.php?search=",
+          "color": "#a2a9b1"
         },
         {
           "name": "ResearchGate",
@@ -948,7 +967,7 @@
         {
           "name": "LinkedIn",
           "action": "https://www.linkedin.com/jobs/search/?keywords=",
-          "color": "#39BAFF"
+          "color": "#32b8ff"
         },
         {
           "name": "Glassdoor",
@@ -1034,7 +1053,7 @@
     },
     {
       "name": "Legal",
-      "name_translated": "Legal",
+      "name_translated": "Jurídico",
       "name_trends": "Serviços populares",
       "active": true,
       "data": [
@@ -1152,9 +1171,67 @@
       ]
     },
     {
+      "name": "Apps",
+      "name_translated": "Aplicativos",
+      "name_trends": "Apps populares",
+      "active": true,
+      "data": [
+        {
+          "name": "Google Play",
+          "action": "https://play.google.com/store/search?q=",
+          "color": "#00c78e"
+        },
+        {
+          "name": "App Store",
+          "action": "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?media=software&term=",
+          "color": "#1db2f9"
+        },
+        {
+          "name": "Microsoft Store",
+          "action": "https://apps.microsoft.com/store/search/",
+          "color": "#219fff"
+        },
+        {
+          "name": "Chrome Web Store",
+          "action": "https://chromewebstore.google.com/search/",
+          "color": "#FFC412"
+        },
+        {
+          "name": "Firefox Addons",
+          "action": "https://addons.mozilla.org/en-US/firefox/search/?q=",
+          "color": "#00c8d7"
+        },
+        {
+          "name": "AlternativeTo",
+          "action": "https://alternativeto.net/browse/search/?q=",
+          "color": "#33B4FF"
+        },
+        {
+          "name": "Flathub",
+          "action": "https://flathub.org/pt-BR/apps/search?q=",
+          "color": "#34aadc"
+        },
+        {
+          "name": "Snap Store",
+          "action": "https://snapcraft.io/search?q=",
+          "color": "#FF7B4B"
+        },
+        {
+          "name": "Softonic",
+          "action": "https://www.softonic.com.br/s/",
+          "color": "#0bda8a"
+        },
+        {
+          "name": "Product Hunt",
+          "action": "https://www.producthunt.com/search?q=",
+          "color": "#ff744c"
+        }
+      ]
+    },
+    {
       "name": "Code",
       "name_translated": "Código",
-      "name_trends": "Top repositórios",
+      "name_trends": "Repositórios populares",
       "active": true,
       "data": [
         {
@@ -1249,78 +1326,10 @@
         }
       ]
     },
-    {
-      "name": "Apps",
-      "name_title": "Busca de Apps",
-      "name_trends": "Aplicativos populares",
-      "active": true,
-      "data": [
-        {
-          "name": "Google Play",
-          "action": "https://play.google.com/store/search?q=",
-          "color": "#00c78e"
-        },
-        {
-          "name": "App Store",
-          "action": "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?media=software&term=",
-          "color": "#1db2f9"
-        },
-        {
-          "name": "Microsoft Store",
-          "action": "https://apps.microsoft.com/store/search/",
-          "color": "#219fff"
-        },
-        {
-          "name": "Chrome Web Store",
-          "action": "https://chromewebstore.google.com/search/",
-          "color": "#FFC412"
-        },
-        {
-          "name": "Firefox Addons",
-          "action": "https://addons.mozilla.org/en-US/firefox/search/?q=",
-          "color": "#00c8d7"
-        },
-        {
-          "name": "Snap Store",
-          "action": "https://snapcraft.io/search?q=",
-          "color": "#FF7B4B"
-        },
-        {
-          "name": "Flathub",
-          "action": "https://flathub.org/pt-BR/apps/search?q=",
-          "color": "#34aadc"
-        },
-        {
-          "name": "Softonic",
-          "action": "https://www.softonic.com.br/s/",
-          "color": "#0bda8a"
-        },
-        {
-          "name": "AlternativeTo",
-          "action": "https://alternativeto.net/browse/search/?q=",
-          "color": "#33B4FF"
-        },
-        {
-          "name": "Product Hunt",
-          "action": "https://www.producthunt.com/search?q=",
-          "color": "#ff744c"
-        },
-        {
-          "name": "Kickstarter",
-          "action": "https://www.kickstarter.com/discover/advanced?term=",
-          "color": "#46e6a1"
-        },
-        {
-          "name": "Indiegogo",
-          "action": "https://www.indiegogo.com/explore/all?q=",
-          "color": "#f16fac"
-        }
-      ]
-    },
+
     {
       "name": "Finance",
       "name_translated": "Finanças",
-      "name_title": "Busca Financeira",
       "active": false,
       "data": [
         {

@@ -8,14 +8,13 @@ const SearchContext = createContext<any>({})
 export function SearchContextProvider({ children }) {
   const { locale } = useRouter()
   const [data, setData] = useState<any>({})
-  const [layout, setLayout] = useState<string>('1')
+
   const [theme, setTheme] = useState<string>('light')
   const [category, setCategory] = useState<string>('Web')
   const [search, setSearch] = useState<string>('google')
   const [searchUrl, setSearchUrl] = useState<string>('')
   const [titleTrends, setTitleTrends] = useState<string>('')
   const [color, setColor] = useState<string>('#fff')
-  const [trends, setTrends] = useState<string>('Trends')
   const [country, setCountry] = useState<string>('US')
   const [permissionLocation, setPermissionLocation] = useState<boolean>(false)
   const [latitude, setLatitude] = useState<number>()
@@ -26,22 +25,19 @@ export function SearchContextProvider({ children }) {
   const refSearchTabs = useRef([])
 
   // load search data by file
-  const searchData = require('../locales/' + locale + '.json')
+  const searchDataByLocale = require('../locales/' + locale + '.json')
 
   function scrollToTop() {
     const isBrowser = () => typeof window !== 'undefined'
     if (!isBrowser()) return
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
-
-  // set value to input
   function putValue(value: string) {
-    refSearchInput.current.value = value
+    const sanitizedValue = value.replace(/[#:‑\-]/g, '')
+    refSearchInput.current.value = sanitizedValue
     refSearchInput.current.focus()
     scrollToTop()
   }
-
-  // viewport
   function useWindowSize() {
     // https://stackoverflow.com/questions/63406435/
     const [windowSize, setWindowSize] = useState({
@@ -67,6 +63,16 @@ export function SearchContextProvider({ children }) {
   }
   const sizeWindow = useWindowSize()
 
+  // locale
+  useEffect(() => {
+    setData(searchDataByLocale)
+  }, [searchDataByLocale, locale])
+
+  useEffect(() => {
+    setCountry(data?.country_code)
+    window.localStorage.setItem('country', data?.country_code)
+  }, [data])
+
   // mobile viewport
   useEffect(() => {
     if (sizeWindow) {
@@ -78,19 +84,7 @@ export function SearchContextProvider({ children }) {
     }
   }, [sizeWindow])
 
-  // locale
-  useEffect(() => {
-    setData(searchData)
-    // console.log('LOCALE + DATA SEARCH', locale, searchData)
-    setTrends(data?.t?.trends)
-  }, [searchData, locale, trends])
-
-  useEffect(() => {
-    setCountry(data?.country_code)
-    window.localStorage.setItem('country', data?.country_code)
-  }, [data])
-
-  // theme
+  // theme color
   useEffect(() => {
     if (theme) {
       const root = document.documentElement
@@ -111,18 +105,19 @@ export function SearchContextProvider({ children }) {
         '--color-black-translucent',
         theme === 'dark' ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0, 0, 0, 0.05)'
       )
+      root.style.setProperty(
+        '--color-black-translucent-50',
+        theme === 'dark' ? 'rgba(255, 255, 255, 0.5)' : 'rgba(0, 0, 0, 0.5)'
+      )
     }
   }, [theme])
 
   // sync with LocalStorage
   useEffect(() => {
-    const storedLayout = window.localStorage.getItem('layout')
-    const storedTheme = window.localStorage.getItem('theme')
     const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const storedTheme = window.localStorage.getItem('theme')
     const storedCategory = window.localStorage.getItem('category')
     const storedSearch = window.localStorage.getItem('search')
-
-    storedLayout && setLayout(storedLayout)
 
     storedTheme ? setTheme(storedTheme) : setTheme(prefersDarkMode ? 'dark' : 'light')
 
@@ -140,8 +135,6 @@ export function SearchContextProvider({ children }) {
         inputValue,
         setInputValue,
         data,
-        layout,
-        setLayout,
         theme,
         setTheme,
         search,
@@ -152,8 +145,6 @@ export function SearchContextProvider({ children }) {
         setCategory,
         color,
         setColor,
-        trends,
-        setTrends,
         country,
         locale,
         permissionLocation,

@@ -10,7 +10,7 @@ export default function PagePrivacy() {
       <section className="colors">
         <div className={Style.container}>
           <div className={Style.pageTitle}>
-            <h1>Privacy Policy</h1>
+            <h1>Findto Privacy Policy</h1>
           </div>
         </div>
       </section>
@@ -18,28 +18,28 @@ export default function PagePrivacy() {
       <section>
         <div className={Style.container}>
           <article>
-            <h2>1. Findto Privacy Pledge</h2>
+            <h2>1. Privacy Focus</h2>
 
             <p>
-              The Findto mission is encourage people choice a healthy web. We respect your privacy
-              regarding any information we may collect from you across our services accessible at{' '}
-              <a href="http://findto.app">http://findto.app</a> ("Findto"). Findto is built on
-              privacy and do not store searches.{' '}
+              We respect your privacy regarding any information we may collect from you across our
+              internet service <a href="http://findto.app">http://findto.app</a> or another medium
+              ("Findto").
             </p>
 
             <p>
-              External sources and services may collect and store personal data. Thinking about it,
-              Findto displays a "Privacy Level" of every search provider, whenever available.
+              Findto don't store any user searches. Because was designed for it. Findto mission is
+              encourage people choice a healthy internet. External search provider services may
+              collect and store your personal data. Thinking about it, Findto displays a "Privacy
+              level widget" on top of every search provider, whenever available.
             </p>
 
             <p>
-              This privacy policy have accordance with the General Data Protection Law (Brazil
-              LGPD), General Data Protection Regulation (European Union GDPR) and similar
-              regulations. Findto endorses these legislation's as they allow user control over their
-              data.
+              Findto endorses user control over their data. This privacy policy have accordance with
+              the Brazil General Data Protection Law (LGPD), European Union General Data Protection
+              Regulation (GDPR) and similar legislation's.
             </p>
 
-            <p>Using Findto you are agreeing to be bound by this policy. </p>
+            <p>Using Findto you are agreeing to be bound by this privacy policy. </p>
 
             <h2>2. Automatically Collected Information</h2>
 
@@ -66,9 +66,9 @@ export default function PagePrivacy() {
               let you know why we're collecting it and how it will be used.
             </p>
 
-            <h2>4. Use of Your Information</h2>
+            <h2>4. Information Using</h2>
 
-            <p>Findto only use your information with the purpose of: </p>
+            <p>Findto uses your information only with the purposes of: </p>
 
             <p>
               a) communicate with you to understand your feedback, respond to inquiries and provide
@@ -76,12 +76,13 @@ export default function PagePrivacy() {
             </p>
 
             <p>
-              b) anonymously analyze the users behavior to personalize and improve user experience;
+              b) anonymously analyze the users behavior to personalize and improve general user
+              experience;
             </p>
 
             <p>
               c) detect and prevent activities that be illegal, harmful to people and organizations
-              or violate copyright and intellectual property rights.
+              or violate copyright, intellectual property rights or cybersecurity.
             </p>
 
             <h2>5. Cookies and Tracking Technologies</h2>
@@ -95,10 +96,10 @@ export default function PagePrivacy() {
             <p>
               The{' '}
               <a
-                href="https://privacy.microsoft.com/privacystatement"
+                href="https://www.cloudflare.com/privacypolicy/"
                 target="_blank"
                 rel="noopener noreferrer">
-                Microsoft Clarity
+                Cloudflare
               </a>
               ,{' '}
               <a
@@ -109,10 +110,10 @@ export default function PagePrivacy() {
               </a>{' '}
               and{' '}
               <a
-                href="https://www.cloudflare.com/privacypolicy/"
+                href="https://privacy.microsoft.com/privacystatement"
                 target="_blank"
                 rel="noopener noreferrer">
-                Cloudflare
+                Microsoft Clarity
               </a>{' '}
               services are used to optimize Findto, and can put their own cookies in your browser.
               This policy not covers use of cookies by third parties. Click on the links above to
@@ -120,11 +121,11 @@ export default function PagePrivacy() {
             </p>
 
             <p>
-              If you use an "ad blocker" browser extension or have enabled some "do not track"
-              functionality on settings, the cookies maybe are not set.
+              If you use an "ad blocker" browser extension or have enabled "do not track" or similar
+              functionality on your browser settings, the cookies maybe are not set.
             </p>
 
-            <h2>6. Sharing Your Information</h2>
+            <h2>6. Information Sharing</h2>
 
             <p>
               Findto do not share any personally identifying information with third-parties. But for
@@ -133,7 +134,7 @@ export default function PagePrivacy() {
               personal information to perform their functions.
             </p>
 
-            <h2>7. Store and Protection of Your Information</h2>
+            <h2>7. Information Store and Protection</h2>
 
             <p>
               Findto only retain collected information for as long as necessary to provide to you
@@ -151,7 +152,7 @@ export default function PagePrivacy() {
               and how proceed to opt out of them individually.
             </p>
 
-            <h2>9. External Links</h2>
+            <h2>9. External Services</h2>
 
             <p>
               Findto redirects and contain links to external websites and applications just for your
@@ -171,17 +172,16 @@ export default function PagePrivacy() {
               changes.
             </p>
 
-            <h2>11. Questions and Requests</h2>
+            <h2>11. Contact</h2>
 
             <p>
-              If you have any questions about how Findto handle public user data (unidentifiable)
-              and personal information (identifiable), or data requests, contact sending an email at{' '}
-              <a href="mailto:legal@findto.app">legal@findto.app</a>.
+              If you have any questions or suggestions, please contact us sending an email at
+              legal@findto.app.
             </p>
 
             <p>Happy searches!</p>
 
-            <p>Effective date: June 10, 2023.</p>
+            <p>Effective date: March 1, 2024.</p>
           </article>
         </div>
       </section>
