@@ -15,57 +15,72 @@
 </p>
 
 <p align="center">
-Decentralized search assistant<br>
+Decentralized Web & AI search assistant<br>
 </p>
 
-## 🌎 Decentralized search assistant
+## Decentralized search
 
-Findto is a free and open source assistant for decentralized web search.
+Findto is an open source assistant for decentralized Web & AI search.
 
-The mission of Findto is to make searches truly free and more productive, putting people in control of algorithms and AIs — not the other way around.
+Findto puts people on control of the search algorithms — not the other way around. Quickly switch between diverse sources to find anything. More productive and accessible searches than ever.
 
-Findto proposes an enhanced web search experience: you control diverse sources, view the privacy score of them, discover trending contents, and choose better results.
+Get control of sources, view the privacy and carbon levels of them, discover what's trending on the internet, and choose better results. For you and the planet.
 
-The centralized web, where our searches are monopolized, is over. Findto encourages everyone to discover a more diverse, healthier, secure, and democratic web. Where your choices matter.
+The centralized internet — where our searches are monopolized — is unsustainable. Findto encourages a truly free search experience, where the people democratic choices and the planet needs walks together. A more diverse and healthier internet. As the should be.
 
-## 🌈 Top features
+Try it.
 
-- **Decentralized web search** — Quickly search, the same term, on multiple categories and sources
+## Features
 
-- **Privacy level** — View the privacy level of selected source, or how much your data are protected
+- **Decentralized Search** — Search the same term on diverse sources and categories
 
-- **Carbon footprint** — View the estimate carbon footprint of selected source
+- **Privacy Level** — How my data are handled? View the privacy level of selected source
 
-- **Trends** — Explore trending topics, contents, products, events and places nearby you
+- **Carbon Level** — How this impact the planet? View the estimate carbon footprint of selected source
 
-- **Autocomplete** — Get instant suggestions to help autocomplete terms as you type
+- **Trends** — Explore trending topics, contents, events, services and places nearby you
 
-- **Accessibility** — Change layout and theme color, contrast enhanced, use keyboard or screen reader navigation
+- **Autosuggest** — Get instant suggestions to help autocomplete small search terms as you type
 
-- **Internationalization** — Chose your country for local sources or use global search
+- **Voice Search** — Use your voice to search anywhere
 
-- **Voice search** — Use voice to search anywhere
+- **Accessibility** — Dark theme, balanced contrast, keyboard navigation and screen readers supported
 
-- **Visual search** — Use images to search on supported sources \* In development
+- **Internationalization** — Chose your country for local sources, or use international search
 
-## 🔍 Sources
+- **Visual Search** — Use images to search on supported sources \* In development
 
-Search sources and external data from APIs available on Findto are chosen by the criteria: 1) service popularity; 2) commitment with open access; 3) respect of privacy and copyright. All sources are displayed inside the navigable categories on the app, and chosen by community. For more details, visit [Wiki](https://github.com/lucasm/findto/wiki).
+## Sources
 
-## 🧡 Community
+All sources (search services and data from external APIs) available on Findto are chosen by the criteria:
 
-Findto is supported by community.
+1.  Service popularity
+1.  Service open access
+1.  Service legally commited to respect privacy and copyright
 
-Choose your favorite platform to support and ✨ enjoy exclusive benefits ✨ like name and link attribution on this repository, work-in-progress updates, early access to Beta versions and more!
+For more details, check [Wiki](https://github.com/lucasm/findto/wiki).
 
-- [Support via Ko-Fi](https://ko-fi.com/findto)
-- [Support via Patreon](https://patreon.com/findto)
-- [Sponsor via GitHub Sponsors](https://github.com/sponsors/lucasm)
+---
 
-For code contributors: check the [Projects](https://github.com/lucasm/findto/projects) board and opened [Issues](https://github.com/lucasm/findto/issues) before send pull requests.
+## Donate 💛
 
-## 🔒 Privacy
+If you like Findto, please, consider donate.
 
-Findto respects privacy and does not store any searches or personal information of users. Read the [Privacy Policy](https://findto.app/privacy).
+Choose your favorite platform to support and ✨ enjoy exclusive benefits ✨ like your name or banner with link attribution on this repository, work-in-progress updates, and early access to Beta versions!
 
-Made in Brazil with love by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app).
+- [Donate one-time via Ko-Fi](https://ko-fi.com/findto)
+- Support as sponsor via [ Patreon](https://patreon.com/lucasm) or [GitHub Sponsors](https://github.com/sponsors/lucasm)
+
+---
+
+### Contributions
+
+If you want to contribute with code, before send pull requests, view opened [Issues](https://github.com/lucasm/findto/issues) thats need help. Go to board [Projects](https://github.com/lucasm/findto/projects) for backlog.
+
+### Team
+
+Made in Brazil with love by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app) and supported by open source community!
+
+### Privacy & Terms
+
+Findto respects users privacy and don't store any searches. Findto also show materials (brands of external services) protected by copyright. Read our [Privacy](https://findto.app/privacy) and [Terms](https://findto.app/terms).
