@@ -322,16 +322,6 @@
           "color": "#c8c8c8"
         },
         {
-          "name": "Crunchyroll",
-          "action": "https://www.crunchyroll.com/pt-br/search?q=",
-          "color": "#ff944c"
-        },
-        {
-          "name": "Libreflix",
-          "action": "https://libreflix.org/busca/",
-          "color": "#3ec2e2"
-        },
-        {
           "name": "IMDb",
           "action": "https://www.imdb.com/find/?q=",
           "color": "#f5c518"
@@ -345,6 +335,16 @@
           "name": "TMDB",
           "action": "https://www.themoviedb.org/search?query=",
           "color": "#46c2c0"
+        },
+        {
+          "name": "Crunchyroll",
+          "action": "https://www.crunchyroll.com/pt-br/search?q=",
+          "color": "#ff944c"
+        },
+        {
+          "name": "Libreflix",
+          "action": "https://libreflix.org/busca/",
+          "color": "#3ec2e2"
         },
         {
           "name": "Dailymotion",

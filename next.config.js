@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 
-const runtimeCaching = require('@imbios/next-pwa/cache')
-const withPWA = require('@imbios/next-pwa')({
+const withPWA = require('next-pwa')({
   dest: 'public',
 })
 
@@ -10,7 +9,6 @@ module.exports = withPWA({
     dest: 'public',
     register: true,
     skipWaiting: true,
-    runtimeCaching,
   },
   i18n: {
     locales: ['en', 'pt-BR'],
@@ -35,5 +33,18 @@ module.exports = withPWA({
       'github.com',
       'cdn.vox-cdn.com',
     ],
+  },
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'X-Frame-Options',
+            value: 'SAMEORIGIN',
+          },
+        ],
+      },
+    ]
   },
 })

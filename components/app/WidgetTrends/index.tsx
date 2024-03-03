@@ -350,7 +350,7 @@ export default function SearchTrends() {
                     item.url ? window.open(item.url, '_blank') : putValue(item.title.toLowerCase())
                   }>
                   {item.image && (
-                    <img src={item.image} width={miniImage ? 48 : 120} alt={item.title} />
+                    <img src={item.image} width={miniImage ? 48 : 120} alt="" role="none" />
                   )}
                   {item.title && <span>{item.title}</span>}
                 </button>

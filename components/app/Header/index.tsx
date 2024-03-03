@@ -242,26 +242,27 @@ export default function AppHeader() {
                 <li key={index}>{renderMenuItem(item.name, item.name_translated)}</li>
               )
           )}
-
-          <div className={Style.submenu} ref={submenuRef}>
-            {submenuItems?.length > 0 && (
-              <button onClick={toggleSubmenu}>
-                <IconMore /> {data?.t?.more ?? 'More'}
-              </button>
-            )}
-
-            {isSubmenuOpen && (
-              <ul>
-                {submenuItems?.map(
-                  (item, index: number) =>
-                    item.active == true && (
-                      <li key={index}>{renderMenuItem(item.name, item.name_translated)}</li>
-                    )
-                )}
-              </ul>
-            )}
-          </div>
         </ul>
+
+        <div className={Style.submenu} ref={submenuRef}>
+          {submenuItems?.length > 0 && (
+            <button onClick={toggleSubmenu}>
+              <IconMore /> {data?.t?.more ?? 'More'}
+            </button>
+          )}
+
+          {isSubmenuOpen && (
+            <ul>
+              {submenuItems?.map(
+                (item, index: number) =>
+                  item.active == true && (
+                    <li key={index}>{renderMenuItem(item.name, item.name_translated)}</li>
+                  )
+              )}
+            </ul>
+          )}
+        </div>
+
         <div className={Style.iconSettings}>
           <button onClick={toggleModal}>
             <IconSettings />

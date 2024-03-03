@@ -21,6 +21,9 @@
   flex-wrap: wrap;
   color: var(--color-text-black);
 }
+.container ul li {
+  font-size: 0;
+}
 .container ul li:last-child {
   display: flex;
   align-items: center;
@@ -28,23 +31,22 @@
 }
 .container ul li a,
 .container p {
+  font-size: var(--font-size);
   color: var(--color-black-translucent-50);
 }
 
-.socialIcons {
-  display: flex;
-  gap: 1rem;
-}
-.socialIcons a {
+.container ul li a:has(svg) {
   font-size: 0;
 }
-.socialIcons svg {
+
+.container ul li a svg {
   width: 1rem;
   height: 1rem;
   fill: var(--color-black-translucent-50);
   transition: var(--transition);
 }
-.socialIcons a:hover svg {
+.container ul li a:hover svg,
+.container ul li a:focus svg {
   fill: var(--color-text-black);
 }
 
@@ -67,7 +69,7 @@
     gap: 1rem;
   }
   .container p,
-  .container ul li {
+  .container ul li a {
     font-size: var(--font-size-small);
   }
 }
