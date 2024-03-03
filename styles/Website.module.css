@@ -83,6 +83,7 @@
 .page section h2 {
   line-height: 1.25;
   margin-bottom: 2rem;
+  color: var(--color-text-black);
 }
 .page section h3 {
   margin-bottom: 1.5rem;

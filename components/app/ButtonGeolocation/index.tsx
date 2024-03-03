@@ -18,7 +18,7 @@ export default function ButtonGeolocation() {
           setPermissionLocation(true)
           setLatitude(latitude)
           setLongitude(longitude)
-          console.log(`latitude: ${latitude}, longitude: ${longitude}`)
+          // console.log(`latitude: ${latitude}, longitude: ${longitude}`)
         },
         (error) => {
           if (error.code === 1) {

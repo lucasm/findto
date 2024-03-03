@@ -157,7 +157,6 @@ export default function AppHeader() {
   useEffect(() => {
     // limite de itens no menu
     if (!isMobileViewport && pageHeight > 0) {
-      console.log(pageHeight)
       if (pageHeight < 340) {
         setMaxItemsInHeader(2)
       } else if (pageHeight < 380) {

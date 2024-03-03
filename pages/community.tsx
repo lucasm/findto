@@ -4,16 +4,14 @@ import CardsLink from '../components/website/CardsLink'
 
 export default function PageCommunity() {
   const description =
-    'Help make Findto decentralized search accessible for everyone and healthy for the planet.'
+    'Help make Findto decentralized search accessible to all and sustainable for the planet.'
 
   return (
     <LayoutPage title="Community" description={description}>
       <section className="colors">
         <div className={Style.container}>
-          <div className={Style.actionContainer}>
-            <h1>Join our Community</h1>
-            <p>{description}</p>
-          </div>
+          <h1>Join our Community</h1>
+          <p>{description}</p>
         </div>
       </section>
 

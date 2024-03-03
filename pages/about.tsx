@@ -74,7 +74,7 @@ export default function PageAbout() {
 
       <section className="colors">
         <div className={Style.container}>
-          <h2>Features</h2>
+          <h3>Features</h3>
 
           <CardsFeat />
         </div>

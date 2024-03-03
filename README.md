@@ -18,17 +18,19 @@
 Decentralized Web & AI search assistant<br>
 </p>
 
-## Decentralized search
+## A better search
 
 Findto is an open source assistant for decentralized Web & AI search.
 
-Findto puts people on control of the search algorithms — not the other way around. Quickly switch between diverse sources to find anything. More productive and accessible searches than ever.
+Findto puts people on control of the search algorithms — not the other way around.
 
-Get control of sources, view the privacy and carbon levels of them, discover what's trending on the internet, and choose better results. For you and the planet.
+Quickly switch between diverse sources to find anything. View the privacy and carbon levels of service. Discover what's trending on the internet. More productive and accessible searches than ever. Choose better results, for you and the planet.
 
 The centralized internet — where our searches are monopolized — is unsustainable. Findto encourages a truly free search experience, where the people democratic choices and the planet needs walks together. A more diverse and healthier internet. As the should be.
 
-Try it.
+🔎 Try it now: https://findto.app
+
+💡 How it works: https://findto.app/about
 
 ## Features
 
@@ -52,11 +54,11 @@ Try it.
 
 ## Sources
 
-All sources (search services and data from external APIs) available on Findto are chosen by the criteria:
+All the search sources available on Findto are chosen by the criteria:
 
 1.  Service popularity
 1.  Service open access
-1.  Service legally commited to respect privacy and copyright
+1.  Service legally committed to respecting privacy and copyright
 
 For more details, check [Wiki](https://github.com/lucasm/findto/wiki).
 
@@ -75,7 +77,7 @@ Choose your favorite platform to support and ✨ enjoy exclusive benefits ✨ li
 
 ### Contributions
 
-If you want to contribute with code, before send pull requests, view opened [Issues](https://github.com/lucasm/findto/issues) thats need help. Go to board [Projects](https://github.com/lucasm/findto/projects) for backlog.
+If you are a code contributor, before send pull requests, view opened [Issues](https://github.com/lucasm/findto/issues) thats need help. Go to board [Projects](https://github.com/lucasm/findto/projects) for backlog.
 
 ### Team
 
@@ -83,4 +85,4 @@ Made in Brazil with love by [Lucas Menezes](https://lucasm.dev/?utm_source=findt
 
 ### Privacy & Terms
 
-Findto respects users privacy and don't store any searches. Findto also show materials (brands of external services) protected by copyright. Read our [Privacy](https://findto.app/privacy) and [Terms](https://findto.app/terms).
+Findto respects users privacy and don't store any searches. Findto also show materials protected by copyright. Read our [Privacy](https://findto.app/privacy) and [Terms](https://findto.app/terms).
