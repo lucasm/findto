@@ -7,11 +7,11 @@
 <h1 align="center">Findto</h1>
 
 <p align="center">
-<a href="https://findto.app" target="_blank"><img alt="Languages" src="https://img.shields.io/badge/translations-2-ffdb56?logo=json&logoColor=white"></a>
+<a href="https://github.com/lucasm/findto/wiki" target="_blank"><img alt="Languages" src="https://img.shields.io/badge/translations-2-ffdb56?logo=json&logoColor=white"></a>
 <a href="https://github.com/lucasm/findto/issues" target="_blank"><img alt="Issues" src="https://img.shields.io/github/issues/lucasm/findto?color=ff5c5c&logo=github&logoColor=white"></a>
 <a href="https://discord.gg/gEDm5MU6pq" target="_blank"><img alt="Community" src="https://img.shields.io/discord/866829154032812073?color=bc86ff&label=Discord&logo=discord&logoColor=white"></a>
 <a href="https://ko-fi.com/findto" target="_blank"><img alt="Supporters on Ko-Fi" src="https://img.shields.io/badge/KoFi-1-1491de?logo=kofi&logoColor=white"></a>
-<a href="https://github.com/lucasm/findto" target="_blank"><img alt="GitHub release" src="https://img.shields.io/github/v/release/lucasm/findto?label=version&color=37bf5d&logo=github&logoColor=white"></a>
+<a href="https://github.com/lucasm/findto/releases" target="_blank"><img alt="GitHub release" src="https://img.shields.io/github/v/release/lucasm/findto?label=version&color=37bf5d&logo=github&logoColor=white"></a>
 <a href="https://github.com/lucasm/findto" target="_blank"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/lucasm/findto?label=size&color=37bf5d&logo=github&logoColor=white"></a>
 </p>
 
@@ -78,7 +78,7 @@ Choose your favorite platform to support and ✨ enjoy exclusive benefits ✨ li
 
 ### Contributions
 
-For code contributors, before send pull requests, view opened [Issues](https://github.com/lucasm/findto/issues) thats need help. Go to board [Projects](https://github.com/lucasm/findto/projects) for backlog.
+Before send pull requests, view opened [Issues](https://github.com/lucasm/findto/issues) thats need help. Go to board [Projects](https://github.com/lucasm/findto/projects) for backlog.
 
 ### Team
 
