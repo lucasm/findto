@@ -4,14 +4,19 @@ import Link from 'next/link'
 import AppFooter from '../../app/Footer'
 import SvgLogo from '../SvgLogo'
 import { useSearch } from '../../../contexts/SearchContext'
-import { LayoutProps } from '../../../interfaces/pages'
 import { useRouter } from 'next/router'
+
+interface LayoutProps {
+  title: string
+  description: string
+  children: React.ReactNode
+}
 
 export default function LayoutPage(props: LayoutProps) {
   const { asPath } = useRouter()
   const { data } = useSearch()
 
-  const title = props.title + ' | Findto'
+  const title = props.title + ' — Findto'
   const url = 'http://findto.app' + asPath
 
   return (
@@ -59,7 +64,7 @@ export default function LayoutPage(props: LayoutProps) {
                 </a>
               </li> */}
               <li>
-                <Link href="/">{data?.t?.open ?? 'Open app'} </Link>
+                <Link href="/">{data?.t?.open ?? 'Open the app'} </Link>
               </li>
             </ul>
           </nav>

@@ -1,20 +1,21 @@
 .container {
   text-align: center;
-  padding: 5rem 2rem 2rem;
+  padding: 4rem 2rem 2rem;
+  max-width: 940px;
 }
 .container figure {
   font-size: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 .container figure svg {
-  width: 24px;
-  color: var(--color-text-black);
+  width: 20px;
+  fill: var(--color-black-translucent-50);
 }
 
 .container ul {
   display: flex;
-  gap: 1.75rem;
-  margin-top: 2rem;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -25,8 +26,9 @@
   align-items: center;
   gap: 1rem;
 }
+.container ul li a,
 .container p {
-  color: var(--color-text-black);
+  color: var(--color-black-translucent-50);
 }
 
 .socialIcons {
@@ -39,11 +41,33 @@
 .socialIcons svg {
   width: 1rem;
   height: 1rem;
-  stroke-width: 2.6;
+  fill: var(--color-black-translucent-50);
+  transition: var(--transition);
+}
+.socialIcons a:hover svg {
+  fill: var(--color-text-black);
+}
+
+.container p a,
+.container a {
+  color: var(--color-black-translucent-50);
+  transition: var(--transition);
+}
+
+.container a:hover,
+.container a:focus {
+  color: var(--color-text-black);
 }
 
 @media screen and (max-width: 600px) {
+  .container {
+    padding: 2rem;
+  }
   .container ul {
     gap: 1rem;
+  }
+  .container p,
+  .container ul li {
+    font-size: var(--font-size-small);
   }
 }

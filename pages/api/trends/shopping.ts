@@ -45,7 +45,7 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
             image: 'https://m.media-amazon.com/images/I/61OkuiCWbDL._AC_SX679_.jpg',
           },
           {
-            title: 'JBL Go 3 Bluetooth',
+            title: 'JBL Go 3',
             url: 'https://amzn.to/43CrM9C',
             image: 'https://m.media-amazon.com/images/I/61iD9jlBlqL.__AC_SX300_SY300_QL70_ML2_.jpg',
           },
@@ -55,12 +55,12 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
             image: 'https://m.media-amazon.com/images/I/71JFKFPi1VL._AC_SX679_.jpg',
           },
           {
-            title: 'Echo Pop Smart Speaker Alexa',
+            title: 'Echo Pop Alexa',
             url: 'https://amzn.to/3O9OO23',
             image: 'https://m.media-amazon.com/images/I/61V5FRUgX8L._AC_SX679_.jpg',
           },
           {
-            title: 'JBL Boombox 3 Bluetooth',
+            title: 'JBL Boombox 3',
             url: 'https://amzn.to/43H0sqO',
             image: 'https://m.media-amazon.com/images/I/51iOUVHcSxL.__AC_SX300_SY300_QL70_ML2_.jpg',
           },
@@ -90,12 +90,12 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
             image: 'https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SX679_.jpg',
           },
           {
-            title: 'Smart Lâmpada Positivo WiFi Bluetooth RGB LED Bivolt Alexa e Google',
+            title: 'Smart Lâmpada Positivo WiFi Bluetooth RGB LED Alexa e Google',
             url: 'https://amzn.to/3U6Btfy',
             image: 'https://m.media-amazon.com/images/I/511R3odrRjL._AC_SX679_.jpg',
           },
           {
-            title: 'Air Fryer Fritadeira Sem Óleo Mondial 4L Preto/Inox',
+            title: 'Air Fryer (fritadeira sem óleo) Mondial 4L Inox',
             url: 'https://amzn.to/47D7cbi',
             image: 'https://m.media-amazon.com/images/I/71zeBuMlz2L._AC_SY879_.jpg',
           },

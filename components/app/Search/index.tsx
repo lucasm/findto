@@ -161,11 +161,20 @@ export default function Search() {
         {/* Tabs */}
         <div className={Style.tabs}>
           {data?.categories?.map((itemCategory: ISearchCategory, index: number) => (
-            <ul key={index} style={{ display: category == itemCategory.name ? 'flex' : 'none' }}>
+            <ul
+              key={index}
+              style={{
+                display:
+                  category === itemCategory.name
+                    ? isMobileViewport
+                      ? 'inline-block'
+                      : 'flex'
+                    : 'none',
+              }}>
               {itemCategory?.data.map((item: ISearch, index: number) => (
                 <li key={index}>
                   <button
-                    className={search == normalizeId(item.name) ? Style.activeLink : null}
+                    className={search == normalizeId(item.name) ? 'activeLink' : null}
                     onClick={() => handleSearchSource(normalizeId(item.name))}
                     ref={
                       index === 0

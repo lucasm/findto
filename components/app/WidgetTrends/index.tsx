@@ -330,19 +330,19 @@ export default function SearchTrends() {
   ])
 
   return (
-    <section className={Styles.section}>
+    <section className={Styles.section + ' ' + Styles[`trends${category}`]}>
       <div className={Styles.title}>
         <h2>{titleTrends ?? 'Trends'}</h2>
       </div>
 
       {category === 'Local' && <ButtonGeolocation />}
       {category === 'Local' && loadingLocal && <Loader />}
-
       {!dataTrends && !errorTrends && category != 'Local' && <Loader />}
+      {errorTrends && <div>Error</div>}
 
       {dataTrends && (
         <div className={Styles.container}>
-          <ul className={Styles[`trends${category}`]}>
+          <ul>
             {dataTrends?.data?.map((item: ITrendsItem, index: number) => (
               <li key={index}>
                 <button
@@ -350,7 +350,7 @@ export default function SearchTrends() {
                     item.url ? window.open(item.url, '_blank') : putValue(item.title.toLowerCase())
                   }>
                   {item.image && (
-                    <img src={item.image} width={miniImage ? 60 : 120} alt={item.title} />
+                    <img src={item.image} width={miniImage ? 48 : 120} alt={item.title} />
                   )}
                   {item.title && <span>{item.title}</span>}
                 </button>
@@ -360,12 +360,10 @@ export default function SearchTrends() {
         </div>
       )}
 
-      {errorTrends && <div>Error</div>}
-
       <div className={Styles.credits}>
         {dataTrends && (
           <p>
-            {data?.t?.powered ?? 'Powered by'}
+            {data?.t?.powered ?? 'Powered by'}{' '}
             <a
               href={
                 dataTrends?.credits_url ? dataTrends?.credits_url + '?utm_source=findto_app' : ''

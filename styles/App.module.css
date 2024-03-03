@@ -1,60 +1,11 @@
-.main svg,
-.header svg {
-  width: 20px;
-  height: 20px;
-  color: var(--color-text-black);
-}
-
-.activeLink {
-  opacity: 1 !important;
-  background: var(--color-bg-white) !important;
-  color: var(--color-text-black) !important;
-  box-shadow: var(--box-shadow) !important;
-}
-.activeLink svg {
-  color: var(--color-text-black) !important;
-}
-
-/* Header */
-.header {
-  z-index: 999;
-}
-.header button {
-  font-size: 0;
-  background: var(--color-bg-grey);
-  border: none;
-  opacity: var(--opacity);
-}
-.header button:hover,
-.header button:focus,
-.header a:hover,
-.header a:focus {
-  opacity: 1;
-  background: var(--color-black-translucent);
-}
-
 /* Main */
 .main {
   text-align: center;
   margin: 0 auto;
   padding: 0 2rem;
-  box-sizing: content-box;
   max-width: var(--max-size-container);
-}
-
-/* Logo */
-.logo {
-  display: flex;
-  align-items: center;
-  padding: 0 1rem;
-  height: var(--size-large);
-  border-radius: var(--radius-full);
-  color: var(--color-text-black);
-}
-.logo svg {
-  margin-right: 0.75rem;
-  width: 24px;
-  height: 24px;
+  margin-left: var(--size-header);
+  width: 100%;
 }
 
 /* Tabs */
@@ -88,6 +39,7 @@
 .searchContainer {
   background: var(--color-white);
   border-radius: var(--radius-big);
+  margin: 2rem 0 5rem;
 }
 .searchContainer label {
   font-size: 0;
@@ -101,7 +53,7 @@
   color: var(--color-black);
 }
 .searchContainer2 {
-  padding: 4rem;
+  padding: 3rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -114,7 +66,6 @@
   background: var(--color-white);
   color: var(--color-text-black);
 }
-
 .searchInputContainer {
   /* max-width: 800px; */
   width: 100%;
@@ -157,7 +108,6 @@
   position: absolute;
   right: 0.8rem;
   display: flex;
-  gap: 0.5rem;
   align-items: center;
 }
 
@@ -168,12 +118,17 @@
   align-items: center;
   justify-content: center;
   height: 2.8rem;
-  width: 4rem;
+  width: 3.8rem;
   background: var(--color-black);
   border-radius: var(--radius-full);
   border: 0;
 }
+.searchButton {
+  margin-left: 0.5rem;
+}
 .searchButton svg {
+  width: 20px;
+  height: 20px;
   color: var(--color-white);
 }
 .resetButton {
@@ -209,7 +164,6 @@
 .searchPlaceholder figcaption {
   color: var(--color-black);
 }
-
 .searchPlaceholder figure {
   width: 8rem;
   height: 2rem;
@@ -226,233 +180,64 @@
   margin: 2rem auto 0;
 }
 
-/*
-  Layout 1 (top)
-*/
-.layout1 .header {
+.layout {
   position: relative;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
-  vertical-align: middle;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  height: 100%;
-  width: 100%;
-  padding: 1.5rem 2rem;
-}
-.layout1 .nav {
-  margin-left: -4.75rem;
-}
-.layout1 .nav li {
-  display: inline-block;
-}
-.layout1 .nav button {
-  margin: 0.25rem 0;
-}
-.layout1 .nav button,
-.layout1 .header .iconSettings button {
-  border-radius: var(--radius-full);
-  width: var(--size-large);
-  height: var(--size-large);
-  font-size: 0;
-  padding: 0;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.layout1 .header .nav button svg,
-.layout1 .header .iconSettings button svg {
-  width: 1.4rem;
-  height: 1.4rem;
-}
-
-.layout1 .tabs button:hover,
-.layout1 .tabs button:focus {
-  background: var(--color-white-translucent);
-}
-
-.layout1 .searchContainer {
-  margin: 0 0 5rem;
-}
-
-/*
-  Layout 2 (left)
-*/
-.layout2 {
-  margin-left: var(--size-header);
-}
-.layout2 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: var(--size-header);
-  /* background: var(--color-white);
-  box-shadow: var(--box-shadow); */
-}
-.layout2 .logo {
-  margin: 1.5rem 0.75rem;
-  height: var(--size-small);
-  border-radius: var(--radius);
-}
-.layout2 .nav {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding: 0.1rem 0.75rem 10.5rem;
-}
-.layout2 .nav button,
-.layout2 .header .iconSettings button {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  height: var(--size-small);
-  border-radius: var(--radius);
-  font-size: 1rem;
-  color: var(--color-text-black);
-}
-.layout2 .iconSettings {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 0.75rem;
-  width: 100%;
-  background: inherit;
-}
-
-.layout2 .nav button svg,
-.layout2 .header .iconSettings button svg {
-  margin: 0 1rem;
-}
-
-.containerSettings {
-  display: grid;
-  grid-gap: 0.5rem;
-  margin-top: 1rem;
-}
-.containerSettings:not(:last-of-type) {
-  margin-bottom: 2rem;
-}
-.containerSettings button,
-.containerSettings a {
-  border-radius: var(--radius);
-  display: flex;
-  height: var(--size-small);
-  font-size: var(--font-size);
-  background: var(--color-bg-grey);
-  color: var(--color-text-black);
-  align-items: center;
-  opacity: 1;
-}
-.containerSettings button svg,
-.containerSettings a svg {
-  margin: 0 1rem;
-}
-
-.layout2 .searchContainer {
-  margin: 2rem 0 5rem;
-}
-
-/* Mobile */
-@media screen and (max-width: 440px) {
-  .layout1 .nav {
-    margin-left: 0;
-  }
+  gap: 2rem;
+  max-width: var(--max-size-container);
 }
 
 @media screen and (max-width: 940px) {
-  .layout1 .header {
-    padding: 0 0 1rem 0;
+  .layout {
     flex-direction: column;
+    gap: 0;
   }
-  .layout1 .nav button {
-    height: var(--size-small);
-  }
-  .layout1 .logo svg {
-    width: 18px;
-    height: 18px;
-  }
-
-  .layout1 .logo,
-  .layout1 .header .iconSettings button {
-    height: 2.75rem;
-    margin: 0.5rem;
-  }
-
-  .layout1 .header .iconSettings {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .layout1 .header .iconSettings button {
-    width: 2.75rem;
-  }
-
-  .layout1 .main {
+  .main {
     padding: 0;
+    margin-left: 0;
   }
 
-  .layout1 .searchContainer {
-    margin: 0 0 3rem;
-    border-radius: 0;
-  }
-  .searchContainer2 {
-    padding: 2.5rem 0;
-    gap: 1rem;
-    border-radius: 0;
-    box-shadow: none;
-  }
-
-  .layout1 .nav ul,
-  .layout1 .tabs ul {
+  .nav ul,
+  .tabs ul {
     padding: 0 1rem;
   }
 
-  .layout1 .nav,
-  .layout1 .tabs {
+  .nav,
+  .tabs {
     width: 100%;
   }
-  .layout1 .nav ul,
-  .layout1 .tabs ul {
+  .nav ul,
+  .tabs ul {
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
     text-align: center;
   }
-  .layout1 .nav li,
-  .layout1 .tabs li {
+  .nav li,
+  .tabs li {
     width: auto;
     display: inline-block;
   }
 
-  .layout1 .tabs button {
+  .tabs button {
     margin: 0.25rem 0;
     font-size: var(--font-size-small);
     height: 1.5rem;
     padding: 0 0.75rem;
   }
 
-  .layout1 .searchInputContainer,
-  .layout1 .widgetContainer {
+  .searchInputContainer,
+  .widgetContainer {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
-  .layout1 .widgetContainer {
+  .widgetContainer {
     grid-template-columns: 1fr;
   }
 
-  .containerSettings button,
-  .containerSettings a {
-    font-size: var(--font-size-small);
-  }
-
-  .layout1 .searchInput textarea {
+  .searchInput textarea {
     font-size: var(--font-size);
     min-height: 3rem;
     padding: 0.85rem 6.5rem 0.75rem 1.25rem;
@@ -461,10 +246,31 @@
   .searchButton,
   .resetButton {
     height: 3rem;
-    width: 2.75rem;
+    width: 2.2rem;
+    background: transparent;
+    border-radius: 0;
+    margin: 0;
   }
+  .searchButton svg {
+    width: 18px;
+    height: 18px;
+    color: var(--color-black);
+    opacity: var(--opacity);
+  }
+  .searchButton:hover svg,
+  .searchButton:focus svg {
+    opacity: 1;
+  }
+
   .resetButton {
-    width: 2rem;
+    width: 1.75rem;
+  }
+  .resetButton svg {
+    width: 18px;
+    height: 18px;
+  }
+  .searchActions {
+    right: 0.5rem;
   }
 
   .searchPlaceholder {
@@ -473,10 +279,15 @@
   .searchPlaceholder figure {
     height: 26px;
   }
-}
 
-@media screen and (max-width: 1024px) {
-  .layout1 .nav {
-    margin-left: 0;
+  .searchContainer {
+    margin: 0 0 3rem;
+    border-radius: 0;
+  }
+  .searchContainer2 {
+    padding: 2rem 0 2.5rem;
+    gap: 1rem;
+    border-radius: 0;
+    box-shadow: none;
   }
 }

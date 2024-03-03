@@ -22,9 +22,9 @@ export default function SearchHeader({ additionalLeftElement }: BannerProps) {
   }, [data, category])
 
   return (
-    <div className={Style.Container}>
+    <div className={Style.container}>
       <div>
-        <h1>{titleSearch ?? 'Search on'}</h1>
+        <h1>{titleSearch}</h1>
       </div>
 
       <div>

@@ -13,7 +13,6 @@
   transition: opacity 0.2s ease;
   z-index: 999;
 }
-
 .modal-overlay.open {
   opacity: 1;
   pointer-events: auto;
@@ -25,26 +24,16 @@
   padding: 2.5rem;
   border-radius: var(--radius-big);
   box-shadow: var(--shadow-2);
-  /* transform: scale(0.9); */
   opacity: 0;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transform: scale(0.9);
+  transition: transform 0.25s ease, opacity 0.25s ease;
   color: var(--color-text-black);
   z-index: 999;
 }
-
 .modal.open {
-  /* transform: scale(1); */
+  transform: scale(1);
   opacity: 1;
   outline: none;
-}
-
-.modal-close {
-  background: none;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 10px;
-  right: 10px;
 }
 
 .modalTitle {
@@ -54,6 +43,8 @@
 }
 
 .modal-close {
+  border: none;
+  cursor: pointer;
   position: absolute;
   right: 0.5rem;
   top: 0.5rem;
@@ -68,12 +59,4 @@
 .modal-close:hover {
   background: transparent !important;
   opacity: 1;
-}
-
-.body-scroll-disabled {
-  overflow: hidden;
-}
-
-.no-scroll {
-  overflow: hidden !important;
 }

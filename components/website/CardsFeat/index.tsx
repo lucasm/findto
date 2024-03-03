@@ -19,15 +19,15 @@ export default function CardsFeat() {
         <figure>
           <IconSearch />
         </figure>
-        <h3>Decentralized search</h3>
-        <p>Search the same term on diverse categories and sources</p>
+        <h3>Decentralized Search</h3>
+        <p>Search the same term on diverse sources and categories</p>
       </div>
 
       <div>
         <figure>
           <IconShield />
         </figure>
-        <h3>Privacy level</h3>
+        <h3>Privacy Level</h3>
         <p>View the privacy level of selected source</p>
       </div>
 
@@ -35,7 +35,7 @@ export default function CardsFeat() {
         <figure>
           <IconLeaf />
         </figure>
-        <h3>Carbon footprint</h3>
+        <h3>Carbon Level</h3>
         <p>View the estimate carbon footprint of selected source</p>
       </div>
 
@@ -55,15 +55,15 @@ export default function CardsFeat() {
         <figure>
           <IconText />
         </figure>
-        <h3>Autocomplete</h3>
-        <p>Get suggestions of search terms to help as you type</p>
+        <h3>Autosuggest</h3>
+        <p>Get suggestions of terms as you type to help on fast searches</p>
       </div>
 
       <div>
         <figure>
           <IconMic />
         </figure>
-        <h3>Voice search</h3>
+        <h3>Voice Search</h3>
         <p>Use your voice to search anywhere</p>
       </div>
 
@@ -72,7 +72,7 @@ export default function CardsFeat() {
           <IconAccessibility />
         </figure>
         <h3>Accessibility</h3>
-        <p>Change layout and theme color, use keyboard or screen reader navigation</p>
+        <p>Dark theme, balanced contrast, keyboard navigation and screen readers supported</p>
       </div>
 
       <div>
@@ -80,15 +80,15 @@ export default function CardsFeat() {
           <IconLanguage />
         </figure>
         <h3>Internationalization</h3>
-        <p>Chose your country for local sources or use global search</p>
+        <p>Chose your country for local sources, or use international search</p>
       </div>
 
       <div>
         <figure>
           <IconVisualSearch />
         </figure>
-        <h3>Visual search</h3>
-        <p>Use a image to search on the supported sources</p>
+        <h3>Visual Search</h3>
+        <p>Use a image or shot to search on the supported sources</p>
 
         <p>* In development</p>
       </div>

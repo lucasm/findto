@@ -6,7 +6,7 @@ export default function PageTerms() {
     <LayoutPage title="Terms of Service" description="See how to use Findto for the common good">
       <section className="colors">
         <div className={Style.container}>
-          <h1>Terms of Service</h1>
+          <h1>Findto Terms of Service</h1>
         </div>
       </section>
 
@@ -23,17 +23,18 @@ export default function PageTerms() {
             </p>
 
             <p>
-              Findto is an assistant for decentralized web search, and redirects to the original
-              third-party services.
+              Findto is an assistant for decentralized Web & AI search. Findto redirects to the
+              original third-party external services. All rights reserved to them and their
+              trademarks.
             </p>
 
             <h2>2. Use License and Intellectual Property</h2>
             <p>
-              The Findto source code is open source under MIT License. But some materials contained
-              on Findto are protected by copyright and trademark laws. Findto respects the
-              intellectual property of others and our partners, and expects users to do the same.
-              Findto uses these materials for your convenience. As a user, you must respect the laws
-              that grant only the right to reasonable proper viewing and use.
+              The Findto software source code is open source under the MIT License. But some
+              materials contained on Findto are protected by copyright and trademark laws. Findto
+              respects the intellectual property of others and our partners, and expects users to do
+              the same. Findto uses these materials for your convenience. As a user, you must
+              respect the laws that grant only the right to reasonable proper viewing and use.
             </p>
             <p>
               Users have a permission, granted to temporarily, to download one copy of these
@@ -87,7 +88,7 @@ export default function PageTerms() {
               updated.
             </p>
 
-            <h2>6. External APIs and Links</h2>
+            <h2>6. External Links, Services and APIs</h2>
             <p>
               Findto has not reviewed all of services linked and is not responsible for the contents
               of any third-party services. The inclusion of any external link or data from
@@ -97,9 +98,10 @@ export default function PageTerms() {
 
             <h2>7. Modifications</h2>
             <p>
-              Findto may revise these terms of use at any time without notice. By using Findto, you
-              are agreeing to be bound by the then current version of these terms of service. You
-              might receive an alert on the Findto services informing you of significant changes.
+              Findto may revise these terms of service at any time without notice. By using Findto,
+              you are agreeing to be bound by the then current version of these terms of service.
+              You might receive an alert on the Findto services informing you of significant
+              changes.
             </p>
 
             <h2>8. Governing Law</h2>
@@ -109,7 +111,7 @@ export default function PageTerms() {
               that State or location.
             </p>
 
-            <h2>9. Report Violations and Removals</h2>
+            <h2>9. Violations and Removals</h2>
 
             <p>
               All trademarks and external services found on Findto belong to their respective owners
@@ -125,10 +127,10 @@ export default function PageTerms() {
               report for properly removal.
             </p>
 
-            <h2>10. Questions</h2>
-            <p>If you have any legal questions send an email to legal@findto.app.</p>
+            <h2>10. Contact</h2>
+            <p>If you have any questions send an email to legal@findto.app.</p>
 
-            <p>Effective date: June 10, 2023.</p>
+            <p>Effective date: March 1, 2024.</p>
           </article>
         </div>
       </section>

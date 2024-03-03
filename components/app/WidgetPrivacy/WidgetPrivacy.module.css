@@ -38,6 +38,7 @@
 .containerDropdown {
   position: absolute;
   top: 3rem;
+  right: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,7 +48,7 @@
   box-shadow: var(--box-shadow);
   padding: 2rem;
   width: 280px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .container h3 {
@@ -57,12 +58,27 @@
   text-align: right;
   font-size: var(--font-size-small);
   margin-top: 1rem;
+  color: var(--color-black-translucent-50);
+}
+.credits a {
+  transition: var(--transition);
+}
+.credits a:hover,
+.credits a:focus {
+  color: var(--color-text-black);
 }
 
 @media (max-width: 940px) {
   .container button {
     font-size: var(--font-size-small);
-    height: 2rem;
-    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container button {
+    font-size: 0;
+    width: var(--size-small);
+    gap: 0;
+    padding: 0;
   }
 }

@@ -100,24 +100,24 @@
       "active": true,
       "data": [
         {
-          "name": "Bing Chat",
-          "action": "https://www.bing.com/search?showconv=1&sendquery=1&q=",
-          "color": "#4dd1f0"
-        },
-        {
-          "name": "Perplexity",
-          "action": "https://www.perplexity.ai/?q=",
-          "color": "#38c8dc"
-        },
-        {
           "name": "ChatGPT",
           "action": "https://chat.openai.com/?q=",
           "color": "#0dcfa0"
         },
         {
-          "name": "Google Bard",
-          "action": "https://bard.google.com/chat?prompt=",
-          "color": "#cb83e0"
+          "name": "Microsoft Copilot",
+          "action": "https://www.bing.com/search?showconv=1&sendquery=1&q=",
+          "color": "#e897ee"
+        },
+        {
+          "name": "Perplexity",
+          "action": "https://www.perplexity.ai/?q=",
+          "color": "#81ccd6"
+        },
+        {
+          "name": "Google Gemini",
+          "action": "https://gemini.google.com/app?q=",
+          "color": "#7ea4ff"
         },
         {
           "name": "HuggingChat",
@@ -146,8 +146,8 @@
       "active": true,
       "data": [
         {
-          "name": "Twitter",
-          "action": "https://twitter.com/search?src=typed_query&q=",
+          "name": "X",
+          "action": "https://x.com/search?src=typed_query&q=",
           "color": "#4abaff"
         },
         {
@@ -224,7 +224,7 @@
     },
     {
       "name": "Videos",
-      "name_trends": "Top movies & TV shows",
+      "name_trends": "Top movies & TV series",
       "active": true,
       "data": [
         {
@@ -283,14 +283,14 @@
           "color": "#ff944c"
         },
         {
-          "name": "TED",
-          "action": "https://www.ted.com/search?q=",
-          "color": "#ff5c50"
-        },
-        {
           "name": "IMDb",
           "action": "https://www.imdb.com/find/?q=",
           "color": "#f5c518"
+        },
+        {
+          "name": "TMDB",
+          "action": "https://www.themoviedb.org/search?query=",
+          "color": "#46c2c0"
         },
         {
           "name": "Letterboxd",
@@ -303,11 +303,6 @@
           "color": "#999999"
         },
         {
-          "name": "TMDB",
-          "action": "https://www.themoviedb.org/search?query=",
-          "color": "#46c2c0"
-        },
-        {
           "name": "Plex",
           "action": "https://app.plex.tv/desktop#!/search?query=",
           "color": "#ffb518"
@@ -316,6 +311,11 @@
           "name": "Vimeo",
           "action": "https://vimeo.com/search?q=",
           "color": "#2fc6ff"
+        },
+        {
+          "name": "TED",
+          "action": "https://www.ted.com/search?q=",
+          "color": "#ff5c50"
         }
       ]
     },

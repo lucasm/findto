@@ -3,14 +3,15 @@ import LayoutPage from '../components/website/LayoutPage'
 import CardsLink from '../components/website/CardsLink'
 
 export default function PageCommunity() {
-  const description = 'Help make web search decentralized, accessible and healthy for the planet.'
+  const description =
+    'Help make Findto decentralized search accessible for everyone and healthy for the planet.'
 
   return (
     <LayoutPage title="Community" description={description}>
       <section className="colors">
         <div className={Style.container}>
           <div className={Style.actionContainer}>
-            <h1>Join the Findto community</h1>
+            <h1>Join our Community</h1>
             <p>{description}</p>
           </div>
         </div>
@@ -18,40 +19,47 @@ export default function PageCommunity() {
 
       <section>
         <div className={Style.container}>
+          <h2>Support us</h2>
           <CardsLink />
 
           <article>
-            <h3>Our mission</h3>
+            <h3>Findto is made by people like you</h3>
 
             <p>
-              Findto is a decentralized web search tool, free and open source. Our mission is to
-              deliver a high-performance and democratic search experience that positively impacts
-              people and the planet.
+              Welcome to our community! Findto is an open source project for decentralized Web & AI
+              search.
+            </p>
+
+            <p>
+              The Findto mission is deliver a democratic and high-performance search experience that
+              put people on control of the algorithms and positively impacts internet services and
+              the planet.
             </p>
 
             <p>
               Findto is committed to the United Nations 2030 Agenda for sustainable development. We
-              also are interested in researching and partnerships to strengthen technologies of open
-              access, privacy, diversity, web accessibility, responsible AI, and environmental
-              justice.
+              are very interested in researching and partnerships to strengthen technologies of open
+              access, online privacy, web accessibility and diversity, responsible AI, and carbon
+              neutrality.
             </p>
 
             <p>
-              If you share the vision thats a better Web contribute to a better planet, feel free to
-              help us build Findto.
+              If you share the vision thats a better internet contribute to a better planet, feel
+              free to help us build Findto.
             </p>
 
             <br></br>
             <br></br>
 
-            <h3>Code of conduct</h3>
+            <h3>Code of Conduct</h3>
             <p>
-              All members of our community agree to be kind to each other, following the{' '}
+              Hey guys! All members of Findto community agree to be kind to each other, following
+              our{' '}
               <a
                 href="https://www.contributor-covenant.org/version/2/1/code_of_conduct/"
                 target="_blank"
                 rel="noreferrer">
-                code of conduct
+                Code of Conduct
               </a>{' '}
               for common good.
             </p>

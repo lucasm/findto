@@ -2,6 +2,7 @@ import Style from './Footer.module.css'
 import Link from 'next/link'
 import SvgLogo from '../../website/SvgLogo'
 import { useSearch } from '../../../contexts/SearchContext'
+import { IconGitHub, IconX } from '../SvgIcons'
 
 export default function AppFooter() {
   const { data } = useSearch()
@@ -15,56 +16,49 @@ export default function AppFooter() {
           </Link>
         </figure>
 
-        <div>
-          <p>
-            {data?.t?.copyright ??
-              'Findto is an assistant for decentralized web search with positive impact. All rights reserved to trademarks and external sources. Open source project created by'}{' '}
-            <a href="https://lucasm.dev/?utm_source=findto_app" target="_blank" rel="noreferrer">
-              {'Lucas Menezes'}
-            </a>
-            {'.'}
-          </p>
+        <p>
+          {data?.t?.copyright[0] ?? 'Findto is made by'}{' '}
+          <a href="https://lucasm.dev/?utm_source=findto_app" target="_blank" rel="noreferrer">
+            {'Lucas Menezes'}
+          </a>{' '}
+          {data?.t?.copyright[1] ?? 'and the open source community.'}
+        </p>
 
-          <ul>
-            <li>
-              <Link href="/about">{data?.t?.about ?? 'About'}</Link>
-            </li>
-            <li>
-              <Link href="/community">{data?.t?.community ?? 'Community'}</Link>
-            </li>
-            {/* <li>
-              <Link href="/pro">Pro</Link>
+        <ul>
+          <li>
+            <Link href="/about">{data?.t?.about ?? 'About'}</Link>
+          </li>
+          <li>
+            <Link href="/community">{data?.t?.community ?? 'Community'}</Link>
+          </li>
+          {/* <li>
+              <Link href="/pro"> ❤︎ Pro</Link>
             </li> */}
-            <li>
-              <a href="https://ko-fi.com/findto" target="_blank" rel="noopener">
-                ❤︎ {data?.t?.donate ?? 'Donate'}
-              </a>
-            </li>
-            <li>
-              <Link href="/privacy">{data?.t?.privacy ?? 'Privacy'}</Link>
-            </li>
-            <li>
-              <Link href="/terms">{data?.t?.terms ?? 'Terms'}</Link>
-            </li>
+          <li>
+            <a href="https://ko-fi.com/findto" target="_blank" rel="noopener">
+              {data?.t?.donate ?? 'Donate'}
+            </a>
+          </li>
+          <li>
+            <Link href="/privacy">{data?.t?.privacy ?? 'Privacy'}</Link>
+          </li>
+          <li>
+            <Link href="/terms">{data?.t?.terms ?? 'Terms'}</Link>
+          </li>
 
-            {/* <div className={Style.socialIcons}>
-              <a
-                href="https://twitter.com/findtoapp"
-                target="_blank"
-                rel="noreferrer"
-                title="Twitter">
-                <Twitter />
-              </a>
+          <div className={Style.socialIcons}>
+            <a href="https://x.com/findtoapp" target="_blank" rel="noreferrer" aria-label="X">
+              <IconX />
+            </a>
+            <a
+              href="https://github.com/lucasm/findto"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub">
+              <IconGitHub />
+            </a>
 
-              <a
-                href="https://github.com/lucasm/findto"
-                target="_blank"
-                rel="noreferrer"
-                title="GitHub">
-                <GitHub />
-              </a>
-
-              <a
+            {/* <a
                 href="https://discord.gg/XbZcvNuQ6F"
                 target="_blank"
                 rel="noreferrer"
@@ -84,8 +78,7 @@ export default function AppFooter() {
                   <circle cx="9" cy="12" r="1" />
                   <circle cx="15" cy="12" r="1" />
                 </svg>
-              </a>
-            </div> */}
+              </a> */}
 
             {/* <a
                 href="https://instagram.com/findtoapp"
@@ -121,8 +114,8 @@ export default function AppFooter() {
                 YouTube
                 <Youtube />
               </a> */}
-          </ul>
-        </div>
+          </div>
+        </ul>
       </div>
     </footer>
   )

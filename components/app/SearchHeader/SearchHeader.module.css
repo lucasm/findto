@@ -1,23 +1,37 @@
-.Container {
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: 1.5rem;
-  /* background-color: yellow; */
+  margin-bottom: 0.5rem;
 }
 
-.Container div:first-child,
-.Container div:last-child {
+.container div:first-child,
+.container div:last-child {
   display: flex;
   gap: 1.25rem;
   align-items: center;
 }
-.Container div:last-child {
+.container div:last-child {
   gap: 0;
 }
 
-.Container h1 {
+.container h1 {
   font-size: var(--font-size-2);
   color: var(--color-black);
+}
+
+@media screen and (max-width: 940px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .container h1 {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container h1 {
+    font-size: var(--font-size-3);
+  }
 }

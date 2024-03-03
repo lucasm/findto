@@ -1,7 +1,7 @@
 .button {
   position: relative;
   float: none;
-  height: 4.25rem;
+  height: 2.8rem;
   width: var(--size-small);
   font-size: 0;
   margin: 0;
@@ -15,8 +15,8 @@
   opacity: 1;
 }
 .button svg {
-  width: 26px;
-  height: 26px;
+  width: 22px;
+  height: 22px;
   color: var(--color-black);
 }
 
@@ -73,5 +73,9 @@
   .button {
     height: 3rem;
     width: 1.5rem;
+  }
+  .button svg {
+    width: 20px;
+    height: 20px;
   }
 }
