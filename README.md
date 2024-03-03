@@ -7,11 +7,12 @@
 <h1 align="center">Findto</h1>
 
 <p align="center">
-<a href="https://findto.app" target="_blank"><img alt="Languages" src="https://img.shields.io/badge/languages available -2-ffdb56"></a>
-<a href="https://github.com/lucasm/findto/issues" target="_blank"><img alt="Issues" src="https://img.shields.io/github/issues/lucasm/findto?color=ff5c5c"></a>
-<a href="https://discord.gg/gEDm5MU6pq" target="_blank"><img alt="Community" src="https://img.shields.io/discord/866829154032812073?color=bc86ff&label=community"></a>
-<a href="https://ko-fi.com/findto" target="_blank"><img alt="Supporters" src="https://img.shields.io/badge/supporters -1-1491de"></a>
-<a href="https://github.com/lucasm/findto/blob/master/LICENSE.md" target="_blank"><img alt="License" src="https://img.shields.io/github/license/lucasm/findto?color=37bf5d"></a>
+<a href="https://findto.app" target="_blank"><img alt="Languages" src="https://img.shields.io/badge/translations-2-ffdb56?logo=json&logoColor=white"></a>
+<a href="https://github.com/lucasm/findto/issues" target="_blank"><img alt="Issues" src="https://img.shields.io/github/issues/lucasm/findto?color=ff5c5c&logo=github&logoColor=white"></a>
+<a href="https://discord.gg/gEDm5MU6pq" target="_blank"><img alt="Community" src="https://img.shields.io/discord/866829154032812073?color=bc86ff&label=Discord&logo=discord&logoColor=white"></a>
+<a href="https://ko-fi.com/findto" target="_blank"><img alt="Supporters on Ko-Fi" src="https://img.shields.io/badge/KoFi-1-1491de?logo=kofi&logoColor=white"></a>
+<a href="https://github.com/lucasm/findto" target="_blank"><img alt="GitHub release" src="https://img.shields.io/github/v/release/lucasm/findto?label=version&color=37bf5d&logo=github&logoColor=white"></a>
+<a href="https://github.com/lucasm/findto" target="_blank"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/lucasm/findto?label=size&color=37bf5d&logo=github&logoColor=white"></a>
 </p>
 
 <p align="center">
@@ -46,11 +47,11 @@ The centralized internet — where our searches are monopolized — is unsustain
 
 - **Voice Search** — Use your voice to search anywhere
 
+- **Visual Search** — Use images to search on supported sources \* In development
+
 - **Accessibility** — Dark theme, balanced contrast, keyboard navigation and screen readers supported
 
 - **Internationalization** — Chose your country for local sources, or use international search
-
-- **Visual Search** — Use images to search on supported sources \* In development
 
 ## Sources
 
@@ -77,7 +78,7 @@ Choose your favorite platform to support and ✨ enjoy exclusive benefits ✨ li
 
 ### Contributions
 
-If you are a code contributor, before send pull requests, view opened [Issues](https://github.com/lucasm/findto/issues) thats need help. Go to board [Projects](https://github.com/lucasm/findto/projects) for backlog.
+For code contributors, before send pull requests, view opened [Issues](https://github.com/lucasm/findto/issues) thats need help. Go to board [Projects](https://github.com/lucasm/findto/projects) for backlog.
 
 ### Team
 
@@ -85,4 +86,4 @@ Made in Brazil with love by [Lucas Menezes](https://lucasm.dev/?utm_source=findt
 
 ### Privacy & Terms
 
-Findto respects users privacy and don't store any searches. Findto also show materials protected by copyright. Read our [Privacy](https://findto.app/privacy) and [Terms](https://findto.app/terms).
+Findto respects users privacy and don't store any searches. Findto also show materials protected by intelectual property (brands of services). Read our [Privacy](https://findto.app/privacy) and [Terms](https://findto.app/terms).
