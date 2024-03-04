@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { useSearch } from '../../../contexts/SearchContext'
 import Styles from './Banner.module.css'
+import { IconHeart } from '../SvgIcons'
 
 export default function Banner() {
   const { data } = useSearch()
@@ -16,7 +17,7 @@ export default function Banner() {
       <div>
         <Link href="/about">{data?.t?.learnMore ?? 'Learn more'}</Link>
         <Link href="https://ko-fi.com/findto" target="_blank" rel="noopener">
-          ❤︎ {data?.t?.donate ?? 'Donate'}
+          <IconHeart /> {data?.t?.donate ?? 'Donate'}
         </Link>
       </div>
     </section>
