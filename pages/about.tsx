@@ -14,7 +14,7 @@ export default function PageAbout() {
       <section className="colors">
         <div className={Style.container}>
           <figure className={Style.icon}></figure>
-          <h1>Decentralized Web & AI search with Findto</h1>
+          <h1>Decentralized Web & AI Search</h1>
           <p>
             Findto is an open source assistant for decentralized Web & AI search. Get control over
             algorithms, privacy and carbon. Explore a healthy internet.

@@ -9,25 +9,23 @@
 <p align="center">
 <a href="https://github.com/lucasm/findto/wiki" target="_blank"><img alt="Languages" src="https://img.shields.io/badge/translations-2-ffdb56?logo=json&logoColor=white"></a>
 <a href="https://github.com/lucasm/findto/issues" target="_blank"><img alt="Issues" src="https://img.shields.io/github/issues/lucasm/findto?color=ff5c5c&logo=github&logoColor=white"></a>
-<a href="https://discord.gg/gEDm5MU6pq" target="_blank"><img alt="Community" src="https://img.shields.io/discord/866829154032812073?color=bc86ff&label=Discord&logo=discord&logoColor=white"></a>
-<a href="https://ko-fi.com/findto" target="_blank"><img alt="Supporters on Ko-Fi" src="https://img.shields.io/badge/KoFi-1-1491de?logo=kofi&logoColor=white"></a>
+<a href="https://discord.gg/gEDm5MU6pq" target="_blank"><img alt="Community" src="https://img.shields.io/discord/866829154032812073?color=bc86ff&label=members&logo=discord&logoColor=white"></a>
+<a href="https://ko-fi.com/findto" target="_blank"><img alt="Support on Ko-Fi" src="https://img.shields.io/badge/donate-$1-1491de?logo=kofi&logoColor=white"></a>
 <a href="https://github.com/lucasm/findto/releases" target="_blank"><img alt="GitHub release" src="https://img.shields.io/github/v/release/lucasm/findto?label=version&color=37bf5d&logo=github&logoColor=white"></a>
 <a href="https://github.com/lucasm/findto" target="_blank"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/lucasm/findto?label=size&color=37bf5d&logo=github&logoColor=white"></a>
 </p>
 
 <p align="center">
-Decentralized Web & AI search assistant<br>
+Decentralized Web & AI Search<br>
 </p>
 
 ## A better search
 
 Findto is an open source assistant for decentralized Web & AI search.
 
-Findto puts people on control of the search algorithms — not the other way around.
+Findto puts the power of technology back into people's hands. Literally get control over search algorithms. You can quickly search the same term on diverse sources. See also the privacy and carbon levels of selected source. Discover trends. Find anything. More productive and accessible searches than ever.
 
-Quickly switch between diverse sources to find anything. View the privacy and carbon levels of service. Discover what's trending on the internet. More productive and accessible searches than ever. Choose better results, for you and the planet.
-
-The centralized internet — where our searches are monopolized — is unsustainable. Findto encourages a truly free search experience, where the people democratic choices and the planet needs walks together. A more diverse and healthier internet. As the should be.
+Why? Because the centralized internet — where our searches are monopolized — is unsustainable. Findto encourages a truly free search experience, where the people democratic choices and the planet needs walks together. A more healthier internet. As the should be.
 
 🔎 Try it now: https://findto.app
 
@@ -43,25 +41,19 @@ The centralized internet — where our searches are monopolized — is unsustain
 
 - **Trends** — Explore trending topics, contents, events, services and places nearby you
 
-- **Autosuggest** — Get instant suggestions to help autocomplete small search terms as you type
+- **Autosuggest** — Get instant suggestions as you type
 
 - **Voice Search** — Use your voice to search anywhere
 
 - **Visual Search** — Use images to search on supported sources \* In development
 
-- **Accessibility** — Dark theme, balanced contrast, keyboard navigation and screen readers supported
+- **Accessibility** — Dark theme, balanced contrast, keyboard navigation and screen readers
 
 - **Internationalization** — Chose your country for local sources, or use international search
 
 ## Sources
 
-All the search sources available on Findto are chosen by the criteria:
-
-1.  Service popularity
-1.  Service open access
-1.  Service legally committed to respecting privacy and copyright
-
-For more details, check [Wiki](https://github.com/lucasm/findto/wiki).
+The search sources available are chosen by the criteria: 1. Service popularity; 2. Service open access; 3. Service legally committed to respect privacy and copyright. For more details, view [Wiki](https://github.com/lucasm/findto/wiki).
 
 ---
 

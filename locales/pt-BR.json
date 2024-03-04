@@ -279,7 +279,7 @@
         {
           "name": "YouTube",
           "action": "https://www.youtube.com/results?search_query=",
-          "color": "#FF6B6B"
+          "color": "#ff4d4d"
         },
         {
           "name": "Twitch",
