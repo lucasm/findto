@@ -45,5 +45,57 @@
       "type": "image/png",
       "purpose": "maskable"
     }
+  ],
+  "shortcuts": [
+    {
+      "name": "Web",
+      "url": "/?view=Web",
+      "description": "Web search"
+    },
+    {
+      "name": "AI",
+      "url": "/?view=AI",
+      "description": "AI search"
+    },
+    {
+      "name": "Social",
+      "url": "/?view=Social",
+      "description": "Social search"
+    },
+    {
+      "name": "Videos",
+      "url": "/?view=Videos",
+      "description": "Videos search"
+    },
+    {
+      "name": "Music",
+      "url": "/?view=Music",
+      "description": "Music search"
+    },
+    {
+      "name": "Shopping",
+      "url": "/?view=Shopping",
+      "description": "Shopping search"
+    },
+    {
+      "name": "Local",
+      "url": "/?view=Local",
+      "description": "Local search"
+    },
+    {
+      "name": "News",
+      "url": "/?view=News",
+      "description": "News search"
+    },
+    {
+      "name": "Academic",
+      "url": "/?view=Academic",
+      "description": "Academic search"
+    },
+    {
+      "name": "Job",
+      "url": "/?view=Job",
+      "description": "Job search"
+    }
   ]
 }
