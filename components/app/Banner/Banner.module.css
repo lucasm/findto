@@ -11,8 +11,8 @@
   text-align: left;
 }
 .container h3 {
-  margin-bottom: 1rem;
-  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-size: var(--font-size-1);
   color: var(--color-text-black);
 }
 .container p {

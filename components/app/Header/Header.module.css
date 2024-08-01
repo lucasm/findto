@@ -3,10 +3,21 @@
   position: fixed;
   height: 100%;
   width: var(--size-header);
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 0 0 1rem 0;
+  flex-direction: column;
 }
 .header svg {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   color: var(--color-text-black);
 }
 .header button {
@@ -38,24 +49,34 @@
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 0.1rem 0.75rem 0;
+  display: flex;
+  justify-content: center;
 }
 
-.nav button,
-.header .iconSettings button {
+.nav ul {
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  text-align: center;
+  display: flex;
+}
+.nav li {
+  display: inline-block;
+}
+
+.nav button {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  width: 100%;
   height: var(--size-big);
   border-radius: var(--radius-full);
   font-size: 1rem;
   color: var(--color-text-black);
+  padding: 0 1.2rem;
 }
 
 .nav button svg,
 .header .iconSettings button svg {
-  margin: 0 1rem;
+  margin: 0 0.35rem 0 0;
 }
 
 .containerSettings {
@@ -82,68 +103,75 @@
   margin: 0 1rem;
 }
 
+.header .iconSettings {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1rem;
+}
+.header .iconSettings button svg {
+  margin: 0;
+}
+
+.header .iconSettings button {
+  width: var(--size-big);
+  height: var(--size-big);
+  font-size: 0;
+  justify-content: center;
+  border-radius: var(--radius-full);
+}
+.containerSettings h3 {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem 0;
+}
+.containerSettings button,
+.containerSettings a {
+  font-size: var(--font-size-small);
+}
+
 .submenu {
   position: relative;
 }
 .submenu ul {
   align-items: flex-start;
-
   background: var(--color-bg-white);
-  position: absolute;
+  position: fixed;
+  top: 0;
+  right: 0;
   width: 100%;
+  max-width: 200px;
   height: auto;
   bottom: var(--size-big);
   flex-direction: column;
-  border-radius: var(--radius-small);
+  border-radius: 0;
   box-shadow: var(--box-shadow);
-  /* padding: 0.5rem 0; */
+  padding: 0.5rem 0;
   overflow: hidden;
+  z-index: 99999;
+}
+.submenu ul li {
+  width: 100%;
 }
 .submenu ul li button {
   border-radius: 0;
+  width: 100%;
 }
 
 @media screen and (max-width: 940px) {
-  .header {
-    position: relative;
-    display: flex;
-    align-items: center;
-    vertical-align: middle;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-    padding: 0 0 1rem 0;
-    flex-direction: column;
-  }
-
-  .nav {
-    padding: 0;
-  }
-  .nav ul {
-    padding: 0 1rem;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    text-align: center;
-  }
-  .nav li {
-    display: inline-block;
-  }
-
   .nav button,
-  .iconSettings button {
-    border-radius: var(--radius-full);
+  .header .iconSettings button {
+    border-radius: var(--radius);
     width: var(--size-large);
     height: var(--size-large);
     font-size: 0;
-    padding: 0;
+    padding: 0 1rem;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
+
   .nav button svg,
   .iconSettings button svg {
     width: 1.4rem;
@@ -163,24 +191,7 @@
     height: 2.75rem;
     margin: 0.5rem;
   }
-
   .header .iconSettings {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .header .iconSettings button {
-    width: var(--size-big);
-    font-size: 0;
-    justify-content: center;
-  }
-
-  .containerSettings h3 {
-    font-size: 1.25rem;
-    margin: 0 0 0.5rem 0;
-  }
-  .containerSettings button,
-  .containerSettings a {
-    font-size: var(--font-size-small);
+    padding: 0;
   }
 }

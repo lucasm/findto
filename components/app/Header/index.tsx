@@ -137,44 +137,32 @@ export default function AppHeader() {
     )
   }
 
-  // altura da página
+  // largura da página
   useEffect(() => {
-    // altura inicial da página
-    setPageHeight(window.innerHeight)
+    // largura inicial da página
+    setPageHeight(window.innerWidth)
 
     const handleResize = () => {
-      // atualiza a altura da página quando a janela é redimensionada
-      setPageHeight(window.innerHeight)
+      // atualiza a largura da página quando a janela é redimensionada
+      setPageHeight(window.innerWidth)
     }
 
-    // ouvinte de evento de redimensionamento da janela
+    // evento de redimensionamento da janela
     window.addEventListener('resize', handleResize)
 
     // remove o ouvinte de evento quando o componente é desmontado
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
+  // limite de itens no menu de navegação
   useEffect(() => {
-    // limite de itens no menu
     if (!isMobileViewport && pageHeight > 0) {
-      if (pageHeight < 340) {
-        setMaxItemsInHeader(2)
-      } else if (pageHeight < 380) {
-        setMaxItemsInHeader(3)
-      } else if (pageHeight < 420) {
-        setMaxItemsInHeader(4)
-      } else if (pageHeight < 460) {
-        setMaxItemsInHeader(5)
-      } else if (pageHeight < 520) {
-        setMaxItemsInHeader(6)
-      } else if (pageHeight < 580) {
+      if (pageHeight < 1100) {
         setMaxItemsInHeader(7)
-      } else if (pageHeight < 640) {
+      } else if (pageHeight < 1200) {
         setMaxItemsInHeader(8)
-      } else if (pageHeight < 700) {
-        setMaxItemsInHeader(9)
       } else {
-        setMaxItemsInHeader(10)
+        setMaxItemsInHeader(9)
       }
     }
 
@@ -234,6 +222,13 @@ export default function AppHeader() {
         Findto
       </Link>
 
+      <div className={Style.iconSettings}>
+        <button onClick={toggleModal}>
+          <IconSettings />
+          {titleSettings}
+        </button>
+      </div>
+
       <nav className={Style.nav}>
         <ul>
           {menuItens?.map(
@@ -261,13 +256,6 @@ export default function AppHeader() {
               )}
             </ul>
           )}
-        </div>
-
-        <div className={Style.iconSettings}>
-          <button onClick={toggleModal}>
-            <IconSettings />
-            {titleSettings}
-          </button>
         </div>
       </nav>
 

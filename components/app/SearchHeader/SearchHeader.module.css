@@ -1,9 +1,8 @@
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 0.5rem;
 }
 
 .container div:first-child,
@@ -17,20 +16,30 @@
 }
 
 .container h1 {
-  font-size: var(--font-size-2);
+  font-size: var(--font-size-1);
   color: var(--color-black);
 }
+
+/* .searchPlaceholder {
+  width: 10rem;
+  height: var(--size-large);
+  border-radius: var(--radius-full);
+  border: 2px dashed var(--color-black);
+}
+.searchPlaceholder figure {
+  width: 10rem;
+  height: 1.75rem;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+} */
 
 @media screen and (max-width: 940px) {
   .container {
     padding: 0 1rem;
   }
 
-  .container h1 {
-    font-size: 1.75rem;
-  }
-}
-@media screen and (max-width: 600px) {
   .container h1 {
     font-size: var(--font-size-3);
   }

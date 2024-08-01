@@ -2,7 +2,7 @@
   "country": "Brasil",
   "country_code": "BR",
   "t": {
-    "placeholder": "Buscar em",
+    "placeholder": "Buscar com",
     "search": "Buscar",
     "trends": "Tendências",
     "settings": "Ajustes",
@@ -16,7 +16,7 @@
     "open": "Abrir app",
     "contribute": "Contribua",
     "community": "Comunidade",
-    "donate": "Doação",
+    "donate": "Doar",
     "feedback": "Feedback",
     "link_feedback": "https://forms.gle/r6XAyB1ZLn9qzwp16",
     "terms": "Termos",
@@ -42,15 +42,63 @@
     "more": "Mais",
     "learnMore": "Saiba mais",
     "banner": [
-      "Bem vindo(a) ao Findto",
-      "Busca descentralizada na Web e IAs. Descubra mais. Ajude o planeta."
+      "A nova melhor forma de fazer buscas",
+      "Busque de forma descentralizada em IAs e motores de busca. Descubra mais. Ajude o planeta."
     ],
-    "copyright": ["Findto é feito por", "e pela comunidade de código aberto."]
+    "copyright": ["Findto é feito por", "no Brasil"]
   },
   "categories": [
     {
+      "name": "AI",
+      "name_translated": "IA",
+      "name_trends": "Top buscas",
+      "active": true,
+      "data": [
+        {
+          "name": "ChatGPT",
+          "action": "https://chat.openai.com/?q=",
+          "color": "#0dcfa0"
+        },
+        {
+          "name": "Microsoft Copilot",
+          "action": "https://www.bing.com/search?showconv=1&sendquery=1&q=",
+          "color": "#e897ee"
+        },
+        {
+          "name": "Perplexity",
+          "action": "https://www.perplexity.ai/?q=",
+          "color": "#81ccd6"
+        },
+        {
+          "name": "Google Gemini",
+          "action": "https://gemini.google.com/app?q=",
+          "color": "#7ea4ff"
+        },
+        {
+          "name": "HuggingChat",
+          "action": "https://huggingface.co/chat?q=",
+          "color": "#ffd942"
+        },
+        {
+          "name": "You",
+          "action": "https://you.com/search?fromSearchBar=true&tbm=youchat&q=",
+          "color": "#6b8dff"
+        },
+        {
+          "name": "Phind",
+          "action": "https://www.phind.com/agent?q=",
+          "color": "#8275ff"
+        },
+        {
+          "name": "Adobe Firefly",
+          "action": "https://firefly.adobe.com/generate/images?prompt=",
+          "color": "#FF584C"
+        }
+      ]
+    },
+    {
       "name": "Web",
-      "name_trends": "Mais buscados",
+      "name_trends": "Top buscas",
       "active": true,
       "data": [
         {
@@ -141,56 +189,8 @@
       ]
     },
     {
-      "name": "AI",
-      "name_translated": "IA",
-      "name_trends": "Mais buscados",
-      "active": true,
-      "data": [
-        {
-          "name": "ChatGPT",
-          "action": "https://chat.openai.com/?q=",
-          "color": "#0dcfa0"
-        },
-        {
-          "name": "Microsoft Copilot",
-          "action": "https://www.bing.com/search?showconv=1&sendquery=1&q=",
-          "color": "#e897ee"
-        },
-        {
-          "name": "Perplexity",
-          "action": "https://www.perplexity.ai/?q=",
-          "color": "#81ccd6"
-        },
-        {
-          "name": "Google Gemini",
-          "action": "https://gemini.google.com/app?q=",
-          "color": "#7ea4ff"
-        },
-        {
-          "name": "HuggingChat",
-          "action": "https://huggingface.co/chat?q=",
-          "color": "#ffd942"
-        },
-        {
-          "name": "You",
-          "action": "https://you.com/search?fromSearchBar=true&tbm=youchat&q=",
-          "color": "#6b8dff"
-        },
-        {
-          "name": "Phind",
-          "action": "https://www.phind.com/agent?q=",
-          "color": "#8275ff"
-        },
-        {
-          "name": "Adobe Firefly",
-          "action": "https://firefly.adobe.com/generate/images?prompt=",
-          "color": "#FF584C"
-        }
-      ]
-    },
-    {
       "name": "Social",
-      "name_trends": "Tendências",
+      "name_trends": "Tendências agora",
       "active": true,
       "data": [
         {
@@ -552,7 +552,7 @@
     {
       "name": "Shopping",
       "name_translated": "Compras",
-      "name_trends": "Produtos recomendados",
+      "name_trends": "Produtos em alta",
       "active": true,
       "data": [
         {
@@ -1053,7 +1053,7 @@
     },
     {
       "name": "Legal",
-      "name_translated": "Jurídico",
+      "name_translated": "Legal",
       "name_trends": "Serviços populares",
       "active": true,
       "data": [

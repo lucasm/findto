@@ -149,11 +149,7 @@ export default function Search() {
 
   return (
     <section className={Style.searchContainer}>
-      <div
-        className={Style.searchContainer2}
-        style={{
-          background: lightColor,
-        }}>
+      <div className={Style.searchContainer2}>
         <SearchHeader
           additionalLeftElement={!isMobileViewport && isChild && renderOptions(search)}
         />
@@ -198,7 +194,7 @@ export default function Search() {
               className={Style.searchPlaceholder}
               onClick={handleFocus}
               style={{ display: inputValue != '' ? 'none' : 'flex' }}>
-              {!isMobileViewport && <figcaption>{data?.t?.search ?? 'Search'}</figcaption>}
+              {!isMobileViewport && <figcaption>{data?.t?.placeholder ?? 'Search'}</figcaption>}
               <figure
                 style={{
                   backgroundImage: 'url(/images/logos/' + search + '.svg)',
@@ -260,7 +256,7 @@ export default function Search() {
                   // style={{ opacity: isValid ? '1' : '.5' }}
                 >
                   <IconSend />
-                  Search
+                  {data?.t?.search ?? 'Search'}
                 </a>
               </Tooltip>
             </div>

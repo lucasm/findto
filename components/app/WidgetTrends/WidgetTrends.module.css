@@ -9,8 +9,7 @@
   display: flex;
   gap: 1.5rem;
   align-items: center;
-  justify-content: space-between;
-  flex-direction: row-reverse;
+  justify-content: flex-start;
   padding: 1rem 1rem 1rem 2rem;
   width: 100%;
   border: 0;
@@ -20,6 +19,7 @@
   border-radius: var(--radius);
   transition: var(--transition-hover);
   box-shadow: var(--box-shadow);
+  flex-direction: row;
 }
 .container ul li button img {
   border-radius: 0.25rem;
@@ -28,7 +28,7 @@
 }
 .container ul li button:hover img,
 .container ul li button:focus img {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .container ul li button span {
   text-align: left;
@@ -40,9 +40,16 @@
 }
 
 /* Sizes */
-.trendsMusic ul,
+
+.trendsMusic ul {
+  grid-template-columns: repeat(6, 1fr);
+}
+
 .trendsVideos ul,
-.trendsImage ul {
+.trendsImage ul,
+.trendsSocial ul,
+.trendsNews ul,
+.trendsShopping ul {
   grid-template-columns: repeat(4, 1fr);
 }
 
