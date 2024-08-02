@@ -4,6 +4,7 @@ import WidgetTrends from '../components/app/WidgetTrends'
 import Banner from '../components/app/Banner'
 import WidgetPrivacy from '../components/app/WidgetPrivacy'
 import WidgetCarbon from '../components/app/WidgetCarbon'
+import WidgetContainer from '../components/app/WidgetContainer'
 
 export default function Index() {
   return (
@@ -11,12 +12,13 @@ export default function Index() {
       title="Open Source AI Search"
       description="Findto is an assistant for decentralized Web & AI search. Explore a healthier internet with control over algorithms, privacy, and carbon.">
       <Search />
+
       <WidgetTrends />
 
-      <div>
+      <WidgetContainer>
         <WidgetPrivacy />
         <WidgetCarbon />
-      </div>
+      </WidgetContainer>
 
       <Banner />
     </LayoutApp>

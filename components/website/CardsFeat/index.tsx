@@ -20,7 +20,7 @@ export default function CardsFeat() {
           <IconSearch />
         </figure>
         <h3>Decentralized Search</h3>
-        <p>Search the same term on diverse sources and categories</p>
+        <p>Search the same term quickly on diverse sources</p>
       </div>
 
       <div>
@@ -28,15 +28,15 @@ export default function CardsFeat() {
           <IconShield />
         </figure>
         <h3>Privacy Level</h3>
-        <p>View the privacy level of selected source</p>
+        <p>Estimated privacy level of search provider</p>
       </div>
 
       <div>
         <figure>
           <IconLeaf />
         </figure>
-        <h3>Carbon Level</h3>
-        <p>View the estimate carbon footprint of selected source</p>
+        <h3>Carbon Footprint</h3>
+        <p>Estimated carbon footprint of search provider</p>
       </div>
 
       <div>
@@ -44,7 +44,7 @@ export default function CardsFeat() {
           <IconTrending />
         </figure>
         <h3>Trends</h3>
-        <p>Explore trending topics, contents, events, services and places nearby you</p>
+        <p>Trending topics, contents, events, services and places nearby you</p>
 
         {/* <p>
           Become <Link href={'/pro'}>Pro</Link> for unlimited access
@@ -56,7 +56,7 @@ export default function CardsFeat() {
           <IconText />
         </figure>
         <h3>Autosuggest</h3>
-        <p>Get suggestions of terms as you type to help on fast searches</p>
+        <p>Suggestions of terms as you type to make fast searches</p>
       </div>
 
       <div>
@@ -72,7 +72,7 @@ export default function CardsFeat() {
           <IconAccessibility />
         </figure>
         <h3>Accessibility</h3>
-        <p>Dark theme, balanced contrast, keyboard navigation and screen readers supported</p>
+        <p>Dark theme, balanced contrast, keyboard navigation and screen readers support</p>
       </div>
 
       <div>
@@ -80,7 +80,7 @@ export default function CardsFeat() {
           <IconLanguage />
         </figure>
         <h3>Internationalization</h3>
-        <p>Chose your country for local sources, or use international search</p>
+        <p>Chose a country for local sources, or use international search</p>
       </div>
 
       <div>
@@ -88,7 +88,7 @@ export default function CardsFeat() {
           <IconVisualSearch />
         </figure>
         <h3>Visual Search</h3>
-        <p>Use a image or shot to search on the supported sources</p>
+        <p>Use a image or camera to search on the supported sources</p>
 
         <p>* In development</p>
       </div>

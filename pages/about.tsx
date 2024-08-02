@@ -14,10 +14,10 @@ export default function PageAbout() {
       <section className="colors">
         <div className={Style.container}>
           <figure className={Style.icon}></figure>
-          <h1>Decentralized Web & AI Search</h1>
+          <h1>Open Source AI Search</h1>
           <p>
-            Findto is an open source assistant for decentralized Web & AI search. Get control over
-            algorithms, privacy and carbon. Explore a healthy internet.
+            Findto is an assistant for decentralized web search. Get control over AI and search
+            engines algorithms. Explore a healthy internet.
           </p>
         </div>
       </section>
@@ -31,11 +31,10 @@ export default function PageAbout() {
               </figure>
 
               <article>
-                <h2>Get control over algorithms</h2>
+                <h2>Get control over AI and search algorithms</h2>
                 <p>
-                  Findto puts people on control of the Web and AIs algorithms — not the other way
-                  around. Quickly switch between diverse sources and find anything. More productive
-                  and accessible searches.
+                  Findto puts people on control of the algorithms. Quickly switch between diverse
+                  sources and find anything. More productive and accessible searches.
                 </p>
               </article>
             </div>
@@ -46,10 +45,10 @@ export default function PageAbout() {
               </figure>
 
               <article>
-                <h2>More privacy and less carbon</h2>
+                <h2>More privacy, less carbon</h2>
                 <p>
-                  Findto displays the privacy level and estimated carbon footprint on top of every
-                  search source. Make better choices, for you and the planet.
+                  Findto show the privacy level and estimated carbon footprint of every search
+                  provider. Make better choices for you and the planet.
                 </p>
               </article>
             </div>
@@ -60,11 +59,11 @@ export default function PageAbout() {
               </figure>
 
               <article>
-                <h2>Welcome to the decentralization</h2>
+                <h2>Decentralized and open source search</h2>
                 <p>
                   The centralized internet — where monopoly wins — is unsustainable. Findto
-                  encourages a truly free search experience, where the people democratic choices and
-                  the planet needs walks together. As the internet should be.
+                  encourages a truly open search experience, where people choices and the planet
+                  needs walks together.
                 </p>
               </article>
             </div>
@@ -83,8 +82,8 @@ export default function PageAbout() {
       <section>
         <div className={Style.container}>
           <div className={Style.actionContainer}>
-            <h2>A better search experience</h2>
-            <p>Decentralized search. Crafted for people. Dedicated to the planet.</p>
+            <h2>A renewable search experience</h2>
+            <p>Decentralized search. Build by people. Dedicated to the planet.</p>
             <Button url="/" color="colors">
               {data?.t?.open ?? 'Open the app'}
             </Button>

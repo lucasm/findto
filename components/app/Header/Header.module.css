@@ -8,8 +8,8 @@
   flex-direction: column;
 }
 .header svg {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   color: var(--color-text-black);
 }
 .header button {
@@ -99,9 +99,6 @@
   top: 0;
   padding: 1rem;
 }
-.header .iconSettings button svg {
-  margin: 0;
-}
 
 .header .iconSettings button {
   width: var(--size-big);
@@ -123,7 +120,7 @@
   right: 0;
   width: 100%;
   max-width: 320px;
-  height: auto;
+  height: 100%;
   bottom: var(--size-big);
   flex-direction: column;
   border-radius: 0;
@@ -154,11 +151,6 @@
     padding: 0;
   }
 
-  .nav button svg,
-  .iconSettings button svg {
-    width: 1.4rem;
-    height: 1.4rem;
-  }
   .nav button {
     height: var(--size-small);
   }
