@@ -15,8 +15,16 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
         credits_url: 'https://www.gov.br/pt-br',
         data: [
           {
-            title: 'Consultar restituição de imposto de renda DIRPF',
+            title: 'Consultar Valores a Receber',
+            url: 'https://www.gov.br/pt-br/servicos/consultar-e-solicitar-a-devolucao-de-valores-a-receber',
+          },
+          {
+            title: 'Consultar Restituição do Imposto de Renda',
             url: 'https://www.gov.br/pt-br/servicos/consultar-restituicao-de-imposto-de-renda',
+          },
+          {
+            title: 'Realizar a Assinatura Eletrônica de Documentos',
+            url: 'https://www.gov.br/pt-br/servicos/assinatura-eletronica',
           },
           {
             title: 'Consultar CPF',
@@ -27,28 +35,24 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
             url: 'https://www.gov.br/pt-br/servicos/consultar-cadastro-nacional-de-pessoas-juridicas',
           },
           {
-            title: 'Consultar dívidas e pendências fiscais',
+            title: 'Inscrever ou Atualizar CNPJ',
+            url: 'https://www.gov.br/pt-br/servicos/inscrever-ou-atualizar-cadastro-nacional-de-pessoas-juridicas',
+          },
+          {
+            title: 'Consultar Dívidas e Pendências Fiscais',
             url: 'https://www.gov.br/pt-br/servicos/consultar-dividas-e-pendencias-fiscais',
           },
           {
-            title: 'Realizar a Assinatura Eletrônica de documentos',
-            url: 'https://www.gov.br/pt-br/servicos/assinatura-eletronica',
+            title: 'Emitir Certidão de Regularidade Fiscal',
+            url: 'https://www.gov.br/pt-br/servicos/emitir-certidao-de-regularidade-fiscal',
           },
           {
             title: 'Obter a Carteira de Trabalho',
             url: 'https://www.gov.br/pt-br/servicos/obter-a-carteira-de-trabalho',
           },
           {
-            title: 'Emitir certidão de regularidade fiscal',
-            url: 'https://www.gov.br/pt-br/servicos/emitir-certidao-de-regularidade-fiscal',
-          },
-          {
             title: 'Obter CPF',
             url: 'https://www.gov.br/pt-br/servicos/obter-cartao-de-cpf',
-          },
-          {
-            title: 'Inscrever ou atualizar CNPJ',
-            url: 'https://www.gov.br/pt-br/servicos/inscrever-ou-atualizar-cadastro-nacional-de-pessoas-juridicas',
           },
           {
             title: 'Esclarecer dúvidas sobre proteção de dados pessoais',
@@ -59,19 +63,19 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
             url: 'https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/',
           },
           {
-            title: 'Opinar sobre propostas legislativas na Câmara dos Deputados',
+            title: 'Câmara dos Deputados: opinar em propostas legislativas',
             url: 'https://www.camara.leg.br/enquetes/',
           },
           {
-            title: 'Propor e apoiar leis no Senado',
+            title: 'Senado: propor e apoiar leis',
             url: 'https://www12.senado.leg.br/ecidadania/principalideia',
           },
           {
-            title: 'Manifestar solicitação ao Governo',
+            title: 'Governo: manifestar solicitação',
             url: 'https://falabr.cgu.gov.br/',
           },
           {
-            title: 'Como está votando cada parlamentar',
+            title: 'Ver Votos dos Parlamentares',
             url: 'https://quemfoiquem.org.br/',
           },
         ],

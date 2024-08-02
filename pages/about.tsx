@@ -14,10 +14,12 @@ export default function PageAbout() {
       <section className="colors">
         <div className={Style.container}>
           <figure className={Style.icon}></figure>
-          <h1>Open Source AI Search</h1>
+          <h1>
+            Decentralized search <br></br>on Web and AI
+          </h1>
           <p>
-            Findto is an assistant for decentralized web search. Get control over AI and search
-            engines algorithms. Explore a healthy internet.
+            Findto is a decentralized search assistant. Get control over AI and Web search engines
+            algorithms. Explore a healthy internet.
           </p>
         </div>
       </section>
@@ -31,7 +33,7 @@ export default function PageAbout() {
               </figure>
 
               <article>
-                <h2>Get control over AI and search algorithms</h2>
+                <h2>Get control over search algorithms</h2>
                 <p>
                   Findto puts people on control of the algorithms. Quickly switch between diverse
                   sources and find anything. More productive and accessible searches.
@@ -59,7 +61,7 @@ export default function PageAbout() {
               </figure>
 
               <article>
-                <h2>Decentralized and open source search</h2>
+                <h2>Decentralized and open source</h2>
                 <p>
                   The centralized internet — where monopoly wins — is unsustainable. Findto
                   encourages a truly open search experience, where people choices and the planet

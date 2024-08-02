@@ -117,9 +117,12 @@
   margin-left: 0.5rem;
 }
 .searchButton svg {
+  color: var(--color-white);
+}
+.searchButton svg,
+.resetButton svg {
   width: 20px;
   height: 20px;
-  color: var(--color-white);
 }
 .resetButton {
   display: none;

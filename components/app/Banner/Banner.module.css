@@ -3,11 +3,10 @@
   padding: 3.5rem;
   border-radius: var(--radius-big);
   box-shadow: var(--box-shadow);
-
-  margin: 3.5rem 1rem 0;
+  margin: 1rem 1rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
+  grid-gap: 8rem;
   align-items: center;
   text-align: left;
 }
@@ -18,7 +17,7 @@
 }
 .container p {
   margin-bottom: 0.75rem;
-  font-size: var(--font-size);
+  font-size: 1.2rem;
   color: var(--color-text-black);
 }
 .container a {
@@ -31,7 +30,7 @@
   height: var(--size-large);
   padding: 0 2rem;
   border-radius: var(--radius-big);
-  width: auto;
+  width: 100%;
   font-size: var(--font-size);
 }
 .container a:hover,
@@ -69,6 +68,9 @@
     grid-template-columns: 1fr;
     grid-gap: 0;
     text-align: center;
+  }
+  .container p {
+    font-size: var(--font-size);
   }
   .container a {
     height: var(--size-small);

@@ -43,10 +43,10 @@
     "more": "Mais",
     "learnMore": "Saiba mais",
     "banner": [
-      "Uma forma totalmente nova de buscar",
-      "Que tal buscar na web e IAs de forma descentralizada? Essa é a liberdade do Findto, seu assistente de buscas. Descubra mais. Ajude o planeta."
+      "A nova forma para buscar na Web e IAs",
+      "Findto é um assistente para pessoas controlarem os algoritmos de busca da Web e IAs. Descubra mais. Ajude o planeta."
     ],
-    "slogan": "Buscas com IA de código aberto"
+    "slogan": "Busca descentralizada na Web e IAs"
   },
   "categories": [
     {
@@ -682,7 +682,7 @@
         },
         {
           "name": "Apple Maps",
-          "action": "http://maps.apple.com/?q=",
+          "action": "https://beta.maps.apple.com/?q=",
           "color": "#4cb69a"
         },
         {
@@ -775,12 +775,12 @@
         },
         {
           "name": "Folha",
-          "action": "https://search.folha.uol.com.br/?q=lula",
+          "action": "https://search.folha.uol.com.br/?q=",
           "color": "#00afec"
         },
         {
           "name": "Estadão",
-          "action": "https://busca.estadao.com.br/?q=lula",
+          "action": "https://busca.estadao.com.br/?q=",
           "color": "#398aff"
         },
         {

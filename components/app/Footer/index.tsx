@@ -16,7 +16,7 @@ export default function AppFooter() {
           </Link>
         </figure>
 
-        <p>Findto | {data?.t?.slogan ?? 'Open Source AI Search'} </p>
+        <p>Findto | {data?.t?.slogan ?? 'Decentralized search on Web and AI'} </p>
 
         <ul>
           <li>
@@ -41,17 +41,17 @@ export default function AppFooter() {
           </li>
 
           <li>
+            <Link href="https://x.com/findtoapp" target="_blank" rel="noreferrer" aria-label="X">
+              <IconX />
+            </Link>
+          </li>
+          <li>
             <Link
               href="https://github.com/lucasm/findto"
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub">
               <IconGitHub />
-            </Link>
-          </li>
-          <li>
-            <Link href="https://x.com/findtoapp" target="_blank" rel="noreferrer" aria-label="X">
-              <IconX />
             </Link>
           </li>
           <li>
