@@ -1,5 +1,4 @@
 import Styles from './WidgetTrends.module.css'
-import Image from 'next/image'
 import { fetcher } from '../../../utils/http'
 import useSWR from 'swr'
 import { useSearch } from '../../../contexts/SearchContext'

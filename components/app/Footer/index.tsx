@@ -2,7 +2,7 @@ import Style from './Footer.module.css'
 import Link from 'next/link'
 import SvgLogo from '../../website/SvgLogo'
 import { useSearch } from '../../../contexts/SearchContext'
-import { IconGitHub, IconX } from '../SvgIcons'
+import { IconGitHub, IconX, IconInstagram } from '../SvgIcons'
 
 export default function AppFooter() {
   const { data } = useSearch()
@@ -16,13 +16,7 @@ export default function AppFooter() {
           </Link>
         </figure>
 
-        <p>
-          {data?.t?.copyright[0] ?? 'Findto is made by'}{' '}
-          <a href="https://lucasm.dev/?utm_source=findto_app" target="_blank" rel="noreferrer">
-            {'Lucas Menezes'}
-          </a>{' '}
-          {data?.t?.copyright[1] ?? 'and the open source community.'}
-        </p>
+        <p>Findto | {data?.t?.slogan ?? 'Open Source AI Search'} </p>
 
         <ul>
           <li>
@@ -45,11 +39,7 @@ export default function AppFooter() {
           <li>
             <Link href="/terms">{data?.t?.terms ?? 'Terms'}</Link>
           </li>
-          <li>
-            <Link href="https://x.com/findtoapp" target="_blank" rel="noreferrer" aria-label="X">
-              <IconX />
-            </Link>
-          </li>
+
           <li>
             <Link
               href="https://github.com/lucasm/findto"
@@ -57,6 +47,20 @@ export default function AppFooter() {
               rel="noreferrer"
               aria-label="GitHub">
               <IconGitHub />
+            </Link>
+          </li>
+          <li>
+            <Link href="https://x.com/findtoapp" target="_blank" rel="noreferrer" aria-label="X">
+              <IconX />
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://instagram.com/findtoapp"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram">
+              <IconInstagram />
             </Link>
           </li>
         </ul>
@@ -81,14 +85,6 @@ export default function AppFooter() {
               <circle cx="9" cy="12" r="1" />
               <circle cx="15" cy="12" r="1" />
             </svg>
-          </a> */}
-
-        {/* <a
-            href="https://instagram.com/findtoapp"
-            target="_blank"
-            rel="noreferrer"
-            title="Instagram">
-            <Instagram />
           </a> */}
 
         {/* <a

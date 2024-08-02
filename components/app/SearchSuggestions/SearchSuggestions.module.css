@@ -34,6 +34,6 @@
     padding: 0 1.5rem;
   }
   .container ul li a {
-    font-size: var(--font-size);
+    font-size: var(--font-size-big);
   }
 }

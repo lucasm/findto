@@ -1,3 +1,8 @@
+.section {
+  padding: 0 1rem;
+  overflow: hidden;
+}
+
 .container ul {
   list-style: none;
   display: grid;
@@ -22,7 +27,6 @@
   flex-direction: row;
 }
 .container ul li button img {
-  border-radius: 0.25rem;
   background: var(--color-white);
   transition: var(--transition-hover);
 }
@@ -47,6 +51,7 @@
 
 .trendsVideos ul,
 .trendsImage ul,
+.trendsMusic ul,
 .trendsSocial ul,
 .trendsNews ul,
 .trendsShopping ul {
@@ -77,6 +82,7 @@
 }
 
 .trendsVideos ul li button img,
+.trendsMusic ul li button img,
 .trendsImage ul li button img,
 .trendsNews ul li button img {
   width: 100%;
@@ -113,11 +119,6 @@
 }
 
 @media screen and (max-width: 940px) {
-  .section {
-    padding: 1rem;
-    overflow: hidden;
-  }
-
   .title h2 {
     font-size: 1.25rem;
   }

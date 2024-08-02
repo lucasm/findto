@@ -12,8 +12,12 @@ export default function Index() {
       description="Findto is an assistant for decentralized Web & AI search. Explore a healthier internet with control over algorithms, privacy, and carbon.">
       <Search />
       <WidgetTrends />
-      <WidgetPrivacy />
-      <WidgetCarbon />
+
+      <div>
+        <WidgetPrivacy />
+        <WidgetCarbon />
+      </div>
+
       <Banner />
     </LayoutApp>
   )

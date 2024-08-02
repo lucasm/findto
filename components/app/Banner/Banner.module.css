@@ -3,7 +3,8 @@
   padding: 3.5rem;
   border-radius: var(--radius-big);
   box-shadow: var(--box-shadow);
-  margin-top: 3.5rem;
+
+  margin: 3.5rem 1rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
@@ -63,12 +64,6 @@
 }
 
 @media screen and (max-width: 940px) {
-  .container {
-    margin: 1rem;
-  }
-}
-
-@media screen and (max-width: 1200px) {
   .container {
     overflow: hidden;
     grid-template-columns: 1fr;

@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react'
-import Style from '../../../styles/App.module.css'
+import Style from './Search.module.css'
 import { normalizeId } from '../../../utils/formats'
 import { useSearch } from '../../../contexts/SearchContext'
 import { useRouter } from 'next/router'

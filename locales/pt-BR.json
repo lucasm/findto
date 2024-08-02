@@ -2,7 +2,7 @@
   "country": "Brasil",
   "country_code": "BR",
   "t": {
-    "placeholder": "Buscar com",
+    "placeholder": "Busca",
     "search": "Buscar",
     "trends": "Tendências",
     "settings": "Ajustes",
@@ -21,6 +21,7 @@
     "link_feedback": "https://forms.gle/r6XAyB1ZLn9qzwp16",
     "terms": "Termos",
     "privacy": "Privacidade",
+    "widgetPrivacy": "Nível de privacidade",
     "privacyScore": [
       "muito pobre",
       "justa",
@@ -31,7 +32,7 @@
       "ainda não foi analisado",
       "Nível de privacidade"
     ],
-    "carbon": "Carbono",
+    "widgetCarbon": "Emissão de carbono",
     "carbonScore": [
       "mais limpo que outros sites",
       "de carbono por visita",
@@ -42,10 +43,10 @@
     "more": "Mais",
     "learnMore": "Saiba mais",
     "banner": [
-      "A nova melhor forma de fazer buscas",
-      "Busque de forma descentralizada em IAs e motores de busca. Descubra mais. Ajude o planeta."
+      "Uma forma totalmente nova de buscar",
+      "Que tal buscar na web e IAs de forma descentralizada? Essa é a liberdade do Findto, seu assistente de buscas. Descubra mais. Ajude o planeta."
     ],
-    "copyright": ["Findto é feito por", "no Brasil"]
+    "slogan": "Buscas com IA de código aberto"
   },
   "categories": [
     {
@@ -282,6 +283,11 @@
           "color": "#ff4d4d"
         },
         {
+          "name": "IMDb",
+          "action": "https://www.imdb.com/find/?q=",
+          "color": "#f5c518"
+        },
+        {
           "name": "Twitch",
           "action": "https://www.twitch.tv/search?term=",
           "color": "#B888FF"
@@ -320,11 +326,6 @@
           "name": "Apple TV+",
           "action": "https://tv.apple.com/search?term=",
           "color": "#c8c8c8"
-        },
-        {
-          "name": "IMDb",
-          "action": "https://www.imdb.com/find/?q=",
-          "color": "#f5c518"
         },
         {
           "name": "Letterboxd",
@@ -1053,8 +1054,8 @@
     },
     {
       "name": "Legal",
-      "name_translated": "Legal",
-      "name_trends": "Serviços populares",
+      "name_translated": "Jurídico",
+      "name_trends": "Serviços públicos",
       "active": true,
       "data": [
         {
@@ -1073,7 +1074,7 @@
           "color": "#5193FF",
           "child": [
             {
-              "name": "Portal Gov.br"
+              "name": "Governo Federal"
             },
             {
               "name": "Transparência",
@@ -1165,66 +1166,30 @@
         },
         {
           "name": "Banco Central",
-          "action": "https://www.bcb.gov.br/resultadobusca?termo=inflacao",
+          "action": "https://www.bcb.gov.br/resultadobusca?termo=",
           "color": "#16a7ce"
         }
       ]
     },
     {
-      "name": "Apps",
-      "name_translated": "Aplicativos",
-      "name_trends": "Apps populares",
+      "name": "Finance",
+      "name_translated": "Finanças",
       "active": true,
       "data": [
         {
-          "name": "Google Play",
-          "action": "https://play.google.com/store/search?q=",
-          "color": "#00c78e"
+          "name": "finviz",
+          "action": "https://finviz.com/search.ashx?p=",
+          "color": "#d8d8d8"
         },
         {
-          "name": "App Store",
-          "action": "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?media=software&term=",
-          "color": "#1db2f9"
+          "name": "Itaú",
+          "action": "https://www.itau.com.br/resultados-de-busca?q=",
+          "color": "#ec7000"
         },
         {
-          "name": "Microsoft Store",
-          "action": "https://apps.microsoft.com/store/search/",
-          "color": "#219fff"
-        },
-        {
-          "name": "Chrome Web Store",
-          "action": "https://chromewebstore.google.com/search/",
-          "color": "#FFC412"
-        },
-        {
-          "name": "Firefox Addons",
-          "action": "https://addons.mozilla.org/en-US/firefox/search/?q=",
-          "color": "#00c8d7"
-        },
-        {
-          "name": "AlternativeTo",
-          "action": "https://alternativeto.net/browse/search/?q=",
-          "color": "#33B4FF"
-        },
-        {
-          "name": "Flathub",
-          "action": "https://flathub.org/pt-BR/apps/search?q=",
-          "color": "#34aadc"
-        },
-        {
-          "name": "Snap Store",
-          "action": "https://snapcraft.io/search?q=",
-          "color": "#FF7B4B"
-        },
-        {
-          "name": "Softonic",
-          "action": "https://www.softonic.com.br/s/",
-          "color": "#0bda8a"
-        },
-        {
-          "name": "Product Hunt",
-          "action": "https://www.producthunt.com/search?q=",
-          "color": "#ff744c"
+          "name": "Nubank",
+          "action": "https://blog.nubank.com.br/busca/?search=",
+          "color": "#820ad1"
         }
       ]
     },
@@ -1326,15 +1291,71 @@
         }
       ]
     },
-
     {
-      "name": "Finance",
-      "name_translated": "Finanças",
-      "active": false,
+      "name": "Apps",
+      "name_translated": "Aplicativos",
+      "name_trends": "Apps populares",
+      "active": true,
       "data": [
         {
-          "name": "finviz",
-          "action": "https://finviz.com/search.ashx?p=",
+          "name": "Google Play",
+          "action": "https://play.google.com/store/search?q=",
+          "color": "#00c78e"
+        },
+        {
+          "name": "App Store",
+          "action": "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?media=software&term=",
+          "color": "#1db2f9"
+        },
+        {
+          "name": "Microsoft Store",
+          "action": "https://apps.microsoft.com/store/search/",
+          "color": "#219fff"
+        },
+        {
+          "name": "Chrome Web Store",
+          "action": "https://chromewebstore.google.com/search/",
+          "color": "#FFC412"
+        },
+        {
+          "name": "Firefox Addons",
+          "action": "https://addons.mozilla.org/en-US/firefox/search/?q=",
+          "color": "#00c8d7"
+        },
+        {
+          "name": "AlternativeTo",
+          "action": "https://alternativeto.net/browse/search/?q=",
+          "color": "#33B4FF"
+        },
+        {
+          "name": "Flathub",
+          "action": "https://flathub.org/pt-BR/apps/search?q=",
+          "color": "#34aadc"
+        },
+        {
+          "name": "Snap Store",
+          "action": "https://snapcraft.io/search?q=",
+          "color": "#FF7B4B"
+        },
+        {
+          "name": "Softonic",
+          "action": "https://www.softonic.com.br/s/",
+          "color": "#0bda8a"
+        },
+        {
+          "name": "Product Hunt",
+          "action": "https://www.producthunt.com/search?q=",
+          "color": "#ff744c"
+        }
+      ]
+    },
+    {
+      "name": "Torrents",
+      "active": true,
+      "data": [
+        {
+          "name": "The Pirate Bay",
+          "action": "https://www2.thepiratebay3.to/s/?q=",
           "color": "#d8d8d8"
         }
       ]

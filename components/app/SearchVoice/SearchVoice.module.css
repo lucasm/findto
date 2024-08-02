@@ -1,7 +1,7 @@
 .button {
   position: relative;
   float: none;
-  height: 2.8rem;
+  height: var(--size-small);
   width: var(--size-small);
   font-size: 0;
   margin: 0;

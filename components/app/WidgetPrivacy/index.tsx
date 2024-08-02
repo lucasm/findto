@@ -103,7 +103,7 @@ export default function WidgetPrivacy() {
         aria-expanded={isOpen}
         className={isOpen ? Styles.openedButton : ''}>
         <IconShield />
-        {data?.t?.privacy ?? 'Privacy'}
+        {data?.t?.widgetPrivacy ?? 'Privacy level'}
       </button>
 
       {isOpen && (

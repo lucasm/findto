@@ -40,8 +40,8 @@
 }
 
 .container ul li a svg {
-  width: 1rem;
-  height: 1rem;
+  width: 1.2rem;
+  height: 1.2rem;
   fill: var(--color-black-translucent-50);
   transition: var(--transition);
 }

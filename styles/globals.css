@@ -24,7 +24,7 @@
   --shadow-2: 0px 6px 12px 0px rgba(0, 0, 0, 0.075);
   --shadow-hover: 0 0 2px rgba(0, 0, 0, 0.05), 0 8px 16px rgba(0, 0, 0, 0.08),
     inset 0 0 0px 5px var(--color-white);
-  --opacity: 0.5;
+  --opacity: 0.55;
   --font-size: 1rem;
   --font-size-small: 0.8rem;
   --font-size-big: 1.15rem;
@@ -38,7 +38,6 @@
   --size-small: 2.375rem;
   --size-large: 3.25rem;
   --size-big: 3rem;
-  --size-header: 260px;
   --max-size-container: 1200px;
   --max-size-container-2: 800px;
   --transition-hover: hover 0.2s, background 0.2s, opacity 0.2s, box-shadow 0.2s;
@@ -59,18 +58,17 @@ html {
   transition: var(--transition-hover);
   background: linear-gradient(
     90deg,
-    rgba(92, 190, 255, 1) 0%,
-    rgba(102, 235, 200, 1) 25%,
-    rgba(255, 246, 123, 1) 50%,
-    rgba(201, 164, 249, 1) 75%,
-    rgba(255, 101, 101, 1) 90%
+    var(--color-blue) 0%,
+    var(--color-green) 25%,
+    var(--color-yellow) 50%,
+    var(--color-purple) 75%,
+    var(--color-red) 90%
   );
   background-size: 120% 200%;
   animation: gradientAnimation 10s ease infinite;
 }
 body {
-  backdrop-filter: blur(10px);
-  background: rgba(234, 234, 234, 0.418);
+  background: hsla(0, 0%, 90%, 0.25);
 }
 
 @keyframes gradientAnimation {

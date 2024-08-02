@@ -125,15 +125,13 @@ export default function AppHeader() {
   }
   const renderMenuItem = (name, nameTranslated) => {
     return (
-      <Tooltip text={nameTranslated ?? name} disable={!isMobileViewport}>
-        <button
-          className={category === name ? 'activeLink' : null}
-          onClick={() => handleCategory(name)}
-          name={normalizeId(name)}>
-          {handleCategoryIcon(name)}
-          {nameTranslated ?? name}
-        </button>
-      </Tooltip>
+      <button
+        className={category === name ? 'activeLink' : null}
+        onClick={() => handleCategory(name)}
+        name={normalizeId(name)}>
+        {handleCategoryIcon(name)}
+        {nameTranslated ?? name}
+      </button>
     )
   }
 

@@ -10,7 +10,7 @@ export default function PagePrivacy() {
       <section className="colors">
         <div className={Style.container}>
           <div className={Style.pageTitle}>
-            <h1>Findto Privacy Policy</h1>
+            <h1>Privacy Policy</h1>
           </div>
         </div>
       </section>
@@ -18,12 +18,12 @@ export default function PagePrivacy() {
       <section>
         <div className={Style.container}>
           <article>
-            <h2>1. Privacy Focus</h2>
+            <h2>1. Privacy-First</h2>
 
             <p>
-              We respect your privacy regarding any information we may collect from you across our
-              internet service <a href="http://findto.app">http://findto.app</a> or another medium
-              ("Findto").
+              We are built in privacy. And we respect your privacy regarding any information we may
+              collect from you across our internet service{' '}
+              <a href="http://findto.app">http://findto.app</a> or another medium ("Findto").
             </p>
 
             <p>

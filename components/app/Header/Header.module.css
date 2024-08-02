@@ -1,18 +1,10 @@
 .header {
-  z-index: 9;
-  position: fixed;
-  height: 100%;
-  width: var(--size-header);
-
   position: relative;
   display: flex;
   align-items: center;
   vertical-align: middle;
-  flex-wrap: nowrap;
   justify-content: space-between;
-  height: 100%;
   width: 100%;
-  padding: 0 0 1rem 0;
   flex-direction: column;
 }
 .header svg {
@@ -51,14 +43,15 @@
   overflow-x: hidden;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .nav ul {
   white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
-  text-align: center;
   display: flex;
+  padding: 0.25rem 0;
 }
 .nav li {
   display: inline-block;
@@ -67,16 +60,13 @@
 .nav button {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: var(--size-big);
   border-radius: var(--radius-full);
   font-size: 1rem;
   color: var(--color-text-black);
   padding: 0 1.2rem;
-}
-
-.nav button svg,
-.header .iconSettings button svg {
-  margin: 0 0.35rem 0 0;
+  gap: 0.35rem;
 }
 
 .containerSettings {
@@ -124,14 +114,7 @@
   font-size: 1.25rem;
   margin: 0 0 0.5rem 0;
 }
-.containerSettings button,
-.containerSettings a {
-  font-size: var(--font-size-small);
-}
 
-.submenu {
-  position: relative;
-}
 .submenu ul {
   align-items: flex-start;
   background: var(--color-bg-white);
@@ -139,13 +122,13 @@
   top: 0;
   right: 0;
   width: 100%;
-  max-width: 200px;
+  max-width: 320px;
   height: auto;
   bottom: var(--size-big);
   flex-direction: column;
   border-radius: 0;
   box-shadow: var(--box-shadow);
-  padding: 0.5rem 0;
+  padding: 1.25rem 0;
   overflow: hidden;
   z-index: 99999;
 }
@@ -155,21 +138,20 @@
 .submenu ul li button {
   border-radius: 0;
   width: 100%;
+  padding: 0 2rem;
+  justify-content: flex-start;
 }
 
 @media screen and (max-width: 940px) {
-  .nav button,
-  .header .iconSettings button {
-    border-radius: var(--radius);
+  .nav ul {
+    padding: 0 1rem;
+  }
+  .nav button {
     width: var(--size-large);
     height: var(--size-large);
     font-size: 0;
-    padding: 0 1rem;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    gap: 0;
+    padding: 0;
   }
 
   .nav button svg,
@@ -179,7 +161,6 @@
   }
   .nav button {
     height: var(--size-small);
-    margin: 0.25rem 0;
   }
 
   .logo svg {
@@ -193,5 +174,10 @@
   }
   .header .iconSettings {
     padding: 0;
+  }
+
+  .containerSettings button,
+  .containerSettings a {
+    font-size: var(--font-size-small);
   }
 }

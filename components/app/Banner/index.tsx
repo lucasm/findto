@@ -9,9 +9,10 @@ export default function Banner() {
   return (
     <section className={Styles.container}>
       <div>
-        <h3>{data?.t?.banner[0] ?? 'The new best way to search the web'}</h3>
+        <h3>{data?.t?.banner[0] ?? 'The new way of search'}</h3>
         <p>
-          {data?.t?.banner[1] ?? 'Decentralized Web & AI search. Discover more. Help the planet.'}
+          {data?.t?.banner[1] ??
+            'Decentralized search on AI and web search engines. Discover more. Help the planet.'}
         </p>
       </div>
       <div>

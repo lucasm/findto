@@ -90,7 +90,7 @@ export default function WidgetCarbon() {
         aria-expanded={isOpen}
         className={isOpen ? Styles.openedButton : ''}>
         <IconLeaf />
-        {data?.t?.carbon ?? 'Carbon'}
+        {data?.t?.widgetCarbon ?? 'Carbon footprint'}
       </button>
 
       {isOpen && (

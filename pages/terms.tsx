@@ -6,7 +6,7 @@ export default function PageTerms() {
     <LayoutPage title="Terms of Service" description="See how to use Findto for the common good">
       <section className="colors">
         <div className={Style.container}>
-          <h1>Findto Terms of Service</h1>
+          <h1>Terms of Service</h1>
         </div>
       </section>
 
