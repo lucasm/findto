@@ -26,7 +26,7 @@ async function getData(callback): Promise<void> {
 
     var a = []
 
-    data.items.slice(0, 19).forEach((item) => {
+    data.items.forEach((item) => {
       a.push({
         title: item.title,
         image: item.picture,

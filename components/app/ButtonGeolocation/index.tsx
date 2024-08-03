@@ -4,7 +4,7 @@ import { useSearch } from '../../../contexts/SearchContext'
 import { IconLocationGps } from '../SvgIcons'
 
 export default function ButtonGeolocation() {
-  const { setLatitude, setLongitude, permissionLocation, setPermissionLocation } = useSearch()
+  const { setLatitude, setLongitude, permissionLocation, setPermissionLocation, data } = useSearch()
 
   const [locationError, setLocationError] = useState('')
 
@@ -41,10 +41,10 @@ export default function ButtonGeolocation() {
   return (
     <div>
       {!permissionLocation && (
-        <>
+        <div className={Style.container}>
           <button onClick={handleClick} className={Style.button}>
             <IconLocationGps />
-            View nearby places
+            {data?.t?.viewNearbyPlaces ?? 'View nearby places'}
           </button>
 
           {locationError && (
@@ -54,7 +54,7 @@ export default function ButtonGeolocation() {
               {locationError}
             </p>
           )}
-        </>
+        </div>
       )}
     </div>
   )

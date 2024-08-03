@@ -1,8 +1,7 @@
-.section {
+.container {
   padding: 0 1rem;
   overflow: hidden;
 }
-
 .container ul {
   list-style: none;
   display: grid;
@@ -15,7 +14,7 @@
   gap: 1.5rem;
   align-items: center;
   justify-content: flex-start;
-  padding: 1.5rem;
+  padding: 1rem;
   width: 100%;
   border: 0;
   margin: 0;
@@ -25,10 +24,13 @@
   transition: var(--transition-hover);
   box-shadow: var(--box-shadow);
   flex-direction: row;
+  overflow: hidden;
 }
 .container ul li button img {
+  width: 58px;
   background: var(--color-white);
   transition: var(--transition-hover);
+  filter: grayscale(100%);
 }
 .container ul li button:hover img,
 .container ul li button:focus img {
@@ -39,15 +41,8 @@
   font-size: var(--font-size-big);
   letter-spacing: -0.05rem;
 }
-.container ul li button img {
-  filter: grayscale(100%);
-}
 
 /* Sizes */
-
-.trendsMusic ul {
-  grid-template-columns: repeat(6, 1fr);
-}
 
 .trendsVideos ul,
 .trendsImage ul,
@@ -61,18 +56,20 @@
 .trendsVideos ul li button,
 .trendsImage ul li button,
 .trendsMusic ul li button,
-.trendsShopping ul li button,
-.trendsNews ul li button {
-  padding: 1.5rem;
+.trendsNews ul li button,
+.trendsShopping ul li button {
+  gap: 0;
+  padding: 0;
   flex-direction: column;
 }
 
 .trendsVideos ul li button span,
 .trendsImage ul li button span,
 .trendsMusic ul li button span,
-.trendsNews ul li button span {
+.trendsNews ul li button span,
+.trendsShopping ul li button span {
   text-align: center;
-  margin-bottom: 0.5rem;
+  padding: 2rem;
 }
 .trendsCode ul li button span {
   line-break: anywhere;
@@ -84,12 +81,60 @@
 .trendsVideos ul li button img,
 .trendsMusic ul li button img,
 .trendsImage ul li button img,
-.trendsNews ul li button img {
+.trendsNews ul li button img,
+.trendsShopping ul li button img {
   width: 100%;
 }
+.trendsShopping ul li button img {
+  padding: 2rem;
+}
 
-.container .trendsLocal li button img {
-  padding: 0.5rem;
+.trendsSocial ul li button span {
+  padding: 0 0.5rem;
+}
+.trendsSocial ul li:nth-child(1) button span,
+.trendsAcademic ul li:nth-child(1) button span {
+  font-size: calc(var(--font-size-big) + 0.5rem);
+}
+.trendsSocial ul li:nth-child(2) button span,
+.trendsAcademic ul li:nth-child(2) button span {
+  font-size: calc(var(--font-size-big) + 0.45rem);
+}
+.trendsSocial ul li:nth-child(3) button span,
+.trendsAcademic ul li:nth-child(3) button span {
+  font-size: calc(var(--font-size-big) + 0.4rem);
+}
+.trendsSocial ul li:nth-child(4) button span,
+.trendsAcademic ul li:nth-child(4) button span {
+  font-size: calc(var(--font-size-big) + 0.35rem);
+}
+.trendsSocial ul li:nth-child(5) button span,
+.trendsAcademic ul li:nth-child(5) button span {
+  font-size: calc(var(--font-size-big) + 0.3rem);
+}
+.trendsSocial ul li:nth-child(6) button span,
+.trendsAcademic ul li:nth-child(6) button span {
+  font-size: calc(var(--font-size-big) + 0.25rem);
+}
+.trendsSocial ul li:nth-child(7) button span,
+.trendsAcademic ul li:nth-child(7) button span {
+  font-size: calc(var(--font-size-big) + 0.2rem);
+}
+.trendsSocial ul li:nth-child(8) button span,
+.trendsAcademic ul li:nth-child(8) button span {
+  font-size: calc(var(--font-size-big) + 0.15rem);
+}
+.trendsSocial ul li:nth-child(9) button span,
+.trendsAcademic ul li:nth-child(9) button span {
+  font-size: calc(var(--font-size-big) + 0.1rem);
+}
+.trendsSocial ul li:nth-child(10) button span,
+.trendsAcademic ul li:nth-child(10) button span {
+  font-size: calc(var(--font-size-big) + 0.05rem);
+}
+
+.trendsLocal ul li button img {
+  padding: 0.75rem;
 }
 
 .title h2 {
@@ -105,6 +150,7 @@
 
 .credits p {
   margin-top: 2.5rem;
+  padding-right: 1rem;
   font-size: var(--font-size-small);
   width: 100%;
   text-align: right;

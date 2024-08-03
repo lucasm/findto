@@ -26,12 +26,12 @@ import {
   IconHeart,
   IconMoon,
   IconSun,
-  IconMoney,
+  IconFinance,
   IconApps,
+  IconDownload,
   Icon,
   IconMore,
 } from '../SvgIcons'
-import Tooltip from '../Tooltip'
 
 export default function AppHeader() {
   const router = useRouter()
@@ -118,7 +118,9 @@ export default function AppHeader() {
       case 'Apps':
         return <IconApps />
       case 'Finance':
-        return <IconMoney />
+        return <IconFinance />
+      case 'Torrents':
+        return <IconDownload />
       default:
         return <Icon />
     }

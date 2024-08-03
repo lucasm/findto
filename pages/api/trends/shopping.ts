@@ -20,7 +20,7 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
             image: 'https://m.media-amazon.com/images/I/51+W7A115SL._AC_SX679_.jpg',
           },
           {
-            title: 'Echo Dot 5ª Geração Alexa',
+            title: 'Echo Dot 5 Alexa',
             url: 'https://amzn.to/45jAJFL',
             image: 'https://m.media-amazon.com/images/I/71xoR4A6q-L._AC_SX679_.jpg',
           },

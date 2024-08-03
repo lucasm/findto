@@ -1,6 +1,10 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .button {
   position: relative;
-  margin: 1rem 0 0;
   padding: 0 2rem;
   color: var(--color-white);
   background: var(--color-black);
@@ -9,6 +13,9 @@
   cursor: pointer;
   font-size: var(--font-size);
   height: var(--size-big);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
 .button:hover,
 .button:focus {
@@ -22,6 +29,6 @@
 }
 .button svg {
   color: var(--color-white);
-  margin-right: 0.5rem;
-  margin-bottom: -0.3rem;
+  width: 20px;
+  height: 20px;
 }

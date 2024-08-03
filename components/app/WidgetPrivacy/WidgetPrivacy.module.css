@@ -8,9 +8,9 @@
 .container button {
   position: relative;
   height: var(--size-big);
-  background: var(--color-bg-white);
+  background: var(--color-black-translucent);
   border: 0;
-  padding: 0 1rem;
+  padding: 0 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +26,6 @@
 }
 .container button:hover,
 .container button:focus {
-  background: var(--color-white-translucent);
   opacity: 1;
 }
 .container button.openedButton {
