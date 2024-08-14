@@ -20,33 +20,31 @@ export default function PagePricing() {
       <section>
         <div className={Style.container}>
           <article>
-            <div className={Style.container}>
-              <h2>Why buy Pro?</h2>
-              <p>
-                Findto is always free, but if you want to get powerful features,
-                like:
-              </p>
+            <h2>Why buy Pro?</h2>
+            <p>
+              Findto is always free, but if you want to get powerful features,
+              like:
+            </p>
 
-              <p>
-                <strong>Profiles</strong> - the search interface becomes
-                customizable for a professional profile (devs, designers,
-                scientists, entrepreneurs, lawyers etc)
-              </p>
+            <p>
+              <strong>Profiles</strong> - the search interface becomes
+              customizable for a professional profile (devs, designers,
+              scientists, entrepreneurs, lawyers etc)
+            </p>
 
-              <p>
-                <strong>Suggestions</strong> - UNLIMITED on all categories of
-                search
-              </p>
+            <p>
+              <strong>Suggestions</strong> - UNLIMITED on all categories of
+              search
+            </p>
 
-              <p>
-                <strong>Trends</strong> - UNLIMITED on all categories of search
-              </p>
+            <p>
+              <strong>Trends</strong> - UNLIMITED on all categories of search
+            </p>
 
-              <p>
-                Consider buy a Findto Pro license - and you are also supporting
-                the open and decentralized web!
-              </p>
-            </div>
+            <p>
+              Consider buy a Findto Pro license - and you are also supporting
+              the open and decentralized web!
+            </p>
           </article>
         </div>
       </section>
