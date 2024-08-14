@@ -1,8 +1,11 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import axios from 'axios'
-import { ITrends } from '../../../interfaces/trends'
+import { ITrends } from '@/interfaces/trends'
 
-export default async function endpoint(req: NextApiRequest, res: NextApiResponse): Promise<void> {
+export default async function endpoint(
+  req: NextApiRequest,
+  res: NextApiResponse
+): Promise<void> {
   // parameters
   const {
     query: { country },

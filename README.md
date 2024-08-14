@@ -16,10 +16,10 @@
 </p>
 
 <p align="center">
-Decentralized Web & AI Search<br>
+Decentralized search on Web and AI <br>
 </p>
 
-## A better search
+## 🔎 A new search
 
 Findto is an open source assistant for decentralized Web & AI search.
 
@@ -29,27 +29,27 @@ Why? Because the centralized internet — where our searches are monopolized —
 
 Discover trends. Find anything on Web & AI. More productive and accessible searches than ever!
 
-🔎 Try it now: https://findto.app
+💎 Try it now: https://findto.app
 
 💡 How it works: https://findto.app/about
 
 📦 App stores: <a href="https://store.app/findto-app" target="_blank">Store.app</a>, <a href="https://alternativeto.net/software/findto/about/" target="_blank">AlternativeTo</a>, Microsoft Store, App Store, Google Play
 
-## Features
+## 🌈 Features
 
-- **Decentralized Search** — Search the same term on diverse sources and categories
+- **Decentralized search** — Search the same term on diverse sources and categories
 
-- **Privacy Level** — How my data are handled? View the privacy level of selected source
+- **Privacy level** — How my data are handled? View the privacy level of selected source
 
-- **Carbon Level** — How this impact the planet? View the estimate carbon footprint of selected source
+- **Carbon footprint** — How this impact the planet? View the estimate carbon footprint of selected source
 
 - **Trends** — Explore trending topics, contents, events, services and places nearby you
 
 - **Autosuggest** — Get instant suggestions as you type
 
-- **Voice Search** — Use your voice to search anywhere
+- **Voice search** — Use your voice to search anywhere
 
-- **Visual Search** — Use images to search on supported sources \* In development
+- **Visual search** — Use images to search on supported sources \* In development
 
 - **Accessibility** — Dark theme, balanced contrast, keyboard navigation and screen readers
 
@@ -61,14 +61,14 @@ The search sources available are chosen by the criteria: 1. Service popularity; 
 
 ---
 
-## Donate 💛
+## 💛 Donate
 
 If you like Findto, consider donate.
 
 Choose your favorite platform and ✨ enjoy exclusive benefits ✨ like your name or banner with link attribution on this repository, work-in-progress updates, and early access to Beta versions!
 
-- [Donate one-time via Ko-Fi](https://ko-fi.com/findto)
-- [Support as sponsor via GitHub Sponsors](https://github.com/sponsors/lucasm)
+- [One-time donation via Ko-Fi](https://ko-fi.com/findto)
+- [Support via GitHub Sponsors](https://github.com/sponsors/lucasm)
 
 ---
 

@@ -5,12 +5,15 @@ const parser = new Parser({
   },
 })
 import { ITrends } from '../../../interfaces/trends'
+import { NextApiRequest, NextApiResponse } from 'next/types'
 
 let userCountry: string
 
 async function getData(callback): Promise<void> {
   // URL
-  let url = 'https://trends.google.com/trends/trendingsearches/daily/rss?geo=' + userCountry
+  let url =
+    'https://trends.google.com/trends/trendingsearches/daily/rss?geo=' +
+    userCountry
 
   // parse RSS
   await parser.parseURL(url, (error, data) => {
@@ -42,7 +45,10 @@ async function getData(callback): Promise<void> {
   })
 }
 
-export default function endpoint(request, response) {
+export default function endpoint(
+  request: NextApiRequest,
+  response: NextApiResponse
+) {
   // set query parameters
   const {
     query: { country },

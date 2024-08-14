@@ -1,7 +1,79 @@
 {
   "country": "International",
   "country_code": "US",
+  "t": {
+    "componentBanner": {
+      "title": "Decentralized search on Web and AI",
+      "description": "Findto puts people in control of search   algorithms."
+    },
+    "slogan": "Decentralized search on Web and AI",
+    "about": "About",
+    "community": "Community",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "donate": "Donate",
+    "more": "More",
+    "learnMore": "Learn more",
+    "viewNearbyPlaces": "View nearby places",
+    "openApp": "Open the app",
+    "placeholder": "Search",
+    "search": "Search",
+    "clear": "Limpar",
+    "voice": "Voz",
+    "powered": "Powered by",
+    "settings": "Settings",
+    "theme": "Theme",
+    "language": "Language",
+    "contribute": "Contribute",
+    "feedback": {
+      "title": "Feedback",
+      "url": "https://forms.gle/US69JvUT1qxYkiF58"
+    }
+  },
   "categories": [
+    {
+      "name": "AI",
+      "name_trends": "Popular searches",
+      "active": true,
+      "data": [
+        {
+          "name": "ChatGPT",
+          "action": "https://chat.openai.com/?q="
+        },
+        {
+          "name": "Copilot",
+          "action": "https://www.bing.com/search?showconv=1&sendquery=1&q="
+        },
+        {
+          "name": "Perplexity",
+          "action": "https://www.perplexity.ai/?q="
+        },
+        {
+          "name": "Claude",
+          "action": "https://claude.ai/newq="
+        },
+        {
+          "name": "Gemini",
+          "action": "https://gemini.google.com/app?q="
+        },
+        {
+          "name": "HuggingChat",
+          "action": "https://huggingface.co/chat?q="
+        },
+        {
+          "name": "You",
+          "action": "https://you.com/search?fromSearchBar=true&tbm=youchat&q="
+        },
+        {
+          "name": "Phind",
+          "action": "https://www.phind.com/agent?q="
+        },
+        {
+          "name": "Adobe Firefly",
+          "action": "https://firefly.adobe.com/generate/images?prompt="
+        }
+      ]
+    },
     {
       "name": "Web",
       "name_trends": "Top searches",
@@ -33,14 +105,14 @@
           "color": "#ff6470"
         },
         {
-          "name": "SearXNG",
-          "action": "https://opnxng.com/search?q=",
-          "color": "#5185ff"
-        },
-        {
           "name": "Startpage",
           "action": "https://www.startpage.com/do/asearch?query=",
           "color": "#8690ff"
+        },
+        {
+          "name": "You",
+          "action": "https://you.com/search?q=",
+          "color": "#6186ff"
         },
         {
           "name": "Ecosia",
@@ -48,9 +120,9 @@
           "color": "#74d47b"
         },
         {
-          "name": "You",
-          "action": "https://you.com/search?q=",
-          "color": "#6186ff"
+          "name": "SearXNG",
+          "action": "https://opnxng.com/search?q=",
+          "color": "#5185ff"
         },
         {
           "name": "Yandex",
@@ -91,53 +163,6 @@
           "name": "Yep",
           "action": "https://yep.com/web?q=",
           "color": "#FFF455"
-        }
-      ]
-    },
-    {
-      "name": "AI",
-      "name_trends": "Popular searches",
-      "active": true,
-      "data": [
-        {
-          "name": "ChatGPT",
-          "action": "https://chat.openai.com/?q=",
-          "color": "#0dcfa0"
-        },
-        {
-          "name": "Microsoft Copilot",
-          "action": "https://www.bing.com/search?showconv=1&sendquery=1&q=",
-          "color": "#e897ee"
-        },
-        {
-          "name": "Perplexity",
-          "action": "https://www.perplexity.ai/?q=",
-          "color": "#81ccd6"
-        },
-        {
-          "name": "Google Gemini",
-          "action": "https://gemini.google.com/app?q=",
-          "color": "#7ea4ff"
-        },
-        {
-          "name": "HuggingChat",
-          "action": "https://huggingface.co/chat?q=",
-          "color": "#ffd942"
-        },
-        {
-          "name": "You",
-          "action": "https://you.com/search?fromSearchBar=true&tbm=youchat&q=",
-          "color": "#6b8dff"
-        },
-        {
-          "name": "Phind",
-          "action": "https://www.phind.com/agent?q=",
-          "color": "#8275ff"
-        },
-        {
-          "name": "Adobe Firefly",
-          "action": "https://firefly.adobe.com/generate/images?prompt=",
-          "color": "#FF584C"
         }
       ]
     },

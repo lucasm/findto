@@ -1,21 +1,24 @@
+'use client'
+
+import { ISearchCategory } from '@/interfaces/search'
+import { useLocale } from 'next-intl'
 import { createContext, useContext, useState, useEffect, useRef } from 'react'
-import { useRouter } from 'next/router'
 
 // create Context for global states
 const SearchContext = createContext<any>({})
 
 // export as Provider
-export function SearchContextProvider({ children }) {
-  const { locale } = useRouter()
-  const [data, setData] = useState<any>({})
-
+export function SearchContextProvider({ children }: { children: any }) {
+  const locale = useLocale()
+  // load search sources file by locale
+  const localeSearchSources = require('../locales/' + locale + '.json')
+  const [data, setData] = useState<ISearchCategory[] | null>(null)
   const [theme, setTheme] = useState<string>('light')
   const [category, setCategory] = useState<string>('Web')
   const [search, setSearch] = useState<string>('google')
   const [searchUrl, setSearchUrl] = useState<string>('')
   const [titleTrends, setTitleTrends] = useState<string>('')
-  const [color, setColor] = useState<string>('#fff')
-  const [country, setCountry] = useState<string>('US')
+  const [country, setCountry] = useState<string | null>(null)
   const [permissionLocation, setPermissionLocation] = useState<boolean>(false)
   const [latitude, setLatitude] = useState<number>()
   const [longitude, setLongitude] = useState<number>()
@@ -24,25 +27,25 @@ export function SearchContextProvider({ children }) {
   const refSearchInput = useRef(null)
   const refSearchTabs = useRef([])
 
-  // load search data by file
-  const searchDataByLocale = require('../locales/' + locale + '.json')
-
   function scrollToTop() {
     const isBrowser = () => typeof window !== 'undefined'
     if (!isBrowser()) return
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
   function putValue(value: string) {
-    const sanitizedValue = value.replace(/[#:‑\-]/g, '')
-    refSearchInput.current.value = sanitizedValue
-    refSearchInput.current.focus()
+    const sanitizedValue: string = value.replace(/[#:‑\-]/g, '')
+    const inputElement = refSearchInput.current as HTMLInputElement | null
+    if (inputElement) {
+      inputElement.value = sanitizedValue
+      inputElement.focus()
+    }
     scrollToTop()
   }
   function useWindowSize() {
     // https://stackoverflow.com/questions/63406435/
     const [windowSize, setWindowSize] = useState({
-      width: undefined,
-      height: undefined,
+      width: 0,
+      height: 0,
     })
 
     useEffect(() => {
@@ -65,17 +68,24 @@ export function SearchContextProvider({ children }) {
 
   // locale
   useEffect(() => {
-    setData(searchDataByLocale)
-  }, [searchDataByLocale, locale])
+    setData(localeSearchSources?.categories)
+  }, [localeSearchSources, locale])
 
+  // country
   useEffect(() => {
-    setCountry(data?.country_code)
-    window.localStorage.setItem('country', data?.country_code)
-  }, [data])
+    window.localStorage.setItem('country', localeSearchSources?.country_code)
+  }, [localeSearchSources])
+
+  // state: from local storage
+  useEffect(() => {
+    const countryStorage = localStorage.getItem('country')
+
+    setCountry(countryStorage)
+  }, [])
 
   // mobile viewport
   useEffect(() => {
-    if (sizeWindow) {
+    if (sizeWindow.width) {
       if (sizeWindow.width <= 940) {
         setIsMobileViewport(true)
       } else {
@@ -102,6 +112,10 @@ export function SearchContextProvider({ children }) {
         theme === 'dark' ? 'var(--color-white)' : 'var(--color-black)'
       )
       root.style.setProperty(
+        '--color-theme-translucent',
+        theme === 'dark' ? 'var(--color-dark)' : 'rgb(230 230 230 / 33%)'
+      )
+      root.style.setProperty(
         '--color-black-translucent',
         theme === 'dark' ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0, 0, 0, 0.05)'
       )
@@ -114,16 +128,24 @@ export function SearchContextProvider({ children }) {
 
   // sync with LocalStorage
   useEffect(() => {
-    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const prefersDarkMode = window.matchMedia(
+      '(prefers-color-scheme: dark)'
+    ).matches
     const storedTheme = window.localStorage.getItem('theme')
     const storedCategory = window.localStorage.getItem('category')
     const storedSearch = window.localStorage.getItem('search')
 
-    storedTheme ? setTheme(storedTheme) : setTheme(prefersDarkMode ? 'dark' : 'light')
+    storedTheme
+      ? setTheme(storedTheme)
+      : setTheme(prefersDarkMode ? 'dark' : 'light')
 
-    storedCategory ? setCategory(storedCategory) : window.localStorage.setItem('category', category)
+    storedCategory
+      ? setCategory(storedCategory)
+      : window.localStorage.setItem('category', category)
 
-    storedSearch ? setSearch(storedSearch) : window.localStorage.setItem('search', search)
+    storedSearch
+      ? setSearch(storedSearch)
+      : window.localStorage.setItem('search', search)
   }, [category, search])
 
   return (
@@ -143,8 +165,6 @@ export function SearchContextProvider({ children }) {
         setSearchUrl,
         category,
         setCategory,
-        color,
-        setColor,
         country,
         locale,
         permissionLocation,
@@ -154,6 +174,7 @@ export function SearchContextProvider({ children }) {
         longitude,
         setLongitude,
         isMobileViewport,
+        sizeWindow,
         titleTrends,
         setTitleTrends,
       }}>

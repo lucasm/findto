@@ -2,7 +2,10 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import axios from 'axios'
 import { ITrends } from '../../../interfaces/trends'
 
-export default async function endpoint(req: NextApiRequest, res: NextApiResponse): Promise<void> {
+export default async function endpoint(
+  req: NextApiRequest,
+  res: NextApiResponse
+): Promise<void> {
   const {
     query: { country },
   } = req
@@ -16,9 +19,9 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
     await axios
       .get(url)
       .then(({ data }) => {
-        var a = []
+        var a: { title: any; image: any }[] = []
 
-        data.feed.results.forEach((item) => {
+        data.feed.results.forEach((item: { name: any; artworkUrl100: any }) => {
           a.push({
             title: item.name,
             image: item.artworkUrl100,

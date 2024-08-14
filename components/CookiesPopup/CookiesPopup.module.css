@@ -1,0 +1,56 @@
+.cookiesPopup {
+  position: fixed;
+  bottom: -8rem;
+  right: 1rem;
+  left: 1rem;
+  display: flex;
+  gap: 1rem;
+  background: var(--color-black);
+  border-radius: 24px;
+  color: var(--color-white);
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+  z-index: 1000;
+  align-items: center;
+  flex-direction: column;
+}
+.cookiesPopup div {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.cookiesPopup p {
+  font-size: var(--font-size);
+}
+
+.slideUp {
+  transform: translateY(-100%);
+}
+.slideDown {
+  transform: translateY(100%);
+}
+
+.cookiesPopup button {
+  background: var(--color-white);
+  color: var(--color-black);
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--radius-small);
+  cursor: pointer;
+}
+.cookiesPopup button,
+.cookiesPopup a {
+  font-size: var(--font-size-small);
+}
+
+@media screen and (min-width: 900px) {
+  .cookiesPopup {
+    bottom: -7.75rem;
+    right: 1rem;
+    left: unset;
+  }
+  .cookiesPopup p {
+    font-size: var(--font-size-5);
+  }
+}

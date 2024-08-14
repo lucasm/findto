@@ -42,10 +42,13 @@ export default function endpoint(request, response) {
 
       var a = []
 
-      data.items.slice(0, 14).forEach((item) => {
+      data.items.slice(0, 17).forEach((item) => {
         a.push({
           title: item?.title,
-          image: country === 'BR' ? item?.thumbnail?.$?.url : item?.content?.$?.url,
+          image:
+            country === 'BR'
+              ? item?.thumbnail?.$?.url.replace('/240/', '/420/')
+              : item?.content?.$?.url,
           url: item?.link,
         })
       })

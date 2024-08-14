@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1.25rem;
+}
+
+.container div:first-child,
+.container div:last-child {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+.container div:last-child {
+  gap: 0;
+}
+
+.container h1 {
+  font-size: 3rem;
+  color: var(--color-text-black);
+}
+
+/* .searchPlaceholder {
+  width: 10rem;
+  height: var(--size-large);
+  border-radius: var(--radius-full);
+  border: 2px dashed var(--color-black);
+}
+.searchPlaceholder figure {
+  width: 10rem;
+  height: 1.75rem;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+} */
+
+@media screen and (max-width: 940px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .container h1 {
+    font-size: var(--font-size-3);
+  }
+}

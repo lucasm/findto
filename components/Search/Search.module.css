@@ -1,0 +1,261 @@
+/* Tabs */
+.tabs {
+  width: 100%;
+}
+.tabs ul {
+  display: none;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.tabs button {
+  padding: 0 1rem;
+  border: 0;
+  font-size: var(--font-size-small);
+  color: var(--color-text-black);
+  height: var(--size-small);
+  border-radius: var(--radius-full);
+  opacity: var(--opacity);
+  background: transparent;
+  line-height: 1;
+}
+.tabs button:hover,
+.tabs button:focus {
+  background: var(--color-black-translucent);
+  opacity: 1;
+}
+
+/* Search */
+.searchContainer {
+  background: transparent;
+  border-radius: var(--radius-big);
+  margin: 0 0 8rem;
+}
+.searchContainer label {
+  font-size: 0;
+}
+.searchContainer select {
+  background-color: var(--color-white-translucent);
+  height: var(--size-small);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--radius-full);
+  padding: 0 3rem 0 1.5rem;
+  color: var(--color-black);
+}
+.searchContainer2 {
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.75rem;
+  transition: var(--transition-hover);
+  border-radius: var(--radius-big);
+
+  background: transparent;
+  color: var(--color-text-black);
+}
+.searchInputContainer {
+  max-width: 700px;
+  width: 100%;
+}
+
+/* Input */
+.searchInput {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.searchInput textarea {
+  resize: none;
+  position: relative;
+  display: flex;
+  float: none;
+  height: auto;
+  min-height: 3.6rem;
+  width: 100%;
+  margin: 0;
+  padding: 1.15rem 10rem 1.15rem 1.75rem;
+  border: none;
+  outline: none;
+  color: var(--color-black);
+  font-weight: bold;
+  font-size: var(--font-size);
+  letter-spacing: normal;
+  text-align: left;
+  background: var(--color-white);
+  box-shadow: var(--box-shadow);
+  border-radius: 2rem;
+  transition: all ease-in-out 0.25s;
+}
+.searchInput textarea:hover,
+.searchInput textarea:focus {
+  box-shadow: var(--shadow-hover);
+}
+
+.searchActions {
+  position: absolute;
+  right: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.searchButton,
+.resetButton {
+  font-size: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--size-small);
+  width: var(--size-small);
+  background: var(--color-black);
+  border-radius: var(--radius-full);
+  border: 0;
+}
+.searchButton {
+  margin-left: 0.5rem;
+}
+.searchButton svg {
+  color: var(--color-white);
+}
+.searchButton svg,
+.resetButton svg {
+  width: 18px;
+  height: 18px;
+}
+
+.resetButton {
+  display: none;
+  width: var(--size-small);
+  opacity: 0.5;
+  border-radius: 0;
+  background: transparent;
+}
+.resetButton:focus,
+.resetButton:hover {
+  opacity: 1;
+}
+
+/* Placeholder */
+.searchPlaceholder {
+  position: absolute;
+  display: flex;
+  gap: 0.8rem;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  height: 32px;
+  margin: 1rem 0 1rem 2.25rem;
+  text-align: left;
+  font-size: var(--font-size-small);
+  font-weight: bold;
+  color: var(--color-black);
+  z-index: 1;
+  opacity: 0.5;
+  cursor: text;
+}
+.searchPlaceholder figcaption {
+  color: var(--color-black);
+}
+.searchPlaceholder figure {
+  width: 8rem;
+  height: 1.8rem;
+  background-repeat: no-repeat;
+  background-position: 0;
+  /* background-color: yellow; */
+}
+
+.widgetContainer {
+  display: grid;
+  align-items: start;
+  grid-template-columns: 1fr 260px;
+  grid-gap: 2rem;
+  margin: 2rem auto 0;
+}
+
+@media screen and (max-width: 940px) {
+  .nav,
+  .tabs {
+    width: 100%;
+  }
+  .nav ul,
+  .tabs ul {
+    padding: 0 1rem;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    text-align: center;
+  }
+  .nav li,
+  .tabs li {
+    width: auto;
+    display: inline-block;
+  }
+
+  .tabs button {
+    margin: 0.25rem 0;
+    font-size: 0.8rem;
+    height: 1.5rem;
+    padding: 0 0.75rem;
+  }
+
+  .searchInputContainer,
+  .widgetContainer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .widgetContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .searchInput textarea {
+    font-size: var(--font-size);
+    min-height: 3rem;
+    padding: 0.85rem 6.5rem 0.75rem 1.25rem;
+    border-radius: 1.5rem;
+  }
+  .searchButton,
+  .resetButton {
+    height: 2rem;
+    width: 2rem;
+  }
+  .searchButton svg {
+    width: 18px;
+    height: 18px;
+  }
+  .searchButton:hover svg,
+  .searchButton:focus svg {
+    opacity: 1;
+  }
+
+  .resetButton {
+    width: 1.75rem;
+  }
+  .resetButton svg {
+    width: 18px;
+    height: 18px;
+  }
+  .searchActions {
+    right: 0.5rem;
+  }
+
+  .searchPlaceholder {
+    margin: 1rem 1.5rem;
+  }
+  .searchPlaceholder figure {
+    height: 26px;
+  }
+
+  .searchContainer {
+    margin: 0 0 3rem;
+    border-radius: 0;
+  }
+  .searchContainer2 {
+    padding: 2rem 0 2.5rem;
+    gap: 1rem;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}

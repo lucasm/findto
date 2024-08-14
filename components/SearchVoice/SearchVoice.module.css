@@ -1,0 +1,81 @@
+.button {
+  position: relative;
+  float: none;
+  height: var(--size-small);
+  width: var(--size-small);
+  font-size: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  transition: var(--transition-hover);
+  opacity: 0.5;
+}
+.button:hover,
+.button:focus {
+  opacity: 1;
+}
+.button svg {
+  width: 20px;
+  height: 20px;
+  color: var(--color-black);
+}
+
+.buttonActive,
+.buttonActive:hover,
+.buttonActive:focus,
+.buttonActive:active {
+  background: var(--color-white);
+}
+
+.buttonListening {
+  content: '';
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+  right: 0;
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto;
+  background: var(--color-black-translucent-2);
+  border-radius: 100%;
+  animation: pulse 1s infinite ease-in-out;
+  z-index: 0;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.transcriptContainer {
+  max-width: 480px;
+  min-width: 280px;
+  width: 100%;
+  padding: 1.5rem 0;
+}
+
+@media (max-width: 940px) {
+  .button {
+    height: 3rem;
+    width: 1.5rem;
+  }
+  .button svg {
+    width: 20px;
+    height: 20px;
+  }
+}

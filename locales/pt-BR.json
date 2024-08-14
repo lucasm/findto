@@ -2,25 +2,11 @@
   "country": "Brasil",
   "country_code": "BR",
   "t": {
-    "placeholder": "Busca",
-    "search": "Buscar",
-    "trends": "Tendências",
-    "settings": "Ajustes",
-    "clear": "Limpar",
-    "voice": "Voz",
+    "componentBanner": {
+      "title": "Busca descentralizada na Web e IA",
+      "description": "Explore uma internet mais saudável. Você no controle dos algoritmos de busca na Web e IA."
+    },
     "voiceSearch": ["Ouvindo"],
-    "theme": "Tema",
-    "language": "Idioma",
-    "powered": "Fornecido por",
-    "about": "Sobre",
-    "open": "Abrir app",
-    "contribute": "Contribua",
-    "community": "Comunidade",
-    "donate": "Doar",
-    "feedback": "Feedback",
-    "link_feedback": "https://forms.gle/r6XAyB1ZLn9qzwp16",
-    "terms": "Termos",
-    "privacy": "Privacidade",
     "widgetPrivacy": "Nível de privacidade",
     "privacyScore": [
       "muito pobre",
@@ -40,14 +26,30 @@
       "Energia suja",
       "ainda não foi analisado"
     ],
+
+    "slogan": "Busca descentralizada na Web e IA",
+    "about": "Sobre",
+    "community": "Comunidade",
+    "privacy": "Privacidade",
+    "terms": "Termos",
+    "donate": "Doar",
     "more": "Mais",
     "learnMore": "Saiba mais",
     "viewNearbyPlaces": "Ver locais próximos",
-    "banner": [
-      "A melhor busca na Web e IA",
-      "Findto é um assistente para busca descentralizada na Web e IA. Criado para colocar as pessoas no controle."
-    ],
-    "slogan": "Busca descentralizada na Web e IA"
+    "openApp": "Abrir app",
+    "placeholder": "Busca",
+    "search": "Buscar",
+    "clear": "Limpar",
+    "voice": "Voz",
+    "powered": "Fornecido por",
+    "settings": "Configurações",
+    "theme": "Tema",
+    "language": "Idioma",
+    "contribute": "Contribua",
+    "feedback": {
+      "title": "Feedback",
+      "url": "https://forms.gle/r6XAyB1ZLn9qzwp16"
+    }
   },
   "categories": [
     {
@@ -58,43 +60,39 @@
       "data": [
         {
           "name": "ChatGPT",
-          "action": "https://chat.openai.com/?q=",
-          "color": "#0dcfa0"
+          "action": "https://chat.openai.com/?q="
         },
         {
-          "name": "Microsoft Copilot",
-          "action": "https://www.bing.com/search?showconv=1&sendquery=1&q=",
-          "color": "#e897ee"
+          "name": "Copilot",
+          "action": "https://www.bing.com/search?showconv=1&sendquery=1&q="
         },
         {
           "name": "Perplexity",
-          "action": "https://www.perplexity.ai/?q=",
-          "color": "#81ccd6"
-        },
-        {
-          "name": "Google Gemini",
-          "action": "https://gemini.google.com/app?q=",
-          "color": "#7ea4ff"
+          "action": "https://www.perplexity.ai/?q="
         },
         {
           "name": "HuggingChat",
-          "action": "https://huggingface.co/chat?q=",
-          "color": "#ffd942"
+          "action": "https://huggingface.co/chat?q="
+        },
+        {
+          "name": "Claude",
+          "action": "https://claude.ai/newq="
+        },
+        {
+          "name": "Gemini",
+          "action": "https://gemini.google.com/app?q="
         },
         {
           "name": "You",
-          "action": "https://you.com/search?fromSearchBar=true&tbm=youchat&q=",
-          "color": "#6b8dff"
+          "action": "https://you.com/search?fromSearchBar=true&tbm=youchat&q="
         },
         {
           "name": "Phind",
-          "action": "https://www.phind.com/agent?q=",
-          "color": "#8275ff"
+          "action": "https://www.phind.com/agent?q="
         },
         {
           "name": "Adobe Firefly",
-          "action": "https://firefly.adobe.com/generate/images?prompt=",
-          "color": "#FF584C"
+          "action": "https://firefly.adobe.com/generate/images?prompt="
         }
       ]
     },
@@ -105,88 +103,67 @@
       "data": [
         {
           "name": "Google",
-          "action": "https://www.google.com/search?q=",
-          "color": "#649fff"
+          "action": "https://www.google.com/search?q="
         },
         {
           "name": "Bing",
-          "action": "https://www.bing.com/search?q=",
-          "color": "#4dd1f0"
+          "action": "https://www.bing.com/search?q="
         },
         {
           "name": "DuckDuckGo",
-          "action": "https://duckduckgo.com/?q=",
-          "color": "#ff825e"
+          "action": "https://duckduckgo.com/?q="
         },
         {
           "name": "Brave",
-          "action": "https://search.brave.com/search?q=",
-          "color": "#ff6470"
+          "action": "https://search.brave.com/search?q="
         },
         {
           "name": "Yahoo",
-          "action": "https://br.search.yahoo.com/search?p=",
-          "color": "#B980FF"
+          "action": "https://br.search.yahoo.com/search?p="
         },
         {
           "name": "Startpage",
-          "action": "https://www.startpage.com/do/asearch?query=",
-          "color": "#8690ff"
-        },
-        {
-          "name": "SearXNG",
-          "action": "https://opnxng.com/search?q=",
-          "color": "#5185ff"
-        },
-        {
-          "name": "Ecosia",
-          "action": "https://www.ecosia.org/search?q=",
-          "color": "#74d47b"
+          "action": "https://www.startpage.com/do/asearch?query="
         },
         {
           "name": "You",
-          "action": "https://you.com/search?q=",
-          "color": "#6186ff"
+          "action": "https://you.com/search?q="
         },
         {
-          "name": "Yandex",
-          "action": "https://www.yandex.com/search/?text=",
-          "color": "#f5d967"
+          "name": "Ecosia",
+          "action": "https://www.ecosia.org/search?q="
         },
         {
-          "name": "Baidu",
-          "action": "https://www.baidu.com/s?wd=",
-          "color": "#748fff"
+          "name": "SearXNG",
+          "action": "https://searxng.site/searxng/search?q="
         },
         {
           "name": "Mojeek",
-          "action": "https://www.mojeek.com/search?q=",
-          "color": "#9cdb5c"
+          "action": "https://www.mojeek.com/search?q="
         },
         {
           "name": "Info",
-          "action": "https://www.info.com/serp?q=",
-          "color": "#46b3fb"
+          "action": "https://www.info.com/serp?q="
         },
         {
           "name": "Swisscows",
-          "action": "https://swisscows.com/web?query=",
-          "color": "#ff6161"
-        },
-        {
-          "name": "Gibiru",
-          "action": "https://gibiru.com/results.html?q=",
-          "color": "#ec5265"
+          "action": "https://swisscows.com/web?query="
         },
         {
           "name": "Presearch",
-          "action": "https://presearch.com/search?q=",
-          "color": "#468cff"
+          "action": "https://presearch.com/search?q="
         },
         {
           "name": "Yep",
-          "action": "https://yep.com/web?q=",
-          "color": "#FFF455"
+          "action": "https://yep.com/web?q="
+        },
+        {
+          "name": "Yandex",
+          "action": "https://www.yandex.com/search/?text="
+        },
+        {
+          "name": "Baidu",
+          "action": "https://www.baidu.com/s?wd="
         }
       ]
     },
@@ -197,78 +174,101 @@
       "data": [
         {
           "name": "X",
-          "action": "https://x.com/search?src=typed_query&q=",
-          "color": "#4abaff"
+          "action": "https://x.com/search?src=typed_query&q="
         },
         {
           "name": "Reddit",
-          "action": "https://www.reddit.com/search?q=",
-          "color": "#ff7744"
-        },
-        {
-          "name": "Facebook",
-          "action": "https://www.facebook.com/public?query=",
-          "color": "#509CFF"
-        },
-        {
-          "name": "Instagram",
-          "action": "https://www.instagram.com/explore/tags/",
-          "color": "#FD70B0"
+          "action": "https://www.reddit.com/search?q="
         },
         {
           "name": "TikTok",
-          "action": "https://www.tiktok.com/search?q=",
-          "color": "#ff6986"
+          "action": "https://www.tiktok.com/search?q="
+        },
+        {
+          "name": "Instagram",
+          "action": "https://www.instagram.com/explore/tags/"
+        },
+        {
+          "name": "Facebook",
+          "action": "https://www.facebook.com/public?query="
         },
         {
           "name": "LinkedIn",
-          "action": "https://www.linkedin.com/search/results/index/?keywords=",
-          "color": "#39BAFF"
+          "action": "https://www.linkedin.com/search/results/index/?keywords="
         },
         {
-          "name": "Discord",
-          "action": "https://discord.com/guild-discovery?query=",
-          "color": "#8791FF"
-        },
-        {
-          "name": "Bluesky",
-          "action": "https://bsky.app/search?q=",
-          "color": "#5797ff"
+          "name": "Medium",
+          "action": "https://medium.com/search?q="
         },
         {
           "name": "Threads",
-          "action": "https://www.threads.net/search/?q=",
-          "color": "#999999"
+          "action": "https://www.threads.net/search/?q="
+        },
+        {
+          "name": "Bluesky",
+          "action": "https://bsky.app/search?q="
+        },
+        {
+          "name": "Discord",
+          "action": "https://discord.com/guild-discovery?query="
         },
         {
           "name": "Snapchat",
-          "action": "https://www.snapchat.com/explore/",
-          "color": "#fffd5e"
+          "action": "https://www.snapchat.com/explore/"
         },
         {
           "name": "Tumblr",
-          "action": "https://www.tumblr.com/search/",
-          "color": "#5084bf"
+          "action": "https://www.tumblr.com/search/"
         },
         {
           "name": "Quora",
-          "action": "https://www.quora.com/search?q=",
-          "color": "#ff6966"
+          "action": "https://www.quora.com/search?q="
         },
         {
           "name": "Mastodon",
-          "action": "https://mastodon.social/tags/",
-          "color": "#8F8FFF"
+          "action": "https://mastodon.social/tags/"
         },
         {
           "name": "Meetup",
-          "action": "https://www.meetup.com/find/?keywords=",
-          "color": "#ff5573"
+          "action": "https://www.meetup.com/find/?keywords="
         },
         {
           "name": "Substack",
-          "action": "https://substack.com/search/",
-          "color": "#ff7934"
+          "action": "https://substack.com/search/"
+        }
+      ],
+      "youtube_channels": [
+        {
+          "id": "UCr3dtVIm3nL7I-Yjn2PxxIQ",
+          "title": "cortes-leonenilceoficial4101"
+        },
+        {
+          "id": "UCk5BcU1rOy6hepflk7_q_Pw",
+          "title": "MeteoroBrasil"
+        },
+        {
+          "id": "UC0f866RMRdL5mSVnipiOHxg",
+          "title": "canalgnt"
+        },
+        {
+          "id": "UCj0O6W8yDuLg3iraAXKgCrQ",
+          "title": "vocesabia"
+        },
+        {
+          "id": "UC4_SpEjNNtz6sfG-6uXO09w",
+          "title": "papelpop"
+        },
+        {
+          "id": "UClu474HMt895mVxZdlIHXEA",
+          "title": "nerdologia"
+        },
+        {
+          "id": "UCH2VZQBLFTOp6I_qgnBJCuQ",
+          "title": "nostalgia"
+        },
+        {
+          "id": "UCIJwKI84CglciGM9aC0xcPQ",
+          "title": "meioemensagem"
         }
       ]
     },
@@ -363,12 +363,62 @@
           "action": "https://vimeo.com/search?q=",
           "color": "#2fc6ff"
         }
+      ],
+      "youtube_channels": [
+        {
+          "id": "UC5XG4yYM-_DQ-3HPRuam76Q",
+          "title": "fasdecinemabr"
+        },
+        {
+          "id": "UCsTpk_fb5aBd-tsMyeFAnYQ",
+          "title": "AdoroCinemaOficial"
+        },
+        {
+          "id": "UCaSAM5kna2KyX-uVLSGr8PQ",
+          "title": "Omelete"
+        },
+        {
+          "id": "UCC1QUJZGfqrSGwwYXvZhqig",
+          "title": "IsabelaBoscov"
+        },
+        {
+          "id": "UCt_4wzTQqmcUvemNkeO0plA",
+          "title": "einerdtv"
+        },
+        {
+          "id": "UCBFLqK7PAP9DQ3JpIrWFI7w",
+          "title": "Pipocando"
+        },
+        {
+          "id": "UCurl4RJpmlVmUJUiTWyGWAA",
+          "title": "CinemacomRapaduraoficial"
+        },
+        {
+          "id": "UCiSarBtpSphUrxtKDIW9c_A",
+          "title": "tiagobelotti"
+        },
+        {
+          "id": "UCLYimOsgmIVf6KNjzXPkUwQ",
+          "title": "gaveta"
+        },
+        {
+          "id": "UCo75UnlCEKjxOoNb4jx2LsA",
+          "title": "telecine"
+        },
+        {
+          "id": "UCDiJeuOsv766JDMAlpbSMHg",
+          "title": "globoplay"
+        },
+        {
+          "id": "UCE8deXi-Eea3SuEV1Q1L4ug",
+          "title": "otaviouga"
+        }
       ]
     },
     {
       "name": "Image",
       "name_translated": "Imagem",
-      "name_trends": "Tópicos populares",
+      "name_trends": "Descubra",
       "active": true,
       "data": [
         {
@@ -549,125 +599,153 @@
           "action": "https://audius.co/search/",
           "color": "#bb65ff"
         }
+      ],
+      "youtube_channels": [
+        {
+          "id": "UCEgzbINEJfsLivqFdLHKIrg",
+          "title": "mdiscosqamigos"
+        },
+        {
+          "id": "UCtwBWu3V9hTTlUIQ7ot9Xlg",
+          "title": "SpotifyBrasil"
+        },
+        {
+          "id": "UCucs1ej22g6huKteRqO8mRA",
+          "title": "rollingstonebrasil"
+        },
+        {
+          "id": "UCteW9b13yFu8Kf8hnt12__A",
+          "title": "CanalBrasil"
+        },
+        {
+          "id": "UCO6tCk8-AjEQPo6hBvSLuQQ",
+          "title": "letrasmusbr"
+        },
+        {
+          "id": "UCEATCATai_oafDuqKssZITw",
+          "title": "somlivre"
+        },
+        {
+          "id": "UCtSZvy4s4FAF5WTp9oskr6g",
+          "title": "SonyMusicBrasil"
+        },
+        {
+          "id": "UCYxLlKfySq3RVLKdNSQ1Gug",
+          "title": "WarnerMusicBrasil"
+        },
+        {
+          "id": "UCkg3WzpzJPMrre4ZRGHixgQ",
+          "title": "DeezerBrasil"
+        },
+        {
+          "id": "UC4eYXhJI4-7wSWc8UNRwD4A",
+          "title": "nprmusic"
+        },
+        {
+          "id": "UCZtDUmC3W7j25XHZWFT_XgQ",
+          "title": "BBCMusic"
+        },
+        {
+          "id": "UCBv7HEHuVlNAELGi5XJd85Q",
+          "title": "AppleMusic"
+        }
       ]
     },
     {
       "name": "Shopping",
-      "name_translated": "Compras",
+      "name_translated": "Shop",
       "name_trends": "Produtos em alta",
       "active": true,
       "data": [
         {
           "name": "Amazon",
-          "action": "https://www.amazon.com.br/s?k=",
-          "color": "#ffba51"
+          "action": "https://www.amazon.com.br/s?k="
         },
         {
           "name": "Mercado Livre",
-          "action": "https://lista.mercadolivre.com.br/",
-          "color": "#e8dc62"
+          "action": "https://lista.mercadolivre.com.br/"
         },
         {
           "name": "OLX",
-          "action": "https://www.olx.com.br/brasil?q=",
-          "color": "#b065ff"
+          "action": "https://www.olx.com.br/brasil?q="
         },
         {
           "name": "Magalu",
-          "action": "https://www.magazineluiza.com.br/busca/",
-          "color": "#40a4ff"
+          "action": "https://www.magazineluiza.com.br/busca/"
         },
         {
           "name": "Americanas",
-          "action": "https://www.americanas.com.br/busca/",
-          "color": "#ff3f66"
+          "action": "https://www.americanas.com.br/busca/"
         },
         {
           "name": "Casas Bahia",
           "action": "https://www.casasbahia.com.br/",
-          "additional": "/b",
-          "color": "#638cff"
+          "additional": "/b"
         },
         {
           "name": "Carrefour",
-          "action": "https://www.carrefour.com.br/busca/",
-          "color": "#5895FF"
+          "action": "https://www.carrefour.com.br/busca/"
         },
         {
           "name": "iFood",
-          "action": "https://www.ifood.com.br/busca?q=",
-          "color": "#ff515d"
+          "action": "https://www.ifood.com.br/busca?q="
         },
         {
           "name": "Rappi",
-          "action": "https://www.rappi.com.br/search?query=",
-          "color": "#ff6243"
+          "action": "https://www.rappi.com.br/search?query="
         },
         {
           "name": "Shopee",
-          "action": "https://shopee.com.br/search?keyword=",
-          "color": "#ff7546"
+          "action": "https://shopee.com.br/search?keyword="
         },
         {
           "name": "AliExpress",
-          "action": "https://www.aliexpress.com/wholesale?SearchText=",
-          "color": "#ff6363"
+          "action": "https://www.aliexpress.com/wholesale?SearchText="
         },
         {
           "name": "SHEIN",
-          "action": "https://br.shein.com/",
-          "color": "#999999"
+          "action": "https://br.shein.com/"
         },
         {
           "name": "Renner",
-          "action": "https://www.lojasrenner.com.br/b?Ntt=",
-          "color": "#ff666c"
+          "action": "https://www.lojasrenner.com.br/b?Ntt="
         },
         {
           "name": "C&A",
-          "action": "https://www.cea.com.br/search/",
-          "color": "#74abb9"
+          "action": "https://www.cea.com.br/search/"
         },
         {
           "name": "Netshoes",
-          "action": "https://www.netshoes.com.br/busca2?q=",
-          "color": "#be61ff"
+          "action": "https://www.netshoes.com.br/busca2?q="
         },
         {
           "name": "Centauro",
-          "action": "https://www.centauro.com.br/busca?q=",
-          "color": "#ff6363"
+          "action": "https://www.centauro.com.br/busca?q="
         },
         {
           "name": "Dafiti",
-          "action": "https://www.dafiti.com.br/catalog/?q=",
-          "color": "#dddddd"
+          "action": "https://www.dafiti.com.br/catalog/?q="
         },
         {
           "name": "Boticário",
-          "action": "https://www.boticario.com.br/busca/?q=",
-          "color": "#1cc38e"
+          "action": "https://www.boticario.com.br/busca/?q="
         },
         {
           "name": "Natura",
-          "action": "https://www.natura.com.br/s/produtos?busca=",
-          "color": "#ffb43b"
+          "action": "https://www.natura.com.br/s/produtos?busca="
         },
         {
           "name": "Enjoei",
-          "action": "https://www.enjoei.com.br/s?q=",
-          "color": "#ff8098"
+          "action": "https://www.enjoei.com.br/s?q="
         },
         {
           "name": "Zoom",
-          "action": "https://www.zoom.com.br/search?q=",
-          "color": "#a56adb"
+          "action": "https://www.zoom.com.br/search?q="
         },
         {
           "name": "Pelando",
           "action": "https://www.pelando.com.br/busca?q=",
-          "additional": "&type=publicacoes",
-          "color": "#ff8934"
+          "additional": "&type=publicacoes"
         }
       ]
     },
@@ -678,285 +756,414 @@
       "data": [
         {
           "name": "Google Maps",
-          "action": "https://google.com/maps/search/",
-          "color": "#649fff"
+          "action": "https://google.com/maps/search/"
         },
         {
           "name": "Apple Maps",
-          "action": "https://beta.maps.apple.com/?q=",
-          "color": "#4cb69a"
+          "action": "https://beta.maps.apple.com/?q="
         },
         {
           "name": "Airbnb",
-          "action": "https://www.airbnb.com/s/",
-          "color": "#ff607d"
+          "action": "https://www.airbnb.com/s/"
         },
         {
           "name": "Tripadvisor",
-          "action": "https://www.tripadvisor.com/Search?q=",
-          "color": "#40d59c"
+          "action": "https://www.tripadvisor.com.br/Search?q="
         },
         {
           "name": "Booking",
-          "action": "https://www.booking.com/searchresults.pt-br.html?ss=",
-          "color": "#2681ff"
+          "action": "https://www.booking.com/searchresults.pt-br.html?ss="
         },
         {
           "name": "Kayak",
-          "action": "https://www.kayak.com.br/explore/",
-          "color": "#ff853c"
+          "action": "https://www.kayak.com.br/explore/"
         },
         {
           "name": "Skyscanner",
-          "action": "https://www.skyscanner.com.br/",
-          "color": "#2681ff"
+          "action": "https://www.skyscanner.com.br/"
         },
         {
           "name": "Ingresso",
-          "action": "https://www.ingresso.com/busca/resultado?q=",
-          "color": "#ff963f"
+          "action": "https://www.ingresso.com/busca/resultado?q="
         },
         {
           "name": "Sympla",
-          "action": "https://www.sympla.com.br/eventos?s=",
-          "color": "#5bbcff"
+          "action": "https://www.sympla.com.br/eventos?s="
         },
         {
           "name": "Eventim",
-          "action": "https://www.eventim.com.br/search?searchterm=",
-          "color": "#8592ff"
+          "action": "https://www.eventim.com.br/search?searchterm="
         },
         {
           "name": "Ticket360",
-          "action": "https://www.ticket360.com.br/eventos/pesquisar?s=",
-          "color": "#ff963f"
+          "action": "https://www.ticket360.com.br/eventos/pesquisar?s="
         },
         {
           "name": "Eventbrite",
-          "action": "https://www.eventbrite.com.br/d/brazil/",
-          "color": "#f05537"
+          "action": "https://www.eventbrite.com.br/d/brazil/"
         },
         {
           "name": "Yelp",
-          "action": "https://www.yelp.com.br/search?find_desc=",
-          "color": "#ff5454"
+          "action": "https://www.yelp.com.br/search?find_desc="
         },
         {
           "name": "Bing Travel",
-          "action": "https://www.bing.com/travel/place-information?q=",
-          "color": "#37c3e3"
+          "action": "https://www.bing.com/travel/place-information?q="
+        },
+        {
+          "name": "Waze",
+          "action": "https://www.waze.com/pt-BR/live-map/directions/"
         },
         {
           "name": "HERE WeGo",
-          "action": "https://wego.here.com/search/",
-          "color": "#01b6b2"
+          "action": "https://wego.here.com/search/"
+        }
+      ],
+      "youtube_channels": [
+        {
+          "id": "UCOJNw9aHGRkYuIOqwU7yK-Q",
+          "title": "MundoSemFim"
+        },
+        {
+          "id": "UCbrVBUVa2bwYRofc-lVeAnA",
+          "title": "cnnviagemegastronomia"
+        },
+        {
+          "id": "UCWfRNn9fRe5gMc3QaE3AXkA",
+          "title": "loucoporviagens"
+        },
+        {
+          "id": "UCWN45XZWIlZoUeohfqiyURA",
+          "title": "MelhoresDestinos"
+        },
+        {
+          "id": "UCdnGnck8goh_AvWmOlZ6zDw",
+          "title": "MasterCardBrasil"
+        },
+        {
+          "id": "UC6xoasG-FY3P1YHo8_gBG9g",
+          "title": "NumPulo"
+        },
+        {
+          "id": "UCLPXpKv6WDc7mtapsbMyPHg",
+          "title": "Estevam"
+        },
+        {
+          "id": "UCOHptmhkQl0nPAPpghvJjRA",
+          "title": "cariocanomundo"
+        },
+        {
+          "id": "UC7D8rNR659bfUQ7_vOC4VdQ",
+          "title": "EmbraturBrasil"
+        },
+        {
+          "id": "UCV6Lb37EQLdaDu0VyI7yDPg",
+          "title": "rolefamilia"
+        },
+        {
+          "id": "UCk6RUGsfWI-3kPrDlMUfvfQ",
+          "title": "Travelandsharebr"
+        },
+        {
+          "id": "UCwCh6NVP-qQim0KqJMuYWGw",
+          "title": "SonhoeDestino"
         }
       ]
     },
     {
       "name": "News",
       "name_translated": "Notícias",
-      "name_trends": "Últimas notícias",
+      "name_trends": "Reportagens",
       "active": true,
       "data": [
         {
           "name": "Globo",
-          "action": "https://www.globo.com/busca/?q=",
-          "color": "#6494ff"
+          "action": "https://www.globo.com/busca/?q="
         },
         {
           "name": "UOL",
-          "action": "https://busca.uol.com.br/result.html?term=",
-          "color": "#ffa545"
+          "action": "https://busca.uol.com.br/result.html?term="
         },
         {
           "name": "CNN",
-          "action": "https://www.cnnbrasil.com.br/?s=",
-          "color": "#ff5959"
+          "action": "https://www.cnnbrasil.com.br/?s="
         },
         {
           "name": "Folha",
-          "action": "https://search.folha.uol.com.br/?q=",
-          "color": "#00afec"
+          "action": "https://search.folha.uol.com.br/?q="
         },
         {
           "name": "Estadão",
-          "action": "https://busca.estadao.com.br/?q=",
-          "color": "#398aff"
+          "action": "https://busca.estadao.com.br/?q="
         },
         {
           "name": "Poder360",
-          "action": "https://www.reuters.com/site-search/?query=",
-          "color": "#ff7245"
+          "action": "https://www.reuters.com/site-search/?query="
         },
         {
           "name": "Veja",
-          "action": "https://veja.abril.com.br/?s=",
-          "color": "#ff4b44"
+          "action": "https://veja.abril.com.br/?s="
         },
         {
           "name": "Nexo",
-          "action": "https://www.nexojornal.com.br/util/busca/?q=",
-          "color": "#3ec2cf"
+          "action": "https://www.nexojornal.com.br/util/busca/?q="
         },
         {
-          "name": "Fórum",
-          "action": "https://revistaforum.com.br/noticias/buscar/?buscar=",
-          "color": "#ff4950"
-        },
-        {
-          "name": "Reuters",
-          "action": "https://www.reuters.com/site-search/?query=",
-          "color": "#ffa54b"
+          "name": "Carta",
+          "action": "https://www.cartacapital.com.br/?s="
         },
         {
           "name": "Agência Brasil",
           "action": "https://busca.ebc.com.br/?q=",
-          "additional": "&site_id=agenciabrasil",
-          "color": "#778DFF"
+          "additional": "&site_id=agenciabrasil"
+        },
+        {
+          "name": "Reuters",
+          "action": "https://www.reuters.com/site-search/?query="
         },
         {
           "name": "BBC",
-          "action": "https://www.bbc.co.uk/search?q=",
-          "color": "#A9A9A9"
+          "action": "https://www.bbc.co.uk/search?q="
         },
         {
-          "name": "Medium",
-          "action": "https://medium.com/search?q=",
-          "color": "#dddddd"
+          "name": "Google News",
+          "action": "https://news.google.com/search?q="
         },
         {
           "name": "Flipboard",
-          "action": "https://flipboard.com/search/",
-          "color": "#ff5b5b"
+          "action": "https://flipboard.com/search/"
         },
         {
           "name": "Feedly",
-          "action": "https://feedly.com/i/discover/sources/search/feed/",
-          "color": "#59e076"
+          "action": "https://feedly.com/i/discover/sources/search/feed/"
         },
         {
           "name": "Pocket",
-          "action": "https://getpocket.com/saves/search?query=",
-          "color": "#ff576c"
+          "action": "https://getpocket.com/saves/search?query="
+        }
+      ],
+      "youtube_channels": [
+        {
+          "id": "UCVFbXI6Gu8U2f9Gjtxw4A-Q",
+          "title": "uol"
+        },
+        {
+          "id": "UCvdwhh_fDyWccR42-rReZLw",
+          "title": "CNNbrasil"
+        },
+        {
+          "id": "UCaGmdJSSiR7fkh2A-c6emsA",
+          "title": "g1globo"
+        },
+        {
+          "id": "UCXdXYG8dUmEv6jhEji_lSHg",
+          "title": "JornalismoTVCultura"
+        },
+        {
+          "id": "UCthbIFAxbXTTQEC7EcQvP1Q",
+          "title": "BBCNewsBrasil"
+        },
+        {
+          "id": "UCNqzAD9EiECreuH6LA8IYeA",
+          "title": "TheInterceptBrasil"
+        },
+        {
+          "id": "UCJVTsYjG0KLNWL6OyHx7ZGw",
+          "title": "NexojornalBr"
+        },
+        {
+          "id": "UCmYuiV9wAR3i8p19Ygc7izg",
+          "title": "folha"
+        },
+        {
+          "id": "UCDGz2exMIsPQ4k9VrsuhKTA",
+          "title": "CartaCapital"
+        },
+        {
+          "id": "UCV6Ue4o5UIeKQ3IEkjnXRlg",
+          "title": "veja"
+        },
+        {
+          "id": "UCFCiSRbCVwQ_BQaDQBYxN_A",
+          "title": "Poder360"
+        },
+        {
+          "id": "UCNVsZnDXOM4PodYIEgM2e4w",
+          "title": "rodaviva"
+        },
+        {
+          "id": "UCRVbqma6TaIHp9E151nC8sA",
+          "title": "apublica"
+        },
+        {
+          "id": "UCuiLR4p6wQ3xLEm15pEn1Xw",
+          "title": "recordnews"
+        },
+        {
+          "id": "UC376n347Ob5Lwzq2WGzF1AA",
+          "title": "SBTNews"
+        },
+        {
+          "id": "UCUmEPYxmnyQDeRUcFkslmQw",
+          "title": "euronewspt"
         }
       ]
     },
     {
       "name": "Academic",
       "name_translated": "Acadêmico",
-      "name_trends": "Tópicos mais citados",
+      "name_trends": "Citações em alta",
       "active": true,
       "data": [
         {
           "name": "Google Scholar",
-          "action": "https://scholar.google.com/scholar?q=",
-          "color": "#649fff"
+          "action": "https://scholar.google.com/scholar?q="
         },
         {
           "name": "Wikipédia",
-          "action": "https://pt.wikipedia.org/w/index.php?search=",
-          "color": "#a2a9b1"
+          "action": "https://pt.wikipedia.org/w/index.php?search="
         },
         {
           "name": "ResearchGate",
-          "action": "https://www.researchgate.net/search?q=",
-          "color": "#43d1ac"
+          "action": "https://www.researchgate.net/search?q="
         },
         {
           "name": "Oasisbr",
-          "action": "https://oasisbr.ibict.br/vufind/Search/Results?lookfor=",
-          "color": "#8fd87c"
+          "action": "https://oasisbr.ibict.br/vufind/Search/Results?lookfor="
         },
         {
           "name": "Periódicos",
-          "action": "https://capes-primo.ezl.periodicos.capes.gov.br/primo-explore/search?vid=CAPES_V3&query=any,contains,",
-          "color": "#FF7287"
+          "action": "https://www-periodicos-capes-gov-br.ezl.periodicos.capes.gov.br/index.php/acervo/buscador.html?q="
         },
         {
           "name": "SciELO",
-          "action": "https://search.scielo.org/?q=",
-          "color": "#ff6b6b"
+          "action": "https://search.scielo.org/?q="
         },
         {
           "name": "JSTOR",
-          "action": "https://www.jstor.org/action/doBasicSearch?Query=",
-          "color": "#ff6764"
+          "action": "https://www.jstor.org/action/doBasicSearch?Query="
         },
         {
           "name": "CORE",
-          "action": "https://core.ac.uk/search?q=",
-          "color": "#ff9c48"
+          "action": "https://core.ac.uk/search?q="
         },
         {
           "name": "PLOS ONE",
-          "action": "https://journals.plos.org/plosone/search?q=",
-          "color": "#ff8bde"
+          "action": "https://journals.plos.org/plosone/search?q="
         },
         {
           "name": "arXiv",
-          "action": "https://arxiv.org/search/?searchtype=all&query=",
-          "color": "#ff5959"
+          "action": "https://arxiv.org/search/?searchtype=all&query="
         },
         {
           "name": "ScienceDirect",
-          "action": "https://www.sciencedirect.com/search?qs=",
-          "color": "#ff8d38"
+          "action": "https://www.sciencedirect.com/search?qs="
         },
         {
           "name": "Springer",
-          "action": "https://link.springer.com/search?query=",
-          "color": "#ffa44e"
+          "action": "https://link.springer.com/search?query="
         },
         {
           "name": "BASE",
-          "action": "https://www.base-search.net/Search/Results?lookfor=",
-          "color": "#ffc457"
+          "action": "https://www.base-search.net/Search/Results?lookfor="
+        },
+        {
+          "name": "PubMed",
+          "action": "https://pubmed.ncbi.nlm.nih.gov/?term="
         },
         {
           "name": "Mendeley",
-          "action": "https://www.mendeley.com/search/?query=",
-          "color": "#ff7173"
+          "action": "https://www.mendeley.com/search/?query="
         },
         {
           "name": "Scopus",
-          "action": "https://www.scopus.com/results/authorNamesList.uri?s=AUTHLASTNAME&st1=",
-          "color": "#ff8d38"
-        },
-        {
-          "name": "ORCID",
-          "action": "https://orcid.org/orcid-search/search?searchQuery=",
-          "color": "#a5cd38"
+          "action": "https://www.scopus.com/results/authorNamesList.uri?s=AUTHLASTNAME&st1="
         },
         {
           "name": "WolframAlpha",
-          "action": "https://www.wolframalpha.com/input?i=",
-          "color": "#ff9c55"
+          "action": "https://www.wolframalpha.com/input?i="
         },
         {
-          "name": "Golden",
-          "action": "https://golden.com/search/",
-          "color": "#efbf54"
+          "name": "ORCID",
+          "action": "https://orcid.org/orcid-search/search?searchQuery="
         },
         {
           "name": "Academia",
-          "action": "https://www.academia.edu/search?q=",
-          "color": "#5a98ff"
-        },
-        {
-          "name": "Brainly",
-          "action": "https://brainly.com.br/app/ask?q=",
-          "color": "#60d399"
+          "action": "https://www.academia.edu/search?q="
         },
         {
           "name": "Passei Direto",
-          "action": "https://www.passeidireto.com/search?q=",
-          "color": "#FF8425"
+          "action": "https://www.passeidireto.com/search?q="
         },
         {
           "name": "Internet Archive",
-          "action": "https://archive.org/search.php?query=",
-          "color": "#999999"
+          "action": "https://archive.org/search.php?query="
+        }
+      ],
+      "youtube_channels": [
+        {
+          "id": "UCN1ihdoKXeixzYi7Hyp4WwQ",
+          "title": "CanalUSP"
+        },
+        {
+          "id": "UC2mmP8ysfyko40KSn90x6Og",
+          "title": "CanalfuturaOrgBr"
+        },
+        {
+          "id": "UC4O2eKb8vI4VlMeNp90asfg",
+          "title": "PrazerKarnal"
+        },
+        {
+          "id": "UCZdJE8KpuFm6NRafHTEIC-g",
+          "title": "TemperoDrag"
+        },
+        {
+          "id": "UCXs3LHxIwbfr5_HrySsGXTA",
+          "title": "CNPqOficial"
+        },
+        {
+          "id": "UC8Q3CRCvSld1eJsoyQvTzxg",
+          "title": "CAPESOficial"
+        },
+        {
+          "id": "UCKHhA5hN2UohhFDfNXB_cvQ",
+          "title": "manualdomundo"
+        },
+        {
+          "id": "UCn9Erjy00mpnWeLnRqhsA1g",
+          "title": "CienciaTodoDia"
+        },
+        {
+          "id": "UCWq1xltHB2fDe6YkYoOrryg",
+          "title": "CanaldoSchwarza"
+        },
+        {
+          "id": "UCn9sSXxb1Pd3v6bszZRssJA",
+          "title": "ministeriodaeducacao_MEC"
+        },
+        {
+          "id": "UCjuL_xtE7NpxtkWbYc89DFA",
+          "title": "mcti"
+        },
+        {
+          "id": "UCW9jLtlONRp7W-AK9F8M66Q",
+          "title": "LuizFelipePondéOficial"
+        },
+        {
+          "id": "UCIvTDL8pbiiWZ821cWvmTsg",
+          "title": "CompanhiaDasLetras"
+        },
+        {
+          "id": "UCTubbc8ei3JfOBbicSJYPfQ",
+          "title": "LerAntesdeMorrer"
+        },
+        {
+          "id": "UCV_Oh99yIfe7GqGN_HZ0OVQ",
+          "title": "Antofágica"
+        },
+        {
+          "id": "UCZGKD_HFC4H1WuPf0ZmWgOg",
+          "title": "NeuroVox"
         }
       ]
     },
@@ -1054,25 +1261,278 @@
       ]
     },
     {
+      "name": "Code",
+      "name_translated": "Código",
+      "name_trends": "Repositórios populares",
+      "active": true,
+      "data": [
+        {
+          "name": "Stack Overflow",
+          "action": "https://pt.stackoverflow.com/search?q="
+        },
+        {
+          "name": "GitHub",
+          "action": "https://github.com/search?q="
+        },
+        {
+          "name": "GitLab",
+          "action": "https://gitlab.com/public?name="
+        },
+        {
+          "name": "Bitbucket",
+          "action": "https://bitbucket.org/repo/all/?name="
+        },
+        {
+          "name": "CodePen",
+          "action": "https://codepen.io/search/pens?q="
+        },
+        {
+          "name": "Glitch",
+          "action": "https://glitch.com/search?q="
+        },
+        {
+          "name": "Sourcegraph",
+          "action": "https://sourcegraph.com/search?q="
+        },
+        {
+          "name": "searchcode",
+          "action": "https://searchcode.com/?q="
+        },
+        {
+          "name": "Docker Hub",
+          "action": "https://hub.docker.com/search?q="
+        },
+        {
+          "name": "npm",
+          "action": "https://www.npmjs.com/search?q="
+        },
+        {
+          "name": "Yarn",
+          "action": "https://yarnpkg.com/?q="
+        },
+        {
+          "name": "PyPI",
+          "action": "https://pypi.org/search/?q="
+        },
+        {
+          "name": "NuGet",
+          "action": "https://www.nuget.org/packages?q="
+        },
+        {
+          "name": "Packagist",
+          "action": "https://packagist.org/?query="
+        },
+        {
+          "name": "RubyGems",
+          "action": "https://rubygems.org/search?query="
+        },
+        {
+          "name": "Crates",
+          "action": "https://crates.io/search?q="
+        },
+        {
+          "name": "Go",
+          "action": "https://pkg.go.dev/search?q="
+        },
+        {
+          "name": "Pub.dev",
+          "action": "https://pub.dev/packages?q="
+        }
+      ],
+      "youtube_channels": [
+        {
+          "id": "UCdmGjywrxeOPfC7vDllmSgQ",
+          "title": "tecmundo"
+        },
+        {
+          "id": "UC_bXJnsgwOqEPA_-6N6faKw",
+          "title": "canaltech"
+        },
+        {
+          "id": "UCFuIUoyHB12qpYa8Jpxoxow",
+          "title": "codigofontetv"
+        },
+        {
+          "id": "UCyHOBY6IDZF9zOKJPou2Rgg",
+          "title": "LucasMontano"
+        },
+        {
+          "id": "UCSfwM5u0Kce6Cce8_S72olg",
+          "title": "rocketseat"
+        },
+        {
+          "id": "UCo7EHzKF2zDFWszw7Dg4mPw",
+          "title": "alura"
+        },
+        {
+          "id": "UC1VZDEtGNxfQzh7EYcD2frg",
+          "title": "manodeyvin"
+        },
+        {
+          "id": "UCcMcmtNSSQECjKsJA1XH5MQ",
+          "title": "cod3r"
+        },
+        {
+          "id": "UCJnKVGmXRXrH49Tvrx5X0Sw",
+          "title": "LinuxTips"
+        },
+        {
+          "id": "UCMsyeaScaqxDLmIGhTfSoNA",
+          "title": "Ayubio"
+        },
+        {
+          "id": "UCh84012dEUE076wM2CVFN9A",
+          "title": "ErickWendelTraining"
+        },
+        {
+          "id": "UCetRsdZxDQDcgVDJd6erz6g",
+          "title": "attekitadev"
+        },
+        {
+          "id": "UC629vKGFPRc1rz6VDm6OZiQ",
+          "title": "Diolinuxlabs"
+        },
+        {
+          "id": "UC_-uuuZbY0AAt9CViNzvc-Q",
+          "title": "rafaellaballerini"
+        },
+        {
+          "id": "UCTspylBf8iNobZHgwUD4PXA",
+          "title": "GoogleDevelopersBrasil"
+        },
+        {
+          "id": "UCom6JiKVw8e_KWHTw0JraDw",
+          "title": "MicrosoftBrasil1"
+        },
+        {
+          "id": "UCwrVwiJllwhJUKXKmjLcckQ",
+          "title": "AppleDeveloper"
+        }
+      ]
+    },
+    {
+      "name": "Finance",
+      "name_translated": "Finança",
+      "active": true,
+      "data": [
+        {
+          "name": "Google Finance",
+          "action": "https://finance.google.com/search?q="
+        },
+        {
+          "name": "Caixa",
+          "action": "https://www.caixa.gov.br/site/Paginas/Pesquisa.aspx?k="
+        },
+        {
+          "name": "Itaú",
+          "action": "https://www.itau.com.br/resultados-de-busca?q="
+        },
+        {
+          "name": "Nubank",
+          "action": "https://blog.nubank.com.br/busca/?search="
+        },
+        {
+          "name": "Bradesco",
+          "action": "https://blog.nubank.com.br/busca/?search="
+        },
+        {
+          "name": "BB",
+          "action": "https://www.caixa.gov.br/site/Paginas/Pesquisa.aspx?k="
+        },
+        {
+          "name": "Santander",
+          "action": "https://www.itau.com.br/resultados-de-busca?q="
+        },
+        {
+          "name": "Inter",
+          "action": "https://www.caixa.gov.br/site/Paginas/Pesquisa.aspx?k="
+        },
+        {
+          "name": "BTG Pactual",
+          "action": "https://www.itau.com.br/resultados-de-busca?q="
+        }
+      ],
+      "youtube_channels": [
+        {
+          "id": "UC_Y9Mf8o6gGAAw8eBrn3SOw",
+          "title": "BancoCentralBR"
+        },
+        {
+          "id": "UC_TapH8f4HLLAwPBaXy-Gag",
+          "title": "MinFazenda"
+        },
+        {
+          "id": "UC8mDF5mWNGE-Kpfcvnn0bUg",
+          "title": "MePoupe"
+        },
+        {
+          "id": "UCT4nDeU5pv1XIGySbSK-GgA",
+          "title": "primorico"
+        },
+        {
+          "id": "UCOjXqrOxAdXa04obIQREfCA",
+          "title": "PrimoPobre"
+        },
+        {
+          "id": "UCj3jEZuLmXOndQJFkPTp3Nw",
+          "title": "CanalElaInveste"
+        },
+        {
+          "id": "UCnBNoed6NaPlpL8blj1yy8Q",
+          "title": "ClubedoValor"
+        },
+        {
+          "id": "UC-hA65Fjv5X8h-J92zc_L8Q",
+          "title": "GêmeosInvestem"
+        },
+        {
+          "id": "UC3Z2XdKUu21_KtMsohZedOQ",
+          "title": "ACaraDaRiquezaOficial"
+        },
+        {
+          "id": "UC_mSfchV-fgpPy-vuwML8_A",
+          "title": "GustavocerbasiBr"
+        },
+        {
+          "id": "UCmhzmQBdXP9TeRtpQ-iWSPg",
+          "title": "NathFinanças"
+        },
+        {
+          "id": "UCM3vJxmuJJkk1r0yzFI9eZg",
+          "title": "investidorsardinha"
+        },
+        {
+          "id": "UCCE-jo1GvBJqyj1b287h7jA",
+          "title": "brunoperini"
+        },
+        {
+          "id": "UComAl6MjIyRzDhMuXXQExKw",
+          "title": "MoneyTimesBR"
+        },
+        {
+          "id": "UCbTAwyq6nWOLnFag-PR0XVw",
+          "title": "NerdsdeNegócios"
+        }
+      ]
+    },
+    {
       "name": "Legal",
-      "name_translated": "Jurídico",
+      "name_translated": "Legal",
       "name_trends": "Serviços públicos",
       "active": true,
       "data": [
         {
-          "name": "Escavador",
-          "action": "https://www.escavador.com/busca?q=",
-          "color": "#f5bd1d"
+          "name": "Jusbrasil",
+          "action": "https://www.jusbrasil.com.br/busca?q="
         },
         {
-          "name": "Jusbrasil",
-          "action": "https://www.jusbrasil.com.br/busca?q=",
-          "color": "#8ad151"
+          "name": "Escavador",
+          "action": "https://www.escavador.com/busca?q="
         },
         {
           "name": "Gov.br",
           "action": "https://www.gov.br/pt-br/search?SearchableText=",
-          "color": "#5193FF",
+
           "child": [
             {
               "name": "Governo Federal"
@@ -1094,7 +1554,7 @@
         {
           "name": "Congresso Nacional",
           "action": "https://www6g.senado.leg.br/busca-congresso/?q=",
-          "color": "#79a4ff",
+
           "child": [
             {
               "name": "Congresso Nacional"
@@ -1111,7 +1571,7 @@
         {
           "name": "STF",
           "action": "https://jurisprudencia.stf.jus.br/pages/search?queryString=",
-          "color": "#00b8ff",
+
           "child": [
             {
               "name": "Jurisprudência",
@@ -1133,18 +1593,16 @@
         },
         {
           "name": "Tribunal de Contas",
-          "action": "https://pesquisa.apps.tcu.gov.br/resultado/todas-bases/",
-          "color": "#4f86ff"
+          "action": "https://pesquisa.apps.tcu.gov.br/resultado/todas-bases/"
         },
         {
           "name": "Ministério Público",
-          "action": "https://www.mpf.mp.br/@@search?SearchableText=",
-          "color": "#61a4db"
+          "action": "https://www.mpf.mp.br/@@search?SearchableText="
         },
         {
           "name": "Defensoria Pública",
           "action": "https://www.dpu.def.br/component/search/?searchword=",
-          "color": "#5cb12f",
+
           "child": [
             {
               "name": "DPU",
@@ -1162,133 +1620,41 @@
         },
         {
           "name": "Justiça Eleitoral",
-          "action": "https://www.tse.jus.br/@@search-es?searchable_text=",
-          "color": "#ffd441"
+          "action": "https://www.tse.jus.br/@@search-es?searchable_text="
         },
         {
           "name": "Banco Central",
-          "action": "https://www.bcb.gov.br/resultadobusca?termo=",
-          "color": "#16a7ce"
+          "action": "https://www.bcb.gov.br/resultadobusca?termo="
         }
-      ]
-    },
-    {
-      "name": "Finance",
-      "name_translated": "Finanças",
-      "active": true,
-      "data": [
+      ],
+      "youtube_channels": [
         {
-          "name": "finviz",
-          "action": "https://finviz.com/search.ashx?p=",
-          "color": "#d8d8d8"
+          "id": "UCjaWLFTNqLkq3ZY2BJ4NYRg",
+          "title": "canalgov"
         },
         {
-          "name": "Itaú",
-          "action": "https://www.itau.com.br/resultados-de-busca?q=",
-          "color": "#ec7000"
+          "id": "UCLgti7NuK0RuW9wty-fxPjQ",
+          "title": "tvsenado"
         },
         {
-          "name": "Nubank",
-          "action": "https://blog.nubank.com.br/busca/?search=",
-          "color": "#820ad1"
-        }
-      ]
-    },
-    {
-      "name": "Code",
-      "name_translated": "Código",
-      "name_trends": "Repositórios populares",
-      "active": true,
-      "data": [
-        {
-          "name": "Stack Overflow",
-          "action": "https://pt.stackoverflow.com/search?q=",
-          "color": "#ffa055"
+          "id": "UC-ZkSRh-7UEuwXJQ9UMCFJA",
+          "title": "camaradosdeputadosoficial"
         },
         {
-          "name": "GitHub",
-          "action": "https://github.com/search?q=",
-          "color": "#becad8"
+          "id": "UC8Mn10hXJRo6Azj1mi-Y5Wg",
+          "title": "jotalive"
         },
         {
-          "name": "GitLab",
-          "action": "https://gitlab.com/public?name=",
-          "color": "#ff8b50"
+          "id": "UC0qlZ5jxxueKNzUERcrllNw",
+          "title": "RadioeTVJustica"
         },
         {
-          "name": "Bitbucket",
-          "action": "https://bitbucket.org/repo/all/?name=",
-          "color": "#61a1ff"
+          "id": "UC1kilS1DdyYOEGItHPRukBw",
+          "title": "justicaeleitoral"
         },
         {
-          "name": "CodePen",
-          "action": "https://codepen.io/search/pens?q=",
-          "color": "#cbd5f9"
-        },
-        {
-          "name": "Glitch",
-          "action": "https://glitch.com/search?q=",
-          "color": "#f7a4ff"
-        },
-        {
-          "name": "Sourcegraph",
-          "action": "https://sourcegraph.com/search?q=",
-          "color": "#da7bff"
-        },
-        {
-          "name": "searchcode",
-          "action": "https://searchcode.com/?q=",
-          "color": "#22CBFF"
-        },
-        {
-          "name": "Docker Hub",
-          "action": "https://hub.docker.com/search?q=",
-          "color": "#4bbfff"
-        },
-        {
-          "name": "npm",
-          "action": "https://www.npmjs.com/search?q=",
-          "color": "#ff6565"
-        },
-        {
-          "name": "Yarn",
-          "action": "https://yarnpkg.com/?q=",
-          "color": "#30beff"
-        },
-        {
-          "name": "PyPI",
-          "action": "https://pypi.org/search/?q=",
-          "color": "#47a4da"
-        },
-        {
-          "name": "NuGet",
-          "action": "https://www.nuget.org/packages?q=",
-          "color": "#4bb0ff"
-        },
-        {
-          "name": "Packagist",
-          "action": "https://packagist.org/?query=",
-          "color": "#ffae51"
-        },
-        {
-          "name": "RubyGems",
-          "action": "https://rubygems.org/search?query=",
-          "color": "#ff735d"
-        },
-        {
-          "name": "Crates",
-          "action": "https://crates.io/search?q=",
-          "color": "#19a974"
-        },
-        {
-          "name": "Go",
-          "action": "https://pkg.go.dev/search?q=",
-          "color": "#50b7e0"
-        },
-        {
-          "name": "Pub.dev",
-          "action": "https://pub.dev/packages?q=",
-          "color": "#25a8ff"
+          "id": "UC6PpjezXs_gRswQtqlo0bHA",
+          "title": "tst"
         }
       ]
     },
@@ -1300,53 +1666,102 @@
       "data": [
         {
           "name": "Google Play",
-          "action": "https://play.google.com/store/search?q=",
-          "color": "#00c78e"
+          "action": "https://play.google.com/store/search?q="
         },
         {
           "name": "App Store",
-          "action": "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?media=software&term=",
-          "color": "#1db2f9"
+          "action": "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?media=software&term="
         },
         {
           "name": "Microsoft Store",
-          "action": "https://apps.microsoft.com/store/search/",
-          "color": "#219fff"
-        },
-        {
-          "name": "Chrome Web Store",
-          "action": "https://chromewebstore.google.com/search/",
-          "color": "#FFC412"
-        },
-        {
-          "name": "Firefox Addons",
-          "action": "https://addons.mozilla.org/en-US/firefox/search/?q=",
-          "color": "#00c8d7"
+          "action": "https://apps.microsoft.com/search?query="
         },
         {
           "name": "AlternativeTo",
-          "action": "https://alternativeto.net/browse/search/?q=",
-          "color": "#33B4FF"
+          "action": "https://alternativeto.net/browse/search/?q="
+        },
+        {
+          "name": "Chrome Web Store",
+          "action": "https://chromewebstore.google.com/search/"
+        },
+        {
+          "name": "Firefox Addons",
+          "action": "https://addons.mozilla.org/en-US/firefox/search/?q="
         },
         {
           "name": "Flathub",
-          "action": "https://flathub.org/pt-BR/apps/search?q=",
-          "color": "#34aadc"
+          "action": "https://flathub.org/pt-BR/apps/search?q="
         },
         {
           "name": "Snap Store",
-          "action": "https://snapcraft.io/search?q=",
-          "color": "#FF7B4B"
+          "action": "https://snapcraft.io/search?q="
         },
         {
           "name": "Softonic",
-          "action": "https://www.softonic.com.br/s/",
-          "color": "#0bda8a"
+          "action": "https://www.softonic.com.br/s/"
         },
         {
           "name": "Product Hunt",
-          "action": "https://www.producthunt.com/search?q=",
-          "color": "#ff744c"
+          "action": "https://www.producthunt.com/search?q="
+        }
+      ]
+    },
+    {
+      "name": "Games",
+      "name_translated": "Jogos",
+      "active": true,
+      "data": [
+        {
+          "name": "Steam",
+          "action": "https://store.steampowered.com/search/?term="
+        },
+        {
+          "name": "Nuuvem",
+          "action": "https://www.nuuvem.com/br-pt/catalog/page/1/search/"
+        },
+        {
+          "name": "Xbox",
+          "action": "https://apps.microsoft.com/search?department=Games&hl=pt-br&gl=BR&query="
+        },
+        {
+          "name": "PlayStation",
+          "action": "https://store.playstation.com/pt-br/search/"
+        },
+        {
+          "name": "Nintendo",
+          "action": "https://www.nintendo.com/games/game-guide/?q="
+        },
+        {
+          "name": "EA",
+          "action": "https://www.origin.com/bra/pt-br/store/search?q="
+        },
+        {
+          "name": "Ubisoft",
+          "action": "https://store.ubi.com/br/search?q="
+        },
+        {
+          "name": "Epic Games",
+          "action": "https://www.epicgames.com/store/pt-BR/browse?q="
+        },
+        {
+          "name": "GOG",
+          "action": "https://www.gog.com/games?search="
+        },
+        {
+          "name": "Humble Bundle",
+          "action": "https://www.humblebundle.com/store/search?search="
+        },
+        {
+          "name": "Game Jolt",
+          "action": "https://gamejolt.com/search?q="
+        },
+        {
+          "name": "Itch.io",
+          "action": "https://itch.io/search?q="
+        },
+        {
+          "name": "Indie DB",
+          "action": "https://www.indiedb.com/search?q="
         }
       ]
     },
@@ -1356,8 +1771,7 @@
       "data": [
         {
           "name": "The Pirate Bay",
-          "action": "https://www2.thepiratebay3.to/s/?q=",
-          "color": "#d8d8d8"
+          "action": "https://www2.thepiratebay3.to/s/?q="
         }
       ]
     }

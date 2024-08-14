@@ -1,18 +1,15 @@
 /** @type {import('next').NextConfig} */
 
+const withNextIntl = require('next-intl/plugin')()
 const withPWA = require('next-pwa')({
   dest: 'public',
 })
 
-module.exports = withPWA({
+module.exports = withNextIntl({
   pwa: {
     dest: 'public',
     register: true,
     skipWaiting: true,
-  },
-  i18n: {
-    locales: ['en', 'pt-BR'],
-    defaultLocale: 'en',
   },
   images: {
     domains: [
