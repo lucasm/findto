@@ -12,7 +12,7 @@ interface ModalProps {
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, title }) => {
   const [isModalOpen, setIsModalOpen] = useState(isOpen)
   const modalRef = useRef<HTMLDivElement>(null)
-  const lastFocusableElementRef = useRef(null)
+  const lastFocusableElementRef = useRef<Element | null>(null)
 
   useEffect(() => {
     setIsModalOpen(isOpen)
@@ -23,15 +23,15 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, title }) => {
     }
 
     // focus on modal
-    modalRef.current && modalRef.current.focus()
+    modalRef.current?.focus?.()
 
     // Encontre todos os elementos clicáveis dentro do modal
-    const clickableElements = modalRef.current.querySelectorAll(
+    const clickableElements = modalRef.current?.querySelectorAll(
       'button, a, input, [tabindex]:not([tabindex="-1"])'
     )
 
     // Se houver elementos clicáveis, defina o último elemento como ref
-    if (clickableElements.length > 0) {
+    if (clickableElements && clickableElements.length > 0) {
       lastFocusableElementRef.current =
         clickableElements[clickableElements.length - 1]
     }
@@ -54,7 +54,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, title }) => {
       // Se a tecla "Tab" for pressionada dentro do modal
       if (document.activeElement === lastFocusableElementRef.current) {
         // Redireciona o foco de volta ao modal
-        modalRef.current.focus()
+        modalRef?.current?.focus()
         e.preventDefault() // Evita a tabulação normal
       }
     }
