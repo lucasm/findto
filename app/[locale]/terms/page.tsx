@@ -16,7 +16,7 @@ export default function PageTerms() {
       <section>
         <div className={Style.container}>
           <article>
-            <h2>1. Welcome to Findto</h2>
+            <h2>1. Welcome</h2>
             <p>
               You are welcome to Findto! By accessing services at internet
               domain <a href="http://findto.app">http://findto.app</a>{' '}

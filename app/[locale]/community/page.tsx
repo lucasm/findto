@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl'
 
 const title = 'Community'
 const description =
-  'Help make Findto searches decentralized, accessible and sustainable.'
+  'Help make a better internet. Decentralized, accessible and sustainable searches.'
 
 export const metadata = {
   title: title,
@@ -29,34 +29,43 @@ export default function CommunityPage() {
           <CardsLink />
 
           <article>
-            <h2>Welcome</h2>
+            <h2>Welcome to Findto</h2>
 
             <p>
-              Findto is an open source project for decentralized Web and AI
-              search.
+              Findto is an assistant for decentralized search on Web and AI.
             </p>
 
             <p>
-              We are developing a new free search experience. Made by people
-              like you!
+              We are developing a free and open source, refreshed search
+              experience.
             </p>
 
             <p>
-              The Findto mission is to put people on control of the search
-              algorithms to positively impacts internet and the planet.
+              The Findto mission is to put people on control of the algorithms
+              to positively impacts the internet and the planet.
             </p>
+
+            <p>
+              Findto is made by people like you. Donate, send feedback and get
+              involved!
+            </p>
+
+            <br></br>
+            <br></br>
+
+            <h2>Researching Web and AI</h2>
 
             <p>
               Findto is committed to the United Nations 2030 Agenda for
-              sustainable development. We are very interested in researching and
+              sustainable development. We are interested in researching and
               partnerships with services to strengthen technologies of open
               access, democracy, privacy, web accessibility, diversity,
               responsible AI, and carbon neutrality.
             </p>
 
             <p>
-              If you share this vision, feel free to help us build Findto.
-              Donate, send feedback or follow us. Thank you!
+              If you share this vision, feel free to partner with us and
+              contribute.
             </p>
 
             <br></br>

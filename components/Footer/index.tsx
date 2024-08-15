@@ -23,7 +23,7 @@ export default function AppFooter() {
           </li>
           <li>
             <p>
-              <Link href="/">Findto</Link> © {year} | {t('slogan')}
+              <Link href="/">Findto</Link> © {year}
             </p>
           </li>
           <li>

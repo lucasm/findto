@@ -17,27 +17,27 @@ export default function CardsLink() {
 
   const cards: ICardsLink[] = [
     {
-      title: t('donate'),
-      url: 'https://ko-fi.com/findto',
-      icon: <IconHeart />,
-      active: true,
-    },
-    {
-      title: 'Star on GitHub',
+      title: 'Give a star',
       url: 'https://github.com/lucasm/findto',
       icon: svgGithub,
       active: true,
     },
     {
-      title: 'Follow on X',
+      title: 'Follow',
       url: 'https://x.com/findtoapp',
       icon: <IconX />,
       active: true,
     },
     {
-      title: 'Discord channel',
+      title: 'Join channel',
       url: 'https://discord.gg/gEDm5MU6pq',
       icon: svgDiscord,
+      active: true,
+    },
+    {
+      title: t('donate'),
+      url: 'https://ko-fi.com/findto',
+      icon: <IconHeart />,
       active: true,
     },
     {

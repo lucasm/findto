@@ -1,85 +1,94 @@
 <div align="center">
 <a href="https://findto.app/?utm_source=findto_repo">
-<img height="124" src="https://findto.app/findto-icon.svg">
+<img height="124" src="https://findto.app/findto-icon-color.svg">
 </a>
 </div>
 
 <h1 align="center">Findto</h1>
 
 <p align="center">
-<a href="https://github.com/lucasm/findto/wiki" target="_blank"><img alt="Languages" src="https://img.shields.io/badge/translations-2-ffdb56?logo=json&logoColor=white"></a>
-<a href="https://github.com/lucasm/findto/issues" target="_blank"><img alt="Issues" src="https://img.shields.io/github/issues/lucasm/findto?color=ff5c5c&logo=github&logoColor=white"></a>
-<a href="https://discord.gg/gEDm5MU6pq" target="_blank"><img alt="Community" src="https://img.shields.io/discord/866829154032812073?color=bc86ff&label=members&logo=discord&logoColor=white"></a>
-<a href="https://ko-fi.com/findto" target="_blank"><img alt="Support on Ko-Fi" src="https://img.shields.io/badge/donate-$1-1491de?logo=kofi&logoColor=white"></a>
-<a href="https://github.com/lucasm/findto/releases" target="_blank"><img alt="GitHub release" src="https://img.shields.io/github/v/release/lucasm/findto?label=version&color=37bf5d&logo=github&logoColor=white"></a>
-<a href="https://github.com/lucasm/findto" target="_blank"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/lucasm/findto?label=size&color=37bf5d&logo=github&logoColor=white"></a>
+<a href="https://github.com/lucasm/findto/wiki" target="_blank"><img alt="Languages" src="https://img.shields.io/badge/translations-2-ffff8b?logo=json&logoColor=white"></a>
+<a href="https://github.com/lucasm/findto/issues" target="_blank"><img alt="Issues" src="https://img.shields.io/github/issues/lucasm/findto?color=ff9393&logo=github&logoColor=white"></a>
+<a href="https://discord.gg/gEDm5MU6pq" target="_blank"><img alt="Community" src="https://img.shields.io/discord/866829154032812073?color=d0abff&label=members&logo=discord&logoColor=white"></a>
+<a href="https://ko-fi.com/findto" target="_blank"><img alt="Support on Ko-Fi" src="https://img.shields.io/badge/donate-$5-82cdff?logo=kofi&logoColor=white"></a>
+<a href="https://github.com/lucasm/findto/releases" target="_blank"><img alt="GitHub release" src="https://img.shields.io/github/v/release/lucasm/findto?label=version&color=71f8ce&logo=github&logoColor=white"></a>
+<a href="https://github.com/lucasm/findto" target="_blank"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/lucasm/findto?label=size&color=71f8ce&logo=github&logoColor=white"></a>
 </p>
 
 <p align="center">
 Decentralized search on Web and AI <br>
 </p>
 
-## 🔎 A new search
+## 🔎 A better search
 
-Findto is an open source assistant for decentralized Web & AI search.
+We are developing a better search experience.
 
-Findto puts the power of technology back into people's hands. Literally get control over search algorithms. You can quickly search the same term on diverse sources. See also the privacy and carbon levels of selected source.
+- Findto is an assistant for decentralized search on the Web and AI.
 
-Why? Because the centralized internet — where our searches are monopolized — is unsustainable. Findto encourages a truly free search experience, where the people democratic choices and the planet needs walks together. A more healthier internet. As the should be.
+- Findto puts people in control of algorithms.
 
-Discover trends. Find anything on Web & AI. More productive and accessible searches than ever!
+- Findto is free and open source.
 
-💎 Try it now: https://findto.app
+Findto is putting the power of internet back into people's hands.
 
-💡 How it works: https://findto.app/about
+Why?
+Because the centralized internet — monopolized — is unsustainable. Findto encourages a truly free search experience, where the people democratic choices and the planet needs walks together.
 
-📦 App stores: <a href="https://store.app/findto-app" target="_blank">Store.app</a>, <a href="https://alternativeto.net/software/findto/about/" target="_blank">AlternativeTo</a>, Microsoft Store, App Store, Google Play
+Quickly search the same term on diverse sources. See also the privacy and carbon levels of selected source. Discover trends. Find anything on the Web and AI. More productive and accessible searches than ever! A more healthier internet, today. As the always should be.
 
-## 🌈 Features
+👉 Try it now: [findto.app](https://findto.app)
 
-- **Decentralized search** — Search the same term on diverse sources and categories
+🤔 How it works: [findto.app/about](https://findto.app/about)
 
-- **Privacy level** — How my data are handled? View the privacy level of selected source
+## 🔵 Features
 
-- **Carbon footprint** — How this impact the planet? View the estimate carbon footprint of selected source
+- **Decentralized search** — Search the same term on diverse sources.
 
-- **Trends** — Explore trending topics, contents, events, services and places nearby you
+- **Trends** — Explore trending stories, topics, contents, products, places, and more nearby you.
 
-- **Autosuggest** — Get instant suggestions as you type
+- **Privacy level** — How your data are handled? View the estimate privacy level of selected source.
 
-- **Voice search** — Use your voice to search anywhere
+- **Carbon level** — How this impact the planet? View the estimate carbon footprint level of selected source.
 
-- **Visual search** — Use images to search on supported sources \* In development
+- **Autosuggest** — Get instant suggestions as you type.
 
-- **Accessibility** — Dark theme, balanced contrast, keyboard navigation and screen readers
+- **Voice search** — Use your voice to search anywhere.
 
-- **Internationalization** — Chose your country for local sources, or use international search
+- **Visual search** — Use images to search on supported sources. \* In development.
 
-## Sources
+- **Accessibility** — Dark theme, balanced contrast, keyboard navigation and screen readers.
 
-The search sources available are chosen by the criteria: 1. Service popularity; 2. Service open access; 3. Service legally committed to respect privacy and copyright. For more details, view [Wiki](https://github.com/lucasm/findto/wiki).
+- **Internationalization** — Chose your country for local sources, or use international search.
 
----
+## 🔴 Sources
 
-## 💛 Donate
+The search sources available on Findto are chosen by the criteria:
+
+1. Service popularity.
+2. Service committed to open access.
+3. Service legally respect privacy and copyright.
+
+For more details, go to [Wiki](https://github.com/lucasm/findto/wiki).
+
+## 🟡 Donate
 
 If you like Findto, consider donate.
-
-Choose your favorite platform and ✨ enjoy exclusive benefits ✨ like your name or banner with link attribution on this repository, work-in-progress updates, and early access to Beta versions!
 
 - [One-time donation via Ko-Fi](https://ko-fi.com/findto)
 - [Support via GitHub Sponsors](https://github.com/sponsors/lucasm)
 
----
+✨ Enjoy your name or banner with link attribution on this repository ✨
 
-### Contributions
+For work-in-progress updates [follow us](https://x.com/findto.app)!
 
-Before send pull requests, view opened [Issues](https://github.com/lucasm/findto/issues) thats need help. Go to board [Projects](https://github.com/lucasm/findto/projects) for backlog.
+## 🟢 Contribute
+
+View opened [Issues](https://github.com/lucasm/findto/issues) thats need help, before send pull requests. For backlog, see the [Projects](https://github.com/lucasm/findto/projects) board.
 
 ### Team
 
-Made in Brazil with love by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app) and supported by open source community!
+Made in Brazil with love by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app) and community.
 
 ### Privacy & Terms
 
-Findto respects users privacy and don't store any searches. Findto also show materials protected by intelectual property (brands of services). Read our [Privacy](https://findto.app/privacy) and [Terms](https://findto.app/terms).
+Findto respects users privacy and don't store searches. Findto also show materials protected by intelectual property (brands of services). Read our [Privacy](https://findto.app/privacy) and [Terms](https://findto.app/terms).

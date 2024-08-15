@@ -27,7 +27,7 @@
   background: var(--color-text-black);
   color: var(--color-bg-white);
   border: 2px solid transparent;
-  height: var(--size-big);
+  height: var(--size-small);
   padding: 0 2rem;
   border-radius: var(--radius-big);
   width: 100%;
@@ -47,7 +47,7 @@
 }
 .container div:nth-child(2) {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 1rem;
   justify-content: center;
   align-items: center;
@@ -78,7 +78,6 @@
     font-size: var(--font-size);
   }
   .container div:nth-child(2) {
-    flex-direction: column;
     margin-top: 1.5rem;
   }
 }

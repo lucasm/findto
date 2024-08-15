@@ -280,20 +280,19 @@ export default function AppHeader() {
 
           <div className={Style.containerSettings}>
             <h3>{t('contribute')}</h3>
-
-            <a
-              href={t('feedback.url')}
-              target="_blank"
-              rel="noopener noreferrer">
-              <IconFeedback />
-              {t('feedback.title')}
-            </a>
             <a
               href="https://ko-fi.com/findto"
               target="_blank"
               rel="noopener noreferrer">
               <IconHeart />
               {t('donate')}
+            </a>
+            <a
+              href={t('feedback.url')}
+              target="_blank"
+              rel="noopener noreferrer">
+              <IconFeedback />
+              {t('feedback.title')}
             </a>
           </div>
         </Modal>

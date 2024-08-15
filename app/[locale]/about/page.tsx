@@ -24,7 +24,7 @@ export default function PageAbout() {
           <h1>{t('slogan')}</h1>
           <p>
             Findto is a decentralized search assistant. Get control over AI and
-            Web search algorithms. Explore a healthy internet.
+            Web search. Explore a healthy internet.
           </p>
         </div>
       </section>
@@ -38,12 +38,11 @@ export default function PageAbout() {
               </figure>
 
               <article>
-                <h2>Get control over AI and Web search</h2>
+                <h2>Get control over algorithms</h2>
                 <p>
-                  Findto is reverting the default, and putting people on control
-                  of the algorithms. Find anything switching between diverse AI
-                  and Web sources. More productive and accessible searches than
-                  ever.
+                  Findto is putting people on control of the algorithms. Find
+                  anything switching between diverse sources. More productive
+                  and accessible searches than ever.
                 </p>
               </article>
             </div>
@@ -56,9 +55,8 @@ export default function PageAbout() {
               <article>
                 <h2>More privacy and less carbon</h2>
                 <p>
-                  Findto displays the estimated privacy level and carbon
-                  footprint of every search provider. Explore making better
-                  choices - for you and the planet.
+                  See an estimated privacy level and carbon footprint of every
+                  search source. Make better choices - for you and the planet.
                 </p>
               </article>
             </div>
@@ -69,7 +67,7 @@ export default function PageAbout() {
               </figure>
 
               <article>
-                <h2>Decentralized, free and open source</h2>
+                <h2>Decentralizing search</h2>
                 <p>
                   The monopoly is dangerous. Findto encourages a truly open
                   search experience, where people choices matter. We are here

@@ -32,7 +32,7 @@
     "community": "Comunidade",
     "privacy": "Privacidade",
     "terms": "Termos",
-    "donate": "Doar",
+    "donate": "Fazer uma doação",
     "more": "Mais",
     "learnMore": "Saiba mais",
     "viewNearbyPlaces": "Ver locais próximos",
@@ -280,88 +280,71 @@
       "data": [
         {
           "name": "YouTube",
-          "action": "https://www.youtube.com/results?search_query=",
-          "color": "#ff4d4d"
+          "action": "https://www.youtube.com/results?search_query="
         },
         {
           "name": "IMDb",
-          "action": "https://www.imdb.com/find/?q=",
-          "color": "#f5c518"
+          "action": "https://www.imdb.com/find/?q="
         },
         {
           "name": "Twitch",
-          "action": "https://www.twitch.tv/search?term=",
-          "color": "#B888FF"
+          "action": "https://www.twitch.tv/search?term="
         },
         {
           "name": "Globoplay",
-          "action": "https://globoplay.globo.com/busca/?q=",
-          "color": "#FF765E"
+          "action": "https://globoplay.globo.com/busca/?q="
         },
         {
           "name": "Netflix",
-          "action": "https://www.netflix.com/search?q=",
-          "color": "#ff525b"
+          "action": "https://www.netflix.com/search?q="
         },
         {
           "name": "Prime Video",
-          "action": "https://www.primevideo.com/region/na/search/?phrase=",
-          "color": "#33bcea"
+          "action": "https://www.primevideo.com/region/na/search/?phrase="
         },
         {
           "name": "Max",
-          "action": "https://play.hbomax.com/search?q=",
-          "color": "#9181f8"
+          "action": "https://play.hbomax.com/search?q="
         },
         {
           "name": "Disney+",
-          "action": "https://disneyplus.com/?q=",
-          "color": "#5a7dff"
+          "action": "https://disneyplus.com/?q="
         },
         {
           "name": "Paramount+",
-          "action": "https://www.paramountplus.com/br/search/?q=",
-          "color": "#6da6ff"
+          "action": "https://www.paramountplus.com/br/search/?q="
         },
         {
           "name": "Apple TV+",
-          "action": "https://tv.apple.com/search?term=",
-          "color": "#c8c8c8"
+          "action": "https://tv.apple.com/search?term="
         },
         {
           "name": "Letterboxd",
-          "action": "https://letterboxd.com/search/",
-          "color": "#6ee373"
+          "action": "https://letterboxd.com/search/"
         },
         {
           "name": "TMDB",
-          "action": "https://www.themoviedb.org/search?query=",
-          "color": "#46c2c0"
+          "action": "https://www.themoviedb.org/search?query="
         },
         {
           "name": "Crunchyroll",
-          "action": "https://www.crunchyroll.com/pt-br/search?q=",
-          "color": "#ff944c"
+          "action": "https://www.crunchyroll.com/pt-br/search?q="
         },
         {
           "name": "Libreflix",
-          "action": "https://libreflix.org/busca/",
-          "color": "#3ec2e2"
+          "action": "https://libreflix.org/busca/"
         },
         {
           "name": "Dailymotion",
-          "action": "https://www.dailymotion.com/search/",
-          "color": "#999999"
+          "action": "https://www.dailymotion.com/search/"
         },
         {
           "name": "Plex",
-          "action": "https://app.plex.tv/desktop#!/search?query=",
-          "color": "#ffb518"
+          "action": "https://app.plex.tv/desktop#!/search?query="
         },
         {
           "name": "Vimeo",
-          "action": "https://vimeo.com/search?q=",
-          "color": "#2fc6ff"
+          "action": "https://vimeo.com/search?q="
         }
       ],
       "youtube_channels": [
@@ -423,88 +406,71 @@
       "data": [
         {
           "name": "Pinterest",
-          "action": "https://br.pinterest.com/search/pins/?q=",
-          "color": "#ff6970"
+          "action": "https://br.pinterest.com/search/pins/?q="
         },
         {
           "name": "Unsplash",
-          "action": "https://unsplash.com/s/photos/",
-          "color": "#cccccc"
+          "action": "https://unsplash.com/s/photos/"
         },
         {
           "name": "GIPHY",
-          "action": "https://giphy.com/search/",
-          "color": "#8b84ff"
+          "action": "https://giphy.com/search/"
         },
         {
           "name": "Flickr",
-          "action": "https://www.flickr.com/search?q=",
-          "color": "#ff73bc"
+          "action": "https://www.flickr.com/search?q="
         },
         {
           "name": "Pexels",
-          "action": "https://www.pexels.com/search/",
-          "color": "#1ac7a5"
+          "action": "https://www.pexels.com/search/"
         },
         {
           "name": "Openverse",
-          "action": "https://openverse.org/search/?q=",
-          "color": "#fde034"
+          "action": "https://openverse.org/search/?q="
         },
         {
           "name": "Freepik",
-          "action": "https://www.freepik.com/search?query=",
-          "color": "#4296ff"
+          "action": "https://www.freepik.com/search?query="
         },
         {
           "name": "Pixabay",
-          "action": "https://pixabay.com/photos/search/",
-          "color": "#5ee887"
+          "action": "https://pixabay.com/photos/search/"
         },
         {
           "name": "Adobe Stock",
-          "action": "https://stock.adobe.com/search?k=",
-          "color": "#ddd"
+          "action": "https://stock.adobe.com/search?k="
         },
         {
           "name": "Shutterstock",
-          "action": "https://www.shutterstock.com/search?searchterm=",
-          "color": "#ff6055"
+          "action": "https://www.shutterstock.com/search?searchterm="
         },
         {
           "name": "Getty Images",
-          "action": "https://www.gettyimages.com/photos/",
-          "color": "#FAE9CD"
+          "action": "https://www.gettyimages.com/photos/"
         },
         {
           "name": "SmugMug",
-          "action": "https://www.smugmug.com/search/?q=",
-          "color": "#b9e75d"
+          "action": "https://www.smugmug.com/search/?q="
         },
         {
           "name": "500px",
-          "action": "https://500px.com/search?q=",
-          "color": "#0099e5"
+          "action": "https://500px.com/search?q="
         },
         {
           "name": "Imgur",
-          "action": "https://imgur.com/search?q=",
-          "color": "#3cea99"
+          "action": "https://imgur.com/search?q="
         },
         {
           "name": "DeviantArt",
-          "action": "https://www.deviantart.com/?q=",
-          "color": "#37ffbe"
+          "action": "https://www.deviantart.com/?q="
         },
         {
           "name": "Dribbble",
-          "action": "https://dribbble.com/search?q=",
-          "color": "#f082ac"
+          "action": "https://dribbble.com/search?q="
         },
         {
           "name": "Behance",
-          "action": "https://www.behance.net/search?search=",
-          "color": "#377cff"
+          "action": "https://www.behance.net/search/projects?search="
         }
       ]
     },
@@ -516,88 +482,71 @@
       "data": [
         {
           "name": "Spotify",
-          "action": "https://open.spotify.com/search/",
-          "color": "#58e087"
+          "action": "https://open.spotify.com/search/"
         },
         {
           "name": "Apple Music",
-          "action": "https://music.apple.com/search?term=",
-          "color": "#ff6a7a"
+          "action": "https://music.apple.com/search?term="
         },
         {
           "name": "SoundCloud",
-          "action": "https://soundcloud.com/search?q=",
-          "color": "#FF8B51"
+          "action": "https://soundcloud.com/search?q="
         },
         {
           "name": "YouTube Music",
-          "action": "https://music.youtube.com/search?q=",
-          "color": "#ff5454"
+          "action": "https://music.youtube.com/search?q="
         },
         {
           "name": "Amazon Music",
-          "action": "https://music.amazon.com.br/search/",
-          "color": "#25d1da"
+          "action": "https://music.amazon.com.br/search/"
         },
         {
           "name": "Deezer",
-          "action": "https://www.deezer.com/search/",
-          "color": "#c37eff"
+          "action": "https://www.deezer.com/search/"
         },
         {
           "name": "TIDAL",
-          "action": "https://listen.tidal.com/search?q=",
-          "color": "#999999"
+          "action": "https://listen.tidal.com/search?q="
         },
         {
           "name": "TuneIn",
-          "action": "https://tunein.com/search/?query=",
-          "color": "#36d7cd"
+          "action": "https://tunein.com/search/?query="
         },
         {
           "name": "Letras",
-          "action": "https://www.letras.mus.br/?q=",
-          "color": "#dcdf3e"
+          "action": "https://www.letras.mus.br/?q="
         },
         {
           "name": "Vagalume",
-          "action": "https://www.vagalume.com.br/search?q=",
-          "color": "#ccf230"
+          "action": "https://www.vagalume.com.br/search?q="
         },
         {
           "name": "Lastfm",
-          "action": "https://www.last.fm/search?q=",
-          "color": "#ff5050"
+          "action": "https://www.last.fm/search?q="
         },
         {
           "name": "Discogs",
-          "action": "https://www.discogs.com/search/?q=",
-          "color": "#F5Df2E"
+          "action": "https://www.discogs.com/search/?q="
         },
         {
           "name": "Genius",
-          "action": "https://genius.com/search?q=",
-          "color": "#f5f575"
+          "action": "https://genius.com/search?q="
         },
         {
           "name": "Musixmatch",
-          "action": "https://www.musixmatch.com/search/",
-          "color": "#ff6b6b"
+          "action": "https://www.musixmatch.com/search/"
         },
         {
           "name": "Bandcamp",
-          "action": "https://bandcamp.com/search?q=",
-          "color": "#4ab1cd"
+          "action": "https://bandcamp.com/search?q="
         },
         {
           "name": "Hype Machine",
-          "action": "http://hypem.com/search/",
-          "color": "#9ed664"
+          "action": "http://hypem.com/search/"
         },
         {
           "name": "Audius",
-          "action": "https://audius.co/search/",
-          "color": "#bb65ff"
+          "action": "https://audius.co/search/"
         }
       ],
       "youtube_channels": [
@@ -1175,88 +1124,71 @@
       "data": [
         {
           "name": "LinkedIn",
-          "action": "https://www.linkedin.com/jobs/search/?keywords=",
-          "color": "#32b8ff"
+          "action": "https://www.linkedin.com/jobs/search/?keywords="
         },
         {
           "name": "Glassdoor",
-          "action": "https://www.glassdoor.com.br/Job/jobs.htm?sc.keyword=",
-          "color": "#46d074"
+          "action": "https://www.glassdoor.com.br/Job/jobs.htm?sc.keyword="
         },
         {
           "name": "Catho",
-          "action": "https://www.catho.com.br/vagas/?q=",
-          "color": "#ff70ad"
+          "action": "https://www.catho.com.br/vagas/?q="
         },
         {
           "name": "Gupy",
-          "action": "https://portal.gupy.io/job-search/term=",
-          "color": "#5c9eff"
+          "action": "https://portal.gupy.io/job-search/term="
         },
         {
           "name": "Infojobs",
-          "action": "https://www.infojobs.com.br/empregos.aspx?palabra=",
-          "color": "#2391ff"
+          "action": "https://www.infojobs.com.br/empregos.aspx?palabra="
         },
         {
           "name": "Indeed",
-          "action": "https://br.indeed.com/jobs/?q=",
-          "color": "#4689ff"
+          "action": "https://br.indeed.com/jobs/?q="
         },
         {
           "name": "Adzuna",
-          "action": "https://www.adzuna.com.br/search?q=",
-          "color": "#39c74d"
+          "action": "https://www.adzuna.com.br/search?q="
         },
         {
           "name": "Vagas",
-          "action": "https://www.vagas.com.br/vagas-de-",
-          "color": "#02a97f"
+          "action": "https://www.vagas.com.br/vagas-de-"
         },
         {
           "name": "Jooble",
-          "action": "https://br.jooble.org/SearchResult?ukw=",
-          "color": "#87d644"
+          "action": "https://br.jooble.org/SearchResult?ukw="
         },
         {
           "name": "Trampos",
-          "action": "https://trampos.co/oportunidades/?tr=",
-          "color": "#7575ff"
+          "action": "https://trampos.co/oportunidades/?tr="
         },
         {
           "name": "Talent",
-          "action": "https://br.talent.com/jobs?k=",
-          "color": "#ff6a54"
+          "action": "https://br.talent.com/jobs?k="
         },
         {
           "name": "Upwork",
-          "action": "https://www.upwork.com/nx/jobs/search/?q=",
-          "color": "#88f456"
+          "action": "https://www.upwork.com/nx/jobs/search/?q="
         },
         {
           "name": "Fiverr",
-          "action": "https://www.fiverr.com/search/gigs?query=",
-          "color": "#2bdd89"
+          "action": "https://www.fiverr.com/search/gigs?query="
         },
         {
           "name": "99freelas",
-          "action": "https://www.99freelas.com.br/projects?q=",
-          "color": "#00b8ff"
+          "action": "https://www.99freelas.com.br/projects?q="
         },
         {
           "name": "BNE",
-          "action": "https://www.bne.com.br/vagas-de-emprego/",
-          "color": "#6199ed"
+          "action": "https://www.bne.com.br/vagas-de-emprego/"
         },
         {
           "name": "Trabalha Brasil",
-          "action": "https://www.trabalhabrasil.com.br/vagas-empregos/",
-          "color": "#ffc414"
+          "action": "https://www.trabalhabrasil.com.br/vagas-empregos/"
         },
         {
           "name": "Concursos Brasil",
-          "action": "https://concursosnobrasil.com/busca/?q=",
-          "color": "#2aa1ff"
+          "action": "https://concursosnobrasil.com/busca/?q="
         }
       ]
     },

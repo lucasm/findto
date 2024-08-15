@@ -56,7 +56,7 @@
   display: inline-block;
   padding: 6rem 2rem;
   width: 100%;
-  max-width: 1024px;
+  max-width: 800px;
 }
 
 .actionContainer {
@@ -81,7 +81,6 @@
   background: var(--color-bg-white);
 }
 .page section h2 {
-  line-height: 1.25;
   margin-bottom: 2rem;
   color: var(--color-text-black);
 }
@@ -91,7 +90,6 @@
 .page section p {
   font-size: var(--font-size);
   margin-bottom: 2rem;
-  line-height: 1.5;
 }
 .page section h1 + p {
   margin-top: 2.5rem;
@@ -106,16 +104,13 @@
   width: 8rem;
   height: 8rem;
   margin-bottom: 2rem;
-  background-size: 3rem;
-  background-image: url('/findto-icon-black.svg');
+  background-size: 4rem;
+  background-image: url('/findto-sparkle.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--color-white-translucent-2);
   border-radius: 33.333%;
   box-shadow: var(--shadow-2);
-}
-.icon img {
-  height: 12rem;
 }
 
 /* Card Duos */
@@ -141,12 +136,6 @@
 }
 
 @media screen and (min-width: 640px) {
-  .icon {
-    width: 10rem;
-    height: 10rem;
-    background-size: 4rem;
-  }
-
   .cardDuos div {
     grid-template-columns: 1fr 1fr;
     grid-gap: 5rem;
