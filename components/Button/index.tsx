@@ -9,7 +9,7 @@ type Props = {
 
 export default function Button(props: Props) {
   return (
-    <Link href={props.url} className={Styles.button + ' ' + props.color}>
+    <Link href={props?.url || ''} className={Styles.button + ' ' + props.color}>
       {props.children}
     </Link>
   )
