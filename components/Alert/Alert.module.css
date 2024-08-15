@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 22px auto;
   width: auto;
-  padding: 3rem;
+  padding: 2.5rem 3rem;
   margin: 0 1rem 1rem;
   height: auto;
   color: var(--color-text-black);
@@ -22,7 +22,7 @@
 @media screen and (max-width: 480px) {
   .container {
     grid-template-columns: 1fr;
-    padding: 2rem;
+    padding: 2.5rem;
     gap: 1rem;
     font-size: var(--font-size-small);
   }

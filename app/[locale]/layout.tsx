@@ -4,7 +4,7 @@ import localFont from 'next/font/local'
 // import { Providers } from './providers'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
-import UserAnalytics from '@/components/UserAnalytics'
+import Telemetry from '@/components/Telemetry'
 
 const fontFamily = localFont({
   src: [
@@ -59,7 +59,7 @@ export default async function RootLayout({
         </NextIntlClientProvider>
       </body>
 
-      <UserAnalytics />
+      <Telemetry />
     </html>
   )
 }

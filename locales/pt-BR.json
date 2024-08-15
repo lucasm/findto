@@ -32,7 +32,7 @@
     "community": "Comunidade",
     "privacy": "Privacidade",
     "terms": "Termos",
-    "donate": "Fazer uma doação",
+    "donate": "Faça uma doação",
     "more": "Mais",
     "learnMore": "Saiba mais",
     "viewNearbyPlaces": "Ver locais próximos",
@@ -51,7 +51,7 @@
       "url": "https://forms.gle/r6XAyB1ZLn9qzwp16"
     },
     "warnings": {
-      "torrent": "Aviso: Torrent não é ilegal, mas o download de conteúdos protegidos por direitos autorais pode ser, dependendo da sua jurisdição local. Verifique a legislação da sua região para evitar multas ou problemas legais."
+      "torrent": "Aviso: O protocolo BitTorrent não é ilegal, mas fazer download de conteúdo protegido por direitos autorais pode ser, dependendo da sua jurisdição local. Verifique a legislação da sua região para evitar multas ou ações judiciais."
     }
   },
   "categories": [

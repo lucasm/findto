@@ -62,11 +62,11 @@ Quickly search the same term on diverse sources. See also the privacy and carbon
 
 ## 🔴 Sources
 
-The search sources available on Findto are chosen by the criteria:
+The search sources available on Findto are selected based on the following criteria:
 
-1. Service popularity.
-2. Service committed to open access.
-3. Service legally respect privacy and copyright.
+1. Popularity of the service.
+1. Commitment to open access.
+1. Adherence to legal standards for privacy and copyright.
 
 For more details, go to [Wiki](https://github.com/lucasm/findto/wiki).
 
@@ -89,6 +89,10 @@ View opened [Issues](https://github.com/lucasm/findto/issues) thats need help, b
 
 Made in Brazil with love by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app) and community.
 
-### Privacy & Terms
+## 🟣 Legal
 
-Findto respects users privacy and don't store searches. Findto also show materials protected by intelectual property (brands of services). Read our [Privacy](https://findto.app/privacy) and [Terms](https://findto.app/terms).
+Findto is built with privacy in mind and does not store user searches.
+
+Findto displays automated content from external APIs without review, solely for user convenience, and may include materials protected by intellectual property, such as trademarks.
+
+Please, read our [Privacy Policy](https://findto.app/privacy) and [Terms of Service](https://findto.app/terms).
