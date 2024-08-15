@@ -2,49 +2,50 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import axios from 'axios'
 import { ITrends } from '../../../interfaces/trends'
 
-export default async function endpoint(req: NextApiRequest, res: NextApiResponse): Promise<void> {
+export default async function endpoint(
+  req: NextApiRequest,
+  res: NextApiResponse
+): Promise<void> {
   const {
     query: { country },
   } = req
 
-  if (country) {
-    let url =
-      'https://rss.applemarketingtools.com/api/v2/' + country + '/music/most-played/24/albums.json'
+  if (!country) {
+    return res.status(400).json({ message: 'Missing parameter COUNTRY_CODE' })
+  }
 
-    // 'https://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&limit=12&api_key=' +
-    // process.env.NEXT_PUBLIC_API_LASTFM +
-    // '&format=json'
+  const url = `https://rss.applemarketingtools.com/api/v2/${country}/music/most-played/24/albums.json`
 
-    await axios
-      .get(url)
-      .then(({ data }) => {
-        var a = []
+  try {
+    const { data } = await axios.get(url)
 
-        // for (var i in data.feed.results) {
-        //   a.push({
-        //     title: data.tracks.track[i].artist.name + ': ' + data.tracks.track[i].name,
-        //   })
-        // }
+    const trends = data.feed.results.map((item: any) => ({
+      title: `${item.artistName} - ${item.name}`,
+      image: item.artworkUrl100.replace('100x100bb.jpg', '500x500bb.jpg'),
+    }))
 
-        data.feed.results.forEach((item) => {
-          a.push({
-            title: item.artistName + ' - ' + item.name,
-            image: item.artworkUrl100.replace('100x100bb.jpg', '500x500bb.jpg'),
-          })
-        })
+    const responsePayload: ITrends = {
+      credits_title: 'Apple Music',
+      credits_url: 'https://www.apple.com/apple-music/',
+      data: trends,
+    }
 
-        const x: ITrends = {
-          credits_title: 'Apple Music',
-          credits_url: 'https://www.apple.com/apple-music/',
-          data: a,
-        }
-
-        res.status(200).send(x)
-      })
-      .catch(({ err }) => {
-        res.status(400).json({ err })
-      })
-  } else {
-    res.status(405).end('Missing parameters COUNTRY_CODE - ' + country)
+    res.status(200).json(responsePayload)
+  } catch (error) {
+    console.error('Error fetching data:', error)
+    res.status(500).json({
+      message: 'Error fetching data',
+      error: error,
+    })
   }
 }
+
+// 'https://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&limit=12&api_key=' +
+// process.env.NEXT_PUBLIC_API_LASTFM +
+// '&format=json'
+
+// for (var i in data.feed.results) {
+//   a.push({
+//     title: data.tracks.track[i].artist.name + ': ' + data.tracks.track[i].name,
+//   })
+// }

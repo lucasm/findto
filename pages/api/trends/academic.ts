@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { ITrends } from '../../../interfaces/trends'
 
-export default function endpointAcademic(req: NextApiRequest, res: NextApiResponse) {
+export default function endpoint(req: NextApiRequest, res: NextApiResponse) {
   const {
     query: { country },
   } = req

@@ -2,45 +2,44 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import axios from 'axios'
 import { ITrends } from '../../../interfaces/trends'
 
-export default async function endpoint(req: NextApiRequest, res: NextApiResponse): Promise<void> {
-  // parameters
+export default async function endpoint(
+  req: NextApiRequest,
+  res: NextApiResponse
+): Promise<void> {
   const {
     query: { country },
   } = req
 
-  if (country) {
-    // https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&regionCode=' + country + '&maxResults=16&key=
+  if (!country) {
+    return res
+      .status(400)
+      .json({ message: 'Missing parameter: COUNTRY_CODE is required.' })
+  }
 
-    let url =
-      'https://api.themoviedb.org/3/trending/all/day?language=' +
-      country +
-      '&api_key=' +
-      process.env.NEXT_PUBLIC_API_TMDB
+  const url = `https://api.themoviedb.org/3/trending/all/day?language=${country}&api_key=${process.env.NEXT_PUBLIC_API_TMDB}`
 
-    await axios
-      .get(url)
-      .then(({ data }) => {
-        var a = []
+  try {
+    const { data } = await axios.get(url)
 
-        data.results.forEach((item) => {
-          a.push({
-            title: item.title ? item.title : item.name,
-            image: 'https://image.tmdb.org/t/p/w500/' + item.poster_path,
-          })
-        })
+    const trends = data.results.map((item: any) => ({
+      title: item.title || item.name,
+      image: `https://image.tmdb.org/t/p/w500/${item.poster_path}`,
+    }))
 
-        const x: ITrends = {
-          credits_title: 'TMDB',
-          credits_url: 'https://www.themoviedb.org/',
-          data: a,
-        }
+    const responsePayload: ITrends = {
+      credits_title: 'TMDB',
+      credits_url: 'https://www.themoviedb.org/',
+      data: trends,
+    }
 
-        res.status(200).send(x)
-      })
-      .catch(({ err }) => {
-        res.status(400).json({ err })
-      })
-  } else {
-    res.status(405).end('Missing parameters COUNTRY_CODE - ' + country)
+    res.status(200).json(responsePayload)
+  } catch (error) {
+    console.error('Error fetching data:', error)
+    res.status(500).json({
+      message: 'Error fetching data',
+      error: error,
+    })
   }
 }
+
+// https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&regionCode=' + country + '&maxResults=16&key=

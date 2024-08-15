@@ -4,8 +4,7 @@ import CardsLink from '@/components/CardsLink'
 import { useTranslations } from 'next-intl'
 
 const title = 'Community'
-const description =
-  'Help make a better internet. Decentralized, accessible and sustainable searches.'
+const description = 'Help us create a better internet.'
 
 export const metadata = {
   title: title,
@@ -36,13 +35,13 @@ export default function CommunityPage() {
             </p>
 
             <p>
-              We are developing a free and open source, refreshed search
-              experience.
+              Our mission is to put people on control of the algorithms to
+              positively impacts the internet and the planet.
             </p>
 
             <p>
-              The Findto mission is to put people on control of the algorithms
-              to positively impacts the internet and the planet.
+              We are developing a refreshed search experience, free and open
+              source.
             </p>
 
             <p>

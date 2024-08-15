@@ -123,7 +123,7 @@ export default function AppHeader() {
         return <IconFinance />
       case 'Games':
         return <IconGames />
-      case 'Torrents':
+      case 'Torrent':
         return <IconDownload />
       default:
         return <Icon />

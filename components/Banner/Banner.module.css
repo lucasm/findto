@@ -27,8 +27,8 @@
   background: var(--color-text-black);
   color: var(--color-bg-white);
   border: 2px solid transparent;
-  height: var(--size-small);
-  padding: 0 2rem;
+  min-height: var(--size-small);
+  padding: 0 1rem;
   border-radius: var(--radius-big);
   width: 100%;
   font-size: var(--font-size);
@@ -74,7 +74,6 @@
     font-size: var(--font-size);
   }
   .container a {
-    height: var(--size-small);
     font-size: var(--font-size);
   }
   .container div:nth-child(2) {

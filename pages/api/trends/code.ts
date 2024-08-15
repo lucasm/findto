@@ -2,31 +2,33 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import axios from 'axios'
 import { ITrends } from '../../../interfaces/trends'
 
-export default async function endpoint(req: NextApiRequest, res: NextApiResponse): Promise<void> {
-  let url = 'https://api.gitterapp.com'
+export default async function endpoint(
+  req: NextApiRequest,
+  res: NextApiResponse
+): Promise<void> {
+  const url = 'https://api.gitterapp.com'
 
-  await axios
-    .get(url)
-    .then(({ data }) => {
-      var a = []
+  try {
+    const { data } = await axios.get(url)
 
-      data.slice(0, 22).forEach((item) => {
-        a.push({
-          title: item.author + '/' + item.name,
-          url: item.url,
-          image: item.avatar,
-        })
-      })
+    const trends = data.slice(0, 22).map((item: any) => ({
+      title: `${item.author}/${item.name}`,
+      url: item.url,
+      image: item.avatar,
+    }))
 
-      const x: ITrends = {
-        credits_title: 'GitHub',
-        credits_url: 'https://github.com/',
-        data: a,
-      }
+    const responsePayload: ITrends = {
+      credits_title: 'GitHub',
+      credits_url: 'https://github.com/',
+      data: trends,
+    }
 
-      res.status(200).send(x)
+    res.status(200).json(responsePayload)
+  } catch (error) {
+    console.error('Error fetching data:', error)
+    res.status(500).json({
+      message: 'Error fetching data',
+      error: error,
     })
-    .catch(({ err }) => {
-      res.status(400).json({ err })
-    })
+  }
 }

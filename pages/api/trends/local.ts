@@ -2,56 +2,47 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import axios from 'axios'
 import { ITrends } from '../../../interfaces/trends'
 
-export default async function endpoint(req: NextApiRequest, res: NextApiResponse): Promise<void> {
+export default async function endpoint(
+  req: NextApiRequest,
+  res: NextApiResponse
+): Promise<void> {
   const {
     query: { latitude, longitude, language },
   } = req
 
-  if (latitude && longitude && language) {
-    let url =
-      'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' +
-      latitude +
-      ',' +
-      longitude +
-      '&language=' +
-      language +
-      '&radius=1500&key=' +
-      process.env.NEXT_PUBLIC_API_GOOGLEMAPS
+  if (!latitude || !longitude || !language) {
+    return res.status(400).json({
+      message:
+        'Missing parameters: latitude, longitude, and language are required.',
+      latitude,
+      longitude,
+      language,
+    })
+  }
 
-    await axios
-      .get(url)
-      .then(({ data }) => {
-        var a = []
+  const url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${latitude},${longitude}&language=${language}&radius=1500&key=${process.env.NEXT_PUBLIC_API_GOOGLEMAPS}`
 
-        data.results.forEach((item) => {
-          a.push({
-            title: item.name,
-            url: 'https://www.google.com/maps/place/?q=place_id:' + item.place_id,
-            image: item.icon,
-          })
-        })
+  try {
+    const { data } = await axios.get(url)
 
-        const x: ITrends = {
-          credits_title: 'Google Maps',
-          credits_url: 'https://maps.google.com',
-          data: a,
-        }
+    const trends = data.results.map((item: any) => ({
+      title: item.name,
+      url: `https://www.google.com/maps/place/?q=place_id:${item.place_id}`,
+      image: item.icon,
+    }))
 
-        res.status(200).send(x)
-      })
-      .catch(({ err }) => {
-        res.status(400).json({ err })
-      })
-  } else {
-    res
-      .status(405)
-      .end(
-        'Missing parameters *latitude, *longitude, *language: ' +
-          latitude +
-          ', ' +
-          longitude +
-          ', ' +
-          language
-      )
+    const responsePayload: ITrends = {
+      credits_title: 'Google Maps',
+      credits_url: 'https://maps.google.com',
+      data: trends,
+    }
+
+    res.status(200).json(responsePayload)
+  } catch (error) {
+    console.error('Error fetching data:', error)
+    res.status(500).json({
+      message: 'Error fetching data',
+      error: error,
+    })
   }
 }

@@ -65,6 +65,6 @@
   }
   .container p,
   .container ul li a {
-    font-size: var(--font-size-small);
+    font-size: 0.8rem;
   }
 }

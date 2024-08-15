@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  grid-template-columns: 22px auto;
+  width: auto;
+  padding: 3rem;
+  margin: 0 1rem 1rem;
+  height: auto;
+  color: var(--color-text-black);
+  font-size: var(--font-size);
+  border-radius: var(--radius-big);
+  transition: var(--transition);
+  text-align: left;
+  gap: 2rem;
+  background: var(--color-white-translucent);
+}
+.container svg {
+  width: 22px;
+  height: 22px;
+  color: var(--color-text-black);
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    gap: 1rem;
+    font-size: var(--font-size-small);
+  }
+}

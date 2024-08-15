@@ -1,50 +1,51 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import axios from 'axios'
 import { ITrends } from '../../../interfaces/trends'
-import woeid from 'woeid'
+import { getWoeid } from '../../../utils/woeid'
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse): Promise<void> {
+export default async function endpoint(
+  req: NextApiRequest,
+  res: NextApiResponse
+): Promise<void> {
   const {
     query: { country },
   } = req
 
-  if (country) {
-    const countryWoeid = woeid.getWoeid(country)
+  if (!country) {
+    return res
+      .status(400)
+      .json({ message: 'Parâmetro COUNTRY_CODE está ausente' })
+  }
 
-    try {
-      // Twitter API Trends/Place
-      const response = await axios.get(
-        'https://api.twitter.com/1.1/trends/place.json?id=' + countryWoeid.woeid,
-        {
-          headers: {
-            Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TWITTER}`,
-          },
-        }
-      )
+  const countryWoeid = getWoeid(country as string)
 
-      const { trends } = response.data[0]
-      var a = []
-
-      trends.forEach((item) => {
-        a.push({
-          title: item.name,
-          // url: item.url,
-        })
-      })
-
-      const x: ITrends = {
-        credits_title: 'X',
-        credits_url: 'https://twitter.com/',
-        data: a,
+  try {
+    const { data } = await axios.get(
+      `https://api.twitter.com/1.1/trends/place.json?id=${countryWoeid}`,
+      {
+        headers: {
+          Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TWITTER}`,
+        },
       }
+    )
 
-      // Retornar os dados como resposta da API
-      res.status(200).json(x)
-    } catch (error) {
-      console.error(error)
-      res.status(500).json({ message: 'Erro ao buscar os trending topics do Twitter' })
+    const trends =
+      data[0]?.trends.map((item: { name: string }) => ({
+        title: item.name,
+      })) || []
+
+    const responsePayload: ITrends = {
+      credits_title: 'X',
+      credits_url: 'https://x.com/',
+      data: trends,
     }
-  } else {
-    res.status(405).end('Missing parameters COUNTRY_CODE - ' + country)
+
+    return res.status(200).json(responsePayload)
+  } catch (error: any) {
+    console.error('Error fetching data:', error)
+    res.status(500).json({
+      message: 'Error fetching data.',
+      error: error,
+    })
   }
 }

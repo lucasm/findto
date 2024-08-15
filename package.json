@@ -1,6 +1,6 @@
 {
   "name": "findto-app",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -19,8 +19,7 @@
     "regenerator-runtime": "^0.13.11",
     "rss-parser": "^3.12.0",
     "swiper": "^11.1.9",
-    "swr": "^2.0.3",
-    "woeid": "^2.0.3"
+    "swr": "^2.0.3"
   },
   "devDependencies": {
     "@types/node": "^17.0.30",

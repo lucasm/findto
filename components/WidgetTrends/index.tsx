@@ -4,10 +4,12 @@ import Styles from './WidgetTrends.module.css'
 import { fetcher } from '@/utils/http'
 import useSWR from 'swr'
 import { useSearch } from '@/contexts/SearchContext'
-import Loader from '../Loader'
+import Loader from '@/components/Loader'
+import ButtonGeolocation from '@/components/ButtonGeolocation'
+import Alert from '@/components/Alert'
 import { ITrends, ITrendsItem } from '@/interfaces/trends'
 import { useEffect, useState } from 'react'
-import ButtonGeolocation from '../ButtonGeolocation'
+
 import { useTranslations } from 'next-intl'
 
 export default function SearchTrends() {
@@ -350,6 +352,14 @@ export default function SearchTrends() {
     dataLegal,
     errorLegal,
   ])
+
+  if (category === 'Torrent') {
+    return <Alert>{t('warnings.torrent')}</Alert>
+  }
+
+  if (category === 'Games') {
+    return null
+  }
 
   return (
     <section className={Styles.container + ' ' + Styles[`trends${category}`]}>

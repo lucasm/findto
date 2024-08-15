@@ -49,6 +49,9 @@
     "feedback": {
       "title": "Feedback",
       "url": "https://forms.gle/r6XAyB1ZLn9qzwp16"
+    },
+    "warnings": {
+      "torrent": "Aviso: Torrent não é ilegal, mas o download de conteúdos protegidos por direitos autorais pode ser, dependendo da sua jurisdição local. Verifique a legislação da sua região para evitar multas ou problemas legais."
     }
   },
   "categories": [
@@ -393,6 +396,10 @@
           "title": "globoplay"
         },
         {
+          "id": "UCteW9b13yFu8Kf8hnt12__A",
+          "title": "CanalBrasil"
+        },
+        {
           "id": "UCE8deXi-Eea3SuEV1Q1L4ug",
           "title": "otaviouga"
         }
@@ -563,8 +570,8 @@
           "title": "rollingstonebrasil"
         },
         {
-          "id": "UCteW9b13yFu8Kf8hnt12__A",
-          "title": "CanalBrasil"
+          "id": "UCkg3WzpzJPMrre4ZRGHixgQ",
+          "title": "DeezerBrasil"
         },
         {
           "id": "UCO6tCk8-AjEQPo6hBvSLuQQ",
@@ -581,10 +588,6 @@
         {
           "id": "UCYxLlKfySq3RVLKdNSQ1Gug",
           "title": "WarnerMusicBrasil"
-        },
-        {
-          "id": "UCkg3WzpzJPMrre4ZRGHixgQ",
-          "title": "DeezerBrasil"
         },
         {
           "id": "UC4eYXhJI4-7wSWc8UNRwD4A",
@@ -1636,6 +1639,32 @@
           "name": "Product Hunt",
           "action": "https://www.producthunt.com/search?q="
         }
+      ],
+      "youtube_channels": [
+        {
+          "id": "UCdmGjywrxeOPfC7vDllmSgQ",
+          "title": "tecmundo"
+        },
+        {
+          "id": "UC_bXJnsgwOqEPA_-6N6faKw",
+          "title": "canaltech"
+        },
+        {
+          "id": "UC6ZImLwiIaVRYIGycqh5iLA",
+          "title": "MacMagazine"
+        },
+        {
+          "id": "UCCbD39MVnMsTLGxsHLnOKlg",
+          "title": "oloopinfinito"
+        },
+        {
+          "id": "UCEf5U1dB5a2e2S-XUlnhxSA",
+          "title": "Diolinux"
+        },
+        {
+          "id": "UCjTGBll7Sz8VCYiPPkIZpaw",
+          "title": "GeekAntenado"
+        }
       ]
     },
     {
@@ -1698,12 +1727,49 @@
       ]
     },
     {
-      "name": "Torrents",
+      "name": "Torrent",
       "active": true,
       "data": [
         {
           "name": "The Pirate Bay",
-          "action": "https://www2.thepiratebay3.to/s/?q="
+          "action": "https://thepiratebay.org/search.php?q="
+        },
+        {
+          "name": "1337x",
+          "action": "https://1337x.to/search/",
+          "additional": "/1/"
+        },
+        {
+          "name": "YTS",
+          "action": "https://yts.mx/browse-movies/"
+        },
+        {
+          "name": "EZTV",
+          "action": "https://eztv.re/search/"
+        },
+        {
+          "name": "TorrentGalaxy",
+          "action": "https://torrentgalaxy.to/torrents.php?search=="
+        },
+        {
+          "name": "Torrentz2",
+          "action": "https://www.torrentz.eu.com/#gsc.tab=0&gsc.q="
+        },
+        {
+          "name": "Torrends",
+          "action": "https://search.torrends.to/"
+        },
+        {
+          "name": "TorrentDownloads",
+          "action": "https://www.torrentdownloads.me/search/?search="
+        },
+        {
+          "name": "Torlock",
+          "action": "https://www.torlock.com/all/torrents/"
+        },
+        {
+          "name": "Nyaa",
+          "action": "https://nyaa.si/?f=0&c=0_0&q="
         }
       ]
     }

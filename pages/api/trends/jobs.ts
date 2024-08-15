@@ -6,43 +6,37 @@ export default async function endpoint(
   req: NextApiRequest,
   res: NextApiResponse
 ): Promise<void> {
-  // parameters
   const {
     query: { country },
   } = req
 
-  if (country) {
-    let url =
-      'https://api.adzuna.com/v1/api/jobs/' +
-      String(country).toLowerCase() +
-      '/categories?app_id=' +
-      process.env.NEXT_PUBLIC_API_ADZUNA_ID +
-      '&app_key=' +
-      process.env.NEXT_PUBLIC_API_ADZUNA
+  if (!country) {
+    return res.status(400).json({ message: 'Missing parameter COUNTRY_CODE' })
+  }
 
-    await axios
-      .get(url)
-      .then(({ data }) => {
-        var a = []
+  const countryLowerCase = country.toString().toLowerCase()
 
-        data.results.slice(0, 22).forEach((item) => {
-          a.push({
-            title: item.label.replace('Vagas em ', ''),
-          })
-        })
+  const url = `https://api.adzuna.com/v1/api/jobs/${countryLowerCase}/categories?app_id=${process.env.NEXT_PUBLIC_API_ADZUNA_ID}&app_key=${process.env.NEXT_PUBLIC_API_ADZUNA}`
 
-        const x: ITrends = {
-          credits_title: 'Adzuna',
-          credits_url: 'https://adzuna.com',
-          data: a,
-        }
+  try {
+    const { data } = await axios.get(url)
 
-        res.status(200).send(x)
-      })
-      .catch(({ err }) => {
-        res.status(400).json({ err })
-      })
-  } else {
-    res.status(405).end('Missing parameters COUNTRY_CODE - ' + country)
+    const trends = data.results.slice(0, 22).map((item: any) => ({
+      title: item.label.replace('Vagas em ', ''),
+    }))
+
+    const responsePayload: ITrends = {
+      credits_title: 'Adzuna',
+      credits_url: 'https://adzuna.com',
+      data: trends,
+    }
+
+    res.status(200).json(responsePayload)
+  } catch (error) {
+    console.error('Error fetching data:', error)
+    res.status(500).json({
+      message: 'Error fetching data',
+      error: error,
+    })
   }
 }

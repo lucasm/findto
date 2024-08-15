@@ -11,7 +11,7 @@
     "community": "Community",
     "privacy": "Privacy",
     "terms": "Terms",
-    "donate": "Donate",
+    "donate": "Make a donation",
     "more": "More",
     "learnMore": "Learn more",
     "viewNearbyPlaces": "View nearby places",
@@ -28,6 +28,9 @@
     "feedback": {
       "title": "Feedback",
       "url": "https://forms.gle/US69JvUT1qxYkiF58"
+    },
+    "warnings": {
+      "torrent": "Notice: Torrent is not illegal, but downloading copyrighted content may be, depending on local laws. Check your local legislation to avoid fines and legal issues."
     }
   },
   "categories": [
@@ -199,6 +202,10 @@
           "name": "LinkedIn",
           "action": "https://www.linkedin.com/search/results/index/?keywords=",
           "color": "#39BAFF"
+        },
+        {
+          "name": "Medium",
+          "action": "https://medium.com/search?q="
         },
         {
           "name": "Discord",
@@ -683,88 +690,113 @@
       "data": [
         {
           "name": "Reuters",
-          "action": "https://www.reuters.com/site-search/?query=",
-          "color": "#ffa54b"
+          "action": "https://www.reuters.com/site-search/?query="
         },
         {
           "name": "BBC",
-          "action": "https://www.bbc.co.uk/search?q=",
-          "color": "#aaaaaa"
+          "action": "https://www.bbc.co.uk/search?q="
         },
         {
           "name": "CNN",
-          "action": "https://edition.cnn.com/search?q=",
-          "color": "#ff5959"
+          "action": "https://edition.cnn.com/search?q="
         },
         {
           "name": "NY Times",
-          "action": "https://www.nytimes.com/search?query=",
-          "color": "#dddddd"
+          "action": "https://www.nytimes.com/search?query="
         },
         {
           "name": "Guardian",
-          "action": "https://theguardian.com/search?q=",
-          "color": "#4077d0"
+          "action": "https://theguardian.com/search?q="
         },
         {
           "name": "AP",
-          "action": "https://www.ap.org/search?q=",
-          "color": "#ff5956"
+          "action": "https://www.ap.org/search?q="
         },
         {
           "name": "Aljazeera",
-          "action": "https://www.aljazeera.com/search/?q=",
-          "color": "#ffb34c"
+          "action": "https://www.aljazeera.com/search/?q="
         },
         {
           "name": "Economist",
-          "action": "https://www.economist.com/search?q=",
-          "color": "#ff4640"
+          "action": "https://www.economist.com/search?q="
         },
         {
           "name": "Forbes",
-          "action": "https://www.forbes.com/search/?q=",
-          "color": "#dddddd"
+          "action": "https://www.forbes.com/search/?q="
         },
         {
           "name": "Bloomberg",
-          "action": "https://www.bloomberg.com/search?query=",
-          "color": "#6f65ff"
+          "action": "https://www.bloomberg.com/search?query="
         },
         {
           "name": "Washington Post",
-          "action": "https://www.washingtonpost.com/search/?query=",
-          "color": "#dddddd"
+          "action": "https://www.washingtonpost.com/search/?query="
         },
         {
           "name": "DW",
-          "action": "https://www.dw.com/search/?item=",
-          "color": "#0098ff"
+          "action": "https://www.dw.com/search/?item="
         },
         {
           "name": "RT",
-          "action": "https://www.rt.com/search?q=",
-          "color": "#76bd1d"
-        },
-        {
-          "name": "Medium",
-          "action": "https://medium.com/search?q=",
-          "color": "#999999"
+          "action": "https://www.rt.com/search?q="
         },
         {
           "name": "Flipboard",
-          "action": "https://flipboard.com/search/",
-          "color": "#ff5b5b"
+          "action": "https://flipboard.com/search/"
         },
         {
           "name": "Feedly",
-          "action": "https://feedly.com/i/search/",
-          "color": "#59e076"
+          "action": "https://feedly.com/i/search/"
         },
         {
           "name": "Pocket",
-          "action": "https://app.getpocket.com/search/",
-          "color": "#ff576c"
+          "action": "https://app.getpocket.com/search/"
+        }
+      ],
+      "youtube_channels": [
+        {
+          "id": "UCqnbDFdCpuN8CMEg0VuEBqA",
+          "title": "nytimes"
+        },
+        {
+          "id": "UCQXHTFnQYFTqN0MqmNh9EIA",
+          "title": "BBCWorldService"
+        },
+        {
+          "id": "UCupvZG-5ko_eiXAupbDfxWw",
+          "title": "CNN"
+        },
+        {
+          "id": "UC8Su5vZCXWRag13H53zWVwA",
+          "title": "TIME"
+        },
+        {
+          "id": "UChqUTb7kYRX8-EiaN3XFrSQ",
+          "title": "Reuters"
+        },
+        {
+          "id": "UCHpw8xwDNhU9gdohEcJu4aA",
+          "title": "theGuardian"
+        },
+        {
+          "id": "UCIALMKvObZNtJ6AmdCLP7Lg",
+          "title": "markets"
+        },
+        {
+          "id": "UCeY0bbntWzzVIaj2z3QigXg",
+          "title": "NBCNews"
+        },
+        {
+          "id": "UC52X5wxOL_s5yw0dQk7NtgA",
+          "title": "AssociatedPress"
+        },
+        {
+          "id": "UCLXo7UDZvByw2ixzpQCufnA",
+          "title": "Vox"
+        },
+        {
+          "id": "UCNye-wNBqNL5ZzHSJj3l8Bg",
+          "title": "aljazeeraenglish"
         }
       ]
     },
@@ -1109,27 +1141,19 @@
     },
     {
       "name": "Torrent",
-      "active": false,
+      "active": true,
       "data": [
         {
-          "name": "Pirate Bay",
-          "action": "https://thepiratebay.org/search.php?q=",
-          "color": "#e89d6a"
-        },
-        {
-          "name": "RARBG",
-          "action": "https://rarbgproxied.org/torrents.php?search=",
-          "color": "#3860bb"
+          "name": "The Pirate Bay",
+          "action": "https://thepiratebay.org/search.php?q="
         },
         {
           "name": "1337X",
-          "action": "https://1337x.to/search/",
-          "color": "#d63600"
+          "action": "https://1337x.to/search/"
         },
         {
           "name": "Torrentz2",
-          "action": "https://torrentz2.eu/search?f=",
-          "color": "#369"
+          "action": "https://torrentz2.eu/search?f="
         },
         {
           "name": "Zooqle",
