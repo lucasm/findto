@@ -15,8 +15,8 @@
 .card figure {
   display: flex;
   background: var(--color-white-translucent-2);
-  height: 5rem;
-  width: 5rem;
+  height: 4.5rem;
+  width: 4.5rem;
   margin: 0 auto;
   border-radius: var(--radius-full);
   box-shadow: var(--shadow-2);
@@ -26,15 +26,12 @@
 .card h3 {
   margin-top: 2rem;
 }
-.card svg {
-  width: 1.8rem;
-  height: 1.8rem;
+.card p {
+  font-size: var(--font-size-small);
 }
-.card a {
-  padding: 0.3rem 0.6rem;
-  background: var(--color-white-translucent-2);
-  border-radius: 0.75rem;
-  box-shadow: var(--shadow-2);
+.card svg {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 @media screen and (min-width: 940px) {

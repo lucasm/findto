@@ -2,7 +2,6 @@
 .header {
   position: relative;
   background: var(--color-bg-white);
-  color: var(--color-text-black);
 }
 .header .container {
   display: flex;
@@ -11,6 +10,7 @@
   padding: 0 2rem;
   gap: 1.5rem;
   max-width: var(--max-size-container);
+  color: var(--color-text-black);
 }
 
 /* Logo */
@@ -56,11 +56,15 @@
   display: inline-block;
   padding: 6rem 2rem;
   width: 100%;
-  max-width: 800px;
+  max-width: var(--max-size-container);
+  color: var(--color-black);
+}
+.miniContainer {
+  max-width: var(--max-size-container-2);
 }
 
 .actionContainer {
-  max-width: 800px;
+  max-width: var(--max-size-container-2);
   margin: 0 auto;
   color: var(--color-text-black);
 }
@@ -115,9 +119,10 @@
 
 /* Card Duos */
 .cardDuos {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  max-width: var(--max-size-container-2);
 }
 .cardDuos div {
   display: grid;
@@ -159,7 +164,7 @@
   }
 
   .cardDuos {
-    margin: 2rem 0;
+    margin: 2rem auto;
   }
   .cardDuos figure {
     max-width: 350px;

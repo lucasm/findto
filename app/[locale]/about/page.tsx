@@ -1,16 +1,14 @@
 import Style from '@/layouts/WebsiteLayout/WebsiteLayout.module.css'
 import WebsiteLayout from '@/layouts/WebsiteLayout'
-import CardsFeat from '@/components/CardsFeat'
-import Button from '@/components/Button'
-import Svg from '@/components/Svg'
 import { useTranslations } from 'next-intl'
-
-const description =
-  'Findto is a tool for decentralized Web & AI search. Get control over search algorithms, privacy and carbon.'
+import CardsFeat from '@/components/CardsFeat'
+import SvgIllustrations from '@/components/SvgIllustrations'
+import Button from '@/components/Button'
 
 export const metadata = {
   title: 'About',
-  description: description,
+  description:
+    'Findto is a decentralized search assistant. Get control over AI and Web search. Explore a healthy internet.',
 }
 
 export default function PageAbout() {
@@ -19,7 +17,7 @@ export default function PageAbout() {
   return (
     <WebsiteLayout>
       <section className="colors">
-        <div className={Style.container}>
+        <div className={Style.container + ' ' + Style.miniContainer}>
           <figure className={Style.icon}></figure>
           <h1>{t('slogan')}</h1>
           <p>
@@ -34,28 +32,28 @@ export default function PageAbout() {
           <div className={Style.cardDuos}>
             <div>
               <figure>
-                <Svg type="people" color="colorsSvg" />
+                <SvgIllustrations type="people" color="colorsSvg" />
               </figure>
 
               <article>
                 <h2>Get control over algorithms</h2>
                 <p>
-                  Findto is putting people on control of the algorithms. Find
-                  anything switching between diverse sources. More productive
-                  and accessible searches than ever.
+                  Findto puts people in control of the algorithms. Find anything
+                  switching between diverse sources. More productive and
+                  accessible searches than ever.
                 </p>
               </article>
             </div>
 
             <div>
               <figure>
-                <Svg type="search" color="colorsSvg" />
+                <SvgIllustrations type="search" color="colorsSvg" />
               </figure>
 
               <article>
-                <h2>More privacy and less carbon</h2>
+                <h2>More privacy, less carbon</h2>
                 <p>
-                  See an estimated privacy level and carbon footprint of every
+                  Estimated level of privacy and carbon footprint of every
                   search source. Make better choices - for you and the planet.
                 </p>
               </article>
@@ -63,15 +61,15 @@ export default function PageAbout() {
 
             <div>
               <figure>
-                <Svg type="phone" color="colorsSvg" />
+                <SvgIllustrations type="phone" color="colorsSvg" />
               </figure>
 
               <article>
-                <h2>Decentralizing search</h2>
+                <h2>Decentralizing AI and Web search</h2>
                 <p>
                   The monopoly is dangerous. Findto encourages a truly open
                   search experience, where people choices matter. We are here
-                  trying to building a better internet.
+                  building a better internet.
                 </p>
               </article>
             </div>

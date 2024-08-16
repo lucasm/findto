@@ -34,7 +34,7 @@ Our principles:
 
 Findto is putting the power of internet back into people's hands.
 
-Quickly search the same term on diverse sources. See the privacy and carbon levels of selected source. Discover trends. Find anything on the Web and AI. More productive and accessible searches than ever.
+Quickly search the same term on diverse Web and AI sources. See the privacy and carbon levels of selected source. Discover trends. Find anything. More productive and accessible searches than ever.
 
 Truly free search experience, where the people choices and the planet needs walks together, for a healthier internet. As the always should be.
 
@@ -42,17 +42,17 @@ Truly free search experience, where the people choices and the planet needs walk
 
 ## 🟢 Features
 
-| Feature                  | Description                                                                              | Status |
-| ------------------------ | ---------------------------------------------------------------------------------------- | ------ |
-| **Decentralized search** | Search the same term on diverse sources on Web and AI.                                   | ✅     |
-| **Trends**               | Explore trending stories, topics, contents, products, places, and more nearby you.       | ✅     |
-| **Privacy level**        | How your data are handled? View the estimate privacy level of selected source.           | 🔧     |
-| **Carbon level**         | How this impact the planet? View the estimate carbon footprint level of selected source. | 🔧     |
-| **Autosuggest**          | Get instant suggestions as you type.                                                     | ✅     |
-| **Voice search**         | Use your voice to search anywhere.                                                       | ✅     |
-| **Visual search**        | Use images to search on supported sources.                                               | 🔧     |
-| **Accessibility**        | Balanced contrast, dark theme, keyboard navigation and screen readers support.           | ✅     |
-| **Internationalization** | Chose your country for local sources, or international search.                           | ✅     |
+| Feature                  | Description                                                                        | Status |
+| ------------------------ | ---------------------------------------------------------------------------------- | ------ |
+| **Decentralized search** | Search the same term on diverse Web and AI sources.                                | ✅     |
+| **Realtime trends**      | Explore trending stories, topics, contents, products, places, and more nearby you. | ✅     |
+| **Autosuggest**          | Get instant suggestions as you type.                                               | ✅     |
+| **Privacy level**        | View the estimate privacy level of selected source.                                | 🔧     |
+| **Carbon level**         | View the estimate carbon footprint level of selected source.                       | 🔧     |
+| **Voice search**         | Use your voice to search anywhere.                                                 | ✅     |
+| **Visual search**        | Use images to search on supported sources.                                         | 🔧     |
+| **Accessibility**        | Balanced contrast, dark theme, keyboard navigation and screen readers support.     | ✅     |
+| **Internationalization** | Chose your country for local sources, or international search.                     | ✅     |
 
 ## 🔴 Sources
 
