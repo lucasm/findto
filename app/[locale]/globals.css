@@ -16,6 +16,14 @@
   --color-red: #ff9494;
   --color-purple: #d6b6ff;
   --color-blue: #5cbeff;
+  --background-linear-gradient: linear-gradient(
+    90deg,
+    #d0abff 0%,
+    #82cdff 20%,
+    #6ef4d0 30%,
+    #fff78d 55%,
+    #ff7c7c 85%
+  );
   --color-white-translucent: rgba(255, 255, 255, 0.2);
   --color-white-translucent-2: rgba(255, 255, 255, 0.25);
   --color-black-translucent: rgba(0, 0, 0, 0.05);
@@ -44,6 +52,17 @@
   --transition-hover: hover 0.2s, background 0.2s, opacity 0.2s, box-shadow 0.2s;
   --transition: all 200ms;
 }
+
+html[data-theme='dark'] {
+  --background-linear-gradient: var(--color-dark);
+  --color-theme-translucent: var(--color-dark);
+  --color-bg-white: var(--color-dark-2);
+  --color-bg-grey: var(--color-dark);
+  --color-text-black: #fff;
+  --color-black-translucent: rgba(255, 255, 255, 0.2);
+  --color-black-translucent-50: rgba(255, 255, 255, 0.5);
+}
+
 *,
 *:before,
 *:after {
@@ -53,25 +72,15 @@
 }
 html {
   scroll-behavior: smooth;
-  font-family: inherit;
   outline-color: var(--color-black);
-
+  background: var(--background-linear-gradient);
   transition: var(--transition-hover);
-  background: var(--color-bg-grey);
-  background: linear-gradient(
-    90deg,
-    #d0abff 0%,
-    #82cdff 20%,
-    #6ef4d0 30%,
-    #fff78d 55%,
-    #ff7c7c 85%
-  );
-
   background-size: 110% 200%;
   animation: gradientAnimation 10s ease infinite;
 }
 body {
   background: var(--color-theme-translucent);
+  transition: var(--transition-hover);
 }
 
 @keyframes gradientAnimation {

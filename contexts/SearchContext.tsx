@@ -13,7 +13,6 @@ export function SearchContextProvider({ children }: { children: any }) {
   // load search sources file by locale
   const localeSearchSources = require('../locales/' + locale + '.json')
   const [data, setData] = useState<ISearchCategory[] | null>(null)
-  const [theme, setTheme] = useState<string>('light')
   const [category, setCategory] = useState<string>('Web')
   const [search, setSearch] = useState<string>('google')
   const [searchUrl, setSearchUrl] = useState<string>('')
@@ -94,50 +93,10 @@ export function SearchContextProvider({ children }: { children: any }) {
     }
   }, [sizeWindow])
 
-  // theme color
-  useEffect(() => {
-    if (theme) {
-      const root = document.documentElement
-
-      root.style.setProperty(
-        '--color-bg-white',
-        theme === 'dark' ? 'var(--color-dark-2)' : 'var(--color-white)'
-      )
-      root.style.setProperty(
-        '--color-bg-grey',
-        theme === 'dark' ? 'var(--color-dark)' : 'var(--color-grey)'
-      )
-      root.style.setProperty(
-        '--color-text-black',
-        theme === 'dark' ? 'var(--color-white)' : 'var(--color-black)'
-      )
-      root.style.setProperty(
-        '--color-theme-translucent',
-        theme === 'dark' ? 'var(--color-dark)' : 'rgb(230 230 230 / 33%)'
-      )
-      root.style.setProperty(
-        '--color-black-translucent',
-        theme === 'dark' ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0, 0, 0, 0.05)'
-      )
-      root.style.setProperty(
-        '--color-black-translucent-50',
-        theme === 'dark' ? 'rgba(255, 255, 255, 0.5)' : 'rgba(0, 0, 0, 0.5)'
-      )
-    }
-  }, [theme])
-
   // sync with LocalStorage
   useEffect(() => {
-    const prefersDarkMode = window.matchMedia(
-      '(prefers-color-scheme: dark)'
-    ).matches
-    const storedTheme = window.localStorage.getItem('theme')
     const storedCategory = window.localStorage.getItem('category')
     const storedSearch = window.localStorage.getItem('search')
-
-    storedTheme
-      ? setTheme(storedTheme)
-      : setTheme(prefersDarkMode ? 'dark' : 'light')
 
     storedCategory
       ? setCategory(storedCategory)
@@ -157,8 +116,6 @@ export function SearchContextProvider({ children }: { children: any }) {
         inputValue,
         setInputValue,
         data,
-        theme,
-        setTheme,
         search,
         setSearch,
         searchUrl,

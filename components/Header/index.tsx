@@ -4,6 +4,7 @@ import Style from './Header.module.css'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 import { useSearch } from '@/contexts/SearchContext'
 import Modal from '@/components/Modal'
 import SvgLogo from '@/components/SvgLogo'
@@ -35,18 +36,17 @@ import {
 } from '@/components/SvgIcons'
 import { normalizeId } from '@/utils/formats'
 import { ISearchCategory } from '@/interfaces/search'
-import { useTranslations } from 'next-intl'
 import LangSwitcher from '../LangSwitch'
+import { useTheme } from 'next-themes'
 
 export default function AppHeader() {
   const t = useTranslations('t')
+  const { theme, setTheme } = useTheme()
   const router = useRouter()
   const searchParams = useSearchParams()
   const view = searchParams?.get('view')
   const {
     data,
-    theme,
-    setTheme,
     category,
     setCategory,
     refSearchTabs,

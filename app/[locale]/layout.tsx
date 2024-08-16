@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
+import { ThemeProvider } from 'next-themes'
 import Telemetry from '@/components/Telemetry'
 
 const fontFamily = localFont({
@@ -53,7 +54,6 @@ export const metadata: Metadata = {
 
   metadataBase: new URL('https://findto.app'),
   alternates: {
-    canonical: '/',
     languages: {
       en: '/en',
       'pt-BR': '/pt-BR',
@@ -81,10 +81,18 @@ export default async function Layout({
   const messages = await getMessages()
 
   return (
-    <html lang={locale} className={fontFamily.className}>
+    <html
+      lang={locale}
+      className={fontFamily.className}
+      suppressHydrationWarning>
       <body>
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <ThemeProvider
+            attribute="data-theme"
+            defaultTheme="light"
+            enableSystem={true}>
+            {children}
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
 
