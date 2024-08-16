@@ -35,15 +35,15 @@ export const metadata: Metadata = {
   ],
   icons: {
     icon: [
-      '/favicon.ico',
-      '/icon-192x192.png',
-      '/icon-512x512.png',
-      '/icon-1024x1024.png',
-      'icon.svg',
+      '/favicon.ico?v=2',
+      '/icon-192x192.png?v=2',
+      '/icon-512x512.png?v=2',
+      '/icon-1024x1024.png?v=2',
+      'icon.svg?v=2',
     ],
-    apple: '/apple-touch-icon.png',
+    apple: '/apple-touch-icon.png?v=2',
   },
-  manifest: '/manifest.json',
+  manifest: '/manifest.json?v=2',
   appleWebApp: {
     capable: true,
     title: 'Findto',
