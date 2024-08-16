@@ -1,4 +1,3 @@
-//middleware.ts
 import createMiddleware from 'next-intl/middleware'
 
 const middleware = createMiddleware({
@@ -8,6 +7,8 @@ const middleware = createMiddleware({
   // Default locale if no match
   defaultLocale: 'en',
 })
+
+// NextJS 14 not-found.tsx or 404 page redirect for /app[locale]/not-found
 
 export default middleware
 

@@ -4,7 +4,7 @@ import CardsLink from '@/components/CardsLink'
 import { useTranslations } from 'next-intl'
 
 const title = 'Community'
-const description = 'Help us create a better internet.'
+const description = 'Help us make a healthier internet.'
 
 export const metadata = {
   title: title,

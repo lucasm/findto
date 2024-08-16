@@ -1,7 +1,12 @@
 import Link from 'next/link'
 import Styles from './CardsLink.module.css'
-import { svgDiscord, svgGithub, svgPatreon } from '@/components/SvgSocial'
-import { IconFeedback, IconHeart, IconStar, IconX } from '../SvgIcons'
+import {
+  IconHeart,
+  IconFeedback,
+  IconX,
+  IconGitHub,
+  IconDiscord,
+} from '../SvgIcons'
 import { useTranslations } from 'next-intl'
 
 interface ICardsLink {
@@ -17,9 +22,15 @@ export default function CardsLink() {
 
   const cards: ICardsLink[] = [
     {
+      title: t('donate'),
+      url: 'https://ko-fi.com/findto',
+      icon: <IconHeart />,
+      active: true,
+    },
+    {
       title: 'Give a star',
       url: 'https://github.com/lucasm/findto',
-      icon: svgGithub,
+      icon: <IconGitHub />,
       active: true,
     },
     {
@@ -31,21 +42,8 @@ export default function CardsLink() {
     {
       title: 'Join channel',
       url: 'https://discord.gg/gEDm5MU6pq',
-      icon: svgDiscord,
+      icon: <IconDiscord />,
       active: true,
-    },
-    {
-      title: t('donate'),
-      url: 'https://ko-fi.com/findto',
-      icon: <IconHeart />,
-      active: true,
-    },
-    {
-      title: 'Get Pro version',
-      url: '/pro',
-      icon: <IconStar />,
-      active: false,
-      internal: true,
     },
     {
       title: t('feedback.title'),
@@ -54,15 +52,22 @@ export default function CardsLink() {
       active: true,
     },
     {
+      title: 'Get Pro version',
+      url: '/pricing',
+      icon: <></>,
+      active: false,
+      internal: true,
+    },
+    {
       title: 'Follow on Instagram',
       url: 'https://instagram.com/findtoapp',
-      icon: svgPatreon,
+      icon: <></>,
       active: false,
     },
     {
       title: 'Support on Patreon',
       url: 'https://patreon.com/findto',
-      icon: svgPatreon,
+      icon: <></>,
       active: false,
     },
   ]

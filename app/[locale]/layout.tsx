@@ -1,7 +1,6 @@
-import type { Metadata } from 'next'
 import './globals.css'
+import type { Metadata } from 'next'
 import localFont from 'next/font/local'
-// import { Providers } from './providers'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 import Telemetry from '@/components/Telemetry'
@@ -29,6 +28,29 @@ export const metadata: Metadata = {
   },
   description:
     'Open source decentralized search on Web and AI. Explore a healthier internet with Findto.',
+  authors: [
+    { name: 'Findto', url: 'https://findto.app' },
+    { name: 'Lucas Menezes', url: 'https://lucasm.dev' },
+  ],
+  icons: {
+    icon: [
+      '/favicon.ico',
+      '/icon-192x192.png',
+      '/icon-512x512.png',
+      '/icon-1024x1024.png',
+      'icon.svg',
+    ],
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    title: 'Findto',
+    statusBarStyle: 'black-translucent',
+  },
+  applicationName: 'Findto',
+  themeColor: '#ffffff',
+
   metadataBase: new URL('https://findto.app'),
   alternates: {
     canonical: '/',
@@ -39,10 +61,17 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: '/share.png',
+    type: 'website',
+  },
+  twitter: {
+    site: '@findtoapp',
+    creator: '@lucasmezs',
+    card: 'summary_large_image',
+    images: '/share.png',
   },
 }
 
-export default async function RootLayout({
+export default async function Layout({
   children,
   params: { locale },
 }: {
