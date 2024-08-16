@@ -7,11 +7,11 @@
 <h1 align="center">Findto</h1>
 
 <p align="center">
-<a href="https://ko-fi.com/findto" target="_blank"><img alt="Support on Ko-Fi" src="https://img.shields.io/badge/donate-$5-ff9393?logo=kofi&logoColor=white"></a>
-<a href="https://github.com/lucasm/findto/wiki" target="_blank"><img alt="Languages" src="https://img.shields.io/badge/translations-2-ffff8b?logo=json&logoColor=white"></a>
+<a href="https://github.com/lucasm/findto/issues" target="_blank"><img alt="Issues" src="https://img.shields.io/github/issues/lucasm/findto?color=ff9393&logo=github&logoColor=white"></a>
+<a href="https://ko-fi.com/findto" target="_blank"><img alt="Support on Ko-Fi" src="https://img.shields.io/badge/donate-$0,5-ffff8b?logo=kofi&logoColor=white"></a>
+<a href="https://github.com/lucasm/findto/wiki" target="_blank"><img alt="Languages" src="https://img.shields.io/badge/translations-2-82cdff?logo=json&logoColor=white"></a>
 <a href="https://github.com/lucasm/findto/releases" target="_blank"><img alt="GitHub release" src="https://img.shields.io/github/v/release/lucasm/findto?label=version&color=71f8ce&logo=github&logoColor=white"></a>
 <a href="https://github.com/lucasm/findto" target="_blank"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/lucasm/findto?label=size&color=71f8ce&logo=github&logoColor=white"></a>
-<a href="https://github.com/lucasm/findto/issues" target="_blank"><img alt="Issues" src="https://img.shields.io/github/issues/lucasm/findto?color=82cdff&logo=github&logoColor=white"></a>
 <a href="https://discord.gg/gEDm5MU6pq" target="_blank"><img alt="Community" src="https://img.shields.io/discord/866829154032812073?color=d0abff&label=members&logo=discord&logoColor=white"></a>
 </p>
 
