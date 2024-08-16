@@ -33,6 +33,7 @@ import {
   Icon,
   IconMore,
   IconGames,
+  IconThemeSystem,
 } from '@/components/SvgIcons'
 import { normalizeId } from '@/utils/formats'
 import { ISearchCategory } from '@/interfaces/search'
@@ -70,13 +71,18 @@ export default function AppHeader() {
     !isMobileViewport && refSearchInput.current.focus()
   }
   const handleTheme = () => {
-    if (theme == 'light') {
+    if (theme === 'light') {
       setTheme('dark')
-      window.localStorage.setItem('theme', 'dark')
-    } else {
-      setTheme('light')
-      window.localStorage.setItem('theme', 'light')
+      return
     }
+
+    if (theme === 'dark') {
+      setTheme('system')
+      return
+    }
+
+    // Assumindo que se não for 'light' ou 'dark', é 'system'
+    setTheme('light')
   }
   const handleCategory = (category: string) => {
     try {
@@ -265,8 +271,18 @@ export default function AppHeader() {
             <h3>{t('theme')}</h3>
 
             <button onClick={handleTheme}>
-              {theme == 'dark' ? <IconMoon /> : <IconSun />}
-              {theme == 'dark' ? 'Dark' : 'Light'}
+              {theme === 'dark' ? (
+                <IconMoon />
+              ) : theme === 'light' ? (
+                <IconSun />
+              ) : (
+                <IconThemeSystem />
+              )}
+              {theme === 'dark'
+                ? 'Dark'
+                : theme === 'light'
+                ? 'Light'
+                : 'System'}
             </button>
           </div>
 
