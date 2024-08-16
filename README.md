@@ -13,14 +13,14 @@
 <a href="https://github.com/lucasm/findto" target="_blank"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/lucasm/findto?label=size&color=71f8ce&logo=github&logoColor=white"></a>
 <a href="https://github.com/lucasm/findto/issues" target="_blank"><img alt="Issues" src="https://img.shields.io/github/issues/lucasm/findto?color=82cdff&logo=github&logoColor=white"></a>
 <a href="https://discord.gg/gEDm5MU6pq" target="_blank"><img alt="Community" src="https://img.shields.io/discord/866829154032812073?color=d0abff&label=members&logo=discord&logoColor=white"></a>
-
 </p>
 
 <p align="center">
-Decentralized search on Web and AI <br>
+<a href="https://findto.app" target="_blank">findto.app</a>
+ <br>
 </p>
 
-## 🔎 A better search
+## 🔎 Decentralizing AI and Web search
 
 Findto is an assistant for decentralized search on Web and AI.
 
@@ -30,60 +30,50 @@ Our principles:
 
 - People in control of AI and Web search algorithms.
 
-- Free and open source.
+- Free, open source and responsible.
 
 Findto is putting the power of internet back into people's hands.
 
-The centralized internet is unsustainable. Findto encourages a truly free search experience, where the people democratic choices and the planet needs walks together.
+Quickly search the same term on diverse sources. See the privacy and carbon levels of selected source. Discover trends. Find anything on the Web and AI. More productive and accessible searches than ever.
 
-Quickly search the same term on diverse sources. See the privacy and carbon levels of selected source. Discover trends. Find anything on the Web and AI. More productive and accessible searches than ever! A more healthier internet. As the always should be.
+Truly free search experience, where the people choices and the planet needs walks together, for a healthier internet. As the always should be.
 
-👉 Try it now: [findto.app](https://findto.app)
+[Try it now](https://findto.app)
 
-🤔 How it works: [findto.app/about](https://findto.app/about)
+## 🟢 Features
 
-## 🔵 Features
-
-- **Decentralized search** — Search the same term on diverse sources.
-
-- **Trends** — Explore trending stories, topics, contents, products, places, and more nearby you.
-
-- **Privacy level** — How your data are handled? View the estimate privacy level of selected source.
-
-- **Carbon level** — How this impact the planet? View the estimate carbon footprint level of selected source.
-
-- **Autosuggest** — Get instant suggestions as you type.
-
-- **Voice search** — Use your voice to search anywhere.
-
-- **Visual search** — Use images to search on supported sources. \* In development.
-
-- **Accessibility** — Balanced contrast, dark theme, keyboard navigation and screen readers support.
-
-- **Internationalization** — Chose your country for local sources, or international search.
+| Feature                  | Description                                                                              | Status |
+| ------------------------ | ---------------------------------------------------------------------------------------- | ------ |
+| **Decentralized search** | Search the same term on diverse sources on Web and AI.                                   | ✅     |
+| **Trends**               | Explore trending stories, topics, contents, products, places, and more nearby you.       | ✅     |
+| **Privacy level**        | How your data are handled? View the estimate privacy level of selected source.           | 🔧     |
+| **Carbon level**         | How this impact the planet? View the estimate carbon footprint level of selected source. | 🔧     |
+| **Autosuggest**          | Get instant suggestions as you type.                                                     | ✅     |
+| **Voice search**         | Use your voice to search anywhere.                                                       | ✅     |
+| **Visual search**        | Use images to search on supported sources.                                               | 🔧     |
+| **Accessibility**        | Balanced contrast, dark theme, keyboard navigation and screen readers support.           | ✅     |
+| **Internationalization** | Chose your country for local sources, or international search.                           | ✅     |
 
 ## 🔴 Sources
 
 The search sources available on Findto are selected based on the following criteria:
 
-1. Popularity of the service.
-1. Commitment to open access.
-1. Adherence to legal standards for privacy and copyright.
+1. Popularity of the service;
+2. Commitment to open access;
+3. Adherence to legal standards for privacy and copyright.
 
-For more details, go to [Wiki](https://github.com/lucasm/findto/wiki).
+For more details, visit [Wiki](https://github.com/lucasm/findto/wiki).
 
 ## 🟡 Donate
 
 If you like Findto, consider donate.
 
+Enjoy your name (or banner) with link attribution on this repository ✨
+
 - [One-time donation via Ko-Fi](https://ko-fi.com/findto)
 - [GitHub Sponsors](https://github.com/sponsors/lucasm)
 
-✨ Enjoy your name or banner with link attribution on this repository ✨
-
-For work-in-progress updates [follow on X](https://x.com/findtoapp).
-
-## 🟢 Contribute
+## 🔵 Contribute
 
 View opened [Issues](https://github.com/lucasm/findto/issues) before send pull requests. For backlog, check [Projects](https://github.com/lucasm/findto/projects) board.
 
