@@ -124,8 +124,7 @@
         },
         {
           "name": "SearXNG",
-          "action": "https://opnxng.com/search?q=",
-          "color": "#5185ff"
+          "action": "https://opnxng.com/search?q="
         },
         {
           "name": "Yandex",

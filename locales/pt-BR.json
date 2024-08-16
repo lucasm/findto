@@ -58,7 +58,7 @@
     {
       "name": "AI",
       "name_translated": "IA",
-      "name_trends": "Top buscas",
+      "name_trends": "Buscas em alta",
       "active": true,
       "data": [
         {
@@ -101,7 +101,7 @@
     },
     {
       "name": "Web",
-      "name_trends": "Top buscas",
+      "name_trends": "Buscas em alta",
       "active": true,
       "data": [
         {
@@ -137,24 +137,12 @@
           "action": "https://www.ecosia.org/search?q="
         },
         {
-          "name": "SearXNG",
-          "action": "https://searxng.site/searxng/search?q="
-        },
-        {
-          "name": "Mojeek",
-          "action": "https://www.mojeek.com/search?q="
-        },
-        {
           "name": "Info",
           "action": "https://www.info.com/serp?q="
         },
         {
           "name": "Swisscows",
           "action": "https://swisscows.com/web?query="
-        },
-        {
-          "name": "Presearch",
-          "action": "https://presearch.com/search?q="
         },
         {
           "name": "Yep",
@@ -964,7 +952,7 @@
     {
       "name": "Academic",
       "name_translated": "Acadêmico",
-      "name_trends": "Citações em alta",
+      "name_trends": "Tópicos em alta",
       "active": true,
       "data": [
         {
@@ -1198,7 +1186,7 @@
     {
       "name": "Code",
       "name_translated": "Código",
-      "name_trends": "Repositórios populares",
+      "name_trends": "Repositórios em alta",
       "active": true,
       "data": [
         {
