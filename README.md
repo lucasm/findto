@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-<a href="https://findto.app" target="_blank">findto.app</a>
+<a href="https://findto.app/?utm_source=findto_repo" target="_blank">findto.app</a>
  <br>
 </p>
 
@@ -38,7 +38,7 @@ Quickly search the same term on diverse sources. See the privacy and carbon leve
 
 Truly free search experience, where the people choices and the planet needs walks together, for a healthier internet. As the always should be.
 
-[Try it now](https://findto.app)
+[Try it now](https://findto.app/?utm_source=findto_repo)
 
 ## 🟢 Features
 
@@ -66,20 +66,18 @@ For more details, visit [Wiki](https://github.com/lucasm/findto/wiki).
 
 ## 🟡 Donate
 
-If you like Findto, consider donate.
+If you like Findto, consider making a donation.
 
-Enjoy your name (or banner) with link attribution on this repository ✨
+Help us build a better internet.
 
-- [One-time donation via Ko-Fi](https://ko-fi.com/findto)
-- [GitHub Sponsors](https://github.com/sponsors/lucasm)
+✨ Get your name with a link (or banner) attribution on this repository ✨
+
+- [Make a one-time donation via Ko-Fi](https://ko-fi.com/findto)
+- [Support us on GitHub Sponsors](https://github.com/sponsors/lucasm)
 
 ## 🔵 Contribute
 
 View opened [Issues](https://github.com/lucasm/findto/issues) before send pull requests. For backlog, check [Projects](https://github.com/lucasm/findto/projects) board.
-
-### Team
-
-Made in Brazil with love by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app) and community.
 
 ## 🟣 Legal
 
@@ -88,3 +86,5 @@ Findto is built with privacy in mind and does not store user searches.
 Findto displays automated content from external APIs without review, solely for user convenience, and may include materials protected by intellectual property, such as trademarks.
 
 Please, read our [Privacy Policy](https://findto.app/privacy) and [Terms of Service](https://findto.app/terms).
+
+Made with love by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app) and community.
