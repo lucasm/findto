@@ -1,11 +1,8 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
+import type { NextApiResponse } from 'next'
 import axios from 'axios'
 import { ITrends } from '../../../interfaces/trends'
 
-export default async function endpoint(
-  req: NextApiRequest,
-  res: NextApiResponse
-): Promise<void> {
+export default async function endpoint(res: NextApiResponse): Promise<void> {
   let url =
     'https://api.unsplash.com/topics?client_id=' +
     process.env.NEXT_PUBLIC_API_UNSPLASH +

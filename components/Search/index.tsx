@@ -107,7 +107,7 @@ export default function Search() {
       }
     }
   }
-  const handleOptionChange = (event: any) => {
+  const handleOptionChange = () => {
     console.log(
       data?.find((item: { name: any }) => item.name === category)?.data,
     )

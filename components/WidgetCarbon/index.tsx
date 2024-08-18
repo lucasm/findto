@@ -38,7 +38,6 @@ export default function WidgetCarbon() {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const containerRef = useRef<HTMLDivElement | null>(null)
 
-  const [label, setLabel] = useState<string>()
   const [domain, setDomain] = useState<string | null>(null)
   const [percents, setPercents] = useState<string[]>(['30', '70'])
 
@@ -70,7 +69,7 @@ export default function WidgetCarbon() {
       refreshWhenOffline: false,
       refreshWhenHidden: false,
       refreshInterval: 0,
-    }
+    },
   )
 
   useEffect(() => {

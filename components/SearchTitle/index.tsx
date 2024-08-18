@@ -10,7 +10,7 @@ interface SearchTitleProps {
 export default function SearchTitle({
   additionalLeftElement,
 }: SearchTitleProps) {
-  const { data, category, search, color, setTitleTrends } = useSearch()
+  const { data, category, setTitleTrends } = useSearch()
   const [titleSearch, setTitleSearch] = useState<string>('')
 
   // title

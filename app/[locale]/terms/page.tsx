@@ -1,8 +1,10 @@
 import Style from '@/layouts/WebsiteLayout/WebsiteLayout.module.css'
 import WebsiteLayout from '@/layouts/WebsiteLayout'
 
-const title = 'Terms of Service'
-const description = 'See how to use Findto for the common good'
+export const metadata = {
+  title: 'Terms of Service',
+  description: 'See how to use Findto, and respect rules for the common good.',
+}
 
 export default function PageTerms() {
   return (

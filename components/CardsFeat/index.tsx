@@ -1,7 +1,6 @@
 import Style from './CardsFeat.module.css'
 import {
   IconAccessibility,
-  IconCheckOk,
   IconLanguage,
   IconLeaf,
   IconMic,
