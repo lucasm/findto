@@ -7,6 +7,8 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
@@ -28,9 +30,7 @@
     "**/*.ts",
     "**/*.tsx",
     "next.config.js",
-    ".next/types/**/*.ts",
-    "middleware_ts",
-    "app/[locale]/___document"
+    ".next/types/**/*.ts"
   ],
   "exclude": ["node_modules"]
 }

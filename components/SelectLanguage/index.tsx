@@ -1,24 +1,57 @@
-import { useRouter } from 'next/router'
+'use client'
 
-export default function SelectLanguage() {
+import React from 'react'
+import { useRouter } from 'next/navigation'
+import { usePathname } from 'next/navigation'
+import Select from '@/components/Select'
+
+const LangSwitcher: React.FC = () => {
+  interface Option {
+    label: string
+    value: string
+  }
+
   const router = useRouter()
-  const { locale } = router
-  // locales, defaultLocale
+  const pathname = usePathname()
 
-  function changeLanguage(e: { target: { value: string } }) {
-    const locale = e.target.value
-    router.push(router.pathname, router.asPath, { locale })
+  const options: Option[] = [
+    { label: 'International (English)', value: 'en' },
+    { label: 'Brasil (Português)', value: 'pt-BR' },
+  ]
+
+  const handleChange = (value: string) => {
+    const selectedOption = options.find((option) => option.value === value)
+    if (selectedOption) {
+      const currentPath = pathname ? pathname.split('/').slice(2).join('/') : ''
+      if (pathname) {
+        router.push(`/${selectedOption.value}/${currentPath}`)
+      }
+    }
   }
 
   return (
-    <form>
-      <label htmlFor="language" style={{ fontSize: '0' }}>
-        Select a language:
-      </label>
-      <select id="language" onChange={changeLanguage} defaultValue={locale}>
-        <option value="en">English (International)</option>
-        <option value="pt-BR">Português (Brasil)</option>
-      </select>
-    </form>
+    <div>
+      <div>
+        {/* <select
+          value={pathname ? pathname.split('/')[1] : ''}
+          onChange={handleChange}>
+          {options.map((option, index) => (
+            <option key={index} value={option.value}>
+              {option.label}
+            </option>
+          ))}
+        </select> */}
+
+        <Select
+          options={options}
+          id="language"
+          onChange={handleChange}
+          value={pathname ? pathname.split('/')[1] : ''}
+          label="Language"
+        />
+      </div>
+    </div>
   )
 }
+
+export default LangSwitcher

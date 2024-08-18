@@ -39,8 +39,8 @@ const CookiesPopup = () => {
       }`}>
       <p>Findto uses Cookies for better navigation</p>
       <div>
-        <button onClick={handleAccept}>Accept</button>
         <Link href="/privacy">{t('privacy')}</Link>
+        <button onClick={handleAccept}>Accept</button>
       </div>
     </div>
   )

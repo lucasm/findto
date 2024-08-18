@@ -49,10 +49,10 @@ export default function Search() {
 
   const getSearchSource = (id: string) => {
     const searchCategory = data?.find(
-      (item: ISearchCategory) => item.name === category
+      (item: ISearchCategory) => item.name === category,
     )
     const source = searchCategory?.data?.find(
-      (item: ISearch) => normalizeId(item.name) === id
+      (item: ISearch) => normalizeId(item.name) === id,
     )
     return source
   }
@@ -109,7 +109,7 @@ export default function Search() {
   }
   const handleOptionChange = (event: any) => {
     console.log(
-      data?.find((item: { name: any }) => item.name === category)?.data
+      data?.find((item: { name: any }) => item.name === category)?.data,
     )
   }
 
@@ -189,28 +189,25 @@ export default function Search() {
               <SearchVoice />
 
               {/* Button Search */}
-              <Tooltip text={t('search')} disable={isMobileViewport}>
-                <a
-                  ref={refSearchButton}
-                  className={Style.searchButton}
-                  href={searchUrl}
-                  target="_blank"
-                  rel="noopener"
-                  onClick={
-                    isValid
-                      ? undefined
-                      : (event) => {
-                          event.preventDefault()
-                          handleFocus()
-                        }
-                  }
-                  accessKey="s"
-                  // style={{ opacity: isValid ? '1' : '.5' }}
-                >
-                  <IconSend />
-                  {t('search')}
-                </a>
-              </Tooltip>
+              <a
+                ref={refSearchButton}
+                className={Style.searchButton}
+                href={searchUrl}
+                target="_blank"
+                rel="noopener"
+                onClick={
+                  isValid
+                    ? undefined
+                    : (event) => {
+                        event.preventDefault()
+                        handleFocus()
+                      }
+                }
+                accessKey="s"
+                style={{ opacity: isValid ? '1' : '.45' }}>
+                <IconSend />
+                {t('search')}
+              </a>
             </div>
           </div>
 

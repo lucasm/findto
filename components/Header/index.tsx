@@ -37,7 +37,7 @@ import {
 } from '@/components/SvgIcons'
 import { normalizeId } from '@/utils/formats'
 import { ISearchCategory } from '@/interfaces/search'
-import LangSwitcher from '../LangSwitch'
+import SelectLanguage from '@/components/SelectLanguage'
 import { useTheme } from 'next-themes'
 
 export default function AppHeader() {
@@ -236,7 +236,7 @@ export default function AppHeader() {
                 <li key={index}>
                   {renderMenuItem(item.name, item.name_translated)}
                 </li>
-              )
+              ),
           )}
         </ul>
 
@@ -252,13 +252,13 @@ export default function AppHeader() {
               {submenuItems?.map(
                 (
                   item: { active: boolean; name: string; name_translated: any },
-                  index: number
+                  index: number,
                 ) =>
                   item.active == true && (
                     <li key={index}>
                       {renderMenuItem(item.name, item.name_translated)}
                     </li>
-                  )
+                  ),
               )}
             </ul>
           )}
@@ -289,26 +289,24 @@ export default function AppHeader() {
           <div className={Style.containerSettings}>
             <h3>{t('language')}</h3>
 
-            {/* <SelectLanguage /> */}
-
-            <LangSwitcher />
+            <SelectLanguage />
           </div>
 
           <div className={Style.containerSettings}>
             <h3>{t('contribute')}</h3>
-            <a
-              href="https://ko-fi.com/findto"
-              target="_blank"
-              rel="noopener noreferrer">
-              <IconHeart />
-              {t('donate')}
-            </a>
             <a
               href={t('feedback.url')}
               target="_blank"
               rel="noopener noreferrer">
               <IconFeedback />
               {t('feedback.title')}
+            </a>
+            <a
+              href="https://ko-fi.com/findto"
+              target="_blank"
+              rel="noopener noreferrer">
+              <IconHeart />
+              {t('donate')}
             </a>
           </div>
         </Modal>

@@ -1,5 +1,3 @@
-'use client'
-
 import { ISearchCategory } from '@/interfaces/search'
 import { useLocale } from 'next-intl'
 import { createContext, useContext, useState, useEffect, useRef } from 'react'

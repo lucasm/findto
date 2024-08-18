@@ -14,7 +14,7 @@ export default function Banner() {
       </div>
 
       <div>
-        <Link href="/about">{t('learnMore')}</Link>
+        <Link href="/about">{t('learnMore')} </Link>
         <Link href="https://ko-fi.com/findto" target="_blank" rel="noopener">
           <IconHeart /> {t('donate')}
         </Link>

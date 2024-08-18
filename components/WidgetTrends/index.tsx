@@ -4,7 +4,6 @@ import Styles from './WidgetTrends.module.css'
 import { fetcher } from '@/utils/http'
 import useSWR from 'swr'
 import { useSearch } from '@/contexts/SearchContext'
-import Loader from '@/components/Loader'
 import ButtonGeolocation from '@/components/ButtonGeolocation'
 import Alert from '@/components/Alert'
 import { ITrends, ITrendsItem } from '@/interfaces/trends'
@@ -32,7 +31,7 @@ export default function SearchTrends() {
 
     const { data, error } = useSWR(
       isValid ? `/api/trends/web/?country=${country}` : null,
-      fetcher
+      fetcher,
     )
 
     return {
@@ -47,7 +46,7 @@ export default function SearchTrends() {
     const { data, error } = useSWR(
       () =>
         category === 'Social' ? `/api/trends/social/?country=${country}` : null,
-      fetcher
+      fetcher,
     )
 
     return {
@@ -64,7 +63,7 @@ export default function SearchTrends() {
         locale && category === 'Videos'
           ? `/api/trends/videos/?country=${locale}`
           : null,
-      fetcher
+      fetcher,
     )
 
     return {
@@ -78,7 +77,7 @@ export default function SearchTrends() {
   function useApiImages() {
     const { data, error } = useSWR(
       category === 'Image' && `/api/trends/images`,
-      fetcher
+      fetcher,
     )
 
     return {
@@ -92,7 +91,7 @@ export default function SearchTrends() {
   function useApiAudio() {
     const { data, error } = useSWR(
       country && category === 'Music' && `/api/trends/audio?country=${country}`,
-      fetcher
+      fetcher,
     )
 
     return {
@@ -108,7 +107,7 @@ export default function SearchTrends() {
       country && category === 'News'
         ? `/api/trends/news?country=${country}`
         : null,
-      fetcher
+      fetcher,
     )
 
     return {
@@ -124,7 +123,7 @@ export default function SearchTrends() {
       category === 'Shopping'
         ? `/api/trends/shopping?country=${country}`
         : null,
-      fetcher
+      fetcher,
     )
 
     return {
@@ -143,7 +142,7 @@ export default function SearchTrends() {
       fetcher,
       {
         revalidateOnFocus: false,
-      }
+      },
     )
 
     return {
@@ -152,13 +151,13 @@ export default function SearchTrends() {
       errorLocal: error,
     }
   }
-  const { dataLocal, errorLocal, loadingLocal } = useApiLocal()
+  const { dataLocal, errorLocal } = useApiLocal()
 
   // Code
   function useApiCode() {
     const { data, error } = useSWR(
       category === 'Code' ? `/api/trends/code` : null,
-      fetcher
+      fetcher,
     )
 
     return {
@@ -174,7 +173,7 @@ export default function SearchTrends() {
       country && category === 'Academic'
         ? `/api/trends/academic?country=${country}`
         : null,
-      fetcher
+      fetcher,
     )
 
     return {
@@ -190,7 +189,7 @@ export default function SearchTrends() {
       country && category === 'Job'
         ? `/api/trends/jobs?country=${country}`
         : null,
-      fetcher
+      fetcher,
     )
 
     return {
@@ -206,7 +205,7 @@ export default function SearchTrends() {
       country && category === 'Legal'
         ? `/api/trends/legal?country=${country}`
         : null,
-      fetcher
+      fetcher,
     )
 
     return {
@@ -222,7 +221,7 @@ export default function SearchTrends() {
       country && category === 'Apps'
         ? `/api/trends/apps?country=${country}`
         : null,
-      fetcher
+      fetcher,
     )
 
     return {
@@ -361,52 +360,55 @@ export default function SearchTrends() {
     return null
   }
 
-  return (
-    <section className={Styles.container + ' ' + Styles[`trends${category}`]}>
-      <div className={Styles.title}>
-        <h2>{titleTrends ?? 'Trends'}</h2>
-      </div>
+  if (dataTrends || errorTrends) {
+    return (
+      <section className={Styles.container + ' ' + Styles[`trends${category}`]}>
+        <div className={Styles.title}>
+          <h2>{titleTrends ?? 'Trends'}</h2>
+        </div>
 
-      {category === 'Local' && <ButtonGeolocation />}
-      {category === 'Local' && loadingLocal && <Loader />}
-      {!dataTrends && !errorTrends && category != 'Local' && <Loader />}
-      {errorTrends && <div>Error</div>}
+        {category === 'Local' && <ButtonGeolocation />}
 
-      {dataTrends && (
-        <ul>
-          {dataTrends?.data?.map((item: ITrendsItem, index: number) => (
-            <li key={index}>
-              <button
-                onClick={() =>
-                  item.url
-                    ? window.open(item.url, '_blank')
-                    : putValue(item.title.toLowerCase())
-                }>
-                {item.image && <img src={item.image} alt="" />}
-                {item.title && <span>{item.title}</span>}
-              </button>
-            </li>
-          ))}
-        </ul>
-      )}
+        {errorTrends && <div>Error on API</div>}
 
-      <div className={Styles.credits}>
         {dataTrends && (
-          <p>
-            {t('powered')}{' '}
-            <a
-              href={
-                dataTrends?.credits_url
-                  ? dataTrends?.credits_url + '?utm_source=findto_app'
-                  : ''
-              }
-              target="_blank"
-              rel="noopener">
-              {dataTrends?.credits_title ?? ''}
-            </a>
-          </p>
+          <ul>
+            {dataTrends?.data?.map((item: ITrendsItem, index: number) => (
+              <li key={index}>
+                <button
+                  onClick={() =>
+                    item.url
+                      ? window.open(item.url, '_blank')
+                      : putValue(item.title.toLowerCase())
+                  }>
+                  {item.image && <img src={item.image} alt="" />}
+                  {item.title && <span>{item.title}</span>}
+                </button>
+              </li>
+            ))}
+          </ul>
         )}
-      </div>
-    </section>
-  )
+
+        <div className={Styles.credits}>
+          {dataTrends && (
+            <p>
+              {t('powered')}{' '}
+              <a
+                href={
+                  dataTrends?.credits_url
+                    ? dataTrends?.credits_url + '?utm_source=findto_app'
+                    : ''
+                }
+                target="_blank"
+                rel="noopener">
+                {dataTrends?.credits_title ?? ''}
+              </a>
+            </p>
+          )}
+        </div>
+      </section>
+    )
+  }
+
+  return null
 }

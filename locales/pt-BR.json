@@ -26,7 +26,6 @@
       "Energia suja",
       "ainda não foi analisado"
     ],
-
     "slogan": "Busca descentralizada na Web e IA",
     "about": "Sobre",
     "community": "Comunidade",
@@ -34,7 +33,7 @@
     "terms": "Termos",
     "donate": "Faça uma doação",
     "more": "Mais",
-    "learnMore": "Saiba mais",
+    "learnMore": "Conheça o Findto",
     "viewNearbyPlaces": "Ver locais próximos",
     "openApp": "Abrir app",
     "placeholder": "Busca",
@@ -47,11 +46,11 @@
     "language": "Idioma",
     "contribute": "Contribua",
     "feedback": {
-      "title": "Feedback",
+      "title": "Enviar feedback",
       "url": "https://forms.gle/r6XAyB1ZLn9qzwp16"
     },
     "warnings": {
-      "torrent": "Aviso: O protocolo BitTorrent não é ilegal, mas fazer download de conteúdo protegido por direitos autorais pode ser, dependendo da sua jurisdição local. Verifique a legislação da sua região para evitar multas ou ações judiciais."
+      "torrent": "Aviso: Torrent não é ilegal, mas fazer download de conteúdo protegido por direitos autorais pode ser, dependendo da sua jurisdição. Verifique a legislação da sua região para evitar problemas legais."
     }
   },
   "categories": [
@@ -230,10 +229,6 @@
       ],
       "youtube_channels": [
         {
-          "id": "UCr3dtVIm3nL7I-Yjn2PxxIQ",
-          "title": "cortes-leonenilceoficial4101"
-        },
-        {
           "id": "UCk5BcU1rOy6hepflk7_q_Pw",
           "title": "MeteoroBrasil"
         },
@@ -242,12 +237,16 @@
           "title": "canalgnt"
         },
         {
-          "id": "UCj0O6W8yDuLg3iraAXKgCrQ",
-          "title": "vocesabia"
+          "id": "UCr3dtVIm3nL7I-Yjn2PxxIQ",
+          "title": "cortes-leonenilceoficial4101"
         },
         {
           "id": "UC4_SpEjNNtz6sfG-6uXO09w",
           "title": "papelpop"
+        },
+        {
+          "id": "UCbAiIkPobUFy71zlmwVw3jw",
+          "title": "fatosdesconhecidos"
         },
         {
           "id": "UClu474HMt895mVxZdlIHXEA",
@@ -256,6 +255,10 @@
         {
           "id": "UCH2VZQBLFTOp6I_qgnBJCuQ",
           "title": "nostalgia"
+        },
+        {
+          "id": "UCj0O6W8yDuLg3iraAXKgCrQ",
+          "title": "vocesabia"
         },
         {
           "id": "UCIJwKI84CglciGM9aC0xcPQ",
@@ -546,20 +549,24 @@
       ],
       "youtube_channels": [
         {
-          "id": "UCEgzbINEJfsLivqFdLHKIrg",
-          "title": "mdiscosqamigos"
-        },
-        {
           "id": "UCtwBWu3V9hTTlUIQ7ot9Xlg",
           "title": "SpotifyBrasil"
+        },
+        {
+          "id": "UCkg3WzpzJPMrre4ZRGHixgQ",
+          "title": "DeezerBrasil"
+        },
+        {
+          "id": "UCEgzbINEJfsLivqFdLHKIrg",
+          "title": "mdiscosqamigos"
         },
         {
           "id": "UCucs1ej22g6huKteRqO8mRA",
           "title": "rollingstonebrasil"
         },
         {
-          "id": "UCkg3WzpzJPMrre4ZRGHixgQ",
-          "title": "DeezerBrasil"
+          "id": "UCiIkNiQDVwsvG835tAD1zuA",
+          "title": "umusicbrasil"
         },
         {
           "id": "UCO6tCk8-AjEQPo6hBvSLuQQ",
@@ -588,6 +595,10 @@
         {
           "id": "UCBv7HEHuVlNAELGi5XJd85Q",
           "title": "AppleMusic"
+        },
+        {
+          "id": "UC7kI8WjpCfFoMSNDuRh_4lA",
+          "title": "pitchfork"
         }
       ]
     },
@@ -1046,6 +1057,10 @@
           "title": "CanalUSP"
         },
         {
+          "id": "UCaRwlcHcvQbrfdbTF500zLA",
+          "title": "tvunesp"
+        },
+        {
           "id": "UC2mmP8ysfyko40KSn90x6Og",
           "title": "CanalfuturaOrgBr"
         },
@@ -1062,10 +1077,6 @@
           "title": "CNPqOficial"
         },
         {
-          "id": "UC8Q3CRCvSld1eJsoyQvTzxg",
-          "title": "CAPESOficial"
-        },
-        {
           "id": "UCKHhA5hN2UohhFDfNXB_cvQ",
           "title": "manualdomundo"
         },
@@ -1080,6 +1091,10 @@
         {
           "id": "UCn9sSXxb1Pd3v6bszZRssJA",
           "title": "ministeriodaeducacao_MEC"
+        },
+        {
+          "id": "UC8Q3CRCvSld1eJsoyQvTzxg",
+          "title": "CAPESOficial"
         },
         {
           "id": "UCjuL_xtE7NpxtkWbYc89DFA",

@@ -16,20 +16,20 @@ export default function PageTerms() {
       <section>
         <div className={Style.container}>
           <article>
-            <h2>1. Welcome</h2>
+            <h2>1. Welcome to Findto</h2>
+
             <p>
-              You are welcome to Findto! By accessing services at internet
-              domain <a href="http://findto.app">http://findto.app</a>{' '}
+              Welcome! Findto is an assistant for decentralized search on Web
+              and AI. Findto redirects to third-party external services. All
+              rights reserved to them and their trademarks.
+            </p>
+
+            <p>
+              By accessing services at internet domain https://findto.app
               ("Findto"), you are agreeing to be bound by these terms, and agree
               that you are responsible for compliance with all applicable laws
               of Brazil, and local regulations. If you do not agree, please, do
               not use or access Findto.
-            </p>
-
-            <p>
-              Findto is an assistant for decentralized Web & AI search. Findto
-              redirects to third-party external services. All rights reserved to
-              them and their trademarks.
             </p>
 
             <h2>2. Use License and Intellectual Property</h2>

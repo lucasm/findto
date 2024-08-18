@@ -332,7 +332,7 @@ export function IconClose() {
       height="24"
       stroke="currentColor"
       strokeWidth="3"
-      fill="none"
+      fill="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round">
       <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -683,6 +683,18 @@ export const IconThemeSystem = () => (
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg">
     <path d="M6.75 22a.75.75 0 0 1-.102-1.493l.102-.007h1.749v-2.498H4.25a2.25 2.25 0 0 1-2.245-2.096L2 15.752V5.25a2.25 2.25 0 0 1 2.096-2.245L4.25 3h15.499a2.25 2.25 0 0 1 2.245 2.096l.005.154v10.502a2.25 2.25 0 0 1-2.096 2.245l-.154.005h-4.25V20.5h1.751a.75.75 0 0 1 .102 1.494L17.25 22H6.75Zm7.248-3.998h-4l.001 2.498h4l-.001-2.498ZM19.748 4.5H4.25a.75.75 0 0 0-.743.648L3.5 5.25v10.502c0 .38.282.694.648.743l.102.007h15.499a.75.75 0 0 0 .743-.648l.007-.102V5.25a.75.75 0 0 0-.648-.743l-.102-.007Z" />
+  </svg>
+)
+export const IconChevronDown = () => (
+  <svg
+    width="24"
+    height="24"
+    fill="currentColor"
+    strokeWidth=".5"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.293 8.293a1 1 0 0 1 1.414 0L12 14.586l6.293-6.293a1 1 0 1 1 1.414 1.414l-7 7a1 1 0 0 1-1.414 0l-7-7a1 1 0 0 1 0-1.414Z" />
   </svg>
 )
 

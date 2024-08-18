@@ -1,18 +1,17 @@
 'use client'
 
-import { useEffect, useState, useCallback, useRef, useMemo } from 'react'
 import Styles from './WidgetVideoStories.module.css'
-import { fetcher } from '@/utils/http'
+import { useEffect, useState, useCallback, useRef, useMemo } from 'react'
 import useSWR from 'swr'
+import { fetcher } from '@/utils/http'
 import { useSearch } from '@/contexts/SearchContext'
-import Loader from '../Loader'
-import { IconClose } from '../SvgIcons'
 import type { ITrendsItem } from '@/interfaces/trends'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import { useTranslations } from 'next-intl'
+import { IconClose } from '../SvgIcons'
 
 export default function WidgetVideoStories() {
   const t = useTranslations('t')
@@ -24,26 +23,14 @@ export default function WidgetVideoStories() {
   const [shouldFetch, setShouldFetch] = useState(false)
   const videoPlayer = useRef<HTMLDivElement | null>(null)
 
-  const isValidCategory = useMemo(() => {
-    return (
-      category === 'Social' ||
-      category === 'Videos' ||
-      category === 'Music' ||
-      category === 'Local' ||
-      category === 'News' ||
-      category === 'Academic' ||
-      category === 'Code' ||
-      category === 'Finance' ||
-      category === 'Legal'
-    )
-  }, [category])
-
   const selectedCategory = useMemo(() => {
     return data?.find((item: { name: string }) => item.name === category)
       ?.youtube_channels
   }, [category, data])
 
   useEffect(() => {
+    closeVideo()
+
     if (selectedCategory) {
       const ids = selectedCategory.map((item: any) => item.id).join(',')
       setChannelsIds(ids)
@@ -59,32 +46,26 @@ export default function WidgetVideoStories() {
       ? `/api/stories/?channels=${encodeURIComponent(channelsIds)}`
       : null,
     fetcher,
-    { revalidateOnFocus: false } // evita revalidações desnecessárias
+    { revalidateOnFocus: false }, // evita revalidações desnecessárias
   )
 
-  const scrollToVideoPlayer = () => {
+  const scrollToVideo = () => {
     if (videoPlayer.current) {
       const topPosition =
         videoPlayer.current.getBoundingClientRect().top + window.scrollY - 20
       window.scrollTo({ top: topPosition, behavior: 'smooth' })
     }
   }
-
   const openVideo = useCallback((url: string) => {
     setVideoUrl(url)
 
     setTimeout(() => {
-      scrollToVideoPlayer()
+      scrollToVideo()
     }, 300) // delay
   }, [])
-
   const closeVideo = useCallback(() => {
     setVideoUrl(undefined)
   }, [])
-
-  useEffect(() => {
-    closeVideo()
-  }, [category])
 
   useEffect(() => {
     if (sizeWindow.width < 480) {
@@ -99,14 +80,13 @@ export default function WidgetVideoStories() {
     }
   }, [sizeWindow])
 
-  if (shouldFetch) {
+  if (shouldFetch && dataTrends) {
     return (
       <section className={Styles.container + ' ' + Styles[`trends${category}`]}>
         <div className={Styles.title}>
           <h2>Stories</h2>
         </div>
 
-        {!dataTrends && !errorTrends && <Loader />}
         {errorTrends && <div>Error</div>}
 
         {dataTrends && (

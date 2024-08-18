@@ -28,19 +28,19 @@ export default function CardsLink() {
       active: true,
     },
     {
-      title: 'Give a star',
+      title: 'GitHub',
       url: 'https://github.com/lucasm/findto',
       icon: <IconGitHub />,
       active: true,
     },
     {
-      title: 'Follow',
+      title: 'X',
       url: 'https://x.com/findtoapp',
       icon: <IconX />,
       active: true,
     },
     {
-      title: 'Join channel',
+      title: 'Discord',
       url: 'https://discord.gg/gEDm5MU6pq',
       icon: <IconDiscord />,
       active: true,

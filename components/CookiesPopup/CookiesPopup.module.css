@@ -21,7 +21,7 @@
   align-items: center;
 }
 .cookiesPopup p {
-  font-size: var(--font-size);
+  font-size: var(--font-size-small);
 }
 
 .slideUp {
@@ -38,8 +38,9 @@
   padding: 10px 20px;
   border-radius: var(--radius-small);
   cursor: pointer;
+  font-size: var(--font-size);
 }
-.cookiesPopup button,
+
 .cookiesPopup a {
   font-size: var(--font-size-small);
 }

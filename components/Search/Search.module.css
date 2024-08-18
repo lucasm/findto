@@ -131,6 +131,7 @@
   opacity: 0.5;
   border-radius: 0;
   background: transparent;
+  color: var(--color-black);
 }
 .resetButton:focus,
 .resetButton:hover {

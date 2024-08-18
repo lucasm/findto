@@ -36,7 +36,7 @@ export default function PageAbout() {
               </figure>
 
               <article>
-                <h2>Get control over algorithms</h2>
+                <h2>Take control of algorithms</h2>
                 <p>
                   Findto puts people in control of the algorithms. Find anything
                   switching between diverse sources. More productive and
@@ -88,8 +88,8 @@ export default function PageAbout() {
       <section>
         <div className={Style.container}>
           <div className={Style.actionContainer}>
-            <h2>A renewed search experience</h2>
-            <p>Decentralized search. Build by people, for people.</p>
+            <h2>Elevating your search experience</h2>
+            <p>Search decentralized. Built by people, for people.</p>
             <Button url="/" color="colors">
               {t('openApp')}
             </Button>

@@ -1,0 +1,42 @@
+.customSelect {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.customSelect select {
+  position: relative;
+  cursor: pointer;
+  font-size: var(--font-size);
+  height: var(--size-small);
+  padding: 0 3.25rem 0 1.25rem;
+  line-height: 1.2rem;
+  margin: 0;
+  border-radius: var(--radius);
+  border: none;
+  color: inherit;
+  background-repeat: no-repeat;
+  background-size: 1.45rem;
+  background-position: top 50% right 1rem;
+  background-color: var(--color-black-translucent);
+  transition: var(--transition);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.customSelect select:hover,
+.customSelect select:focus {
+  background-color: var(--color-black-translucent);
+}
+
+.label {
+  font-size: 0;
+}
+.customSelect svg {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--color-text-black);
+}

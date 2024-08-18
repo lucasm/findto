@@ -44,14 +44,13 @@
 
 /* Sizes */
 
-/* .trendsVideos ul,
+.trendsVideos ul,
 .trendsImage ul,
 .trendsMusic ul,
 .trendsSocial ul,
-.trendsNews ul,
 .trendsShopping ul {
   grid-template-columns: repeat(4, 1fr);
-} */
+}
 
 .trendsVideos ul li button,
 .trendsImage ul li button,
