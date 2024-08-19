@@ -1,8 +1,11 @@
-import type { NextApiResponse } from 'next'
+import type { NextApiRequest, NextApiResponse } from 'next'
 import axios from 'axios'
 import { ITrends } from '../../../interfaces/trends'
 
-export default async function endpoint(res: NextApiResponse): Promise<void> {
+export default async function endpoint(
+  _req: NextApiRequest,
+  res: NextApiResponse,
+): Promise<void> {
   const url = 'https://api.gitterapp.com'
 
   try {
