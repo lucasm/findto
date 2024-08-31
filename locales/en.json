@@ -6,6 +6,11 @@
       "title": "Decentralized search on Web and AI",
       "description": "Findto puts people in control of search   algorithms."
     },
+    "componentVoiceSearch": {
+      "voice": "Voice",
+      "speak": "Speak now",
+      "allow": "Waiting..."
+    },
     "slogan": "Decentralized search on Web and AI",
     "about": "About",
     "community": "Community",
@@ -19,7 +24,6 @@
     "placeholder": "Search",
     "search": "Search",
     "clear": "Clear",
-    "voice": "Voz",
     "powered": "Powered by",
     "settings": "Settings",
     "theme": "Theme",
@@ -99,12 +103,12 @@
           "action": "https://search.brave.com/search?q="
         },
         {
-          "name": "Yahoo",
-          "action": "https://br.search.yahoo.com/search?p="
-        },
-        {
           "name": "Startpage",
           "action": "https://www.startpage.com/do/asearch?query="
+        },
+        {
+          "name": "Yahoo",
+          "action": "https://br.search.yahoo.com/search?p="
         },
         {
           "name": "You",
@@ -334,68 +338,55 @@
         },
         {
           "name": "Pexels",
-          "action": "https://www.pexels.com/search/",
-          "color": "#1ac7a5"
+          "action": "https://www.pexels.com/search/"
         },
         {
           "name": "Openverse",
-          "action": "https://openverse.org/search/?q=",
-          "color": "#fde034"
+          "action": "https://openverse.org/search/?q="
         },
         {
           "name": "Freepik",
-          "action": "https://www.freepik.com/search?query=",
-          "color": "#4296ff"
+          "action": "https://www.freepik.com/search?query="
         },
         {
           "name": "Pixabay",
-          "action": "https://pixabay.com/photos/search/",
-          "color": "#5ee887"
+          "action": "https://pixabay.com/photos/search/"
         },
         {
           "name": "Adobe Stock",
-          "action": "https://stock.adobe.com/search?k=",
-          "color": "#ddd"
+          "action": "https://stock.adobe.com/search?k="
         },
         {
           "name": "Shutterstock",
-          "action": "https://www.shutterstock.com/search?searchterm=",
-          "color": "#ff6055"
+          "action": "https://www.shutterstock.com/search?searchterm="
         },
         {
           "name": "Getty Images",
-          "action": "https://www.gettyimages.com/photos/",
-          "color": "#FAE9CD"
+          "action": "https://www.gettyimages.com/photos/"
         },
         {
           "name": "SmugMug",
-          "action": "https://www.smugmug.com/search/?q=",
-          "color": "#b9e75d"
+          "action": "https://www.smugmug.com/search/?q="
         },
         {
           "name": "500px",
-          "action": "https://500px.com/search?q=",
-          "color": "#0099e5"
+          "action": "https://500px.com/search?q="
         },
         {
           "name": "Imgur",
-          "action": "https://imgur.com/search?q=",
-          "color": "#3cea99"
+          "action": "https://imgur.com/search?q="
         },
         {
           "name": "DeviantArt",
-          "action": "https://www.deviantart.com/?q=",
-          "color": "#37ffbe"
+          "action": "https://www.deviantart.com/?q="
         },
         {
           "name": "Dribbble",
-          "action": "https://dribbble.com/search?q=",
-          "color": "#f082ac"
+          "action": "https://dribbble.com/search?q="
         },
         {
           "name": "Behance",
-          "action": "https://www.behance.net/search?search=",
-          "color": "#377cff"
+          "action": "https://www.behance.net/search?search="
         }
       ]
     },
@@ -406,88 +397,71 @@
       "data": [
         {
           "name": "Spotify",
-          "action": "https://open.spotify.com/search/",
-          "color": "#58e087"
+          "action": "https://open.spotify.com/search/"
         },
         {
           "name": "Apple Music",
-          "action": "https://music.apple.com/search?term=",
-          "color": "#ff5c6e"
+          "action": "https://music.apple.com/search?term="
         },
         {
           "name": "SoundCloud",
-          "action": "https://soundcloud.com/search?q=",
-          "color": "#ff7d3e"
+          "action": "https://soundcloud.com/search?q="
         },
         {
           "name": "YouTube Music",
-          "action": "https://music.youtube.com/search?q=",
-          "color": "#ff5454"
+          "action": "https://music.youtube.com/search?q="
         },
         {
           "name": "Amazon Music",
-          "action": "https://music.amazon.com.br/search/",
-          "color": "#25d1da"
+          "action": "https://music.amazon.com/search/"
         },
         {
           "name": "Pandora",
-          "action": "https://www.pandora.com/search/",
-          "color": "#5d85ff"
+          "action": "https://www.pandora.com/search/"
         },
         {
           "name": "iHeart",
-          "action": "https://www.iheart.com/search/?q=",
-          "color": "#ff606b"
+          "action": "https://www.iheart.com/search/?q="
         },
         {
           "name": "TuneIn",
-          "action": "https://tunein.com/search/?query=",
-          "color": "#36d7cd"
+          "action": "https://tunein.com/search/?query="
         },
         {
           "name": "Deezer",
-          "action": "https://www.deezer.com/search/",
-          "color": "#dddddd"
+          "action": "https://www.deezer.com/search/"
         },
         {
           "name": "TIDAL",
-          "action": "https://listen.tidal.com/search?q=",
-          "color": "#999999"
+          "action": "https://listen.tidal.com/search?q="
         },
         {
           "name": "Lastfm",
-          "action": "https://www.last.fm/search?q=",
-          "color": "#ff5050"
+          "action": "https://www.last.fm/search?q="
         },
         {
           "name": "Discogs",
-          "action": "https://www.discogs.com/search/?q=",
-          "color": "#F5Df2E"
+          "action": "https://www.discogs.com/search/?q="
         },
         {
           "name": "Genius",
-          "action": "https://genius.com/search?q=",
-          "color": "#f5f575"
+          "action": "https://genius.com/search?q="
         },
         {
           "name": "Musixmatch",
-          "action": "https://www.musixmatch.com/search/",
-          "color": "#ff6b6b"
+          "action": "https://www.musixmatch.com/search/"
         },
         {
           "name": "Bandcamp",
-          "action": "https://bandcamp.com/search?q=",
-          "color": "#4ab1cd"
+          "action": "https://bandcamp.com/search?q="
         },
         {
           "name": "Hype Machine",
-          "action": "http://hypem.com/search/",
-          "color": "#9ed664"
+          "action": "http://hypem.com/search/"
         },
         {
           "name": "Audius",
-          "action": "https://audius.co/search/?q=",
-          "color": "#bb65ff"
+          "action": "https://audius.co/search/?q="
         }
       ]
     },
@@ -498,58 +472,47 @@
       "data": [
         {
           "name": "Amazon",
-          "action": "https://www.amazon.com/s?k=",
-          "color": "#ffba51"
+          "action": "https://www.amazon.com/s?k="
         },
         {
           "name": "AliExpress",
-          "action": "https://www.aliexpress.com/wholesale?SearchText=",
-          "color": "#ff6363"
+          "action": "https://www.aliexpress.com/wholesale?SearchText="
         },
         {
           "name": "Ebay",
-          "action": "https://www.ebay.com/sch/i.html?_nkw=",
-          "color": "#4ca0ff"
+          "action": "https://www.ebay.com/sch/i.html?_nkw="
         },
         {
           "name": "Walmart",
-          "action": "https://www.walmart.com/search/?query=",
-          "color": "#ffc220"
+          "action": "https://www.walmart.com/search/?query="
         },
         {
           "name": "Best Buy",
-          "action": "https://www.bestbuy.com/site/searchpage.jsp?st=",
-          "color": "#ead853"
+          "action": "https://www.bestbuy.com/site/searchpage.jsp?st="
         },
         {
           "name": "Etsy",
-          "action": "https://www.etsy.com/search?q=",
-          "color": "#ff8b3b"
+          "action": "https://www.etsy.com/search?q="
         },
         {
           "name": "Target",
-          "action": "https://www.target.com/s?searchTerm=",
-          "color": "#ff5151"
+          "action": "https://www.target.com/s?searchTerm="
         },
         {
           "name": "Wish",
-          "action": "https://www.wish.com/search/",
-          "color": "#35c7ff"
+          "action": "https://www.wish.com/search/"
         },
         {
           "name": "Macys",
-          "action": "https://www.macys.com/shop/featured/",
-          "color": "#ff2b3b"
+          "action": "https://www.macys.com/shop/featured/"
         },
         {
           "name": "Groupon",
-          "action": "https://www.groupon.com/browse/?query=",
-          "color": "#88cc56"
+          "action": "https://www.groupon.com/browse/?query="
         },
         {
           "name": "Craigslist",
-          "action": "https://craigslist.org/search/sss?query=",
-          "color": "#a96be2"
+          "action": "https://craigslist.org/search/sss?query="
         }
       ]
     },
@@ -560,83 +523,67 @@
       "data": [
         {
           "name": "Google Maps",
-          "action": "https://google.com/maps/search/",
-          "color": "#649fff"
+          "action": "https://google.com/maps/search/"
         },
         {
           "name": "Apple Maps",
-          "action": "http://maps.apple.com/?q=",
-          "color": "#4cb69a"
+          "action": "http://maps.apple.com/?q="
         },
         {
           "name": "Airbnb",
-          "action": "https://www.airbnb.com/s/",
-          "color": "#ff607d"
+          "action": "https://www.airbnb.com/s/"
         },
         {
           "name": "Tripadvisor",
-          "action": "https://www.tripadvisor.com/Search?q=",
-          "color": "#40d59c"
+          "action": "https://www.tripadvisor.com/Search?q="
         },
         {
           "name": "Booking",
-          "action": "https://www.booking.com/searchresults.html?ss=",
-          "color": "#2681ff"
+          "action": "https://www.booking.com/searchresults.html?ss="
         },
         {
           "name": "Kayak",
-          "action": "https://www.kayak.com/explore/",
-          "color": "#ff853c"
+          "action": "https://www.kayak.com/explore/"
         },
         {
           "name": "Skyscanner",
-          "action": "https://www.skyscanner.com/",
-          "color": "#2681ff"
+          "action": "https://www.skyscanner.com/"
         },
         {
           "name": "Fandango",
-          "action": "https://www.fandango.com/search/results?q=lion",
-          "color": "#ff963f"
+          "action": "https://www.fandango.com/search/results?q=lion"
         },
         {
           "name": "Eventbrite",
-          "action": "https://www.eventbrite.com/d/",
-          "color": "#f05537"
+          "action": "https://www.eventbrite.com/d/"
         },
         {
           "name": "Yelp",
-          "action": "https://www.yelp.com/search?find_desc=",
-          "color": "#ff5454"
+          "action": "https://www.yelp.com/search?find_desc="
         },
         {
           "name": "Bing Maps",
-          "action": "https://www.bing.com/maps?q=los+angles",
-          "color": "#0ac9c9"
+          "action": "https://www.bing.com/maps?q=los+angles"
         },
         {
           "name": "HERE WeGo",
-          "action": "https://wego.here.com/search/",
-          "color": "#01b6b2"
+          "action": "https://wego.here.com/search/"
         },
         {
           "name": "Mapquest",
-          "action": "https://www.mapquest.com/search/results?query=",
-          "color": "#5ec279"
+          "action": "https://www.mapquest.com/search/results?query="
         },
         {
           "name": "Foursquare",
-          "action": "https://foursquare.com/explore?q=",
-          "color": "#6388f3"
+          "action": "https://foursquare.com/explore?q="
         },
         {
           "name": "Moovit",
-          "action": "https://moovitapp.com/?from=",
-          "color": "#ff7f58"
+          "action": "https://moovitapp.com/?from="
         },
         {
           "name": "Uber",
-          "action": "https://uber.com/?q=",
-          "color": "#eee"
+          "action": "https://uber.com/?q="
         }
       ]
     },
@@ -834,58 +781,47 @@
       "data": [
         {
           "name": "LinkedIn",
-          "action": "https://www.linkedin.com/jobs/search/?keywords=",
-          "color": "#1da6ee"
+          "action": "https://www.linkedin.com/jobs/search/?keywords="
         },
         {
           "name": "Indeed",
-          "action": "https://www.indeed.com/jobs?q=",
-          "color": "#3788ff"
+          "action": "https://www.indeed.com/jobs?q="
         },
         {
           "name": "Glassdoor",
-          "action": "https://www.glassdoor.com/Job/jobs.htm?sc.keyword=",
-          "color": "#4dda7d"
+          "action": "https://www.glassdoor.com/Job/jobs.htm?sc.keyword="
         },
         {
           "name": "Upwork",
-          "action": "https://www.upwork.com/search/profiles/?q=",
-          "color": "#88f456"
+          "action": "https://www.upwork.com/search/profiles/?q="
         },
         {
           "name": "Fiverr",
-          "action": "https://www.fiverr.com/search/gigs?query=",
-          "color": "#3fca89"
+          "action": "https://www.fiverr.com/search/gigs?query="
         },
         {
           "name": "Monster",
-          "action": "https://www.monster.com/jobs/search/?q=",
-          "color": "#975ff0"
+          "action": "https://www.monster.com/jobs/search/?q="
         },
         {
           "name": "ZipRecruiter",
-          "action": "https://www.ziprecruiter.com/candidate/search?search=",
-          "color": "#b2e522"
+          "action": "https://www.ziprecruiter.com/candidate/search?search="
         },
         {
           "name": "LinkUp",
-          "action": "https://www.linkup.com/search/results/",
-          "color": "#b6f240"
+          "action": "https://www.linkup.com/search/results/"
         },
         {
           "name": "Dice",
-          "action": "https://www.dice.com/jobs?q=",
-          "color": "#ff3a41"
+          "action": "https://www.dice.com/jobs?q="
         },
         {
           "name": "CareerBuilder",
-          "action": "https://www.careerbuilder.com/jobs?keywords=",
-          "color": "#4aadfa"
+          "action": "https://www.careerbuilder.com/jobs?keywords="
         },
         {
           "name": "SimplyHired",
-          "action": "https://www.simplyhired.com/search?q=",
-          "color": "#309fff"
+          "action": "https://www.simplyhired.com/search?q="
         }
       ]
     },
@@ -895,93 +831,75 @@
       "data": [
         {
           "name": "Stack Overflow",
-          "action": "https://pt.stackoverflow.com/search?q=",
-          "color": "#ffa055"
+          "action": "https://pt.stackoverflow.com/search?q="
         },
         {
           "name": "GitHub",
-          "action": "https://github.com/search?q=",
-          "color": "#becad8"
+          "action": "https://github.com/search?q="
         },
         {
           "name": "GitLab",
-          "action": "https://gitlab.com/public?name=",
-          "color": "#ff8b50"
+          "action": "https://gitlab.com/public?name="
         },
         {
           "name": "Bitbucket",
-          "action": "https://bitbucket.org/repo/all/?name=",
-          "color": "#61a1ff"
+          "action": "https://bitbucket.org/repo/all/?name="
         },
         {
           "name": "CodePen",
-          "action": "https://codepen.io/search/pens?q=",
-          "color": "#cbd5f9"
+          "action": "https://codepen.io/search/pens?q="
         },
         {
           "name": "Glitch",
-          "action": "https://glitch.com/search?q=",
-          "color": "#f7a4ff"
+          "action": "https://glitch.com/search?q="
         },
         {
           "name": "Sourcegraph",
-          "action": "https://sourcegraph.com/search?q=",
-          "color": "#da7bff"
+          "action": "https://sourcegraph.com/search?q="
         },
         {
           "name": "searchcode",
-          "action": "https://searchcode.com/?q=",
-          "color": "#1EAEDB"
+          "action": "https://searchcode.com/?q="
         },
         {
           "name": "Docker Hub",
-          "action": "https://hub.docker.com/search?q=",
-          "color": "#4bbfff"
+          "action": "https://hub.docker.com/search?q="
         },
         {
           "name": "npm",
-          "action": "https://www.npmjs.com/search?q=",
-          "color": "#ff6565"
+          "action": "https://www.npmjs.com/search?q="
         },
         {
           "name": "Yarn",
-          "action": "https://yarnpkg.com/?q=",
-          "color": "#30beff"
+          "action": "https://yarnpkg.com/?q="
         },
         {
           "name": "PyPI",
-          "action": "https://pypi.org/search/?q=",
-          "color": "#47a4da"
+          "action": "https://pypi.org/search/?q="
         },
         {
           "name": "NuGet",
-          "action": "https://www.nuget.org/packages?q=",
-          "color": "#4bb0ff"
+          "action": "https://www.nuget.org/packages?q="
         },
         {
           "name": "Packagist",
-          "action": "https://packagist.org/?query=",
-          "color": "#ffae51"
+          "action": "https://packagist.org/?query="
         },
         {
           "name": "RubyGems",
-          "action": "https://rubygems.org/search?query=",
-          "color": "#ff735d"
+          "action": "https://rubygems.org/search?query="
         },
         {
           "name": "Crates",
-          "action": "https://crates.io/search?q=",
-          "color": "#19a974"
+          "action": "https://crates.io/search?q="
         },
         {
           "name": "Go",
-          "action": "https://pkg.go.dev/search?q=",
-          "color": "#50b7e0"
+          "action": "https://pkg.go.dev/search?q="
         },
         {
           "name": "Pub.dev",
-          "action": "https://pub.dev/packages?q=",
-          "color": "#25a8ff"
+          "action": "https://pub.dev/packages?q="
         }
       ]
     },

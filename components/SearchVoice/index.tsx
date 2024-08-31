@@ -1,7 +1,7 @@
 'use client'
 
 import 'regenerator-runtime/runtime'
-
+import { useTranslations } from 'next-intl'
 import { useEffect, useState } from 'react'
 import Style from './SearchVoice.module.css'
 import SpeechRecognition, {
@@ -13,18 +13,23 @@ import Tooltip from '../Tooltip'
 import Modal from '../Modal'
 
 export default function SearchVoice() {
-  const { data, putValue, isMobileViewport } = useSearch()
+  const { putValue, isMobileViewport } = useSearch()
   const {
     transcript,
     listening,
     resetTranscript,
     browserSupportsSpeechRecognition,
+    isMicrophoneAvailable,
   } = useSpeechRecognition()
+  const t = useTranslations('t')
   const [hasVoiceSupport, setHasVoiceSupport] = useState<boolean>(false)
-  const title = data?.t?.voice ?? 'Voice'
 
   useEffect(() => {
-    if (typeof window !== 'undefined' && browserSupportsSpeechRecognition) {
+    if (
+      typeof window !== 'undefined' &&
+      browserSupportsSpeechRecognition &&
+      isMicrophoneAvailable
+    ) {
       setHasVoiceSupport(true)
     }
   }, [])
@@ -37,7 +42,6 @@ export default function SearchVoice() {
     }
   }
 
-  // voice
   useEffect(() => {
     if (!listening) {
       putValue(transcript)
@@ -52,12 +56,22 @@ export default function SearchVoice() {
           <Modal
             isOpen={listening}
             onClose={() => resetTranscript()}
-            title={data?.t?.voiceSearch[0] ?? 'Listening...'}>
-            <div className={Style.buttonListening}></div>
-            <h2 className={Style.transcriptContainer}>{transcript}</h2>
+            title={
+              isMicrophoneAvailable
+                ? t('componentVoiceSearch.speak')
+                : t('componentVoiceSearch.allow')
+            }>
+            {isMicrophoneAvailable && (
+              <>
+                <div className={Style.buttonListening}></div>
+                <h2 className={Style.transcriptContainer}>{transcript}</h2>
+              </>
+            )}
           </Modal>
 
-          <Tooltip text={title} disable={isMobileViewport}>
+          <Tooltip
+            text={t('componentVoiceSearch.voice')}
+            disable={isMobileViewport}>
             <button
               className={
                 listening
@@ -65,11 +79,10 @@ export default function SearchVoice() {
                   : Style.button
               }
               accessKey="2"
-              aria-label={listening ? 'Turn off microphone' : title}
               aria-pressed={listening ? true : false}
               onClick={handleSpeechRecognition}>
               <IconMic />
-              {title}
+              {t('componentVoiceSearch.voice')}
             </button>
           </Tooltip>
         </div>

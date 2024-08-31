@@ -6,7 +6,11 @@
       "title": "Busca descentralizada na Web e IA",
       "description": "Explore uma internet mais saudável. Você no controle dos algoritmos de busca na Web e IA."
     },
-    "voiceSearch": ["Ouvindo"],
+    "componentVoiceSearch": {
+      "voice": "Voz",
+      "speak": "Fale agora",
+      "allow": "Aguardando permissão..."
+    },
     "widgetPrivacy": "Nível de privacidade",
     "privacyScore": [
       "muito pobre",
@@ -31,7 +35,7 @@
     "community": "Comunidade",
     "privacy": "Privacidade",
     "terms": "Termos",
-    "donate": "Faça uma doação",
+    "donate": "Doação",
     "more": "Mais",
     "learnMore": "Conheça o Findto",
     "viewNearbyPlaces": "Ver locais próximos",
@@ -39,7 +43,6 @@
     "placeholder": "Busca",
     "search": "Buscar",
     "clear": "Limpar",
-    "voice": "Voz",
     "powered": "Fornecido por",
     "settings": "Configurações",
     "theme": "Tema",
@@ -120,12 +123,12 @@
           "action": "https://search.brave.com/search?q="
         },
         {
-          "name": "Yahoo",
-          "action": "https://br.search.yahoo.com/search?p="
-        },
-        {
           "name": "Startpage",
           "action": "https://www.startpage.com/do/asearch?query="
+        },
+        {
+          "name": "Yahoo",
+          "action": "https://br.search.yahoo.com/search?p="
         },
         {
           "name": "You",
@@ -139,14 +142,7 @@
           "name": "Info",
           "action": "https://www.info.com/serp?q="
         },
-        {
-          "name": "Swisscows",
-          "action": "https://swisscows.com/web?query="
-        },
-        {
-          "name": "Yep",
-          "action": "https://yep.com/web?q="
-        },
+
         {
           "name": "Yandex",
           "action": "https://www.yandex.com/search/?text="
@@ -162,6 +158,10 @@
       "name_trends": "Tendências agora",
       "active": true,
       "data": [
+        {
+          "name": "Bluesky",
+          "action": "https://bsky.app/search?q="
+        },
         {
           "name": "X",
           "action": "https://x.com/search?src=typed_query&q="
@@ -193,10 +193,6 @@
         {
           "name": "Threads",
           "action": "https://www.threads.net/search/?q="
-        },
-        {
-          "name": "Bluesky",
-          "action": "https://bsky.app/search?q="
         },
         {
           "name": "Discord",

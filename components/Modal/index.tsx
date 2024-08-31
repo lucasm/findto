@@ -9,7 +9,7 @@ interface ModalProps {
   title?: string
 }
 
-const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, title }) => {
+const Modal = ({ isOpen, onClose, children, title }: ModalProps) => {
   const [isModalOpen, setIsModalOpen] = useState(isOpen)
   const modalRef = useRef<HTMLDivElement>(null)
   const lastFocusableElementRef = useRef<Element | null>(null)
@@ -20,6 +20,8 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, title }) => {
     // handle body scroll
     if (isOpen) {
       document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'auto'
     }
 
     // focus on modal
@@ -27,7 +29,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, title }) => {
 
     // Encontre todos os elementos clicáveis dentro do modal
     const clickableElements = modalRef.current?.querySelectorAll(
-      'button, a, input, [tabindex]:not([tabindex="-1"])'
+      'button, a, input, [tabindex]:not([tabindex="-1"])',
     )
 
     // Se houver elementos clicáveis, defina o último elemento como ref
