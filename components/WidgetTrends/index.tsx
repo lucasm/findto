@@ -356,11 +356,11 @@ export default function SearchTrends() {
     return <Alert>{t('warnings.torrent')}</Alert>
   }
 
-  if (category === 'Games') {
+  if (category === 'Games' || category === 'Finance') {
     return null
   }
 
-  if (dataTrends || errorTrends) {
+  if (dataTrends || errorTrends || category === 'Local') {
     return (
       <section className={Styles.container + ' ' + Styles[`trends${category}`]}>
         <div className={Styles.title}>
@@ -368,8 +368,6 @@ export default function SearchTrends() {
         </div>
 
         {category === 'Local' && <ButtonGeolocation />}
-
-        {errorTrends && <div>Error on API</div>}
 
         {dataTrends && (
           <ul>
@@ -390,6 +388,7 @@ export default function SearchTrends() {
         )}
 
         <div className={Styles.credits}>
+          {errorTrends && <p>Error on API</p>}
           {dataTrends && (
             <p>
               {t('powered')}{' '}
