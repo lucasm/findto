@@ -35,7 +35,7 @@
     "community": "Comunidade",
     "privacy": "Privacidade",
     "terms": "Termos",
-    "donate": "Doação",
+    "donate": "Fazer doação",
     "more": "Mais",
     "learnMore": "Conheça o Findto",
     "viewNearbyPlaces": "Ver locais próximos",
@@ -273,12 +273,12 @@
           "action": "https://www.youtube.com/results?search_query="
         },
         {
-          "name": "IMDb",
-          "action": "https://www.imdb.com/find/?q="
-        },
-        {
           "name": "Twitch",
           "action": "https://www.twitch.tv/search?term="
+        },
+        {
+          "name": "IMDb",
+          "action": "https://www.imdb.com/find/?q="
         },
         {
           "name": "Globoplay",
