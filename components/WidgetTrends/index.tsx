@@ -117,6 +117,22 @@ export default function SearchTrends() {
   }
   const { dataNews, errorNews } = useApiNews()
 
+  // Finance
+  function useApiFinance() {
+    const { data, error } = useSWR(
+      country && category === 'Finance'
+        ? `/api/trends/finance?country=${country}`
+        : null,
+      fetcher,
+    )
+
+    return {
+      dataFinance: data,
+      errorFinance: error,
+    }
+  }
+  const { dataFinance, errorFinance } = useApiFinance()
+
   // Shopping
   function useApiShopping() {
     const { data, error } = useSWR(
@@ -304,6 +320,12 @@ export default function SearchTrends() {
           errorNews && setErrorTrends(errorNews)
         }
         break
+      case 'Finance':
+        {
+          dataFinance && setDataTrends(dataFinance)
+          errorFinance && setErrorTrends(errorFinance)
+        }
+        break
       case 'Legal':
         {
           dataLegal && setDataTrends(dataLegal)
@@ -346,6 +368,8 @@ export default function SearchTrends() {
     errorCode,
     dataNews,
     errorNews,
+    dataFinance,
+    errorFinance,
     dataApps,
     errorApps,
     dataLegal,
@@ -356,7 +380,7 @@ export default function SearchTrends() {
     return <Alert>{t('warnings.torrent')}</Alert>
   }
 
-  if (category === 'Games' || category === 'Finance') {
+  if (category === 'Games') {
     return null
   }
 

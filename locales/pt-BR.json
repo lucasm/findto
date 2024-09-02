@@ -1347,15 +1347,35 @@
       "data": [
         {
           "name": "Google Finance",
-          "action": "https://finance.google.com/search?q="
+          "action": "https://google.com/finance/quote/"
+        },
+        {
+          "name": "Mobills",
+          "action": "https://www.mobills.com.br/busca/"
+        },
+        {
+          "name": "Exame",
+          "action": "https://exame.com/busca/"
+        },
+        {
+          "name": "Valor",
+          "action": "https://valor.globo.com/busca/?q="
+        },
+        {
+          "name": "B3",
+          "action": "https://www.b3.com.br/pt_br/busca/?query="
+        },
+        {
+          "name": "Itaú",
+          "action": "https://www.itau.com.br/resultados-de-busca?q="
         },
         {
           "name": "Caixa",
           "action": "https://www.caixa.gov.br/site/Paginas/Pesquisa.aspx?k="
         },
         {
-          "name": "Itaú",
-          "action": "https://www.itau.com.br/resultados-de-busca?q="
+          "name": "BB",
+          "action": "https://www.bb.com.br/site/busca/?q="
         },
         {
           "name": "Nubank",
@@ -1363,22 +1383,10 @@
         },
         {
           "name": "Bradesco",
-          "action": "https://blog.nubank.com.br/busca/?search="
-        },
-        {
-          "name": "BB",
-          "action": "https://www.caixa.gov.br/site/Paginas/Pesquisa.aspx?k="
+          "action": "https://banco.bradesco/html/classic/resultado-busca/index-nova-busca.shtm?termsearched="
         },
         {
           "name": "Santander",
-          "action": "https://www.itau.com.br/resultados-de-busca?q="
-        },
-        {
-          "name": "Inter",
-          "action": "https://www.caixa.gov.br/site/Paginas/Pesquisa.aspx?k="
-        },
-        {
-          "name": "BTG Pactual",
           "action": "https://www.itau.com.br/resultados-de-busca?q="
         }
       ],

@@ -964,6 +964,10 @@
       "active": false,
       "data": [
         {
+          "name": "Google Finance",
+          "action": "https://google.com/finance/quote/"
+        },
+        {
           "name": "finviz",
           "action": "https://finviz.com/search.ashx?p="
         }
