@@ -3,7 +3,7 @@
 import Style from './Footer.module.css'
 import Link from 'next/link'
 import SvgLogo from '../SvgLogo'
-import { IconGitHub, IconX, IconInstagram } from '../SvgIcons'
+import { IconGitHub, IconX, IconInstagram, IconBluesky } from '../SvgIcons'
 import { useTranslations } from 'next-intl'
 
 export default function AppFooter() {
@@ -45,6 +45,15 @@ export default function AppFooter() {
             <a href="https://ko-fi.com/findto" target="_blank" rel="noopener">
               {t('donate')}
             </a>
+          </li>
+          <li>
+            <Link
+              href="https://bsky.app/profile/findto.app"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Bluesky">
+              <IconBluesky />
+            </Link>
           </li>
           <li>
             <Link

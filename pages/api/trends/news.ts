@@ -12,7 +12,7 @@ const parser = new Parser({
 
 export default async function endpoint(
   request: NextApiRequest,
-  response: NextApiResponse
+  response: NextApiResponse,
 ) {
   const {
     query: { country },
@@ -45,7 +45,7 @@ export default async function endpoint(
 
     try {
       const data = await parser.parseURL(url)
-      const items = data.items.slice(0, 18).map((item) => ({
+      const items = data.items.slice(0, 16).map((item) => ({
         title: item?.title || 'No title',
         image:
           country === 'BR'
