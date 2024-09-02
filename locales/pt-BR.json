@@ -3,8 +3,8 @@
   "country_code": "BR",
   "t": {
     "componentBanner": {
-      "title": "Busca descentralizada na Web e IA",
-      "description": "Explore uma internet mais saudável. Você no controle dos algoritmos de busca na Web e IA."
+      "title": "Buscas descentralizadas",
+      "description": "Explore a internet de forma saudável. Obtenha controle dos algoritmos da Web e IA."
     },
     "componentVoiceSearch": {
       "voice": "Voz",
@@ -53,7 +53,7 @@
       "url": "https://forms.gle/r6XAyB1ZLn9qzwp16"
     },
     "warnings": {
-      "torrent": "Aviso: Torrent não é ilegal, mas fazer download de conteúdo protegido por direitos autorais pode ser, dependendo da sua jurisdição. Verifique a legislação da sua região para evitar problemas legais."
+      "torrent": "Aviso: Usar torrents não é ilegal, mas baixar ou compartilhar conteúdo protegido por direitos autorais sem autorização, pode infringir a Lei de Direitos Autorais no Brasil. Para mais informações, pesquise Lei 9.610/98."
     }
   },
   "categories": [
@@ -229,20 +229,16 @@
           "title": "MeteoroBrasil"
         },
         {
-          "id": "UC0f866RMRdL5mSVnipiOHxg",
-          "title": "canalgnt"
-        },
-        {
           "id": "UCr3dtVIm3nL7I-Yjn2PxxIQ",
           "title": "cortes-leonenilceoficial4101"
         },
         {
-          "id": "UC4_SpEjNNtz6sfG-6uXO09w",
-          "title": "papelpop"
+          "id": "UC0f866RMRdL5mSVnipiOHxg",
+          "title": "canalgnt"
         },
         {
-          "id": "UCbAiIkPobUFy71zlmwVw3jw",
-          "title": "fatosdesconhecidos"
+          "id": "UC4_SpEjNNtz6sfG-6uXO09w",
+          "title": "papelpop"
         },
         {
           "id": "UClu474HMt895mVxZdlIHXEA",
@@ -911,12 +907,12 @@
           "title": "BBCNewsBrasil"
         },
         {
-          "id": "UCNqzAD9EiECreuH6LA8IYeA",
-          "title": "TheInterceptBrasil"
-        },
-        {
           "id": "UCJVTsYjG0KLNWL6OyHx7ZGw",
           "title": "NexojornalBr"
+        },
+        {
+          "id": "UCNqzAD9EiECreuH6LA8IYeA",
+          "title": "TheInterceptBrasil"
         },
         {
           "id": "UCmYuiV9wAR3i8p19Ygc7izg",

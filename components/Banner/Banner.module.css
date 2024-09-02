@@ -5,7 +5,7 @@
   box-shadow: var(--box-shadow);
   margin: 1rem 1rem 0;
   display: grid;
-  grid-template-columns: 1.25fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   grid-gap: 8rem;
   align-items: center;
   text-align: left;
