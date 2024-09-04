@@ -32,19 +32,21 @@ export default function AppFooter() {
           <li>
             <Link href="/community">{t('community')}</Link>
           </li>
-          {/* <li>
-            <Link href="/pro">Pro</Link>
-          </li> */}
           <li>
-            <Link href="/privacy">{t('privacy')}</Link>
+            <a href="https://ko-fi.com/findto" target="_blank" rel="noopener">
+              {t('donate')}
+            </a>
+          </li>
+          <li>
+            <Link href={t('feedback.url')} target="_blank" rel="noopener">
+              {t('feedback.title')}
+            </Link>
           </li>
           <li>
             <Link href="/terms">{t('terms')}</Link>
           </li>
           <li>
-            <a href="https://ko-fi.com/findto" target="_blank" rel="noopener">
-              {t('donate')}
-            </a>
+            <Link href="/privacy">{t('privacy')}</Link>
           </li>
           <li>
             <Link

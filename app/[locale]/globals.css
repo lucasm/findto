@@ -103,7 +103,7 @@ input,
 select,
 option {
   font-family: inherit;
-  letter-spacing: -0.25px;
+  letter-spacing: -0.2px;
   outline-color: var(--color-text-black);
 }
 
