@@ -1267,6 +1267,14 @@
         {
           "name": "Pub.dev",
           "action": "https://pub.dev/packages?q="
+        },
+        {
+          "name": "Kaggle",
+          "action": "https://www.kaggle.com/search?q="
+        },
+        {
+          "name": "Tensorflow",
+          "action": "https://www.tensorflow.org/s/results?hl=pt-br&q="
         }
       ],
       "youtube_channels": [
@@ -1398,6 +1406,10 @@
         {
           "id": "UC_TapH8f4HLLAwPBaXy-Gag",
           "title": "MinFazenda"
+        },
+        {
+          "id": "UCo0jMsIPccAXghE_FCWIdNg",
+          "title": "InvestNewsBR"
         },
         {
           "id": "UC8mDF5mWNGE-Kpfcvnn0bUg",
