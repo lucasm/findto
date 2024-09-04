@@ -4,7 +4,7 @@ import CardsLink from '@/components/CardsLink'
 import { useTranslations } from 'next-intl'
 
 const title = 'Community'
-const description = 'Help us make decentralized search accessible for everyone.'
+const description = 'Help us build the open source decentralized search.'
 
 export const metadata = {
   title: title,
@@ -34,39 +34,23 @@ export default function CommunityPage() {
             </p>
 
             <p>
-              We are developing a completely new search experience — free and
-              open source.
+              Our mission is to empower people to engage with the Web and AI in
+              healthy ways.
             </p>
 
             <p>
-              Our mission is to empower people by introducing a better way to
-              interact with the Web and AI. We're putting the control of search
-              algorithms into people's hands.
+              We're introducing a new search experience, putting control of
+              search algorithms in your hands. Free and open source.
             </p>
 
             <p>
-              Why? Because we are dissatisfied. We want to break every monopoly
-              that forces us to have a monocular view of the internet and limits
-              our potential. We believe Findto can offer diverse, innovative
-              ways to explore the internet, and their best services, positively
-              impacting our digital lives.
-            </p>
-
-            <p>
-              Just as we choose what we eat, wear, date or elect, who said we
-              can't choose our search sources? Yes, we are bold. We deeply
-              believe in the power of choice.
-            </p>
-
-            <p>
-              Findto is created by passionate individuals like you. Join us and
-              get involved!
+              Findto is made by individuals like you. Join us and get involved!
             </p>
 
             <br></br>
             <br></br>
 
-            <h2>Researching Web and AI</h2>
+            <h2>Researching AI and Web</h2>
             <p>
               We are researching and are interested in partnerships with
               services to strengthen technologies of open access, decentralized

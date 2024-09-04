@@ -900,6 +900,14 @@
         {
           "name": "Pub.dev",
           "action": "https://pub.dev/packages?q="
+        },
+        {
+          "name": "Kaggle",
+          "action": "https://www.kaggle.com/search?q="
+        },
+        {
+          "name": "Tensorflow",
+          "action": "https://www.tensorflow.org/s/results?hl=pt-br&q="
         }
       ]
     },
@@ -934,6 +942,10 @@
           "action": "https://addons.mozilla.org/en-US/firefox/search/?q="
         },
         {
+          "name": "Product Hunt",
+          "action": "https://www.producthunt.com/search?q="
+        },
+        {
           "name": "Snap Store",
           "action": "https://snapcraft.io/search?q="
         },
@@ -946,8 +958,8 @@
           "action": "https://www.softonic.com/s/"
         },
         {
-          "name": "Product Hunt",
-          "action": "https://www.producthunt.com/search?q="
+          "name": "SourceForge",
+          "action": "https://sourceforge.net/directory/?q="
         },
         {
           "name": "Kickstarter",

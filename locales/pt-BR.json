@@ -4,7 +4,7 @@
   "t": {
     "componentBanner": {
       "title": "Buscas descentralizadas",
-      "description": "Explore a internet de forma saudável. Obtenha controle dos algoritmos da Web e IA."
+      "description": "Busque o mesmo termo em diversas fontes rapidamente. Com o Findto é você quem explora os algoritmos da Web e IAs - não o contrário."
     },
     "componentVoiceSearch": {
       "voice": "Voz",
@@ -35,9 +35,9 @@
     "community": "Comunidade",
     "privacy": "Privacidade",
     "terms": "Termos",
-    "donate": "Fazer doação",
+    "donate": "Quero apoiar",
     "more": "Mais",
-    "learnMore": "Saiba mais",
+    "learnMore": "Conhecer o Findto",
     "viewNearbyPlaces": "Ver locais próximos",
     "openApp": "Abrir app",
     "placeholder": "Busca",
@@ -1631,6 +1631,10 @@
           "action": "https://alternativeto.net/browse/search/?q="
         },
         {
+          "name": "Product Hunt",
+          "action": "https://www.producthunt.com/search?q="
+        },
+        {
           "name": "Chrome Web Store",
           "action": "https://chromewebstore.google.com/search/"
         },
@@ -1651,8 +1655,8 @@
           "action": "https://www.softonic.com.br/s/"
         },
         {
-          "name": "Product Hunt",
-          "action": "https://www.producthunt.com/search?q="
+          "name": "SourceForge",
+          "action": "https://sourceforge.net/directory/?q="
         }
       ],
       "youtube_channels": [

@@ -37,13 +37,13 @@ export default function CardsLink() {
       title: 'X',
       url: 'https://x.com/findtoapp',
       icon: <IconX />,
-      active: true,
+      active: false,
     },
     {
       title: 'Discord',
       url: 'https://discord.gg/gEDm5MU6pq',
       icon: <IconDiscord />,
-      active: true,
+      active: false,
     },
     {
       title: t('feedback.title'),
