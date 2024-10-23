@@ -26,7 +26,7 @@
 }
 .container ul li a,
 .container p {
-  font-size: var(--font-size);
+  font-size: var(--font-size-small);
   color: var(--color-black-translucent-50);
   font-weight: 400;
 }

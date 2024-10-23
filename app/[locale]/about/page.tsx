@@ -88,8 +88,8 @@ export default function PageAbout() {
       <section>
         <div className={Style.container}>
           <div className={Style.actionContainer}>
-            <h2>Elevating your search experience</h2>
-            <p>Search decentralized. Built by people, for people.</p>
+            <h2>A healthy search experience</h2>
+            <p>Decentralized search. Built by people, for people.</p>
             <Button url="/" color="colors">
               {t('openApp')}
             </Button>

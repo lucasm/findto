@@ -57,7 +57,7 @@
   color: var(--color-text-black);
 }
 .searchInputContainer {
-  max-width: 700px;
+  max-width: 750px;
   width: 100%;
 }
 
@@ -73,10 +73,10 @@
   display: flex;
   float: none;
   height: auto;
-  min-height: 3.6rem;
+  min-height: 3rem;
   width: 100%;
   margin: 0;
-  padding: 1.15rem 10rem 1.15rem 1.75rem;
+  padding: 1rem 8.5rem 1rem 1.6rem;
   border: none;
   outline: none;
   color: var(--color-black);
@@ -86,7 +86,7 @@
   text-align: left;
   background: var(--color-white);
   box-shadow: var(--box-shadow);
-  border-radius: 2rem;
+  border-radius: 1.75rem;
   transition: all ease-in-out 0.25s;
 }
 .searchInput textarea:hover,
@@ -107,8 +107,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: var(--size-small);
-  width: var(--size-small);
+  height: 2rem;
+  width: 2rem;
   background: var(--color-black);
   border-radius: var(--radius-full);
   border: 0;
@@ -118,6 +118,7 @@
 }
 .searchButton svg {
   color: var(--color-white);
+  rotate: 90deg;
 }
 .searchButton svg,
 .resetButton svg {
@@ -132,6 +133,8 @@
   border-radius: 0;
   background: transparent;
   color: var(--color-black);
+  height: var(--size-small);
+  width: 2rem;
 }
 .resetButton:focus,
 .resetButton:hover {
@@ -147,7 +150,7 @@
   align-items: center;
   width: auto;
   height: 32px;
-  margin: 1rem 0 1rem 2.25rem;
+  margin: 1rem 0 1rem 2rem;
   text-align: left;
   font-size: var(--font-size-small);
   font-weight: bold;
@@ -161,7 +164,7 @@
 }
 .searchPlaceholder figure {
   width: 8rem;
-  height: 2rem;
+  height: 1.8rem;
   background-repeat: no-repeat;
   background-position: 0;
   /* background-color: yellow; */
@@ -222,22 +225,22 @@
     height: 2rem;
     width: 2rem;
   }
-  .searchButton svg {
-    width: 18px;
-    height: 18px;
-  }
   .searchButton:hover svg,
   .searchButton:focus svg {
     opacity: 1;
   }
-
-  .resetButton {
-    width: 1.75rem;
-  }
-  .resetButton svg {
+  .searchButton svg {
     width: 18px;
     height: 18px;
   }
+  .resetButton svg {
+    width: 14px;
+    height: 14px;
+  }
+  .resetButton {
+    width: 1.75rem;
+  }
+
   .searchActions {
     right: 0.5rem;
   }

@@ -4,7 +4,7 @@
   "t": {
     "componentBanner": {
       "title": "Buscas descentralizadas",
-      "description": "Busque o mesmo termo em diversas fontes rapidamente. Com o Findto é você quem explora os algoritmos da Web e IAs - não o contrário."
+      "description": "Com o Findto você controla os algoritmos da Web e IA. Buscas descentralizadas — e livres."
     },
     "componentVoiceSearch": {
       "voice": "Voz",
@@ -35,9 +35,9 @@
     "community": "Comunidade",
     "privacy": "Privacidade",
     "terms": "Termos",
-    "donate": "Quero apoiar",
+    "donate": "Quero doar",
     "more": "Mais",
-    "learnMore": "Conhecer o Findto",
+    "learnMore": "Conheça o Findto",
     "viewNearbyPlaces": "Ver locais próximos",
     "openApp": "Abrir app",
     "placeholder": "Busca",
@@ -53,14 +53,14 @@
       "url": "https://forms.gle/r6XAyB1ZLn9qzwp16"
     },
     "warnings": {
-      "torrent": "Aviso: Usar torrents não é ilegal, mas baixar ou compartilhar conteúdo protegido por direitos autorais sem autorização, pode infringir a Lei de Direitos Autorais no Brasil. Para mais informações, pesquise Lei 9.610/98."
+      "torrent": "Aviso: Usar torrents não é ilegal, mas baixar ou compartilhar conteúdo protegido por direitos autorais sem autorização, pode infringir a Lei de Direitos Autorais no Brasil. Evite problemas legais, respeite a Lei 9.610/98."
     }
   },
   "categories": [
     {
       "name": "AI",
       "name_translated": "IA",
-      "name_trends": "Buscas em alta",
+      "name_trends": "Em alta",
       "active": true,
       "data": [
         {
@@ -88,6 +88,10 @@
           "action": "https://gemini.google.com/app?q="
         },
         {
+          "name": "Meta AI",
+          "action": "https://www.meta.ai/?q="
+        },
+        {
           "name": "You",
           "action": "https://you.com/search?fromSearchBar=true&tbm=youchat&q="
         },
@@ -103,7 +107,7 @@
     },
     {
       "name": "Web",
-      "name_trends": "Buscas em alta",
+      "name_trends": "Em alta",
       "active": true,
       "data": [
         {
@@ -159,12 +163,12 @@
       "active": true,
       "data": [
         {
-          "name": "Bluesky",
-          "action": "https://bsky.app/search?q="
-        },
-        {
           "name": "X",
           "action": "https://x.com/search?src=typed_query&q="
+        },
+        {
+          "name": "Bluesky",
+          "action": "https://bsky.app/search?q="
         },
         {
           "name": "Reddit",
@@ -814,145 +818,6 @@
       ]
     },
     {
-      "name": "News",
-      "name_translated": "Notícias",
-      "name_trends": "Reportagens",
-      "active": true,
-      "data": [
-        {
-          "name": "Globo",
-          "action": "https://www.globo.com/busca/?q="
-        },
-        {
-          "name": "UOL",
-          "action": "https://busca.uol.com.br/result.html?term="
-        },
-        {
-          "name": "CNN",
-          "action": "https://www.cnnbrasil.com.br/?s="
-        },
-        {
-          "name": "Folha",
-          "action": "https://search.folha.uol.com.br/?q="
-        },
-        {
-          "name": "Estadão",
-          "action": "https://busca.estadao.com.br/?q="
-        },
-        {
-          "name": "Poder360",
-          "action": "https://www.reuters.com/site-search/?query="
-        },
-        {
-          "name": "Veja",
-          "action": "https://veja.abril.com.br/?s="
-        },
-        {
-          "name": "Nexo",
-          "action": "https://www.nexojornal.com.br/util/busca/?q="
-        },
-        {
-          "name": "Carta",
-          "action": "https://www.cartacapital.com.br/?s="
-        },
-        {
-          "name": "Agência Brasil",
-          "action": "https://busca.ebc.com.br/?q=",
-          "additional": "&site_id=agenciabrasil"
-        },
-        {
-          "name": "Reuters",
-          "action": "https://www.reuters.com/site-search/?query="
-        },
-        {
-          "name": "BBC",
-          "action": "https://www.bbc.co.uk/search?q="
-        },
-        {
-          "name": "Google News",
-          "action": "https://news.google.com/search?q="
-        },
-        {
-          "name": "Flipboard",
-          "action": "https://flipboard.com/search/"
-        },
-        {
-          "name": "Feedly",
-          "action": "https://feedly.com/i/discover/sources/search/feed/"
-        },
-        {
-          "name": "Pocket",
-          "action": "https://getpocket.com/saves/search?query="
-        }
-      ],
-      "youtube_channels": [
-        {
-          "id": "UCVFbXI6Gu8U2f9Gjtxw4A-Q",
-          "title": "uol"
-        },
-        {
-          "id": "UCvdwhh_fDyWccR42-rReZLw",
-          "title": "CNNbrasil"
-        },
-        {
-          "id": "UCaGmdJSSiR7fkh2A-c6emsA",
-          "title": "g1globo"
-        },
-        {
-          "id": "UCXdXYG8dUmEv6jhEji_lSHg",
-          "title": "JornalismoTVCultura"
-        },
-        {
-          "id": "UCthbIFAxbXTTQEC7EcQvP1Q",
-          "title": "BBCNewsBrasil"
-        },
-        {
-          "id": "UCJVTsYjG0KLNWL6OyHx7ZGw",
-          "title": "NexojornalBr"
-        },
-        {
-          "id": "UCNqzAD9EiECreuH6LA8IYeA",
-          "title": "TheInterceptBrasil"
-        },
-        {
-          "id": "UCmYuiV9wAR3i8p19Ygc7izg",
-          "title": "folha"
-        },
-        {
-          "id": "UCDGz2exMIsPQ4k9VrsuhKTA",
-          "title": "CartaCapital"
-        },
-        {
-          "id": "UCV6Ue4o5UIeKQ3IEkjnXRlg",
-          "title": "veja"
-        },
-        {
-          "id": "UCFCiSRbCVwQ_BQaDQBYxN_A",
-          "title": "Poder360"
-        },
-        {
-          "id": "UCNVsZnDXOM4PodYIEgM2e4w",
-          "title": "rodaviva"
-        },
-        {
-          "id": "UCRVbqma6TaIHp9E151nC8sA",
-          "title": "apublica"
-        },
-        {
-          "id": "UCuiLR4p6wQ3xLEm15pEn1Xw",
-          "title": "recordnews"
-        },
-        {
-          "id": "UC376n347Ob5Lwzq2WGzF1AA",
-          "title": "SBTNews"
-        },
-        {
-          "id": "UCUmEPYxmnyQDeRUcFkslmQw",
-          "title": "euronewspt"
-        }
-      ]
-    },
-    {
       "name": "Academic",
       "name_translated": "Acadêmico",
       "name_trends": "Tópicos em alta",
@@ -1345,6 +1210,145 @@
         {
           "id": "UCwrVwiJllwhJUKXKmjLcckQ",
           "title": "AppleDeveloper"
+        }
+      ]
+    },
+    {
+      "name": "News",
+      "name_translated": "Notícias",
+      "name_trends": "Reportagens",
+      "active": true,
+      "data": [
+        {
+          "name": "Globo",
+          "action": "https://www.globo.com/busca/?q="
+        },
+        {
+          "name": "UOL",
+          "action": "https://busca.uol.com.br/result.html?term="
+        },
+        {
+          "name": "CNN",
+          "action": "https://www.cnnbrasil.com.br/?s="
+        },
+        {
+          "name": "Folha",
+          "action": "https://search.folha.uol.com.br/?q="
+        },
+        {
+          "name": "Estadão",
+          "action": "https://busca.estadao.com.br/?q="
+        },
+        {
+          "name": "Poder360",
+          "action": "https://www.reuters.com/site-search/?query="
+        },
+        {
+          "name": "Veja",
+          "action": "https://veja.abril.com.br/?s="
+        },
+        {
+          "name": "Nexo",
+          "action": "https://www.nexojornal.com.br/util/busca/?q="
+        },
+        {
+          "name": "Carta",
+          "action": "https://www.cartacapital.com.br/?s="
+        },
+        {
+          "name": "Agência Brasil",
+          "action": "https://busca.ebc.com.br/?q=",
+          "additional": "&site_id=agenciabrasil"
+        },
+        {
+          "name": "Reuters",
+          "action": "https://www.reuters.com/site-search/?query="
+        },
+        {
+          "name": "BBC",
+          "action": "https://www.bbc.co.uk/search?q="
+        },
+        {
+          "name": "Google News",
+          "action": "https://news.google.com/search?q="
+        },
+        {
+          "name": "Flipboard",
+          "action": "https://flipboard.com/search/"
+        },
+        {
+          "name": "Feedly",
+          "action": "https://feedly.com/i/discover/sources/search/feed/"
+        },
+        {
+          "name": "Pocket",
+          "action": "https://getpocket.com/saves/search?query="
+        }
+      ],
+      "youtube_channels": [
+        {
+          "id": "UCVFbXI6Gu8U2f9Gjtxw4A-Q",
+          "title": "uol"
+        },
+        {
+          "id": "UCvdwhh_fDyWccR42-rReZLw",
+          "title": "CNNbrasil"
+        },
+        {
+          "id": "UCaGmdJSSiR7fkh2A-c6emsA",
+          "title": "g1globo"
+        },
+        {
+          "id": "UCXdXYG8dUmEv6jhEji_lSHg",
+          "title": "JornalismoTVCultura"
+        },
+        {
+          "id": "UCthbIFAxbXTTQEC7EcQvP1Q",
+          "title": "BBCNewsBrasil"
+        },
+        {
+          "id": "UCJVTsYjG0KLNWL6OyHx7ZGw",
+          "title": "NexojornalBr"
+        },
+        {
+          "id": "UCNqzAD9EiECreuH6LA8IYeA",
+          "title": "TheInterceptBrasil"
+        },
+        {
+          "id": "UCmYuiV9wAR3i8p19Ygc7izg",
+          "title": "folha"
+        },
+        {
+          "id": "UCDGz2exMIsPQ4k9VrsuhKTA",
+          "title": "CartaCapital"
+        },
+        {
+          "id": "UCV6Ue4o5UIeKQ3IEkjnXRlg",
+          "title": "veja"
+        },
+        {
+          "id": "UCFCiSRbCVwQ_BQaDQBYxN_A",
+          "title": "Poder360"
+        },
+        {
+          "id": "UCNVsZnDXOM4PodYIEgM2e4w",
+          "title": "rodaviva"
+        },
+        {
+          "id": "UCRVbqma6TaIHp9E151nC8sA",
+          "title": "apublica"
+        },
+        {
+          "id": "UCuiLR4p6wQ3xLEm15pEn1Xw",
+          "title": "recordnews"
+        },
+        {
+          "id": "UC376n347Ob5Lwzq2WGzF1AA",
+          "title": "SBTNews"
+        },
+        {
+          "id": "UCUmEPYxmnyQDeRUcFkslmQw",
+          "title": "euronewspt"
         }
       ]
     },

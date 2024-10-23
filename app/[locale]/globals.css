@@ -33,7 +33,7 @@
     inset 0 0 0px 5px var(--color-white);
   --opacity: 0.55;
   --font-size: 1rem;
-  --font-size-small: 0.9rem;
+  --font-size-small: 0.85rem;
   --font-size-big: 1.15rem;
   --font-size-3: 1.5rem;
   --font-size-2: 2.5rem;
@@ -219,15 +219,6 @@ article hr {
   100% {
     fill: var(--color-blue);
   }
-}
-
-::-moz-selection {
-  color: var(--color-bg-white);
-  background: var(--color-text-black);
-}
-::selection {
-  color: var(--color-bg-white);
-  background: var(--color-text-black);
 }
 
 ::placeholder {

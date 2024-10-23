@@ -23,16 +23,18 @@ export default function AppFooter() {
           </li>
           <li>
             <p>
-              <Link href="/">Findto</Link> © {year}
+              <Link href="/">Findto</Link> © {year}{' '}
+              {/* <Link href="https://lucasm.dev/">Lucas Menezes</Link> */}
             </p>
           </li>
+
           <li>
             <Link href="/about">{t('about')}</Link>
           </li>
           <li>
             <Link href="/community">{t('community')}</Link>
           </li>
-          <li>
+          {/* <li>
             <a href="https://ko-fi.com/findto" target="_blank" rel="noopener">
               {t('donate')}
             </a>
@@ -41,7 +43,7 @@ export default function AppFooter() {
             <Link href={t('feedback.url')} target="_blank" rel="noopener">
               {t('feedback.title')}
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/terms">{t('terms')}</Link>
           </li>
@@ -50,20 +52,20 @@ export default function AppFooter() {
           </li>
           <li>
             <Link
-              href="https://bsky.app/profile/findto.app"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Bluesky">
-              <IconBluesky />
-            </Link>
-          </li>
-          <li>
-            <Link
               href="https://x.com/findtoapp"
               target="_blank"
               rel="noreferrer"
               aria-label="X">
               <IconX />
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://bsky.app/profile/findto.app"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Bluesky">
+              <IconBluesky />
             </Link>
           </li>
           <li>

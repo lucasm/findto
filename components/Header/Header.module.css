@@ -84,7 +84,7 @@
   border-radius: var(--radius);
   display: flex;
   height: var(--size-small);
-  font-size: var(--font-size);
+  font-size: var(--font-size-small);
   background: var(--color-black-translucent);
   color: var(--color-text-black);
   align-items: center;
@@ -94,7 +94,9 @@
 .containerSettings a svg {
   margin: 0 1rem;
 }
-
+.containerSettings select {
+  font-size: var(--font-size-small) !important;
+}
 .header .iconSettings {
   position: absolute;
   right: 0;

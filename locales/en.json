@@ -3,8 +3,8 @@
   "country_code": "US",
   "t": {
     "componentBanner": {
-      "title": "Decentralized search on Web and AI",
-      "description": "Findto puts people in control of search   algorithms."
+      "title": "Decentralized search",
+      "description": "With Findto you control web algorithms and AI. Decentralized searches — truly free."
     },
     "componentVoiceSearch": {
       "voice": "Voice",
@@ -56,6 +56,10 @@
           "action": "https://www.perplexity.ai/?q="
         },
         {
+          "name": "HuggingChat",
+          "action": "https://huggingface.co/chat?q="
+        },
+        {
           "name": "Claude",
           "action": "https://claude.ai/newq="
         },
@@ -64,8 +68,8 @@
           "action": "https://gemini.google.com/app?q="
         },
         {
-          "name": "HuggingChat",
-          "action": "https://huggingface.co/chat?q="
+          "name": "Meta AI",
+          "action": "https://www.meta.ai/?q="
         },
         {
           "name": "You",

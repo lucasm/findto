@@ -13,11 +13,11 @@ const fontFamily = localFont({
       weight: '400',
       style: 'normal',
     },
-    {
-      path: '../../public/fonts/font-bold.woff2',
-      weight: '700',
-      style: 'bold',
-    },
+    // {
+    //   path: '../../public/fonts/font-bold.woff2',
+    //   weight: '700',
+    //   style: 'bold',
+    // },
   ],
 })
 
