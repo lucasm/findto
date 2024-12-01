@@ -11,29 +11,34 @@ type Props = {
 export default function SearchSuggestions({ term, locale }: Props) {
   const { putValue } = useSearch()
   const [data, setData] = useState<string[] | null>(null)
+  const [prevTerm, setPrevTerm] = useState<string>('')
 
   const handleValue = (value: string) => {
     putValue(value)
+    setPrevTerm(value)
     setData(null)
   }
 
+  const validTermLength = term?.length > 0 && term?.length < 30
+
   const fetchSuggestions = useCallback(async () => {
-    if (locale && term.length > 0 && term.length < 50) {
+    if (locale && validTermLength && term !== prevTerm) {
       try {
         const response = await axios.get(
-          '/api/suggestions/?locale=' + locale + '&term=' + term
+          `/api/suggestions/?locale=${locale}&term=${term}`,
         )
         setData(response.data)
+        setPrevTerm(term) // Atualiza o termo anterior após uma nova busca
       } catch (error) {
         console.error(error)
       }
     }
-  }, [locale, term])
+  }, [locale, term, prevTerm])
 
   useEffect(() => {
     const debounceFetch = setTimeout(() => {
       fetchSuggestions()
-    }, 300) // 300 ms de debounce
+    }, 500) // debounce
 
     return () => {
       clearTimeout(debounceFetch) // Limpa o timeout anterior se o term mudar antes do timeout terminar
@@ -41,16 +46,17 @@ export default function SearchSuggestions({ term, locale }: Props) {
   }, [fetchSuggestions, term, locale])
 
   useEffect(() => {
-    if (term.length === 0) {
+    if (term?.length === 0) {
       setData(null)
+      setPrevTerm('') // Reseta o termo anterior se o input estiver vazio
     }
   }, [term])
 
   return (
     <div className={Styles.container}>
-      {data && (
+      {validTermLength && data && (
         <ul>
-          {data?.slice(0, 6).map((item: string, index: number) => (
+          {data.slice(0, 6).map((item: string, index: number) => (
             <li key={index}>
               <a href="#" onClick={() => handleValue(item)}>
                 {item}

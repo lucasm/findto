@@ -1,0 +1,17 @@
+.container select {
+  color: var(--color-black);
+  background: rgba(0, 0, 0, 0.05);
+}
+.container select:hover,
+.container select:focus {
+  background: rgba(0, 0, 0, 0.05);
+}
+.container svg {
+  color: var(--color-black);
+}
+
+@media screen and (max-width: 576px) {
+  .container select {
+    font-size: 0.8rem;
+  }
+}

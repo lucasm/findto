@@ -2,7 +2,7 @@ import createMiddleware from 'next-intl/middleware'
 
 const middleware = createMiddleware({
   // A list of all locales that are supported
-  locales: ['en', 'pt-BR'],
+  locales: ['en', 'pt-BR', 'zh-CN'],
 
   // Default locale if no match
   defaultLocale: 'en',

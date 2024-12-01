@@ -15,7 +15,7 @@ export default function WebsiteLayout({
     <div className={Style.page}>
       <header className={Style.header}>
         <div className={Style.container}>
-          <Link href={'/' + locale}>
+          <Link href={'/' + locale} translate="no">
             <div id="logo" className={Style.logo}>
               <SvgLogo />
               Findto

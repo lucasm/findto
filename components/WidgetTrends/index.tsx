@@ -8,29 +8,24 @@ import ButtonGeolocation from '@/components/ButtonGeolocation'
 import Alert from '@/components/Alert'
 import { ITrends, ITrendsItem } from '@/interfaces/trends'
 import { useEffect, useState } from 'react'
-
 import { useTranslations } from 'next-intl'
 
 export default function SearchTrends() {
   const t = useTranslations('t')
-  const {
-    category,
-    titleTrends,
-    putValue,
-    country,
-    locale,
-    latitude,
-    longitude,
-  } = useSearch()
+  const { category, putValue, country, locale, latitude, longitude } =
+    useSearch()
   const [dataTrends, setDataTrends] = useState<ITrends | null>(null)
   const [errorTrends, setErrorTrends] = useState<any>(null)
 
   // Web
   function useApiWeb() {
-    const isValid = (!!country && category === 'Web') || category === 'AI'
+    const isValidCategory =
+      category === 'Home' || category === 'AI' || category === 'Web'
 
     const { data, error } = useSWR(
-      isValid ? `/api/trends/web/?country=${country}` : null,
+      !!country && isValidCategory
+        ? `/api/trends/web/?country=${country}`
+        : null,
       fetcher,
     )
 
@@ -247,12 +242,27 @@ export default function SearchTrends() {
   }
   const { dataApps, errorApps } = useApiApps()
 
+  // Games
+  function useApiGames() {
+    const { data, error } = useSWR(
+      country && category === 'Games' ? `/api/trends/games` : null,
+      fetcher,
+    )
+
+    return {
+      dataGames: data,
+      errorGames: error,
+    }
+  }
+  const { dataGames, errorGames } = useApiGames()
+
   // call API
   useEffect(() => {
     setDataTrends(null)
     setErrorTrends(null)
 
     switch (category) {
+      case 'Home':
       case 'Web':
       case 'AI': {
         dataWeb && setDataTrends(dataWeb)
@@ -338,6 +348,12 @@ export default function SearchTrends() {
           errorApps && setErrorTrends(errorApps)
         }
         break
+      case 'Games':
+        {
+          dataGames && setDataTrends(dataGames)
+          errorGames && setErrorTrends(errorGames)
+        }
+        break
       default: {
         break
       }
@@ -374,21 +390,20 @@ export default function SearchTrends() {
     errorApps,
     dataLegal,
     errorLegal,
+    dataGames,
+    errorGames,
   ])
 
   if (category === 'Torrent') {
     return <Alert>{t('warnings.torrent')}</Alert>
   }
 
-  if (category === 'Games') {
-    return null
-  }
-
   if (dataTrends || errorTrends || category === 'Local') {
     return (
       <section className={Styles.container + ' ' + Styles[`trends${category}`]}>
         <div className={Styles.title}>
-          <h2>{titleTrends ?? 'Trends'}</h2>
+          {/* <IconTrending /> */}
+          <h3>{t('trends')}</h3>
         </div>
 
         {category === 'Local' && <ButtonGeolocation />}
@@ -403,6 +418,7 @@ export default function SearchTrends() {
                       ? window.open(item.url, '_blank')
                       : putValue(item.title.toLowerCase())
                   }>
+                  <span>{index + 1}</span>
                   {item.image && <img src={item.image} alt="" />}
                   {item.title && <span>{item.title}</span>}
                 </button>

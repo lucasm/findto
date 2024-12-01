@@ -15,10 +15,10 @@ export default function endpoint(req: NextApiRequest, res: NextApiResponse) {
           credits_title: 'Oasisbr',
           credits_url: 'https://oasisbr.ibict.br/',
           data: [
-            { title: 'Educação' },
+            { title: 'Clima' },
             { title: 'Inteligência artificial' },
+            { title: 'Educação' },
             { title: 'COVID-19' },
-            { title: 'Enfermagem' },
             { title: 'Saúde' },
             { title: 'Família' },
             { title: 'História' },
@@ -50,10 +50,10 @@ export default function endpoint(req: NextApiRequest, res: NextApiResponse) {
           credits_title: 'ResearchGate',
           credits_url: 'https://researchgate.net/',
           data: [
-            { title: 'COVID-19' },
-            { title: 'Molecular Biology' },
-            { title: 'Artificial Intelligence' },
             { title: 'Climate Change' },
+            { title: 'Artificial Intelligence' },
+            { title: 'Molecular Biology' },
+            { title: 'COVID-19' },
             { title: 'Psychology' },
             { title: 'Statistical Analysis' },
             { title: 'Microbiology' },
@@ -72,6 +72,7 @@ export default function endpoint(req: NextApiRequest, res: NextApiResponse) {
             { title: 'Ethics' },
             { title: 'Health' },
             { title: 'Social Science' },
+            { title: 'Democracy' },
           ],
         }
 

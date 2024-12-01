@@ -1,17 +1,19 @@
 .container {
-  display: grid;
+  display: inline-grid;
   grid-template-columns: 22px auto;
   width: auto;
   padding: 2.5rem 3rem;
-  margin: 0 1rem 2.5rem;
+  margin: 0 2rem;
   height: auto;
   color: var(--color-text-black);
   font-size: var(--font-size);
-  border-radius: var(--radius-big);
+  border-radius: 2rem;
   transition: var(--transition);
   text-align: left;
   gap: 2rem;
-  background: var(--color-white-translucent);
+  background: var(--color-bg-white);
+  box-shadow: var(--box-shadow);
+  max-width: calc(var(--max-size-container) - 4rem);
 }
 .container svg {
   width: 22px;
@@ -19,11 +21,13 @@
   color: var(--color-text-black);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .container {
     grid-template-columns: 1fr;
     padding: 2.5rem;
     gap: 1rem;
     font-size: var(--font-size-small);
+    max-width: calc(var(--max-size-container));
+    margin: 0 1rem;
   }
 }

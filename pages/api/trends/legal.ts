@@ -2,7 +2,10 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import axios from 'axios'
 import { ITrends } from '../../../interfaces/trends'
 
-export default async function endpoint(req: NextApiRequest, res: NextApiResponse): Promise<void> {
+export default async function endpoint(
+  req: NextApiRequest,
+  res: NextApiResponse,
+): Promise<void> {
   const {
     query: { country },
   } = req
@@ -15,20 +18,53 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
         credits_url: 'https://www.gov.br/pt-br',
         data: [
           {
-            title: 'Consultar Valores a Receber',
+            title: 'Assinatura Eletrônica de Documentos - GOV.BR',
+            url: 'https://www.gov.br/pt-br/servicos/assinatura-eletronica',
+          },
+          {
+            title:
+              'Consultar Chaves Pix, Cartões, Contas Bancárias e Empréstimos no meu CPF - Registrato',
+            url: 'https://www.bcb.gov.br/meubc/registrato',
+          },
+          {
+            title: 'Consultar Valores a Receber - Banco Central',
             url: 'https://www.gov.br/pt-br/servicos/consultar-e-solicitar-a-devolucao-de-valores-a-receber',
           },
           {
-            title: 'Consultar Restituição do Imposto de Renda',
-            url: 'https://www.gov.br/pt-br/servicos/consultar-restituicao-de-imposto-de-renda',
+            title: 'Consultar Meu Imposto de Renda - Receita Federal',
+            url: 'https://www.gov.br/pt-br/servicos/consultar-meu-imposto-de-renda',
           },
           {
-            title: 'Realizar a Assinatura Eletrônica de Documentos',
-            url: 'https://www.gov.br/pt-br/servicos/assinatura-eletronica',
+            title: 'Consultar Dívidas e Pendências Fiscais - Receita Federal',
+            url: 'https://www.gov.br/pt-br/servicos/consultar-dividas-e-pendencias-fiscais',
+          },
+          {
+            title: 'Emitir Certidão de Regularidade Fiscal - Receita Federal',
+            url: 'https://www.gov.br/pt-br/servicos/emitir-certidao-de-regularidade-fiscal',
+          },
+          {
+            title: 'Propor ou Apoiar Ideais Legislativas - Senado Federal ',
+            url: 'https://www12.senado.leg.br/ecidadania/principalideia',
+          },
+          {
+            title: 'Opinar em Propostas Legislativas - Câmara dos Deputados ',
+            url: 'https://www.camara.leg.br/enquetes/',
+          },
+          {
+            title: 'Consultar Gastos Parlamentares - Câmara dos Deputados',
+            url: 'https://www.camara.leg.br/transparencia/gastos-parlamentares/',
           },
           {
             title: 'Consultar CPF',
             url: 'https://www.gov.br/pt-br/servicos/consultar-cadastro-de-pessoas-fisicas',
+          },
+          {
+            title: 'Obter ou Imprimir CPF',
+            url: 'https://www.gov.br/pt-br/servicos/obter-cartao-de-cpf',
+          },
+          {
+            title: 'Proteger Meu CPF',
+            url: 'https://www.gov.br/pt-br/servicos/impedir-permitir-participacao-do-meu-cpf-no-cadastro-nacional-de-pessoas-juridicas-cnpj',
           },
           {
             title: 'Consultar CNPJ',
@@ -39,44 +75,30 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
             url: 'https://www.gov.br/pt-br/servicos/inscrever-ou-atualizar-cadastro-nacional-de-pessoas-juridicas',
           },
           {
-            title: 'Consultar Dívidas e Pendências Fiscais',
-            url: 'https://www.gov.br/pt-br/servicos/consultar-dividas-e-pendencias-fiscais',
-          },
-          {
-            title: 'Emitir Certidão de Regularidade Fiscal',
-            url: 'https://www.gov.br/pt-br/servicos/emitir-certidao-de-regularidade-fiscal',
-          },
-          {
-            title: 'Obter a Carteira de Trabalho',
+            title: 'Obter Carteira de Trabalho e Previdência Social (CTPS)',
             url: 'https://www.gov.br/pt-br/servicos/obter-a-carteira-de-trabalho',
           },
           {
-            title: 'Obter CPF',
-            url: 'https://www.gov.br/pt-br/servicos/obter-cartao-de-cpf',
-          },
-          {
-            title: 'Esclarecer dúvidas sobre proteção de dados pessoais',
-            url: 'https://www.gov.br/pt-br/servicos/esclarecer-duvidas-sobre-protecao-de-dados-pessoais',
-          },
-          {
-            title: 'Obter atendimento eleitoral',
-            url: 'https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/',
-          },
-          {
-            title: 'Câmara dos Deputados: opinar em propostas legislativas',
-            url: 'https://www.camara.leg.br/enquetes/',
-          },
-          {
-            title: 'Senado: propor e apoiar leis',
-            url: 'https://www12.senado.leg.br/ecidadania/principalideia',
-          },
-          {
-            title: 'Governo: manifestar solicitação',
+            title:
+              'Fala.BR - Manifestar Solicitação de Acesso à Informação, Denúncia, Elogio, Reclamação ou Sugestão ao Governo',
             url: 'https://falabr.cgu.gov.br/',
           },
           {
-            title: 'Ver Votos dos Parlamentares',
-            url: 'https://quemfoiquem.org.br/',
+            title:
+              'LGPD - Abrir Requerimento relacionado à Lei Geral de Proteção de Dados',
+            url: 'https://www.gov.br/pt-br/servicos/abrir-requerimento-relacionado-a-lgpd',
+          },
+          {
+            title: 'TSE - Autoatendimento Eleitoral',
+            url: 'https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/',
+          },
+          {
+            title: 'Consumidor.gov.br - Abrir Reclamação contra uma Empresa',
+            url: 'https://www.consumidor.gov.br/pages/principal/',
+          },
+          {
+            title: 'Portal da Transparência - Consultar Despesas Públicas',
+            url: 'https://portaldatransparencia.gov.br/',
           },
         ],
       }

@@ -1,11 +1,14 @@
 import Style from './CardsFeat.module.css'
+
 import {
   IconAccessibility,
   IconLanguage,
   IconLeaf,
   IconMic,
+  IconOpenSource,
   IconSearch,
   IconShield,
+  IconStories,
   IconText,
   IconTrending,
   IconVisualSearch,
@@ -16,77 +19,83 @@ interface Feature {
   icon: JSX.Element
   title: string
   description: string
-  note?: string
 }
 
 // Create an array of feature items with their types
 const features: Feature[] = [
   {
     icon: <IconSearch />,
-    title: 'Decentralized search',
-    description: 'Quickly search the same term on diverse AI and Web sources.',
+    title: 'Decentralized Search',
+    description: 'Search on diverse sources at once.',
   },
   {
     icon: <IconTrending />,
-    title: 'Realtime trends',
-    description:
-      'Explore trending topics, contents, places, events, and more nearby you.',
+    title: 'Trends',
+    description: 'Real-time trends nearby you.',
+  },
+  {
+    icon: <IconStories />,
+    title: 'Stories',
+    description: 'Discover newest stories.',
   },
   {
     icon: <IconText />,
-    title: 'Autosuggest',
-    description:
-      'Automatic suggestions of terms as you type, to make fast searches.',
-  },
-  {
-    icon: <IconShield />,
-    title: 'Privacy level',
-    description: 'Estimated privacy level of search source.',
-    note: '* In development',
-  },
-  {
-    icon: <IconLeaf />,
-    title: 'Carbon level',
-    description: 'Estimated carbon footprint level of search source.',
-    note: '* In development',
+    title: 'Autocomplete',
+    description: 'Automatic suggestions of terms as you type.',
   },
   {
     icon: <IconMic />,
-    title: 'Voice search',
-    description: 'Use your voice to search anywhere.',
+    title: 'Voice Search',
+    description: 'Search anywhere using your voice.',
+  },
+  {
+    icon: <IconVisualSearch />,
+    title: 'Visual Search *',
+    description: 'Search on supported sources with an image.',
+  },
+  {
+    icon: <IconShield />,
+    title: 'Privacy Level *',
+    description: 'Estimated privacy level of search source.',
+  },
+  {
+    icon: <IconLeaf />,
+    title: 'Carbon Footprint *',
+    description: 'Estimated carbon footprint of search source.',
+  },
+  {
+    icon: <IconLanguage />,
+    title: 'Internationalization',
+    description: 'Choose your country for local sources, or international.',
   },
   {
     icon: <IconAccessibility />,
     title: 'Accessibility',
     description:
-      'Balanced contrast, dark theme, keyboard navigation and screen readers support.',
+      'Balanced contrast, screen reader support, keyboard navigation and dark theme.',
   },
   {
-    icon: <IconLanguage />,
-    title: 'Internationalization',
-    description:
-      'Choose your country for local sources, or opt for an international search.',
-  },
-  {
-    icon: <IconVisualSearch />,
-    title: 'Visual search',
-    description:
-      'Use an image or your camera to search across supported sources.',
-    note: '* In development',
+    icon: <IconOpenSource />,
+    title: 'Open Source',
+    description: ' Findto is an open source project.',
   },
 ]
 
 export default function CardsFeat() {
   return (
-    <div className={Style.card}>
-      {features.map((feature, index) => (
-        <div key={index}>
-          <figure>{feature.icon}</figure>
-          <h3>{feature.title}</h3>
-          <p>{feature.description}</p>
-          {feature.note && <p>{feature.note}</p>}
-        </div>
-      ))}
+    <div className={Style.container}>
+      <h2>Features</h2>
+
+      <ul className={Style.card}>
+        {features.map((feature, index) => (
+          <li key={index}>
+            <figure>{feature.icon}</figure>
+            <h3>{feature.title}</h3>
+            <p>{feature.description}</p>
+          </li>
+        ))}
+      </ul>
+      <p>* Some features are in development.</p>
     </div>
   )
 }

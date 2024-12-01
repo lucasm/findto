@@ -6,6 +6,7 @@ import {
   IconX,
   IconGitHub,
   IconDiscord,
+  IconInstagram,
 } from '../SvgIcons'
 import { useTranslations } from 'next-intl'
 
@@ -23,8 +24,14 @@ export default function CardsLink() {
   const cards: ICardsLink[] = [
     {
       title: t('donate'),
-      url: 'https://ko-fi.com/findto',
+      url: 'https://patreon.com/findto',
       icon: <IconHeart />,
+      active: true,
+    },
+    {
+      title: t('feedback.title'),
+      url: t('feedback.url'),
+      icon: <IconFeedback />,
       active: true,
     },
     {
@@ -46,12 +53,6 @@ export default function CardsLink() {
       active: false,
     },
     {
-      title: t('feedback.title'),
-      url: t('feedback.url'),
-      icon: <IconFeedback />,
-      active: true,
-    },
-    {
       title: 'Get Pro version',
       url: '/pricing',
       icon: <></>,
@@ -59,9 +60,9 @@ export default function CardsLink() {
       internal: true,
     },
     {
-      title: 'Follow on Instagram',
+      title: 'Instagram',
       url: 'https://instagram.com/findtoapp',
-      icon: <></>,
+      icon: <IconInstagram />,
       active: false,
     },
     {
@@ -80,8 +81,7 @@ export default function CardsLink() {
           <Link
             key={index}
             href={item.url}
-            target={item.internal ? '_self' : '_blank'}
-            className="colors">
+            target={item.internal ? '_self' : '_blank'}>
             <div>
               <figure>{item.icon}</figure>
               <h3>{item.title}</h3>

@@ -1,26 +1,20 @@
-import React from 'react'
+'use client'
 
-interface FloatingBallProps {
-  color: string // Cor hexadecimal
-}
+import Styles from './BlurBall.module.css'
+import GradientComponent from '../GradientComponent'
 
-const FloatingBall: React.FC<FloatingBallProps> = ({ color }) => {
+const BlurBall = () => {
+  const color = 'var(--color-text-black)'
+
   const gradient = `linear-gradient(to right, ${color} 0%, ${color} 100%)`
   const gradientReverse = `linear-gradient(to left, ${color} 0%, ${color} 100%)`
 
-  const containerStyle = {
-    height: '100%',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-  }
-
   const ballStyle = {
     borderRadius: '50%',
-    height: '8vw',
-    width: '8vw',
+    height: '4rem',
+    width: '4rem',
     position: 'absolute' as 'absolute',
-    zIndex: 1,
+    zIndex: -1,
     backgroundImage: gradient,
     animation: 'float 3s ease-in-out infinite',
   }
@@ -47,12 +41,14 @@ const FloatingBall: React.FC<FloatingBallProps> = ({ color }) => {
           }
         }
       `}</style>
-      <div style={containerStyle}>
+      <div className={Styles.container}>
         <div style={ballStyle} />
         <div style={ballStyleReverse} />
+
+        <GradientComponent />
       </div>
     </>
   )
 }
 
-export default FloatingBall
+export default BlurBall

@@ -44,8 +44,8 @@ Truly free search experience, where the people choices and the planet needs walk
 
 | Feature                  | Description                                                                        | Status |
 | ------------------------ | ---------------------------------------------------------------------------------- | ------ |
-| **Decentralized search** | Search the same term on diverse Web and AI sources.                                | ✅     |
-| **Realtime trends**      | Explore trending stories, topics, contents, products, places, and more nearby you. | ✅     |
+| **Search Decentralized** | Search the same term on diverse Web and AI sources.                                | ✅     |
+| **Trending**             | Explore trending stories, topics, contents, products, places, and more nearby you. | ✅     |
 | **Autosuggest**          | Get instant suggestions as you type.                                               | ✅     |
 | **Privacy level**        | View the estimate privacy level of selected source.                                | 🔧     |
 | **Carbon level**         | View the estimate carbon footprint level of selected source.                       | 🔧     |

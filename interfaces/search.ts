@@ -11,6 +11,7 @@ export interface ISearchCategory {
   name_trends: string
   active: boolean
   data: ISearch[]
+  youtube_channels: IYoutubeChannels[]
 }
 
 export interface ISearch {
@@ -27,4 +28,8 @@ export interface ISearchChild {
   action: string
   query?: string
   additional?: string
+}
+export interface IYoutubeChannels {
+  title: string
+  id: string
 }

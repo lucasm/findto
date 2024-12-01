@@ -44,4 +44,14 @@ module.exports = withNextIntl({
       },
     ]
   },
+
+  async redirects() {
+    return [
+      {
+        source: '/search/home',
+        destination: '/',
+        permanent: false, // Use `true` se quiser que o redirecionamento seja permanente (código 308)
+      },
+    ]
+  },
 })

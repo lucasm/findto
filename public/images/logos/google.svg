@@ -1,1 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206.55 80"><defs><style>.b{stroke-width:0px;}</style></defs><path class="b" d="m88.39,45.78c-.19,9.41-7.97,16.89-17.39,16.7-9.15-.18-16.52-7.55-16.7-16.7,0-9.85,7.65-16.99,17.05-16.99s17.04,7.14,17.04,16.99Zm-7.46,0c0-6.11-4.43-10.33-9.58-10.33s-9.58,4.18-9.58,10.33,4.43,10.33,9.58,10.33,9.59-4.28,9.59-10.33h0Z"/><path class="b" d="m125.16,45.78c-.19,9.41-7.97,16.89-17.39,16.7-9.15-.18-16.52-7.55-16.7-16.7,0-9.85,7.65-16.99,17.05-16.99s17.04,7.14,17.04,16.99Zm-7.46,0c0-6.11-4.43-10.33-9.58-10.33s-9.58,4.18-9.58,10.33,4.43,10.33,9.58,10.33,9.64-4.28,9.64-10.33h-.06Z"/><path class="b" d="m160.42,29.83v30.5c0,12.54-7.4,17.67-16.15,17.67-6.59.04-12.55-3.92-15.06-10.01l6.49-2.71c1.16,2.75,3.99,6.03,8.56,6.03,5.6,0,9.07-3.44,9.07-9.96v-2.45h-.26c-2.27,2.54-5.54,3.96-8.95,3.86-8.5,0-16.28-7.4-16.28-16.92s7.79-17.05,16.26-17.05c3.39-.08,6.65,1.3,8.95,3.8h.26v-2.75h7.11v-.02Zm-6.55,16.03c0-5.98-3.99-10.33-9.07-10.33s-9.46,4.37-9.46,10.33,4.31,10.23,9.46,10.23,9.04-4.32,9.04-10.24h.03Z"/><path class="b" d="m172.08,11.94v49.79h-7.28V11.94h7.28Z"/><path class="b" d="m200.44,51.38l5.79,3.86c-3.15,4.72-8.46,7.55-14.13,7.53-9.64,0-16.86-7.46-16.86-16.99,0-10.11,7.27-16.99,16.03-16.99s13.13,7.02,14.54,10.81l.75,1.93-22.72,9.41c1.74,3.44,4.44,5.15,8.26,5.15s6.44-1.87,8.37-4.7h-.02Zm-17.83-6.11l15.15-6.31c-.83-2.12-3.35-3.6-6.31-3.6-5.14.24-9.12,4.6-8.88,9.74v.17h.04Z"/><path class="b" d="m26.76,41.36v-7.21h24.29c.25,1.43.38,2.88.36,4.34,0,5.4-1.48,12.1-6.24,16.86-4.63,4.82-10.55,7.4-18.4,7.4-14.54.01-26.77-11.83-26.77-26.37S12.23,10,26.76,10c6.76-.11,13.28,2.51,18.08,7.27l-5.09,5.09c-3.49-3.36-8.16-5.21-13-5.15-10.45,0-18.92,8.48-18.92,18.93h0v.24c-.14,10.45,8.22,19.04,18.68,19.17,0,0,0,0,0,0h.24c6.89,0,10.81-2.75,13.32-5.28,2.07-2.07,3.38-4.95,3.9-8.95l-17.23.03Z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg fill="#000000" width="32" height="32" viewBox="0 0 1.28 1.28" id="icon" version="1.1" sodipodi:docname="logo-google-svgrepo-com.svg" inkscape:version="1.4-beta2 (9aaf4f34, 2024-07-30)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="3.1891214" inkscape:cx="19.127525" inkscape:cy="-0.78391496" inkscape:window-width="1440" inkscape:window-height="790" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="icon" />
+  <defs id="defs1">
+    <style id="style1">.cls-1{fill:none;}</style>
+  </defs>
+  <title id="title1">logo--google</title>
+  <path d="M 1.2516591,0.52373163 H 0.65539243 v 0.24693334 h 0.34346671 c -0.032,0.15733328 -0.16586671,0.24746673 -0.34346671,0.24746673 a 0.37813334,0.37813334 0 0 1 0,-0.75626673 0.37333333,0.37333333 0 0 1 0.23573331,0.0842667 L 1.0772591,0.1599983 A 0.64,0.64 0 1 0 0.65539243,1.2799984 c 0.32000001,0 0.61066667,-0.2325334 0.61066667,-0.6400001 a 0.50986667,0.50986667 0 0 0 -0.0144,-0.11626667 z" id="path1" style="stroke-width:0.0533333" />
+  <metadata id="metadata1">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:title>logo--google</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

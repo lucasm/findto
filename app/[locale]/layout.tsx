@@ -1,5 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import type { Viewport } from 'next'
 import localFont from 'next/font/local'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
@@ -13,22 +14,22 @@ const fontFamily = localFont({
       weight: '400',
       style: 'normal',
     },
-    // {
-    //   path: '../../public/fonts/font-bold.woff2',
-    //   weight: '700',
-    //   style: 'bold',
-    // },
+    {
+      path: '../../public/fonts/font-medium.woff2',
+      weight: '700',
+      style: 'bold',
+    },
   ],
 })
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Findto | Decentralized AI & Web Search',
+    absolute: 'Findto | Decentralized Search on AI and Web',
     default: 'Findto',
-    template: '%s | Findto',
+    template: 'Findto | %s',
   },
   description:
-    'Open source assistant for AI and Web search decentralized. Explore a healthier internet with Findto.',
+    'Assistant for decentralized AI and Web search. Explore a healthier internet. Open source and free.',
   authors: [
     { name: 'Findto', url: 'https://findto.app' },
     { name: 'Lucas Menezes', url: 'https://lucasm.dev' },
@@ -44,13 +45,7 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png?v=2',
   },
   manifest: '/manifest.json?v=2',
-  appleWebApp: {
-    capable: true,
-    title: 'Findto',
-    statusBarStyle: 'black-translucent',
-  },
   applicationName: 'Findto',
-  themeColor: '#ffffff',
 
   metadataBase: new URL('https://findto.app'),
   alternates: {
@@ -69,6 +64,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     images: '/share.png',
   },
+}
+export const viewport: Viewport = {
+  themeColor: 'black',
 }
 
 export default async function Layout({

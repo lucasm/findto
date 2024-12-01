@@ -1,0 +1,209 @@
+{
+  "country": "中国",
+  "country_code": "CN",
+  "t": {
+    "componentCookiesPopup": {
+      "title": "Findto uses cookies and other similar technologies to improve your experience and provide personalized content in a completely anonymous way. We do not track your searches. We do not sell your information. Read our"
+    },
+    "componentWelcome": {
+      "goodMorning": "早上好",
+      "goodEvening": "下午好",
+      "goodNight": "晚安",
+      "whatDoYouWant": "你想找什么？"
+    },
+    "componentBanner": {
+      "title": "分散式搜索",
+      "description": "借助 Findto，您可以搜索 Web、AI 和 Metaverse 上的资源。探索最好的互联网。"
+    },
+    "componentVoiceSearch": {
+      "voice": "Voice",
+      "speak": "Speak now",
+      "allow": "Waiting..."
+    },
+    "slogan": "Web、AI 和 Metaverse 上的去中心化搜索",
+    "copyright": "自由开源项目，由以下人员创建",
+    "about": "关于",
+    "community": "社区",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "donate": "捐",
+    "accept": "Accept",
+    "learnMore": "了解更多关于 Findto",
+    "viewNearbyPlaces": "View nearby places",
+    "openApp": "Open the app",
+    "placeholder": "Search",
+    "search": "Search",
+    "clear": "Clear",
+    "powered": "Powered by",
+    "settings": "Settings",
+    "theme": "Theme",
+    "language": "Language",
+    "contribute": "Contribute",
+    "trends": "Trending",
+    "stories": "Stories",
+    "categories": "Categories",
+    "feedback": {
+      "title": "发送反馈",
+      "url": "https://forms.gle/US69JvUT1qxYkiF58"
+    },
+    "warnings": {
+      "torrent": "Notice: Torrent is not illegal. Downloading copyrighted content may be, depending of the local laws. Check your local legislation and respect it. Avoid legal issues."
+    }
+  },
+  "categories": [
+    {
+      "name": "Home",
+      "name_translated": "家",
+      "active": true,
+      "data": [
+        {
+          "name": "Baidu",
+          "action": "https://www.baidu.com/s?wd=lula"
+        },
+        {
+          "name": "Douyin",
+          "action": "https://www.douyin.com/root/search/"
+        },
+        {
+          "name": "Google",
+          "action": "https://www.google.com/search?q="
+        },
+        {
+          "name": "ChatGPT",
+          "action": "https://chat.openai.com/?q="
+        },
+        {
+          "name": "Copilot",
+          "action": "https://copilot.microsoft.com/?q="
+        },
+        {
+          "name": "YouTube",
+          "action": "https://www.youtube.com/results?search_query="
+        },
+        {
+          "name": "Reddit",
+          "action": "https://www.reddit.com/search?q="
+        },
+        {
+          "name": "X",
+          "action": "https://x.com/search?src=typed_query&q="
+        },
+        {
+          "name": "Instagram",
+          "action": "https://www.instagram.com/explore/tags/"
+        },
+        {
+          "name": "LinkedIn",
+          "action": "https://www.linkedin.com/search/results/index/?keywords="
+        },
+        {
+          "name": "Pinterest",
+          "action": "https://br.pinterest.com/search/pins/?q="
+        },
+        {
+          "name": "Yahoo",
+          "action": "https://search.yahoo.com/search?p="
+        },
+        {
+          "name": "NY Times",
+          "action": "https://www.nytimes.com/search?query="
+        },
+        {
+          "name": "CNN",
+          "action": "https://edition.cnn.com/search?q="
+        },
+        {
+          "name": "BBC",
+          "action": "https://www.bbc.co.uk/search?q="
+        },
+        {
+          "name": "Bing",
+          "action": "https://www.bing.com/search?q="
+        },
+        {
+          "name": "Amazon",
+          "action": "https://www.amazon.com.br/s?k="
+        },
+        {
+          "name": "Ebay",
+          "action": "https://www.ebay.com/sch/i.html?_nkw="
+        },
+        {
+          "name": "Walmart",
+          "action": "https://www.walmart.com/search/?query="
+        },
+        {
+          "name": "Temu",
+          "action": "https://www.temu.com/search_result.html?search_key="
+        }
+      ]
+    },
+    {
+      "name": "AI",
+      "name_translated": "人工智能",
+      "active": true,
+      "data": [
+        {
+          "name": "豆包",
+          "action": "https://www.doubao.com/?q="
+        },
+        {
+          "name": "Wenxiaoyan",
+          "action": "https://chat.baidu.com/search?q="
+        },
+        {
+          "name": "Kimi",
+          "action": "https://kimi.moonshot.cn/?q="
+        },
+        {
+          "name": "ChatGPT",
+          "action": "https://chat.openai.com/?q="
+        },
+        {
+          "name": "Copilot",
+          "action": "https://copilot.microsoft.com/?q="
+        },
+        {
+          "name": "Perplexity",
+          "action": "https://www.perplexity.ai/?q="
+        },
+        {
+          "name": "HuggingChat",
+          "action": "https://huggingface.co/chat?q="
+        },
+        {
+          "name": "Claude",
+          "action": "https://claude.ai/newq="
+        },
+        {
+          "name": "Mistral",
+          "action": "https://chat.mistral.ai/chat?q="
+        },
+        {
+          "name": "Gemini",
+          "action": "https://gemini.google.com/app?q="
+        },
+        {
+          "name": "Meta AI",
+          "action": "https://www.meta.ai/?q="
+        },
+        {
+          "name": "You",
+          "action": "https://you.com/search?fromSearchBar=true&tbm=youchat&q="
+        },
+        {
+          "name": "Phind",
+          "action": "https://www.phind.com/agent?q="
+        },
+        {
+          "name": "iAsk",
+          "action": "https://iask.ai/?mode=question&q="
+        },
+        {
+          "name": "Adobe Firefly",
+          "action": "https://firefly.adobe.com/generate/images?prompt="
+        }
+      ]
+    }
+  ]
+}

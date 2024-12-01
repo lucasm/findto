@@ -19,7 +19,7 @@ const CookiesPopup = () => {
   })
 
   useEffect(() => {
-    if (!isAccepted && locale !== 'pt-BR') {
+    if (!isAccepted) {
       setIsVisible(true)
     }
   }, [isAccepted])
@@ -37,10 +37,13 @@ const CookiesPopup = () => {
       className={`${styles.cookiesPopup} ${
         isVisible ? styles.slideUp : styles.slideDown
       }`}>
-      <p>Findto uses Cookies for better navigation</p>
-      <div>
+      <p>
+        {t('componentCookiesPopup.title')}{' '}
         <Link href="/privacy">{t('privacy')}</Link>
-        <button onClick={handleAccept}>Accept</button>
+        {'.'}
+      </p>
+      <div>
+        <button onClick={handleAccept}>{t('accept')}</button>
       </div>
     </div>
   )

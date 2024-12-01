@@ -1,7 +1,10 @@
 .button {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   float: none;
-  height: var(--size-small);
+  height: 3rem;
   width: var(--size-small);
   font-size: 0;
   margin: 0;
@@ -15,8 +18,8 @@
   opacity: 1;
 }
 .button svg {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   color: var(--color-black);
 }
 
@@ -69,13 +72,12 @@
   padding: 1.5rem 0;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 576px) {
   .button {
-    height: 3rem;
     width: 1.5rem;
   }
   .button svg {
-    width: 18px;
-    height: 18px;
+    width: 1.15rem;
+    height: 1.15rem;
   }
 }

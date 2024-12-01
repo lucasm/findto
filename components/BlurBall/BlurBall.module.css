@@ -1,0 +1,21 @@
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  display: inline-block;
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 2rem;
+  background-size: 4rem;
+  background-image: url('/findto-sparkle.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--color-white-translucent-2);
+  border-radius: 33.333%;
+  box-shadow: var(--shadow-2);
+  opacity: 0.5;
+}

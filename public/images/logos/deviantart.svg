@@ -1,26 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 300 120" style="enable-background:new 0 0 300 120;" xml:space="preserve">
-<title>shutterstock</title>
-<g id="Artwork">
-	<g id="Color_01">
-		<polygon points="46.8,36 46.8,22.2 46.8,22.2 33,22.2 31.7,23.6 25.2,36 23.1,37.3 0,37.3 0,56.2 12.7,56.2 13.9,57.6 0,84.1 
-			0,97.8 0,97.8 13.7,97.8 15.1,96.4 21.6,84.1 23.6,82.7 46.8,82.7 46.8,63.8 34.1,63.8 32.9,62.4 		"/>
-		<path d="M74,63.8l-17.8,34h10.6l2.6-5h11.9l1.2,5H93l-8.1-34L74,63.8z M73.6,84.7l3.9-7.4l1.8,7.4H73.6z"/>
-		<path d="M123.8,76.1c0-7.8-5.3-12.3-12.7-12.3H95v34h10.2v-9.9h4.5l4.9,9.9h10.6l-6.3-12C121.9,83.8,123.8,80.5,123.8,76.1z
-			 M109.6,79.7h-4.5v-6.9h4.5c2.8,0,3.8,1.4,3.8,3.5S112.4,79.7,109.6,79.7z"/>
-		<polygon points="125.3,63.8 125.3,72.8 134.9,72.8 134.9,97.8 140.7,97.8 145,89.4 145,72.8 153.8,72.8 158.5,63.8 		"/>
-		<rect x="182.2" y="22.2" width="10.2" height="34"/>
-		<path d="M95.8,22.2l-4.6,8.7h2.8c5,0,8.2,3.2,8.2,8.3s-3.2,8.2-8.2,8.2h-3.2V31.6l-9.8,18.8v5.8h13.7c11,0,17.5-6.6,17.5-17
-			C112.2,29.2,106.2,22.6,95.8,22.2z"/>
-		<polygon points="114.9,56.2 140.9,56.2 140.9,47.2 125.1,47.2 125.1,43.5 139.6,43.5 139.6,34.9 125.1,34.9 125.1,31.2 
-			140.9,31.2 140.9,22.2 114.9,22.2 		"/>
-		<polygon points="158.9,42.8 154,22.2 143.5,22.2 151.6,56.2 162.4,56.2 180.3,22.2 169.7,22.2 		"/>
-		<polygon points="266.8,22.2 266.8,31.2 276.4,31.2 276.4,56.2 282.2,56.2 286.6,47.8 286.6,31.2 295.3,31.2 300,22.2 		"/>
-		<path d="M212.2,22.2l-17.8,34h10.5l2.6-5h11.9l1.2,5h10.5l-8.1-34H212.2z M211.8,43.1l3.9-7.5l1.8,7.5H211.8z"/>
-		<polygon points="254.5,38.3 243.1,22.2 233.1,22.2 233.1,56.2 243.2,56.2 243.2,38.9 255.8,56.2 264.6,56.2 264.6,22.2 
-			254.5,22.2 		"/>
-	</g>
-</g>
-</svg>
+
+<svg version="1.1" id="Camada_1" x="0px" y="0px" viewBox="0 0 32 32" xml:space="preserve" sodipodi:docname="deviantart.svg" width="32" height="32" inkscape:version="1.4-beta2 (9aaf4f34, 2024-07-30)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><defs id="defs6" /><sodipodi:namedview id="namedview6" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="0.38414113" inkscape:cx="247.30494" inkscape:cy="97.620373" inkscape:window-width="1440" inkscape:window-height="790" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="Camada_1" />
+<title id="title1">shutterstock</title>
+<polygon points="12.7,56.2 13.9,57.6 0,84.1 0,97.8 0,97.8 13.7,97.8 15.1,96.4 21.6,84.1 23.6,82.7 46.8,82.7 46.8,63.8 34.1,63.8 32.9,62.4 46.8,36 46.8,22.2 33,22.2 31.7,23.6 25.2,36 23.1,37.3 0,37.3 0,56.2 " id="polygon1" transform="matrix(0.42328042,0,0,0.42328042,6.0952382,-9.3968252)" />
+<metadata id="metadata6"><rdf:RDF><cc:Work rdf:about=""><dc:title>shutterstock</dc:title></cc:Work></rdf:RDF></metadata></svg>

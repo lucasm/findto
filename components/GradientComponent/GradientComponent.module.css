@@ -1,0 +1,30 @@
+.circlePosition {
+  width: 590px;
+  height: 400px;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  filter: blur(90px);
+  animation: colorShift 10s ease-in-out infinite;
+}
+
+@keyframes colorShift {
+  0% {
+    background-color: #eb26fd;
+  }
+  25% {
+    background-color: #26fdfd;
+  }
+  50% {
+    background-color: #26fd72;
+  }
+  75% {
+    background-color: #fdd826;
+  }
+  100% {
+    background-color: #fd2626;
+  }
+}

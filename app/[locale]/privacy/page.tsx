@@ -9,7 +9,7 @@ export const metadata = {
 export default function PrivacyPage() {
   return (
     <WebsiteLayout>
-      <section className="colors">
+      <section>
         <div className={Style.container}>
           <div className={Style.pageTitle}>
             <h1>Privacy Policy</h1>
@@ -20,21 +20,22 @@ export default function PrivacyPage() {
       <section>
         <div className={Style.container}>
           <article>
-            <h2>1. Privacy-First</h2>
+            <h2>1. Privacy-First Application</h2>
 
             <p>
-              Findto are built on privacy! We respect your privacy regarding any
-              information we may collect from you across our services at
-              internet domain <a href="http://findto.app">http://findto.app</a>{' '}
-              and communications ("Findto").
+              We respect your privacy regarding any information we may collect
+              from you across our services at internet domain{' '}
+              <a href="http://findto.app">http://findto.app</a> and
+              communications ("Findto").
             </p>
 
             <p>
-              Findto don't store any user searches. Because was designed for it.
-              Findto mission is encourage people choice a healthy internet.
-              External search provider services may collect and store your
-              personal data. Thinking about it, Findto displays a "Privacy level
-              widget" for every search provider, whenever available.
+              Findto are designed on privacy. Findto don't store any user
+              searches. Because was designed for it. Findto mission is encourage
+              people choice a healthy internet. External search provider
+              services may collect and store your personal data. Thinking about
+              it, Findto displays a "Privacy level widget" for every search
+              provider, whenever available.
             </p>
 
             <p>

@@ -1,19 +1,23 @@
 import { AppContextProviders } from '@/components/AppContextProviders'
-import Style from './AppLayout.module.css'
 import AppHeader from '@/components/Header'
-
 import AppFooter from '@/components/Footer'
+import CookiesPopup from '@/components/CookiesPopup'
 
-export default function LayoutApp({ children }: { children: React.ReactNode }) {
+export default function AppLayout({
+  children,
+  locale,
+}: {
+  children: React.ReactNode
+  locale: string
+}) {
   return (
-    <>
-      <AppContextProviders>
-        <div className={Style.layout}>
-          <AppHeader />
-          <main className={Style.main}>{children}</main>
-        </div>
-        <AppFooter />
-      </AppContextProviders>
-    </>
+    <AppContextProviders>
+      <AppHeader locale={locale} />
+
+      <main>{children}</main>
+
+      <CookiesPopup />
+      <AppFooter />
+    </AppContextProviders>
   )
 }

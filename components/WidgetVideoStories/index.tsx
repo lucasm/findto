@@ -1,45 +1,50 @@
 'use client'
 
 import Styles from './WidgetVideoStories.module.css'
-import { useEffect, useState, useCallback, useRef, useMemo } from 'react'
+import { useEffect, useState, useCallback, useRef } from 'react'
 import useSWR from 'swr'
 import { fetcher } from '@/utils/http'
 import { useSearch } from '@/contexts/SearchContext'
 import type { ITrendsItem } from '@/interfaces/trends'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination } from 'swiper/modules'
+import { Pagination, Mousewheel } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import { useTranslations } from 'next-intl'
 import { IconClose } from '../SvgIcons'
+import { ISearchCategory } from '@/interfaces/search'
 
-export default function WidgetVideoStories() {
+interface Props {
+  selectedCategory: ISearchCategory
+}
+
+export default function WidgetVideoStories({ selectedCategory }: Props) {
   const t = useTranslations('t')
-  const { data, category, sizeWindow } = useSearch()
+  const { sizeWindow } = useSearch()
   const [maxSlides, setMaxSlides] = useState<number>(5.5)
-  const [margin, setMargin] = useState<number>(24)
+
   const [videoUrl, setVideoUrl] = useState<string | undefined>(undefined)
   const [channelsIds, setChannelsIds] = useState<string | null>(null)
   const [shouldFetch, setShouldFetch] = useState(false)
   const videoPlayer = useRef<HTMLDivElement | null>(null)
 
-  const selectedCategory = useMemo(() => {
-    return data?.find((item: { name: string }) => item.name === category)
-      ?.youtube_channels
-  }, [category, data])
+  const categoryVideoChannels = selectedCategory?.youtube_channels
+  const categoryTitle = selectedCategory?.name
 
   useEffect(() => {
     closeVideo()
 
-    if (selectedCategory) {
-      const ids = selectedCategory.map((item: any) => item.id).join(',')
+    if (categoryVideoChannels) {
+      const ids = categoryVideoChannels.map((item: any) => item.id).join(',')
       setChannelsIds(ids)
-      setShouldFetch(true) // ativa o fetch
-    } else {
-      setChannelsIds(null)
-      setShouldFetch(false) // desativa o fetch
+      setShouldFetch(true)
     }
-  }, [selectedCategory])
+
+    if (!categoryVideoChannels) {
+      setChannelsIds(null)
+      setShouldFetch(false)
+    }
+  }, [categoryVideoChannels])
 
   const { data: dataTrends, error: errorTrends } = useSWR(
     shouldFetch && channelsIds
@@ -52,7 +57,7 @@ export default function WidgetVideoStories() {
   const scrollToVideo = () => {
     if (videoPlayer.current) {
       const topPosition =
-        videoPlayer.current.getBoundingClientRect().top + window.scrollY - 20
+        videoPlayer.current.getBoundingClientRect().top + window.scrollY - 16
       window.scrollTo({ top: topPosition, behavior: 'smooth' })
     }
   }
@@ -70,31 +75,35 @@ export default function WidgetVideoStories() {
   useEffect(() => {
     if (sizeWindow.width < 480) {
       setMaxSlides(3.75)
-      setMargin(8)
     } else if (sizeWindow.width < 940) {
       setMaxSlides(4.5)
-      setMargin(16)
     } else {
       setMaxSlides(5.5)
-      setMargin(24)
     }
   }, [sizeWindow])
 
   if (shouldFetch && dataTrends) {
     return (
-      <section className={Styles.container + ' ' + Styles[`trends${category}`]}>
-        <div className={Styles.title}>
-          <h2>Stories</h2>
-        </div>
+      <section
+        className={Styles.container + ' ' + Styles[`trends${categoryTitle}`]}>
+        {categoryTitle !== 'Home' && (
+          <div className={Styles.title}>
+            {/* <IconStories /> */}
+            <h3> {t('stories')}</h3>
+          </div>
+        )}
 
-        {errorTrends && <div>Error</div>}
+        {errorTrends && (
+          <p>Error loading content. Please report this feedback.</p>
+        )}
 
         {dataTrends && (
           <>
             {videoUrl && (
               <div ref={videoPlayer} className={Styles.videoPlayer}>
                 <button className={Styles.closeButton} onClick={closeVideo}>
-                  Fechar <IconClose />
+                  <IconClose />
+                  Fechar
                 </button>
                 <iframe
                   width="100%"
@@ -107,12 +116,13 @@ export default function WidgetVideoStories() {
             )}
             <Swiper
               slidesPerView={maxSlides}
-              spaceBetween={margin}
+              mousewheel={true}
+              spaceBetween={0}
               pagination={{
                 clickable: true,
               }}
               loop={true}
-              modules={[Pagination]}
+              modules={[Pagination, Mousewheel]}
               className={Styles.slide}>
               {dataTrends?.data?.map((item: ITrendsItem, index: number) => (
                 <SwiperSlide key={index}>

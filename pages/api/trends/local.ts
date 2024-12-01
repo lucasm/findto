@@ -4,7 +4,7 @@ import { ITrends } from '../../../interfaces/trends'
 
 export default async function endpoint(
   req: NextApiRequest,
-  res: NextApiResponse
+  res: NextApiResponse,
 ): Promise<void> {
   const {
     query: { latitude, longitude, language },
@@ -20,7 +20,7 @@ export default async function endpoint(
     })
   }
 
-  const url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${latitude},${longitude}&language=${language}&radius=1500&key=${process.env.NEXT_PUBLIC_API_GOOGLEMAPS}`
+  const url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${latitude},${longitude}&language=${language}&radius=5000&rankby=prominence&key=${process.env.NEXT_PUBLIC_API_GOOGLEMAPS}`
 
   try {
     const { data } = await axios.get(url)

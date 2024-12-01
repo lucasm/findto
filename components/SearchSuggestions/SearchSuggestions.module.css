@@ -4,21 +4,19 @@
   width: 100%;
   height: auto;
   text-align: left;
-  font-size: var(--font-size);
-  background: transparent;
-  z-index: 9;
+  font-size: 0;
 }
 .container ul {
   width: 100%;
-  padding: 0 1.25rem;
+  padding-left: 2.85rem;
 }
 .container ul li a {
   float: left;
   padding: 0.2rem 0;
-
+  font-size: var(--font-size);
   font-weight: 400;
   width: 100%;
-  color: var(--color-text-black);
+  color: var(--color-black);
   opacity: var(--opacity);
 }
 .container ul li a:focus,
@@ -29,8 +27,11 @@
   margin-top: 0.5rem;
 }
 
-@media screen and (min-width: 940px) {
+@media screen and (min-width: 768px) {
   .container ul {
-    padding: 0 1.5rem;
+    padding-left: 4rem;
+  }
+  .container ul li a {
+    font-size: var(--font-size-big);
   }
 }

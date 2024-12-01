@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import styles from './Select.module.css'
-import { IconChevronDown } from '../SvgIcons'
 
 interface Option {
   value: string
@@ -13,6 +12,7 @@ interface CustomSelectProps {
   id: string
   value?: string
   onChange: (value: string) => void
+  icon?: JSX.Element
 }
 
 const Select: React.FC<CustomSelectProps> = ({
@@ -21,6 +21,7 @@ const Select: React.FC<CustomSelectProps> = ({
   id,
   value,
   onChange,
+  icon,
 }) => {
   const [selectedValue, setSelectedValue] = useState<string>(value || '')
 
@@ -37,6 +38,7 @@ const Select: React.FC<CustomSelectProps> = ({
 
   return (
     <div className={styles.customSelect}>
+      {icon}
       <label htmlFor={id} className={styles.label}>
         {label}
       </label>
@@ -45,16 +47,12 @@ const Select: React.FC<CustomSelectProps> = ({
         className={styles.select}
         value={selectedValue}
         onChange={(e) => handleSelect(e.target.value)}>
-        {/* <option value="" disabled>
-          Select an option
-        </option> */}
-        {options.map((option) => (
-          <option key={option.value} value={option.value}>
+        {options.map((option, index) => (
+          <option value={option.value} key={index}>
             {option.label}
           </option>
         ))}
       </select>
-      <IconChevronDown />
     </div>
   )
 }

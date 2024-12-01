@@ -1,0 +1,21 @@
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--max-size-container);
+  display: inline-flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .container h2 {
+    font-size: 1.25rem;
+  }
+  .container {
+    padding: 1rem 0 0;
+  }
+}

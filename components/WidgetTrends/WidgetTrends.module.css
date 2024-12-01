@@ -1,36 +1,47 @@
 .container {
-  padding: 0 1rem 3rem;
+  padding: 0 2rem 3rem;
   overflow: hidden;
+  margin: 0 auto;
+  max-width: var(--max-size-container);
 }
 .container ul {
   list-style: none;
   display: grid;
-  gap: 1.5rem;
+  gap: 0;
+  padding: 0;
+  margin: 0 -1rem;
   justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
 .container ul li button {
+  position: relative;
   display: flex;
-  gap: 1.5rem;
-  align-items: center;
+  gap: 1rem;
   justify-content: flex-start;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   width: 100%;
   border: 0;
   margin: 0;
-  background: var(--color-bg-white);
+  background: transparent;
   color: var(--color-text-black);
   border-radius: var(--radius);
   transition: var(--transition-hover);
-  box-shadow: var(--box-shadow);
   flex-direction: row;
+  align-items: center;
   overflow: hidden;
+  font-weight: 400;
+}
+.container ul li button:hover,
+.container ul li button:focus {
+  background: var(--color-black-translucent);
 }
 .container ul li button img {
-  width: 58px;
+  width: 64px;
   background: var(--color-white);
   transition: var(--transition-hover);
   filter: grayscale(100%);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
 }
 .container ul li button:hover img,
 .container ul li button:focus img {
@@ -38,121 +49,95 @@
 }
 .container ul li button span {
   text-align: left;
-  font-size: var(--font-size-big);
-  letter-spacing: -0.05rem;
+  font-size: var(--font-size);
+  letter-spacing: -0.025rem;
+}
+.container ul li button span:first-of-type {
+  opacity: var(--opacity);
+  line-break: unset;
+  /* position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  background: white;
+  color: black;
+  border-radius: 5rem;
+  width: 2rem;
+  height: 2rem;
+  z-index: 1;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; */
 }
 
 /* Sizes */
 
 .trendsVideos ul,
-.trendsImage ul,
-.trendsMusic ul,
-.trendsSocial ul,
-.trendsShopping ul {
+.trendsMusic ul {
   grid-template-columns: repeat(4, 1fr);
 }
 
 .trendsVideos ul li button,
-.trendsImage ul li button,
 .trendsMusic ul li button,
+.trendsImage ul li button,
 .trendsNews ul li button,
+.trendsGames ul li button,
 .trendsFinance ul li button,
 .trendsShopping ul li button {
-  gap: 0;
-  padding: 0;
+  gap: 1rem;
   flex-direction: column;
+  align-items: start;
 }
 
-.trendsVideos ul li button span,
-.trendsImage ul li button span,
-.trendsMusic ul li button span,
-.trendsNews ul li button span,
-.trendsFinance ul li button span,
-.trendsShopping ul li button span {
-  text-align: center;
-  padding: 2rem;
-}
+.trendsSocial ul li button span,
 .trendsCode ul li button span {
   line-break: anywhere;
-}
-.trendsNews ul li button span,
-.trendsFinance ul li button span {
-  text-align: left;
+  /* word-break: break-all; */
 }
 
 .trendsVideos ul li button img,
 .trendsMusic ul li button img,
 .trendsImage ul li button img,
 .trendsNews ul li button img,
+.trendsGames ul li button img,
 .trendsFinance ul li button img,
 .trendsShopping ul li button img {
   width: 100%;
 }
+
 .trendsShopping ul li button img {
-  padding: 2rem;
+  padding: 3rem;
 }
-
-.trendsSocial ul li button span {
-  padding: 0 0.5rem;
-}
-.trendsSocial ul li:nth-child(1) button span,
-.trendsAcademic ul li:nth-child(1) button span {
-  font-size: calc(var(--font-size-big) + 0.5rem);
-}
-.trendsSocial ul li:nth-child(2) button span,
-.trendsAcademic ul li:nth-child(2) button span {
-  font-size: calc(var(--font-size-big) + 0.45rem);
-}
-.trendsSocial ul li:nth-child(3) button span,
-.trendsAcademic ul li:nth-child(3) button span {
-  font-size: calc(var(--font-size-big) + 0.4rem);
-}
-.trendsSocial ul li:nth-child(4) button span,
-.trendsAcademic ul li:nth-child(4) button span {
-  font-size: calc(var(--font-size-big) + 0.35rem);
-}
-.trendsSocial ul li:nth-child(5) button span,
-.trendsAcademic ul li:nth-child(5) button span {
-  font-size: calc(var(--font-size-big) + 0.3rem);
-}
-.trendsSocial ul li:nth-child(6) button span,
-.trendsAcademic ul li:nth-child(6) button span {
-  font-size: calc(var(--font-size-big) + 0.25rem);
-}
-.trendsSocial ul li:nth-child(7) button span,
-.trendsAcademic ul li:nth-child(7) button span {
-  font-size: calc(var(--font-size-big) + 0.2rem);
-}
-.trendsSocial ul li:nth-child(8) button span,
-.trendsAcademic ul li:nth-child(8) button span {
-  font-size: calc(var(--font-size-big) + 0.15rem);
-}
-.trendsSocial ul li:nth-child(9) button span,
-.trendsAcademic ul li:nth-child(9) button span {
-  font-size: calc(var(--font-size-big) + 0.1rem);
-}
-.trendsSocial ul li:nth-child(10) button span,
-.trendsAcademic ul li:nth-child(10) button span {
-  font-size: calc(var(--font-size-big) + 0.05rem);
-}
-
 .trendsLocal ul li button img {
   padding: 0.75rem;
 }
 
-.title h2 {
-  display: flex;
-  font-size: var(--font-size-3);
-  margin-bottom: 2rem;
-  color: var(--color-text-black);
+.trendsSocial ul li button span,
+.trendsAcademic ul li button span {
+  padding: 0 0.5rem;
 }
-.title h2 svg {
-  margin: -1px 0.75rem 0 0;
+
+.title {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.title h3 {
+  display: flex;
+  color: var(--color-text-black);
+  font-size: var(--font-size-3);
+  font-weight: 400;
+}
+.title svg {
+  width: 1.25rem;
+  height: 1.25rem;
   color: var(--color-text-black);
 }
 
 .credits p {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   padding-right: 1rem;
   font-size: var(--font-size-small);
   width: 100%;
@@ -161,31 +146,42 @@
 }
 .credits p a {
   transition: var(--transition);
+  font-weight: 400;
 }
 .credits p a:hover,
 .credits p a:focus {
   color: var(--color-text-black);
 }
 
-@media screen and (max-width: 940px) {
-  .title h2 {
-    font-size: 1.25rem;
-  }
-
-  .container ul {
-    gap: 1rem;
-  }
-
-  .container ul li button span {
-    font-size: var(--font-size);
-  }
-}
 @media screen and (max-width: 768px) {
+  .container {
+    padding: 0 1rem 3rem;
+  }
   .container ul {
     grid-template-columns: 1fr 1fr;
   }
+
+  .title h3 {
+    font-size: var(--font-size);
+  }
 }
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 576px) {
+  .container ul li button {
+    padding: 1rem;
+  }
+
+  .trendsHome ul li button img,
+  .trendsAI ul li button img,
+  .trendsWeb ul li button img,
+  .trendsLocal ul li button img,
+  .trendsCode li button img,
+  .trendsApps li button img {
+    width: 52px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
   .container ul {
     grid-template-columns: 1fr;
   }

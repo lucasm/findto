@@ -1,19 +1,21 @@
 .cookiesPopup {
   position: fixed;
-  bottom: -8rem;
+  bottom: 0;
   right: 1rem;
-  left: 1rem;
+  left: unset;
   display: flex;
+  width: 100%;
+  max-width: 20rem;
   gap: 1rem;
-  background: var(--color-black);
+  background: var(--color-text-black);
   border-radius: 24px;
-  color: var(--color-white);
   padding: 2rem;
   text-align: center;
   transition: transform 0.5s ease-in-out;
   z-index: 1000;
   align-items: center;
   flex-direction: column;
+  box-shadow: var(--box-shadow);
 }
 .cookiesPopup div {
   display: flex;
@@ -21,37 +23,28 @@
   align-items: center;
 }
 .cookiesPopup p {
+  color: var(--color-bg-white);
   font-size: var(--font-size-small);
 }
 
 .slideUp {
-  transform: translateY(-100%);
+  transform: translateY(-1rem);
 }
 .slideDown {
   transform: translateY(100%);
 }
 
 .cookiesPopup button {
-  background: var(--color-white);
-  color: var(--color-black);
+  background: var(--color-bg-white);
+  color: var(--color-text-black);
+
   border: none;
   padding: 10px 20px;
   border-radius: var(--radius-small);
   cursor: pointer;
-  font-size: var(--font-size);
+  font-size: var(--font-size-small);
 }
 
 .cookiesPopup a {
   font-size: var(--font-size-small);
-}
-
-@media screen and (min-width: 900px) {
-  .cookiesPopup {
-    bottom: -7.75rem;
-    right: 1rem;
-    left: unset;
-  }
-  .cookiesPopup p {
-    font-size: var(--font-size-5);
-  }
 }

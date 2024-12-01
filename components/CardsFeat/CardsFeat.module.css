@@ -1,3 +1,10 @@
+.container {
+  transition: var(--transition-hover);
+}
+.container h2 {
+  color: var(--color-black) !important;
+}
+
 .card {
   display: flex;
   flex-wrap: wrap;
@@ -5,40 +12,50 @@
   grid-gap: 3rem;
   padding: 3rem 0;
 }
-.card div {
+.card li {
   display: flex;
-  width: 280px;
+  width: 12rem;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-.card figure {
+.card li figure {
   display: flex;
-  background: var(--color-white-translucent-2);
-  height: 4.5rem;
-  width: 4.5rem;
-  margin: 0 auto;
-  border-radius: var(--radius-full);
+  background-color: var(--color-white-translucent);
+  border-radius: 33.333%;
   box-shadow: var(--shadow-2);
+  height: 5rem;
+  width: 5rem;
+  margin: 0 auto;
   align-items: center;
   justify-content: center;
 }
-.card h3 {
-  margin-top: 2rem;
+.card li h3 {
+  margin-top: 1.5rem;
+  /* font-weight: 400; */
+  font-size: 1.05rem;
 }
-.card p {
-  font-size: var(--font-size-small);
+.card li p {
+  font-size: var(--font-size);
 }
-.card svg {
+.card li svg {
   width: 1.5rem;
   height: 1.5rem;
 }
 
-@media screen and (min-width: 940px) {
-  .card {
-    grid-gap: 5rem;
+@media screen and (max-width: 576px) {
+  .card li {
+    width: 8rem;
   }
-  .card figure {
-    margin: 0;
+  .card li figure {
+    height: 4rem;
+    width: 4rem;
+  }
+  .card li svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  .card li p {
+    font-size: var(--font-size-small);
   }
 }

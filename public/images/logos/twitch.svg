@@ -1,9 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 300 120" style="enable-background:new 0 0 300 120;" xml:space="preserve">
-<path d="M26.1,45.5h18.5v21.1H26.1v5.3h18.5V93h-29L5,82.4V27h21.1V45.5z M102.5,45.5h21.1V93H60.4L49.8,82.4V45.5h21.1v26.4h5.3
-	V45.5h21.1v26.4h5.3V45.5z M128.9,45.5H150V93h-21.1V45.5z M128.9,27H150v13.2h-21.1V27z M210.6,45.5h31.6v21.1h-21.1v5.3h21.1V93
-	h-31.6l-10.5-10.5V56L210.6,45.5z M284.5,45.5L295,56V93h-21.1V66.6h-5.3V93h-21.1V27h21.1v18.5H284.5z M176.4,45.5h18.5v21.1h-18.5
-	v5.3h18.5V93h-29l-10.5-10.5V27h21.1V45.5z"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg fill="#000000" width="32" height="32" viewBox="0 0 1.28 1.28" version="1.1" id="svg1" sodipodi:docname="twitch.svg" inkscape:version="1.4-beta2 (9aaf4f34, 2024-07-30)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs id="defs1" />
+  <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="5.2820688" inkscape:cx="22.245072" inkscape:cy="41.745007" inkscape:window-width="1440" inkscape:window-height="790" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="svg1" />
+  <title id="title1">twitch</title>
+  <path d="M 1.0971246,0.5943345 0.9142918,0.7771672 H 0.7314164 l -0.16,0.16 v -0.16 H 0.3657082 V 0.0914591 H 1.0971246 Z M 0.32,4.27e-5 0.0914164,0.2286263 V 1.0514164 H 0.3657082 V 1.28 L 0.5942918,1.0514164 H 0.7771246 L 1.1885836,0.64 V 0 Z m 0.5485836,0.2514164 h 0.091416 v 0.2742918 h -0.091416 z m -0.251459,0 h 0.091459 v 0.2742918 h -0.091502 z" id="path1" style="stroke-width:0.042678" />
+  <metadata id="metadata1">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:title>twitch</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
 </svg>

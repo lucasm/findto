@@ -8,7 +8,7 @@ import Button from '@/components/Button'
 export const metadata = {
   title: 'About',
   description:
-    'Findto is a decentralized search assistant. Get control over AI and Web search. Explore a healthy internet.',
+    'Findto is an assistant for decentralized search on Web, AI and Metaverse.',
 }
 
 export default function PageAbout() {
@@ -16,14 +16,11 @@ export default function PageAbout() {
 
   return (
     <WebsiteLayout>
-      <section className="colors">
-        <div className={Style.container + ' ' + Style.miniContainer}>
+      <section>
+        <div className={Style.container}>
           <figure className={Style.icon}></figure>
-          <h1>{t('slogan')}</h1>
-          <p>
-            Findto is a decentralized search assistant. Get control over AI and
-            Web search. Explore a healthy internet.
-          </p>
+          <h1>Decentralized Search for Everyone</h1>
+          <p>Findto is an open source assistant for decentralized search.</p>
         </div>
       </section>
 
@@ -31,56 +28,55 @@ export default function PageAbout() {
         <div className={Style.container}>
           <div className={Style.cardDuos}>
             <div>
-              <figure>
-                <SvgIllustrations type="people" color="colorsSvg" />
-              </figure>
-
               <article>
-                <h2>Take control of algorithms</h2>
+                <h2>Get control of AI and Web search</h2>
                 <p>
-                  Findto puts people in control of the algorithms. Find anything
-                  switching between diverse sources. More productive and
-                  accessible searches than ever.
+                  Findto puts people in control of algorithms. Switch between
+                  diverse sources, like Web search engines, and generative AI.
+                  Find anything.
                 </p>
               </article>
+
+              <figure>
+                <SvgIllustrations type="people" color="fillFindto" />
+              </figure>
             </div>
 
             <div>
-              <figure>
-                <SvgIllustrations type="search" color="colorsSvg" />
-              </figure>
-
               <article>
-                <h2>More privacy, less carbon</h2>
+                <h2>Choice less carbon and more privacy</h2>
                 <p>
-                  Estimated level of privacy and carbon footprint of every
-                  search source. Make better choices - for you and the planet.
+                  Findto is fighthin for a better internet. We are working to
+                  show the estimated carbon footprint and privacy level of every
+                  search source. Better choices are made with transparency.
                 </p>
               </article>
+
+              <figure>
+                <SvgIllustrations type="search" color="fillFindto" />
+              </figure>
             </div>
 
             <div>
-              <figure>
-                <SvgIllustrations type="phone" color="colorsSvg" />
-              </figure>
-
               <article>
-                <h2>Decentralizing AI and Web search</h2>
+                <h2>Made by people, for people</h2>
                 <p>
-                  The monopoly is dangerous. Findto encourages a truly open
-                  search experience, where people choices matter. We are here
-                  building a better internet.
+                  Findto is an open source project to encourage an accessible
+                  and universal search experience. Where people's choices
+                  matter. Where diversity is key. Search decentralized.
                 </p>
               </article>
+
+              <figure>
+                <SvgIllustrations type="phone" color="fillFindto" />
+              </figure>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="colors">
+      <section className={Style.colorfulBackground}>
         <div className={Style.container}>
-          <h3>Features</h3>
-
           <CardsFeat />
         </div>
       </section>
@@ -88,9 +84,9 @@ export default function PageAbout() {
       <section>
         <div className={Style.container}>
           <div className={Style.actionContainer}>
-            <h2>A healthy search experience</h2>
-            <p>Decentralized search. Built by people, for people.</p>
-            <Button url="/" color="colors">
+            <h2>A renewed search experience</h2>
+            <p>Decentralized search. Built for people.</p>
+            <Button url="/" color="black">
               {t('openApp')}
             </Button>
           </div>

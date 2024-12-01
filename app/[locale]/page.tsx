@@ -1,25 +1,27 @@
 import AppLayout from '@/layouts/AppLayout'
-import Search from '@/components/Search'
-import WidgetVideoStories from '@/components/WidgetVideoStories'
-import WidgetTrends from '@/components/WidgetTrends'
 import Banner from '@/components/Banner'
-import CookiesPopup from '@/components/CookiesPopup'
+import Search from '@/components/Search'
+import { getLocaleData } from '@/utils/getLocaleData'
+import WidgetTrends from '@/components/WidgetTrends'
 
-export default function Page() {
+export default function Page({
+  params: { locale },
+}: {
+  params: { locale: string }
+}) {
+  const data = getLocaleData(locale)
+
+  const selectedCategory = data?.categories?.find(
+    (category: any) => category?.name.toLowerCase() === 'home',
+  )
+
   return (
-    <AppLayout>
-      <Search />
+    <AppLayout locale={locale}>
+      <Search selectedCategory={selectedCategory} />
 
-      <WidgetVideoStories />
       <WidgetTrends />
 
-      {/* <WidgetContainer>
-        <WidgetPrivacy />
-        <WidgetCarbon />
-      </WidgetContainer> */}
-
       <Banner />
-      <CookiesPopup />
     </AppLayout>
   )
 }

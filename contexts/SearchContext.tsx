@@ -1,4 +1,3 @@
-import { ISearchCategory } from '@/interfaces/search'
 import { useLocale } from 'next-intl'
 import { createContext, useContext, useState, useEffect, useRef } from 'react'
 
@@ -10,19 +9,39 @@ export function SearchContextProvider({ children }: { children: any }) {
   const locale = useLocale()
   // load search sources file by locale
   const localeSearchSources = require('../locales/' + locale + '.json')
-  const [data, setData] = useState<ISearchCategory[] | null>(null)
-  const [category, setCategory] = useState<string>('Web')
-  const [search, setSearch] = useState<string>('google')
+  const [country, setCountry] = useState<string | null>(null)
+  const [category, setCategory] = useState<string>('')
+  const [search, setSearch] = useState<string>('')
   const [searchUrl, setSearchUrl] = useState<string>('')
   const [titleTrends, setTitleTrends] = useState<string>('')
-  const [country, setCountry] = useState<string | null>(null)
   const [permissionLocation, setPermissionLocation] = useState<boolean>(false)
   const [latitude, setLatitude] = useState<number>()
   const [longitude, setLongitude] = useState<number>()
-  const [inputValue, setInputValue] = useState<string>('')
   const [isMobileViewport, setIsMobileViewport] = useState<boolean>(false)
   const refSearchInput = useRef(null)
-  const refSearchTabs = useRef([])
+  const refButtons = useRef([])
+  const [inputValue, setInputValue] = useState<string | undefined>(undefined)
+
+  const inputFocus = () => {
+    const inputElement = refSearchInput.current as HTMLInputElement | null
+    if (inputElement) {
+      inputElement.focus()
+    }
+  }
+
+  useEffect(() => {
+    // Lê o localStorage apenas quando o componente monta
+    if (typeof window !== 'undefined') {
+      const saved = window.localStorage.getItem('inputValue')
+      setInputValue(saved ? JSON.parse(saved) : '')
+    }
+  }, [])
+
+  useEffect(() => {
+    if (inputValue !== undefined) {
+      window.localStorage.setItem('inputValue', JSON.stringify(inputValue))
+    }
+  }, [inputValue])
 
   function scrollToTop() {
     const isBrowser = () => typeof window !== 'undefined'
@@ -30,7 +49,11 @@ export function SearchContextProvider({ children }: { children: any }) {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
   function putValue(value: string) {
-    const sanitizedValue: string = value.replace(/[#:‑\-]/g, '')
+    // Remove traços e apenas os espaços adjacentes ao traço
+    const sanitizedValue: string = value
+      .replace(/\s*-\s*/g, ' ')
+      .replace(/[#:‑]/g, '')
+
     const inputElement = refSearchInput.current as HTMLInputElement | null
     if (inputElement) {
       inputElement.value = sanitizedValue
@@ -63,11 +86,6 @@ export function SearchContextProvider({ children }: { children: any }) {
   }
   const sizeWindow = useWindowSize()
 
-  // locale
-  useEffect(() => {
-    setData(localeSearchSources?.categories)
-  }, [localeSearchSources, locale])
-
   // country
   useEffect(() => {
     window.localStorage.setItem('country', localeSearchSources?.country_code)
@@ -76,7 +94,6 @@ export function SearchContextProvider({ children }: { children: any }) {
   // state: from local storage
   useEffect(() => {
     const countryStorage = localStorage.getItem('country')
-
     setCountry(countryStorage)
   }, [])
 
@@ -93,12 +110,7 @@ export function SearchContextProvider({ children }: { children: any }) {
 
   // sync with LocalStorage
   useEffect(() => {
-    const storedCategory = window.localStorage.getItem('category')
     const storedSearch = window.localStorage.getItem('search')
-
-    storedCategory
-      ? setCategory(storedCategory)
-      : window.localStorage.setItem('category', category)
 
     storedSearch
       ? setSearch(storedSearch)
@@ -109,11 +121,10 @@ export function SearchContextProvider({ children }: { children: any }) {
     <SearchContext.Provider
       value={{
         refSearchInput,
-        refSearchTabs,
+        refButtons,
         putValue,
         inputValue,
         setInputValue,
-        data,
         search,
         setSearch,
         searchUrl,
@@ -132,6 +143,7 @@ export function SearchContextProvider({ children }: { children: any }) {
         sizeWindow,
         titleTrends,
         setTitleTrends,
+        inputFocus,
       }}>
       {children}
     </SearchContext.Provider>

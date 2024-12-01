@@ -9,7 +9,7 @@ export const metadata = {
 export default function PageTerms() {
   return (
     <WebsiteLayout>
-      <section className="colors">
+      <section>
         <div className={Style.container}>
           <h1>Terms of Service</h1>
         </div>
