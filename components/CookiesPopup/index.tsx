@@ -3,10 +3,9 @@
 import { useEffect, useState } from 'react'
 import styles from './CookiesPopup.module.css'
 import Link from 'next/link'
-import { useLocale, useTranslations } from 'next-intl'
+import { useTranslations } from 'next-intl'
 
 const CookiesPopup = () => {
-  const locale = useLocale()
   const t = useTranslations('t')
   const [isVisible, setIsVisible] = useState<boolean>(false)
   const [isAccepted, setIsAccepted] = useState<boolean>(() => {
