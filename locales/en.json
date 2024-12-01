@@ -3,7 +3,7 @@
   "country_code": "US",
   "t": {
     "componentCookiesPopup": {
-      "title": "Findto uses cookies and other similar technologies to improve your experience and provide personalized content in a completely anonymous way. We do not track your searches. We do not sell your information. Read our"
+      "title": "Findto uses cookies and similar technologies to improve your experience and provide personalized content. We do not track you. We do not sell your information."
     },
     "componentWelcome": {
       "goodMorning": "Good morning",

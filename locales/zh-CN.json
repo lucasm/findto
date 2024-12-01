@@ -3,7 +3,7 @@
   "country_code": "CN",
   "t": {
     "componentCookiesPopup": {
-      "title": "Findto uses cookies and other similar technologies to improve your experience and provide personalized content in a completely anonymous way. We do not track your searches. We do not sell your information. Read our"
+      "title": "Findto 使用 cookie 和类似技术来改善您的体验并提供个性化内容。我们不会追踪你。我们不会出售您的信息。"
     },
     "componentWelcome": {
       "goodMorning": "早上好",
@@ -27,21 +27,21 @@
     "privacy": "隐私政策",
     "terms": "服务条款",
     "donate": "捐",
-    "accept": "Accept",
+    "accept": "好的",
     "learnMore": "了解更多关于 Findto",
     "viewNearbyPlaces": "View nearby places",
-    "openApp": "Open the app",
+    "openApp": "打开应用程序",
     "placeholder": "Search",
     "search": "Search",
     "clear": "Clear",
     "powered": "Powered by",
     "settings": "Settings",
-    "theme": "Theme",
-    "language": "Language",
-    "contribute": "Contribute",
-    "trends": "Trending",
-    "stories": "Stories",
-    "categories": "Categories",
+    "theme": "主题",
+    "language": "语言",
+    "contribute": "贡献",
+    "trends": "热门内容",
+    "stories": "最新动态",
+    "categories": "类别",
     "feedback": {
       "title": "发送反馈",
       "url": "https://forms.gle/US69JvUT1qxYkiF58"

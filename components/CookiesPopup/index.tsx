@@ -36,11 +36,12 @@ const CookiesPopup = () => {
       className={`${styles.cookiesPopup} ${
         isVisible ? styles.slideUp : styles.slideDown
       }`}>
-      <p>
-        {t('componentCookiesPopup.title')}{' '}
-        <Link href="/privacy">{t('privacy')}</Link>
-        {'.'}
-      </p>
+      <p>{t('componentCookiesPopup.title')}</p>
+      <div>
+        <p>
+          <Link href="/privacy">{t('privacy')}</Link>
+        </p>
+      </div>
       <div>
         <button onClick={handleAccept}>{t('accept')}</button>
       </div>
