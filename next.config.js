@@ -50,8 +50,11 @@ module.exports = withNextIntl({
       {
         source: '/search/home',
         destination: '/',
-        permanent: false, // Use `true` se quiser que o redirecionamento seja permanente (código 308)
+        permanent: true, // Use `true` se quiser que o redirecionamento seja permanente (código 308)
       },
     ]
   },
+
+  swcMinify: true,
+  productionBrowserSourceMaps: true,
 })

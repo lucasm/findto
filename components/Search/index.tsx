@@ -73,7 +73,7 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
   }
   const handleSelectedSource = (id: string) => {
     const source = selectedCategory.data?.find(
-      (item) => normalizeId(item.name) === id,
+      (item) => normalizeId(item.name) === id
     )
     setSearchSource(source)
 

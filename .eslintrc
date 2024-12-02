@@ -1,13 +1,17 @@
 {
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
   "extends": [
-    "next/core-web-vitals",
+    "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "next/core-web-vitals",
     "plugin:prettier/recommended"
   ],
   "rules": {
     "no-unused-vars": [
       "error",
       { "vars": "all", "args": "none", "ignoreRestSiblings": true }
-    ]
+    ],
+    "prettier/prettier": "error"
   }
 }
