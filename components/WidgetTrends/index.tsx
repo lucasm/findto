@@ -398,6 +398,10 @@ export default function SearchTrends() {
     return <Alert>{t('warnings.torrent')}</Alert>
   }
 
+  if (category === 'Darknet') {
+    return <Alert>{t('warnings.darknet')}</Alert>
+  }
+
   if (dataTrends || errorTrends || category === 'Local') {
     return (
       <section className={Styles.container + ' ' + Styles[`trends${category}`]}>

@@ -47,7 +47,8 @@
       "url": "https://forms.gle/US69JvUT1qxYkiF58"
     },
     "warnings": {
-      "torrent": "Notice: Torrent is not illegal. Downloading copyrighted content may be, depending of the local laws. Check your local legislation and respect it. Avoid legal issues."
+      "torrent": "Notice: Sharing files via torrent is not illegal. Downloading copyrighted content is, depending of the legislation. Check your local law and respect it. Avoid legal issues.",
+      "darknet": "Notice: The darknet is legal and often used by academics, journalists, activists or people in censored regions. Use it responsibly to avoid illegal activities. Be careful with scams and phishing. To access you need a special browser, like Tor Browser."
     }
   },
   "categories": [
@@ -781,16 +782,16 @@
           "action": "https://www.temu.com/search_result.html?search_key="
         },
         {
+          "name": "Homedepot",
+          "action": "https://www.homedepot.com/s/"
+        },
+        {
           "name": "AliExpress",
           "action": "https://www.aliexpress.com/wholesale?SearchText="
         },
         {
           "name": "Target",
           "action": "https://www.target.com/s?searchTerm="
-        },
-        {
-          "name": "Wish",
-          "action": "https://www.wish.com/search/"
         },
         {
           "name": "Macys",
@@ -803,6 +804,10 @@
         {
           "name": "Craigslist",
           "action": "https://craigslist.org/search/sss?query="
+        },
+        {
+          "name": "Wish",
+          "action": "https://www.wish.com/search/"
         }
       ]
     },
@@ -1254,20 +1259,36 @@
       ]
     },
     {
-      "name": "Dark Web",
+      "name": "Darknet",
       "active": true,
       "data": [
         {
-          "name": "Torch",
-          "action": "http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/"
+          "name": "DuckDuckGo",
+          "action": "https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/"
         },
         {
           "name": "Ahmia",
-          "action": "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/"
+          "action": "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/search/?q="
         },
         {
-          "name": "DuckDuckGo",
-          "action": "https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/"
+          "name": "haystak",
+          "action": "http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q="
+        },
+        {
+          "name": "Torch",
+          "action": "http://torchdeedp3i2jigzjdmfpn5ttjhthh5wbmda2rr3jvqjg5p77c54dqd.onion/?q="
+        },
+        {
+          "name": "Onion Engine",
+          "action": "https://onionengine.com/"
+        },
+        {
+          "name": "Deep Search",
+          "action": "http://search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion/result.php?url=search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion&search="
+        },
+        {
+          "name": "The Hidden Wiki",
+          "action": "http://zqktlwiuavvvqqt4ybvgvi7tyo4hjl5xgfuvpdf6otjiycgwqbym2qad.onion/wiki/index.php?title=Special%3ASearch&search="
         }
       ]
     }

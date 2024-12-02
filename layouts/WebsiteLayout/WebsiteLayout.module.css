@@ -94,8 +94,11 @@
 .page section h3 {
   margin-bottom: 1.5rem;
 }
+.page section article li,
 .page section p {
   font-size: var(--font-size);
+}
+.page section p {
   margin-bottom: 2rem;
 }
 .page section h1 + p {
@@ -170,6 +173,7 @@
     padding: 0 2rem;
   }
 
+  .page section article li,
   .page section p {
     font-size: var(--font-size-big);
   }

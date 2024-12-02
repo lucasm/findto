@@ -21,6 +21,7 @@ import {
   Icon,
   IconHome,
   IconMetaverse,
+  IconLock,
 } from '@/components/SvgIcons'
 import { normalizeId } from '@/utils/formats'
 import { ISearchCategory } from '@/interfaces/search'
@@ -74,6 +75,8 @@ const SearchNav = ({ data, selectedCategory, variant }: Props) => {
         return <IconDownload />
       case 'Metaverse':
         return <IconMetaverse />
+      case 'Darknet':
+        return <IconLock />
       default:
         return <Icon />
     }

@@ -30,7 +30,9 @@ export default function CommunityPage() {
         <div className={Style.container}>
           <article>
             <h2>Findto App</h2>
-            <p>Welcome! Findto is an assistant for decentralized search.</p>
+            <p>Welcome!</p>
+
+            <p>Findto is an assistant for decentralized search.</p>
 
             <p>
               Our mission is to empower people to engage with the internet in
