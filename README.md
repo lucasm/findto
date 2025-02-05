@@ -26,19 +26,19 @@ Findto is an open source assistant for decentralized search.
 
 Our principles:
 
-- Researching and developing a better search experience on Web, AI, and more digital spaces.
+- Researching and developing a better search experience on the Web, AI, and more.
 
 - People in control of the search algorithms.
 
-- Free, open source and responsible.
+- Free, open source, and responsible.
 
-Findto is putting the power of internet into people's hands.
+Findto is putting the power of internet into people's hands!
 
-Quickly search the same term on diverse Web, AI, and more sources. See the estimated privacy level and carbon footprint of selected source. Discover trends and stories. Find anything. More productive and accessible searches - as never before.
+Quickly search the same term on Web, AI, and more sources. See the estimated privacy level and carbon footprint of selected source. Discover trends and stories. Find anything. More productive and accessible searches - as never before.
 
-A new search experience, where the people choices matter, for a healthier internet. As the always should be.
+A new search experience, where the people choices matter. For a healthier internet.
 
-[Try it now](https://findto.app/?utm_source=findto_repo)
+[▶️ Try it now](https://findto.app/?utm_source=findto_repo)
 
 ## 🟢 Features
 
@@ -61,34 +61,34 @@ All the search sources, external contents and services available on Findto are s
 
 ## 🟡 Donations
 
-If you like Findto, get benefits ✨ making a donation. Your support helps to keep the project running and improving.
+If you like Findto, ✨ make a donation ✨ and get benefits. Your support helps to keep the project running.
 
 - [Support on Patreon](https://patreon.com/findto)
-- [One-time donation via Ko-Fi](https://ko-fi.com/findto)
+- [Ko-Fi (one-time donation)](https://ko-fi.com/findto)
 - [GitHub Sponsors](https://github.com/sponsors/lucasm)
 
 ## 🟠 Supporters
 
-Donate and get your name or banner listed here.
+[Donate and get your name or banner here]
 
 ## 🔴 Contributions
 
 We welcome contributions. You can help by:
 
-- Bugfixes. View opened [Issues](https://github.com/lucasm/findto/issues) before send pull requests.
+- Bugfixes: View the opened [Issues](https://github.com/lucasm/findto/issues) before send a pull request (PR).
 
-- Ideas. Have a new idea? Open a [Issue](https://github.com/lucasm/findto/issues) or [Discussion](https://github.com/lucasm/findto/discussions).
+- Features: New idea? Open a [Issue](https://github.com/lucasm/findto/issues) or [Discussion](https://github.com/lucasm/findto/discussions).
 
-- Translations. Do you want to translate Findto to your language? Check [Docs](https://github.com/lucasm/findto/wiki).
+- Translations: Translate Findto to your language! Check [Docs](https://github.com/lucasm/findto/wiki).
 
-- For backlog, check [Projects](https://github.com/lucasm/findto/projects) board.
+- Backlog: View the [Projects](https://github.com/lucasm/findto/projects) board.
 
 ## 🟣 Legal
 
-Findto is built with privacy in mind and don't store searches.
+Findto is built with privacy and don't store searches.
 
 Findto displays content from external services without review and materials protected by intellectual property.
 
-[Privacy Policy](https://findto.app/privacy) | [Terms of Service](https://findto.app/terms)
+[Privacy Policy](https://findto.app/privacy) | [Terms of Service](https://findto.app/terms) | [Contact](mailto:opensource@findto.app)
 
-Made by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app) and community.
+Made by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app) and Open Source Community.
