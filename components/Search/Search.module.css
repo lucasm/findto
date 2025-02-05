@@ -1,6 +1,6 @@
 /* Search */
 .container {
-  margin: 0 auto 6rem;
+  margin: 0 auto 5rem;
   background: var(--background-linear-gradient);
   transition: var(--transition-hover);
 }

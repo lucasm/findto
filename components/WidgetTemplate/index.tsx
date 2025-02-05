@@ -1,0 +1,47 @@
+import { useTranslations } from 'next-intl'
+import { ReactElement, ReactNode } from 'react'
+import Styles from './WidgetTemplate.module.css'
+
+interface ICredits {
+  title: string
+  url: string
+}
+
+interface WidgetTemplateProps {
+  children?: ReactNode
+  icon?: ReactElement
+  credits?: ICredits
+}
+
+export default function WidgetTemplate({
+  children,
+  credits,
+  icon,
+}: WidgetTemplateProps) {
+  const t = useTranslations('t')
+
+  return (
+    <section className={Styles.container}>
+      <div className={Styles.title}>
+        {icon}
+        <h3>{t('trends')}</h3>
+      </div>
+
+      {children}
+
+      <div className={Styles.credits}>
+        {credits && (
+          <p>
+            {t('powered')}{' '}
+            <a
+              href={credits?.url ? credits?.url + '?utm_source=findto_app' : ''}
+              target="_blank"
+              rel="noopener">
+              {credits?.title ?? ''}
+            </a>
+          </p>
+        )}
+      </div>
+    </section>
+  )
+}

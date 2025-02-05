@@ -12,7 +12,13 @@ import { IconMic } from '../SvgIcons'
 import Tooltip from '../Tooltip'
 import Modal from '../Modal'
 
-export default function SearchVoice() {
+interface Props {
+  display: boolean
+}
+
+export default function SearchVoice(
+  { display }: Readonly<Props> = { display: true }
+) {
   const { putValue, isMobileViewport } = useSearch()
   const {
     transcript,
@@ -103,7 +109,8 @@ export default function SearchVoice() {
               }
               accessKey="2"
               aria-pressed={listening ? true : false}
-              onClick={handleSpeechRecognition}>
+              onClick={handleSpeechRecognition}
+              style={{ display: display ? 'inline-flex' : 'none' }}>
               <IconMic />
               {t('componentVoiceSearch.voice')}
             </button>

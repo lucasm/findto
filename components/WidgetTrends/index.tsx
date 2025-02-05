@@ -9,6 +9,7 @@ import Alert from '@/components/Alert'
 import { ITrends, ITrendsItem } from '@/interfaces/trends'
 import { useEffect, useState } from 'react'
 import { useTranslations } from 'next-intl'
+import WidgetTemplate from '../WidgetTemplate'
 
 export default function SearchTrends() {
   const t = useTranslations('t')
@@ -406,16 +407,24 @@ export default function SearchTrends() {
 
   if (dataTrends || errorTrends || category === 'Local') {
     return (
-      <section className={Styles.container + ' ' + Styles[`trends${category}`]}>
-        <div className={Styles.title}>
-          {/* <IconTrending /> */}
-          <h3>{t('trends')}</h3>
-        </div>
-
+      <WidgetTemplate
+        credits={
+          dataTrends
+            ? {
+                title: dataTrends?.credits_title ?? '',
+                url: dataTrends?.credits_url ?? '',
+              }
+            : {
+                title: 'Error on Trends API ' + category,
+                url:
+                  'mailto:feedback@findto.app?subject=Error on Trends API' +
+                  category,
+              }
+        }>
         {category === 'Local' && <ButtonGeolocation />}
 
         {dataTrends && (
-          <ul>
+          <ul className={Styles.container + ' ' + Styles[`trends${category}`]}>
             {dataTrends?.data?.map((item: ITrendsItem, index: number) => (
               <li key={index}>
                 <button
@@ -432,26 +441,7 @@ export default function SearchTrends() {
             ))}
           </ul>
         )}
-
-        <div className={Styles.credits}>
-          {errorTrends && <p>Error on API</p>}
-          {dataTrends && (
-            <p>
-              {t('powered')}{' '}
-              <a
-                href={
-                  dataTrends?.credits_url
-                    ? dataTrends?.credits_url + '?utm_source=findto_app'
-                    : ''
-                }
-                target="_blank"
-                rel="noopener">
-                {dataTrends?.credits_title ?? ''}
-              </a>
-            </p>
-          )}
-        </div>
-      </section>
+      </WidgetTemplate>
     )
   }
 

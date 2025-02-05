@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useState, useEffect } from 'react'
+import { useRef, useState, useEffect, useCallback } from 'react'
 import { useLocale, useTranslations } from 'next-intl'
 import { useSearchParams } from 'next/navigation'
 import Style from './Search.module.css'
@@ -46,16 +46,18 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
   const [isFocused, setIsFocused] = useState(false)
   const searchName = selectedCategory?.name_translated || selectedCategory?.name
 
-  const handleResize = () => {
+  const handleResize = useCallback(() => {
     if (refSearchInput) {
       refSearchInput.current.style.height = 'auto'
     }
-  }
-  const handleFocus = () => {
-    if (refSearchInput.current) {
+  }, [refSearchInput])
+
+  const handleFocus = useCallback(() => {
+    if (refSearchInput) {
       refSearchInput.current.focus()
     }
-  }
+  }, [refSearchInput])
+
   const handleReset = () => {
     setInputValue('')
     setIsValid(false)
@@ -93,8 +95,6 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
   }
 
   const searchPlaceholder = () => {
-    // t('search') + ' ' + searchSource?.name || ''
-
     if (searchSource?.name) {
       return t('placeholder') + ' ' + searchSource?.name
     }
@@ -124,7 +124,7 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
     if (action) {
       setSearchUrl(`${action}${encodeURIComponent(inputValue)}${additional}`)
     }
-  }, [inputValue, searchSource])
+  }, [inputValue, searchSource, setSearchUrl])
 
   // initial state
   useEffect(() => {
@@ -150,7 +150,9 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
         setIsFocused(true)
       }, 0)
     }
-  }, [isFocused, refSearchInput])
+  }, [isFocused, refSearchInput, handleFocus])
+
+  console.log(inputValue)
 
   return (
     <section className={Style.container}>
@@ -176,18 +178,6 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
         {/* Input */}
         <div className={Style.searchInputContainer}>
           <div className={Style.searchInput}>
-            {/* <div>
-              <figure
-                className={Style.searchLogo}
-                style={{
-                  backgroundImage: searchSource?.name
-                    ? 'url(/images/logos/' +
-                      normalizeId(searchSource?.name) +
-                      '.svg)'
-                    : undefined,
-                }}></figure>
-            </div> */}
-
             <div className={Style.textareaContainer}>
               <label
                 htmlFor="search"
@@ -227,31 +217,33 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
             </div>
 
             {/* render Button Voice only if user ha no typed on input */}
-            {!isValid && <SearchVoice />}
-
             {/* render Search Button only if user has typed on input */}
-            {isValid && (
-              <div>
-                <a
-                  ref={refSearchButton}
-                  className={Style.searchButton}
-                  href={searchUrl}
-                  target="_blank"
-                  rel="noopener"
-                  onClick={
-                    isValid
-                      ? undefined
-                      : (event) => {
-                          event.preventDefault()
-                          handleFocus()
-                        }
-                  }
-                  style={{ opacity: isValid ? '1' : '.45' }}>
-                  <IconSend />
-                  {t('search')}
-                </a>
-              </div>
-            )}
+
+            <div>
+              <a
+                ref={refSearchButton}
+                className={Style.searchButton}
+                href={searchUrl}
+                target="_blank"
+                rel="noopener"
+                onClick={
+                  isValid
+                    ? undefined
+                    : (event) => {
+                        event.preventDefault()
+                        handleFocus()
+                      }
+                }
+                style={{
+                  opacity: isValid ? '1' : '.45',
+                  display: isValid ? 'inline-flex' : 'none',
+                }}>
+                <IconSend />
+                {t('search')}
+              </a>
+            </div>
+
+            <SearchVoice display={!isValid} />
           </div>
 
           <SearchSuggestions locale={locale} term={inputValue} />

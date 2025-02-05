@@ -1,10 +1,4 @@
 .container {
-  padding: 0 2rem 3rem;
-  overflow: hidden;
-  margin: 0 auto;
-  max-width: var(--max-size-container);
-}
-.container ul {
   list-style: none;
   display: grid;
   gap: 0;
@@ -13,7 +7,7 @@
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
 }
-.container ul li button {
+.container li button {
   position: relative;
   display: flex;
   gap: 1rem;
@@ -31,32 +25,31 @@
   overflow: hidden;
   font-weight: 400;
 }
-.container ul li button:hover,
-.container ul li button:focus {
+.container li button:hover,
+.container li button:focus {
   background: var(--color-black-translucent);
 }
-.container ul li button img {
+
+.container li button img {
   width: 64px;
   background: var(--color-white);
   transition: var(--transition-hover);
-  filter: grayscale(100%);
+  background: black;
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
+  filter: grayscale(100%);
 }
-.container ul li button:hover img,
-.container ul li button:focus img {
-  opacity: 0.9;
-}
-.container ul li button span {
+.container li button span {
   text-align: left;
   font-size: var(--font-size);
   letter-spacing: -0.025rem;
 }
-.container ul li button span:first-of-type {
+.container li button span:first-of-type {
+  display: none;
   opacity: var(--opacity);
   line-break: unset;
   /* position: absolute;
-  bottom: 0.5rem;
+  top: 0.5rem;
   left: 0.5rem;
   background: white;
   color: black;
@@ -71,93 +64,53 @@
   z-index: 1; */
 }
 
-/* Sizes */
-
-.trendsVideos ul,
-.trendsMusic ul {
+.trendsVideos,
+.trendsMusic {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.trendsVideos ul li button,
-.trendsMusic ul li button,
-.trendsImage ul li button,
-.trendsNews ul li button,
-.trendsGames ul li button,
-.trendsFinance ul li button,
-.trendsShopping ul li button {
+.trendsVideos li button,
+.trendsMusic li button,
+.trendsImage li button,
+.trendsNews li button,
+.trendsGames li button,
+.trendsFinance li button,
+.trendsShopping li button {
   gap: 1rem;
   flex-direction: column;
   align-items: start;
 }
 
-.trendsSocial ul li button span,
-.trendsCode ul li button span {
+.trendsSocial li button span,
+.trendsCode li button span {
   line-break: anywhere;
   /* word-break: break-all; */
 }
 
-.trendsVideos ul li button img,
-.trendsMusic ul li button img,
-.trendsImage ul li button img,
-.trendsNews ul li button img,
-.trendsGames ul li button img,
-.trendsFinance ul li button img,
-.trendsShopping ul li button img {
+.trendsVideos li button img,
+.trendsMusic li button img,
+.trendsImage li button img,
+.trendsNews li button img,
+.trendsGames li button img,
+.trendsFinance li button img,
+.trendsShopping li button img {
   width: 100%;
 }
 
-.trendsShopping ul li button img {
+.trendsShopping li button img {
   padding: 3rem;
 }
-.trendsLocal ul li button img {
+.trendsLocal li button img {
   padding: 0.75rem;
 }
 
-.trendsSocial ul li button span,
-.trendsAcademic ul li button span {
+.trendsSocial li button span,
+.trendsAcademic li button span {
   padding: 0 0.5rem;
-}
-
-.title {
-  display: flex;
-  gap: 1.25rem;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-.title h3 {
-  display: flex;
-  color: var(--color-text-black);
-  font-size: var(--font-size-3);
-  font-weight: 400;
-}
-.title svg {
-  width: 1.25rem;
-  height: 1.25rem;
-  color: var(--color-text-black);
-}
-
-.credits p {
-  margin-top: 1.5rem;
-  padding-right: 1rem;
-  font-size: var(--font-size-small);
-  width: 100%;
-  text-align: right;
-  color: var(--color-black-translucent-50);
-}
-.credits p a {
-  transition: var(--transition);
-  font-weight: 400;
-}
-.credits p a:hover,
-.credits p a:focus {
-  color: var(--color-text-black);
 }
 
 @media screen and (max-width: 768px) {
   .container {
-    padding: 0 1rem 3rem;
-  }
-  .container ul {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -167,22 +120,22 @@
 }
 
 @media screen and (max-width: 576px) {
-  .container ul li button {
+  .container li button {
     padding: 1rem;
   }
 
-  .trendsHome ul li button img,
-  .trendsAI ul li button img,
-  .trendsWeb ul li button img,
-  .trendsLocal ul li button img,
-  .trendsCode li button img,
-  .trendsApps li button img {
+  .trendsHome li button img,
+  .trendsAI li button img,
+  .trendsWeb li button img,
+  .trendsLocal li button img,
+  .trendsCode button img,
+  .trendsApps button img {
     width: 52px !important;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .container ul {
+  .container {
     grid-template-columns: 1fr;
   }
 }
