@@ -66,7 +66,7 @@
       "url": "https://forms.gle/r6XAyB1ZLn9qzwp16"
     },
     "warnings": {
-      "torrent": "Aviso: Compartilhar arquivos por torrent não é ilegal. Contudo, obter conteúdos sem a autorização é crime. Respeite a Lei de Direitos Autorais no Brasil (Lei 9.610/98) ou da sua localidade atual. Evite problemas legais."
+      "torrent": "Aviso: Usar torrent para compartilhar arquivos não é ilegal. Contudo, obter conteúdos sem a autorização é crime. Respeite a Lei de Direitos Autorais no Brasil (Lei 9.610/98) ou da sua localidade atual. Evite problemas legais."
     }
   },
   "categories": [
@@ -1474,6 +1474,19 @@
           "action": "https://www.reclameaqui.com.br/busca/?q="
         },
         {
+          "name": "Procon",
+          "child": [
+            {
+              "name": "Consumidor.gov.br",
+              "action": "https://www.consumidor.gov.br/pages/principal/?1738764883110/q?="
+            },
+            {
+              "name": "SP - Procon",
+              "action": "https://www.procon.sp.gov.br/?s=oi"
+            }
+          ]
+        },
+        {
           "name": "GOV.BR",
           "child": [
             {
@@ -1527,7 +1540,7 @@
           "name": "Governo Estadual",
           "child": [
             {
-              "name": "SP (Governo São Paulo)",
+              "name": "SP - Governo São Paulo",
               "action": "https://www.saopaulo.sp.gov.br/?s="
             },
             {
@@ -1670,10 +1683,6 @@
           "action": "https://www.bcb.gov.br/resultadobusca?termo="
         },
         {
-          "name": "Procon",
-          "action": ""
-        },
-        {
           "name": "OAB",
           "action": "https://www.oab.org.br/noticias/pesquisa?pagina=1&argumento="
         },
@@ -1685,19 +1694,19 @@
               "action": "https://pesquisa.apps.tcu.gov.br/resultado/todas-bases/"
             },
             {
-              "name": "SP (TCE SP)",
+              "name": "SP - TCE",
               "action": "https://www.tce.sp.gov.br/busca?termo="
             },
             {
-              "name": "SP (TCM SP)",
+              "name": "SP - TCM",
               "action": "https://cse.google.com/cse?cx=f237f0bdb7b5e4331&q="
             },
             {
-              "name": "MG (TCE MG)",
+              "name": "MG - TCE",
               "action": "https://www.tce.mg.gov.br/Busca?q="
             },
             {
-              "name": "RJ (TCE RJ)",
+              "name": "RJ - TCE",
               "action": "https://www.tce.rj.gov.br/Busca?q="
             }
           ]
@@ -1706,12 +1715,12 @@
           "name": "Ministério Público",
           "child": [
             {
-              "name": "MPU - Ministério Público da União",
-              "action": "https://www.mpu.mp.br/@@search?SearchableText="
-            },
-            {
               "name": "MPF - Ministério Público Federal",
               "action": "https://www.mpf.mp.br/@@search?SearchableText="
+            },
+            {
+              "name": "MPU - Ministério Público da União",
+              "action": "https://www.mpu.mp.br/@@search?SearchableText="
             },
             {
               "name": "MPT - Ministério Público do Trabalho",
@@ -1726,15 +1735,15 @@
               "action": "https://www.mpdft.mp.br/portal/index.php/resultados-da-pesquisa?q="
             },
             {
-              "name": "SP (MP SP)",
+              "name": "SP - MP",
               "action": "https://www.mpsp.mp.br/web/guest/busca?q="
             },
             {
-              "name": "MG (MP MG)",
+              "name": "MG - MP",
               "action": "https://www.mpmg.mp.br/portal/auxiliar/busca/?query=amazonia"
             },
             {
-              "name": "RJ (MP RJ)",
+              "name": "RJ - MP",
               "action": "https://www.mprj.mp.br/web/guest/busca?q="
             }
           ]
@@ -1769,6 +1778,31 @@
           "action": ""
         },
         {
+          "name": "Justiça do Trabalho",
+          "action": "https://tst.jus.br/web/guest/resultado-de-busca?q="
+        },
+        {
+          "name": "Justiça Eleitoral",
+          "child": [
+            {
+              "name": "TSE - Tribunal Superior Eleitoral",
+              "action": "https://www.tse.jus.br/@@search-es?searchable_text="
+            },
+            {
+              "name": "SP (TRE SP)",
+              "action": "https://www.tre-sp.jus.br/busca?q="
+            },
+            {
+              "name": "MG (TRE MG)",
+              "action": "https://www.tre-mg.jus.br/busca?q="
+            },
+            {
+              "name": "RJ (TRE RJ)",
+              "action": "https://www.tre-rj.jus.br/busca?q="
+            }
+          ]
+        },
+        {
           "name": "Tribunais Superiores",
           "child": [
             {
@@ -1797,42 +1831,13 @@
             },
             {
               "name": "STM - Superior Tribunal Militar",
-              "action": ""
+              "action": "https://www.stm.jus.br/resultados-da-busca?q="
             },
             {
               "name": "CNJ - Conselho Nacional de Justiça",
               "action": ""
             }
           ]
-        },
-        {
-          "name": "Justiça do Trabalho",
-          "action": "https://tst.jus.br/web/guest/resultado-de-busca?q="
-        },
-        {
-          "name": "Justiça Eleitoral",
-          "child": [
-            {
-              "name": "TSE - Tribunal Superior Eleitoral",
-              "action": "https://www.tse.jus.br/@@search-es?searchable_text="
-            },
-            {
-              "name": "SP (TRE SP)",
-              "action": "https://www.tre-sp.jus.br/busca?q="
-            },
-            {
-              "name": "MG (TRE MG)",
-              "action": "https://www.tre-mg.jus.br/busca?q="
-            },
-            {
-              "name": "RJ (TRE RJ)",
-              "action": "https://www.tre-rj.jus.br/busca?q="
-            }
-          ]
-        },
-        {
-          "name": "Justiça Militar",
-          "action": ""
         }
       ],
       "youtube_channels": [
@@ -2341,6 +2346,10 @@
           "action": "https://thepiratebay.org/search.php?q="
         },
         {
+          "name": "Torrends",
+          "action": "https://search.torrends.to/"
+        },
+        {
           "name": "1337x",
           "action": "https://1337x.to/search/",
           "additional": "/1/"
@@ -2358,20 +2367,12 @@
           "action": "https://www.gutenberg.org/ebooks/search/?query="
         },
         {
-          "name": "EZTV",
-          "action": "https://eztv.re/search/"
-        },
-        {
-          "name": "Torrentz",
-          "action": "https://www.torrentz.eu.com/#gsc.tab=0&gsc.q="
-        },
-        {
           "name": "TorrentGalaxy",
           "action": "https://torrentgalaxy.to/torrents.php?search="
         },
         {
-          "name": "Torrends",
-          "action": "https://search.torrends.to/"
+          "name": "EZTV",
+          "action": "https://eztv.re/search/"
         },
         {
           "name": "TorrentDownloads",

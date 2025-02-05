@@ -1232,32 +1232,42 @@
           "action": "https://thepiratebay.org/search.php?q="
         },
         {
-          "name": "1337X",
-          "action": "https://1337x.to/search/"
+          "name": "Torrends",
+          "action": "https://search.torrends.to/"
         },
         {
-          "name": "Torrentz2",
-          "action": "https://torrentz2.eu/search?f="
-        },
-        {
-          "name": "Zooqle",
-          "action": "https://zooqle.com/search?q="
+          "name": "1337x",
+          "action": "https://1337x.to/search/",
+          "additional": "/1/"
         },
         {
           "name": "YTS",
-          "action": "https://yts.su/movies?keyword="
+          "action": "https://yts.mx/browse-movies/"
         },
         {
-          "name": "LimeTorrents",
-          "action": "https://www.limetorrents.info/search/all/"
+          "name": "RARBG",
+          "action": "https://rargb.to/search/?search="
         },
         {
-          "name": "ExtraTorrent",
-          "action": "http://extratorrent.cd/search/?search="
+          "name": "Project Gutenberg",
+          "action": "https://www.gutenberg.org/ebooks/search/?query="
+        },
+        {
+          "name": "TorrentGalaxy",
+          "action": "https://torrentgalaxy.to/torrents.php?search="
         },
         {
           "name": "EZTV",
-          "action": "https://eztv.ag/search/"
+          "action": "https://eztv.re/search/"
+        },
+
+        {
+          "name": "TorrentDownloads",
+          "action": "https://www.torrentdownloads.pro/search/?search="
+        },
+        {
+          "name": "Torlock",
+          "action": "https://www.torlock.com/all/torrents/"
         }
       ]
     },

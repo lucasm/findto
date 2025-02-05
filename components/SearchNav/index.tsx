@@ -10,7 +10,7 @@ import {
   IconLocation,
   IconCart,
   IconCode,
-  IconBook,
+  IconAcademic,
   IconBriefcase,
   IconNews,
   IconBank,
@@ -54,7 +54,7 @@ const SearchNav = ({ data, selectedCategory, variant }: Props) => {
       case 'Local':
         return <IconLocation />
       case 'Academic':
-        return <IconBook />
+        return <IconAcademic />
       case 'Shopping':
         return <IconCart />
       case 'News':
