@@ -37,7 +37,7 @@
 .container ul li a,
 .container p {
   font-size: var(--font-size-small);
-  color: var(--color-black-translucent-50);
+  color: var(--color-text-black);
   font-weight: 400;
   text-align: center;
 }
@@ -49,7 +49,7 @@
 .container ul li a svg {
   width: 0.8rem;
   height: 0.8rem;
-  fill: var(--color-black-translucent-50);
+  color: var(--color-text-black);
   transition: var(--transition);
 }
 .container ul li a:hover svg,

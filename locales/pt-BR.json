@@ -223,12 +223,12 @@
           "action": "https://chat.qwenlm.ai/?q="
         },
         {
-          "name": "Maritaca",
-          "action": "https://chat.maritaca.ai/"
-        },
-        {
           "name": "Grok",
           "action": "https://x.com/i/grok?focus=1&?q="
+        },
+        {
+          "name": "Maritaca",
+          "action": "https://chat.maritaca.ai/"
         }
       ]
     },
@@ -610,7 +610,7 @@
         },
         {
           "name": "Shutterstock",
-          "action": "https://www.shutterstock.com/search?searchterm="
+          "action": "https://www.shutterstock.com/search/"
         },
         {
           "name": "Getty Images",

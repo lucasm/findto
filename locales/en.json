@@ -70,10 +70,6 @@
           "action": "https://copilot.microsoft.com/?q="
         },
         {
-          "name": "DuckDuckGo",
-          "action": "https://duckduckgo.com/?q="
-        },
-        {
           "name": "YouTube",
           "action": "https://www.youtube.com/results?search_query="
         },
@@ -82,16 +78,24 @@
           "action": "https://www.reddit.com/search?q="
         },
         {
+          "name": "X",
+          "action": "https://x.com/search?src=typed_query&q="
+        },
+        {
+          "name": "DuckDuckGo",
+          "action": "https://duckduckgo.com/?q="
+        },
+        {
+          "name": "Bing",
+          "action": "https://www.bing.com/search?q="
+        },
+        {
           "name": "TikTok",
           "action": "https://www.tiktok.com/search?q="
         },
         {
           "name": "Instagram",
           "action": "https://www.instagram.com/explore/tags/"
-        },
-        {
-          "name": "X",
-          "action": "https://x.com/search?src=typed_query&q="
         },
         {
           "name": "LinkedIn",
@@ -116,10 +120,6 @@
         {
           "name": "BBC",
           "action": "https://www.bbc.co.uk/search?q="
-        },
-        {
-          "name": "Bing",
-          "action": "https://www.bing.com/search?q="
         },
         {
           "name": "Amazon",
@@ -179,7 +179,6 @@
           "name": "Mistral",
           "action": "https://chat.mistral.ai/chat?q="
         },
-
         {
           "name": "Meta AI",
           "action": "https://www.meta.ai/?q="
@@ -199,6 +198,10 @@
         {
           "name": "Qwen",
           "action": "https://chat.qwenlm.ai/?q="
+        },
+        {
+          "name": "Grok",
+          "action": "https://x.com/i/grok?focus=1&?q="
         }
       ]
     },
@@ -521,7 +524,7 @@
         },
         {
           "name": "Shutterstock",
-          "action": "https://www.shutterstock.com/search?searchterm="
+          "action": "https://www.shutterstock.com/search/"
         },
         {
           "name": "Getty Images",
@@ -808,16 +811,16 @@
           "action": "https://www.macys.com/shop/featured/"
         },
         {
-          "name": "Groupon",
-          "action": "https://www.groupon.com/browse/?query="
-        },
-        {
           "name": "Craigslist",
           "action": "https://craigslist.org/search/sss?query="
         },
         {
           "name": "Wish",
           "action": "https://www.wish.com/search/"
+        },
+        {
+          "name": "Groupon",
+          "action": "https://www.groupon.com/browse/?query="
         }
       ]
     },
