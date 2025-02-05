@@ -12,7 +12,7 @@ const parser = new Parser({
 
 export default async function endpoint(
   request: NextApiRequest,
-  response: NextApiResponse,
+  response: NextApiResponse
 ) {
   const {
     query: { country },
