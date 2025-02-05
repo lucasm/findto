@@ -196,6 +196,10 @@
           "action": "https://firefly.adobe.com/generate/images?prompt="
         },
         {
+          "name": "Cohere",
+          "action": "https://coral.cohere.com/?q="
+        },
+        {
           "name": "Qwen",
           "action": "https://chat.qwenlm.ai/?q="
         },
@@ -1065,12 +1069,12 @@
           "action": "https://pt.stackoverflow.com/search?q="
         },
         {
-          "name": "GitLab",
-          "action": "https://gitlab.com/public?name="
+          "name": "Sourcegraph",
+          "action": "https://sourcegraph.com/search?q="
         },
         {
-          "name": "Bitbucket",
-          "action": "https://bitbucket.org/repo/all/?name="
+          "name": "GitLab",
+          "action": "https://gitlab.com/public?name="
         },
         {
           "name": "CodePen",
@@ -1079,10 +1083,6 @@
         {
           "name": "Glitch",
           "action": "https://glitch.com/search?q="
-        },
-        {
-          "name": "Sourcegraph",
-          "action": "https://sourcegraph.com/search?q="
         },
         {
           "name": "searchcode",
@@ -1135,6 +1135,10 @@
         {
           "name": "Tensorflow",
           "action": "https://www.tensorflow.org/s/results?hl=pt-br&q="
+        },
+        {
+          "name": "Bitbucket",
+          "action": "https://bitbucket.org/repo/all/?name="
         }
       ]
     },

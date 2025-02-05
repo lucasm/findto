@@ -60,7 +60,7 @@
     "contribute": "Contribuir",
     "trends": "Tendências",
     "stories": "Novidades",
-    "categories": "Categorias da busca",
+    "categories": "Categorias de busca",
     "feedback": {
       "title": "Enviar feedback",
       "url": "https://forms.gle/r6XAyB1ZLn9qzwp16"
@@ -227,8 +227,12 @@
           "action": "https://x.com/i/grok?focus=1&?q="
         },
         {
+          "name": "Cohere",
+          "action": "https://coral.cohere.com/?q="
+        },
+        {
           "name": "Maritaca",
-          "action": "https://chat.maritaca.ai/"
+          "action": "https://chat.maritaca.ai/?q="
         }
       ]
     },
@@ -904,6 +908,108 @@
       ]
     },
     {
+      "name": "Shopping",
+      "name_translated": "Compras",
+      "active": true,
+      "data": [
+        {
+          "name": "Amazon",
+          "action": "https://www.amazon.com.br/s?k="
+        },
+        {
+          "name": "Mercado Livre",
+          "action": "https://lista.mercadolivre.com.br/"
+        },
+        {
+          "name": "Shopee",
+          "action": "https://shopee.com.br/search?keyword="
+        },
+        {
+          "name": "OLX",
+          "action": "https://www.olx.com.br/brasil?q="
+        },
+        {
+          "name": "iFood",
+          "action": "https://www.ifood.com.br/busca?q="
+        },
+        {
+          "name": "Rappi",
+          "action": "https://www.rappi.com.br/search?query="
+        },
+        {
+          "name": "Magalu",
+          "action": "https://www.magazineluiza.com.br/busca/"
+        },
+        {
+          "name": "Americanas",
+          "action": "https://www.americanas.com.br/busca/"
+        },
+        {
+          "name": "Casas Bahia",
+          "action": "https://www.casasbahia.com.br/",
+          "additional": "/b"
+        },
+        {
+          "name": "Carrefour",
+          "action": "https://www.carrefour.com.br/busca/"
+        },
+
+        {
+          "name": "AliExpress",
+          "action": "https://www.aliexpress.com/wholesale?SearchText="
+        },
+        {
+          "name": "Temu",
+          "action": "https://www.temu.com/br/search_result.html?search_key="
+        },
+        {
+          "name": "SHEIN",
+          "action": "https://br.shein.com/"
+        },
+        {
+          "name": "Renner",
+          "action": "https://www.lojasrenner.com.br/b?Ntt="
+        },
+        {
+          "name": "C&A",
+          "action": "https://www.cea.com.br/search/"
+        },
+        {
+          "name": "Netshoes",
+          "action": "https://www.netshoes.com.br/busca?q="
+        },
+        {
+          "name": "Centauro",
+          "action": "https://www.centauro.com.br/busca?q="
+        },
+        {
+          "name": "Dafiti",
+          "action": "https://www.dafiti.com.br/catalog/?q="
+        },
+        {
+          "name": "Boticário",
+          "action": "https://www.boticario.com.br/busca/?q="
+        },
+        {
+          "name": "Natura",
+          "action": "https://www.natura.com.br/s/produtos?busca="
+        },
+        {
+          "name": "Enjoei",
+          "action": "https://www.enjoei.com.br/s?q="
+        },
+        {
+          "name": "Zoom",
+          "action": "https://www.zoom.com.br/search?q="
+        },
+        {
+          "name": "Pelando",
+          "action": "https://www.pelando.com.br/busca?q=",
+          "additional": "&type=publicacoes"
+        }
+      ]
+    },
+    {
       "name": "News",
       "name_translated": "Notícias",
       "active": true,
@@ -1050,108 +1156,6 @@
         {
           "id": "UCUmEPYxmnyQDeRUcFkslmQw",
           "title": "euronewspt"
-        }
-      ]
-    },
-    {
-      "name": "Shopping",
-      "name_translated": "Compras",
-      "active": true,
-      "data": [
-        {
-          "name": "Amazon",
-          "action": "https://www.amazon.com.br/s?k="
-        },
-        {
-          "name": "Mercado Livre",
-          "action": "https://lista.mercadolivre.com.br/"
-        },
-        {
-          "name": "Shopee",
-          "action": "https://shopee.com.br/search?keyword="
-        },
-        {
-          "name": "OLX",
-          "action": "https://www.olx.com.br/brasil?q="
-        },
-        {
-          "name": "iFood",
-          "action": "https://www.ifood.com.br/busca?q="
-        },
-        {
-          "name": "Rappi",
-          "action": "https://www.rappi.com.br/search?query="
-        },
-        {
-          "name": "Magalu",
-          "action": "https://www.magazineluiza.com.br/busca/"
-        },
-        {
-          "name": "Americanas",
-          "action": "https://www.americanas.com.br/busca/"
-        },
-        {
-          "name": "Casas Bahia",
-          "action": "https://www.casasbahia.com.br/",
-          "additional": "/b"
-        },
-        {
-          "name": "Carrefour",
-          "action": "https://www.carrefour.com.br/busca/"
-        },
-
-        {
-          "name": "AliExpress",
-          "action": "https://www.aliexpress.com/wholesale?SearchText="
-        },
-        {
-          "name": "Temu",
-          "action": "https://www.temu.com/br/search_result.html?search_key="
-        },
-        {
-          "name": "SHEIN",
-          "action": "https://br.shein.com/"
-        },
-        {
-          "name": "Renner",
-          "action": "https://www.lojasrenner.com.br/b?Ntt="
-        },
-        {
-          "name": "C&A",
-          "action": "https://www.cea.com.br/search/"
-        },
-        {
-          "name": "Netshoes",
-          "action": "https://www.netshoes.com.br/busca?q="
-        },
-        {
-          "name": "Centauro",
-          "action": "https://www.centauro.com.br/busca?q="
-        },
-        {
-          "name": "Dafiti",
-          "action": "https://www.dafiti.com.br/catalog/?q="
-        },
-        {
-          "name": "Boticário",
-          "action": "https://www.boticario.com.br/busca/?q="
-        },
-        {
-          "name": "Natura",
-          "action": "https://www.natura.com.br/s/produtos?busca="
-        },
-        {
-          "name": "Enjoei",
-          "action": "https://www.enjoei.com.br/s?q="
-        },
-        {
-          "name": "Zoom",
-          "action": "https://www.zoom.com.br/search?q="
-        },
-        {
-          "name": "Pelando",
-          "action": "https://www.pelando.com.br/busca?q=",
-          "additional": "&type=publicacoes"
         }
       ]
     },
@@ -1904,6 +1908,10 @@
           "action": "https://www.itau.com.br/resultados-de-busca?q="
         },
         {
+          "name": "Nubank",
+          "action": "https://blog.nubank.com.br/busca/?search="
+        },
+        {
           "name": "BB",
           "action": "https://www.bb.com.br/site/busca?q="
         },
@@ -1926,10 +1934,6 @@
         {
           "name": "XP",
           "action": "https://conteudos.xpi.com.br/pesquisar/?post_types=any&search="
-        },
-        {
-          "name": "Nubank",
-          "action": "https://blog.nubank.com.br/busca/?search="
         },
         {
           "name": "Sicredi",
@@ -2029,12 +2033,12 @@
           "action": "https://pt.stackoverflow.com/search?q="
         },
         {
-          "name": "GitLab",
-          "action": "https://gitlab.com/public?name="
+          "name": "Sourcegraph",
+          "action": "https://sourcegraph.com/search?q="
         },
         {
-          "name": "Bitbucket",
-          "action": "https://bitbucket.org/repo/all/?name="
+          "name": "GitLab",
+          "action": "https://gitlab.com/public?name="
         },
         {
           "name": "CodePen",
@@ -2043,10 +2047,6 @@
         {
           "name": "Glitch",
           "action": "https://glitch.com/search?q="
-        },
-        {
-          "name": "Sourcegraph",
-          "action": "https://sourcegraph.com/search?q="
         },
         {
           "name": "searchcode",
@@ -2099,6 +2099,10 @@
         {
           "name": "Tensorflow",
           "action": "https://www.tensorflow.org/s/results?hl=pt-br&q="
+        },
+        {
+          "name": "Bitbucket",
+          "action": "https://bitbucket.org/repo/all/?name="
         }
       ],
       "youtube_channels": [
