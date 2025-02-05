@@ -40,7 +40,7 @@ export default function CommunityPage() {
             </p>
 
             <p>
-              We're introducing a new search experience, putting control of
+              We&apos;re introducing a new search experience, putting control of
               search algorithms in people hands. Findto is 100% open source,
               collaborative and free.
             </p>

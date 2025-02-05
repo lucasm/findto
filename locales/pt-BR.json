@@ -53,13 +53,13 @@
     "placeholder": "Busca",
     "search": "Buscar",
     "clear": "Limpar",
-    "powered": "Dados de",
+    "powered": "Fornecido por",
     "settings": "Configurações",
     "theme": "Tema",
     "language": "Localidade",
-    "contribute": "Contribua",
-    "trends": "Em alta",
-    "stories": "Atualizações",
+    "contribute": "Contribuir",
+    "trends": "Tendências",
+    "stories": "Novidades",
     "categories": "Categorias",
     "feedback": {
       "title": "Enviar feedback",
@@ -72,7 +72,7 @@
   "categories": [
     {
       "name": "Home",
-      "name_translated": "Início",
+      "name_translated": "Página Inicial",
       "active": true,
       "data": [
         {
@@ -81,7 +81,7 @@
         },
         {
           "name": "ChatGPT",
-          "action": "https://chat.openai.com/?q="
+          "action": "https://chatgpt.com/?q="
         },
         {
           "name": "Copilot",
@@ -92,12 +92,20 @@
           "action": "https://www.youtube.com/results?search_query="
         },
         {
-          "name": "globo.com",
+          "name": "globo",
           "action": "https://www.globo.com/busca/?q="
         },
         {
           "name": "UOL",
           "action": "https://busca.uol.com.br/result.html?term="
+        },
+        {
+          "name": "X",
+          "action": "https://x.com/search?src=typed_query&q="
+        },
+        {
+          "name": "Reddit",
+          "action": "https://www.reddit.com/search?q="
         },
         {
           "name": "TikTok",
@@ -106,14 +114,6 @@
         {
           "name": "Instagram",
           "action": "https://www.instagram.com/explore/tags/"
-        },
-        {
-          "name": "Reddit",
-          "action": "https://www.reddit.com/search?q="
-        },
-        {
-          "name": "X",
-          "action": "https://x.com/search?src=typed_query&q="
         },
         {
           "name": "Pinterest",
@@ -144,10 +144,6 @@
           "action": "https://www.letras.mus.br/?q="
         },
         {
-          "name": "Bing",
-          "action": "https://www.bing.com/search?q="
-        },
-        {
           "name": "Wikipédia",
           "action": "https://pt.wikipedia.org/w/index.php?search="
         },
@@ -172,7 +168,7 @@
       "data": [
         {
           "name": "ChatGPT",
-          "action": "https://chat.openai.com/?q="
+          "action": "https://chatgpt.com/?q="
         },
         {
           "name": "Copilot",
@@ -181,6 +177,14 @@
         {
           "name": "Perplexity",
           "action": "https://www.perplexity.ai/?q="
+        },
+        {
+          "name": "DeepSeek",
+          "action": "https://chat.deepseek.com/?q="
+        },
+        {
+          "name": "Qwen",
+          "action": "https://chat.qwenlm.ai/?q="
         },
         {
           "name": "HuggingChat",
@@ -215,12 +219,16 @@
           "action": "https://iask.ai/?mode=question&q="
         },
         {
+          "name": "Adobe Firefly",
+          "action": "https://firefly.adobe.com/generate/images?prompt="
+        },
+        {
           "name": "Maritaca",
           "action": "https://chat.maritaca.ai/"
         },
         {
-          "name": "Adobe Firefly",
-          "action": "https://firefly.adobe.com/generate/images?prompt="
+          "name": "Grok",
+          "action": "https://x.com/i/grok?focus=1&?q="
         }
       ]
     },
@@ -901,7 +909,7 @@
       "active": true,
       "data": [
         {
-          "name": "globo.com",
+          "name": "globo",
           "action": "https://www.globo.com/busca/?q="
         },
         {

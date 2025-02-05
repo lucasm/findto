@@ -12,6 +12,8 @@
       "error",
       { "vars": "all", "args": "none", "ignoreRestSiblings": true }
     ],
-    "prettier/prettier": "error"
+    "@typescript-eslint/no-explicit-any": "error",
+    "prettier/prettier": "warn",
+    "react/no-unescaped-entities": "error"
   }
 }

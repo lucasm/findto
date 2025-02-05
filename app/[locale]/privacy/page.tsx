@@ -26,23 +26,23 @@ export default function PrivacyPage() {
               We respect your privacy regarding any information we may collect
               from you across our services at internet domain{' '}
               <a href="http://findto.app">http://findto.app</a> and
-              communications ("Findto").
+              communications (&quot;Findto&quot;).
             </p>
 
             <p>
-              Findto are designed on privacy. Findto don't store any user
+              Findto are designed on privacy. Findto don&#39;t store any user
               searches. Because was designed for it. Findto mission is encourage
               people choice a healthy internet. External search provider
               services may collect and store your personal data. Thinking about
-              it, Findto displays a "Privacy level widget" for every search
-              provider, whenever available.
+              it, Findto displays a &quot;Privacy level widget&quot; for every
+              search provider, whenever available.
             </p>
 
             <p>
               Findto endorses user control over their data. This privacy policy
               have accordance with the Brazil General Data Protection Law
               (LGPD), European Union General Data Protection Regulation (GDPR)
-              and similar legislation's.
+              and similar legislation&#39;s.
             </p>
 
             <p>
@@ -73,8 +73,8 @@ export default function PrivacyPage() {
             <p>
               Findto only ask for personal information when we truly need it to
               provide a service to you. We collect it by fair and lawful means,
-              with your knowledge and consent. We also let you know why we're
-              collecting it and how it will be used.
+              with your knowledge and consent. We also let you know why
+              we&apos;re collecting it and how it will be used.
             </p>
 
             <h2>4. Information Using</h2>
@@ -100,7 +100,7 @@ export default function PrivacyPage() {
             <h2>5. Cookies and Tracking Technologies</h2>
 
             <p>
-              Findto and it's related email communications, use cookies and
+              Findto and it&apos;s related email communications, use cookies and
               similar technologies, such as cache and local storage, only to
               execute app functionalities, like to recognize when you view or
               return to a page.{' '}
@@ -135,9 +135,9 @@ export default function PrivacyPage() {
             </p>
 
             <p>
-              If you use an "ad blocker" browser extension or have enabled "do
-              not track" or similar functionality on your browser settings, the
-              cookies maybe are not set.
+              If you use an &quot;ad blocker&quot; browser extension or have
+              enabled &quot;do not track&quot; or similar functionality on your
+              browser settings, the cookies maybe are not set.
             </p>
 
             <h2>6. Information Sharing</h2>
@@ -154,8 +154,8 @@ export default function PrivacyPage() {
 
             <p>
               Findto only retain collected information for as long as necessary
-              to provide to you the requested service. The data we store, we'll
-              protect within commercially acceptable means to prevent
+              to provide to you the requested service. The data we store,
+              we&apos;ll protect within commercially acceptable means to prevent
               unauthorized access. You are free to refuse our request for your
               personal information, with the understanding that we may be unable
               to provide you with some of your desired services.
@@ -186,7 +186,7 @@ export default function PrivacyPage() {
 
             <p>
               Note that this policy can be revised at any time without notice.
-              However, significant changes will be announced on Findto's
+              However, significant changes will be announced on Findto&apos;s
               communication channels. Your continued use of Findto, following
               the posting of changes, will be regarded as acceptance of these
               changes.

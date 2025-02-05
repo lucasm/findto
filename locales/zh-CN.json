@@ -148,6 +148,14 @@
           "action": "https://www.doubao.com/?q="
         },
         {
+          "name": "DeepSeek",
+          "action": "https://chat.deepseek.com/?q="
+        },
+        {
+          "name": "Qwen",
+          "action": "https://chat.qwenlm.ai/?q="
+        },
+        {
           "name": "Wenxiaoyan",
           "action": "https://chat.baidu.com/search?q="
         },

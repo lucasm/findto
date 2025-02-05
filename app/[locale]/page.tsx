@@ -12,7 +12,7 @@ export default function Page({
   const data = getLocaleData(locale)
 
   const selectedCategory = data?.categories?.find(
-    (category: any) => category?.name.toLowerCase() === 'home',
+    (category: { name: string }) => category?.name.toLowerCase() === 'home'
   )
 
   return (

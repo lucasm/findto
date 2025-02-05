@@ -7,11 +7,22 @@ import { Metadata } from 'next/types'
 import { getLocaleData } from '@/utils/getLocaleData'
 import { ISearchCategory } from '@/interfaces/search'
 
-export async function generateMetadata({ params }: any): Promise<Metadata> {
+interface PageParams {
+  locale: string
+  category: string
+}
+
+interface PageProps {
+  params: PageParams
+}
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const data = await getLocaleData(params.locale)
   const selectedCategory = data?.categories?.find(
     (category: ISearchCategory) =>
-      category?.name.toLowerCase() === params.category,
+      category?.name.toLowerCase() === params.category.toLowerCase()
   )
 
   const categoryTitle =
@@ -23,25 +34,22 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
   }
 }
 
-export default function Page({ params }: any) {
-  const data = getLocaleData(params.locale)
+export default async function Page({ params }: PageProps) {
+  const data = await getLocaleData(params.locale)
   const selectedCategory = data?.categories?.find(
-    (category: any) => category?.name.toLowerCase() === params.category,
+    (category: ISearchCategory) =>
+      category?.name.toLowerCase() === params.category.toLowerCase()
   )
 
   return (
     <AppLayout locale={params.locale}>
       <Search selectedCategory={selectedCategory} />
 
-      <WidgetVideoStories selectedCategory={selectedCategory} />
       <WidgetTrends />
 
-      <Banner />
+      <WidgetVideoStories selectedCategory={selectedCategory} />
 
-      {/* <>
-        <WidgetPrivacy />
-        <WidgetCarbon />
-      </> */}
+      <Banner />
     </AppLayout>
   )
 }

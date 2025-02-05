@@ -1,11 +1,11 @@
-/** @type {import('next').NextConfig} */
-
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const withNextIntl = require('next-intl/plugin')()
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const withPWA = require('next-pwa')({
   dest: 'public',
 })
 
-module.exports = withNextIntl({
+const nextConfig = {
   pwa: {
     dest: 'public',
     register: true,
@@ -55,6 +55,8 @@ module.exports = withNextIntl({
     ]
   },
 
-  swcMinify: true,
   productionBrowserSourceMaps: true,
-})
+}
+
+// Aplica o PWA e depois o Next Intl
+module.exports = withPWA(withNextIntl(nextConfig))

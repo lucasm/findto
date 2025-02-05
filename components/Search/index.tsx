@@ -14,6 +14,7 @@ import SearchTitle from '@/components/SearchTitle'
 import { ISearchCategory, ISearch, ISearchChild } from '@/interfaces/search'
 import Welcome from '../Welcome'
 import SearchOptions from '../SearchOptions'
+import { useTheme } from 'next-themes'
 
 interface Props {
   selectedCategory: ISearchCategory
@@ -22,6 +23,7 @@ interface Props {
 export default function Search({ selectedCategory }: Readonly<Props>) {
   const locale = useLocale()
   const t = useTranslations('t')
+  const { resolvedTheme } = useTheme()
   const searchParams = useSearchParams()
   const query = searchParams?.get('q')
 
@@ -82,12 +84,22 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
 
     handleFocus()
   }
-  const handleValue = (event: any) => {
+  const handleValue = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setInputValue(event.target.value)
     setIsValid(event.target.value !== '')
 
     event.target.style.height = 'auto'
     event.target.style.height = event.target.scrollHeight + 'px'
+  }
+
+  const searchPlaceholder = () => {
+    // t('search') + ' ' + searchSource?.name || ''
+
+    if (searchSource?.name) {
+      return t('placeholder') + ' ' + searchSource?.name
+    }
+
+    return t('placeholder')
   }
 
   // resize
@@ -99,7 +111,9 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
 
   // query
   useEffect(() => {
-    query && setInputValue(query)
+    if (query) {
+      setInputValue(query)
+    }
   }, [query])
 
   // url
@@ -162,7 +176,7 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
         {/* Input */}
         <div className={Style.searchInputContainer}>
           <div className={Style.searchInput}>
-            <div>
+            {/* <div>
               <figure
                 className={Style.searchLogo}
                 style={{
@@ -172,7 +186,7 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
                       '.svg)'
                     : undefined,
                 }}></figure>
-            </div>
+            </div> */}
 
             <div className={Style.textareaContainer}>
               <label
@@ -187,7 +201,7 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
                 value={inputValue}
                 aria-label="Search"
                 className={Style.searchInput}
-                placeholder=""
+                placeholder={searchPlaceholder()}
                 autoComplete="off"
                 maxLength={2000}
                 rows={1}
@@ -257,6 +271,20 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
                       element
                   }}
                   translate="no">
+                  <figure
+                    style={{
+                      backgroundImage: source?.name
+                        ? 'url(/images/logos/' +
+                          normalizeId(source?.name) +
+                          '.svg)'
+                        : undefined,
+                      filter:
+                        resolvedTheme === 'dark' &&
+                        searchSource?.name === source.name
+                          ? 'invert(1)'
+                          : 'none',
+                    }}></figure>
+
                   {source.name}
                 </button>
               </li>

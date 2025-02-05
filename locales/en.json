@@ -155,6 +155,14 @@
           "action": "https://www.perplexity.ai/?q="
         },
         {
+          "name": "DeepSeek",
+          "action": "https://chat.deepseek.com/?q="
+        },
+        {
+          "name": "Qwen",
+          "action": "https://chat.qwenlm.ai/?q="
+        },
+        {
           "name": "HuggingChat",
           "action": "https://huggingface.co/chat?q="
         },

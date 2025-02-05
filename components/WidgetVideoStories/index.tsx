@@ -35,7 +35,9 @@ export default function WidgetVideoStories({ selectedCategory }: Props) {
     closeVideo()
 
     if (categoryVideoChannels) {
-      const ids = categoryVideoChannels.map((item: any) => item.id).join(',')
+      const ids = categoryVideoChannels
+        .map((item: { id: string }) => item.id)
+        .join(',')
       setChannelsIds(ids)
       setShouldFetch(true)
     }
@@ -44,6 +46,7 @@ export default function WidgetVideoStories({ selectedCategory }: Props) {
       setChannelsIds(null)
       setShouldFetch(false)
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [categoryVideoChannels])
 
   const { data: dataTrends, error: errorTrends } = useSWR(
@@ -51,7 +54,7 @@ export default function WidgetVideoStories({ selectedCategory }: Props) {
       ? `/api/stories/?channels=${encodeURIComponent(channelsIds)}`
       : null,
     fetcher,
-    { revalidateOnFocus: false }, // evita revalidações desnecessárias
+    { revalidateOnFocus: false } // evita revalidações desnecessárias
   )
 
   const scrollToVideo = () => {

@@ -65,6 +65,7 @@ export default async function endpoint(
     const data = await getYouTubeVideos(channelsArray)
     response.status(200).send(data)
   } catch (error) {
+    console.log('Error fetching YouTube videos:', error)
     response.status(500).send('Error fetching YouTube data')
   }
 }

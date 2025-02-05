@@ -28,7 +28,7 @@ export default function PagePricing() {
 
             <p>
               <strong>Profiles</strong> - the search interface becomes
-              customizable for a professional profile (devs, designers,
+              customizable for a professional profile (developers, designers,
               scientists, entrepreneurs, lawyers etc)
             </p>
 

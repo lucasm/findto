@@ -28,10 +28,10 @@ export default function PageTerms() {
 
             <p>
               By accessing services at internet domain https://findto.app
-              ("Findto"), you are agreeing to be bound by these terms, and agree
-              that you are responsible for compliance with all applicable laws
-              of Brazil, and local regulations. If you do not agree, please, do
-              not use or access Findto.
+              (&quot;Findto&quot;), you are agreeing to be bound by these terms,
+              and agree that you are responsible for compliance with all
+              applicable laws of Brazil, and local regulations. If you do not
+              agree, please, do not use or access Findto.
             </p>
 
             <h2>2. Use License and Intellectual Property</h2>
@@ -58,8 +58,8 @@ export default function PageTerms() {
               materials;
             </p>
             <p>
-              d) transfer the materials to another person or "mirror" the
-              materials on any other server.
+              d) transfer the materials to another person or &quot;mirror&quot;
+              the materials on any other server.
             </p>
             <p>
               This license shall automatically terminate if you violate any of
@@ -68,12 +68,13 @@ export default function PageTerms() {
 
             <h2>3. Disclaimer</h2>
             <p>
-              The materials on Findto are provided on an "as is" basis. Findto
-              makes no warranties, expressed or implied, and hereby disclaims
-              and negates all other warranties including, without limitation,
-              implied warranties or conditions of merchantability, fitness for a
-              particular purpose, or non-infringement of intellectual property
-              or other violation of rights.
+              The materials on Findto are provided on an &quot;as is&quot;
+              basis. Findto makes no warranties, expressed or implied, and
+              hereby disclaims and negates all other warranties including,
+              without limitation, implied warranties or conditions of
+              merchantability, fitness for a particular purpose, or
+              non-infringement of intellectual property or other violation of
+              rights.
             </p>
             <p>
               Further, Findto does not warrant or make any representations
@@ -87,17 +88,17 @@ export default function PageTerms() {
               In no event shall Findto or its partners be liable for any damages
               (including, without limitation, damages for loss of data or
               profit, or due to business interruption) arising out of the use or
-              inability to use the materials on Findto's website, even if Findto
-              or a Findto authorized representative has been notified orally or
-              in writing of the possibility of such damage. Because some
-              jurisdictions do not allow limitations on implied warranties, or
-              limitations of liability for consequential or incidental damages,
-              these limitations may not apply to you.
+              inability to use the materials on Findto&apos;s website, even if
+              Findto or a Findto authorized representative has been notified
+              orally or in writing of the possibility of such damage. Because
+              some jurisdictions do not allow limitations on implied warranties,
+              or limitations of liability for consequential or incidental
+              damages, these limitations may not apply to you.
             </p>
 
             <h2>5. Accuracy of Materials</h2>
             <p>
-              The materials appearing on Findto's service could include
+              The materials appearing on Findto&apos;s service could include
               technical, typographical, or photographic errors. Findto does not
               warrant that any of the materials on its service are accurate,
               complete or current. Findto may make changes to these materials at
@@ -111,7 +112,7 @@ export default function PageTerms() {
               responsible for the contents of any third-party services. The
               inclusion of any external link or data from third-party APIs does
               not imply endorsement by Findto. Use of any such linked service is
-              at the user's own convenience and risk.
+              at the user&apos;s own convenience and risk.
             </p>
 
             <h2>7. Modifications</h2>

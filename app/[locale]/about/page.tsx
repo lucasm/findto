@@ -46,7 +46,7 @@ export default function PageAbout() {
               <article>
                 <h2>Choice less carbon and more privacy</h2>
                 <p>
-                  Findto is fighthin for a better internet. We are working to
+                  Findto is fighting for a better internet. We are working to
                   show the estimated carbon footprint and privacy level of every
                   search source. Better choices are made with transparency.
                 </p>
@@ -62,7 +62,7 @@ export default function PageAbout() {
                 <h2>Made by people, for people</h2>
                 <p>
                   Findto is an open source project to encourage an accessible
-                  and universal search experience. Where people's choices
+                  and universal search experience. Where people&apos;s choices
                   matter. Where diversity is key. Search decentralized.
                 </p>
               </article>
