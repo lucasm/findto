@@ -2,6 +2,7 @@ import AppLayout from '@/layouts/AppLayout'
 import Search from '@/components/Search'
 import WidgetVideoStories from '@/components/WidgetVideoStories'
 import WidgetTrends from '@/components/WidgetTrends'
+import WidgetCategories from '@/components/WidgetCategories'
 import Banner from '@/components/Banner'
 import { Metadata } from 'next/types'
 import { getLocaleData } from '@/utils/getLocaleData'
@@ -44,8 +45,9 @@ export default async function Page({ params }: PageProps) {
   return (
     <AppLayout locale={params.locale}>
       <Search selectedCategory={selectedCategory} />
-      <WidgetVideoStories selectedCategory={selectedCategory} />
       <WidgetTrends />
+      <WidgetVideoStories selectedCategory={selectedCategory} />
+      <WidgetCategories />
       <Banner />
     </AppLayout>
   )

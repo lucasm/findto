@@ -13,7 +13,7 @@
     },
     "componentBanner": {
       "title": "Busca descentralizada",
-      "description": "Com o Findto você busca em diversas fontes."
+      "description": "Use o Findto para buscar em diversas fontes da Web e IA."
     },
     "componentVoiceSearch": {
       "voice": "Voz",
@@ -60,7 +60,7 @@
     "contribute": "Contribuir",
     "trends": "Tendências",
     "stories": "Novidades",
-    "categories": "Categorias de busca",
+    "categories": "Categorias",
     "feedback": {
       "title": "Enviar feedback",
       "url": "https://forms.gle/r6XAyB1ZLn9qzwp16"
@@ -908,108 +908,6 @@
       ]
     },
     {
-      "name": "Shopping",
-      "name_translated": "Compras",
-      "active": true,
-      "data": [
-        {
-          "name": "Amazon",
-          "action": "https://www.amazon.com.br/s?k="
-        },
-        {
-          "name": "Mercado Livre",
-          "action": "https://lista.mercadolivre.com.br/"
-        },
-        {
-          "name": "Shopee",
-          "action": "https://shopee.com.br/search?keyword="
-        },
-        {
-          "name": "OLX",
-          "action": "https://www.olx.com.br/brasil?q="
-        },
-        {
-          "name": "iFood",
-          "action": "https://www.ifood.com.br/busca?q="
-        },
-        {
-          "name": "Rappi",
-          "action": "https://www.rappi.com.br/search?query="
-        },
-        {
-          "name": "Magalu",
-          "action": "https://www.magazineluiza.com.br/busca/"
-        },
-        {
-          "name": "Americanas",
-          "action": "https://www.americanas.com.br/busca/"
-        },
-        {
-          "name": "Casas Bahia",
-          "action": "https://www.casasbahia.com.br/",
-          "additional": "/b"
-        },
-        {
-          "name": "Carrefour",
-          "action": "https://www.carrefour.com.br/busca/"
-        },
-
-        {
-          "name": "AliExpress",
-          "action": "https://www.aliexpress.com/wholesale?SearchText="
-        },
-        {
-          "name": "Temu",
-          "action": "https://www.temu.com/br/search_result.html?search_key="
-        },
-        {
-          "name": "SHEIN",
-          "action": "https://br.shein.com/"
-        },
-        {
-          "name": "Renner",
-          "action": "https://www.lojasrenner.com.br/b?Ntt="
-        },
-        {
-          "name": "C&A",
-          "action": "https://www.cea.com.br/search/"
-        },
-        {
-          "name": "Netshoes",
-          "action": "https://www.netshoes.com.br/busca?q="
-        },
-        {
-          "name": "Centauro",
-          "action": "https://www.centauro.com.br/busca?q="
-        },
-        {
-          "name": "Dafiti",
-          "action": "https://www.dafiti.com.br/catalog/?q="
-        },
-        {
-          "name": "Boticário",
-          "action": "https://www.boticario.com.br/busca/?q="
-        },
-        {
-          "name": "Natura",
-          "action": "https://www.natura.com.br/s/produtos?busca="
-        },
-        {
-          "name": "Enjoei",
-          "action": "https://www.enjoei.com.br/s?q="
-        },
-        {
-          "name": "Zoom",
-          "action": "https://www.zoom.com.br/search?q="
-        },
-        {
-          "name": "Pelando",
-          "action": "https://www.pelando.com.br/busca?q=",
-          "additional": "&type=publicacoes"
-        }
-      ]
-    },
-    {
       "name": "News",
       "name_translated": "Notícias",
       "active": true,
@@ -1156,6 +1054,108 @@
         {
           "id": "UCUmEPYxmnyQDeRUcFkslmQw",
           "title": "euronewspt"
+        }
+      ]
+    },
+    {
+      "name": "Shopping",
+      "name_translated": "Compras",
+      "active": true,
+      "data": [
+        {
+          "name": "Amazon",
+          "action": "https://www.amazon.com.br/s?k="
+        },
+        {
+          "name": "Mercado Livre",
+          "action": "https://lista.mercadolivre.com.br/"
+        },
+        {
+          "name": "Shopee",
+          "action": "https://shopee.com.br/search?keyword="
+        },
+        {
+          "name": "OLX",
+          "action": "https://www.olx.com.br/brasil?q="
+        },
+        {
+          "name": "iFood",
+          "action": "https://www.ifood.com.br/busca?q="
+        },
+        {
+          "name": "Rappi",
+          "action": "https://www.rappi.com.br/search?query="
+        },
+        {
+          "name": "Magalu",
+          "action": "https://www.magazineluiza.com.br/busca/"
+        },
+        {
+          "name": "Americanas",
+          "action": "https://www.americanas.com.br/busca/"
+        },
+        {
+          "name": "Casas Bahia",
+          "action": "https://www.casasbahia.com.br/",
+          "additional": "/b"
+        },
+        {
+          "name": "Carrefour",
+          "action": "https://www.carrefour.com.br/busca/"
+        },
+
+        {
+          "name": "AliExpress",
+          "action": "https://www.aliexpress.com/wholesale?SearchText="
+        },
+        {
+          "name": "Temu",
+          "action": "https://www.temu.com/br/search_result.html?search_key="
+        },
+        {
+          "name": "SHEIN",
+          "action": "https://br.shein.com/"
+        },
+        {
+          "name": "Renner",
+          "action": "https://www.lojasrenner.com.br/b?Ntt="
+        },
+        {
+          "name": "C&A",
+          "action": "https://www.cea.com.br/search/"
+        },
+        {
+          "name": "Netshoes",
+          "action": "https://www.netshoes.com.br/busca?q="
+        },
+        {
+          "name": "Centauro",
+          "action": "https://www.centauro.com.br/busca?q="
+        },
+        {
+          "name": "Dafiti",
+          "action": "https://www.dafiti.com.br/catalog/?q="
+        },
+        {
+          "name": "Boticário",
+          "action": "https://www.boticario.com.br/busca/?q="
+        },
+        {
+          "name": "Natura",
+          "action": "https://www.natura.com.br/s/produtos?busca="
+        },
+        {
+          "name": "Enjoei",
+          "action": "https://www.enjoei.com.br/s?q="
+        },
+        {
+          "name": "Zoom",
+          "action": "https://www.zoom.com.br/search?q="
+        },
+        {
+          "name": "Pelando",
+          "action": "https://www.pelando.com.br/busca?q=",
+          "additional": "&type=publicacoes"
         }
       ]
     },

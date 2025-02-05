@@ -8,12 +8,14 @@ interface ICredits {
 }
 
 interface WidgetTemplateProps {
+  title: string
   children?: ReactNode
   icon?: ReactElement
   credits?: ICredits
 }
 
 export default function WidgetTemplate({
+  title,
   children,
   credits,
   icon,
@@ -24,7 +26,7 @@ export default function WidgetTemplate({
     <section className={Styles.container}>
       <div className={Styles.title}>
         {icon}
-        <h3>{t('trends')}</h3>
+        <h3>{title}</h3>
       </div>
 
       {children}

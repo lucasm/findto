@@ -34,7 +34,6 @@
   width: 64px;
   background: var(--color-white);
   transition: var(--transition-hover);
-  background: black;
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
   filter: grayscale(100%);
@@ -45,7 +44,7 @@
   letter-spacing: -0.025rem;
 }
 .container li button span:first-of-type {
-  display: none;
+  /* display: none; */
   opacity: var(--opacity);
   line-break: unset;
   /* position: absolute;
@@ -65,7 +64,9 @@
 }
 
 .trendsVideos,
-.trendsMusic {
+.trendsMusic,
+.trendsNews,
+.trendsFinance {
   grid-template-columns: repeat(4, 1fr);
 }
 

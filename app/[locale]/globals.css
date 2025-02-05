@@ -21,9 +21,8 @@
     #b5bbff -7%,
     #a0d9ff 16.67%,
     #a7ffe7 33.34%,
-    #fff9a1 49.01%,
-    #ffa4a4 72.68%,
-    #f3b5ff 120%
+    #fff9a1 79.01% /* #ffa4a4 72.68%,
+    #f3b5ff 125% */
   );
   --color-white-translucent: rgba(255, 255, 255, 0.2);
   --color-white-translucent-2: rgba(255, 255, 255, 0.5);

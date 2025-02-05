@@ -132,13 +132,23 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
       setCategory(selectedCategory?.name)
       setTitleTrends(selectedCategory?.name_trends)
 
-      // window.localStorage.setItem('category', selectedCategory?.name)
-      // const storedSource = window.localStorage.getItem('search')
+      window.localStorage.setItem('category', selectedCategory?.name)
 
       const sourceId = normalizeId(selectedCategory?.data[0]?.name)
 
-      handleSelectedSource(sourceId)
-      refButtons?.current?.['button_' + sourceId]?.click()
+      const storedSource = window.localStorage.getItem('search')
+
+      const isStoredSourceAvailableOnCurrentCategory =
+        selectedCategory?.data?.some(
+          (item) => normalizeId(item.name) === storedSource
+        )
+
+      if (storedSource && isStoredSourceAvailableOnCurrentCategory) {
+        handleSelectedSource(storedSource)
+      } else {
+        handleSelectedSource(sourceId)
+        refButtons?.current?.['button_' + sourceId]?.click()
+      }
     }
   }, [selectedCategory])
 
@@ -151,8 +161,6 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
       }, 0)
     }
   }, [isFocused, refSearchInput, handleFocus])
-
-  console.log(inputValue)
 
   return (
     <section className={Style.container}>

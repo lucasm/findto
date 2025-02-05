@@ -3,6 +3,7 @@ import Banner from '@/components/Banner'
 import Search from '@/components/Search'
 import { getLocaleData } from '@/utils/getLocaleData'
 import WidgetTrends from '@/components/WidgetTrends'
+import WidgetCategories from '@/components/WidgetCategories'
 
 export default function Page({
   params: { locale },
@@ -18,9 +19,8 @@ export default function Page({
   return (
     <AppLayout locale={locale}>
       <Search selectedCategory={selectedCategory} />
-
       <WidgetTrends />
-
+      <WidgetCategories />
       <Banner />
     </AppLayout>
   )

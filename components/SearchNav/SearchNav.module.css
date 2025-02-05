@@ -44,31 +44,31 @@
 /* Cards */
 .cards ul {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 0;
-  margin: 0 auto;
-  padding: 2rem;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  margin: 2rem auto 0;
+  padding: 0;
   max-width: var(--max-size-container);
 }
 .cards a {
   opacity: 1;
-  padding: 1rem;
+  padding: 1.125rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   display: flex;
-  font-size: var(--font-size-big);
+  font-size: var(--font-size);
   font-weight: 400;
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-  transition-duration: 0.15s;
+  transition: var(--transition);
   width: 100%;
+  background: var(--color-bg-white);
+  box-shadow: var(--box-shadow);
 }
 .cards a:hover,
 .cards a:focus {
-  text-decoration: underline;
+  background: var(--background-linear-gradient);
 }
 .cards figure {
   display: flex;
@@ -80,7 +80,6 @@
 
 @media screen and (max-width: 856px) {
   .cards ul {
-    padding: 2rem 0;
     grid-template-columns: repeat(3, 1fr);
   }
   .cards a {

@@ -14,7 +14,8 @@
 .title h3 {
   display: flex;
   color: var(--color-text-black);
-  font-size: 1.25rem;
+  font-size: var(--font-size-3);
+  font-weight: 400;
 }
 .title svg {
   width: 1.25rem;

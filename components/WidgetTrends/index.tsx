@@ -408,6 +408,7 @@ export default function SearchTrends() {
   if (dataTrends || errorTrends || category === 'Local') {
     return (
       <WidgetTemplate
+        title={t('trends')}
         credits={
           dataTrends
             ? {
