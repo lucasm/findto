@@ -159,7 +159,7 @@
 }
 .buttons button:hover,
 .buttons button:focus {
-  background: var(--color-black-translucent);
+  background: var(--color-black-translucent-2);
   opacity: 1;
 }
 .buttonActive {
@@ -222,9 +222,8 @@
     border-radius: 1.5rem;
   }
   .searchInput textarea {
-    font-size: var(--font-size-small);
     min-height: 2.375rem;
-    padding: 0.65rem 3.5rem 0.65rem 0.75rem;
+    padding: 0.55rem 3.5rem 0.55rem 0.75rem;
   }
   .searchButton {
     height: 1.6rem;

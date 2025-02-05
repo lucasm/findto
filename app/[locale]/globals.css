@@ -28,7 +28,7 @@
   --color-white-translucent: rgba(255, 255, 255, 0.2);
   --color-white-translucent-2: rgba(255, 255, 255, 0.5);
   --color-black-translucent: rgba(0, 0, 0, 0.05);
-  --color-black-translucent-2: rgba(0, 0, 0, 0.15);
+  --color-black-translucent-2: rgba(0, 0, 0, 0.05);
   --color-theme-translucent: rgb(230 230 230 / 25%);
   --box-shadow: 0 1.8px 3.8px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%);
   --shadow-2: 0px 6px 12px 0px rgba(0, 0, 0, 0.075);
