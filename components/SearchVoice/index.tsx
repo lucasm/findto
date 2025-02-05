@@ -24,6 +24,29 @@ export default function SearchVoice() {
   const t = useTranslations('t')
   const [hasVoiceSupport, setHasVoiceSupport] = useState<boolean>(false)
 
+  const [permission, setPermission] = useState<'granted' | 'denied' | 'prompt'>(
+    'prompt'
+  )
+
+  // Função para verificar a permissão do microfone
+  async function checkMicrophonePermission() {
+    try {
+      const permissionStatus = await navigator.permissions.query({
+        name: 'microphone' as PermissionName,
+      })
+      setPermission(permissionStatus.state)
+
+      // Atualiza o estado sempre que a permissão mudar
+      permissionStatus.onchange = () => setPermission(permissionStatus.state)
+    } catch (error) {
+      console.error('Erro ao verificar permissão do microfone:', error)
+    }
+  }
+
+  useEffect(() => {
+    checkMicrophonePermission()
+  }, [])
+
   useEffect(() => {
     if (
       typeof window !== 'undefined' &&
@@ -57,14 +80,14 @@ export default function SearchVoice() {
             isOpen={listening}
             onClose={() => resetTranscript()}
             title={
-              isMicrophoneAvailable
+              permission === 'granted'
                 ? t('componentVoiceSearch.speak')
                 : t('componentVoiceSearch.allow')
             }>
             {isMicrophoneAvailable && (
               <>
                 <div className={Style.buttonListening}></div>
-                <h2 className={Style.transcriptContainer}>{transcript}</h2>
+                <h3 className={Style.transcriptContainer}>{transcript}</h3>
               </>
             )}
           </Modal>

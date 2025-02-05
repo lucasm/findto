@@ -19,9 +19,9 @@ import {
   IconDownload,
   IconGames,
   Icon,
-  IconHome,
   IconMetaverse,
   IconLock,
+  IconTrending,
 } from '@/components/SvgIcons'
 import { normalizeId } from '@/utils/formats'
 import { ISearchCategory } from '@/interfaces/search'
@@ -38,7 +38,7 @@ const SearchNav = ({ data, selectedCategory, variant }: Props) => {
   const handleCategoryIcon = (categoryName: string) => {
     switch (categoryName) {
       case 'Home':
-        return <IconHome />
+        return <IconTrending />
       case 'AI':
         return <IconSparkle />
       case 'Web':

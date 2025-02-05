@@ -17,7 +17,7 @@
     },
     "componentVoiceSearch": {
       "voice": "Voz",
-      "speak": "Fale agora",
+      "speak": "Fale",
       "allow": "Aguardando permissão..."
     },
     "widgetPrivacy": "Nível de privacidade",
@@ -60,7 +60,7 @@
     "contribute": "Contribuir",
     "trends": "Tendências",
     "stories": "Novidades",
-    "categories": "Categorias de busca",
+    "categories": "Categorias da busca",
     "feedback": {
       "title": "Enviar feedback",
       "url": "https://forms.gle/r6XAyB1ZLn9qzwp16"
@@ -72,7 +72,7 @@
   "categories": [
     {
       "name": "Home",
-      "name_translated": "Página Inicial",
+      "name_translated": "Popular",
       "active": true,
       "data": [
         {
@@ -183,10 +183,6 @@
           "action": "https://chat.deepseek.com/?q="
         },
         {
-          "name": "Qwen",
-          "action": "https://chat.qwenlm.ai/?q="
-        },
-        {
           "name": "HuggingChat",
           "action": "https://huggingface.co/chat?q="
         },
@@ -195,20 +191,20 @@
           "action": "https://claude.ai/newq="
         },
         {
-          "name": "Mistral",
-          "action": "https://chat.mistral.ai/chat?q="
+          "name": "You",
+          "action": "https://you.com/search?fromSearchBar=true&tbm=youchat&q="
         },
         {
           "name": "Gemini",
           "action": "https://gemini.google.com/app?q="
         },
         {
-          "name": "Meta AI",
-          "action": "https://www.meta.ai/?q="
+          "name": "Mistral",
+          "action": "https://chat.mistral.ai/chat?q="
         },
         {
-          "name": "You",
-          "action": "https://you.com/search?fromSearchBar=true&tbm=youchat&q="
+          "name": "Meta AI",
+          "action": "https://www.meta.ai/?q="
         },
         {
           "name": "Phind",
@@ -221,6 +217,10 @@
         {
           "name": "Adobe Firefly",
           "action": "https://firefly.adobe.com/generate/images?prompt="
+        },
+        {
+          "name": "Qwen",
+          "action": "https://chat.qwenlm.ai/?q="
         },
         {
           "name": "Maritaca",
@@ -1520,7 +1520,7 @@
           ]
         },
         {
-          "name": " Governo Estadual",
+          "name": "Governo Estadual",
           "child": [
             {
               "name": "SP (Governo São Paulo)",

@@ -17,7 +17,7 @@
     },
     "componentVoiceSearch": {
       "voice": "Voice",
-      "speak": "Speak now",
+      "speak": "Speak",
       "allow": "Waiting..."
     },
     "slogan": "Decentralized search on Web, AI and Metaverse",
@@ -54,6 +54,7 @@
   "categories": [
     {
       "name": "Home",
+      "name_translated": "Popular",
       "active": true,
       "data": [
         {
@@ -159,10 +160,6 @@
           "action": "https://chat.deepseek.com/?q="
         },
         {
-          "name": "Qwen",
-          "action": "https://chat.qwenlm.ai/?q="
-        },
-        {
           "name": "HuggingChat",
           "action": "https://huggingface.co/chat?q="
         },
@@ -171,20 +168,21 @@
           "action": "https://claude.ai/newq="
         },
         {
-          "name": "Mistral",
-          "action": "https://chat.mistral.ai/chat?q="
+          "name": "You",
+          "action": "https://you.com/search?fromSearchBar=true&tbm=youchat&q="
         },
         {
           "name": "Gemini",
           "action": "https://gemini.google.com/app?q="
         },
         {
+          "name": "Mistral",
+          "action": "https://chat.mistral.ai/chat?q="
+        },
+
+        {
           "name": "Meta AI",
           "action": "https://www.meta.ai/?q="
-        },
-        {
-          "name": "You",
-          "action": "https://you.com/search?fromSearchBar=true&tbm=youchat&q="
         },
         {
           "name": "Phind",
@@ -197,6 +195,10 @@
         {
           "name": "Adobe Firefly",
           "action": "https://firefly.adobe.com/generate/images?prompt="
+        },
+        {
+          "name": "Qwen",
+          "action": "https://chat.qwenlm.ai/?q="
         }
       ]
     },

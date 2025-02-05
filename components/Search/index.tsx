@@ -223,32 +223,35 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
                     {t('clear')}
                   </button>
                 </Tooltip>
-
-                {/* Button Voice */}
-                <SearchVoice />
               </div>
             </div>
 
-            <div>
-              <a
-                ref={refSearchButton}
-                className={Style.searchButton}
-                href={searchUrl}
-                target="_blank"
-                rel="noopener"
-                onClick={
-                  isValid
-                    ? undefined
-                    : (event) => {
-                        event.preventDefault()
-                        handleFocus()
-                      }
-                }
-                style={{ opacity: isValid ? '1' : '.45' }}>
-                <IconSend />
-                {t('search')}
-              </a>
-            </div>
+            {/* render Button Voice only if user ha no typed on input */}
+            {!isValid && <SearchVoice />}
+
+            {/* render Search Button only if user has typed on input */}
+            {isValid && (
+              <div>
+                <a
+                  ref={refSearchButton}
+                  className={Style.searchButton}
+                  href={searchUrl}
+                  target="_blank"
+                  rel="noopener"
+                  onClick={
+                    isValid
+                      ? undefined
+                      : (event) => {
+                          event.preventDefault()
+                          handleFocus()
+                        }
+                  }
+                  style={{ opacity: isValid ? '1' : '.45' }}>
+                  <IconSend />
+                  {t('search')}
+                </a>
+              </div>
+            )}
           </div>
 
           <SearchSuggestions locale={locale} term={inputValue} />
