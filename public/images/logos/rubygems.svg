@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with Vectornator (http://vectornator.io/) -->
-<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 69.82 80" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<defs/>
-<path d="M0 0L69.82 0L69.82 80L0 80L0 0Z" fill="#000000" fill-opacity="0" fill-rule="nonzero" opacity="1" stroke="none"/>
-<g id="Logo">
-<g opacity="1">
-<path d="M20.9533 26.3564L20.9096 26.3127L11.0403 36.1745L34.9973 60.0873L44.8666 50.2691L58.9543 36.1745L49.0849 26.3127L49.0849 26.2691L20.9096 26.2691L20.9533 26.3564Z" fill="#000000" fill-rule="nonzero" opacity="1" stroke="none"/>
-<path d="M34.91 0L0 20L0 60L34.91 80L69.82 60L69.82 20L34.91 0ZM63.1362 56.1745L34.91 72.4436L6.68381 56.1745L6.68381 23.7309L34.91 7.46909L63.1362 23.7309L63.1362 56.1745Z" fill="#000000" fill-rule="nonzero" opacity="1" stroke="none"/>
+
+<svg height="32" stroke-miterlimit="10" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" version="1.1" viewBox="0 0 32 32" width="32" xml:space="preserve" id="svg3" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+<defs id="defs1" />
+<path d="M 2.036,0 H 29.964 V 32 H 2.036 Z" fill="#000000" fill-opacity="0" fill-rule="nonzero" opacity="1" stroke="none" id="path1" style="fill:#000000;stroke-width:0.4" />
+<g id="Logo" transform="matrix(0.4,0,0,0.4,2.036,0)" style="fill:#000000">
+<g opacity="1" id="g3" style="fill:#000000">
+<path d="m 20.9533,26.3564 -0.0437,-0.0437 -9.8693,9.8618 23.957,23.9128 9.8693,-9.8182 14.0877,-14.0946 -9.8694,-9.8618 V 26.2691 H 20.9096 Z" fill="#000000" fill-rule="nonzero" opacity="1" stroke="none" id="path2" style="fill:#000000" />
+<path d="M 34.91,0 0,20 V 60 L 34.91,80 69.82,60 V 20 Z M 63.1362,56.1745 34.91,72.4436 6.68381,56.1745 V 23.7309 L 34.91,7.46909 63.1362,23.7309 Z" fill="#000000" fill-rule="nonzero" opacity="1" stroke="none" id="path3" style="fill:#000000" />
 </g>
 </g>
 </svg>
