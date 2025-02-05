@@ -5,7 +5,7 @@
 .containerBanner {
   padding: 4rem;
   background: var(--color-bg-white);
-  border-radius: 3rem;
+  border-radius: 2rem;
   box-shadow: var(--box-shadow);
   margin: 2rem;
   display: grid;

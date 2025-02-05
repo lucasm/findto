@@ -69,6 +69,7 @@
 .cards a:hover,
 .cards a:focus {
   background: var(--background-linear-gradient);
+  color: var(--color-black);
 }
 .cards figure {
   display: flex;

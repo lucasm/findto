@@ -415,13 +415,12 @@ export default function SearchTrends() {
                 title: dataTrends?.credits_title ?? '',
                 url: dataTrends?.credits_url ?? '',
               }
-            : {
-                title: 'Error on Trends API ' + category,
+            : undefined
+        }>
+        {/* title: 'Error on Trends API ' + category,
                 url:
                   'mailto:feedback@findto.app?subject=Error on Trends API' +
-                  category,
-              }
-        }>
+                  category, */}
         {category === 'Local' && <ButtonGeolocation />}
 
         {dataTrends && (

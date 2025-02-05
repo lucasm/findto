@@ -784,6 +784,108 @@
       ]
     },
     {
+      "name": "Shopping",
+      "name_translated": "Compras",
+      "active": true,
+      "data": [
+        {
+          "name": "Amazon",
+          "action": "https://www.amazon.com.br/s?k="
+        },
+        {
+          "name": "Mercado Livre",
+          "action": "https://lista.mercadolivre.com.br/"
+        },
+        {
+          "name": "Shopee",
+          "action": "https://shopee.com.br/search?keyword="
+        },
+        {
+          "name": "OLX",
+          "action": "https://www.olx.com.br/brasil?q="
+        },
+        {
+          "name": "iFood",
+          "action": "https://www.ifood.com.br/busca?q="
+        },
+        {
+          "name": "Rappi",
+          "action": "https://www.rappi.com.br/search?query="
+        },
+        {
+          "name": "Magalu",
+          "action": "https://www.magazineluiza.com.br/busca/"
+        },
+        {
+          "name": "Americanas",
+          "action": "https://www.americanas.com.br/busca/"
+        },
+        {
+          "name": "Casas Bahia",
+          "action": "https://www.casasbahia.com.br/",
+          "additional": "/b"
+        },
+        {
+          "name": "Carrefour",
+          "action": "https://www.carrefour.com.br/busca/"
+        },
+
+        {
+          "name": "AliExpress",
+          "action": "https://www.aliexpress.com/wholesale?SearchText="
+        },
+        {
+          "name": "Temu",
+          "action": "https://www.temu.com/br/search_result.html?search_key="
+        },
+        {
+          "name": "SHEIN",
+          "action": "https://br.shein.com/"
+        },
+        {
+          "name": "Renner",
+          "action": "https://www.lojasrenner.com.br/b?Ntt="
+        },
+        {
+          "name": "C&A",
+          "action": "https://www.cea.com.br/search/"
+        },
+        {
+          "name": "Netshoes",
+          "action": "https://www.netshoes.com.br/busca?q="
+        },
+        {
+          "name": "Centauro",
+          "action": "https://www.centauro.com.br/busca?q="
+        },
+        {
+          "name": "Dafiti",
+          "action": "https://www.dafiti.com.br/catalog/?q="
+        },
+        {
+          "name": "Boticário",
+          "action": "https://www.boticario.com.br/busca/?q="
+        },
+        {
+          "name": "Natura",
+          "action": "https://www.natura.com.br/s/produtos?busca="
+        },
+        {
+          "name": "Enjoei",
+          "action": "https://www.enjoei.com.br/s?q="
+        },
+        {
+          "name": "Zoom",
+          "action": "https://www.zoom.com.br/search?q="
+        },
+        {
+          "name": "Pelando",
+          "action": "https://www.pelando.com.br/busca?q=",
+          "additional": "&type=publicacoes"
+        }
+      ]
+    },
+    {
       "name": "Local",
       "active": true,
       "data": [
@@ -904,258 +1006,6 @@
         {
           "id": "UCwCh6NVP-qQim0KqJMuYWGw",
           "title": "SonhoeDestino"
-        }
-      ]
-    },
-    {
-      "name": "News",
-      "name_translated": "Notícias",
-      "active": true,
-      "data": [
-        {
-          "name": "globo",
-          "action": "https://www.globo.com/busca/?q="
-        },
-        {
-          "name": "UOL",
-          "action": "https://busca.uol.com.br/result.html?term="
-        },
-        {
-          "name": "Google News",
-          "action": "https://news.google.com/search?q="
-        },
-        {
-          "name": "CNN",
-          "action": "https://www.cnnbrasil.com.br/?s="
-        },
-        {
-          "name": "Folha",
-          "action": "https://search.folha.uol.com.br/?q="
-        },
-        {
-          "name": "Estadão",
-          "action": "https://busca.estadao.com.br/?q="
-        },
-        {
-          "name": "Poder360",
-          "action": "https://www.poder360.com.br/?s=search&q="
-        },
-        {
-          "name": "Nexo",
-          "action": "https://www.nexojornal.com.br/search?term="
-        },
-        {
-          "name": "Veja",
-          "action": "https://veja.abril.com.br/?s="
-        },
-        {
-          "name": "CartaCapital",
-          "action": "https://www.cartacapital.com.br/?s="
-        },
-        {
-          "name": "Terra",
-          "action": "https://www.terra.com.br/busca/?q="
-        },
-        {
-          "name": "Metropoles",
-          "action": "https://www.metropoles.com/search?q="
-        },
-        {
-          "name": "Agência Brasil",
-          "action": "https://busca.ebc.com.br/?q=",
-          "additional": "&site_id=agenciabrasil"
-        },
-        {
-          "name": "Reuters",
-          "action": "https://www.reuters.com/site-search/?query="
-        },
-        {
-          "name": "BBC",
-          "action": "https://www.bbc.co.uk/search?q="
-        },
-        {
-          "name": "Pocket",
-          "action": "https://getpocket.com/search?st=all&q="
-        },
-        {
-          "name": "Feedly",
-          "action": "https://feedly.com/i/discover/sources/search/feed/"
-        },
-        {
-          "name": "Flipboard",
-          "action": "https://flipboard.com/search/"
-        }
-      ],
-      "youtube_channels": [
-        {
-          "id": "UCVFbXI6Gu8U2f9Gjtxw4A-Q",
-          "title": "uol"
-        },
-        {
-          "id": "UCvdwhh_fDyWccR42-rReZLw",
-          "title": "CNNbrasil"
-        },
-        {
-          "id": "UCthbIFAxbXTTQEC7EcQvP1Q",
-          "title": "BBCNewsBrasil"
-        },
-        {
-          "id": "UCaGmdJSSiR7fkh2A-c6emsA",
-          "title": "g1globo"
-        },
-        {
-          "id": "UCFCiSRbCVwQ_BQaDQBYxN_A",
-          "title": "Poder360"
-        },
-        {
-          "id": "UCNqzAD9EiECreuH6LA8IYeA",
-          "title": "TheInterceptBrasil"
-        },
-        {
-          "id": "UCmYuiV9wAR3i8p19Ygc7izg",
-          "title": "folha"
-        },
-        {
-          "id": "UCDGz2exMIsPQ4k9VrsuhKTA",
-          "title": "CartaCapital"
-        },
-        {
-          "id": "UCV6Ue4o5UIeKQ3IEkjnXRlg",
-          "title": "veja"
-        },
-        {
-          "id": "UCJVTsYjG0KLNWL6OyHx7ZGw",
-          "title": "NexojornalBr"
-        },
-        {
-          "id": "UCXdXYG8dUmEv6jhEji_lSHg",
-          "title": "JornalismoTVCultura"
-        },
-        {
-          "id": "UCNVsZnDXOM4PodYIEgM2e4w",
-          "title": "rodaviva"
-        },
-        {
-          "id": "UCrtOL8bJsh-csozGS2aV77Q",
-          "title": "estadao"
-        },
-        {
-          "id": "UCRVbqma6TaIHp9E151nC8sA",
-          "title": "apublica"
-        },
-        {
-          "id": "UCuiLR4p6wQ3xLEm15pEn1Xw",
-          "title": "recordnews"
-        },
-        {
-          "id": "UC376n347Ob5Lwzq2WGzF1AA",
-          "title": "SBTNews"
-        },
-        {
-          "id": "UCUmEPYxmnyQDeRUcFkslmQw",
-          "title": "euronewspt"
-        }
-      ]
-    },
-    {
-      "name": "Shopping",
-      "name_translated": "Compras",
-      "active": true,
-      "data": [
-        {
-          "name": "Amazon",
-          "action": "https://www.amazon.com.br/s?k="
-        },
-        {
-          "name": "Mercado Livre",
-          "action": "https://lista.mercadolivre.com.br/"
-        },
-        {
-          "name": "Shopee",
-          "action": "https://shopee.com.br/search?keyword="
-        },
-        {
-          "name": "OLX",
-          "action": "https://www.olx.com.br/brasil?q="
-        },
-        {
-          "name": "iFood",
-          "action": "https://www.ifood.com.br/busca?q="
-        },
-        {
-          "name": "Rappi",
-          "action": "https://www.rappi.com.br/search?query="
-        },
-        {
-          "name": "Magalu",
-          "action": "https://www.magazineluiza.com.br/busca/"
-        },
-        {
-          "name": "Americanas",
-          "action": "https://www.americanas.com.br/busca/"
-        },
-        {
-          "name": "Casas Bahia",
-          "action": "https://www.casasbahia.com.br/",
-          "additional": "/b"
-        },
-        {
-          "name": "Carrefour",
-          "action": "https://www.carrefour.com.br/busca/"
-        },
-
-        {
-          "name": "AliExpress",
-          "action": "https://www.aliexpress.com/wholesale?SearchText="
-        },
-        {
-          "name": "Temu",
-          "action": "https://www.temu.com/br/search_result.html?search_key="
-        },
-        {
-          "name": "SHEIN",
-          "action": "https://br.shein.com/"
-        },
-        {
-          "name": "Renner",
-          "action": "https://www.lojasrenner.com.br/b?Ntt="
-        },
-        {
-          "name": "C&A",
-          "action": "https://www.cea.com.br/search/"
-        },
-        {
-          "name": "Netshoes",
-          "action": "https://www.netshoes.com.br/busca?q="
-        },
-        {
-          "name": "Centauro",
-          "action": "https://www.centauro.com.br/busca?q="
-        },
-        {
-          "name": "Dafiti",
-          "action": "https://www.dafiti.com.br/catalog/?q="
-        },
-        {
-          "name": "Boticário",
-          "action": "https://www.boticario.com.br/busca/?q="
-        },
-        {
-          "name": "Natura",
-          "action": "https://www.natura.com.br/s/produtos?busca="
-        },
-        {
-          "name": "Enjoei",
-          "action": "https://www.enjoei.com.br/s?q="
-        },
-        {
-          "name": "Zoom",
-          "action": "https://www.zoom.com.br/search?q="
-        },
-        {
-          "name": "Pelando",
-          "action": "https://www.pelando.com.br/busca?q=",
-          "additional": "&type=publicacoes"
         }
       ]
     },
@@ -1374,6 +1224,325 @@
         {
           "id": "UCZGKD_HFC4H1WuPf0ZmWgOg",
           "title": "NeuroVox"
+        }
+      ]
+    },
+    {
+      "name": "News",
+      "name_translated": "Notícias",
+      "active": true,
+      "data": [
+        {
+          "name": "globo",
+          "action": "https://www.globo.com/busca/?q="
+        },
+        {
+          "name": "UOL",
+          "action": "https://busca.uol.com.br/result.html?term="
+        },
+        {
+          "name": "Google News",
+          "action": "https://news.google.com/search?q="
+        },
+        {
+          "name": "CNN",
+          "action": "https://www.cnnbrasil.com.br/?s="
+        },
+        {
+          "name": "Folha",
+          "action": "https://search.folha.uol.com.br/?q="
+        },
+        {
+          "name": "Estadão",
+          "action": "https://busca.estadao.com.br/?q="
+        },
+        {
+          "name": "Poder360",
+          "action": "https://www.poder360.com.br/?s=search&q="
+        },
+        {
+          "name": "Nexo",
+          "action": "https://www.nexojornal.com.br/search?term="
+        },
+        {
+          "name": "Veja",
+          "action": "https://veja.abril.com.br/?s="
+        },
+        {
+          "name": "CartaCapital",
+          "action": "https://www.cartacapital.com.br/?s="
+        },
+        {
+          "name": "Terra",
+          "action": "https://www.terra.com.br/busca/?q="
+        },
+        {
+          "name": "Metropoles",
+          "action": "https://www.metropoles.com/search?q="
+        },
+        {
+          "name": "Agência Brasil",
+          "action": "https://busca.ebc.com.br/?q=",
+          "additional": "&site_id=agenciabrasil"
+        },
+        {
+          "name": "Reuters",
+          "action": "https://www.reuters.com/site-search/?query="
+        },
+        {
+          "name": "BBC",
+          "action": "https://www.bbc.co.uk/search?q="
+        },
+        {
+          "name": "Pocket",
+          "action": "https://getpocket.com/search?st=all&q="
+        },
+        {
+          "name": "Feedly",
+          "action": "https://feedly.com/i/discover/sources/search/feed/"
+        },
+        {
+          "name": "Flipboard",
+          "action": "https://flipboard.com/search/"
+        }
+      ],
+      "youtube_channels": [
+        {
+          "id": "UCVFbXI6Gu8U2f9Gjtxw4A-Q",
+          "title": "uol"
+        },
+        {
+          "id": "UCvdwhh_fDyWccR42-rReZLw",
+          "title": "CNNbrasil"
+        },
+        {
+          "id": "UCthbIFAxbXTTQEC7EcQvP1Q",
+          "title": "BBCNewsBrasil"
+        },
+        {
+          "id": "UCaGmdJSSiR7fkh2A-c6emsA",
+          "title": "g1globo"
+        },
+        {
+          "id": "UCFCiSRbCVwQ_BQaDQBYxN_A",
+          "title": "Poder360"
+        },
+        {
+          "id": "UCNqzAD9EiECreuH6LA8IYeA",
+          "title": "TheInterceptBrasil"
+        },
+        {
+          "id": "UCmYuiV9wAR3i8p19Ygc7izg",
+          "title": "folha"
+        },
+        {
+          "id": "UCDGz2exMIsPQ4k9VrsuhKTA",
+          "title": "CartaCapital"
+        },
+        {
+          "id": "UCV6Ue4o5UIeKQ3IEkjnXRlg",
+          "title": "veja"
+        },
+        {
+          "id": "UCJVTsYjG0KLNWL6OyHx7ZGw",
+          "title": "NexojornalBr"
+        },
+        {
+          "id": "UCXdXYG8dUmEv6jhEji_lSHg",
+          "title": "JornalismoTVCultura"
+        },
+        {
+          "id": "UCNVsZnDXOM4PodYIEgM2e4w",
+          "title": "rodaviva"
+        },
+        {
+          "id": "UCrtOL8bJsh-csozGS2aV77Q",
+          "title": "estadao"
+        },
+        {
+          "id": "UCRVbqma6TaIHp9E151nC8sA",
+          "title": "apublica"
+        },
+        {
+          "id": "UCuiLR4p6wQ3xLEm15pEn1Xw",
+          "title": "recordnews"
+        },
+        {
+          "id": "UC376n347Ob5Lwzq2WGzF1AA",
+          "title": "SBTNews"
+        },
+        {
+          "id": "UCUmEPYxmnyQDeRUcFkslmQw",
+          "title": "euronewspt"
+        }
+      ]
+    },
+    {
+      "name": "Finance",
+      "name_translated": "Finanças",
+      "active": true,
+      "data": [
+        {
+          "name": "Google Finance",
+          "action": "https://google.com/finance/quote/"
+        },
+        {
+          "name": "Mobills",
+          "action": "https://www.mobills.com.br/busca/"
+        },
+        {
+          "name": "Exame",
+          "action": "https://exame.com/busca/"
+        },
+        {
+          "name": "Valor",
+          "action": "https://valor.globo.com/busca/?q="
+        },
+        {
+          "name": "Bloomberg",
+          "action": "https://www.bloomberglinea.com.br/queryly-advanced-search/?query="
+        },
+        {
+          "name": "InfoMoney",
+          "action": "https://www.infomoney.com.br/busca/?q="
+        },
+        {
+          "name": "B3",
+          "action": "https://www.b3.com.br/pt_br/busca/?query="
+        },
+        {
+          "name": "Itaú",
+          "action": "https://www.itau.com.br/resultados-de-busca?q="
+        },
+        {
+          "name": "Nubank",
+          "action": "https://blog.nubank.com.br/busca/?search="
+        },
+        {
+          "name": "BB",
+          "action": "https://www.bb.com.br/site/busca?q="
+        },
+        {
+          "name": "Caixa",
+          "action": "https://www.caixa.gov.br/site/Paginas/Pesquisa.aspx?k="
+        },
+        {
+          "name": "Bradesco",
+          "action": "https://banco.bradesco/html/classic/resultado-busca/index-nova-busca.shtm?termsearched="
+        },
+        {
+          "name": "Santander",
+          "action": "https://www.santander.com.br/resultado-busca?q="
+        },
+        {
+          "name": "BTG Pactual",
+          "action": "https://content.btgpactual.com/resultado-da-busca?texto="
+        },
+        {
+          "name": "XP",
+          "action": "https://conteudos.xpi.com.br/pesquisar/?post_types=any&search="
+        },
+        {
+          "name": "Sicredi",
+          "action": "https://www.sicredi.com.br/site/blog/busca/?search="
+        },
+        {
+          "name": "Inter",
+          "action": "https://blog.inter.co/search?q="
+        },
+        {
+          "name": "C6",
+          "action": "https://www.c6bank.com.br/blog/resultado-de-busca?query="
+        },
+        {
+          "name": "Bmg",
+          "action": "https://www.bancobmg.com.br/como-podemos-te-ajudar.htm?q=cdb"
+        },
+        {
+          "name": "Safra",
+          "action": "https://www.safra.com.br/resultado-de-busca.htm?query="
+        },
+        {
+          "name": "Rico",
+          "action": "https://riconnect.rico.com.vc/?s="
+        },
+        {
+          "name": "Genial",
+          "action": "https://blog.genialinvestimentos.com.br/?s="
+        },
+        {
+          "name": "Empiricus",
+          "action": "https://www.empiricus.com.br/?buscar="
+        },
+        {
+          "name": "Suno",
+          "action": "https://www.sunoresearch.com.br/?s="
+        }
+      ],
+      "youtube_channels": [
+        {
+          "id": "UC_Y9Mf8o6gGAAw8eBrn3SOw",
+          "title": "BancoCentralBR"
+        },
+        {
+          "id": "UC_TapH8f4HLLAwPBaXy-Gag",
+          "title": "MinFazenda"
+        },
+        {
+          "id": "UCo0jMsIPccAXghE_FCWIdNg",
+          "title": "InvestNewsBR"
+        },
+        {
+          "id": "UC8mDF5mWNGE-Kpfcvnn0bUg",
+          "title": "MePoupe"
+        },
+        {
+          "id": "UCT4nDeU5pv1XIGySbSK-GgA",
+          "title": "primorico"
+        },
+        {
+          "id": "UCOjXqrOxAdXa04obIQREfCA",
+          "title": "PrimoPobre"
+        },
+        {
+          "id": "UCj3jEZuLmXOndQJFkPTp3Nw",
+          "title": "CanalElaInveste"
+        },
+        {
+          "id": "UCnBNoed6NaPlpL8blj1yy8Q",
+          "title": "ClubedoValor"
+        },
+        {
+          "id": "UC-hA65Fjv5X8h-J92zc_L8Q",
+          "title": "GêmeosInvestem"
+        },
+        {
+          "id": "UC3Z2XdKUu21_KtMsohZedOQ",
+          "title": "ACaraDaRiquezaOficial"
+        },
+        {
+          "id": "UC_mSfchV-fgpPy-vuwML8_A",
+          "title": "GustavocerbasiBr"
+        },
+        {
+          "id": "UCmhzmQBdXP9TeRtpQ-iWSPg",
+          "title": "NathFinanças"
+        },
+        {
+          "id": "UCM3vJxmuJJkk1r0yzFI9eZg",
+          "title": "investidorsardinha"
+        },
+        {
+          "id": "UCCE-jo1GvBJqyj1b287h7jA",
+          "title": "brunoperini"
+        },
+        {
+          "id": "UComAl6MjIyRzDhMuXXQExKw",
+          "title": "MoneyTimesBR"
+        },
+        {
+          "id": "UCbTAwyq6nWOLnFag-PR0XVw",
+          "title": "NerdsdeNegócios"
         }
       ]
     },
@@ -1872,155 +2041,6 @@
         {
           "id": "UC6PpjezXs_gRswQtqlo0bHA",
           "title": "tst"
-        }
-      ]
-    },
-    {
-      "name": "Finance",
-      "name_translated": "Finanças",
-      "active": true,
-      "data": [
-        {
-          "name": "Google Finance",
-          "action": "https://google.com/finance/quote/"
-        },
-        {
-          "name": "Mobills",
-          "action": "https://www.mobills.com.br/busca/"
-        },
-        {
-          "name": "Exame",
-          "action": "https://exame.com/busca/"
-        },
-        {
-          "name": "Valor",
-          "action": "https://valor.globo.com/busca/?q="
-        },
-        {
-          "name": "Bloomberg",
-          "action": "https://www.bloomberglinea.com.br/queryly-advanced-search/?query="
-        },
-        {
-          "name": "InfoMoney",
-          "action": "https://www.infomoney.com.br/busca/?q="
-        },
-        {
-          "name": "B3",
-          "action": "https://www.b3.com.br/pt_br/busca/?query="
-        },
-        {
-          "name": "Itaú",
-          "action": "https://www.itau.com.br/resultados-de-busca?q="
-        },
-        {
-          "name": "Nubank",
-          "action": "https://blog.nubank.com.br/busca/?search="
-        },
-        {
-          "name": "BB",
-          "action": "https://www.bb.com.br/site/busca?q="
-        },
-        {
-          "name": "Caixa",
-          "action": "https://www.caixa.gov.br/site/Paginas/Pesquisa.aspx?k="
-        },
-        {
-          "name": "Bradesco",
-          "action": "https://banco.bradesco/html/classic/resultado-busca/index-nova-busca.shtm?termsearched="
-        },
-        {
-          "name": "Santander",
-          "action": "https://www.santander.com.br/resultado-busca?q="
-        },
-        {
-          "name": "BTG Pactual",
-          "action": "https://content.btgpactual.com/resultado-da-busca?texto="
-        },
-        {
-          "name": "XP",
-          "action": "https://conteudos.xpi.com.br/pesquisar/?post_types=any&search="
-        },
-        {
-          "name": "Sicredi",
-          "action": "https://www.sicredi.com.br/site/blog/busca/?search="
-        },
-        {
-          "name": "Inter",
-          "action": "https://blog.inter.co/search?q="
-        },
-        {
-          "name": "C6",
-          "action": "https://www.c6bank.com.br/blog/resultado-de-busca?query="
-        },
-        {
-          "name": "Bmg",
-          "action": "https://bancobmg.com.br/busca/"
-        }
-      ],
-      "youtube_channels": [
-        {
-          "id": "UC_Y9Mf8o6gGAAw8eBrn3SOw",
-          "title": "BancoCentralBR"
-        },
-        {
-          "id": "UC_TapH8f4HLLAwPBaXy-Gag",
-          "title": "MinFazenda"
-        },
-        {
-          "id": "UCo0jMsIPccAXghE_FCWIdNg",
-          "title": "InvestNewsBR"
-        },
-        {
-          "id": "UC8mDF5mWNGE-Kpfcvnn0bUg",
-          "title": "MePoupe"
-        },
-        {
-          "id": "UCT4nDeU5pv1XIGySbSK-GgA",
-          "title": "primorico"
-        },
-        {
-          "id": "UCOjXqrOxAdXa04obIQREfCA",
-          "title": "PrimoPobre"
-        },
-        {
-          "id": "UCj3jEZuLmXOndQJFkPTp3Nw",
-          "title": "CanalElaInveste"
-        },
-        {
-          "id": "UCnBNoed6NaPlpL8blj1yy8Q",
-          "title": "ClubedoValor"
-        },
-        {
-          "id": "UC-hA65Fjv5X8h-J92zc_L8Q",
-          "title": "GêmeosInvestem"
-        },
-        {
-          "id": "UC3Z2XdKUu21_KtMsohZedOQ",
-          "title": "ACaraDaRiquezaOficial"
-        },
-        {
-          "id": "UC_mSfchV-fgpPy-vuwML8_A",
-          "title": "GustavocerbasiBr"
-        },
-        {
-          "id": "UCmhzmQBdXP9TeRtpQ-iWSPg",
-          "title": "NathFinanças"
-        },
-        {
-          "id": "UCM3vJxmuJJkk1r0yzFI9eZg",
-          "title": "investidorsardinha"
-        },
-        {
-          "id": "UCCE-jo1GvBJqyj1b287h7jA",
-          "title": "brunoperini"
-        },
-        {
-          "id": "UComAl6MjIyRzDhMuXXQExKw",
-          "title": "MoneyTimesBR"
-        },
-        {
-          "id": "UCbTAwyq6nWOLnFag-PR0XVw",
-          "title": "NerdsdeNegócios"
         }
       ]
     },

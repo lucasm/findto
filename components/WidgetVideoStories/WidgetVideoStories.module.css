@@ -47,7 +47,7 @@
 } */
 .slide button span {
   text-align: left;
-  font-size: var(--font-size-small);
+  font-size: var(--font-size);
   font-weight: 400;
   word-break: break-word;
   margin-top: 1rem;
