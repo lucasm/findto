@@ -44,11 +44,8 @@ export default async function Page({ params }: PageProps) {
   return (
     <AppLayout locale={params.locale}>
       <Search selectedCategory={selectedCategory} />
-
-      <WidgetTrends />
-
       <WidgetVideoStories selectedCategory={selectedCategory} />
-
+      <WidgetTrends />
       <Banner />
     </AppLayout>
   )
