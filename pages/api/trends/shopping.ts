@@ -4,7 +4,7 @@ import { ITrends } from '../../../interfaces/trends'
 
 export default async function endpoint(
   req: NextApiRequest,
-  res: NextApiResponse,
+  res: NextApiResponse
 ): Promise<void> {
   const { country } = req.query
 
@@ -156,11 +156,17 @@ export default async function endpoint(
     const trends: ITrends = {
       credits_title: 'Best Buy',
       credits_url: 'https://bestbuy.com/',
-      data: data.results.map((item: any) => ({
-        title: item?.names?.title,
-        url: item?.links?.web,
-        image: item?.images?.standard,
-      })),
+      data: data.results.map(
+        (item: {
+          names: { title: string }
+          links: { web: string }
+          images: { standard: string }
+        }) => ({
+          title: item?.names?.title,
+          url: item?.links?.web,
+          image: item?.images?.standard,
+        })
+      ),
     }
 
     res.status(200).send(trends)

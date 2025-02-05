@@ -13,7 +13,7 @@ const BlurBall = () => {
     borderRadius: '50%',
     height: '4rem',
     width: '4rem',
-    position: 'absolute' as 'absolute',
+    position: 'absolute' as const,
     zIndex: -1,
     backgroundImage: gradient,
     animation: 'float 3s ease-in-out infinite',
@@ -22,7 +22,7 @@ const BlurBall = () => {
   const ballStyleReverse = {
     ...ballStyle,
     backgroundImage: gradientReverse,
-    position: 'static' as 'static',
+    position: 'static' as const,
     filter: 'blur(38px)',
   }
 

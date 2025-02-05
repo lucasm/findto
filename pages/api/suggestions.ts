@@ -2,7 +2,10 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import axios from 'axios'
 
 // endpoint
-export default async function endpoint(req: NextApiRequest, res: NextApiResponse): Promise<void> {
+export default async function endpoint(
+  req: NextApiRequest,
+  res: NextApiResponse
+): Promise<void> {
   // endpoint parameters
   const {
     query: { locale },
@@ -11,8 +14,11 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
 
   if (locale && term) {
     // URL
-    let url =
-      'https://api.bing.com/osjson.aspx?market=' + locale + '&query=' + encodeURI(String(term))
+    const url =
+      'https://api.bing.com/osjson.aspx?market=' +
+      locale +
+      '&query=' +
+      encodeURI(String(term))
 
     // fetch data from URL
     await axios
@@ -25,6 +31,8 @@ export default async function endpoint(req: NextApiRequest, res: NextApiResponse
       })
   } else {
     // error
-    res.status(405).end('Missing parameters. LOCALE: ' + locale + ' TERM: ' + term)
+    res
+      .status(405)
+      .end('Missing parameters. LOCALE: ' + locale + ' TERM: ' + term)
   }
 }

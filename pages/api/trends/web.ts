@@ -26,10 +26,12 @@ export default async function endpoint(
 
   try {
     const data = await parser.parseURL(url)
-    const trends = data.items.map((item: any) => ({
-      title: item.title,
-      image: item.picture,
-    }))
+    const trends = data.items.map(
+      (item: { title?: string; picture: string }) => ({
+        title: item.title || 'No title',
+        image: item.picture,
+      })
+    )
 
     const responsePayload: ITrends = {
       credits_title: 'Google',

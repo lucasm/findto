@@ -18,12 +18,12 @@
   --color-findto-2: #c0a077;
   --background-linear-gradient: linear-gradient(
     90deg,
-    #c1c6ff -6%,
-    #97d6ff 16.67%,
-    #9dffe5 33.34%,
-    #fff9a7 50.01%,
-    #ff9e9e 66.68%,
-    #f4c0ff 115%
+    #b6bcff -6%,
+    #8dd1ff 16.67%,
+    #99ffe4 33.34%,
+    #fff89a 50.01%,
+    #ff9595 66.68%,
+    #f3b6ff 115%
   );
   --color-white-translucent: rgba(255, 255, 255, 0.2);
   --color-white-translucent-2: rgba(255, 255, 255, 0.5);

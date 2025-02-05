@@ -41,7 +41,7 @@ export default async function endpoint(
     }
 
     return res.status(200).json(responsePayload)
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Error fetching data:', error)
     res.status(500).json({
       message: 'Error fetching data.',

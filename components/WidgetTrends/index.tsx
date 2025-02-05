@@ -15,7 +15,7 @@ export default function SearchTrends() {
   const { category, putValue, country, locale, latitude, longitude } =
     useSearch()
   const [dataTrends, setDataTrends] = useState<ITrends | null>(null)
-  const [errorTrends, setErrorTrends] = useState<any>(null)
+  const [errorTrends, setErrorTrends] = useState<Error | null>(null)
 
   // Web
   function useApiWeb() {
@@ -26,7 +26,7 @@ export default function SearchTrends() {
       !!country && isValidCategory
         ? `/api/trends/web/?country=${country}`
         : null,
-      fetcher,
+      fetcher
     )
 
     return {
@@ -41,7 +41,7 @@ export default function SearchTrends() {
     const { data, error } = useSWR(
       () =>
         category === 'Social' ? `/api/trends/social/?country=${country}` : null,
-      fetcher,
+      fetcher
     )
 
     return {
@@ -58,7 +58,7 @@ export default function SearchTrends() {
         locale && category === 'Videos'
           ? `/api/trends/videos/?country=${locale}`
           : null,
-      fetcher,
+      fetcher
     )
 
     return {
@@ -72,7 +72,7 @@ export default function SearchTrends() {
   function useApiImages() {
     const { data, error } = useSWR(
       category === 'Image' && `/api/trends/images`,
-      fetcher,
+      fetcher
     )
 
     return {
@@ -86,7 +86,7 @@ export default function SearchTrends() {
   function useApiAudio() {
     const { data, error } = useSWR(
       country && category === 'Music' && `/api/trends/audio?country=${country}`,
-      fetcher,
+      fetcher
     )
 
     return {
@@ -102,7 +102,7 @@ export default function SearchTrends() {
       country && category === 'News'
         ? `/api/trends/news?country=${country}`
         : null,
-      fetcher,
+      fetcher
     )
 
     return {
@@ -118,7 +118,7 @@ export default function SearchTrends() {
       country && category === 'Finance'
         ? `/api/trends/finance?country=${country}`
         : null,
-      fetcher,
+      fetcher
     )
 
     return {
@@ -134,7 +134,7 @@ export default function SearchTrends() {
       category === 'Shopping'
         ? `/api/trends/shopping?country=${country}`
         : null,
-      fetcher,
+      fetcher
     )
 
     return {
@@ -153,7 +153,7 @@ export default function SearchTrends() {
       fetcher,
       {
         revalidateOnFocus: false,
-      },
+      }
     )
 
     return {
@@ -168,7 +168,7 @@ export default function SearchTrends() {
   function useApiCode() {
     const { data, error } = useSWR(
       category === 'Code' ? `/api/trends/code` : null,
-      fetcher,
+      fetcher
     )
 
     return {
@@ -184,7 +184,7 @@ export default function SearchTrends() {
       country && category === 'Academic'
         ? `/api/trends/academic?country=${country}`
         : null,
-      fetcher,
+      fetcher
     )
 
     return {
@@ -200,7 +200,7 @@ export default function SearchTrends() {
       country && category === 'Job'
         ? `/api/trends/jobs?country=${country}`
         : null,
-      fetcher,
+      fetcher
     )
 
     return {
@@ -216,7 +216,7 @@ export default function SearchTrends() {
       country && category === 'Legal'
         ? `/api/trends/legal?country=${country}`
         : null,
-      fetcher,
+      fetcher
     )
 
     return {
@@ -232,7 +232,7 @@ export default function SearchTrends() {
       country && category === 'Apps'
         ? `/api/trends/apps?country=${country}`
         : null,
-      fetcher,
+      fetcher
     )
 
     return {
@@ -246,7 +246,7 @@ export default function SearchTrends() {
   function useApiGames() {
     const { data, error } = useSWR(
       country && category === 'Games' ? `/api/trends/games` : null,
-      fetcher,
+      fetcher
     )
 
     return {
@@ -264,94 +264,96 @@ export default function SearchTrends() {
     switch (category) {
       case 'Home':
       case 'Web':
-      case 'AI': {
-        dataWeb && setDataTrends(dataWeb)
-        errorWeb && setErrorTrends(errorWeb)
-      }
+      case 'AI':
+        {
+          if (dataWeb) setDataTrends(dataWeb)
+          if (errorWeb) setErrorTrends(errorWeb)
+        }
+        break
       case 'Social':
         {
-          dataSocial && setDataTrends(dataSocial)
-          errorSocial && setErrorTrends(errorSocial)
+          if (dataSocial) setDataTrends(dataSocial)
+          if (errorSocial) setErrorTrends(errorSocial)
         }
         break
       case 'Videos':
         {
-          dataVideos && setDataTrends(dataVideos)
-          errorVideos && setErrorTrends(errorVideos)
+          if (dataVideos) setDataTrends(dataVideos)
+          if (errorVideos) setErrorTrends(errorVideos)
         }
         break
       case 'Image':
         {
-          dataImages && setDataTrends(dataImages)
-          errorImages && setErrorTrends(errorImages)
+          if (dataImages) setDataTrends(dataImages)
+          if (errorImages) setErrorTrends(errorImages)
         }
         break
       case 'Music':
         {
-          dataAudio && setDataTrends(dataAudio)
-          errorAudio && setErrorTrends(errorAudio)
+          if (dataAudio) setDataTrends(dataAudio)
+          if (errorAudio) setErrorTrends(errorAudio)
         }
         break
       case 'Shopping':
         {
-          dataShopping && setDataTrends(dataShopping)
-          errorShopping && setErrorTrends(errorShopping)
+          if (dataShopping) setDataTrends(dataShopping)
+          if (errorShopping) setErrorTrends(errorShopping)
         }
         break
       case 'Local':
         {
           if (latitude && longitude) {
-            dataLocal && setDataTrends(dataLocal)
-            errorLocal && setErrorTrends(errorLocal)
+            if (dataLocal) setDataTrends(dataLocal)
+            if (errorLocal) setErrorTrends(errorLocal)
           }
         }
         break
       case 'Academic':
         {
-          dataAcademic && setDataTrends(dataAcademic)
-          errorAcademic && setErrorTrends(errorAcademic)
+          if (dataAcademic) setDataTrends(dataAcademic)
+          if (errorAcademic) setErrorTrends(errorAcademic)
         }
         break
       case 'Code':
         {
-          dataCode && setDataTrends(dataCode)
-          errorCode && setErrorTrends(errorCode)
+          if (dataCode) setDataTrends(dataCode)
+          if (errorCode) setErrorTrends(errorCode)
         }
         break
       case 'Job':
         {
-          dataJobs && setDataTrends(dataJobs)
-          errorJobs && setErrorTrends(errorJobs)
+          if (dataJobs) setDataTrends(dataJobs)
+          if (errorJobs) setErrorTrends(errorJobs)
         }
         break
       case 'News':
         {
-          dataNews && setDataTrends(dataNews)
-          errorNews && setErrorTrends(errorNews)
+          if (dataNews) setDataTrends(dataNews)
+          if (errorNews) setErrorTrends(errorNews)
         }
         break
       case 'Finance':
         {
-          dataFinance && setDataTrends(dataFinance)
-          errorFinance && setErrorTrends(errorFinance)
+          if (dataFinance) setDataTrends(dataFinance)
+          if (errorFinance) setErrorTrends(errorFinance)
         }
         break
       case 'Legal':
         {
-          dataLegal && setDataTrends(dataLegal)
-          errorLegal && setErrorTrends(errorLegal)
+          if (dataLegal) setDataTrends(dataLegal)
+          if (errorLegal) setErrorTrends(errorLegal)
         }
         break
       case 'Apps':
         {
-          dataApps && setDataTrends(dataApps)
-          errorApps && setErrorTrends(errorApps)
+          if (dataApps) setDataTrends(dataApps)
+          if (errorApps) setErrorTrends(errorApps)
         }
         break
       case 'Games':
         {
-          dataGames && setDataTrends(dataGames)
-          errorGames && setErrorTrends(errorGames)
+          if (dataGames) setDataTrends(dataGames)
+          if (errorGames) setErrorTrends(errorGames)
         }
         break
       default: {

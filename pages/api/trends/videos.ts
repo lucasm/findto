@@ -21,10 +21,12 @@ export default async function endpoint(
   try {
     const { data } = await axios.get(url)
 
-    const trends = data.results.map((item: any) => ({
-      title: item.title || item.name,
-      image: `https://image.tmdb.org/t/p/w500/${item.poster_path}`,
-    }))
+    const trends = data.results.map(
+      (item: { title?: string; name?: string; poster_path: string }) => ({
+        title: item.title || item.name,
+        image: `https://image.tmdb.org/t/p/w500/${item.poster_path}`,
+      })
+    )
 
     const responsePayload: ITrends = {
       credits_title: 'TMDB',

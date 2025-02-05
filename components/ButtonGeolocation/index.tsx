@@ -41,7 +41,9 @@ export default function ButtonGeolocation() {
   }
 
   useEffect(() => {
-    permissionLocation && handleClick()
+    if (permissionLocation) {
+      handleClick()
+    }
   }, [permissionLocation])
 
   return (

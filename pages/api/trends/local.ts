@@ -4,7 +4,7 @@ import { ITrends } from '../../../interfaces/trends'
 
 export default async function endpoint(
   req: NextApiRequest,
-  res: NextApiResponse,
+  res: NextApiResponse
 ): Promise<void> {
   const {
     query: { latitude, longitude, language },
@@ -25,11 +25,13 @@ export default async function endpoint(
   try {
     const { data } = await axios.get(url)
 
-    const trends = data.results.map((item: any) => ({
-      title: item.name,
-      url: `https://www.google.com/maps/place/?q=place_id:${item.place_id}`,
-      image: item.icon,
-    }))
+    const trends = data.results.map(
+      (item: { name: string; place_id: string; icon: string }) => ({
+        title: item.name,
+        url: `https://www.google.com/maps/place/?q=place_id:${item.place_id}`,
+        image: item.icon,
+      })
+    )
 
     const responsePayload: ITrends = {
       credits_title: 'Google Maps',

@@ -19,10 +19,12 @@ export default async function endpoint(
   try {
     const { data } = await axios.get(url)
 
-    const trends = data.feed.results.map((item: any) => ({
-      title: `${item.artistName} - ${item.name}`,
-      image: item.artworkUrl100.replace('100x100bb.jpg', '500x500bb.jpg'),
-    }))
+    const trends = data.feed.results.map(
+      (item: { artistName: string; name: string; artworkUrl100: string }) => ({
+        title: `${item.artistName} - ${item.name}`,
+        image: item.artworkUrl100.replace('100x100bb.jpg', '500x500bb.jpg'),
+      })
+    )
 
     const responsePayload: ITrends = {
       credits_title: 'Apple Music',

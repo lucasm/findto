@@ -21,7 +21,7 @@ export default async function endpoint(
   try {
     const { data } = await axios.get(url)
 
-    const trends = data.results.slice(0, 22).map((item: any) => ({
+    const trends = data.results.slice(0, 22).map((item: { label: string }) => ({
       title: item.label.replace('Vagas em ', ''),
     }))
 

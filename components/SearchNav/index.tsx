@@ -28,7 +28,7 @@ import { ISearchCategory } from '@/interfaces/search'
 import { useLocale } from 'next-intl'
 
 interface Props {
-  data: any
+  data: { categories: ISearchCategory[] }
   selectedCategory?: ISearchCategory
   variant?: 'vertical' | 'cards'
 }
@@ -102,7 +102,7 @@ const SearchNav = ({ data, selectedCategory, variant }: Props) => {
                   {category.name_translated || category.name}
                 </Link>
               </li>
-            ),
+            )
         )}
       </ul>
     </div>

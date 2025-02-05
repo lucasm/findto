@@ -4,18 +4,27 @@ import { ITrends } from '../../../interfaces/trends'
 
 export default async function endpoint(
   _req: NextApiRequest,
-  res: NextApiResponse,
+  res: NextApiResponse
 ): Promise<void> {
   const url = 'https://api.gitterapp.com'
 
   try {
     const { data } = await axios.get(url)
 
-    const trends = data.slice(0, 22).map((item: any) => ({
-      title: `${item.author}/${item.name}`,
-      url: item.url,
-      image: item.avatar,
-    }))
+    const trends = data
+      .slice(0, 22)
+      .map(
+        (item: {
+          author: string
+          name: string
+          url: string
+          avatar: string
+        }) => ({
+          title: `${item.author}/${item.name}`,
+          url: item.url,
+          image: item.avatar,
+        })
+      )
 
     const responsePayload: ITrends = {
       credits_title: 'GitHub',

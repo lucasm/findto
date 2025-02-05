@@ -11,7 +11,7 @@ export default async function endpoint(
   } = req
 
   if (country) {
-    let url =
+    const url =
       'https://rss.applemarketingtools.com/api/v2/' +
       String(country).toLowerCase() +
       '/apps/top-free/39/apps.json'
@@ -19,14 +19,16 @@ export default async function endpoint(
     await axios
       .get(url)
       .then(({ data }) => {
-        var a: { title: any; image: any }[] = []
+        const a: { title: string; image: string }[] = []
 
-        data.feed.results.forEach((item: { name: any; artworkUrl100: any }) => {
-          a.push({
-            title: item.name,
-            image: item.artworkUrl100,
-          })
-        })
+        data.feed.results.forEach(
+          (item: { name: string; artworkUrl100: string }) => {
+            a.push({
+              title: item.name,
+              image: item.artworkUrl100,
+            })
+          }
+        )
 
         const x: ITrends = {
           credits_title: 'App Store',

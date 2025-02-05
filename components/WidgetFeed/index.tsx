@@ -35,7 +35,9 @@ export default function WidgetFeed({ selectedCategory }: Props) {
     closeVideo()
 
     if (categoryVideoChannels) {
-      const ids = categoryVideoChannels.map((item: any) => item.id).join(',')
+      const ids = categoryVideoChannels
+        .map((item: { id: string }) => item.id)
+        .join(',')
       setChannelsIds(ids)
       setShouldFetch(true)
     }
@@ -51,7 +53,7 @@ export default function WidgetFeed({ selectedCategory }: Props) {
       ? `/api/stories/?channels=${encodeURIComponent(channelsIds)}`
       : null,
     fetcher,
-    { revalidateOnFocus: false }, // evita revalidações desnecessárias
+    { revalidateOnFocus: false } // evita revalidações desnecessárias
   )
 
   const scrollToVideo = () => {
