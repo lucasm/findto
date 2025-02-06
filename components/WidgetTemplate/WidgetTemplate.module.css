@@ -41,13 +41,13 @@
 
 @media screen and (max-width: 768px) {
   .container {
-    padding: 0 2rem 3rem;
+    padding: 2rem 2rem 3rem;
   }
 }
 
 @media screen and (max-width: 576px) {
   .container {
-    padding: 0 1rem 3rem;
+    padding: 1rem 1rem 3rem;
   }
 
   .title h3 {

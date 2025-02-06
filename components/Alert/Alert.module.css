@@ -28,6 +28,6 @@
     gap: 1rem;
     font-size: var(--font-size-small);
     max-width: calc(var(--max-size-container));
-    margin: 0 1rem;
+    margin: 1rem;
   }
 }
