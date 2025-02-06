@@ -1,5 +1,5 @@
 .container {
-  padding: 0 2rem 2rem;
+  padding: 2rem;
   overflow: hidden;
   margin: 0 auto;
   max-width: var(--max-size-container);
@@ -72,7 +72,6 @@
 
 .credits p {
   margin-top: 1rem;
-  padding-right: 1rem;
   font-size: var(--font-size-small);
   width: 100%;
   text-align: right;

@@ -31,7 +31,7 @@
     "learnMore": "Meet the Findto",
     "viewNearbyPlaces": "View nearby places",
     "openApp": "Open the app",
-    "placeholder": "Search",
+    "placeholder": "Search on",
     "search": "Search",
     "clear": "Clear",
     "powered": "Powered by",
@@ -41,7 +41,7 @@
     "contribute": "Contribute",
     "trends": "Trending",
     "stories": "Stories",
-    "categories": "Search categories",
+    "categories": "Categories",
     "feedback": {
       "title": "Send feedback",
       "url": "https://forms.gle/US69JvUT1qxYkiF58"

@@ -42,11 +42,28 @@ export default async function Page({ params }: PageProps) {
       category?.name.toLowerCase() === params.category.toLowerCase()
   )
 
+  const renderWidgetsInOrder = () => {
+    if (selectedCategory?.name?.toLowerCase() === 'news') {
+      return (
+        <>
+          <WidgetVideoStories selectedCategory={selectedCategory} />
+          <WidgetTrends />
+        </>
+      )
+    }
+
+    return (
+      <>
+        <WidgetTrends />
+        <WidgetVideoStories selectedCategory={selectedCategory} />
+      </>
+    )
+  }
+
   return (
     <AppLayout locale={params.locale}>
       <Search selectedCategory={selectedCategory} />
-      <WidgetTrends />
-      <WidgetVideoStories selectedCategory={selectedCategory} />
+      {renderWidgetsInOrder()}
       <WidgetCategories />
       <Banner />
     </AppLayout>

@@ -54,7 +54,7 @@
 }
 
 html[data-theme='dark'] {
-  /* --background-linear-gradient: var(--color-dark); */
+  /* --background-linear-gradient: var(--color-findto-2); */
   --color-theme-translucent: var(--color-dark);
   --color-bg-white: var(--color-dark-2);
   --color-text-black: #fff;
@@ -72,7 +72,7 @@ html[data-theme='dark'] {
 html {
   scroll-behavior: smooth;
   outline-color: var(--color-black);
-  background: white;
+  background: var(--color-theme-translucent);
   transition: var(--transition-hover);
   background-size: 110% 200%;
   animation: gradientAnimation 10s ease infinite;

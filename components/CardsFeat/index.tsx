@@ -95,7 +95,7 @@ export default function CardsFeat() {
           </li>
         ))}
       </ul>
-      <p>* Some features are in development.</p>
+      <p>* Features in development.</p>
     </div>
   )
 }

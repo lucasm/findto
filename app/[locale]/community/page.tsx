@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl'
 
 const title = 'Community'
 const description =
-  'Contribute to the Findto project and help us make a better internet!'
+  'Support Findto project and join the community for a better internet.'
 
 export const metadata = {
   title: title,
@@ -29,14 +29,17 @@ export default function CommunityPage() {
       <section>
         <div className={Style.container}>
           <article>
-            <h2>Findto App</h2>
-            <p>Welcome!</p>
-
-            <p>Findto is an assistant for decentralized search.</p>
+            <h2>Welcome!</h2>
 
             <p>
-              Our mission is to empower people to engage with the internet in
-              healthy ways. On the Web, AI, Metaverse, and more digital spaces.
+              Findto is an assistant for decentralized search, available on
+              Findto.app.
+            </p>
+
+            <p>
+              Our mission is to empower people to search on the Web, AI,
+              Metaverse - and more digital spaces on the internet - in healthy
+              ways.
             </p>
 
             <p>
@@ -71,9 +74,8 @@ export default function CommunityPage() {
             </ul>
 
             <p>
-              If you share this vision, feel free to contribute with us. We are
-              a developing and research community, and we are looking for
-              partners to join us.
+              If you share this vision, feel free to contribute with Findto
+              project. We are looking for partners to join us.
             </p>
             <br></br>
             <br></br>
@@ -81,39 +83,51 @@ export default function CommunityPage() {
             <h2>Code of Conduct</h2>
 
             <p>
-              Findto is made by individuals like you. Join us and get involved!
-              Note that all members of Findto community agree to be kind to each
-              other, following our{' '}
+              Findto is made by individuals, like you. Join us and get involved!
+              Note that all members of the Findto community agree to be kind to
+              each other, following our{' '}
               <a
                 href="https://www.contributor-covenant.org/version/2/1/code_of_conduct/"
                 target="_blank"
                 rel="noreferrer">
                 Code of Conduct
               </a>{' '}
-              for common good.
-            </p>
-            {/* <h3>* Supporting</h3>
-            <p>
-              You can choose your favorite platform to support Findto and enjoy exclusive benefits:
+              for common good. Respect and kindness is the key =)
             </p>
 
+            <br></br>
+            <br></br>
+
+            <h2>Supporting</h2>
+
+            <p>You can choose your favorite platform to support Findto:</p>
+
             <p>
-              <a href="https://patreon.com/findto" target="_blank" rel="noreferrer">
-                Support us via Patreon
+              <a
+                href="https://patreon.com/findto"
+                target="_blank"
+                rel="noreferrer">
+                Patreon
               </a>
             </p>
 
             <p>
-              <a href="https://ko-fi.com/findto" target="_blank" rel="noreferrer">
-                Support us via Ko-Fi
+              <a
+                href="https://ko-fi.com/findto"
+                target="_blank"
+                rel="noreferrer">
+                Ko-Fi (one-time donation)
               </a>
             </p>
 
             <p>
-              <a href="https://github.com/sponsors/lucasm" target="_blank" rel="noreferrer">
-                Support us via GitHub Sponsors
+              <a
+                href="https://github.com/sponsors/lucasm"
+                target="_blank"
+                rel="noreferrer">
+                GitHub Sponsors
               </a>
-            </p> */}
+            </p>
           </article>
         </div>
       </section>

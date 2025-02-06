@@ -47,8 +47,8 @@
 }
 
 .container ul li a svg {
-  width: 0.8rem;
-  height: 0.8rem;
+  width: 0.875rem;
+  height: 0.875rem;
   color: var(--color-text-black);
   transition: var(--transition);
 }

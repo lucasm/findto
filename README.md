@@ -7,12 +7,12 @@
 <h1 align="center">Findto</h1>
 
 <p align="center">
-<a href="https://github.com/lucasm/findto/issues" target="_blank"><img alt="Issues" src="https://img.shields.io/github/issues/lucasm/findto?color=ff9393&logo=github&logoColor=white"></a>
+<a href="https://github.com/lucasm/findto/issues" target="_blank"><img alt="Issues" src="https://img.shields.io/github/issues/lucasm/findto?color=ffff8b&logo=github&logoColor=white"></a>
 <a href="https://patreon.com/findto" target="_blank"><img alt="Support" src="https://img.shields.io/badge/support-$5-ffff8b?logo=patreon&logoColor=white"></a>
 <a href="https://github.com/lucasm/findto/wiki" target="_blank"><img alt="Translations" src="https://img.shields.io/badge/translations-3-82cdff?logo=json&logoColor=white"></a>
+<a href="https://discord.gg/gEDm5MU6pq" target="_blank"><img alt="Community" src="https://img.shields.io/discord/866829154032812073?color=82cdff&label=community&logo=discord&logoColor=white"></a>
 <a href="https://github.com/lucasm/findto/releases" target="_blank"><img alt="GitHub release" src="https://img.shields.io/github/v/release/lucasm/findto?label=version&color=71f8ce&logo=github&logoColor=white"></a>
 <a href="https://github.com/lucasm/findto" target="_blank"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/lucasm/findto?label=size&color=71f8ce&logo=github&logoColor=white"></a>
-<a href="https://discord.gg/gEDm5MU6pq" target="_blank"><img alt="Community" src="https://img.shields.io/discord/866829154032812073?color=d0abff&label=community&logo=discord&logoColor=white"></a>
 </p>
 
 <p align="center">
@@ -20,7 +20,7 @@
  <br>
 </p>
 
-## 👋 Welcome!
+## 🔎 Decentralized search
 
 Findto is an open source assistant for decentralized search.
 
@@ -42,7 +42,7 @@ A new search experience, where the people choices matter. For a healthier intern
 
 ## 🟢 Features
 
-| Feature                  | Description                                                                  | Status |
+| Name                     | Description                                                                  | Status |
 | ------------------------ | ---------------------------------------------------------------------------- | ------ |
 | **Decentralized Search** | Search on diverse sources at once                                            | ✅     |
 | **Trends**               | Explore real-time trends nearby you                                          | ✅     |
@@ -55,11 +55,11 @@ A new search experience, where the people choices matter. For a healthier intern
 | **Internationalization** | Choose your country for local sources, or international                      | ✅     |
 | **Accessibility**        | Balanced contrast, screen reader support, keyboard navigation and dark theme | ✅     |
 
-## 🔵 Criteria
+### Criteria
 
-All the search sources, external contents and services available on Findto are selected based on the criteria of: 1) Service popularity; 2) Open access; 3) Accessibility, privacy and copyright policies;
+We use the following criteria to select the search sources and external contents available on Findto: 1) Service popularity; 2) Service open access and accessibility; 3) Service privacy and copyright policies;
 
-## 🟡 Donations
+## 💛 Donations
 
 If you like Findto, ✨ make a donation ✨ and get benefits. Your support helps to keep the project running.
 
@@ -67,27 +67,25 @@ If you like Findto, ✨ make a donation ✨ and get benefits. Your support helps
 - [Ko-Fi (one-time donation)](https://ko-fi.com/findto)
 - [GitHub Sponsors](https://github.com/sponsors/lucasm)
 
-## 🟠 Supporters
+## Supporters
 
-[Donate and get your name or banner here]
+[Donate and get your name / banner here]
 
-## 🔴 Contributions
+## Contributions
 
-We welcome contributions. You can help by:
+Contributions are welcome! See the [Projects](https://github.com/lucasm/findto/projects) board to know the current tasks on our roadmap.
 
-- Bugfixes: View the opened [Issues](https://github.com/lucasm/findto/issues) before send a pull request (PR).
+- Bugfixes: View opened [Issues](https://github.com/lucasm/findto/issues) before send a Pull Request.
 
-- Features: New idea? Open a [Issue](https://github.com/lucasm/findto/issues) or [Discussion](https://github.com/lucasm/findto/discussions).
+- Feature / New idea? Open a [Issue](https://github.com/lucasm/findto/issues) or [Discussion](https://github.com/lucasm/findto/discussions).
 
-- Translations: Translate Findto to your language! Check [Docs](https://github.com/lucasm/findto/wiki).
+- Translations: Translate Findto to your language! Check a how to guide on [Docs](https://github.com/lucasm/findto/wiki).
 
-- Backlog: View the [Projects](https://github.com/lucasm/findto/projects) board.
-
-## 🟣 Legal
+## 👍 Legal
 
 Findto is built with privacy and don't store searches.
 
-Findto displays content from external services without review and materials protected by intellectual property.
+Findto also displays content from external services without review and materials protected by intellectual property. Please, respect the terms of use of each source.
 
 [Privacy Policy](https://findto.app/privacy) | [Terms of Service](https://findto.app/terms) | [Contact](mailto:opensource@findto.app)
 

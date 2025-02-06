@@ -25,7 +25,6 @@
 
 .credits p {
   margin-top: 1.5rem;
-  padding-right: 1rem;
   font-size: var(--font-size-small);
   width: 100%;
   text-align: right;
@@ -42,16 +41,16 @@
 
 @media screen and (max-width: 768px) {
   .container {
+    padding: 0 2rem 3rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
     padding: 0 1rem 3rem;
   }
 
   .title h3 {
     font-size: var(--font-size);
   }
-}
-
-@media screen and (max-width: 576px) {
-}
-
-@media screen and (max-width: 400px) {
 }

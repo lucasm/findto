@@ -108,6 +108,11 @@ const AppHeader = ({ locale }: Props) => {
         </button>
       </div>
 
+      {/* <div>
+         <WidgetCarbon />
+        <WidgetPrivacy />
+      </div> */}
+
       {showMenu && (
         <nav className={`${Style.nav} ${showMenu ? Style.openNav : ''}`}>
           <SearchNav data={data} variant="vertical" />
@@ -131,8 +136,8 @@ const AppHeader = ({ locale }: Props) => {
                 {theme === 'dark'
                   ? 'Dark'
                   : theme === 'light'
-                  ? 'Light'
-                  : 'System'}
+                    ? 'Light'
+                    : 'System'}
               </button>
             </div>
 

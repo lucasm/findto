@@ -13,7 +13,7 @@
     },
     "componentBanner": {
       "title": "Busca descentralizada",
-      "description": "Use o Findto para buscar em diversas fontes da Web e IA."
+      "description": "Com o Findto você busca em diversas fontes da Web e IA."
     },
     "componentVoiceSearch": {
       "voice": "Voz",
@@ -39,13 +39,13 @@
       "Energia suja",
       "ainda não foi analisado"
     ],
-    "slogan": "Busca descentralizada",
-    "copyright": "Projeto de código aberto criado por",
+    "slogan": "Busca descentralizada na Web e IA",
+    "copyright": "Projeto criado por",
     "about": "Sobre",
     "community": "Comunidade",
     "privacy": "Política de Privacidade",
     "terms": "Termos de Serviço",
-    "donate": "Quero apoiar",
+    "donate": "Fazer doação",
     "accept": "Aceitar",
     "learnMore": "Conheça o Findto",
     "viewNearbyPlaces": "Ver locais próximos",
@@ -797,8 +797,8 @@
           "action": "https://lista.mercadolivre.com.br/"
         },
         {
-          "name": "Shopee",
-          "action": "https://shopee.com.br/search?keyword="
+          "name": "Magalu",
+          "action": "https://www.magazineluiza.com.br/busca/"
         },
         {
           "name": "OLX",
@@ -813,10 +813,6 @@
           "action": "https://www.rappi.com.br/search?query="
         },
         {
-          "name": "Magalu",
-          "action": "https://www.magazineluiza.com.br/busca/"
-        },
-        {
           "name": "Americanas",
           "action": "https://www.americanas.com.br/busca/"
         },
@@ -829,7 +825,10 @@
           "name": "Carrefour",
           "action": "https://www.carrefour.com.br/busca/"
         },
-
+        {
+          "name": "Shopee",
+          "action": "https://shopee.com.br/search?keyword="
+        },
         {
           "name": "AliExpress",
           "action": "https://www.aliexpress.com/wholesale?SearchText="
@@ -1254,7 +1253,7 @@
         },
         {
           "name": "Estadão",
-          "action": "https://busca.estadao.com.br/?q="
+          "action": "https://www.estadao.com.br/busca/?token=%257B%2522query%2522%253A%2522"
         },
         {
           "name": "Poder360",
@@ -1461,6 +1460,10 @@
         {
           "name": "Safra",
           "action": "https://www.safra.com.br/resultado-de-busca.htm?query="
+        },
+        {
+          "name": "Toro",
+          "action": "https://blog.toroinvestimentos.com.br/busca/="
         },
         {
           "name": "Rico",

@@ -41,7 +41,7 @@
     "contribute": "贡献",
     "trends": "热门内容",
     "stories": "最新动态",
-    "categories": "搜索类别",
+    "categories": "类别",
     "feedback": {
       "title": "发送反馈",
       "url": "https://forms.gle/US69JvUT1qxYkiF58"
@@ -144,7 +144,7 @@
       "active": true,
       "data": [
         {
-          "name": "豆包",
+          "name": "Doubao",
           "action": "https://www.doubao.com/?q="
         },
         {

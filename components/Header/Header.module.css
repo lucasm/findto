@@ -44,7 +44,7 @@
 }
 .header button:hover figure,
 .header button:focus figure {
-  background: var(--color-black-translucent);
+  background: var(--color-black-translucent-2);
 }
 
 .openMenu button {

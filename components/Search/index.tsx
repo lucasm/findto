@@ -132,8 +132,6 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
       setCategory(selectedCategory?.name)
       setTitleTrends(selectedCategory?.name_trends)
 
-      window.localStorage.setItem('category', selectedCategory?.name)
-
       const sourceId = normalizeId(selectedCategory?.data[0]?.name)
 
       const storedSource = window.localStorage.getItem('search')
@@ -165,11 +163,6 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
   return (
     <section className={Style.container}>
       <div className={Style.searchContainer2}>
-        {/* <div>
-          <WidgetCarbon />
-          <WidgetPrivacy />
-        </div> */}
-
         <SearchTitle>
           <div>
             {selectedCategory?.name == 'Home' ? (

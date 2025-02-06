@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl'
 import CardsFeat from '@/components/CardsFeat'
 import SvgIllustrations from '@/components/SvgIllustrations'
 import Button from '@/components/Button'
+import SvgLogo from '@/components/SvgLogo'
 
 export const metadata = {
   title: 'About',
@@ -19,7 +20,7 @@ export default function PageAbout() {
       <section>
         <div className={Style.container}>
           <figure className={Style.icon}></figure>
-          <h1>Decentralized Search for Everyone</h1>
+          <h1>Decentralized search, for everyone.</h1>
           <p>Findto is an open source assistant for decentralized search.</p>
         </div>
       </section>
@@ -29,11 +30,10 @@ export default function PageAbout() {
           <div className={Style.cardDuos}>
             <div>
               <article>
-                <h2>Get control of AI and Web search</h2>
+                <h2>Get control of AI and Web.</h2>
                 <p>
                   Findto puts people in control of algorithms. Switch between
-                  diverse sources, like Web search engines, and generative AI.
-                  Find anything.
+                  diverse sources, like Web or AI. Find anything.
                 </p>
               </article>
 
@@ -44,11 +44,11 @@ export default function PageAbout() {
 
             <div>
               <article>
-                <h2>Choice less carbon and more privacy</h2>
+                <h2>Less carbon and more privacy.</h2>
                 <p>
                   Findto is fighting for a better internet. We are working to
-                  show the estimated carbon footprint and privacy level of every
-                  search source. Better choices are made with transparency.
+                  show estimated carbon footprint and privacy level of every
+                  search source. Better choices with transparency!
                 </p>
               </article>
 
@@ -59,11 +59,11 @@ export default function PageAbout() {
 
             <div>
               <article>
-                <h2>Made by people, for people</h2>
+                <h2>Made by people.</h2>
                 <p>
-                  Findto is an open source project to encourage an accessible
-                  and universal search experience. Where people&apos;s choices
-                  matter. Where diversity is key. Search decentralized.
+                  Findto is an open source project for an accessible, universal
+                  search experience. Where diversity is key. Where people&apos;s
+                  choices matter.
                 </p>
               </article>
 
@@ -84,10 +84,13 @@ export default function PageAbout() {
       <section>
         <div className={Style.container}>
           <div className={Style.actionContainer}>
-            <h2>A renewed search experience</h2>
-            <p>Decentralized search. Built for people.</p>
+            <h2>A powerful search experience.</h2>
+            <p>More than a search engine. Decentralized search.</p>
             <Button url="/" color="black">
-              {t('openApp')}
+              <>
+                <SvgLogo />
+                {t('openApp')}
+              </>
             </Button>
           </div>
         </div>
