@@ -27,17 +27,9 @@ export default function AppFooter() {
           <li>
             <p>
               <Link href="/">Findto</Link> © {year} {t('slogan')}
-              {'. '} {t('copyright')}
-              <a href="https://lucasm.dev" target="_blank" rel="noopener">
-                {' '}
-                Lucas Menezes
-              </a>
-              {'. '}
             </p>
           </li>
-        </ul>
 
-        <ul>
           <li>
             <Link href="/about">{t('about')}</Link>
           </li>
@@ -55,10 +47,19 @@ export default function AppFooter() {
             </Link>
           </li>
           <li>
+            <Link href="/privacy">{t('privacy')}</Link>
+          </li>
+          <li>
             <Link href="/terms">{t('terms')}</Link>
           </li>
           <li>
-            <Link href="/privacy">{t('privacy')}</Link>
+            <p>
+              {t('copyright')}
+              <a href="https://lucasm.dev" target="_blank" rel="noopener">
+                {' '}
+                Lucas Menezes
+              </a>
+            </p>
           </li>
         </ul>
 

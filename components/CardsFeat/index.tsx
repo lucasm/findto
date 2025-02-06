@@ -77,7 +77,7 @@ const features: Feature[] = [
   {
     icon: <IconOpenSource />,
     title: 'Open Source',
-    description: ' Findto is an open source project.',
+    description: 'You can view and contribute to the source code.',
   },
 ]
 

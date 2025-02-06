@@ -66,7 +66,7 @@ export default function CardsLink() {
       active: false,
     },
     {
-      title: 'Support on Patreon',
+      title: 'Patreon',
       url: 'https://patreon.com/findto',
       icon: <></>,
       active: false,
@@ -82,10 +82,8 @@ export default function CardsLink() {
             key={index}
             href={item.url}
             target={item.internal ? '_self' : '_blank'}>
-            <div>
-              <figure>{item.icon}</figure>
-              <h3>{item.title}</h3>
-            </div>
+            <figure>{item.icon}</figure>
+            <p>{item.title}</p>
           </Link>
         ))}
     </div>

@@ -4,14 +4,13 @@
   grid-gap: 1.5rem;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 .cards a {
   position: relative;
   margin: 0;
-  padding: 1rem;
-  max-width: 10rem;
-  width: 100%;
+  padding: 1rem 2rem;
+  width: auto;
   color: inherit;
   text-decoration: none;
   color: var(--color-black);
@@ -19,10 +18,12 @@
   transition: ease 0.25s;
   overflow: hidden;
   display: flex;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
+  vertical-align: middle;
   background-color: var(--color-white-translucent);
-  border-radius: var(--radius);
+  border-radius: var(--radius-full);
   box-shadow: var(--shadow-2);
 }
 .cards a:hover,
@@ -32,27 +33,13 @@
 }
 
 .cards p {
-  text-align: center;
-  font-weight: normal;
-}
-.cards h3 {
-  margin: 0;
+  margin-bottom: 0 !important;
   padding: 0;
-  text-align: center;
   font-size: 1rem;
 }
-.cards figure {
-  display: flex;
-  width: 5rem;
-  height: 5rem;
-  align-items: center;
-  justify-content: center;
-  border-radius: var(--radius);
-  margin: 0 auto;
-}
 .cards svg {
-  width: 2rem;
-  height: 2rem;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 @media screen and (max-width: 576px) {
@@ -60,7 +47,7 @@
     grid-gap: 1rem;
   }
   .cards a {
-    max-width: 8rem;
+    max-width: 100%;
   }
   .cards svg {
     width: 1.5rem;

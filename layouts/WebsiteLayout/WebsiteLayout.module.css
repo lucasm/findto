@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
-  gap: 1.5rem;
+  gap: 1rem;
   max-width: var(--max-size-container);
   color: var(--color-text-black);
 }
@@ -23,8 +23,8 @@
   align-items: center;
 }
 .logo svg {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.125rem;
+  height: 1.125rem;
 }
 
 /* Nav */
@@ -44,14 +44,16 @@
 }
 .nav ul li a {
   margin: 0;
-  padding: 1rem;
+  padding: 0 0.75rem 0 0;
   font-weight: 400;
+  font-size: var(--font-size-small);
 }
 .nav ul li:last-child a {
   color: var(--color-bg-white);
   background: var(--color-text-black);
   border-radius: var(--radius-full);
-  margin: 0.5rem 0 0.5rem 1rem;
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 1rem;
 }
 
 .container {
@@ -152,7 +154,7 @@
 
 @media screen and (min-width: 640px) {
   .container {
-    padding: 6rem 1.5rem;
+    padding: 6rem 2rem;
   }
 
   .cardDuos div {
@@ -165,6 +167,11 @@
   }
   .cardDuos div:nth-child(2) figure {
     grid-column: 2;
+  }
+
+  .nav ul li a {
+    padding: 0 2rem 0 0;
+    font-size: var(--font-size);
   }
 }
 

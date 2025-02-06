@@ -13,15 +13,15 @@
     },
     "componentBanner": {
       "title": "Decentralized search",
-      "description": "With Findto, you can explore the best of internet."
+      "description": "Explore the best of AI, Web and more with Findto search assistant."
     },
     "componentVoiceSearch": {
       "voice": "Voice",
       "speak": "Speak",
       "allow": "Waiting..."
     },
-    "slogan": "Decentralized search on Web, AI and Metaverse",
-    "copyright": "Open source project created by",
+    "slogan": "Decentralized search",
+    "copyright": "Made in Brazil by",
     "about": "About",
     "community": "Community",
     "privacy": "Privacy Policy",
@@ -30,7 +30,7 @@
     "accept": "Accept",
     "learnMore": "Meet the Findto",
     "viewNearbyPlaces": "View nearby places",
-    "openApp": "Open the app",
+    "openApp": "Open app",
     "placeholder": "Search on",
     "search": "Search",
     "clear": "Clear",

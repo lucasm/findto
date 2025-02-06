@@ -31,12 +31,7 @@ export default function WebsiteLayout({
                 <Link href="/community">{t('community')}</Link>
               </li>
               {/* <li>
-                <Link href="/pro">Pro</Link>
-              </li> */}
-              {/* <li>
-                <a href="https://ko-fi.com/findto" target="_blank">
-                  {data?.t?.donate ?? 'Donate'}
-                </a>
+                <Link href="/pricing">Pricing</Link>
               </li> */}
               <li>
                 <Link href="/">{t('openApp')} </Link>

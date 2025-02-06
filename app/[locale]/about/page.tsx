@@ -20,7 +20,7 @@ export default function PageAbout() {
       <section>
         <div className={Style.container}>
           <figure className={Style.icon}></figure>
-          <h1>Decentralized search, for everyone.</h1>
+          <h1>Decentralized search for everyone.</h1>
           <p>Findto is an open source assistant for decentralized search.</p>
         </div>
       </section>
@@ -30,7 +30,7 @@ export default function PageAbout() {
           <div className={Style.cardDuos}>
             <div>
               <article>
-                <h2>Get control of AI and Web.</h2>
+                <h2>Get control of AI and Web search.</h2>
                 <p>
                   Findto puts people in control of algorithms. Switch between
                   diverse sources, like Web or AI. Find anything.

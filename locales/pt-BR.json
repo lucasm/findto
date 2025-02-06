@@ -12,8 +12,8 @@
       "whatDoYouWant": "O que você procura?"
     },
     "componentBanner": {
-      "title": "Busca descentralizada",
-      "description": "Com o Findto você busca em diversas fontes da Web e IA."
+      "title": "Busca descentralizada na Web e IA",
+      "description": "Com o Findto você busca em diversas fontes."
     },
     "componentVoiceSearch": {
       "voice": "Voz",
@@ -39,8 +39,8 @@
       "Energia suja",
       "ainda não foi analisado"
     ],
-    "slogan": "Busca descentralizada na Web e IA",
-    "copyright": "Projeto criado por",
+    "slogan": "Busca descentralizada",
+    "copyright": "Criado no Brasil por",
     "about": "Sobre",
     "community": "Comunidade",
     "privacy": "Política de Privacidade",
