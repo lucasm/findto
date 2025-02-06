@@ -231,6 +231,10 @@
           "action": "https://coral.cohere.com/?q="
         },
         {
+          "name": "Falcon",
+          "action": "https://chat.falconllm.tii.ae/?q="
+        },
+        {
           "name": "Maritaca",
           "action": "https://chat.maritaca.ai/?q="
         }

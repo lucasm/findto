@@ -200,6 +200,10 @@
           "action": "https://coral.cohere.com/?q="
         },
         {
+          "name": "Falcon",
+          "action": "https://chat.falconllm.tii.ae/?q="
+        },
+        {
           "name": "Qwen",
           "action": "https://chat.qwenlm.ai/?q="
         },
@@ -862,7 +866,7 @@
         },
         {
           "name": "Fandango",
-          "action": "https://www.fandango.com/search/results?q=lion"
+          "action": "https://www.fandango.com/search/results?q="
         },
         {
           "name": "Eventbrite",
