@@ -1,7 +1,7 @@
 type CountryCode = 'BR' | 'US' // Adicione outros códigos conforme necessário
 
 type WoeidMapping = {
-  [key in CountryCode]: string // Definimos que o WOEID será uma string
+  [key: string]: string // Definimos que o WOEID será uma string
 }
 
 const woeidMapping: WoeidMapping = {

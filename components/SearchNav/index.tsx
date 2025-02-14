@@ -21,7 +21,7 @@ import {
   Icon,
   IconMetaverse,
   IconLock,
-  IconTrending,
+  IconHome,
 } from '@/components/SvgIcons'
 import { normalizeId } from '@/utils/formats'
 import { ISearchCategory } from '@/interfaces/search'
@@ -29,16 +29,16 @@ import { useLocale } from 'next-intl'
 
 interface Props {
   data: { categories: ISearchCategory[] }
+  variant?: 'vertical' | 'cards' | 'sidebar'
   selectedCategory?: ISearchCategory
-  variant?: 'vertical' | 'cards'
 }
 
-const SearchNav = ({ data, selectedCategory, variant }: Props) => {
+const SearchNav = ({ data, variant, selectedCategory }: Props) => {
   const locale = useLocale()
   const handleCategoryIcon = (categoryName: string) => {
     switch (categoryName) {
       case 'Home':
-        return <IconTrending />
+        return <IconHome />
       case 'AI':
         return <IconSparkle />
       case 'Web':
@@ -88,18 +88,21 @@ const SearchNav = ({ data, selectedCategory, variant }: Props) => {
     <div className={navClass}>
       <ul>
         {data.categories?.map(
-          (category: ISearchCategory, index: number) =>
+          (category, index) =>
             category?.active === true && (
               <li key={index}>
                 <Link
                   className={
-                    selectedCategory && category.name === selectedCategory.name
-                      ? 'activeLink'
-                      : undefined
+                    selectedCategory?.name === category?.name ||
+                    (!selectedCategory && category?.name === 'Home')
+                      ? Style.active
+                      : ''
                   }
-                  href={'/' + locale + '/search/' + normalizeId(category.name)}>
-                  <figure>{handleCategoryIcon(category.name)}</figure>
-                  {category.name_translated || category.name}
+                  href={
+                    '/' + locale + '/search/' + normalizeId(category?.name)
+                  }>
+                  <figure>{handleCategoryIcon(category?.name)}</figure>
+                  {category?.name_translated || category?.name}
                 </Link>
               </li>
             )

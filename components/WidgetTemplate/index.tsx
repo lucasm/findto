@@ -12,6 +12,7 @@ interface WidgetTemplateProps {
   children?: ReactNode
   icon?: ReactElement
   credits?: ICredits
+  hideTitle?: boolean
 }
 
 export default function WidgetTemplate({
@@ -19,15 +20,18 @@ export default function WidgetTemplate({
   children,
   credits,
   icon,
+  hideTitle,
 }: WidgetTemplateProps) {
   const t = useTranslations('t')
 
   return (
     <section className={Styles.container}>
-      <div className={Styles.title}>
-        {icon}
-        <h3>{title}</h3>
-      </div>
+      {!hideTitle && (
+        <div className={Styles.title}>
+          {icon}
+          <h3>{title}</h3>
+        </div>
+      )}
 
       {children}
 

@@ -24,7 +24,7 @@
 }
 .cookiesPopup p {
   color: var(--color-bg-white);
-  font-size: var(--font-size-small);
+  font-size: var(--font-size);
 }
 
 .slideUp {
@@ -37,7 +37,6 @@
 .cookiesPopup button {
   background: var(--color-bg-white);
   color: var(--color-text-black);
-
   border: none;
   padding: 10px 20px;
   border-radius: var(--radius-small);

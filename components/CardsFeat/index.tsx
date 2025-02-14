@@ -29,6 +29,12 @@ const features: Feature[] = [
     description: 'Search on diverse sources at once.',
   },
   {
+    icon: <IconShield />,
+    title: 'Privacy',
+    description:
+      'Private searches and estimated privacy level of search source.',
+  },
+  {
     icon: <IconTrending />,
     title: 'Trends',
     description: 'Real-time trends nearby you.',
@@ -50,17 +56,12 @@ const features: Feature[] = [
   },
   {
     icon: <IconVisualSearch />,
-    title: 'Visual Search *',
+    title: 'Visual Search',
     description: 'Search on supported sources with an image.',
   },
   {
-    icon: <IconShield />,
-    title: 'Privacy Level *',
-    description: 'Estimated privacy level of search source.',
-  },
-  {
     icon: <IconLeaf />,
-    title: 'Carbon Footprint *',
+    title: 'Carbon Footprint',
     description: 'Estimated carbon footprint of search source.',
   },
   {
@@ -95,7 +96,7 @@ export default function CardsFeat() {
           </li>
         ))}
       </ul>
-      <p>* Features in development.</p>
+      <p>* Some features still in development.</p>
     </div>
   )
 }

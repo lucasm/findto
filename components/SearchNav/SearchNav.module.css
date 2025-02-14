@@ -1,3 +1,8 @@
+.active {
+  background: var(--background-surface) !important;
+  opacity: 1 !important;
+}
+
 .nav li {
   display: inline-block;
 }
@@ -13,11 +18,6 @@
   gap: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
-.vertical h2 {
-  font-size: var(--font-size-3);
-  padding: 0 1.5rem;
-  text-wrap: auto;
 }
 .vertical a {
   display: flex;
@@ -63,23 +63,59 @@
   font-weight: 400;
   transition: var(--transition);
   width: 100%;
-  background: var(--color-bg-white);
-  box-shadow: var(--box-shadow);
+
+  background: var(--color-black-translucent);
+  color: var(--color-black);
 }
 .cards a:hover,
 .cards a:focus {
-  background: var(--background-linear-gradient);
-  color: var(--color-black);
+  background: var(--color-white);
 }
 .cards figure {
   display: flex;
 }
-
 .cards li {
   width: 100%;
 }
 
-@media screen and (max-width: 856px) {
+/* Sidebar */
+.sidebar {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 0.75rem 6rem 0.75rem;
+}
+.sidebar a {
+  opacity: var(--opacity);
+  padding: 0.6875rem 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+  font-size: var(--font-size-small);
+  transition: var(--transition);
+  width: 100%;
+  color: var(--color-text-black);
+  background: transparent;
+  border-radius: var(--radius);
+}
+.sidebar a:hover,
+.sidebar a:focus {
+  background: var(--color-white-translucent);
+}
+.sidebar figure {
+  display: flex;
+}
+.sidebar li {
+  display: inline-block;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
   .cards ul {
     grid-template-columns: repeat(3, 1fr);
   }

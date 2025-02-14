@@ -35,13 +35,14 @@
     "search": "Search",
     "clear": "Clear",
     "powered": "Powered by",
-    "settings": "Settings",
+    "settings": "设置",
     "theme": "主题",
     "language": "语言",
     "contribute": "贡献",
     "trends": "热门内容",
     "stories": "最新动态",
     "categories": "类别",
+    "category": "类别",
     "feedback": {
       "title": "发送反馈",
       "url": "https://forms.gle/US69JvUT1qxYkiF58"

@@ -2,7 +2,6 @@ import AppLayout from '@/layouts/AppLayout'
 import Search from '@/components/Search'
 import WidgetVideoStories from '@/components/WidgetVideoStories'
 import WidgetTrends from '@/components/WidgetTrends'
-import WidgetCategories from '@/components/WidgetCategories'
 import Banner from '@/components/Banner'
 import { Metadata } from 'next/types'
 import { getLocaleData } from '@/utils/getLocaleData'
@@ -42,29 +41,12 @@ export default async function Page({ params }: PageProps) {
       category?.name.toLowerCase() === params.category.toLowerCase()
   )
 
-  const renderWidgetsInOrder = () => {
-    if (selectedCategory?.name?.toLowerCase() === 'news') {
-      return (
-        <>
-          <WidgetVideoStories selectedCategory={selectedCategory} />
-          <WidgetTrends />
-        </>
-      )
-    }
-
-    return (
-      <>
-        <WidgetTrends />
-        <WidgetVideoStories selectedCategory={selectedCategory} />
-      </>
-    )
-  }
-
   return (
-    <AppLayout locale={params.locale}>
+    <AppLayout locale={params.locale} category={selectedCategory}>
       <Search selectedCategory={selectedCategory} />
-      {renderWidgetsInOrder()}
-      <WidgetCategories />
+
+      <WidgetTrends />
+      <WidgetVideoStories selectedCategory={selectedCategory} />
       <Banner />
     </AppLayout>
   )

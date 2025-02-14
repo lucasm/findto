@@ -3,9 +3,9 @@
   gap: 0.75rem;
   margin: 0.5rem 0 0;
   width: auto;
-  padding: 0 2.4rem;
+  padding: 0 2rem;
   height: var(--size-big);
-  font-size: var(--font-size-big);
+  font-size: var(--font-size);
   border: none;
   border-radius: var(--radius-full);
   transition: var(--transition);

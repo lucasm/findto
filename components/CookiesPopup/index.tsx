@@ -10,7 +10,7 @@ const CookiesPopup = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false)
   const [isAccepted, setIsAccepted] = useState<boolean>(() => {
     if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('cookiesAccepted')
+      const saved = localStorage.getItem('isCookiesAccepted')
       return saved ? JSON.parse(saved) : false
     } else {
       return false
@@ -27,7 +27,7 @@ const CookiesPopup = () => {
     setIsAccepted(true)
     setIsVisible(false)
     if (typeof window !== 'undefined') {
-      localStorage.setItem('cookiesAccepted', JSON.stringify(true))
+      localStorage.setItem('isCookiesAccepted', JSON.stringify(true))
     }
   }
 
@@ -37,13 +37,15 @@ const CookiesPopup = () => {
         isVisible ? styles.slideUp : styles.slideDown
       }`}>
       <p>{t('componentCookiesPopup.title')}</p>
+
+      <div>
+        <button onClick={handleAccept}>{t('accept')}</button>
+      </div>
+
       <div>
         <p>
           <Link href="/privacy">{t('privacy')}</Link>
         </p>
-      </div>
-      <div>
-        <button onClick={handleAccept}>{t('accept')}</button>
       </div>
     </div>
   )

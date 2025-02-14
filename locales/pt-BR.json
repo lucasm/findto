@@ -3,7 +3,7 @@
   "country_code": "BR",
   "t": {
     "componentCookiesPopup": {
-      "title": "O Findto utiliza cookies para melhorar a experiência e fornecer conteúdo. Não armazenamos informações pessoais. "
+      "title": "O Findto utiliza cookies respeitando sua privacidade. Não armazenamos informações pessoais."
     },
     "componentWelcome": {
       "goodMorning": "Bom dia",
@@ -12,7 +12,7 @@
       "whatDoYouWant": "O que você procura?"
     },
     "componentBanner": {
-      "title": "Busca descentralizada na Web e IA",
+      "title": "Busca descentralizada em todo lugar",
       "description": "Com o Findto você busca em diversas fontes."
     },
     "componentVoiceSearch": {
@@ -47,32 +47,33 @@
     "terms": "Termos de Serviço",
     "donate": "Fazer doação",
     "accept": "Aceitar",
-    "learnMore": "Conheça o Findto",
+    "learnMore": "Saiba mais",
     "viewNearbyPlaces": "Ver locais próximos",
     "openApp": "Abrir app",
-    "placeholder": "Busca",
+    "placeholder": "Buscar em",
     "search": "Buscar",
     "clear": "Limpar",
-    "powered": "Fornecido por",
-    "settings": "Configurações",
+    "powered": "Dados fornecidos por",
+    "settings": "Ajustes",
     "theme": "Tema",
     "language": "Localidade",
     "contribute": "Contribuir",
     "trends": "Tendências",
     "stories": "Novidades",
-    "categories": "Categorias",
+    "categories": "Modos",
+    "category": "Modo",
     "feedback": {
       "title": "Enviar feedback",
       "url": "https://forms.gle/r6XAyB1ZLn9qzwp16"
     },
     "warnings": {
-      "torrent": "Aviso: Usar torrent para compartilhar arquivos não é ilegal. Contudo, obter conteúdos sem a autorização é crime. Respeite a Lei de Direitos Autorais no Brasil (Lei 9.610/98) ou da sua localidade atual. Evite problemas legais."
+      "torrent": "Aviso: Usar torrent para compartilhar arquivos não é ilegal, mas obter conteúdos protegidos por direitos autorais sem a autorização do autor é crime. Respeite a Lei de Direitos Autorais no Brasil (Lei 9.610/98) ou da sua localidade atual."
     }
   },
   "categories": [
     {
       "name": "Home",
-      "name_translated": "Popular",
+      "name_translated": "Página Inicial",
       "active": true,
       "data": [
         {
@@ -138,14 +139,6 @@
         {
           "name": "iFood",
           "action": "https://www.ifood.com.br/busca?q="
-        },
-        {
-          "name": "Letras",
-          "action": "https://www.letras.mus.br/?q="
-        },
-        {
-          "name": "Wikipédia",
-          "action": "https://pt.wikipedia.org/w/index.php?search="
         },
         {
           "name": "LinkedIn",
@@ -1327,6 +1320,14 @@
           "title": "g1globo"
         },
         {
+          "id": "UCmYuiV9wAR3i8p19Ygc7izg",
+          "title": "folha"
+        },
+        {
+          "id": "UCV6Ue4o5UIeKQ3IEkjnXRlg",
+          "title": "veja"
+        },
+        {
           "id": "UCFCiSRbCVwQ_BQaDQBYxN_A",
           "title": "Poder360"
         },
@@ -1335,16 +1336,8 @@
           "title": "TheInterceptBrasil"
         },
         {
-          "id": "UCmYuiV9wAR3i8p19Ygc7izg",
-          "title": "folha"
-        },
-        {
           "id": "UCDGz2exMIsPQ4k9VrsuhKTA",
           "title": "CartaCapital"
-        },
-        {
-          "id": "UCV6Ue4o5UIeKQ3IEkjnXRlg",
-          "title": "veja"
         },
         {
           "id": "UCJVTsYjG0KLNWL6OyHx7ZGw",
@@ -2155,8 +2148,8 @@
           "title": "LucasMontano"
         },
         {
-          "id": "UCSfwM5u0Kce6Cce8_S72olg",
-          "title": "rocketseat"
+          "id": "UCetRsdZxDQDcgVDJd6erz6g",
+          "title": "attekitadev"
         },
         {
           "id": "UCo7EHzKF2zDFWszw7Dg4mPw",
@@ -2171,6 +2164,10 @@
           "title": "cod3r"
         },
         {
+          "id": "UCSfwM5u0Kce6Cce8_S72olg",
+          "title": "rocketseat"
+        },
+        {
           "id": "UCJnKVGmXRXrH49Tvrx5X0Sw",
           "title": "LinuxTips"
         },
@@ -2181,10 +2178,6 @@
         {
           "id": "UCh84012dEUE076wM2CVFN9A",
           "title": "ErickWendelTraining"
-        },
-        {
-          "id": "UCetRsdZxDQDcgVDJd6erz6g",
-          "title": "attekitadev"
         },
         {
           "id": "UC629vKGFPRc1rz6VDm6OZiQ",

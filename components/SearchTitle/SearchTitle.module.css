@@ -16,8 +16,7 @@
 
 .container h1,
 .container h2 {
-  /* text-align: left; */
-  color: var(--color-black);
+  color: var(--color-text-black);
 }
 
 @media screen and (max-width: 768px) {

@@ -12,12 +12,12 @@
   display: flex;
   gap: 1rem;
   justify-content: flex-start;
-  padding: 1.5rem 1rem;
+  padding: 1rem;
   width: 100%;
   border: 0;
   margin: 0;
   background: transparent;
-  color: var(--color-text-black);
+  color: var(--color-black);
   border-radius: var(--radius);
   transition: var(--transition-hover);
   flex-direction: row;
@@ -31,7 +31,7 @@
 }
 
 .container li button img {
-  width: 64px;
+  width: 4rem;
   background: var(--color-white);
   transition: var(--transition-hover);
   border-radius: 0.5rem;
@@ -42,25 +42,6 @@
   text-align: left;
   font-size: var(--font-size);
   letter-spacing: -0.025rem;
-}
-.container li button span:first-of-type {
-  /* display: none; */
-  opacity: var(--opacity);
-  line-break: unset;
-  /* position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
-  background: white;
-  color: black;
-  border-radius: 5rem;
-  width: 2rem;
-  height: 2rem;
-  z-index: 1;
-  line-height: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1; */
 }
 
 .trendsVideos,
@@ -121,6 +102,9 @@
 }
 
 @media screen and (max-width: 576px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
   .container li button {
     padding: 1rem;
   }
@@ -132,11 +116,5 @@
   .trendsCode button img,
   .trendsApps button img {
     width: 52px !important;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .container {
-    grid-template-columns: 1fr;
   }
 }

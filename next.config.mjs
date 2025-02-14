@@ -1,10 +1,14 @@
 // eslint-disable-next-line @typescript-eslint/no-require-imports
-const withNextIntl = require('next-intl/plugin')()
-// eslint-disable-next-line @typescript-eslint/no-require-imports
-const withPWA = require('next-pwa')({
-  dest: 'public',
-})
+import createNextIntlPlugin from 'next-intl/plugin'
 
+const withNextIntl = createNextIntlPlugin()
+
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+// const withPWA = require('next-pwa')({
+//   dest: 'public',
+// })
+
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   pwa: {
     dest: 'public',
@@ -45,18 +49,23 @@ const nextConfig = {
     ]
   },
 
-  async redirects() {
-    return [
-      {
-        source: '/search/home',
-        destination: '/',
-        permanent: true, // Use `true` se quiser que o redirecionamento seja permanente (código 308)
-      },
-    ]
-  },
+  //   async redirects() {
+  //     return [
+  //       {
+  //         source: '/',
+  //         destination: '/search/home',
+  //         permanent: true, // HTTP 301
+  //       },
+  //       {
+  //         source: '/search',
+  //         destination: '/search/home',
+  //         permanent: true,
+  //       },
+  //     ]
+  //   },
 
   productionBrowserSourceMaps: true,
 }
 
 // Aplica o PWA e depois o Next Intl
-module.exports = withPWA(withNextIntl(nextConfig))
+export default withNextIntl(nextConfig)

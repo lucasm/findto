@@ -4,10 +4,9 @@
 }
 .containerBanner {
   padding: 4rem;
-  background: var(--color-bg-white);
+  background: var(--background-surface);
   border-radius: 2rem;
-  box-shadow: var(--box-shadow);
-  margin: 2rem;
+  margin: 2rem 0;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   align-items: center;

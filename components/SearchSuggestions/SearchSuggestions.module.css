@@ -16,7 +16,7 @@
   font-size: var(--font-size);
   font-weight: 400;
   width: 100%;
-  color: var(--color-black);
+  color: var(--color-text-black);
   opacity: var(--opacity);
 }
 .container ul li a:focus,
@@ -29,6 +29,6 @@
 
 @media screen and (min-width: 576px) {
   .container ul {
-    padding-left: 1.75rem;
+    padding-left: 1.25rem;
   }
 }

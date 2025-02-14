@@ -1,5 +1,3 @@
-'use client'
-
 import Style from '@/layouts/WebsiteLayout/WebsiteLayout.module.css'
 import WebsiteLayout from '@/layouts/WebsiteLayout'
 
@@ -8,7 +6,7 @@ export const metadata = {
   description: 'Page not found.',
 }
 
-export default function NotFoundPage() {
+export default function NotFound() {
   return (
     <WebsiteLayout>
       <section className="colors">

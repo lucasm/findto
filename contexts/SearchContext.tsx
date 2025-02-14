@@ -1,7 +1,7 @@
 import { useLocale } from 'next-intl'
 import { createContext, useContext, useState, useEffect, useRef } from 'react'
 
-// create Context for global states
+// create Context for global state
 const SearchContext = createContext<any>({})
 
 // export as Provider
@@ -17,7 +17,10 @@ export function SearchContextProvider({ children }: { children: any }) {
   const [permissionLocation, setPermissionLocation] = useState<boolean>(false)
   const [latitude, setLatitude] = useState<number>()
   const [longitude, setLongitude] = useState<number>()
+
+  const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(true)
   const [isMobileViewport, setIsMobileViewport] = useState<boolean>(false)
+
   const refSearchInput = useRef(null)
   const refButtons = useRef([])
   const [inputValue, setInputValue] = useState<string | undefined>(undefined)
@@ -32,8 +35,8 @@ export function SearchContextProvider({ children }: { children: any }) {
   useEffect(() => {
     // Lê o localStorage apenas quando o componente monta
     if (typeof window !== 'undefined') {
-      const saved = window.localStorage.getItem('inputValue')
-      setInputValue(saved ? JSON.parse(saved) : '')
+      const savedSearchValue = window.localStorage.getItem('inputValue')
+      setInputValue(savedSearchValue ? JSON.parse(savedSearchValue) : '')
     }
   }, [])
 
@@ -100,7 +103,7 @@ export function SearchContextProvider({ children }: { children: any }) {
   // mobile viewport
   useEffect(() => {
     if (sizeWindow.width) {
-      if (sizeWindow.width <= 940) {
+      if (sizeWindow.width <= 768) {
         setIsMobileViewport(true)
       } else {
         setIsMobileViewport(false)
@@ -112,10 +115,21 @@ export function SearchContextProvider({ children }: { children: any }) {
   useEffect(() => {
     const storedSearch = window.localStorage.getItem('search')
 
-    storedSearch
-      ? setSearch(storedSearch)
-      : window.localStorage.setItem('search', search)
+    if (storedSearch) {
+      setSearch(storedSearch)
+    } else {
+      window.localStorage.setItem('search', search)
+    }
   }, [category, search])
+
+  // sidebar
+  useEffect(() => {
+    if (!isMobileViewport && isSidebarOpen) {
+      document.body.style.marginLeft = '250px'
+    } else {
+      document.body.style.marginLeft = '0'
+    }
+  }, [isSidebarOpen, isMobileViewport])
 
   return (
     <SearchContext.Provider
@@ -139,6 +153,8 @@ export function SearchContextProvider({ children }: { children: any }) {
         setLatitude,
         longitude,
         setLongitude,
+        isSidebarOpen,
+        setIsSidebarOpen,
         isMobileViewport,
         sizeWindow,
         titleTrends,

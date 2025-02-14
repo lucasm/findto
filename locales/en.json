@@ -12,8 +12,8 @@
       "whatDoYouWant": "What do you want to find?"
     },
     "componentBanner": {
-      "title": "Decentralized search",
-      "description": "Explore the best of AI, Web and more with Findto search assistant."
+      "title": "Decentralized search everywhere",
+      "description": "With Findto you can explore the best of AI, Web, and more"
     },
     "componentVoiceSearch": {
       "voice": "Voice",
@@ -28,7 +28,7 @@
     "terms": "Terms of Service",
     "donate": "Donate",
     "accept": "Accept",
-    "learnMore": "Meet the Findto",
+    "learnMore": "Learn more",
     "viewNearbyPlaces": "View nearby places",
     "openApp": "Open app",
     "placeholder": "Search on",
@@ -41,20 +41,20 @@
     "contribute": "Contribute",
     "trends": "Trending",
     "stories": "Stories",
-    "categories": "Categories",
+    "categories": "Modes",
+    "category": "Mode",
     "feedback": {
       "title": "Send feedback",
       "url": "https://forms.gle/US69JvUT1qxYkiF58"
     },
     "warnings": {
       "torrent": "Notice: Sharing files via torrent is not illegal. Downloading copyrighted content is, depending of the legislation. Check your local law and respect it. Avoid legal issues.",
-      "darknet": "Notice: The darknet is legal and often used by academics, journalists, activists or people in censored regions. Use it responsibly to avoid illegal activities. Be careful with scams and phishing. To access you need a special browser, like Tor Browser."
+      "darknet": "Notice: The darknet is legal and often used by academics, journalists, activists or people in censored regions. Use it responsibly. Be careful with scams and phishing. Avoid illegal activities. To access you need a special browser, like Tor Browser."
     }
   },
   "categories": [
     {
       "name": "Home",
-      "name_translated": "Popular",
       "active": true,
       "data": [
         {

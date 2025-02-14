@@ -17,7 +17,7 @@ export default function Page({
   )
 
   return (
-    <AppLayout locale={locale}>
+    <AppLayout locale={locale} category={selectedCategory}>
       <Search selectedCategory={selectedCategory} />
       <WidgetTrends />
       <WidgetCategories />

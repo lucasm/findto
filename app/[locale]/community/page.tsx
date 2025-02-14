@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl'
 
 const title = 'Community'
 const description =
-  'Join on the Findto community and help us to build a better internet.'
+  'Get involved with Findto and help us to build free searches!'
 
 export const metadata = {
   title: title,
@@ -98,7 +98,7 @@ export default function CommunityPage() {
             <br></br>
             <br></br>
 
-            <h2>Support Findto</h2>
+            <h2>Supporting</h2>
 
             <p>You can choose your favorite platform to support Findto:</p>
 

@@ -60,7 +60,7 @@
 .container figure svg {
   width: 4rem;
   height: 4rem;
-  fill: var(--color-black-translucent-50);
+  fill: var(--color-text-black);
   transition: var(--transition);
   opacity: 1;
 }

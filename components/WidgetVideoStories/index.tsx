@@ -11,8 +11,9 @@ import { Pagination, Mousewheel } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import { useTranslations } from 'next-intl'
-import { IconClose } from '../SvgIcons'
+import { IconClose, IconStories } from '../SvgIcons'
 import { ISearchCategory } from '@/interfaces/search'
+import WidgetTemplate from '../WidgetTemplate'
 
 interface Props {
   selectedCategory: ISearchCategory
@@ -29,7 +30,6 @@ export default function WidgetVideoStories({ selectedCategory }: Props) {
   const videoPlayer = useRef<HTMLDivElement | null>(null)
 
   const categoryVideoChannels = selectedCategory?.youtube_channels
-  const categoryTitle = selectedCategory?.name
 
   useEffect(() => {
     closeVideo()
@@ -60,7 +60,7 @@ export default function WidgetVideoStories({ selectedCategory }: Props) {
   const scrollToVideo = () => {
     if (videoPlayer.current) {
       const topPosition =
-        videoPlayer.current.getBoundingClientRect().top + window.scrollY - 16
+        videoPlayer.current.getBoundingClientRect().top + window.scrollY - 120
       window.scrollTo({ top: topPosition, behavior: 'smooth' })
     }
   }
@@ -87,75 +87,68 @@ export default function WidgetVideoStories({ selectedCategory }: Props) {
 
   if (shouldFetch && dataTrends) {
     return (
-      <section
-        className={Styles.container + ' ' + Styles[`trends${categoryTitle}`]}>
-        {categoryTitle !== 'Home' && (
-          <div className={Styles.title}>
-            {/* <IconStories /> */}
-            <h3> {t('stories')}</h3>
-          </div>
-        )}
+      <WidgetTemplate
+        title={t('stories')}
+        icon={<IconStories />}
+        credits={
+          dataTrends
+            ? {
+                title: 'YouTube',
+                url: 'https://www.youtube.com/?utm_source=findto_app',
+              }
+            : undefined
+        }
+        hideTitle={videoUrl ? true : false}>
+        <section className={Styles.container}>
+          {errorTrends && (
+            <p>Error loading content. Please report this feedback.</p>
+          )}
 
-        {errorTrends && (
-          <p>Error loading content. Please report this feedback.</p>
-        )}
-
-        {dataTrends && (
-          <>
-            {videoUrl && (
-              <div ref={videoPlayer} className={Styles.videoPlayer}>
-                <button className={Styles.closeButton} onClick={closeVideo}>
-                  <IconClose />
-                  Fechar
-                </button>
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src={'https://www.youtube.com/embed/' + videoUrl}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen></iframe>
-              </div>
-            )}
-            <Swiper
-              slidesPerView={maxSlides}
-              mousewheel={true}
-              spaceBetween={0}
-              pagination={{
-                clickable: true,
-              }}
-              loop={true}
-              modules={[Pagination, Mousewheel]}
-              className={Styles.slide}>
-              {dataTrends?.data?.map((item: ITrendsItem, index: number) => (
-                <SwiperSlide key={index}>
-                  <button onClick={() => item.url && openVideo(item.url)}>
-                    {item.image && (
-                      <figure
-                        style={{
-                          backgroundImage: `url(${item.image})`,
-                        }}></figure>
-                    )}
-                    {item.title && <span>{item.title}</span>}
+          {dataTrends && (
+            <>
+              {videoUrl && (
+                <div ref={videoPlayer} className={Styles.videoPlayer}>
+                  <button className={Styles.closeButton} onClick={closeVideo}>
+                    <IconClose />
+                    Fechar
                   </button>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-
-            <div className={Styles.credits}>
-              <p>
-                {t('powered')}{' '}
-                <a
-                  href="https://www.youtube.com/?utm_source=findto_app"
-                  target="_blank"
-                  rel="noopener">
-                  YouTube
-                </a>
-              </p>
-            </div>
-          </>
-        )}
-      </section>
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src={'https://www.youtube.com/embed/' + videoUrl}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen></iframe>
+                </div>
+              )}
+              <Swiper
+                slidesPerView={maxSlides}
+                mousewheel={true}
+                spaceBetween={0}
+                pagination={{
+                  clickable: true,
+                }}
+                loop={true}
+                modules={[Pagination, Mousewheel]}
+                className={Styles.slide}>
+                {dataTrends?.data?.map((item: ITrendsItem, index: number) => (
+                  <SwiperSlide key={index}>
+                    <button onClick={() => item.url && openVideo(item.url)}>
+                      {item.image && (
+                        <figure
+                          style={{
+                            backgroundImage: `url(${item.image})`,
+                          }}></figure>
+                      )}
+                      {item.title && <span>{item.title}</span>}
+                    </button>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </>
+          )}
+        </section>
+      </WidgetTemplate>
     )
   }
 

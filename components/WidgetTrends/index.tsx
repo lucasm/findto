@@ -5,11 +5,11 @@ import { fetcher } from '@/utils/http'
 import useSWR from 'swr'
 import { useSearch } from '@/contexts/SearchContext'
 import ButtonGeolocation from '@/components/ButtonGeolocation'
-import Alert from '@/components/Alert'
 import { ITrends, ITrendsItem } from '@/interfaces/trends'
 import { useEffect, useState } from 'react'
 import { useTranslations } from 'next-intl'
 import WidgetTemplate from '../WidgetTemplate'
+import { IconTrending } from '../SvgIcons'
 
 export default function SearchTrends() {
   const t = useTranslations('t')
@@ -397,18 +397,11 @@ export default function SearchTrends() {
     errorGames,
   ])
 
-  if (category === 'Torrent') {
-    return <Alert>{t('warnings.torrent')}</Alert>
-  }
-
-  if (category === 'Darknet') {
-    return <Alert>{t('warnings.darknet')}</Alert>
-  }
-
   if (dataTrends || errorTrends || category === 'Local') {
     return (
       <WidgetTemplate
         title={t('trends')}
+        icon={<IconTrending />}
         credits={
           dataTrends
             ? {
@@ -433,7 +426,6 @@ export default function SearchTrends() {
                       ? window.open(item.url, '_blank')
                       : putValue(item.title.toLowerCase())
                   }>
-                  <span>{index + 1}</span>
                   {item.image && <img src={item.image} alt="" />}
                   {item.title && <span>{item.title}</span>}
                 </button>

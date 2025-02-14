@@ -11,7 +11,7 @@
   padding: 1rem 2rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .container h2 {
     font-size: 1.25rem;
   }

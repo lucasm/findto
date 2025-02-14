@@ -117,10 +117,10 @@
 /* App Icon */
 .icon {
   display: inline-block;
-  width: 10rem;
-  height: 10rem;
+  width: 12rem;
+  height: 12rem;
   margin: 2rem auto;
-  background-size: 4rem;
+  background-size: 5rem;
   background-image: url('/findto-sparkle.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -152,7 +152,7 @@
   margin: 0 auto;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .container {
     padding: 6rem 2rem;
   }
@@ -175,7 +175,7 @@
   }
 }
 
-@media only screen and (min-width: 940px) {
+@media only screen and (min-width: 1024px) {
   .header .container {
     padding: 0 2rem;
   }

@@ -14,7 +14,7 @@ import SearchTitle from '@/components/SearchTitle'
 import { ISearchCategory, ISearch, ISearchChild } from '@/interfaces/search'
 import Welcome from '../Welcome'
 import SearchOptions from '../SearchOptions'
-import { useTheme } from 'next-themes'
+import Alert from '../Alert'
 
 interface Props {
   selectedCategory: ISearchCategory
@@ -23,7 +23,6 @@ interface Props {
 export default function Search({ selectedCategory }: Readonly<Props>) {
   const locale = useLocale()
   const t = useTranslations('t')
-  const { resolvedTheme } = useTheme()
   const searchParams = useSearchParams()
   const query = searchParams?.get('q')
 
@@ -93,13 +92,22 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
     event.target.style.height = 'auto'
     event.target.style.height = event.target.scrollHeight + 'px'
   }
-
-  const searchPlaceholder = () => {
+  const handlePlaceholder = () => {
     if (searchSource?.name) {
       return t('placeholder') + ' ' + searchSource?.name
     }
 
     return t('placeholder')
+  }
+
+  const renderWarnings = () => {
+    if (selectedCategory?.name === 'Torrent') {
+      return <Alert>{t('warnings.torrent')}</Alert>
+    }
+
+    if (selectedCategory?.name === 'Darknet') {
+      return <Alert>{t('warnings.darknet')}</Alert>
+    }
   }
 
   // resize
@@ -161,8 +169,8 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
   }, [isFocused, refSearchInput, handleFocus])
 
   return (
-    <section className={Style.container}>
-      <div className={Style.searchContainer2}>
+    <section className={Style.section}>
+      <div className={Style.container}>
         <SearchTitle>
           <div>
             {selectedCategory?.name == 'Home' ? (
@@ -171,13 +179,13 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
               <h1>{searchName}</h1>
             )}
           </div>
-          <div>
+          {/* <div>
             <h2>{t('componentWelcome.whatDoYouWant')}</h2>
-          </div>
+          </div> */}
         </SearchTitle>
 
         {/* Input */}
-        <div className={Style.searchInputContainer}>
+        <div className={Style.containerInput}>
           <div className={Style.searchInput}>
             <div className={Style.textareaContainer}>
               <label
@@ -192,7 +200,7 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
                 value={inputValue}
                 aria-label="Search"
                 className={Style.searchInput}
-                placeholder={searchPlaceholder()}
+                placeholder={handlePlaceholder()}
                 autoComplete="off"
                 maxLength={2000}
                 rows={1}
@@ -217,7 +225,7 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
               </div>
             </div>
 
-            {/* render Button Voice only if user ha no typed on input */}
+            {/* render Button Voice only if user ha NO typed on input */}
             {/* render Search Button only if user has typed on input */}
 
             <div>
@@ -274,11 +282,6 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
                           normalizeId(source?.name) +
                           '.svg)'
                         : undefined,
-                      filter:
-                        resolvedTheme === 'dark' &&
-                        searchSource?.name === source.name
-                          ? 'invert(1)'
-                          : 'none',
                     }}></figure>
 
                   {source.name}
@@ -300,6 +303,8 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
           />
         )}
       </div>
+
+      {renderWarnings()}
     </section>
   )
 }

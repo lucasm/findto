@@ -10,6 +10,7 @@ import {
   IconLinkedIn,
 } from '../SvgIcons'
 import { useTranslations } from 'next-intl'
+import CookiesPopup from '../CookiesPopup'
 
 export default function AppFooter() {
   const year = new Date().getFullYear()
@@ -26,8 +27,63 @@ export default function AppFooter() {
           </li>
           <li>
             <p>
-              <Link href="/">Findto</Link> © {year} {t('slogan')}
+              <Link href="/">Findto</Link> © {year}
             </p>
+          </li>
+
+          <li>
+            <Link
+              href="https://x.com/findtoapp"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="X">
+              <IconX />
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://bsky.app/profile/findto.app"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Bluesky">
+              <IconBluesky />
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://instagram.com/findtoapp"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram">
+              <IconInstagram />
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://linkedin.com/company/findto/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn">
+              <IconLinkedIn />
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://discord.gg/XbZcvNuQ6F"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Discord">
+              <IconDiscord />
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://github.com/lucasm/findto"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub">
+              <IconGitHub />
+            </Link>
           </li>
 
           <li>
@@ -63,63 +119,6 @@ export default function AppFooter() {
           </li>
         </ul>
 
-        <ul>
-          <li>
-            <Link
-              href="https://x.com/findtoapp"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="X">
-              <IconX />
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://bsky.app/profile/findto.app"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Bluesky">
-              <IconBluesky />
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://github.com/lucasm/findto"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="GitHub">
-              <IconGitHub />
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://instagram.com/findtoapp"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Instagram">
-              <IconInstagram />
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://discord.gg/XbZcvNuQ6F"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Discord">
-              <IconDiscord />
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://linkedin.com/company/findto/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="LinkedIn">
-              <IconLinkedIn />
-            </Link>
-          </li>
-        </ul>
-
         {/* <a
             href="https://facebook.com/findtoapp"
             target="_blank"
@@ -138,6 +137,8 @@ export default function AppFooter() {
           <Youtube />
         </a> */}
       </div>
+
+      <CookiesPopup />
     </footer>
   )
 }

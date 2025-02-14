@@ -66,13 +66,13 @@
   color: var(--color-text-black);
 }
 
-@media (max-width: 940px) {
+@media (max-width: 1024px) {
   .container button {
     font-size: var(--font-size-small);
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .container button {
     font-size: 0;
     width: var(--size-small);
