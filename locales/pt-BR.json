@@ -12,8 +12,8 @@
       "whatDoYouWant": "O que você procura?"
     },
     "componentBanner": {
-      "title": "Busca descentralizada em todo lugar",
-      "description": "Com o Findto você busca em diversas fontes."
+      "title": "Diga oi ao Findto, o seu novo assistente de buscas",
+      "description": "Faça buscas na Web, IA e mais, de maneira descentralizada."
     },
     "componentVoiceSearch": {
       "voice": "Voz",
@@ -47,7 +47,7 @@
     "terms": "Termos de Serviço",
     "donate": "Fazer doação",
     "accept": "Aceitar",
-    "learnMore": "Saiba mais",
+    "learnMore": "Conheça o Findto",
     "viewNearbyPlaces": "Ver locais próximos",
     "openApp": "Abrir app",
     "placeholder": "Buscar em",

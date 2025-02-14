@@ -170,7 +170,11 @@ const AppHeader = ({ locale, category }: Props) => {
 
       {showMenu && (
         <nav className={`${Style.nav} ${showMenu ? Style.openNav : ''}`}>
-          <SearchNav data={data} variant="vertical" />
+          <SearchNav
+            data={data}
+            variant="vertical"
+            selectedCategory={category}
+          />
         </nav>
       )}
 

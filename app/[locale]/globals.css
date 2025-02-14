@@ -1,9 +1,5 @@
 :root {
   font-size: 16px;
-  --color-bg-white: #fff;
-  --color-text-black: #000;
-  --color-black-translucent-50: rgba(0, 0, 0, 0.5);
-  --color-white-translucent-50: rgba(255, 255, 255, 0.5);
   --color-white: #fff;
   --color-black: #000;
   --color-gray: #eeeeee;
@@ -14,10 +10,10 @@
   --color-red: #ff8a8a;
   --color-purple: #f0abff;
   --color-blue: #6ac3ff;
-  --color-brown: #c0a077;
-  --color-brown-2: #ebdbbc;
   --background-body: var(--color-white);
   --background-surface: var(--color-gray);
+  --color-bg-white: #fff;
+  --color-text-black: #000;
   --background-linear-gradient: linear-gradient(
     90deg,
     #a5acff -7%,
@@ -27,10 +23,9 @@
     #ff9191 72.68%,
     #f0a4ff 125%
   );
-  --color-white-translucent: rgba(255, 255, 255, 0.2);
-  --color-white-translucent-2: rgba(255, 255, 255, 0.5);
+  --color-white-translucent: rgba(255, 255, 255, 0.5);
   --color-black-translucent: rgba(0, 0, 0, 0.05);
-  --color-black-translucent-2: rgba(0, 0, 0, 0.05);
+  --color-black-translucent-50: rgba(0, 0, 0, 0.5);
   --box-shadow: 0 1.8px 3.8px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%);
   --shadow-2: 0px 6px 12px 0px rgba(0, 0, 0, 0.075);
   --shadow-hover: 0 0 2px rgba(0, 0, 0, 0.05), 0 8px 16px rgba(0, 0, 0, 0.08),
@@ -78,11 +73,6 @@ html {
   transition: var(--transition-hover);
   /* background-size: 110% 200%; */
   /* animation: gradientAnimation 10s ease infinite; */
-}
-body {
-  /* transition: var(--transition-hover); */
-  transition: transform 0.15s ease-in-out;
-  margin-left: 250px;
 }
 main {
   text-align: center;
@@ -269,11 +259,7 @@ article hr {
   color: var(--color-text-black) !important;
 }
 
-/* Mobile */
 @media screen and (max-width: 768px) {
-  body {
-    margin-left: 0;
-  }
   h1 {
     font-size: 2rem;
   }
@@ -282,5 +268,18 @@ article hr {
   }
   h3 {
     font-size: 1.25rem;
+  }
+}
+
+.sidebar {
+  margin-left: 250px;
+}
+.sidebarClosed {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    margin-left: 0;
   }
 }

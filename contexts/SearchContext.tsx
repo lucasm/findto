@@ -124,10 +124,13 @@ export function SearchContextProvider({ children }: { children: any }) {
 
   // sidebar
   useEffect(() => {
-    if (!isMobileViewport && isSidebarOpen) {
-      document.body.style.marginLeft = '250px'
-    } else {
-      document.body.style.marginLeft = '0'
+    const sidebar = document.querySelector('.sidebar')
+    if (sidebar) {
+      if (!isMobileViewport && isSidebarOpen) {
+        sidebar.classList.remove('sidebarClosed')
+      } else {
+        sidebar.classList.add('sidebarClosed')
+      }
     }
   }, [isSidebarOpen, isMobileViewport])
 

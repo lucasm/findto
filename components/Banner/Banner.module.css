@@ -3,10 +3,10 @@
   max-width: var(--max-size-container);
 }
 .containerBanner {
-  padding: 4rem;
+  padding: 6rem;
   background: var(--background-surface);
   border-radius: 2rem;
-  margin: 2rem 0;
+  margin: 2rem;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   align-items: center;

@@ -21,7 +21,7 @@ export default function PageAbout() {
         <div className={Style.container}>
           <figure className={Style.icon}></figure>
           <h1>{t('componentBanner.title')}</h1>
-          <p>Findto is an open source assistant for decentralized search.</p>
+          <p>{t('componentBanner.description')}</p>
         </div>
       </section>
 
@@ -32,8 +32,9 @@ export default function PageAbout() {
               <article>
                 <h2>Get control of AI and Web search</h2>
                 <p>
-                  Findto puts people in control of algorithms. Switch between
-                  diverse sources, like Web or AI. Find anything.
+                  Findto is an assistant for decentralized search. Findto puts
+                  people in control of algorithms. You can search the same term
+                  between diverse sources, at glance.
                 </p>
               </article>
 
@@ -44,11 +45,11 @@ export default function PageAbout() {
 
             <div>
               <article>
-                <h2>Less carbon and more privacy</h2>
+                <h2>More privacy, less carbon</h2>
                 <p>
-                  Findto is fighting for a better internet. We are working to
-                  show estimated carbon footprint and privacy level of every
-                  search source. Better choices with transparency!
+                  Findto show estimated privacy level and carbon footprint of
+                  every search source. Make better choices for the planet and
+                  for your privacy.
                 </p>
               </article>
 
@@ -61,8 +62,8 @@ export default function PageAbout() {
               <article>
                 <h2>Made by people</h2>
                 <p>
-                  Findto is an open source project for an accessible, universal
-                  search experience. Where diversity is key. Where people&apos;s
+                  Findto is an open source project for a better universal search
+                  experience. Where diversity is key. Where people&apos;s
                   choices matter.
                 </p>
               </article>

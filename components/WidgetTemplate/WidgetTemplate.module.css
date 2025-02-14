@@ -1,18 +1,19 @@
 .container {
-  padding: 2.25rem 2.75rem;
+  padding: 2.5rem;
   overflow: hidden;
   margin: 0 auto 2rem;
   max-width: var(--max-size-container);
   background: var(--background-linear-gradient);
   border-radius: var(--radius-big);
   color: var(--color-black);
+  width: calc(100% - 4rem);
 }
 
 .title {
   display: flex;
   gap: 1.25rem;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 .title h3 {
   display: flex;
@@ -37,14 +38,15 @@
 
 @media screen and (max-width: 768px) {
   .container {
+    width: 100%;
     padding: 2rem 2rem 3rem;
+    border-radius: 0;
   }
 }
 
 @media screen and (max-width: 576px) {
   .container {
     padding: 1.5rem;
-    margin: 0 1rem 1rem;
   }
 
   .title h3 {

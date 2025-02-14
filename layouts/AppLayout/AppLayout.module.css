@@ -1,8 +1,0 @@
-.layout {
-  position: relative;
-  margin: 0 auto;
-  display: flex;
-  gap: 2rem;
-  max-width: var(--max-size-container);
-  flex-direction: column;
-}

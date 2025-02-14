@@ -63,8 +63,7 @@
   font-weight: 400;
   transition: var(--transition);
   width: 100%;
-
-  background: var(--color-black-translucent);
+  background: var(--color-black-translucent) !important;
   color: var(--color-black);
 }
 .cards a:hover,
