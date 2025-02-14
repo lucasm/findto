@@ -12,7 +12,7 @@
       "whatDoYouWant": "你想找什么？"
     },
     "componentBanner": {
-      "title": "分散式搜索",
+      "title": "向你的新搜索助手 Findto 问好",
       "description": "借助 Findto，您可以搜索 Web、AI 和 Metaverse 上的资源。探索最好的互联网。"
     },
     "componentVoiceSearch": {
@@ -21,12 +21,12 @@
       "allow": "Waiting..."
     },
     "slogan": "Web、AI 和 Metaverse 上的去中心化搜索",
-    "copyright": "创造者",
+    "copyright": "创建者",
     "about": "关于",
     "community": "社区",
     "privacy": "隐私政策",
     "terms": "服务条款",
-    "donate": "捐",
+    "donate": "捐款",
     "accept": "好的",
     "learnMore": "了解更多关于 Findto",
     "viewNearbyPlaces": "View nearby places",
@@ -35,14 +35,14 @@
     "search": "Search",
     "clear": "Clear",
     "powered": "Powered by",
-    "settings": "设置",
+    "settings": "用户设置",
     "theme": "主题",
     "language": "语言",
     "contribute": "贡献",
     "trends": "热门内容",
     "stories": "最新动态",
-    "categories": "类别",
-    "category": "类别",
+    "categories": "模块",
+    "category": "选定模式",
     "feedback": {
       "title": "发送反馈",
       "url": "https://forms.gle/US69JvUT1qxYkiF58"

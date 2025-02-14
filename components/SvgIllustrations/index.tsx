@@ -8,7 +8,7 @@ const white = {
   fill: 'var(--color-bg-white)',
 }
 const black = {
-  fill: 'var(--color-text-black)',
+  fill: 'var(--color-black)',
 }
 
 interface Props {

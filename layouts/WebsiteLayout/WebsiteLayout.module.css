@@ -124,8 +124,12 @@
   background-image: url('/findto-sparkle.svg');
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--color-white-translucent);
+  background-color: var(--color-white);
   border-radius: 33.333%;
+  transition: var(--transition-hover);
+}
+.icon:hover {
+  background-color: var(--color-black-translucent);
 }
 
 /* Card Duos */

@@ -5,6 +5,7 @@ import CardsFeat from '@/components/CardsFeat'
 import SvgIllustrations from '@/components/SvgIllustrations'
 import Button from '@/components/Button'
 import SvgLogo from '@/components/SvgLogo'
+import Link from 'next/link'
 
 export const metadata = {
   title: 'About',
@@ -19,7 +20,10 @@ export default function PageAbout() {
     <WebsiteLayout>
       <section>
         <div className={Style.container}>
-          <figure className={Style.icon}></figure>
+          <Link href="/">
+            <figure className={Style.icon}></figure>
+          </Link>
+
           <h1>{t('componentBanner.title')}</h1>
           <p>{t('componentBanner.description')}</p>
         </div>
@@ -86,7 +90,7 @@ export default function PageAbout() {
         <div className={Style.container}>
           <div className={Style.actionContainer}>
             <h2>A powerful search experience</h2>
-            <p>More than a search engine. Decentralized search.</p>
+            <p>More than one search engine. Decentralized search.</p>
             <Button url="/" color="black">
               <>
                 <SvgLogo />
