@@ -2,12 +2,13 @@
 import { useEffect, useRef, useState } from 'react'
 import Styles from '../WidgetPrivacy/WidgetPrivacy.module.css'
 import useSWR from 'swr'
+import { useTranslations } from 'next-intl'
+import { useSearch } from '@/contexts/SearchContext'
 import { fetcher } from '@/utils/http'
 import { extractDomain, isValidUrl } from '@/utils/url'
-import { useSearch } from '@/contexts/SearchContext'
-import { IconShield } from '../SvgIcons'
-
-import Donut from '../Donut'
+import { IconShield } from '@/components/SvgIcons'
+import Donut from '@/components/Donut'
+import WidgetDropdown from '@/components/WidgetDropdown'
 
 interface IApiPrivacy {
   name: string
@@ -16,24 +17,25 @@ interface IApiPrivacy {
   previousScore: number
   trend: string
 }
+type DivProps = React.HTMLAttributes<HTMLDivElement>
 
-export default function WidgetPrivacy() {
-  const { data, searchUrl } = useSearch()
+export default function WidgetPrivacy({ className = '', ...props }: DivProps) {
+  const { searchUrl } = useSearch()
+  const t = useTranslations('t')
 
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const containerRef = useRef<HTMLDivElement | null>(null)
   const [domain, setDomain] = useState<string | null>(null)
   const [percents, setPercents] = useState<string[]>(['100', '0'])
 
-  const handleClick = () => {
-    setIsOpen(!isOpen)
-
+  useEffect(() => {
     if (searchUrl) {
       if (isValidUrl(searchUrl)) {
         setDomain(extractDomain(searchUrl))
       }
     }
-  }
+  }, [isOpen, searchUrl])
+
   const handleOutsideClick = (event: MouseEvent) => {
     if (
       containerRef.current &&
@@ -56,22 +58,22 @@ export default function WidgetPrivacy() {
   const renderLabel = (score: number) => {
     if (score && typeof score === 'number') {
       if (score >= 300 && score <= 579) {
-        return data?.t?.privacyScore[0] ?? 'very poor'
+        return 'very poor'
       }
       if (score >= 580 && score <= 669) {
-        return data?.t?.privacyScore[1] ?? 'fair'
+        return 'fair'
       }
       if (score >= 670 && score <= 739) {
-        return data?.t?.privacyScore[2] ?? 'good'
+        return 'good'
       }
       if (score >= 740 && score <= 799) {
-        return data?.t?.privacyScore[3] ?? 'very good'
+        return 'very good'
       }
       if (score >= 800 && score <= 850) {
-        return data?.t?.privacyScore[4] ?? 'exceptional'
+        return 'exceptional'
       }
     } else {
-      return data?.t?.privacyScore[5] ?? 'unavailable'
+      return 'unavailable'
     }
   }
   const { data: dataPrivacy, error: errorPrivacy } = useSWR<IApiPrivacy>(
@@ -104,55 +106,48 @@ export default function WidgetPrivacy() {
   }, [isOpen])
 
   return (
-    <div className={Styles.container} ref={containerRef}>
-      <button
-        onClick={handleClick}
-        aria-expanded={isOpen}
-        className={isOpen ? Styles.openedButton : ''}>
-        <IconShield />
-        {data?.t?.widgetPrivacy ?? 'Privacy level'}
-      </button>
+    <WidgetDropdown
+      title={t('widgetPrivacy.title') ?? 'Privacy'}
+      icon={<IconShield />}
+      isWidgetOpen={(state) => setIsOpen(state)}
+      credits={{
+        title: 'Privacy Monitor',
+        url: 'https://www.privacymonitor.com/',
+      }}
+      className={className}
+      {...props}>
+      <div className={Styles.container} ref={containerRef}>
+        {isOpen && (
+          <div className={Styles.container}>
+            {!dataPrivacy && !errorPrivacy && <h3>...</h3>}
 
-      {isOpen && (
-        <div className={Styles.containerDropdown}>
-          {!dataPrivacy && !errorPrivacy && <h3>...</h3>}
+            {dataPrivacy && (
+              <>
+                <Donut
+                  percent={percents[0]}
+                  percentRest={percents[1]}
+                  showPercent={dataPrivacy ? true : false}
+                />
+                <h3>
+                  {'Privacy level: '}
+                  {renderLabel(
+                    dataPrivacy?.score ?? dataPrivacy?.previousScore
+                  )}
+                </h3>
+              </>
+            )}
 
-          {dataPrivacy && (
-            <>
-              <Donut
-                percent={percents[0]}
-                percentRest={percents[1]}
-                showPercent={dataPrivacy ? true : false}
-              />
-              <h3>
-                {data?.t?.privacyScore[7] ?? 'Privacy level'}
-                {': '}
-                {renderLabel(dataPrivacy?.score ?? dataPrivacy?.previousScore)}
-              </h3>
-            </>
-          )}
-
-          {errorPrivacy && (
-            <>
-              <Donut percent="100" percentRest="0" showPercent={false} />
-              <h3>
-                Ops, {domain}{' '}
-                {data?.t?.privacyScore[6] ?? "hasn't been analyzed yet"}
-              </h3>
-            </>
-          )}
-
-          <p className={Styles.credits}>
-            {data?.t?.powered ?? 'Powered by'}{' '}
-            <a
-              href="https://www.privacymonitor.com/?utm_source=findto_app"
-              target="_blank"
-              rel="noopener">
-              Privacy Monitor
-            </a>
-          </p>
-        </div>
-      )}
-    </div>
+            {errorPrivacy && (
+              <>
+                <Donut percent="100" percentRest="0" showPercent={false} />
+                <h3>
+                  Ops, {domain} {" hasn't been analyzed yet"}
+                </h3>
+              </>
+            )}
+          </div>
+        )}
+      </div>
+    </WidgetDropdown>
   )
 }

@@ -1,26 +1,24 @@
 .container {
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   max-width: var(--max-size-container);
-}
-.containerBanner {
-  padding: 6rem;
+  width: calc(100% - 4rem);
   background: var(--background-surface);
   border-radius: 2rem;
-  margin: 2rem;
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
+}
+.containerBanner {
+  padding: 8rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  grid-template-columns: 1fr;
-  gap: 0;
   text-align: center;
 }
 
-.container h3 {
+.containerBanner h3 {
   margin-bottom: 2rem;
   font-size: var(--font-size-2);
   color: var(--color-text-black);
 }
-.container p {
+.containerBanner p {
   margin-bottom: 0.75rem;
   font-size: var(--font-size-big);
   color: var(--color-text-black);
@@ -35,15 +33,18 @@
 }
 
 @media screen and (max-width: 576px) {
-  .containerBanner {
-    padding: 2.5rem 2rem;
-    margin: 1rem;
+  .container {
+    width: calc(100% - 2rem);
   }
-  .container h3 {
+  .containerBanner h3 {
     font-size: var(--font-size-3);
     margin-bottom: 1.5rem;
   }
-  .container p {
+  .containerBanner p {
     font-size: var(--font-size-small);
+  }
+  .containerBanner {
+    padding: 3rem;
+    margin: 1rem;
   }
 }

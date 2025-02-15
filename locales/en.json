@@ -20,6 +20,8 @@
       "speak": "Speak",
       "allow": "Waiting..."
     },
+    "widgetCarbon": { "title": "Carbon" },
+    "widgetPrivacy": { "title": "Privacy" },
     "slogan": "Decentralized search",
     "copyright": "Made in Brazil by",
     "about": "About",
@@ -48,8 +50,8 @@
       "url": "https://forms.gle/US69JvUT1qxYkiF58"
     },
     "warnings": {
-      "torrent": "Notice: Sharing files via torrent is not illegal. Downloading copyrighted content is, depending of the legislation. Check your local law and respect it. Avoid legal issues.",
-      "darknet": "Notice: The darknet is legal and often used by academics, journalists, activists or people in censored regions. Use it responsibly. Be careful with scams and phishing. Avoid illegal activities. To access you need a special browser, like Tor Browser."
+      "torrent": "Warning: Using torrents to share files is not illegal, but downloading copyrighted content without permission is a crime in many jurisdictions. Check your local laws and abide by them to avoid legal issues.",
+      "darknet": "Warning: The darknet is legal and often used by academics, journalists, activists, and people in censored regions. Use it responsibly. Be cautious of scams, phishing, and illegal activities. To access it, use Tor Browser."
     }
   },
   "categories": [

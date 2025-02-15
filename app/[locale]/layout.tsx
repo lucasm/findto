@@ -69,7 +69,7 @@ export const metadata: Metadata = {
   },
 }
 export const viewport: Viewport = {
-  themeColor: 'black',
+  themeColor: 'white',
 }
 
 export default async function Layout({

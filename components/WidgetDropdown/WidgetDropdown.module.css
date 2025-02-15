@@ -1,0 +1,65 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+/* .container button {
+    position: relative;
+    height: var(--size-big);
+    background: var(--color-black-translucent);
+    border: 0;
+    padding: 0 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size);
+    border-radius: var(--radius-full);
+    gap: 0.5rem;
+    color: var(--color-black);
+  }
+  .container button svg {
+    color: var(--color-bg-black);
+    width: 20px;
+    height: 20px;
+  }
+  .container button:hover,
+  .container button:focus {
+    opacity: 1;
+  } */
+.container button.opened figure {
+  background: var(--background-surface);
+}
+
+.containerDropdown {
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--background-body);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-2);
+  padding: 2rem;
+  width: auto;
+  z-index: 2;
+}
+
+.credits {
+  width: 100%;
+  text-align: right;
+  font-size: var(--font-size-small);
+  margin-top: 1rem;
+  color: var(--color-text-black);
+  opacity: var(--opacity);
+}
+.credits a {
+  transition: var(--transition);
+}
+.credits a:hover,
+.credits a:focus {
+  opacity: 1;
+}

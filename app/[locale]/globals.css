@@ -20,7 +20,7 @@
     #79d0ff 16.67%,
     #96ffe3 33.34%,
     #fff78d 49.01%,
-    #ff9191 72.68%,
+    #ff9191 75%,
     #f0a4ff 125%
   );
   --color-white-translucent: rgba(255, 255, 255, 0.5);
@@ -28,8 +28,6 @@
   --color-black-translucent-50: rgba(0, 0, 0, 0.5);
   --box-shadow: 0 1.8px 3.8px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%);
   --shadow-2: 0px 6px 12px 0px rgba(0, 0, 0, 0.075);
-  --shadow-hover: 0 0 2px rgba(0, 0, 0, 0.05), 0 8px 16px rgba(0, 0, 0, 0.08),
-    inset 0 0 0px 5px var(--color-white);
   --opacity: 0.5;
   --svg-filter: none;
   --font-size: 1rem;
@@ -45,8 +43,9 @@
   --size-small: 2.625rem;
   --size-large: 3.25rem;
   --size-big: 3rem;
+  --container-sidebar: 250px;
   --max-size-container: 1024px;
-  --max-size-container-2: 800px;
+  --max-size-container-2: 780px;
   --transition-hover: hover 0.2s, background 0.2s, opacity 0.2s, box-shadow 0.2s;
   --transition: all 200ms;
 }
@@ -70,9 +69,6 @@ html {
   scroll-behavior: smooth;
   outline-color: var(--color-black);
   background: var(--background-body);
-  transition: var(--transition-hover);
-  /* background-size: 110% 200%; */
-  /* animation: gradientAnimation 10s ease infinite; */
 }
 main {
   text-align: center;
@@ -272,7 +268,7 @@ article hr {
 }
 
 .sidebar {
-  margin-left: 250px;
+  margin-left: var(--container-sidebar);
 }
 .sidebarClosed {
   margin-left: 0;

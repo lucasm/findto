@@ -12,7 +12,7 @@
   text-align: left;
   gap: 2rem;
   background: var(--background-surface);
-  max-width: calc(var(--max-size-container) - 4rem);
+  max-width: var(--max-size-container-2);
 }
 .container svg {
   width: 22px;

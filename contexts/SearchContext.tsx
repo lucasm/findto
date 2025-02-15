@@ -2,10 +2,39 @@ import { useLocale } from 'next-intl'
 import { createContext, useContext, useState, useEffect, useRef } from 'react'
 
 // create Context for global state
-const SearchContext = createContext<any>({})
+interface SearchContextType {
+  refSearchInput: React.RefObject<HTMLInputElement>
+  refButtons: React.MutableRefObject<HTMLButtonElement[]>
+  putValue: (value: string) => void
+  inputValue: string | undefined
+  setInputValue: React.Dispatch<React.SetStateAction<string | undefined>>
+  search: string
+  setSearch: React.Dispatch<React.SetStateAction<string>>
+  searchUrl: string
+  setSearchUrl: React.Dispatch<React.SetStateAction<string>>
+  category: string
+  setCategory: React.Dispatch<React.SetStateAction<string>>
+  country: string | null
+  locale: string
+  permissionLocation: boolean
+  setPermissionLocation: React.Dispatch<React.SetStateAction<boolean>>
+  latitude: number | undefined
+  setLatitude: React.Dispatch<React.SetStateAction<number | undefined>>
+  longitude: number | undefined
+  setLongitude: React.Dispatch<React.SetStateAction<number | undefined>>
+  isSidebarOpen: boolean
+  setIsSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>
+  isMobileViewport: boolean
+  sizeWindow: { width: number; height: number }
+  titleTrends: string
+  setTitleTrends: React.Dispatch<React.SetStateAction<string>>
+  inputFocus: () => void
+}
+
+const SearchContext = createContext<SearchContextType>({} as SearchContextType)
 
 // export as Provider
-export function SearchContextProvider({ children }: { children: any }) {
+export function SearchProvider({ children }: { children: React.ReactNode }) {
   const locale = useLocale()
   // load search sources file by locale
   const localeSearchSources = require('../locales/' + locale + '.json')
@@ -124,14 +153,14 @@ export function SearchContextProvider({ children }: { children: any }) {
 
   // sidebar
   useEffect(() => {
-    const sidebar = document.querySelector('.sidebar')
-    if (sidebar) {
+    const sidebars = document.querySelectorAll('.sidebar')
+    sidebars.forEach((sidebar) => {
       if (!isMobileViewport && isSidebarOpen) {
         sidebar.classList.remove('sidebarClosed')
       } else {
         sidebar.classList.add('sidebarClosed')
       }
-    }
+    })
   }, [isSidebarOpen, isMobileViewport])
 
   return (

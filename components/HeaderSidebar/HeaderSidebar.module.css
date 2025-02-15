@@ -2,7 +2,7 @@
   position: fixed;
   top: 4rem;
   left: 0;
-  width: 250px;
+  width: var(--container-sidebar);
   height: 100vh;
   background: var(--background-body);
   color: white;

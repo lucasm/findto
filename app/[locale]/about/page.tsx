@@ -66,7 +66,7 @@ export default function PageAbout() {
               <article>
                 <h2>Made by people</h2>
                 <p>
-                  Findto is an open source project for a better universal search
+                  Findto is an open source project for a free universal search
                   experience. Where diversity is key. Where people&apos;s
                   choices matter.
                 </p>
@@ -90,7 +90,7 @@ export default function PageAbout() {
         <div className={Style.container}>
           <div className={Style.actionContainer}>
             <h2>A powerful search experience</h2>
-            <p>More than one search engine. Decentralized search.</p>
+            <p>More than search. Decentralized search.</p>
             <Button url="/" color="black">
               <>
                 <SvgLogo />

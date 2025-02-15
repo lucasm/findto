@@ -109,8 +109,10 @@ export default function WidgetVideoStories({ selectedCategory }: Props) {
               {videoUrl && (
                 <div ref={videoPlayer} className={Styles.videoPlayer}>
                   <button className={Styles.closeButton} onClick={closeVideo}>
-                    <IconClose />
-                    Fechar
+                    <div>
+                      <IconClose />
+                      Fechar
+                    </div>
                   </button>
                   <iframe
                     width="100%"

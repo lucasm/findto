@@ -20,7 +20,7 @@
   align-items: center;
   text-align: center;
   border-radius: 2rem;
-  background-color: var(--color-white-translucent);
+  background-color: var(--color-white);
   padding: 2rem;
 }
 .card li figure {

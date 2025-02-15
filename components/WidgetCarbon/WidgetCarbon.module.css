@@ -1,7 +1,10 @@
 .container {
   min-width: var(--container-sidebar);
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column-reverse;
   gap: 1rem;
+}
+
+.container h4 {
+  text-align: left;
 }

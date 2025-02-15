@@ -10,11 +10,11 @@ const withNextIntl = createNextIntlPlugin()
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  pwa: {
-    dest: 'public',
-    register: true,
-    skipWaiting: true,
-  },
+  //   pwa: {
+  //     dest: 'public',
+  //     register: true,
+  //     skipWaiting: true,
+  //   },
   images: {
     domains: [
       't0.gstatic.com',

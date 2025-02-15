@@ -27,7 +27,7 @@
 }
 
 .containerInput {
-  max-width: 780px;
+  max-width: var(--max-size-container-2);
   width: 100%;
 }
 
@@ -144,7 +144,7 @@
 /* Buttons */
 .buttons {
   width: 100%;
-  max-width: 780px;
+  max-width: var(--max-size-container-2);
 }
 .buttons ul {
   display: flex;

@@ -12,7 +12,7 @@
   display: flex;
   gap: 1rem;
   justify-content: flex-start;
-  padding: 1rem;
+  padding: 0.75rem;
   width: 100%;
   border: 0;
   margin: 0;
@@ -31,11 +31,10 @@
 }
 
 .container li button img {
-  width: 4rem;
+  width: 3.5rem;
   background: var(--color-white);
   transition: var(--transition-hover);
   border-radius: 0.5rem;
-  box-shadow: var(--box-shadow);
   filter: grayscale(100%);
 }
 .container li button span {

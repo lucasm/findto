@@ -1,14 +1,15 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
-import Styles from '../WidgetPrivacy/WidgetPrivacy.module.css'
+import { useEffect, useState } from 'react'
+import Style from './WidgetCarbon.module.css'
 import useSWR from 'swr'
+import { useTranslations } from 'next-intl'
 import { fetcher } from '@/utils/http'
 import { extractDomain, isValidUrl } from '@/utils/url'
 import { useSearch } from '@/contexts/SearchContext'
-import { IconLeaf } from '../SvgIcons'
-
-import Donut from '../Donut'
+import { IconLeaf } from '@/components/SvgIcons'
+import Donut from '@/components/Donut'
+import WidgetDropdown from '@/components/WidgetDropdown'
 
 interface IApiCarbon {
   url: string
@@ -32,32 +33,24 @@ interface IApiCarbon {
   timestamp: number
 }
 
-export default function WidgetCarbon() {
-  const { data, searchUrl } = useSearch()
+type DivProps = React.HTMLAttributes<HTMLDivElement>
+
+export default function WidgetCarbon({ className = '', ...props }: DivProps) {
+  const { searchUrl, search } = useSearch()
+  const t = useTranslations('t')
 
   const [isOpen, setIsOpen] = useState<boolean>(false)
-  const containerRef = useRef<HTMLDivElement | null>(null)
 
   const [domain, setDomain] = useState<string | null>(null)
   const [percents, setPercents] = useState<string[]>(['30', '70'])
 
-  const handleClick = () => {
-    setIsOpen(!isOpen)
-
+  useEffect(() => {
     if (searchUrl) {
       if (isValidUrl(searchUrl)) {
         setDomain(extractDomain(searchUrl))
       }
     }
-  }
-  const handleOutsideClick = (event: MouseEvent) => {
-    if (
-      containerRef.current &&
-      !containerRef.current.contains(event.target as Node)
-    ) {
-      setIsOpen(false)
-    }
-  }
+  }, [isOpen, searchUrl])
 
   const { data: dataCarbon, error: errorCarbon } = useSWR<IApiCarbon>(
     isOpen && domain ? '/api/carbon?url=' + searchUrl : null,
@@ -69,7 +62,7 @@ export default function WidgetCarbon() {
       refreshWhenOffline: false,
       refreshWhenHidden: false,
       refreshInterval: 0,
-    },
+    }
   )
 
   useEffect(() => {
@@ -80,76 +73,50 @@ export default function WidgetCarbon() {
     }
   }, [dataCarbon])
 
-  useEffect(() => {
-    if (isOpen) {
-      document.addEventListener('mousedown', handleOutsideClick)
-    } else {
-      document.removeEventListener('mousedown', handleOutsideClick)
-    }
-  }, [isOpen])
-
   return (
-    <div className={Styles.container} ref={containerRef}>
-      <button
-        onClick={handleClick}
-        aria-expanded={isOpen}
-        className={isOpen ? Styles.openedButton : ''}>
-        <IconLeaf />
-        {data?.t?.widgetCarbon ?? 'Carbon footprint'}
-      </button>
+    <WidgetDropdown
+      title={t('widgetCarbon.title') ?? 'Carbon'}
+      icon={<IconLeaf />}
+      isWidgetOpen={(state) => setIsOpen(state)}
+      credits={{
+        title: 'Website Carbon',
+        url: 'https://www.websitecarbon.com',
+      }}
+      className={className}
+      {...props}>
+      <div className={Style.container}>
+        {!dataCarbon && !errorCarbon && <h3>...</h3>}
 
-      {isOpen && (
-        <div className={Styles.containerDropdown}>
-          {!dataCarbon && !errorCarbon && <h3>...</h3>}
+        {dataCarbon && (
+          <>
+            <h4>{'* cleaner than other web pages'}</h4>
 
-          {dataCarbon && (
-            <>
-              <Donut
-                percent={percents[0]}
-                percentRest={percents[1]}
-                showPercent={dataCarbon ? true : false}
-              />
+            <Donut
+              percent={percents[0]}
+              percentRest={percents[1]}
+              showPercent={dataCarbon ? true : false}
+            />
 
-              <h4>
-                {'* '}
-                {data?.t?.carbonScore[0] ?? 'cleaner than other web pages'}
-              </h4>
-
-              <h3>
-                {dataCarbon?.statistics?.co2?.grid?.grams
-                  ? dataCarbon?.statistics?.co2?.grid?.grams.toFixed(2) + 'g '
-                  : '?'}
-
-                {dataCarbon?.statistics?.co2?.grid?.grams &&
-                  (data?.t?.carbonScore[1] ?? 'of carbon per visit')}
-              </h3>
-
-              <h4>
-                {dataCarbon?.green
-                  ? data?.t?.carbonScore[2] ?? 'Sustainable energy'
-                  : data?.t?.carbonScore[3] ?? 'Dirty energy'}
-              </h4>
-            </>
-          )}
-
-          {errorCarbon && (
             <h3>
-              Ops, {domain}{' '}
-              {data?.t?.carbonScore[4] ?? "hasn't been analyzed yet"}
+              {search}
+              {' has '}
+              {dataCarbon?.statistics?.co2?.grid?.grams
+                ? dataCarbon?.statistics?.co2?.grid?.grams.toFixed(2) + 'g '
+                : '?'}
+              {dataCarbon?.statistics?.co2?.grid?.grams &&
+                'of carbon per visit'}
             </h3>
-          )}
 
-          <p className={Styles.credits}>
-            {data?.t?.powered ?? 'Powered by'}{' '}
-            <a
-              href={'https://www.websitecarbon.com/?utm_source=findto_app'}
-              target="_blank"
-              rel="noopener">
-              Website Carbon
-            </a>
-          </p>
-        </div>
-      )}
-    </div>
+            <h4>{dataCarbon?.green ? 'Sustainable energy' : 'Dirty energy'}</h4>
+          </>
+        )}
+
+        {errorCarbon && (
+          <h3>
+            Ops, {domain} {"hasn't been analyzed yet"}
+          </h3>
+        )}
+      </div>
+    </WidgetDropdown>
   )
 }

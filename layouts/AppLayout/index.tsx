@@ -14,13 +14,12 @@ export default function AppLayout({
 }) {
   return (
     <AppContextProviders>
-      <body className="sidebar">
-        <AppHeader locale={locale} category={category} />
+      <AppHeader locale={locale} category={category} />
 
-        <main>{children}</main>
-
+      <main className="sidebar">{children}</main>
+      <div className="sidebar">
         <AppFooter />
-      </body>
+      </div>
     </AppContextProviders>
   )
 }

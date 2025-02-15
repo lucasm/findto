@@ -2,11 +2,11 @@
 
 import Style from './Header.module.css'
 import Link from 'next/link'
-import { useState } from 'react'
 import { useTheme } from 'next-themes'
 import { useTranslations } from 'next-intl'
-import SelectLanguage from '@/components/SelectLanguage'
-import SearchNav from '@/components/SearchNav'
+import { useSearch } from '@/contexts/SearchContext'
+import { getLocaleData } from '@/utils/getLocaleData'
+import SvgLogo from '@/components/SvgLogo'
 import {
   IconUser,
   IconFeedback,
@@ -17,11 +17,13 @@ import {
   IconArrow,
   IconCategories,
 } from '@/components/SvgIcons'
-import { getLocaleData } from '@/utils/getLocaleData'
-import SvgLogo from '../SvgLogo'
-import { useSearch } from '@/contexts/SearchContext'
+import SelectLanguage from '@/components/SelectLanguage'
+import SearchNav from '@/components/SearchNav'
+import HeaderSidebar from '@/components/HeaderSidebar'
+import WidgetCarbon from '@/components/WidgetCarbon'
+import WidgetPrivacy from '@/components/WidgetPrivacy'
+import WidgetDropdown from '@/components/WidgetDropdown'
 import { ISearchCategory } from '@/interfaces/search'
-import HeaderSidebar from '../HeaderSidebar'
 
 interface Props {
   locale: string
@@ -49,43 +51,10 @@ const AppHeader = ({ locale, category }: Props) => {
     setTheme('light')
   }
 
-  const [showSettings, setShowSettings] = useState<boolean>(false)
-  const handleSettings = () => {
-    setShowSettings(!showSettings)
-  }
-
-  const [showMenu, setShowMenu] = useState<boolean>(false)
-  const handleMenu = () => {
-    setShowMenu(!showMenu)
-  }
-
-  const showLayer = showMenu || showSettings
-
-  // for Button Categories
-  const handleAriaExpanded = () => {
-    if (isMobileViewport) {
-      return showMenu ? true : false
-    } else {
-      return isSidebarOpen ? true : false
-    }
-  }
   const handleOnClick = () => {
-    if (isMobileViewport) {
-      handleMenu()
-    } else {
-      inputFocus()
-      setIsSidebarOpen(!isSidebarOpen)
-    }
+    setIsSidebarOpen(!isSidebarOpen)
+    inputFocus()
   }
-
-  const handleClassName = () => {
-    if (isMobileViewport) {
-      return showMenu
-        ? Style.buttonMenu + ' ' + Style.openMenu
-        : Style.buttonMenu
-    }
-  }
-
   const handleFigure = () => {
     if (!isMobileViewport && isSidebarOpen) {
       return (
@@ -127,19 +96,34 @@ const AppHeader = ({ locale, category }: Props) => {
           Findto
         </Link>
 
-        {/* Button Categories */}
-        <button
-          onClick={() => handleOnClick()}
-          aria-expanded={handleAriaExpanded()}
-          className={handleClassName()}>
-          {handleFigure()}
-        </button>
+        {/* Modes */}
+        {!isMobileViewport && (
+          <button onClick={() => handleOnClick()} aria-expanded={isSidebarOpen}>
+            {handleFigure()}
+          </button>
+        )}
+
+        {isMobileViewport && (
+          <WidgetDropdown
+            title={t('categories') ?? 'Categories'}
+            icon={<IconCategories />}
+            position="left">
+            <SearchNav
+              data={data}
+              variant="vertical"
+              selectedCategory={category}
+            />
+          </WidgetDropdown>
+        )}
       </div>
 
       <div className={Style.buttonsContainer}>
-        {/* Button Donate */}
+        <WidgetPrivacy className={Style.buttonHideMobile} />
+        <WidgetCarbon className={Style.buttonHideMobile} />
+
+        {/* Donate */}
         <button
-          className={Style.buttonDonate}
+          className={Style.buttonHideMobile}
           onClick={() => {
             window.open(
               'https://www.patreon.com/findto',
@@ -153,33 +137,12 @@ const AppHeader = ({ locale, category }: Props) => {
           </figure>
         </button>
 
-        {/* Button Settings */}
-        <button
-          onClick={handleSettings}
-          className={
-            showSettings
-              ? Style.buttonSettings + ' ' + Style.openMenu
-              : Style.buttonSettings
-          }>
-          <figure>
-            <IconUser />
-            <span> {t('settings')}</span>
-          </figure>
-        </button>
-      </div>
-
-      {showMenu && (
-        <nav className={`${Style.nav} ${showMenu ? Style.openNav : ''}`}>
-          <SearchNav
-            data={data}
-            variant="vertical"
-            selectedCategory={category}
-          />
-        </nav>
-      )}
-
-      {showSettings && (
-        <nav className={`${Style.nav} ${showSettings ? Style.openNav : ''}`}>
+        {/* Settings */}
+        <WidgetDropdown
+          title={undefined}
+          icon={<IconUser />}
+          isWidgetOpen={(state) => console.log(state)}
+          ariaLabel={t('settings') ?? 'Settings'}>
           <div className={Style.containerSettings}>
             <div>
               <h3>{t('theme')}</h3>
@@ -225,19 +188,8 @@ const AppHeader = ({ locale, category }: Props) => {
               <SelectLanguage />
             </div>
           </div>
-        </nav>
-      )}
-
-      {showLayer && (
-        <div
-          className={
-            showLayer ? Style.layer + ' ' + Style.layerActive : Style.layer
-          }
-          onClick={() => {
-            setShowMenu(false)
-            setShowSettings(false)
-          }}></div>
-      )}
+        </WidgetDropdown>
+      </div>
 
       <HeaderSidebar category={category} />
     </header>

@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl'
 import { ReactElement, ReactNode } from 'react'
 import Styles from './WidgetTemplate.module.css'
 
-interface ICredits {
+export interface ICredits {
   title: string
   url: string
 }

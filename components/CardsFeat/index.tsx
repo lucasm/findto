@@ -57,28 +57,28 @@ const features: Feature[] = [
   {
     icon: <IconVisualSearch />,
     title: 'Visual Search',
-    description: 'Search on supported sources with an image.',
+    description: 'Search with an image on supported sources.',
   },
   {
     icon: <IconLeaf />,
-    title: 'Carbon Footprint',
+    title: 'Carbon',
     description: 'Estimated carbon footprint of search source.',
   },
   {
     icon: <IconLanguage />,
     title: 'Internationalization',
-    description: 'Choose your country for local sources, or international.',
+    description: 'Choose your country sources, or international.',
   },
   {
     icon: <IconAccessibility />,
     title: 'Accessibility',
     description:
-      'Balanced contrast, screen reader support, keyboard navigation and dark theme.',
+      'Dark theme, contrast, screen reader support, and keyboard navigation.',
   },
   {
     icon: <IconOpenSource />,
     title: 'Open Source',
-    description: 'You can view and contribute to the source code.',
+    description: 'Inspect and contribute to the source code.',
   },
 ]
 

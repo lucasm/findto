@@ -1,9 +1,7 @@
 'use client'
-
-import { SearchContextProvider } from '../../contexts/SearchContext'
-
 import { ReactNode } from 'react'
+import { SearchProvider } from '@/contexts/SearchContext'
 
 export function AppContextProviders({ children }: { children: ReactNode }) {
-  return <SearchContextProvider>{children}</SearchContextProvider>
+  return <SearchProvider>{children}</SearchProvider>
 }

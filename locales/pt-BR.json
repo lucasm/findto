@@ -3,7 +3,7 @@
   "country_code": "BR",
   "t": {
     "componentCookiesPopup": {
-      "title": "O Findto utiliza cookies respeitando sua privacidade. Não armazenamos informações pessoais."
+      "title": "O Findto utiliza cookies respeitando a sua privacidade. Não armazenamos informações pessoais."
     },
     "componentWelcome": {
       "goodMorning": "Bom dia",
@@ -20,7 +20,7 @@
       "speak": "Fale",
       "allow": "Aguardando permissão..."
     },
-    "widgetPrivacy": "Nível de privacidade",
+    "widgetPrivacy": { "title": "Privacidade" },
     "privacyScore": [
       "muito pobre",
       "justa",
@@ -28,13 +28,12 @@
       "muito boa",
       "excepcional",
       "indisponível",
-      "ainda não foi analisado",
-      "Nível de privacidade"
+      "ainda não foi analisado"
     ],
-    "widgetCarbon": "Emissão de carbono",
+    "widgetCarbon": { "title": "Carbono" },
     "carbonScore": [
       "mais limpo que outros sites",
-      "de carbono por visita",
+      "de emissão de carbono por visita",
       "Energia sustentável",
       "Energia suja",
       "ainda não foi analisado"
@@ -67,7 +66,7 @@
       "url": "https://forms.gle/r6XAyB1ZLn9qzwp16"
     },
     "warnings": {
-      "torrent": "Aviso: Usar torrent para compartilhar arquivos não é ilegal, mas obter conteúdos protegidos por direitos autorais sem a autorização do autor é crime. Respeite a Lei de Direitos Autorais no Brasil (Lei 9.610/98) ou da sua localidade atual."
+      "torrent": "Aviso: Usar torrent para compartilhar arquivos não é ilegal, mas obter conteúdos protegidos por direitos autorais sem autorização é crime. Respeite a Lei de Direitos Autorais no Brasil (Lei 9.610/98) ou da sua localidade atual."
     }
   },
   "categories": [
@@ -535,16 +534,20 @@
           "title": "Pipocando"
         },
         {
+          "id": "UCLYimOsgmIVf6KNjzXPkUwQ",
+          "title": "gaveta"
+        },
+        {
+          "id": "UCjY_LBR_7-Ile0MAsbeJWBg",
+          "title": "phsantos"
+        },
+        {
           "id": "UCurl4RJpmlVmUJUiTWyGWAA",
           "title": "CinemacomRapaduraoficial"
         },
         {
           "id": "UCiSarBtpSphUrxtKDIW9c_A",
           "title": "tiagobelotti"
-        },
-        {
-          "id": "UCLYimOsgmIVf6KNjzXPkUwQ",
-          "title": "gaveta"
         },
         {
           "id": "UCo75UnlCEKjxOoNb4jx2LsA",
@@ -644,10 +647,6 @@
       ],
       "youtube_channels": [
         {
-          "id": "UCIzAIM-zatIDHErC0Z23hbQ",
-          "title": "MusicaMultishow"
-        },
-        {
           "id": "UCucs1ej22g6huKteRqO8mRA",
           "title": "rollingstonebrasil"
         },
@@ -658,6 +657,10 @@
         {
           "id": "UCkg3WzpzJPMrre4ZRGHixgQ",
           "title": "DeezerBrasil"
+        },
+        {
+          "id": "UCIzAIM-zatIDHErC0Z23hbQ",
+          "title": "MusicaMultishow"
         },
         {
           "id": "UCEgzbINEJfsLivqFdLHKIrg",
@@ -964,20 +967,20 @@
           "title": "cnnviagemegastronomia"
         },
         {
-          "id": "UCWfRNn9fRe5gMc3QaE3AXkA",
-          "title": "loucoporviagens"
+          "id": "UCV6Lb37EQLdaDu0VyI7yDPg",
+          "title": "rolefamilia"
         },
         {
           "id": "UCWN45XZWIlZoUeohfqiyURA",
           "title": "MelhoresDestinos"
         },
         {
-          "id": "UCdnGnck8goh_AvWmOlZ6zDw",
-          "title": "MasterCardBrasil"
-        },
-        {
           "id": "UC6xoasG-FY3P1YHo8_gBG9g",
           "title": "NumPulo"
+        },
+        {
+          "id": "UCWfRNn9fRe5gMc3QaE3AXkA",
+          "title": "loucoporviagens"
         },
         {
           "id": "UCLPXpKv6WDc7mtapsbMyPHg",
@@ -992,16 +995,16 @@
           "title": "EmbraturBrasil"
         },
         {
-          "id": "UCV6Lb37EQLdaDu0VyI7yDPg",
-          "title": "rolefamilia"
-        },
-        {
           "id": "UCk6RUGsfWI-3kPrDlMUfvfQ",
           "title": "Travelandsharebr"
         },
         {
           "id": "UCwCh6NVP-qQim0KqJMuYWGw",
           "title": "SonhoeDestino"
+        },
+        {
+          "id": "UCdnGnck8goh_AvWmOlZ6zDw",
+          "title": "MasterCardBrasil"
         }
       ]
     },
@@ -1174,28 +1177,16 @@
           "title": "CanalfuturaOrgBr"
         },
         {
-          "id": "UCSTlOTcyUmzvhQi6F8lFi5w",
-          "title": "AtilaIamarino"
-        },
-        {
-          "id": "UC4O2eKb8vI4VlMeNp90asfg",
-          "title": "PrazerKarnal"
-        },
-        {
-          "id": "UCZdJE8KpuFm6NRafHTEIC-g",
-          "title": "TemperoDrag"
-        },
-        {
           "id": "UCKHhA5hN2UohhFDfNXB_cvQ",
           "title": "manualdomundo"
         },
         {
-          "id": "UCn9Erjy00mpnWeLnRqhsA1g",
-          "title": "CienciaTodoDia"
+          "id": "UCSTlOTcyUmzvhQi6F8lFi5w",
+          "title": "AtilaIamarino"
         },
         {
-          "id": "UCWq1xltHB2fDe6YkYoOrryg",
-          "title": "CanaldoSchwarza"
+          "id": "UCZdJE8KpuFm6NRafHTEIC-g",
+          "title": "TemperoDrag"
         },
         {
           "id": "UCW9jLtlONRp7W-AK9F8M66Q",
@@ -1204,6 +1195,18 @@
         {
           "id": "UChj-CaMYRpv0-vrqKG0-aEw",
           "title": "LiliSchwarcz"
+        },
+        {
+          "id": "UCn9Erjy00mpnWeLnRqhsA1g",
+          "title": "CienciaTodoDia"
+        },
+        {
+          "id": "UCrSM1UV_KLAdTzgxyxl3POw",
+          "title": "olaciencia"
+        },
+        {
+          "id": "UCWq1xltHB2fDe6YkYoOrryg",
+          "title": "CanaldoSchwarza"
         },
         {
           "id": "UCIvTDL8pbiiWZ821cWvmTsg",
@@ -1216,10 +1219,6 @@
         {
           "id": "UCV_Oh99yIfe7GqGN_HZ0OVQ",
           "title": "Antofágica"
-        },
-        {
-          "id": "UCZGKD_HFC4H1WuPf0ZmWgOg",
-          "title": "NeuroVox"
         }
       ]
     },
