@@ -38,7 +38,7 @@ export default function PageAbout() {
                 <p>
                   Findto is an assistant for decentralized search. Findto puts
                   people in control of algorithms. You can search the same term
-                  between diverse sources, at glance.
+                  between diverse sources, at once.
                 </p>
               </article>
 

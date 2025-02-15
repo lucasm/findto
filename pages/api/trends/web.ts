@@ -12,7 +12,7 @@ export default async function endpoint(
   req: NextApiRequest,
   res: NextApiResponse
 ): Promise<void> {
-  const {
+  let {
     query: { country },
   } = req
 
@@ -20,6 +20,11 @@ export default async function endpoint(
     return res
       .status(400)
       .json({ message: 'Missing parameter: COUNTRY is required.' })
+  }
+
+  // if China is requested, use Hong Kong instead
+  if (country === 'CN') {
+    country = 'HK'
   }
 
   const url = `https://trends.google.com/trends/trendingsearches/daily/rss?geo=${country}`

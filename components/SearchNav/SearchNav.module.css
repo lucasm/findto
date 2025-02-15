@@ -116,7 +116,7 @@
 
 @media screen and (max-width: 1024px) {
   .cards ul {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
   .cards a {
     font-size: var(--font-size-small);

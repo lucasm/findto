@@ -37,7 +37,7 @@
   background-color: var(--color-black);
   background-position: 0;
   background-size: cover;
-  box-shadow: var(--box-shadow);
+  /* box-shadow: var(--box-shadow); */
 }
 .slide button:hover figure,
 .slide button:focus figure {

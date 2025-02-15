@@ -35,7 +35,7 @@
 }
 .buttonsContainer button:hover,
 .buttonsContainer button:focus {
-  opacity: 1;
+  opacity: 1 !important;
 }
 .buttonsContainer button figure {
   display: flex;

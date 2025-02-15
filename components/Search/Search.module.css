@@ -1,8 +1,6 @@
 .section {
   min-height: 90vh;
   margin: 0 auto 2rem;
-  /* background: var(--background-linear-gradient); */
-  transition: var(--transition-hover);
 }
 .container {
   display: flex;

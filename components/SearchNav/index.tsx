@@ -84,6 +84,10 @@ const SearchNav = ({ data, variant, selectedCategory }: Props) => {
 
   const navClass = `${Style.nav} ${variant && Style[variant]}`
 
+  const hasActiveClass = (categoryName: string) => {
+    return selectedCategory?.name === categoryName && variant !== 'cards'
+  }
+
   return (
     <div className={navClass}>
       <ul>
@@ -92,12 +96,7 @@ const SearchNav = ({ data, variant, selectedCategory }: Props) => {
             category?.active === true && (
               <li key={index}>
                 <Link
-                  className={
-                    selectedCategory?.name === category?.name ||
-                    (!selectedCategory && category?.name === 'Home')
-                      ? Style.active
-                      : ''
-                  }
+                  className={hasActiveClass(category?.name) ? Style.active : ''}
                   href={
                     '/' + locale + '/search/' + normalizeId(category?.name)
                   }>

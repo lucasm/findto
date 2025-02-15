@@ -117,19 +117,19 @@
 /* App Icon */
 .icon {
   display: inline-block;
-  width: 12rem;
-  height: 12rem;
+  width: 10rem;
+  height: 10rem;
   margin: 2rem auto;
-  background-size: 5rem;
+  background-size: 4.5rem;
   background-image: url('/findto-sparkle.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--color-white);
   border-radius: 33.333%;
-  transition: var(--transition-hover);
+  transition: var(--transition);
 }
 .icon:hover {
-  background-color: var(--color-black-translucent);
+  transform: translateY(-0.25rem);
 }
 
 /* Card Duos */

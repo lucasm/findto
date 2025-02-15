@@ -9,6 +9,7 @@ import { extractDomain, isValidUrl } from '@/utils/url'
 import { IconShield } from '@/components/SvgIcons'
 import Donut from '@/components/Donut'
 import WidgetDropdown from '@/components/WidgetDropdown'
+import Loader from '../Loader'
 
 interface IApiPrivacy {
   name: string
@@ -119,7 +120,7 @@ export default function WidgetPrivacy({ className = '', ...props }: DivProps) {
       <div className={Styles.container} ref={containerRef}>
         {isOpen && (
           <div className={Styles.container}>
-            {!dataPrivacy && !errorPrivacy && <h3>...</h3>}
+            {!dataPrivacy && !errorPrivacy && <Loader />}
 
             {dataPrivacy && (
               <>

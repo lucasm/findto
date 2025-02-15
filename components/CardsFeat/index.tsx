@@ -3,7 +3,7 @@ import Style from './CardsFeat.module.css'
 import {
   IconAccessibility,
   IconLanguage,
-  IconLeaf,
+  IconCarbon,
   IconMic,
   IconOpenSource,
   IconSearch,
@@ -60,7 +60,7 @@ const features: Feature[] = [
     description: 'Search with an image on supported sources.',
   },
   {
-    icon: <IconLeaf />,
+    icon: <IconCarbon />,
     title: 'Carbon',
     description: 'Estimated carbon footprint of search source.',
   },

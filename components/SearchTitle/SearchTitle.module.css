@@ -6,9 +6,6 @@
   flex-direction: column;
 }
 
-.container h1 {
-  margin-left: -0.1rem;
-}
 .container h2 {
   font-weight: 400;
   font-size: var(--font-size-3);

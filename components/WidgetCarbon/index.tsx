@@ -7,9 +7,10 @@ import { useTranslations } from 'next-intl'
 import { fetcher } from '@/utils/http'
 import { extractDomain, isValidUrl } from '@/utils/url'
 import { useSearch } from '@/contexts/SearchContext'
-import { IconLeaf } from '@/components/SvgIcons'
+import { IconCarbon } from '@/components/SvgIcons'
 import Donut from '@/components/Donut'
 import WidgetDropdown from '@/components/WidgetDropdown'
+import Loader from '../Loader'
 
 interface IApiCarbon {
   url: string
@@ -76,7 +77,7 @@ export default function WidgetCarbon({ className = '', ...props }: DivProps) {
   return (
     <WidgetDropdown
       title={t('widgetCarbon.title') ?? 'Carbon'}
-      icon={<IconLeaf />}
+      icon={<IconCarbon />}
       isWidgetOpen={(state) => setIsOpen(state)}
       credits={{
         title: 'Website Carbon',
@@ -85,7 +86,7 @@ export default function WidgetCarbon({ className = '', ...props }: DivProps) {
       className={className}
       {...props}>
       <div className={Style.container}>
-        {!dataCarbon && !errorCarbon && <h3>...</h3>}
+        {!dataCarbon && !errorCarbon && <Loader />}
 
         {dataCarbon && (
           <>

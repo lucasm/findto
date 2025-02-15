@@ -12,7 +12,7 @@
       "whatDoYouWant": "What do you want to find?"
     },
     "componentBanner": {
-      "title": "Say hello to Findto, your new search assistant",
+      "title": "Meet Findto, your new search assistant",
       "description": "Search on the Web, AI, and more in a decentralized way."
     },
     "componentVoiceSearch": {
@@ -30,7 +30,7 @@
     "terms": "Terms of Service",
     "donate": "Donate",
     "accept": "Accept",
-    "learnMore": "Learn more",
+    "learnMore": "Meet Findto",
     "viewNearbyPlaces": "View nearby places",
     "openApp": "Open app",
     "placeholder": "Search on",
@@ -1037,16 +1037,16 @@
           "action": "https://www.fiverr.com/search/gigs?query="
         },
         {
+          "name": "Remote",
+          "action": "https://remote.com/jobs/all?query="
+        },
+        {
           "name": "Monster",
           "action": "https://www.monster.com/jobs/search/?q="
         },
         {
           "name": "ZipRecruiter",
           "action": "https://www.ziprecruiter.com/candidate/search?search="
-        },
-        {
-          "name": "LinkUp",
-          "action": "https://www.linkup.com/search/results/"
         },
         {
           "name": "Dice",
@@ -1059,6 +1059,10 @@
         {
           "name": "SimplyHired",
           "action": "https://www.simplyhired.com/search?q="
+        },
+        {
+          "name": "LinkUp",
+          "action": "https://www.linkup.com/search/results/"
         }
       ]
     },

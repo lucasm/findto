@@ -20,6 +20,8 @@
       "speak": "Speak now",
       "allow": "Waiting..."
     },
+    "widgetCarbon": { "title": "碳排放" },
+    "widgetPrivacy": { "title": "隐私保护" },
     "slogan": "Web、AI 和 Metaverse 上的去中心化搜索",
     "copyright": "创建者",
     "about": "关于",
@@ -34,7 +36,7 @@
     "placeholder": "搜索",
     "search": "Search",
     "clear": "Clear",
-    "powered": "Powered by",
+    "powered": "数据提供者",
     "settings": "用户设置",
     "theme": "主题",
     "language": "语言",
@@ -59,11 +61,11 @@
       "data": [
         {
           "name": "Baidu",
-          "action": "https://www.baidu.com/s?wd=lula"
+          "action": "https://www.baidu.com/s?wd="
         },
         {
-          "name": "Douyin",
-          "action": "https://www.douyin.com/root/search/"
+          "name": "Bing",
+          "action": "https://www.bing.com/search?q="
         },
         {
           "name": "Google",
@@ -74,12 +76,32 @@
           "action": "https://chat.openai.com/?q="
         },
         {
+          "name": "DeepSeek",
+          "action": "https://chat.deepseek.com/?q="
+        },
+        {
           "name": "Copilot",
           "action": "https://copilot.microsoft.com/?q="
         },
         {
           "name": "YouTube",
           "action": "https://www.youtube.com/results?search_query="
+        },
+        {
+          "name": "Douyin",
+          "action": "https://www.douyin.com/root/search/"
+        },
+        {
+          "name": "Weibo",
+          "action": "https://s.weibo.com/weibo?q="
+        },
+        {
+          "name": "Taobao",
+          "action": "https://s.taobao.com/search?q="
+        },
+        {
+          "name": "Xiaohongshu",
+          "action": "https://www.xiaohongshu.com/explore?q="
         },
         {
           "name": "Reddit",
@@ -106,10 +128,6 @@
           "action": "https://search.yahoo.com/search?p="
         },
         {
-          "name": "NY Times",
-          "action": "https://www.nytimes.com/search?query="
-        },
-        {
           "name": "CNN",
           "action": "https://edition.cnn.com/search?q="
         },
@@ -118,20 +136,8 @@
           "action": "https://www.bbc.co.uk/search?q="
         },
         {
-          "name": "Bing",
-          "action": "https://www.bing.com/search?q="
-        },
-        {
           "name": "Amazon",
           "action": "https://www.amazon.com.br/s?k="
-        },
-        {
-          "name": "Ebay",
-          "action": "https://www.ebay.com/sch/i.html?_nkw="
-        },
-        {
-          "name": "Walmart",
-          "action": "https://www.walmart.com/search/?query="
         },
         {
           "name": "Temu",
