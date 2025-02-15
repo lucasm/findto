@@ -37,6 +37,7 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
     isMobileViewport,
     refSearchInput,
     refButtons,
+    inputFocus,
   } = useSearch()
 
   const refSearchButton = useRef<HTMLAnchorElement>(null)
@@ -46,14 +47,8 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
   const searchName = selectedCategory?.name_translated || selectedCategory?.name
 
   const handleResize = useCallback(() => {
-    if (refSearchInput) {
+    if (refSearchInput.current) {
       refSearchInput.current.style.height = 'auto'
-    }
-  }, [refSearchInput])
-
-  const handleFocus = useCallback(() => {
-    if (refSearchInput) {
-      refSearchInput.current.focus()
     }
   }, [refSearchInput])
 
@@ -70,7 +65,7 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
       if (isValid) {
         refSearchButton.current?.click()
       } else {
-        handleFocus()
+        inputFocus()
       }
     }
   }
@@ -83,7 +78,7 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
     setSearch(id)
     window.localStorage.setItem('search', id)
 
-    handleFocus()
+    inputFocus()
   }
   const handleValue = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setInputValue(event.target.value)
@@ -128,9 +123,10 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
   useEffect(() => {
     const additional = searchSource?.additional ?? ''
     const action = searchSource?.action
+    const value = inputValue || ''
 
     if (action) {
-      setSearchUrl(`${action}${encodeURIComponent(inputValue)}${additional}`)
+      setSearchUrl(`${action}${encodeURIComponent(value)}${additional}`)
     }
   }, [inputValue, searchSource, setSearchUrl])
 
@@ -162,11 +158,11 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
   useEffect(() => {
     if (!isFocused) {
       setTimeout(() => {
-        handleFocus()
+        inputFocus()
         setIsFocused(true)
       }, 0)
     }
-  }, [isFocused, refSearchInput, handleFocus])
+  }, [isFocused, refSearchInput, inputFocus])
 
   return (
     <section className={Style.section}>
@@ -240,7 +236,7 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
                     ? undefined
                     : (event) => {
                         event.preventDefault()
-                        handleFocus()
+                        inputFocus()
                       }
                 }
                 style={{
@@ -255,7 +251,7 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
             <SearchVoice display={!isValid} />
           </div>
 
-          <SearchSuggestions locale={locale} term={inputValue} />
+          <SearchSuggestions locale={locale} term={inputValue ?? ''} />
         </div>
 
         {/* Buttons */}
@@ -271,8 +267,10 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
                   }
                   onClick={() => handleSelectedSource(normalizeId(source.name))}
                   ref={(element) => {
-                    refButtons.current['button_' + normalizeId(source.name)] =
-                      element
+                    if (refButtons.current) {
+                      refButtons.current['button_' + normalizeId(source.name)] =
+                        element
+                    }
                   }}
                   translate="no">
                   <figure

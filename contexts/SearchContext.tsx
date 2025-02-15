@@ -3,8 +3,8 @@ import { createContext, useContext, useState, useEffect, useRef } from 'react'
 
 // create Context for global state
 interface SearchContextType {
-  refSearchInput: React.RefObject<HTMLInputElement>
-  refButtons: React.MutableRefObject<HTMLButtonElement[]>
+  refSearchInput: React.RefObject<HTMLTextAreaElement>
+  refButtons: React.RefObject<{ [key: string]: HTMLButtonElement | null }>
   putValue: (value: string) => void
   inputValue: string | undefined
   setInputValue: React.Dispatch<React.SetStateAction<string | undefined>>
@@ -51,7 +51,7 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
   const [isMobileViewport, setIsMobileViewport] = useState<boolean>(false)
 
   const refSearchInput = useRef(null)
-  const refButtons = useRef([])
+  const refButtons = useRef<{ [key: string]: HTMLButtonElement | null }>({})
   const [inputValue, setInputValue] = useState<string | undefined>(undefined)
 
   const inputFocus = () => {

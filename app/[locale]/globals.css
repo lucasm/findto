@@ -245,14 +245,11 @@ article hr {
   padding: 1rem 1rem 3rem;
 }
 
-.activeLink {
-  opacity: 1 !important;
-  background: var(--color-bg-white) !important;
-  color: var(--color-text-black) !important;
-  box-shadow: var(--box-shadow) !important;
+.sidebar {
+  margin-left: var(--container-sidebar);
 }
-.activeLink svg {
-  color: var(--color-text-black) !important;
+.sidebarClosed {
+  margin-left: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -265,16 +262,7 @@ article hr {
   h3 {
     font-size: 1.25rem;
   }
-}
 
-.sidebar {
-  margin-left: var(--container-sidebar);
-}
-.sidebarClosed {
-  margin-left: 0;
-}
-
-@media screen and (max-width: 768px) {
   .sidebar {
     margin-left: 0;
   }
