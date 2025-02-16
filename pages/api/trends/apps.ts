@@ -25,7 +25,7 @@ export default async function endpoint(
           (item: { name: string; artworkUrl100: string }) => {
             a.push({
               title: item.name,
-              image: item.artworkUrl100,
+              image: item.artworkUrl100.replace('100x100', '512x512'),
             })
           }
         )

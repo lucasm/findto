@@ -1,5 +1,4 @@
 .container {
-  list-style: none;
   display: grid;
   gap: 0;
   padding: 0;
@@ -41,52 +40,54 @@
   text-align: left;
   font-size: var(--font-size);
 }
-
-.trendsVideos,
-.trendsMusic,
-.trendsNews,
-.trendsFinance {
-  grid-template-columns: repeat(4, 1fr);
+.container li button span:first-of-type {
+  opacity: var(--opacity);
+  font-size: var(--font-size-small);
 }
 
-.trendsVideos li button,
-.trendsMusic li button,
-.trendsImage li button,
-.trendsNews li button,
-.trendsGames li button,
-.trendsFinance li button,
-.trendsShopping li button {
+.grid6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+.grid4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid6 li button,
+.grid4 li button,
+.grid3 li button {
   gap: 1rem;
   flex-direction: column;
   align-items: start;
+}
+.grid6 li button img,
+.grid4 li button img,
+.grid3 li button img {
+  width: 100%;
+}
+
+.trendsApps li button img {
+  border-radius: 2rem;
+}
+.trendsCode li button img {
+  border-radius: 0.25rem;
 }
 
 .trendsSocial li button span,
 .trendsCode li button span {
   line-break: anywhere;
-  /* word-break: break-all; */
-}
-
-.trendsVideos li button img,
-.trendsMusic li button img,
-.trendsImage li button img,
-.trendsNews li button img,
-.trendsGames li button img,
-.trendsFinance li button img,
-.trendsShopping li button img {
-  width: 100%;
 }
 
 .trendsShopping li button img {
-  padding: 3rem;
+  padding: 2.5rem;
 }
 .trendsLocal li button img {
   padding: 0.75rem;
-}
-
-.trendsSocial li button span,
-.trendsAcademic li button span {
-  padding: 0 0.5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -103,16 +104,12 @@
   .container {
     grid-template-columns: 1fr;
   }
-  .container li button {
-    padding: 1rem;
-  }
 
   .trendsHome li button img,
   .trendsAI li button img,
   .trendsWeb li button img,
   .trendsLocal li button img,
-  .trendsCode button img,
-  .trendsApps button img {
+  .trendsCode button img {
     width: 52px !important;
   }
 }

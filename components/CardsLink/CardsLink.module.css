@@ -18,28 +18,26 @@
   transition: ease 0.25s;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   gap: 1rem;
   align-items: center;
   justify-content: center;
   vertical-align: middle;
-  background-color: var(--color-white-translucent);
-  border-radius: var(--radius-full);
-  box-shadow: var(--shadow-2);
+  background-color: var(--color-white);
+  border-radius: var(--radius);
 }
 .cards a:hover,
 .cards a:focus {
-  top: -8px;
-  box-shadow: var(--shadow-2);
+  top: -3px;
 }
 
 .cards p {
   margin-bottom: 0 !important;
   padding: 0;
-  font-size: 1rem;
 }
 .cards svg {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 @media screen and (max-width: 576px) {

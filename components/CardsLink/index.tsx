@@ -54,7 +54,7 @@ export default function CardsLink() {
     },
     {
       title: 'Get Pro version',
-      url: '/pricing',
+      url: '/pro',
       icon: <></>,
       active: false,
       internal: true,
@@ -83,7 +83,7 @@ export default function CardsLink() {
             href={item.url}
             target={item.internal ? '_self' : '_blank'}>
             <figure>{item.icon}</figure>
-            <p>{item.title}</p>
+            {item.title}
           </Link>
         ))}
     </div>

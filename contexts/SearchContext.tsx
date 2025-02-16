@@ -83,6 +83,7 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
   function putValue(value: string) {
     // Remove traços e apenas os espaços adjacentes ao traço
     const sanitizedValue: string = value
+      .toLowerCase()
       .replace(/\s*-\s*/g, ' ')
       .replace(/[#:‑]/g, '')
 

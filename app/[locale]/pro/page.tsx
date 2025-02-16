@@ -12,7 +12,7 @@ export default function PagePricing() {
       <section className="colors">
         <div className={Style.container}>
           <div className={Style.pageTitle}>
-            <h1>Pricing</h1>
+            <h1>Findto Pro</h1>
           </div>
         </div>
       </section>

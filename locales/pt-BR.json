@@ -12,7 +12,7 @@
       "whatDoYouWant": "Experimente algo novo"
     },
     "componentBanner": {
-      "title": "Diga oi ao Findto, o seu novo assistente de buscas",
+      "title": "Conheça o Findto, seu novo assistente de buscas",
       "description": "Faça buscas na Web, IA e mais, de maneira descentralizada."
     },
     "componentVoiceSearch": {
@@ -839,7 +839,7 @@
         },
         {
           "name": "SHEIN",
-          "action": "https://br.shein.com/"
+          "action": "https://br.shein.com/pdsearch/"
         },
         {
           "name": "Renner",
@@ -2131,14 +2131,6 @@
       ],
       "youtube_channels": [
         {
-          "id": "UCdmGjywrxeOPfC7vDllmSgQ",
-          "title": "tecmundo"
-        },
-        {
-          "id": "UC_bXJnsgwOqEPA_-6N6faKw",
-          "title": "canaltech"
-        },
-        {
           "id": "UCFuIUoyHB12qpYa8Jpxoxow",
           "title": "codigofontetv"
         },
@@ -2151,12 +2143,20 @@
           "title": "attekitadev"
         },
         {
-          "id": "UCo7EHzKF2zDFWszw7Dg4mPw",
-          "title": "alura"
-        },
-        {
           "id": "UC1VZDEtGNxfQzh7EYcD2frg",
           "title": "manodeyvin"
+        },
+        {
+          "id": "UCpKvMmsF6QrkVr_zWaLGK-A",
+          "title": "kipperdev"
+        },
+        {
+          "id": "UC_-uuuZbY0AAt9CViNzvc-Q",
+          "title": "rafaellaballerini"
+        },
+        {
+          "id": "UCo7EHzKF2zDFWszw7Dg4mPw",
+          "title": "alura"
         },
         {
           "id": "UCcMcmtNSSQECjKsJA1XH5MQ",
@@ -2183,8 +2183,8 @@
           "title": "Diolinuxlabs"
         },
         {
-          "id": "UC_-uuuZbY0AAt9CViNzvc-Q",
-          "title": "rafaellaballerini"
+          "id": "UCMh02FbsMgAZz_PDS6QjOKg",
+          "title": "freecodecampemportugues"
         },
         {
           "id": "UCTspylBf8iNobZHgwUD4PXA",

@@ -1,15 +1,15 @@
 'use client'
 
 import Styles from './WidgetTrends.module.css'
-import { fetcher } from '@/utils/http'
-import useSWR from 'swr'
-import { useSearch } from '@/contexts/SearchContext'
-import ButtonGeolocation from '@/components/ButtonGeolocation'
-import { ITrends, ITrendsItem } from '@/interfaces/trends'
 import { useEffect, useState } from 'react'
 import { useTranslations } from 'next-intl'
-import WidgetTemplate from '../WidgetTemplate'
-import { IconTrending } from '../SvgIcons'
+import { useSearch } from '@/contexts/SearchContext'
+import useSWR from 'swr'
+import { fetcher } from '@/utils/http'
+import ButtonGeolocation from '@/components/ButtonGeolocation'
+import WidgetTemplate from '@/components/WidgetTemplate'
+import { IconTrending } from '@/components/SvgIcons'
+import { ITrends, ITrendsItem } from '@/interfaces/trends'
 
 export default function SearchTrends() {
   const t = useTranslations('t')
@@ -257,7 +257,7 @@ export default function SearchTrends() {
   }
   const { dataGames, errorGames } = useApiGames()
 
-  // call API
+  // call APIs
   useEffect(() => {
     setDataTrends(null)
     setErrorTrends(null)
@@ -397,6 +397,31 @@ export default function SearchTrends() {
     errorGames,
   ])
 
+  const handleClassName = (category: string) => {
+    switch (category) {
+      case 'Videos':
+      case 'Music':
+      case 'News':
+      case 'Finance':
+        return Styles.container + ' ' + Styles.grid4
+      case 'Apps':
+        return Styles.container + ' ' + Styles.grid6 + ' ' + Styles.trendsApps
+      case 'Shopping':
+        return (
+          Styles.container + ' ' + Styles.grid4 + ' ' + Styles.trendsShopping
+        )
+      case 'Code':
+        return Styles.container + ' ' + Styles.grid2 + ' ' + Styles.trendsCode
+      case 'Image':
+      case 'Games':
+        return Styles.container + ' ' + Styles.grid3
+      case 'Local':
+        return Styles.container + ' ' + Styles.trendsLocal
+      default:
+        return Styles.container
+    }
+  }
+
   if (dataTrends || errorTrends || category === 'Local') {
     return (
       <WidgetTemplate
@@ -417,17 +442,19 @@ export default function SearchTrends() {
         {category === 'Local' && <ButtonGeolocation />}
 
         {dataTrends && (
-          <ul className={Styles.container + ' ' + Styles[`trends${category}`]}>
-            {dataTrends?.data?.map((item: ITrendsItem, index: number) => (
+          <ul className={handleClassName(category)}>
+            {dataTrends?.data?.map((item, index) => (
               <li key={index}>
                 <button
                   onClick={() =>
                     item.url
                       ? window.open(item.url, '_blank')
-                      : putValue(item.title.toLowerCase())
+                      : putValue(item.title)
                   }>
+                  <span>{index + 1}</span>
                   {item.image && <img src={item.image} alt="" />}
-                  {item.title && <span>{item.title}</span>}
+
+                  {item.title && <span> {item.title}</span>}
                 </button>
               </li>
             ))}

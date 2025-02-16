@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl'
 
 const title = 'Community'
 const description =
-  'Get involved with Findto and help us to build free searches!'
+  'Get involved with Findto and help us to build a better internet!'
 
 export const metadata = {
   title: title,
@@ -51,36 +51,7 @@ export default function CommunityPage() {
             <br></br>
             <br></br>
 
-            <h2>Researching for a better internet</h2>
-            <p>
-              We are researching and are interested in partnerships with
-              services, organizations, professionals and volunteers to
-              strengthen technologies of:
-            </p>
-            <ul>
-              <li>Decentralized web</li>
-              <li>Open access</li>
-              <li>Responsible AI</li>
-              <li>Privacy</li>
-              <li>Web accessibility</li>
-              <li>
-                Carbon neutrality and United Nations 2030 Agenda for sustainable
-                development
-              </li>
-              <li>Diversity</li>
-              <li>Digital democracy</li>
-              <li>Blockchain</li>
-              <li>Metaverse</li>
-            </ul>
-
-            <p>
-              If you share this vision, feel free to contribute with Findto
-              project. We are looking for partners to join us.
-            </p>
-            <br></br>
-            <br></br>
-
-            <h2>Code of Conduct</h2>
+            <h3>Code of Conduct</h3>
 
             <p>
               Findto is made by individuals, like you. Join us and get involved!
@@ -98,36 +69,63 @@ export default function CommunityPage() {
             <br></br>
             <br></br>
 
-            <h2>Supporting</h2>
+            <h2>Researching for a better internet</h2>
+            <p>
+              We are researching and are interested in partnerships with
+              services, organizations, professionals and volunteers to
+              strengthen open source technologies of:
+            </p>
+            <ul>
+              <li>Decentralized web</li>
+              <li>Open access</li>
+              <li>Responsible AI</li>
+              <li>Privacy</li>
+              <li>Web accessibility</li>
+              <li>Carbon neutrality (UN 2030 Agenda)</li>
+              <li>Digital democracy</li>
+              <li>Blockchain</li>
+              <li>Metaverse</li>
+            </ul>
+
+            <p>
+              If you share this vision, feel free to contribute with Findto
+              project. We are looking for partners to join us.
+            </p>
+            <br></br>
+            <br></br>
+
+            <h2>Supporting us</h2>
 
             <p>You can choose your favorite platform to support Findto:</p>
 
-            <p>
-              <a
-                href="https://patreon.com/findto"
-                target="_blank"
-                rel="noreferrer">
-                Patreon
-              </a>
-            </p>
+            <ul>
+              <li>
+                <a
+                  href="https://ko-fi.com/findto"
+                  target="_blank"
+                  rel="noreferrer">
+                  Ko-Fi (one-time donation)
+                </a>
+              </li>
 
-            <p>
-              <a
-                href="https://ko-fi.com/findto"
-                target="_blank"
-                rel="noreferrer">
-                Ko-Fi (one-time donation)
-              </a>
-            </p>
-
-            <p>
-              <a
-                href="https://github.com/sponsors/lucasm"
-                target="_blank"
-                rel="noreferrer">
-                GitHub Sponsors
-              </a>
-            </p>
+              <li>
+                <a
+                  href="https://patreon.com/findto"
+                  target="_blank"
+                  rel="noreferrer">
+                  Patreon
+                </a>
+              </li>
+              <li>
+                {' '}
+                <a
+                  href="https://github.com/sponsors/lucasm"
+                  target="_blank"
+                  rel="noreferrer">
+                  GitHub Sponsors
+                </a>{' '}
+              </li>
+            </ul>
           </article>
         </div>
       </section>

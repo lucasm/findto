@@ -73,7 +73,7 @@ const features: Feature[] = [
     icon: <IconAccessibility />,
     title: 'Accessibility',
     description:
-      'Dark theme, contrast, screen reader support, and keyboard navigation.',
+      'Dark theme, contrast, screen reader, and keyboard navigation support.',
   },
   {
     icon: <IconOpenSource />,

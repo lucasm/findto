@@ -12,7 +12,7 @@
       "whatDoYouWant": "Try something new"
     },
     "componentBanner": {
-      "title": "Meet Findto, your new search assistant",
+      "title": "Meet Findto, open source search assistant",
       "description": "Search on the Web, AI, and more in a decentralized way."
     },
     "componentVoiceSearch": {
@@ -803,6 +803,10 @@
         {
           "name": "Temu",
           "action": "https://www.temu.com/search_result.html?search_key="
+        },
+        {
+          "name": "SHEIN",
+          "action": "https://shein.com/pdsearch/"
         },
         {
           "name": "Homedepot",
