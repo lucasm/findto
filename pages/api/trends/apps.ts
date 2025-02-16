@@ -14,7 +14,7 @@ export default async function endpoint(
     const url =
       'https://rss.applemarketingtools.com/api/v2/' +
       String(country).toLowerCase() +
-      '/apps/top-free/39/apps.json'
+      '/apps/top-free/54/apps.json'
 
     await axios
       .get(url)

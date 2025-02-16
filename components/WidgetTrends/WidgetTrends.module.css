@@ -90,6 +90,12 @@
   padding: 0.75rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .grid6 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .container {
     grid-template-columns: 1fr 1fr;
@@ -98,11 +104,19 @@
   .title h3 {
     font-size: var(--font-size);
   }
+
+  .grid6 {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media screen and (max-width: 576px) {
   .container {
     grid-template-columns: 1fr;
+  }
+
+  .grid6 {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .trendsHome li button img,

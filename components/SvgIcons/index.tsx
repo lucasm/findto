@@ -885,9 +885,9 @@ export const IconMenu = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg">
     <path
-      d="M3 12H21M3 6H21M3 18H21"
+      d="M3 8.5H21M3 15.5H21"
       stroke="currentColor"
-      strokeWidth="2.4"
+      strokeWidth="2.6"
       strokeLinecap="round"
       strokeLinejoin="round"
     />

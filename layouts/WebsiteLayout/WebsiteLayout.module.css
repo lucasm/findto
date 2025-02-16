@@ -192,7 +192,7 @@
 
 @media screen and (min-width: 768px) {
   .showOnMobile {
-    display: none;
+    display: none !important;
   }
   .hideOnMobile {
     display: inline-flex;
