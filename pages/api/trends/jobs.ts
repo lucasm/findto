@@ -1,6 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import axios from 'axios'
 import { ITrends } from '@/interfaces/trends'
+import validator from 'validator'
 
 export default async function endpoint(
   req: NextApiRequest,
@@ -11,10 +12,19 @@ export default async function endpoint(
   } = req
 
   if (!country) {
-    return res.status(400).json({ message: 'Missing parameter COUNTRY_CODE' })
+    return res
+      .status(400)
+      .json({ message: 'Missing parameter "country" (country code' })
   }
 
   const countryLowerCase = country.toString().toLowerCase()
+
+  if (
+    !validator.isAlpha(countryLowerCase) ||
+    !validator.isLength(countryLowerCase, { min: 2, max: 2 })
+  ) {
+    return res.status(400).json({ message: 'Invalid "country" (country code' })
+  }
 
   const url = `https://api.adzuna.com/v1/api/jobs/${countryLowerCase}/categories?app_id=${process.env.NEXT_PUBLIC_API_ADZUNA_ID}&app_key=${process.env.NEXT_PUBLIC_API_ADZUNA}`
 
@@ -33,9 +43,9 @@ export default async function endpoint(
 
     res.status(200).json(responsePayload)
   } catch (error) {
-    console.error('Error fetching data:', error)
+    console.error('Error fetching Job data:', error)
     res.status(500).json({
-      message: 'Error fetching data',
+      message: 'Error fetching Job data',
       error: error,
     })
   }
