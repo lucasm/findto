@@ -9,7 +9,7 @@ import { fetcher } from '@/utils/http'
 import ButtonGeolocation from '@/components/ButtonGeolocation'
 import WidgetTemplate from '@/components/WidgetTemplate'
 import { IconTrending } from '@/components/SvgIcons'
-import { ITrends, ITrendsItem } from '@/interfaces/trends'
+import { ITrends } from '@/interfaces/trends'
 
 export default function SearchTrends() {
   const t = useTranslations('t')
