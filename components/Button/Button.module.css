@@ -13,7 +13,6 @@
 }
 .button:hover {
   transform: translateY(-1px);
-  box-shadow: var(--box-shadow);
 }
 
 .button svg {

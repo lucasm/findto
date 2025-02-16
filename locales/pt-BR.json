@@ -1821,27 +1821,27 @@
           "name": "Assembleia Legislativa",
           "child": [
             {
-              "name": "SP (Alesp)",
+              "name": "SP - Alesp",
               "action": "https://www.al.sp.gov.br/alesp/busca/?q="
             },
             {
-              "name": "MG (ALMG)",
+              "name": "MG - ALMG",
               "action": "https://www.almg.gov.br/busca/?filtro=&q="
             },
             {
-              "name": "RJ (Alerj)",
+              "name": "RJ - Alerj",
               "action": "https://www.alerj.rj.gov.br/ResultadoPesquisa/PesquisarSite/?termoPesquisa="
             },
             {
-              "name": "BA (Alba)",
+              "name": "BA - Alba",
               "action": "https://www.al.ba.gov.br/busca/?q="
             },
             {
-              "name": "PR (Alep)",
+              "name": "PR - Alep",
               "action": "https://www.alep.pr.gov.br/busca/?q="
             },
             {
-              "name": "RS (ALRS)",
+              "name": "RS - ALRS",
               "action": "https://www.al.rs.gov.br/busca/?q="
             }
           ]
@@ -1899,7 +1899,7 @@
               "action": "https://www.mpf.mp.br/@@search?SearchableText="
             },
             {
-              "name": "MPDFT - Ministério Público do Distrito Federal e Territórios",
+              "name": "MPDFT - DF e Territórios",
               "action": "https://www.mpdft.mp.br/portal/index.php/resultados-da-pesquisa?q="
             },
             {
@@ -1957,15 +1957,15 @@
               "action": "https://www.tse.jus.br/@@search-es?searchable_text="
             },
             {
-              "name": "SP (TRE SP)",
+              "name": "SP - TRE",
               "action": "https://www.tre-sp.jus.br/busca?q="
             },
             {
-              "name": "MG (TRE MG)",
+              "name": "MG - TRE",
               "action": "https://www.tre-mg.jus.br/busca?q="
             },
             {
-              "name": "RJ (TRE RJ)",
+              "name": "RJ - TRE",
               "action": "https://www.tre-rj.jus.br/busca?q="
             }
           ]

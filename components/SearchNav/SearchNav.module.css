@@ -15,8 +15,9 @@
 .vertical ul {
   position: relative;
   width: 250px;
-  gap: 0;
+  gap: 0.25rem;
   display: grid;
+  margin: -1rem;
   grid-template-columns: repeat(3, 1fr);
 }
 .vertical a {
@@ -24,10 +25,9 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 0;
+  padding: 0 0.5rem 0.75rem 0.5rem;
   gap: 0.25rem;
   width: 100%;
-  height: 4.75rem;
   border-radius: 1rem;
   background: transparent;
   font-size: var(--font-size-small);
@@ -125,6 +125,6 @@
 
 @media screen and (max-width: 576px) {
   .cards ul {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }

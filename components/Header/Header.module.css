@@ -48,6 +48,14 @@
   background: var(--background-surface);
 }
 
+.buttonArrowClose {
+  opacity: var(--opacity);
+  transform: rotate(90deg);
+}
+.buttonArrowClose:hover {
+  opacity: 1;
+}
+
 .logo {
   display: flex;
   align-items: center;

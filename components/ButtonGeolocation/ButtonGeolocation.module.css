@@ -2,24 +2,3 @@
   display: flex;
   justify-content: center;
 }
-
-.button {
-  position: relative;
-  padding: 0 2rem;
-  color: var(--color-bg-white);
-  background: var(--color-text-black);
-  border: none;
-  border-radius: var(--radius-full);
-  cursor: pointer;
-  font-size: var(--font-size);
-  height: var(--size-big);
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-  box-shadow: var(--box-shadow);
-}
-.button svg {
-  color: var(--color-bg-white);
-  width: 20px;
-  height: 20px;
-}

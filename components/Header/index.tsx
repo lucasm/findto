@@ -36,6 +36,7 @@ const AppHeader = ({ locale, category }: Props) => {
   const { isMobileViewport, isSidebarOpen, setIsSidebarOpen, inputFocus } =
     useSearch()
   const { theme, setTheme } = useTheme()
+
   const handleTheme = () => {
     if (theme === 'light') {
       setTheme('dark')
@@ -58,11 +59,7 @@ const AppHeader = ({ locale, category }: Props) => {
   const handleFigure = () => {
     if (!isMobileViewport && isSidebarOpen) {
       return (
-        <figure
-          style={{
-            transform: 'rotate(90deg)',
-            opacity: 0.5,
-          }}>
+        <figure>
           <IconArrow />
         </figure>
       )
@@ -101,7 +98,10 @@ const AppHeader = ({ locale, category }: Props) => {
           <button
             onClick={() => handleOnClick()}
             aria-expanded={isSidebarOpen}
-            aria-label={t('categories') ?? 'Categories'}>
+            aria-label={t('categories') ?? 'Categories'}
+            className={
+              !isMobileViewport && isSidebarOpen ? Style.buttonArrowClose : ''
+            }>
             {handleFigure()}
           </button>
         )}

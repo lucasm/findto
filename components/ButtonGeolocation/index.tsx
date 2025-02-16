@@ -1,8 +1,9 @@
 import Style from './ButtonGeolocation.module.css'
 import React, { useEffect, useState } from 'react'
-import { useSearch } from '@/contexts/SearchContext'
-import { IconLocationGps } from '../SvgIcons'
 import { useTranslations } from 'next-intl'
+import { useSearch } from '@/contexts/SearchContext'
+import { IconLocationGps } from '@/components/SvgIcons'
+import Button from '@/components/Button'
 
 export default function ButtonGeolocation() {
   const t = useTranslations('t')
@@ -47,17 +48,19 @@ export default function ButtonGeolocation() {
   }, [permissionLocation])
 
   return (
-    <div>
+    <>
       {!permissionLocation && (
         <div className={Style.container}>
-          <button onClick={handleClick} className={Style.button}>
-            <IconLocationGps />
-            {t('viewNearbyPlaces')}
-          </button>
+          <Button onClick={handleClick} color="black">
+            <>
+              <IconLocationGps />
+              {t('viewNearbyPlaces')}
+            </>
+          </Button>
 
           {locationError && <p>{locationError}</p>}
         </div>
       )}
-    </div>
+    </>
   )
 }

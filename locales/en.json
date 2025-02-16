@@ -3,13 +3,13 @@
   "country_code": "US",
   "t": {
     "componentCookiesPopup": {
-      "title": "Findto uses cookies and similar technologies to improve your experience and provide personalized content. We do not track you. We do not sell your information."
+      "title": "Findto uses cookies respecting your privacy. We do not store personal information."
     },
     "componentWelcome": {
       "goodMorning": "Good morning",
       "goodEvening": "Good evening",
       "goodNight": "Good night",
-      "whatDoYouWant": "What do you want to find?"
+      "whatDoYouWant": "Try something new"
     },
     "componentBanner": {
       "title": "Meet Findto, your new search assistant",
@@ -1059,10 +1059,6 @@
         {
           "name": "SimplyHired",
           "action": "https://www.simplyhired.com/search?q="
-        },
-        {
-          "name": "LinkUp",
-          "action": "https://www.linkup.com/search/results/"
         }
       ]
     },
