@@ -1,7 +1,8 @@
 .container {
   transition: var(--transition-hover);
 }
-.container h2 {
+.container h2,
+.container p {
   color: var(--color-black) !important;
 }
 
@@ -11,6 +12,7 @@
   justify-content: center;
   grid-gap: 3rem;
   padding: 3rem 0;
+  color: var(--color-black);
 }
 .card li {
   display: flex;

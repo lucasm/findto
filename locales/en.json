@@ -1,6 +1,8 @@
 {
-  "country": "International",
-  "country_code": "US",
+  "country": {
+    "name": "United States",
+    "code": "US"
+  },
   "t": {
     "componentCookiesPopup": {
       "title": "Findto uses cookies respecting your privacy. We do not store personal information."

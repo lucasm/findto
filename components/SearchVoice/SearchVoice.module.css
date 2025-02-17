@@ -3,8 +3,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 2.25rem;
+  width: 2.25rem;
   background: var(--color-text-black);
   border-radius: var(--radius-full);
   border: 0;
@@ -70,8 +70,8 @@
 
 @media (max-width: 576px) {
   .button {
-    height: 1.6rem;
-    width: 1.6rem;
+    height: 1.75rem;
+    width: 1.75rem;
   }
   .button svg {
     width: 1.125rem;

@@ -1,6 +1,8 @@
 {
-  "country": "Brasil",
-  "country_code": "BR",
+  "country": {
+    "name": "Brazil",
+    "code": "BR"
+  },
   "t": {
     "componentCookiesPopup": {
       "title": "O Findto utiliza cookies respeitando a sua privacidade. Não armazenamos informações pessoais."

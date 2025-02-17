@@ -1,4 +1,5 @@
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
+import { useSearchParams } from 'next/navigation'
 import { createContext, useContext, useState, useEffect, useRef } from 'react'
 
 // create Context for global state
@@ -36,8 +37,7 @@ const SearchContext = createContext<SearchContextType>({} as SearchContextType)
 // export as Provider
 export function SearchProvider({ children }: { children: React.ReactNode }) {
   const locale = useLocale()
-  // load search sources file by locale
-  const localeSearchSources = require('../locales/' + locale + '.json')
+  const c = useTranslations('country')
   const [country, setCountry] = useState<string | null>(null)
   const [category, setCategory] = useState<string>('')
   const [search, setSearch] = useState<string>('')
@@ -50,9 +50,12 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(true)
   const [isMobileViewport, setIsMobileViewport] = useState<boolean>(false)
 
-  const refSearchInput = useRef(null)
+  const refSearchInput = useRef<HTMLTextAreaElement>(null)
   const refButtons = useRef<{ [key: string]: HTMLButtonElement | null }>({})
   const [inputValue, setInputValue] = useState<string | undefined>(undefined)
+
+  const searchParams = useSearchParams()
+  const query = searchParams?.get('q')
 
   const inputFocus = () => {
     const inputElement = refSearchInput.current as HTMLInputElement | null
@@ -60,27 +63,12 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
       inputElement.focus()
     }
   }
-
-  useEffect(() => {
-    // Lê o localStorage apenas quando o componente monta
-    if (typeof window !== 'undefined') {
-      const savedSearchValue = window.localStorage.getItem('inputValue')
-      setInputValue(savedSearchValue ? JSON.parse(savedSearchValue) : '')
-    }
-  }, [])
-
-  useEffect(() => {
-    if (inputValue !== undefined) {
-      window.localStorage.setItem('inputValue', JSON.stringify(inputValue))
-    }
-  }, [inputValue])
-
-  function scrollToTop() {
+  const scrollToTop = () => {
     const isBrowser = () => typeof window !== 'undefined'
     if (!isBrowser()) return
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
-  function putValue(value: string) {
+  const putValue = (value: string) => {
     // Remove traços e apenas os espaços adjacentes ao traço
     const sanitizedValue: string = value
       .toLowerCase()
@@ -94,7 +82,7 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
     }
     scrollToTop()
   }
-  function useWindowSize() {
+  const useWindowSize = () => {
     // https://stackoverflow.com/questions/63406435/
     const [windowSize, setWindowSize] = useState({
       width: 0,
@@ -119,16 +107,23 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
   }
   const sizeWindow = useWindowSize()
 
-  // country
-  useEffect(() => {
-    window.localStorage.setItem('country', localeSearchSources?.country_code)
-  }, [localeSearchSources])
+  const isClientSide = typeof window !== 'undefined'
 
-  // state: from local storage
+  // LocalStorage: initial values
   useEffect(() => {
-    const countryStorage = localStorage.getItem('country')
-    setCountry(countryStorage)
+    setCountry(c('code'))
+
+    if (isClientSide) {
+      const savedInputValue = window.localStorage.getItem('inputValue')
+      setInputValue(savedInputValue ? JSON.parse(savedInputValue) : '')
+    }
   }, [])
+
+  useEffect(() => {
+    if (inputValue !== undefined) {
+      window.localStorage.setItem('inputValue', JSON.stringify(inputValue))
+    }
+  }, [inputValue])
 
   // mobile viewport
   useEffect(() => {
@@ -141,14 +136,16 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
     }
   }, [sizeWindow])
 
-  // sync with LocalStorage
+  // LocalStorage: search source
   useEffect(() => {
-    const storedSearch = window.localStorage.getItem('search')
+    if (isClientSide) {
+      const storedSearch = window.localStorage.getItem('search')
 
-    if (storedSearch) {
-      setSearch(storedSearch)
-    } else {
-      window.localStorage.setItem('search', search)
+      if (storedSearch) {
+        setSearch(storedSearch)
+      } else {
+        window.localStorage.setItem('search', search)
+      }
     }
   }, [category, search])
 
@@ -163,6 +160,13 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
       }
     })
   }, [isSidebarOpen, isMobileViewport])
+
+  // query
+  useEffect(() => {
+    if (query) {
+      setInputValue(query)
+    }
+  }, [query])
 
   return (
     <SearchContext.Provider

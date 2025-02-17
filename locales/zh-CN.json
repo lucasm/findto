@@ -1,6 +1,8 @@
 {
-  "country": "中国",
-  "country_code": "CN",
+  "country": {
+    "name": "China (中国)",
+    "code": "CN"
+  },
   "t": {
     "componentCookiesPopup": {
       "title": "Findto 使用 cookie 和类似技术来改善您的体验并提供个性化内容。我们不会追踪你。我们不会出售您的信息。"

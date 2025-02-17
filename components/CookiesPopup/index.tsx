@@ -4,9 +4,11 @@ import { useEffect, useState } from 'react'
 import styles from './CookiesPopup.module.css'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
+import { useSearch } from '@/contexts/SearchContext'
 
 const CookiesPopup = () => {
   const t = useTranslations('t')
+  const { inputFocus } = useSearch()
   const [isVisible, setIsVisible] = useState<boolean>(false)
   const [isAccepted, setIsAccepted] = useState<boolean>(() => {
     if (typeof window !== 'undefined') {
@@ -29,6 +31,7 @@ const CookiesPopup = () => {
     if (typeof window !== 'undefined') {
       localStorage.setItem('isCookiesAccepted', JSON.stringify(true))
     }
+    inputFocus()
   }
 
   return (

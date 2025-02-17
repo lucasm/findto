@@ -2,7 +2,6 @@
 
 import { useRef, useState, useEffect, useCallback } from 'react'
 import { useLocale, useTranslations } from 'next-intl'
-import { useSearchParams } from 'next/navigation'
 import Style from './Search.module.css'
 import { normalizeId } from '@/utils/formats'
 import { useSearch } from '@/contexts/SearchContext'
@@ -23,8 +22,6 @@ interface Props {
 export default function Search({ selectedCategory }: Readonly<Props>) {
   const locale = useLocale()
   const t = useTranslations('t')
-  const searchParams = useSearchParams()
-  const query = searchParams?.get('q')
 
   const {
     setCategory,
@@ -111,13 +108,6 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
       handleResize()
     }
   }, [isMobileViewport])
-
-  // query
-  useEffect(() => {
-    if (query) {
-      setInputValue(query)
-    }
-  }, [query])
 
   // url
   useEffect(() => {
@@ -221,9 +211,8 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
               </div>
             </div>
 
-            {/* render Button Voice only if user ha NO typed on input */}
-            {/* render Search Button only if user has typed on input */}
-
+            {/* Button Voice only if user ha NO typed on input */}
+            {/* Button Search only if user has typed on input */}
             <div>
               <a
                 ref={refSearchButton}
@@ -254,7 +243,7 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
           <SearchSuggestions locale={locale} term={inputValue ?? ''} />
         </div>
 
-        {/* Buttons */}
+        {/* Search Source Buttons */}
         <div className={Style.buttons}>
           <ul>
             {selectedCategory?.data.map((source, index) => (
