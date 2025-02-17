@@ -13,9 +13,9 @@ const SelectLanguage = () => {
   const pathname = usePathname()
 
   const options: Option[] = [
-    { label: 'International English (en)', value: 'en' },
-    { label: 'Português Brasil (pt-BR)', value: 'pt-BR' },
-    { label: '简体中文 (zh-CN)', value: 'zh-CN' },
+    { label: 'English (United States)', value: 'en-US' },
+    { label: 'Português (Brasil)', value: 'pt-BR' },
+    { label: '简体中文 (中国)', value: 'zh-CN' },
   ]
 
   const handleChange = (value: string) => {

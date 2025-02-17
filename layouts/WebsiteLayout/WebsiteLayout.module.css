@@ -95,6 +95,7 @@
   padding: 6rem 2rem;
   width: 100%;
   max-width: var(--max-size-container);
+  color: var(--color-black);
 }
 .actionContainer {
   max-width: var(--max-size-container-2);
