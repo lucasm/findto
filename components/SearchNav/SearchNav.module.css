@@ -1,5 +1,5 @@
 .active {
-  background: var(--background-surface) !important;
+  background: var(--color-surface-secondary) !important;
   opacity: 1 !important;
 }
 
@@ -86,7 +86,7 @@
 .sidebar ul {
   display: flex;
   flex-direction: column;
-  padding: 0.75rem 0.75rem 6rem 0.75rem;
+  padding: 0.75rem 0.75rem 4rem 0.75rem;
 }
 .sidebar a {
   opacity: var(--opacity);
@@ -104,7 +104,7 @@
 }
 .sidebar a:hover,
 .sidebar a:focus {
-  background: var(--background-surface);
+  background: var(--color-surface-secondary);
 }
 .sidebar figure {
   display: flex;

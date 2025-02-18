@@ -14,8 +14,8 @@
       "whatDoYouWant": "Experimente algo novo"
     },
     "componentBanner": {
-      "title": "Conheça o Findto, seu novo assistente de buscas",
-      "description": "Faça buscas na Web, IA e mais, de maneira descentralizada."
+      "title": "Diga oi ao Findto, o seu novo assistente de buscas",
+      "description": "Faça buscas na Web e IA de maneira descentralizada."
     },
     "componentVoiceSearch": {
       "voice": "Voz",
@@ -173,6 +173,10 @@
           "action": "https://www.perplexity.ai/?q="
         },
         {
+          "name": "Grok",
+          "action": "https://grok.com/?q="
+        },
+        {
           "name": "DeepSeek",
           "action": "https://chat.deepseek.com/?q="
         },
@@ -215,10 +219,6 @@
         {
           "name": "Qwen",
           "action": "https://chat.qwenlm.ai/?q="
-        },
-        {
-          "name": "Grok",
-          "action": "https://x.com/i/grok?focus=1&?q="
         },
         {
           "name": "Cohere",

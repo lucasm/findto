@@ -70,8 +70,8 @@
 
 @media (max-width: 576px) {
   .button {
-    height: 1.75rem;
-    width: 1.75rem;
+    height: 2rem;
+    width: 2rem;
   }
   .button svg {
     width: 1.125rem;

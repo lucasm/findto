@@ -60,7 +60,7 @@ export default function WidgetVideoStories({ selectedCategory }: Props) {
   const scrollToVideo = () => {
     if (videoPlayer.current) {
       const topPosition =
-        videoPlayer.current.getBoundingClientRect().top + window.scrollY - 120
+        videoPlayer.current.getBoundingClientRect().top + window.scrollY - 75
       window.scrollTo({ top: topPosition, behavior: 'smooth' })
     }
   }

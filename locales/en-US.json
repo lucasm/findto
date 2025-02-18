@@ -14,8 +14,8 @@
       "whatDoYouWant": "Try something new"
     },
     "componentBanner": {
-      "title": "Meet Findto, an open source search assistant",
-      "description": "Search on the Web, AI, and more in a decentralized way."
+      "title": "Say hello to Findto, your new search assistant",
+      "description": "Search on the Web and AI in a decentralized way."
     },
     "componentVoiceSearch": {
       "voice": "Voice",
@@ -160,6 +160,10 @@
           "action": "https://www.perplexity.ai/?q="
         },
         {
+          "name": "Grok",
+          "action": "https://grok.com/?q="
+        },
+        {
           "name": "DeepSeek",
           "action": "https://chat.deepseek.com/?q="
         },
@@ -210,10 +214,6 @@
         {
           "name": "Qwen",
           "action": "https://chat.qwenlm.ai/?q="
-        },
-        {
-          "name": "Grok",
-          "action": "https://x.com/i/grok?focus=1&?q="
         }
       ]
     },

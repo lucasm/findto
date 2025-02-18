@@ -126,4 +126,8 @@
   .trendsCode button img {
     width: 52px !important;
   }
+
+  .container li button {
+    padding: 0.5rem 1rem;
+  }
 }

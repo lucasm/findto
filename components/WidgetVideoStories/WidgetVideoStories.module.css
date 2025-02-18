@@ -73,7 +73,7 @@
   width: auto;
   display: flex;
   background: transparent;
-  padding: 1rem;
+  padding: 0.75rem 0.75rem 0.75rem 3rem;
   border: none;
 }
 .closeButton div {

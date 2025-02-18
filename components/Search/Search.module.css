@@ -1,11 +1,11 @@
 .section {
-  min-height: 90vh;
-  margin: 0 auto 2rem;
+  min-height: 100vh;
+  margin: 0 auto;
 }
 .container {
   display: flex;
   margin: 0 auto;
-  padding: 6rem 2rem 4rem;
+  padding: 4rem 2rem;
   gap: 2rem;
   flex-direction: column;
   flex-wrap: wrap;
@@ -16,7 +16,6 @@
 
 .fullscreen {
   display: table;
-
   padding-top: 6rem;
 }
 .fullscreenContainer {
@@ -219,8 +218,8 @@
     border-radius: 1.5rem;
   }
   .searchButton {
-    height: 1.75rem;
-    width: 1.75rem;
+    height: 2rem;
+    width: 2rem;
   }
   .searchButton:hover svg,
   .searchButton:focus svg {
@@ -242,7 +241,7 @@
 
   .section {
     margin: 0 auto 3rem;
-    padding: 5rem 0 0 0;
+    padding: 2.5rem 0 0 0;
     min-height: none;
   }
   .container {

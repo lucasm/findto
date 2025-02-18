@@ -1,13 +1,14 @@
 .sidebar {
   position: fixed;
-  top: 4rem;
+  top: 0;
   left: 0;
   width: var(--container-sidebar);
   height: 100vh;
-  background: var(--background-body);
+  background: var(--background-surface-secondary);
   color: white;
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
+  /* border-right: 1px solid var(--background-surface); */
 }
 .sidebar.open {
   transform: translateX(0);

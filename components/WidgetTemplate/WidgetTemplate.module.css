@@ -1,5 +1,5 @@
 .container {
-  padding: 3rem;
+  padding: 3rem 3rem 2.5rem;
   overflow: hidden;
   margin: 0 auto 2rem;
   max-width: var(--max-size-container);

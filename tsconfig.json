@@ -30,7 +30,8 @@
     "**/*.ts",
     "**/*.tsx",
     "next.config.mjs",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "app/[locale]/search/route.js"
   ],
   "exclude": ["node_modules"]
 }

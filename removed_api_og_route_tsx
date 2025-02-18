@@ -1,0 +1,93 @@
+import { ImageResponse } from 'next/og'
+
+async function loadGoogleFont(font: string, text: string) {
+  const url = `https://fonts.googleapis.com/css2?family=${font}&text=${encodeURIComponent(text)}`
+  const css = await (await fetch(url)).text()
+  const resource = css.match(/src: url\((.+)\) format\('(opentype|truetype)'\)/)
+
+  if (resource) {
+    const response = await fetch(resource[1])
+    if (response.status == 200) {
+      return await response.arrayBuffer()
+    }
+  }
+
+  throw new Error('failed to load font data')
+}
+
+export async function GET(request: Request) {
+  try {
+    const { searchParams } = new URL(request.url)
+
+    // ?title=<title>
+    const hasTitle = searchParams.has('title')
+    const title = hasTitle
+      ? searchParams.get('title')?.slice(0, 100)
+      : 'Findto | Empregos'
+
+    return new ImageResponse(
+      (
+        <div
+          style={{
+            background:
+              'linear-gradient(90deg, #a5acff -7%, #79d0ff 16.67%, #96ffe3 33.34%, #fff78d 49.01%, #ff9191 75%, #f0a4ff 295%)',
+            height: '100%',
+            width: '100%',
+            display: 'flex',
+            textAlign: 'center',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexDirection: 'column',
+            flexWrap: 'nowrap',
+          }}>
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              justifyItems: 'center',
+            }}>
+            <svg
+              fill="black"
+              width="148px"
+              height="148px"
+              viewBox="0 0 10.24 10.24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="m 10.239992,5.1199999 a 0.83817249,0.83817249 0 0 1 -0.553334,0.793633 l -2.75722,1.015813 -1.015813,2.75722 a 0.84581033,0.84581033 0 0 1 -1.587265,0 L 3.310547,6.9294459 0.55332604,5.9136329 a 0.84581033,0.84581033 0 0 1 0,-1.587266 L 3.310547,3.3105544 4.32636,0.55333405 a 0.84581033,0.84581033 0 0 1 1.587265,0 l 1.015813,2.75722035 2.75722,1.0158125 a 0.83817249,0.83817249 0 0 1 0.553334,0.793633 z" />
+            </svg>
+          </div>
+          <div
+            style={{
+              fontSize: 64,
+              fontWeight: 500,
+              letterSpacing: '-0.025em',
+              color: 'black',
+              marginTop: 30,
+              padding: '0 120px',
+              lineHeight: 1.4,
+              whiteSpace: 'pre-wrap',
+            }}>
+            {title}
+          </div>
+        </div>
+      ),
+      {
+        width: 1200,
+        height: 630,
+        fonts: [
+          {
+            name: 'IBM Plex Sans',
+            data: await loadGoogleFont('IBM Plex Sans', title),
+            style: 'normal',
+            weight: 500,
+          },
+        ],
+      }
+    )
+  } catch (e: any) {
+    console.log(`${e.message}`)
+    return new Response(`Failed to generate the image`, {
+      status: 500,
+    })
+  }
+}

@@ -12,6 +12,8 @@
   --color-blue: #6ac3ff;
   --background-body: var(--color-white);
   --background-surface: var(--color-gray);
+  --background-surface-secondary: var(--color-gray);
+  --color-surface-secondary: var(--color-white);
   --color-bg-white: #fff;
   --color-text-black: #000;
   --background-linear-gradient: linear-gradient(
@@ -26,9 +28,10 @@
   --color-white-translucent: rgba(255, 255, 255, 0.5);
   --color-black-translucent: rgba(0, 0, 0, 0.05);
   --color-black-translucent-50: rgba(0, 0, 0, 0.5);
-  --box-shadow: 0 1.8px 3.8px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%);
+  --box-shadow:
+    0 1.8px 3.8px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%);
   --shadow-2: 0px 6px 12px 0px rgba(0, 0, 0, 0.075);
-  --opacity: 0.6;
+  --opacity: 0.55;
   --svg-filter: none;
   --font-size: 1rem;
   --font-size-small: 0.8rem;
@@ -46,13 +49,16 @@
   --container-sidebar: 250px;
   --max-size-container: 1024px;
   --max-size-container-2: 780px;
-  --transition-hover: hover 0.2s, background 0.2s, opacity 0.2s, box-shadow 0.2s;
+  --transition-hover:
+    hover 0.2s, background 0.2s, opacity 0.2s, box-shadow 0.2s;
   --transition: all 200ms;
 }
 
 html[data-theme='dark'] {
   --background-body: var(--color-dark);
   --background-surface: var(--color-dark-2);
+  --background-surface-secondary: #18191b;
+  --color-surface-secondary: var(--color-dark-2);
   --color-text-black: #fff;
   --svg-filter: invert(1);
   --color-bg-white: var(--color-dark-2);

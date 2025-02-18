@@ -85,7 +85,7 @@ const AppHeader = ({ locale, category }: Props) => {
   }
 
   return (
-    <header className={Style.header}>
+    <header className={Style.header + ' sidebar'}>
       <div className={Style.buttonsContainer}>
         {/* Logo */}
         <Link href="../" className={Style.logo} translate="no">
