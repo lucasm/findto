@@ -1225,6 +1225,85 @@
       ]
     },
     {
+      "name": "Job",
+      "name_translated": "Empregos",
+      "active": true,
+      "data": [
+        {
+          "name": "LinkedIn",
+          "action": "https://www.linkedin.com/jobs/search/?keywords="
+        },
+        {
+          "name": "Glassdoor",
+          "action": "https://www.glassdoor.com.br/Job/jobs.htm?sc.keyword="
+        },
+        {
+          "name": "Catho",
+          "action": "https://www.catho.com.br/vagas/?q="
+        },
+        {
+          "name": "Gupy",
+          "action": "https://portal.gupy.io/job-search/term="
+        },
+        {
+          "name": "Infojobs",
+          "action": "https://www.infojobs.com.br/empregos.aspx?palabra="
+        },
+        {
+          "name": "Vagas",
+          "action": "https://www.vagas.com.br/vagas-de-"
+        },
+        {
+          "name": "Indeed",
+          "action": "https://br.indeed.com/jobs/?q="
+        },
+        {
+          "name": "Jooble",
+          "action": "https://br.jooble.org/SearchResult?ukw="
+        },
+        {
+          "name": "Adzuna",
+          "action": "https://www.adzuna.com.br/search?q="
+        },
+        {
+          "name": "Trampos",
+          "action": "https://trampos.co/oportunidades/?tr="
+        },
+        {
+          "name": "Talent",
+          "action": "https://br.talent.com/jobs?k="
+        },
+        {
+          "name": "Empregos",
+          "action": "https://www.empregos.com.br/vagas/"
+        },
+        {
+          "name": "Upwork",
+          "action": "https://www.upwork.com/nx/jobs/search/?q="
+        },
+        {
+          "name": "Fiverr",
+          "action": "https://www.fiverr.com/search/gigs?query="
+        },
+        {
+          "name": "99freelas",
+          "action": "https://www.99freelas.com.br/projects?q="
+        },
+        {
+          "name": "BNE",
+          "action": "https://www.bne.com.br/vagas-de-emprego/"
+        },
+        {
+          "name": "Trabalha Brasil",
+          "action": "https://www.trabalhabrasil.com.br/vagas-empregos/"
+        },
+        {
+          "name": "Concursos no Brasil",
+          "action": "https://concursosnobrasil.com/busca/?q="
+        }
+      ]
+    },
+    {
       "name": "News",
       "name_translated": "Notícias",
       "active": true,
@@ -1544,85 +1623,6 @@
         {
           "id": "UCbTAwyq6nWOLnFag-PR0XVw",
           "title": "NerdsdeNegócios"
-        }
-      ]
-    },
-    {
-      "name": "Job",
-      "name_translated": "Empregos",
-      "active": true,
-      "data": [
-        {
-          "name": "LinkedIn",
-          "action": "https://www.linkedin.com/jobs/search/?keywords="
-        },
-        {
-          "name": "Glassdoor",
-          "action": "https://www.glassdoor.com.br/Job/jobs.htm?sc.keyword="
-        },
-        {
-          "name": "Catho",
-          "action": "https://www.catho.com.br/vagas/?q="
-        },
-        {
-          "name": "Gupy",
-          "action": "https://portal.gupy.io/job-search/term="
-        },
-        {
-          "name": "Infojobs",
-          "action": "https://www.infojobs.com.br/empregos.aspx?palabra="
-        },
-        {
-          "name": "Vagas",
-          "action": "https://www.vagas.com.br/vagas-de-"
-        },
-        {
-          "name": "Indeed",
-          "action": "https://br.indeed.com/jobs/?q="
-        },
-        {
-          "name": "Jooble",
-          "action": "https://br.jooble.org/SearchResult?ukw="
-        },
-        {
-          "name": "Adzuna",
-          "action": "https://www.adzuna.com.br/search?q="
-        },
-        {
-          "name": "Trampos",
-          "action": "https://trampos.co/oportunidades/?tr="
-        },
-        {
-          "name": "Talent",
-          "action": "https://br.talent.com/jobs?k="
-        },
-        {
-          "name": "Empregos",
-          "action": "https://www.empregos.com.br/vagas/"
-        },
-        {
-          "name": "Upwork",
-          "action": "https://www.upwork.com/nx/jobs/search/?q="
-        },
-        {
-          "name": "Fiverr",
-          "action": "https://www.fiverr.com/search/gigs?query="
-        },
-        {
-          "name": "99freelas",
-          "action": "https://www.99freelas.com.br/projects?q="
-        },
-        {
-          "name": "BNE",
-          "action": "https://www.bne.com.br/vagas-de-emprego/"
-        },
-        {
-          "name": "Trabalha Brasil",
-          "action": "https://www.trabalhabrasil.com.br/vagas-empregos/"
-        },
-        {
-          "name": "Concursos no Brasil",
-          "action": "https://concursosnobrasil.com/busca/?q="
         }
       ]
     },

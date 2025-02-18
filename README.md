@@ -51,13 +51,13 @@ A new search experience, where the people choices matter. For a healthier intern
 | **Voice Search**         | Search anywhere using your voice                                             | ✅     |
 | **Visual Search**        | Search on supported sources with an image                                    | 🔜     |
 | **Privacy**              | View estimated privacy level of search source                                | 🔜     |
-| **Carbon**               | View estimated carbon footprint of search source                             | 🔜     |
+| **Carbon**               | View estimated carbon footprint of search source                             | ✅     |
 | **Internationalization** | Choose your country for local sources, or international                      | ✅     |
 | **Accessibility**        | Balanced contrast, screen reader support, keyboard navigation and dark theme | ✅     |
 
 ### Criteria
 
-We use the following criteria to select the search sources and external contents available on Findto: 1) Service popularity; 2) Service open access and accessibility; 3) Service privacy and copyright policies;
+For selecting external search sources and content available on Findto, we follow these criteria: 1) Service popularity; 2) Open access and accessibility; 3) Service privacy and copyright policies.
 
 ## 🟡 Donations
 
