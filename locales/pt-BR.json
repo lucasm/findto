@@ -570,6 +570,85 @@
       ]
     },
     {
+      "name": "Image",
+      "name_translated": "Imagens",
+      "active": true,
+      "data": [
+        {
+          "name": "Pinterest",
+          "action": "https://br.pinterest.com/search/pins/?q="
+        },
+        {
+          "name": "Unsplash",
+          "action": "https://unsplash.com/s/photos/"
+        },
+        {
+          "name": "Canva",
+          "action": "https://www.canva.com/design/play?locale=pt-B&layoutQuery="
+        },
+        {
+          "name": "GIPHY",
+          "action": "https://giphy.com/search/"
+        },
+        {
+          "name": "Pexels",
+          "action": "https://www.pexels.com/search/"
+        },
+        {
+          "name": "Flickr",
+          "action": "https://www.flickr.com/search?q="
+        },
+        {
+          "name": "Openverse",
+          "action": "https://openverse.org/search/?q="
+        },
+        {
+          "name": "Freepik",
+          "action": "https://www.freepik.com/search?query="
+        },
+        {
+          "name": "Pixabay",
+          "action": "https://pixabay.com/photos/search/"
+        },
+        {
+          "name": "Adobe Stock",
+          "action": "https://stock.adobe.com/search?k="
+        },
+        {
+          "name": "Shutterstock",
+          "action": "https://www.shutterstock.com/search/"
+        },
+        {
+          "name": "Getty Images",
+          "action": "https://www.gettyimages.com/photos/"
+        },
+        {
+          "name": "SmugMug",
+          "action": "https://www.smugmug.com/search/?q="
+        },
+        {
+          "name": "500px",
+          "action": "https://500px.com/search?q="
+        },
+        {
+          "name": "Imgur",
+          "action": "https://imgur.com/search?q="
+        },
+        {
+          "name": "DeviantArt",
+          "action": "https://www.deviantart.com/?q="
+        },
+        {
+          "name": "Dribbble",
+          "action": "https://dribbble.com/search?q="
+        },
+        {
+          "name": "Behance",
+          "action": "https://www.behance.net/search/projects?search="
+        }
+      ]
+    },
+    {
       "name": "Music",
       "name_translated": "Música",
       "active": true,
@@ -707,81 +786,152 @@
       ]
     },
     {
-      "name": "Image",
-      "name_translated": "Imagens",
+      "name": "News",
+      "name_translated": "Notícias",
       "active": true,
       "data": [
         {
-          "name": "Pinterest",
-          "action": "https://br.pinterest.com/search/pins/?q="
+          "name": "globo",
+          "action": "https://www.globo.com/busca/?q="
         },
         {
-          "name": "Unsplash",
-          "action": "https://unsplash.com/s/photos/"
+          "name": "UOL",
+          "action": "https://busca.uol.com.br/result.html?term="
         },
         {
-          "name": "Canva",
-          "action": "https://www.canva.com/design/play?locale=pt-B&layoutQuery="
+          "name": "Google News",
+          "action": "https://news.google.com/search?q="
         },
         {
-          "name": "GIPHY",
-          "action": "https://giphy.com/search/"
+          "name": "CNN",
+          "action": "https://www.cnnbrasil.com.br/?s="
         },
         {
-          "name": "Pexels",
-          "action": "https://www.pexels.com/search/"
+          "name": "Folha",
+          "action": "https://search.folha.uol.com.br/?q="
         },
         {
-          "name": "Flickr",
-          "action": "https://www.flickr.com/search?q="
+          "name": "Estadão",
+          "action": "https://www.estadao.com.br/busca/?token=%257B%2522query%2522%253A%2522"
         },
         {
-          "name": "Openverse",
-          "action": "https://openverse.org/search/?q="
+          "name": "Poder360",
+          "action": "https://www.poder360.com.br/?s=search&q="
         },
         {
-          "name": "Freepik",
-          "action": "https://www.freepik.com/search?query="
+          "name": "Nexo",
+          "action": "https://www.nexojornal.com.br/search?term="
         },
         {
-          "name": "Pixabay",
-          "action": "https://pixabay.com/photos/search/"
+          "name": "Veja",
+          "action": "https://veja.abril.com.br/?s="
         },
         {
-          "name": "Adobe Stock",
-          "action": "https://stock.adobe.com/search?k="
+          "name": "CartaCapital",
+          "action": "https://www.cartacapital.com.br/?s="
         },
         {
-          "name": "Shutterstock",
-          "action": "https://www.shutterstock.com/search/"
+          "name": "Terra",
+          "action": "https://www.terra.com.br/busca/?q="
         },
         {
-          "name": "Getty Images",
-          "action": "https://www.gettyimages.com/photos/"
+          "name": "Metropoles",
+          "action": "https://www.metropoles.com/search?q="
         },
         {
-          "name": "SmugMug",
-          "action": "https://www.smugmug.com/search/?q="
+          "name": "Agência Brasil",
+          "action": "https://busca.ebc.com.br/?q=",
+          "additional": "&site_id=agenciabrasil"
         },
         {
-          "name": "500px",
-          "action": "https://500px.com/search?q="
+          "name": "Reuters",
+          "action": "https://www.reuters.com/site-search/?query="
         },
         {
-          "name": "Imgur",
-          "action": "https://imgur.com/search?q="
+          "name": "BBC",
+          "action": "https://www.bbc.co.uk/search?q="
         },
         {
-          "name": "DeviantArt",
-          "action": "https://www.deviantart.com/?q="
+          "name": "Pocket",
+          "action": "https://getpocket.com/search?st=all&q="
         },
         {
-          "name": "Dribbble",
-          "action": "https://dribbble.com/search?q="
+          "name": "Feedly",
+          "action": "https://feedly.com/i/discover/sources/search/feed/"
         },
         {
-          "name": "Behance",
-          "action": "https://www.behance.net/search/projects?search="
+          "name": "Flipboard",
+          "action": "https://flipboard.com/search/"
+        }
+      ],
+      "youtube_channels": [
+        {
+          "id": "UCVFbXI6Gu8U2f9Gjtxw4A-Q",
+          "title": "uol"
+        },
+        {
+          "id": "UCvdwhh_fDyWccR42-rReZLw",
+          "title": "CNNbrasil"
+        },
+        {
+          "id": "UCthbIFAxbXTTQEC7EcQvP1Q",
+          "title": "BBCNewsBrasil"
+        },
+        {
+          "id": "UCaGmdJSSiR7fkh2A-c6emsA",
+          "title": "g1globo"
+        },
+        {
+          "id": "UCmYuiV9wAR3i8p19Ygc7izg",
+          "title": "folha"
+        },
+        {
+          "id": "UCV6Ue4o5UIeKQ3IEkjnXRlg",
+          "title": "veja"
+        },
+        {
+          "id": "UCFCiSRbCVwQ_BQaDQBYxN_A",
+          "title": "Poder360"
+        },
+        {
+          "id": "UCNqzAD9EiECreuH6LA8IYeA",
+          "title": "TheInterceptBrasil"
+        },
+        {
+          "id": "UCDGz2exMIsPQ4k9VrsuhKTA",
+          "title": "CartaCapital"
+        },
+        {
+          "id": "UCJVTsYjG0KLNWL6OyHx7ZGw",
+          "title": "NexojornalBr"
+        },
+        {
+          "id": "UCXdXYG8dUmEv6jhEji_lSHg",
+          "title": "JornalismoTVCultura"
+        },
+        {
+          "id": "UCNVsZnDXOM4PodYIEgM2e4w",
+          "title": "rodaviva"
+        },
+        {
+          "id": "UCrtOL8bJsh-csozGS2aV77Q",
+          "title": "estadao"
+        },
+        {
+          "id": "UCRVbqma6TaIHp9E151nC8sA",
+          "title": "apublica"
+        },
+        {
+          "id": "UCuiLR4p6wQ3xLEm15pEn1Xw",
+          "title": "recordnews"
+        },
+        {
+          "id": "UC376n347Ob5Lwzq2WGzF1AA",
+          "title": "SBTNews"
+        },
+        {
+          "id": "UCUmEPYxmnyQDeRUcFkslmQw",
+          "title": "euronewspt"
         }
       ]
     },
@@ -1300,156 +1450,6 @@
         {
           "name": "Concursos no Brasil",
           "action": "https://concursosnobrasil.com/busca/?q="
-        }
-      ]
-    },
-    {
-      "name": "News",
-      "name_translated": "Notícias",
-      "active": true,
-      "data": [
-        {
-          "name": "globo",
-          "action": "https://www.globo.com/busca/?q="
-        },
-        {
-          "name": "UOL",
-          "action": "https://busca.uol.com.br/result.html?term="
-        },
-        {
-          "name": "Google News",
-          "action": "https://news.google.com/search?q="
-        },
-        {
-          "name": "CNN",
-          "action": "https://www.cnnbrasil.com.br/?s="
-        },
-        {
-          "name": "Folha",
-          "action": "https://search.folha.uol.com.br/?q="
-        },
-        {
-          "name": "Estadão",
-          "action": "https://www.estadao.com.br/busca/?token=%257B%2522query%2522%253A%2522"
-        },
-        {
-          "name": "Poder360",
-          "action": "https://www.poder360.com.br/?s=search&q="
-        },
-        {
-          "name": "Nexo",
-          "action": "https://www.nexojornal.com.br/search?term="
-        },
-        {
-          "name": "Veja",
-          "action": "https://veja.abril.com.br/?s="
-        },
-        {
-          "name": "CartaCapital",
-          "action": "https://www.cartacapital.com.br/?s="
-        },
-        {
-          "name": "Terra",
-          "action": "https://www.terra.com.br/busca/?q="
-        },
-        {
-          "name": "Metropoles",
-          "action": "https://www.metropoles.com/search?q="
-        },
-        {
-          "name": "Agência Brasil",
-          "action": "https://busca.ebc.com.br/?q=",
-          "additional": "&site_id=agenciabrasil"
-        },
-        {
-          "name": "Reuters",
-          "action": "https://www.reuters.com/site-search/?query="
-        },
-        {
-          "name": "BBC",
-          "action": "https://www.bbc.co.uk/search?q="
-        },
-        {
-          "name": "Pocket",
-          "action": "https://getpocket.com/search?st=all&q="
-        },
-        {
-          "name": "Feedly",
-          "action": "https://feedly.com/i/discover/sources/search/feed/"
-        },
-        {
-          "name": "Flipboard",
-          "action": "https://flipboard.com/search/"
-        }
-      ],
-      "youtube_channels": [
-        {
-          "id": "UCVFbXI6Gu8U2f9Gjtxw4A-Q",
-          "title": "uol"
-        },
-        {
-          "id": "UCvdwhh_fDyWccR42-rReZLw",
-          "title": "CNNbrasil"
-        },
-        {
-          "id": "UCthbIFAxbXTTQEC7EcQvP1Q",
-          "title": "BBCNewsBrasil"
-        },
-        {
-          "id": "UCaGmdJSSiR7fkh2A-c6emsA",
-          "title": "g1globo"
-        },
-        {
-          "id": "UCmYuiV9wAR3i8p19Ygc7izg",
-          "title": "folha"
-        },
-        {
-          "id": "UCV6Ue4o5UIeKQ3IEkjnXRlg",
-          "title": "veja"
-        },
-        {
-          "id": "UCFCiSRbCVwQ_BQaDQBYxN_A",
-          "title": "Poder360"
-        },
-        {
-          "id": "UCNqzAD9EiECreuH6LA8IYeA",
-          "title": "TheInterceptBrasil"
-        },
-        {
-          "id": "UCDGz2exMIsPQ4k9VrsuhKTA",
-          "title": "CartaCapital"
-        },
-        {
-          "id": "UCJVTsYjG0KLNWL6OyHx7ZGw",
-          "title": "NexojornalBr"
-        },
-        {
-          "id": "UCXdXYG8dUmEv6jhEji_lSHg",
-          "title": "JornalismoTVCultura"
-        },
-        {
-          "id": "UCNVsZnDXOM4PodYIEgM2e4w",
-          "title": "rodaviva"
-        },
-        {
-          "id": "UCrtOL8bJsh-csozGS2aV77Q",
-          "title": "estadao"
-        },
-        {
-          "id": "UCRVbqma6TaIHp9E151nC8sA",
-          "title": "apublica"
-        },
-        {
-          "id": "UCuiLR4p6wQ3xLEm15pEn1Xw",
-          "title": "recordnews"
-        },
-        {
-          "id": "UC376n347Ob5Lwzq2WGzF1AA",
-          "title": "SBTNews"
-        },
-        {
-          "id": "UCUmEPYxmnyQDeRUcFkslmQw",
-          "title": "euronewspt"
         }
       ]
     },
