@@ -165,14 +165,6 @@
           "action": "https://chat.qwenlm.ai/?q="
         },
         {
-          "name": "Wenxiaoyan",
-          "action": "https://chat.baidu.com/search?q="
-        },
-        {
-          "name": "Kimi",
-          "action": "https://kimi.moonshot.cn/?q="
-        },
-        {
           "name": "ChatGPT",
           "action": "https://chat.openai.com/?q="
         },
@@ -219,6 +211,14 @@
         {
           "name": "iAsk",
           "action": "https://iask.ai/?mode=question&q="
+        },
+        {
+          "name": "Wenxiaoyan",
+          "action": "https://chat.baidu.com/search?q="
+        },
+        {
+          "name": "Kimi",
+          "action": "https://kimi.moonshot.cn/?q="
         },
         {
           "name": "Adobe Firefly",
