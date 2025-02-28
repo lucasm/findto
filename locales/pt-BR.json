@@ -173,10 +173,6 @@
           "action": "https://www.perplexity.ai/?q="
         },
         {
-          "name": "Grok",
-          "action": "https://grok.com/?q="
-        },
-        {
           "name": "DeepSeek",
           "action": "https://chat.deepseek.com/?q="
         },
@@ -199,6 +195,10 @@
         {
           "name": "Mistral",
           "action": "https://chat.mistral.ai/chat?q="
+        },
+        {
+          "name": "Grok",
+          "action": "https://grok.com/?q="
         },
         {
           "name": "Meta AI",

@@ -160,10 +160,6 @@
           "action": "https://www.perplexity.ai/?q="
         },
         {
-          "name": "Grok",
-          "action": "https://grok.com/?q="
-        },
-        {
           "name": "DeepSeek",
           "action": "https://chat.deepseek.com/?q="
         },
@@ -190,6 +186,10 @@
         {
           "name": "Meta AI",
           "action": "https://www.meta.ai/?q="
+        },
+        {
+          "name": "Grok",
+          "action": "https://grok.com/?q="
         },
         {
           "name": "Phind",

@@ -177,10 +177,6 @@
           "action": "https://www.perplexity.ai/?q="
         },
         {
-          "name": "Grok",
-          "action": "https://grok.com/?q="
-        },
-        {
           "name": "HuggingChat",
           "action": "https://huggingface.co/chat?q="
         },
@@ -195,6 +191,10 @@
         {
           "name": "Gemini",
           "action": "https://gemini.google.com/app?q="
+        },
+        {
+          "name": "Grok",
+          "action": "https://grok.com/?q="
         },
         {
           "name": "Meta AI",

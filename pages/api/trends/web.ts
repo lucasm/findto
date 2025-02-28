@@ -27,7 +27,7 @@ export default async function endpoint(
     country = 'HK'
   }
 
-  const url = `https://trends.google.com/trends/trendingsearches/daily/rss?geo=${country}`
+  const url = `https://trends.google.com/trending/rss?geo=${country}`
 
   try {
     const data = await parser.parseURL(url)
