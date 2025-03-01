@@ -6,7 +6,6 @@ import { useTranslations } from 'next-intl'
 import { useSearch } from '@/contexts/SearchContext'
 import { fetcher } from '@/utils/http'
 import { extractDomain, isValidUrl } from '@/utils/url'
-import { IconShield } from '@/components/SvgIcons'
 import Donut from '@/components/Donut'
 import WidgetDropdown from '@/components/WidgetDropdown'
 import Loader from '../Loader'
@@ -109,7 +108,7 @@ export default function WidgetPrivacy({ className = '', ...props }: DivProps) {
   return (
     <WidgetDropdown
       title={t('widgetPrivacy.title') ?? 'Privacy'}
-      icon={<IconShield />}
+      //   icon={<IconShield />}
       isWidgetOpen={(state) => setIsOpen(state)}
       credits={{
         title: 'Privacy Monitor',

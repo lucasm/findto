@@ -164,17 +164,18 @@
           "action": "https://chat.deepseek.com/?q="
         },
         {
-          "name": "HuggingChat",
-          "action": "https://huggingface.co/chat?q="
-        },
-        {
           "name": "Claude",
-          "action": "https://claude.ai/newq="
+          "action": "https://claude.ai/new?q="
         },
         {
           "name": "You",
           "action": "https://you.com/search?fromSearchBar=true&tbm=youchat&q="
         },
+        {
+          "name": "HuggingChat",
+          "action": "https://huggingface.co/chat?q="
+        },
+
         {
           "name": "Gemini",
           "action": "https://gemini.google.com/app?q="

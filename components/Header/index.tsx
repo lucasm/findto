@@ -135,7 +135,7 @@ const AppHeader = ({ locale, category }: Props) => {
             )
           }}>
           <figure>
-            <IconHeart />
+            {/* <IconHeart /> */}
             {t('donate')}
           </figure>
         </button>

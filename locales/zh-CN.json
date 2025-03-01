@@ -182,7 +182,7 @@
         },
         {
           "name": "Claude",
-          "action": "https://claude.ai/newq="
+          "action": "https://claude.ai/new?q="
         },
         {
           "name": "Mistral",

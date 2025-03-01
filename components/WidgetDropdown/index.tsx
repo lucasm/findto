@@ -8,7 +8,7 @@ import { ICredits } from '../WidgetTemplate'
 type WidgetDropdownProps = {
   title: string | undefined
   ariaLabel?: string
-  icon: React.ReactNode
+  icon?: React.ReactNode
   children: React.ReactNode
   credits?: ICredits
   isWidgetOpen?: (isOpen: boolean) => void
@@ -65,7 +65,7 @@ export default function WidgetDropdown({
         className={isOpen ? Styles.opened : ''}
         aria-label={ariaLabel ?? undefined}>
         <figure>
-          {icon}
+          {icon && icon}
           {title}
         </figure>
       </button>

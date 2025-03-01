@@ -7,7 +7,6 @@ import { useTranslations } from 'next-intl'
 import { fetcher } from '@/utils/http'
 import { extractDomain, isValidUrl } from '@/utils/url'
 import { useSearch } from '@/contexts/SearchContext'
-import { IconCarbon } from '@/components/SvgIcons'
 import Donut from '@/components/Donut'
 import WidgetDropdown from '@/components/WidgetDropdown'
 import Loader from '../Loader'
@@ -77,7 +76,7 @@ export default function WidgetCarbon({ className = '', ...props }: DivProps) {
   return (
     <WidgetDropdown
       title={t('widgetCarbon.title') ?? 'Carbon'}
-      icon={<IconCarbon />}
+      //   icon={<IconCarbon />}
       isWidgetOpen={(state) => setIsOpen(state)}
       credits={{
         title: 'Website Carbon',

@@ -118,6 +118,9 @@
   background: var(--background-linear-gradient);
   transition: var(--transition-hover);
 }
+.page section h1 {
+  text-wrap: balance;
+}
 .page section h2 {
   margin-bottom: 2rem;
   color: var(--color-text-black);
