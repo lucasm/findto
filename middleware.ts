@@ -1,8 +1,9 @@
 import createMiddleware from 'next-intl/middleware'
+import { defaultLocale, locales } from './utils/locales'
 
 const middleware = createMiddleware({
-  locales: ['en-US', 'pt-BR', 'zh-CN'],
-  defaultLocale: 'en-US',
+  locales: locales,
+  defaultLocale: defaultLocale,
 })
 
 export default middleware

@@ -122,6 +122,10 @@
           "action": "https://br.pinterest.com/search/pins/?q="
         },
         {
+          "name": "OLX",
+          "action": "https://www.olx.com.br/brasil?q="
+        },
+        {
           "name": "Mercado Livre",
           "action": "https://lista.mercadolivre.com.br/"
         },
@@ -132,10 +136,6 @@
         {
           "name": "Shopee",
           "action": "https://shopee.com.br/search?keyword="
-        },
-        {
-          "name": "OLX",
-          "action": "https://www.olx.com.br/brasil?q="
         },
         {
           "name": "iFood",

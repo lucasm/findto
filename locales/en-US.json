@@ -1,6 +1,6 @@
 {
   "country": {
-    "name": "United States",
+    "name": "United States of America",
     "code": "US"
   },
   "t": {
@@ -24,7 +24,7 @@
     },
     "widgetCarbon": { "title": "Carbon" },
     "widgetPrivacy": { "title": "Privacy" },
-    "slogan": "Decentralized search",
+    "slogan": "Decentralized search on Web and AI",
     "copyright": "Made in Brazil by",
     "about": "About",
     "community": "Community",
@@ -122,10 +122,6 @@
           "action": "https://edition.cnn.com/search?q="
         },
         {
-          "name": "BBC",
-          "action": "https://www.bbc.co.uk/search?q="
-        },
-        {
           "name": "Amazon",
           "action": "https://www.amazon.com.br/s?k="
         },
@@ -140,6 +136,10 @@
         {
           "name": "Temu",
           "action": "https://www.temu.com/search_result.html?search_key="
+        },
+        {
+          "name": "USA.GOV",
+          "action": "https://search.usa.gov/search?query="
         }
       ]
     },

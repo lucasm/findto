@@ -1,0 +1,215 @@
+{
+  "country": {
+    "name": "Russia (Россия)",
+    "code": "RU"
+  },
+  "t": {
+    "componentCookiesPopup": {
+      "title": "Findto использует файлы cookie, уважая вашу конфиденциальность. Мы не храним личную информацию."
+    },
+    "componentWelcome": {
+      "goodMorning": "Доброе утро",
+      "goodEvening": "Добрый вечер",
+      "goodNight": "Спокойной ночи",
+      "whatDoYouWant": "Попробуйте что-нибудь новое"
+    },
+    "componentBanner": {
+      "title": "Познакомьтесь с Findto, вашим новым помощником по поиску",
+      "description": "Децентрализованный поиск в Интернете и ИИ."
+    },
+    "componentVoiceSearch": {
+      "voice": "Voice",
+      "speak": "Speak now",
+      "allow": "Waiting..."
+    },
+    "widgetCarbon": { "title": "Углерод" },
+    "widgetPrivacy": { "title": "Частная жизнь" },
+    "slogan": "Децентрализованный поиск в Интернете и ИИ",
+    "copyright": "Сделано в Бразилии компанией",
+    "about": "О проекте",
+    "community": "Сообщество",
+    "privacy": "политика конфиденциальности",
+    "terms": "Условия эксплуатации",
+    "donate": "Пожертвовать",
+    "accept": "Принимать",
+    "learnMore": "Познакомьтесь с Findto",
+    "viewNearbyPlaces": "View nearby places",
+    "openApp": "Открыть приложение",
+    "placeholder": "Поиск в",
+    "search": "Поиск",
+    "clear": "Очистить",
+    "powered": "Питаться от",
+    "settings": "Настройки",
+    "theme": "Цвет",
+    "language": "Язык",
+    "contribute": "Внести вклад",
+    "trends": "Тенденции",
+    "stories": "Истории",
+    "categories": "Режимы поиска",
+    "category": "Режим поиска",
+    "feedback": {
+      "title": "Отправить отзыв",
+      "url": "https://forms.gle/US69JvUT1qxYkiF58"
+    },
+    "warnings": {
+      "torrent": "Notice: Torrent is not illegal. Downloading copyrighted content may be, depending of the local laws. Check your local legislation and respect it. Avoid legal issues."
+    }
+  },
+  "categories": [
+    {
+      "name": "Home",
+      "name_translated": "Дом",
+      "active": true,
+      "data": [
+        {
+          "name": "Yandex",
+          "action": "https://www.yandex.com/search/?text="
+        },
+        {
+          "name": "Google",
+          "action": "https://www.google.ru/search?q="
+        },
+        {
+          "name": "Bing",
+          "action": "https://www.bing.com/search?q="
+        },
+        {
+          "name": "ChatGPT",
+          "action": "https://chat.openai.com/?q="
+        },
+        {
+          "name": "Copilot",
+          "action": "https://copilot.microsoft.com/?q="
+        },
+        {
+          "name": "YouTube",
+          "action": "https://www.youtube.com/results?search_query="
+        },
+        {
+          "name": "VK",
+          "action": "https://vk.com/search?q="
+        },
+        {
+          "name": "Rutube",
+          "action": "https://rutube.ru/search/?query="
+        },
+        {
+          "name": "Reddit",
+          "action": "https://www.reddit.com/search?q="
+        },
+        {
+          "name": "X",
+          "action": "https://x.com/search?src=typed_query&q="
+        },
+        {
+          "name": "Instagram",
+          "action": "https://www.instagram.com/explore/tags/"
+        },
+        {
+          "name": "LinkedIn",
+          "action": "https://www.linkedin.com/search/results/index/?keywords="
+        },
+        {
+          "name": "Pinterest",
+          "action": "https://br.pinterest.com/search/pins/?q="
+        },
+        {
+          "name": "RBC",
+          "action": "https://www.rbc.ru/search/?query="
+        },
+        {
+          "name": "Ozon",
+          "action": "https://www.ozon.ru/search/?text="
+        },
+        {
+          "name": "Avito",
+          "action": "https://www.avito.ru/all?q="
+        },
+        {
+          "name": "Wildberries",
+          "action": "https://www.wildberries.ru/catalog/0/search.aspx?search="
+        },
+        {
+          "name": "Government.ru",
+          "action": "http://government.ru/en/search/?q="
+        }
+      ]
+    },
+    {
+      "name": "AI",
+      "name_translated": "ИИ",
+      "active": true,
+      "data": [
+        {
+          "name": "ChatGPT",
+          "action": "https://chat.openai.com/?q="
+        },
+        {
+          "name": "Copilot",
+          "action": "https://copilot.microsoft.com/?q="
+        },
+        {
+          "name": "Perplexity",
+          "action": "https://www.perplexity.ai/?q="
+        },
+        {
+          "name": "DeepSeek",
+          "action": "https://chat.deepseek.com/?q="
+        },
+        {
+          "name": "Claude",
+          "action": "https://claude.ai/new?q="
+        },
+        {
+          "name": "You",
+          "action": "https://you.com/search?fromSearchBar=true&tbm=youchat&q="
+        },
+        {
+          "name": "HuggingChat",
+          "action": "https://huggingface.co/chat?q="
+        },
+
+        {
+          "name": "Gemini",
+          "action": "https://gemini.google.com/app?q="
+        },
+        {
+          "name": "Mistral",
+          "action": "https://chat.mistral.ai/chat?q="
+        },
+        {
+          "name": "Meta AI",
+          "action": "https://www.meta.ai/?q="
+        },
+        {
+          "name": "Grok",
+          "action": "https://grok.com/?q="
+        },
+        {
+          "name": "Phind",
+          "action": "https://www.phind.com/agent?q="
+        },
+        {
+          "name": "iAsk",
+          "action": "https://iask.ai/?mode=question&q="
+        },
+        {
+          "name": "Adobe Firefly",
+          "action": "https://firefly.adobe.com/generate/images?prompt="
+        },
+        {
+          "name": "Cohere",
+          "action": "https://coral.cohere.com/?q="
+        },
+        {
+          "name": "Falcon",
+          "action": "https://chat.falconllm.tii.ae/?q="
+        },
+        {
+          "name": "Qwen",
+          "action": "https://chat.qwenlm.ai/?q="
+        }
+      ]
+    }
+  ]
+}

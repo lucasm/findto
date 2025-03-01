@@ -130,20 +130,16 @@
           "action": "https://search.yahoo.com/search?p="
         },
         {
-          "name": "CNN",
-          "action": "https://edition.cnn.com/search?q="
-        },
-        {
-          "name": "BBC",
-          "action": "https://www.bbc.co.uk/search?q="
-        },
-        {
-          "name": "Amazon",
-          "action": "https://www.amazon.com.br/s?k="
+          "name": "JD",
+          "action": "http://search.jd.com/Search?keyword="
         },
         {
           "name": "Temu",
           "action": "https://www.temu.com/search_result.html?search_key="
+        },
+        {
+          "name": "GOV.CN",
+          "action": "https://search.english.www.gov.cn/en/search.shtml?code=17dbe3acd9d&dataTypeId=57&searchWord="
         }
       ]
     },
