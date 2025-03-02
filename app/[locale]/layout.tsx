@@ -26,12 +26,12 @@ const fontFamily = localFont({
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Findto | Decentralized Search on AI and Web',
+    absolute: 'Findto | Decentralized AI Search',
     default: 'Findto',
     template: 'Findto | %s',
   },
   description:
-    'Assistant for decentralized AI and Web search. Explore a healthier internet. Open source and free.',
+    'Assistant for decentralized search on AI, Web and more. Explore a healthier internet. Open source.',
   authors: [
     { name: 'Findto', url: 'https://findto.app' },
     { name: 'Lucas Menezes', url: 'https://lucasm.dev' },

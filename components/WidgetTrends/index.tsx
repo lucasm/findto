@@ -405,7 +405,7 @@ export default function SearchTrends() {
       case 'Finance':
         return Styles.container + ' ' + Styles.grid4
       case 'Apps':
-        return Styles.container + ' ' + Styles.grid6 + ' ' + Styles.trendsApps
+        return Styles.container + ' ' + Styles.grid5 + ' ' + Styles.trendsApps
       case 'Shopping':
         return (
           Styles.container + ' ' + Styles.grid4 + ' ' + Styles.trendsShopping
@@ -416,7 +416,7 @@ export default function SearchTrends() {
       case 'Games':
         return Styles.container + ' ' + Styles.grid3
       case 'Local':
-        return Styles.container + ' ' + Styles.trendsLocal
+        return Styles.container + ' ' + Styles.grid2 + ' ' + Styles.trendsLocal
       default:
         return Styles.container
     }

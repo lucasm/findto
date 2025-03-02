@@ -20,10 +20,9 @@ import {
 import SelectLanguage from '@/components/SelectLanguage'
 import SearchNav from '@/components/SearchNav'
 import HeaderSidebar from '@/components/HeaderSidebar'
-import WidgetCarbon from '@/components/WidgetCarbon'
-import WidgetPrivacy from '@/components/WidgetPrivacy'
 import WidgetDropdown from '@/components/WidgetDropdown'
 import { ISearchCategory } from '@/interfaces/search'
+import WidgetProtection from '../WidgetProtection'
 
 interface Props {
   locale: string
@@ -121,8 +120,10 @@ const AppHeader = ({ locale, category }: Props) => {
       </div>
 
       <div className={Style.buttonsContainer}>
-        <WidgetPrivacy className={Style.buttonHideMobile} />
-        <WidgetCarbon className={Style.buttonHideMobile} />
+        <WidgetProtection className={Style.buttonHideMobile} />
+
+        {/* <WidgetPrivacy className={Style.buttonHideMobile} />
+        <WidgetCarbon className={Style.buttonHideMobile} /> */}
 
         {/* Donate */}
         <button
@@ -135,7 +136,7 @@ const AppHeader = ({ locale, category }: Props) => {
             )
           }}>
           <figure>
-            {/* <IconHeart /> */}
+            <IconHeart />
             {t('donate')}
           </figure>
         </button>

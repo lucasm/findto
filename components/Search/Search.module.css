@@ -5,13 +5,14 @@
 .container {
   display: flex;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 4rem 0;
   gap: 2rem;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-width: var(--max-size-container);
+  width: calc(100% - 4rem);
+  max-width: var(--max-size-container-3);
 }
 
 .fullscreen {
@@ -182,14 +183,13 @@
 }
 
 @media screen and (max-width: 576px) {
-  .buttons ul {
-    padding: 0 1rem 1rem;
-    /* white-space: nowrap;
+  /* .buttons ul {
+    white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
     text-align: center;
-    display: inline-block; */
-  }
+    display: inline-block;
+  } */
   .buttons li {
     width: auto;
     display: inline-block;
@@ -242,14 +242,14 @@
   .section {
     margin: 0 auto 3rem;
     padding: 2.5rem 0 0 0;
-    min-height: none;
   }
   .container {
-    padding: 0 0 2rem;
+    width: calc(100% - 2rem);
+    padding: 0;
     gap: 1rem;
   }
 
   .containerInput {
-    padding: 0 1rem;
+    padding: 0;
   }
 }

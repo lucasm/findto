@@ -1,11 +1,11 @@
 {
   "country": {
-    "name": "China (中国)",
+    "name": "中国",
     "code": "CN"
   },
   "t": {
     "componentCookiesPopup": {
-      "title": "Findto 使用 cookie 和类似技术来改善您的体验并提供个性化内容。我们不会追踪你。我们不会出售您的信息。"
+      "title": "Findto 使用 cookie 来提供更好的体验。我们尊重您的隐私，不存储个人信息。"
     },
     "componentWelcome": {
       "goodMorning": "早上好",
@@ -22,6 +22,14 @@
       "speak": "Speak now",
       "allow": "Waiting..."
     },
+    "widgetProtection": {
+      "title": "防护",
+      "description": "你好。您处于安全的环境中。我们不存储您的信息。但是，所选的搜索源可能会这样做。您可以使用下面的检查器来分析所选的搜索源。",
+      "source": "已选择",
+      "carbon": "查看碳足迹",
+      "security": "检查安全性",
+      "privacy": "检查隐私"
+    },
     "widgetCarbon": { "title": "碳排放" },
     "widgetPrivacy": { "title": "隐私保护" },
     "slogan": "Web、AI 和 Metaverse 上的去中心化搜索",
@@ -30,7 +38,7 @@
     "community": "社区",
     "privacy": "隐私政策",
     "terms": "服务条款",
-    "donate": "捐款",
+    "donate": "加入会员",
     "accept": "好的",
     "learnMore": "了解更多关于 Findto",
     "viewNearbyPlaces": "View nearby places",
@@ -214,11 +222,74 @@
         },
         {
           "name": "Kimi",
-          "action": "https://kimi.moonshot.cn/?q="
+          "action": "https://kimi.ai?q="
         },
         {
           "name": "Adobe Firefly",
           "action": "https://firefly.adobe.com/generate/images?prompt="
+        }
+      ]
+    },
+    {
+      "name": "News",
+      "name_translated": "消息",
+      "active": true,
+      "data": [
+        {
+          "name": "Google News",
+          "action": "https://news.google.com/search?q="
+        },
+        {
+          "name": "Xinhua",
+          "action": "https://so.news.cn/#search/0/"
+        },
+        {
+          "name": "China News",
+          "action": "https://sou.chinanews.com/search.do?q="
+        },
+        {
+          "name": "People.cn",
+          "action": "http://search.people.cn/s?keyword="
+        },
+        {
+          "name": "CGTN",
+          "action": "https://www.cgtn.com/searching/index.html?keyword="
+        },
+        {
+          "name": "QQ",
+          "action": "https://news.qq.com/search?query="
+        },
+        {
+          "name": "Sina",
+          "action": "https://sina.com.cn"
+        },
+        {
+          "name": "163",
+          "action": "https://www.163.com/search?keyword="
+        },
+        {
+          "name": "CNN",
+          "action": "https://edition.cnn.com/search?q="
+        },
+        {
+          "name": "Reuters",
+          "action": "https://www.reuters.com/site-search/?query="
+        },
+        {
+          "name": "BBC",
+          "action": "https://www.bbc.co.uk/search?q="
+        },
+        {
+          "name": "Pocket",
+          "action": "https://getpocket.com/search?q="
+        },
+        {
+          "name": "Feedly",
+          "action": "https://feedly.com/i/discover/sources/search/feed/"
+        },
+        {
+          "name": "Flipboard",
+          "action": "https://flipboard.com/search/"
         }
       ]
     }

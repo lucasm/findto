@@ -5,7 +5,6 @@ import Style from './WidgetCarbon.module.css'
 import useSWR from 'swr'
 import { useTranslations } from 'next-intl'
 import { fetcher } from '@/utils/http'
-import { extractDomain, isValidUrl } from '@/utils/url'
 import { useSearch } from '@/contexts/SearchContext'
 import Donut from '@/components/Donut'
 import WidgetDropdown from '@/components/WidgetDropdown'
@@ -36,21 +35,12 @@ interface IApiCarbon {
 type DivProps = React.HTMLAttributes<HTMLDivElement>
 
 export default function WidgetCarbon({ className = '', ...props }: DivProps) {
-  const { searchUrl, search } = useSearch()
+  const { searchUrl, search, domain, setDomain } = useSearch()
   const t = useTranslations('t')
 
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
-  const [domain, setDomain] = useState<string | null>(null)
   const [percents, setPercents] = useState<string[]>(['30', '70'])
-
-  useEffect(() => {
-    if (searchUrl) {
-      if (isValidUrl(searchUrl)) {
-        setDomain(extractDomain(searchUrl))
-      }
-    }
-  }, [isOpen, searchUrl])
 
   const { data: dataCarbon, error: errorCarbon } = useSWR<IApiCarbon>(
     isOpen && domain ? '/api/carbon?url=' + searchUrl : null,

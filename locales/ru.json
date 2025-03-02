@@ -1,11 +1,11 @@
 {
   "country": {
-    "name": "Russia (Россия)",
+    "name": "Россия",
     "code": "RU"
   },
   "t": {
     "componentCookiesPopup": {
-      "title": "Findto использует файлы cookie, уважая вашу конфиденциальность. Мы не храним личную информацию."
+      "title": "Findto использует файлы cookie для лучшего опыта. Мы уважаем вашу конфиденциальность и не храним личную информацию."
     },
     "componentWelcome": {
       "goodMorning": "Доброе утро",
@@ -22,19 +22,27 @@
       "speak": "Speak now",
       "allow": "Waiting..."
     },
+    "widgetProtection": {
+      "title": "Защита",
+      "description": "Вы находитесь в безопасной среде. Мы не храним вашу информацию. Однако выбранный источник поиска может это делать. Вы можете использовать проверки ниже для анализа выбранного источника поиска.",
+      "source": "Источник",
+      "carbon": "Углеродный след",
+      "security": "Безопасность",
+      "privacy": "Частная жизнь"
+    },
     "widgetCarbon": { "title": "Углерод" },
     "widgetPrivacy": { "title": "Частная жизнь" },
     "slogan": "Децентрализованный поиск в Интернете и ИИ",
     "copyright": "Сделано в Бразилии компанией",
     "about": "О проекте",
     "community": "Сообщество",
-    "privacy": "политика конфиденциальности",
+    "privacy": "Политика конфиденциальности",
     "terms": "Условия эксплуатации",
-    "donate": "Пожертвовать",
+    "donate": "Стать участником",
     "accept": "Принимать",
     "learnMore": "Познакомьтесь с Findto",
     "viewNearbyPlaces": "View nearby places",
-    "openApp": "Открыть приложение",
+    "openApp": "Начинать",
     "placeholder": "Поиск в",
     "search": "Поиск",
     "clear": "Очистить",
@@ -208,6 +216,73 @@
         {
           "name": "Qwen",
           "action": "https://chat.qwenlm.ai/?q="
+        }
+      ]
+    },
+    {
+      "name": "News",
+      "name_translated": "Новости",
+      "active": true,
+      "data": [
+        {
+          "name": "Google News",
+          "action": "https://news.google.com/search?q="
+        },
+        {
+          "name": "RIA Novosti",
+          "action": "https://ria.ru/search/?query="
+        },
+        {
+          "name": "TASS",
+          "action": "https://tass.com/search?searchStr="
+        },
+        {
+          "name": "Lenta.ru",
+          "action": "https://lenta.ru/search?query="
+        },
+        {
+          "name": "Gazeta.ru",
+          "action": "https://www.gazeta.ru/search.shtml?text="
+        },
+        {
+          "name": "RBC",
+          "action": "https://www.rbc.ru/search/?query="
+        },
+        {
+          "name": "Sputnik",
+          "action": "https://sputnikglobe.com/search/?query="
+        },
+        {
+          "name": "RT",
+          "action": "https://www.rt.com/search?q="
+        },
+        {
+          "name": "Moscow Times",
+          "action": "https://www.themoscowtimes.com/search?q="
+        },
+        {
+          "name": "CNN",
+          "action": "https://edition.cnn.com/search?q="
+        },
+        {
+          "name": "Reuters",
+          "action": "https://www.reuters.com/site-search/?query="
+        },
+        {
+          "name": "BBC",
+          "action": "https://www.bbc.co.uk/search?q="
+        },
+        {
+          "name": "Pocket",
+          "action": "https://getpocket.com/search?q="
+        },
+        {
+          "name": "Feedly",
+          "action": "https://feedly.com/i/discover/sources/search/feed/"
+        },
+        {
+          "name": "Flipboard",
+          "action": "https://flipboard.com/search/"
         }
       ]
     }

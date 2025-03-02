@@ -2,7 +2,7 @@
   padding: 3rem 3rem 2.5rem;
   overflow: hidden;
   margin: 0 auto 2rem;
-  max-width: var(--max-size-container);
+  max-width: var(--max-size-container-3);
   background: var(--background-linear-gradient);
   border-radius: var(--radius-big);
   color: var(--color-black);
@@ -36,17 +36,11 @@
   transition: var(--transition);
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    width: 100%;
-    padding: 2rem 2rem 3rem;
-    border-radius: 0;
-  }
-}
-
 @media screen and (max-width: 576px) {
   .container {
-    padding: 2rem 1.5rem 1.5rem;
+    padding: 2rem 1.5rem;
+    width: calc(100% - 2rem);
+    margin: 0 auto 1rem;
   }
 
   .title h3 {

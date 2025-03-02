@@ -1,11 +1,11 @@
 {
   "country": {
-    "name": "Brazil",
+    "name": "Brasil",
     "code": "BR"
   },
   "t": {
     "componentCookiesPopup": {
-      "title": "O Findto utiliza cookies respeitando a sua privacidade. Não armazenamos informações pessoais."
+      "title": "O Findto utiliza cookies para melhorar a experiência. Respeitamos a sua privacidade e não armazenamos informações pessoais."
     },
     "componentWelcome": {
       "goodMorning": "Bom dia",
@@ -14,8 +14,8 @@
       "whatDoYouWant": "Experimente algo novo"
     },
     "componentBanner": {
-      "title": "Findto, o seu assistente de buscas",
-      "description": "Faça buscas na Web e IA de maneira descentralizada."
+      "title": "Findto, assistente de busca descentralizada",
+      "description": "Faça buscas em diversas fontes da Web, IA e mais."
     },
     "componentVoiceSearch": {
       "voice": "Voz",
@@ -32,6 +32,14 @@
       "indisponível",
       "ainda não foi analisado"
     ],
+    "widgetProtection": {
+      "title": "Proteção",
+      "description": "Olá. Você está em um ambiente seguro. Não armazenamos suas informações. Contudo a fonte de busca selecionada pode faze-lo. Você pode  usar os verificadores abaixo, para analisar a fonte de busca selecionada.",
+      "source": "Fonte",
+      "carbon": "Pegada de carbono",
+      "security": "Segurança",
+      "privacy": "Privacidade"
+    },
     "widgetCarbon": { "title": "Carbono" },
     "carbonScore": [
       "mais limpo que outros sites",
@@ -46,7 +54,7 @@
     "community": "Comunidade",
     "privacy": "Política de Privacidade",
     "terms": "Termos de Serviço",
-    "donate": "Fazer doação",
+    "donate": "Assinar",
     "accept": "Aceitar",
     "learnMore": "Conheça o Findto",
     "viewNearbyPlaces": "Ver locais próximos",
@@ -54,7 +62,7 @@
     "placeholder": "Buscar em",
     "search": "Buscar",
     "clear": "Limpar",
-    "powered": "Dados fornecidos por",
+    "powered": "Fornecido por",
     "settings": "Ajustes",
     "theme": "Tema",
     "language": "Localidade",
@@ -64,7 +72,7 @@
     "categories": "Modos",
     "category": "Modo",
     "feedback": {
-      "title": "Reportar erro",
+      "title": "Enviar comentários",
       "url": "https://forms.gle/r6XAyB1ZLn9qzwp16"
     },
     "warnings": {
@@ -74,7 +82,7 @@
   "categories": [
     {
       "name": "Home",
-      "name_translated": "Página Inicial",
+      "name_translated": "Início",
       "active": true,
       "data": [
         {
@@ -94,20 +102,16 @@
           "action": "https://www.youtube.com/results?search_query="
         },
         {
-          "name": "globo",
-          "action": "https://www.globo.com/busca/?q="
-        },
-        {
-          "name": "UOL",
-          "action": "https://busca.uol.com.br/result.html?term="
-        },
-        {
           "name": "X",
           "action": "https://x.com/search?src=typed_query&q="
         },
         {
           "name": "Reddit",
           "action": "https://www.reddit.com/search?q="
+        },
+        {
+          "name": "LinkedIn",
+          "action": "https://www.linkedin.com/search/results/index/?keywords="
         },
         {
           "name": "TikTok",
@@ -122,10 +126,6 @@
           "action": "https://br.pinterest.com/search/pins/?q="
         },
         {
-          "name": "OLX",
-          "action": "https://www.olx.com.br/brasil?q="
-        },
-        {
           "name": "Mercado Livre",
           "action": "https://lista.mercadolivre.com.br/"
         },
@@ -138,16 +138,24 @@
           "action": "https://shopee.com.br/search?keyword="
         },
         {
+          "name": "OLX",
+          "action": "https://www.olx.com.br/brasil?q="
+        },
+        {
           "name": "iFood",
           "action": "https://www.ifood.com.br/busca?q="
         },
         {
-          "name": "LinkedIn",
-          "action": "https://www.linkedin.com/search/results/index/?keywords="
-        },
-        {
           "name": "Jusbrasil",
           "action": "https://www.jusbrasil.com.br/busca?q="
+        },
+        {
+          "name": "globo",
+          "action": "https://www.globo.com/busca/?q="
+        },
+        {
+          "name": "UOL",
+          "action": "https://busca.uol.com.br/result.html?term="
         },
         {
           "name": "GOV.BR",
@@ -853,7 +861,7 @@
         },
         {
           "name": "Pocket",
-          "action": "https://getpocket.com/search?st=all&q="
+          "action": "https://getpocket.com/search?q="
         },
         {
           "name": "Feedly",
@@ -874,12 +882,12 @@
           "title": "CNNbrasil"
         },
         {
-          "id": "UCthbIFAxbXTTQEC7EcQvP1Q",
-          "title": "BBCNewsBrasil"
-        },
-        {
           "id": "UCaGmdJSSiR7fkh2A-c6emsA",
           "title": "g1globo"
+        },
+        {
+          "id": "UCthbIFAxbXTTQEC7EcQvP1Q",
+          "title": "BBCNewsBrasil"
         },
         {
           "id": "UCmYuiV9wAR3i8p19Ygc7izg",
@@ -894,18 +902,6 @@
           "title": "Poder360"
         },
         {
-          "id": "UCNqzAD9EiECreuH6LA8IYeA",
-          "title": "TheInterceptBrasil"
-        },
-        {
-          "id": "UCDGz2exMIsPQ4k9VrsuhKTA",
-          "title": "CartaCapital"
-        },
-        {
-          "id": "UCJVTsYjG0KLNWL6OyHx7ZGw",
-          "title": "NexojornalBr"
-        },
-        {
           "id": "UCXdXYG8dUmEv6jhEji_lSHg",
           "title": "JornalismoTVCultura"
         },
@@ -914,8 +910,20 @@
           "title": "rodaviva"
         },
         {
+          "id": "UCDGz2exMIsPQ4k9VrsuhKTA",
+          "title": "CartaCapital"
+        },
+        {
+          "id": "UCNqzAD9EiECreuH6LA8IYeA",
+          "title": "TheInterceptBrasil"
+        },
+        {
           "id": "UCrtOL8bJsh-csozGS2aV77Q",
           "title": "estadao"
+        },
+        {
+          "id": "UCJVTsYjG0KLNWL6OyHx7ZGw",
+          "title": "NexojornalBr"
         },
         {
           "id": "UCRVbqma6TaIHp9E151nC8sA",
@@ -928,6 +936,10 @@
         {
           "id": "UC376n347Ob5Lwzq2WGzF1AA",
           "title": "SBTNews"
+        },
+        {
+          "id": "UCoa-D_VfMkFrCYodrOC9-mA",
+          "title": "bandjornalismo"
         },
         {
           "id": "UCUmEPYxmnyQDeRUcFkslmQw",
@@ -949,12 +961,12 @@
           "action": "https://lista.mercadolivre.com.br/"
         },
         {
-          "name": "Magalu",
-          "action": "https://www.magazineluiza.com.br/busca/"
-        },
-        {
           "name": "OLX",
           "action": "https://www.olx.com.br/brasil?q="
+        },
+        {
+          "name": "Magalu",
+          "action": "https://www.magazineluiza.com.br/busca/"
         },
         {
           "name": "iFood",
@@ -1190,8 +1202,8 @@
           "action": "https://search.scielo.org/?q="
         },
         {
-          "name": "ORCID",
-          "action": "https://orcid.org/orcid-search/search?searchQuery="
+          "name": "arXiv",
+          "action": "https://arxiv.org/search/?searchtype=all&query="
         },
         {
           "name": "ResearchGate",
@@ -1213,10 +1225,7 @@
           "name": "PLOS ONE",
           "action": "https://journals.plos.org/plosone/search?q="
         },
-        {
-          "name": "arXiv",
-          "action": "https://arxiv.org/search/?searchtype=all&query="
-        },
+
         {
           "name": "ScienceDirect",
           "action": "https://www.sciencedirect.com/search?qs="
@@ -1248,6 +1257,10 @@
         {
           "name": "Passei Direto",
           "action": "https://www.passeidireto.com/search?q="
+        },
+        {
+          "name": "ORCID",
+          "action": "https://orcid.org/orcid-search/search?searchQuery="
         },
         {
           "name": "Internet Archive",
@@ -1384,20 +1397,20 @@
           "action": "https://www.linkedin.com/jobs/search/?keywords="
         },
         {
-          "name": "Glassdoor",
-          "action": "https://www.glassdoor.com.br/Job/jobs.htm?sc.keyword="
-        },
-        {
-          "name": "Catho",
-          "action": "https://www.catho.com.br/vagas/?q="
-        },
-        {
           "name": "Gupy",
           "action": "https://portal.gupy.io/job-search/term="
         },
         {
           "name": "Infojobs",
           "action": "https://www.infojobs.com.br/empregos.aspx?palabra="
+        },
+        {
+          "name": "Catho",
+          "action": "https://www.catho.com.br/vagas/?q="
+        },
+        {
+          "name": "Glassdoor",
+          "action": "https://www.glassdoor.com.br/Job/jobs.htm?sc.keyword="
         },
         {
           "name": "Vagas",
@@ -1420,12 +1433,16 @@
           "action": "https://trampos.co/oportunidades/?tr="
         },
         {
+          "name": "Empregos",
+          "action": "https://www.empregos.com.br/vagas/"
+        },
+        {
           "name": "Talent",
           "action": "https://br.talent.com/jobs?k="
         },
         {
-          "name": "Empregos",
-          "action": "https://www.empregos.com.br/vagas/"
+          "name": "99freelas",
+          "action": "https://www.99freelas.com.br/projects?q="
         },
         {
           "name": "Upwork",
@@ -1436,8 +1453,8 @@
           "action": "https://www.fiverr.com/search/gigs?query="
         },
         {
-          "name": "99freelas",
-          "action": "https://www.99freelas.com.br/projects?q="
+          "name": "Remotar",
+          "action": "https://remotar.com.br/search/jobs?q="
         },
         {
           "name": "BNE",
@@ -1561,6 +1578,18 @@
       ],
       "youtube_channels": [
         {
+          "id": "UCqfm5IQhpMlfeAWMmVL_uNg",
+          "title": "cnnbrmoney"
+        },
+        {
+          "id": "UCY-FPXguTtLHSTK5YpQ-sgQ",
+          "title": "otimesbrasil"
+        },
+        {
+          "id": "UC48mLXk1ASg1EQbaS3MheWQ",
+          "title": "valoreconomico"
+        },
+        {
           "id": "UC_Y9Mf8o6gGAAw8eBrn3SOw",
           "title": "BancoCentralBR"
         },
@@ -1571,6 +1600,10 @@
         {
           "id": "UCo0jMsIPccAXghE_FCWIdNg",
           "title": "InvestNewsBR"
+        },
+        {
+          "id": "UComAl6MjIyRzDhMuXXQExKw",
+          "title": "MoneyTimesBR"
         },
         {
           "id": "UC8mDF5mWNGE-Kpfcvnn0bUg",
@@ -1587,10 +1620,6 @@
         {
           "id": "UCj3jEZuLmXOndQJFkPTp3Nw",
           "title": "CanalElaInveste"
-        },
-        {
-          "id": "UCnBNoed6NaPlpL8blj1yy8Q",
-          "title": "ClubedoValor"
         },
         {
           "id": "UC-hA65Fjv5X8h-J92zc_L8Q",
@@ -1615,10 +1644,6 @@
         {
           "id": "UCCE-jo1GvBJqyj1b287h7jA",
           "title": "brunoperini"
-        },
-        {
-          "id": "UComAl6MjIyRzDhMuXXQExKw",
-          "title": "MoneyTimesBR"
         },
         {
           "id": "UCbTAwyq6nWOLnFag-PR0XVw",

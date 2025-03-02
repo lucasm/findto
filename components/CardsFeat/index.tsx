@@ -30,9 +30,9 @@ const features: Feature[] = [
   },
   {
     icon: <IconShield />,
-    title: 'Privacy',
+    title: 'Protection',
     description:
-      'Private searches and estimated privacy level of search source.',
+      'Estimated carbon footprint, privacy and liberty of expression level of every search source.',
   },
   {
     icon: <IconTrending />,
@@ -60,32 +60,32 @@ const features: Feature[] = [
     description: 'Search with an image on supported sources.',
   },
   {
-    icon: <IconCarbon />,
-    title: 'Carbon',
-    description: 'Estimated carbon footprint of search source.',
-  },
-  {
     icon: <IconLanguage />,
     title: 'Internationalization',
-    description: 'Choose your country sources, or international.',
+    description: 'Choose local search sources, or international.',
   },
   {
     icon: <IconAccessibility />,
     title: 'Accessibility',
     description:
-      'Dark theme, contrast, screen reader, and keyboard navigation support.',
+      'Contrast, dark theme, screen reader, and keyboard navigation support.',
   },
   {
     icon: <IconOpenSource />,
     title: 'Open Source',
-    description: 'Inspect and contribute to the source code.',
+    description: 'Findto is open for contributions.',
+  },
+  {
+    icon: <IconCarbon />,
+    title: 'Carbon Neutral',
+    description: 'Finito is carbon neutral software.',
   },
 ]
 
 export default function CardsFeat() {
   return (
     <div className={Style.container}>
-      <h2>Features</h2>
+      <h2>Findto features</h2>
 
       <ul className={Style.card}>
         {features.map((feature, index) => (

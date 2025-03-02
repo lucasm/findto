@@ -1,3 +1,4 @@
+import { extractDomain, isValidUrl } from '@/utils/url'
 import { useLocale, useTranslations } from 'next-intl'
 import { useSearchParams } from 'next/navigation'
 import { createContext, useContext, useState, useEffect, useRef } from 'react'
@@ -11,6 +12,8 @@ interface SearchContextType {
   setInputValue: React.Dispatch<React.SetStateAction<string | undefined>>
   search: string
   setSearch: React.Dispatch<React.SetStateAction<string>>
+  domain: string
+  setDomain: React.Dispatch<React.SetStateAction<string>>
   searchUrl: string
   setSearchUrl: React.Dispatch<React.SetStateAction<string>>
   category: string
@@ -41,6 +44,7 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
   const [country, setCountry] = useState<string | null>(null)
   const [category, setCategory] = useState<string>('')
   const [search, setSearch] = useState<string>('')
+  const [domain, setDomain] = useState<string>('')
   const [searchUrl, setSearchUrl] = useState<string>('')
   const [titleTrends, setTitleTrends] = useState<string>('')
   const [permissionLocation, setPermissionLocation] = useState<boolean>(false)
@@ -168,6 +172,14 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
     }
   }, [query])
 
+  useEffect(() => {
+    if (searchUrl) {
+      if (isValidUrl(searchUrl)) {
+        setDomain(extractDomain(searchUrl))
+      }
+    }
+  }, [searchUrl])
+
   return (
     <SearchContext.Provider
       value={{
@@ -180,6 +192,8 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
         setSearch,
         searchUrl,
         setSearchUrl,
+        domain,
+        setDomain,
         category,
         setCategory,
         country,

@@ -34,11 +34,10 @@ export default function PageAbout() {
           <div className={Style.cardDuos}>
             <div>
               <article>
-                <h2>Get control of AI and Web search</h2>
+                <h2>Multiple sources</h2>
                 <p>
-                  Findto is an assistant for decentralized search. Findto puts
-                  people in control of algorithms. You can search the same term
-                  between diverse sources, at once.
+                  Search the same term between diverse sources, at once. Findto
+                  is an assistant for decentralized search.
                 </p>
               </article>
 
@@ -49,11 +48,10 @@ export default function PageAbout() {
 
             <div>
               <article>
-                <h2>More privacy, less carbon</h2>
+                <h2>Freedom of search</h2>
                 <p>
-                  Findto show estimated privacy level and carbon footprint of
-                  every search source. Make better choices for the planet and
-                  for your privacy.
+                  Findto show estimated carbon footprint, privacy and liberty of
+                  expression level of every search source. Make better choices.
                 </p>
               </article>
 
@@ -64,11 +62,11 @@ export default function PageAbout() {
 
             <div>
               <article>
-                <h2>Made by people</h2>
+                <h2>Made by community</h2>
                 <p>
-                  Findto is an open source project for a free universal search
-                  experience. Where diversity is key. Where people&apos;s
-                  choices matter.
+                  Findto is an open source project for an universal search
+                  experience. Where diversity is key. Where people stay on
+                  control of algorithms.
                 </p>
               </article>
 
@@ -89,7 +87,7 @@ export default function PageAbout() {
       <section>
         <div className={Style.container}>
           <div className={Style.actionContainer}>
-            <h2>A powerful search experience</h2>
+            <h2>An ubiquitous and powerful search experience</h2>
             <p>More than search. Decentralized search.</p>
             <Button url="/" color="black">
               <>

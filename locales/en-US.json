@@ -5,7 +5,7 @@
   },
   "t": {
     "componentCookiesPopup": {
-      "title": "Findto uses cookies respecting your privacy. We do not store personal information."
+      "title": "Findto uses cookies for a better experience. We respect your privacy and do not store personal information."
     },
     "componentWelcome": {
       "goodMorning": "Good morning",
@@ -14,13 +14,21 @@
       "whatDoYouWant": "Try something new"
     },
     "componentBanner": {
-      "title": "Say hello to Findto, your new search assistant",
-      "description": "Search on the Web and AI in a decentralized way."
+      "title": "Findto, decentralized search assistant",
+      "description": "Search across multiple sources on Web, AI, and more."
     },
     "componentVoiceSearch": {
       "voice": "Voice",
       "speak": "Speak",
       "allow": "Waiting..."
+    },
+    "widgetProtection": {
+      "title": "Protection",
+      "description": "You are in a secure environment. We do not store your information. However, the selected search source may do so. You can use the checkers below to analyze the selected search source.",
+      "source": "Source",
+      "carbon": "Carbon footprint",
+      "security": "Security",
+      "privacy": "Privacy"
     },
     "widgetCarbon": { "title": "Carbon" },
     "widgetPrivacy": { "title": "Privacy" },
@@ -30,7 +38,7 @@
     "community": "Community",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "donate": "Donate",
+    "donate": "Join",
     "accept": "Accept",
     "learnMore": "Meet Findto",
     "viewNearbyPlaces": "View nearby places",
@@ -66,6 +74,14 @@
           "action": "https://www.google.com/search?q="
         },
         {
+          "name": "Bing",
+          "action": "https://www.bing.com/search?q="
+        },
+        {
+          "name": "DuckDuckGo",
+          "action": "https://duckduckgo.com/?q="
+        },
+        {
           "name": "ChatGPT",
           "action": "https://chat.openai.com/?q="
         },
@@ -86,14 +102,6 @@
           "action": "https://x.com/search?src=typed_query&q="
         },
         {
-          "name": "DuckDuckGo",
-          "action": "https://duckduckgo.com/?q="
-        },
-        {
-          "name": "Bing",
-          "action": "https://www.bing.com/search?q="
-        },
-        {
           "name": "TikTok",
           "action": "https://www.tiktok.com/search?q="
         },
@@ -110,18 +118,6 @@
           "action": "https://br.pinterest.com/search/pins/?q="
         },
         {
-          "name": "Yahoo",
-          "action": "https://search.yahoo.com/search?p="
-        },
-        {
-          "name": "NY Times",
-          "action": "https://www.nytimes.com/search?query="
-        },
-        {
-          "name": "CNN",
-          "action": "https://edition.cnn.com/search?q="
-        },
-        {
           "name": "Amazon",
           "action": "https://www.amazon.com.br/s?k="
         },
@@ -136,6 +132,18 @@
         {
           "name": "Temu",
           "action": "https://www.temu.com/search_result.html?search_key="
+        },
+        {
+          "name": "Yahoo",
+          "action": "https://search.yahoo.com/search?p="
+        },
+        {
+          "name": "CNN",
+          "action": "https://edition.cnn.com/search?q="
+        },
+        {
+          "name": "NY Times",
+          "action": "https://www.nytimes.com/search?query="
         },
         {
           "name": "USA.GOV",
@@ -648,20 +656,20 @@
       "active": true,
       "data": [
         {
-          "name": "Reuters",
-          "action": "https://www.reuters.com/site-search/?query="
-        },
-        {
-          "name": "BBC",
-          "action": "https://www.bbc.co.uk/search?q="
-        },
-        {
           "name": "CNN",
           "action": "https://edition.cnn.com/search?q="
         },
         {
           "name": "NY Times",
           "action": "https://www.nytimes.com/search?query="
+        },
+        {
+          "name": "Reuters",
+          "action": "https://www.reuters.com/site-search/?query="
+        },
+        {
+          "name": "BBC",
+          "action": "https://www.bbc.co.uk/search?q="
         },
         {
           "name": "Guardian",
@@ -717,7 +725,7 @@
         },
         {
           "name": "Pocket",
-          "action": "https://getpocket.com/search?st=all&q="
+          "action": "https://getpocket.com/search?q="
         },
         {
           "name": "Feedly",
@@ -1164,10 +1172,6 @@
           "action": "https://alternativeto.net/browse/search/?q="
         },
         {
-          "name": "Product Hunt",
-          "action": "https://www.producthunt.com/search?q="
-        },
-        {
           "name": "Google Play",
           "action": "https://play.google.com/store/search?q="
         },
@@ -1187,6 +1191,14 @@
         {
           "name": "Firefox Addons",
           "action": "https://addons.mozilla.org/en-US/firefox/search/?q="
+        },
+        {
+          "name": "Meta Quest",
+          "action": "https://www.meta.com/experiences/search/?q="
+        },
+        {
+          "name": "Apple Vision Pro",
+          "action": "https://apps.apple.com/vision/search?term="
         },
         {
           "name": "Flathub",
@@ -1211,6 +1223,10 @@
         {
           "name": "Huawei AppGallery",
           "action": "https://appgallery.huawei.com/#/search/"
+        },
+        {
+          "name": "Product Hunt",
+          "action": "https://www.producthunt.com/search?q="
         },
         {
           "name": "Kickstarter",
@@ -1281,20 +1297,6 @@
         {
           "name": "Torlock",
           "action": "https://www.torlock.com/all/torrents/"
-        }
-      ]
-    },
-    {
-      "name": "Metaverse",
-      "active": true,
-      "data": [
-        {
-          "name": "Meta Quest",
-          "action": "https://www.meta.com/experiences/search/?q="
-        },
-        {
-          "name": "Apple Vision Pro",
-          "action": "https://apps.apple.com/vision/search?term="
         }
       ]
     },

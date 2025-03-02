@@ -70,10 +70,10 @@
 }
 .containerSettings h3 {
   font-size: var(--font-size);
-  font-weight: 400;
-  margin: 0 0 1rem 0;
+
+  margin: 0 0 0.5rem 0;
 }
-.containerSettings div div {
+.containerSettings div {
   display: flex;
   gap: 0.5rem;
   flex-direction: column;
@@ -90,12 +90,8 @@
   background: var(--background-surface);
   color: var(--color-text-black);
   border-radius: var(--radius);
-  padding: 0;
-  gap: 0;
-}
-.containerSettings button svg,
-.containerSettings a svg {
-  margin: 0 1rem;
+  padding: 0 0 0 1rem;
+  gap: 1rem;
 }
 .containerSettings select {
   width: 100%;

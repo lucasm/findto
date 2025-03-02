@@ -45,8 +45,8 @@
   font-size: var(--font-size-small);
 }
 
-.grid6 {
-  grid-template-columns: repeat(6, 1fr);
+.grid5 {
+  grid-template-columns: repeat(5, 1fr);
 }
 .grid4 {
   grid-template-columns: repeat(4, 1fr);
@@ -58,21 +58,21 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-.grid6 li button,
+.grid5 li button,
 .grid4 li button,
 .grid3 li button {
   gap: 1rem;
   flex-direction: column;
   align-items: start;
 }
-.grid6 li button img,
+.grid5 li button img,
 .grid4 li button img,
 .grid3 li button img {
   width: 100%;
 }
 
 .trendsApps li button img {
-  border-radius: 2rem;
+  border-radius: 1.5rem;
 }
 .trendsCode li button img {
   border-radius: 0.25rem;
@@ -84,16 +84,10 @@
 }
 
 .trendsShopping li button img {
-  padding: 2.5rem;
+  padding: 1rem;
 }
 .trendsLocal li button img {
   padding: 0.75rem;
-}
-
-@media screen and (max-width: 1024px) {
-  .grid6 {
-    grid-template-columns: repeat(5, 1fr);
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -105,7 +99,7 @@
     font-size: var(--font-size);
   }
 
-  .grid6 {
+  .grid5 {
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -115,7 +109,7 @@
     grid-template-columns: 1fr;
   }
 
-  .grid6 {
+  .grid5 {
     grid-template-columns: repeat(2, 1fr);
   }
 

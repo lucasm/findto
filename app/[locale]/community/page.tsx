@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl'
 
 const title = 'Community'
 const description =
-  'Get involved with Findto and help us to build a better internet!'
+  'Support Findto to build a better, free, and universal search.'
 
 export const metadata = {
   title: title,
@@ -31,22 +31,14 @@ export default function CommunityPage() {
           <article>
             <h2>Welcome!</h2>
 
-            <p>
-              Findto is an assistant for decentralized search, available on
-              Findto.app.
-            </p>
+            <p>Findto is an assistant for decentralized search.</p>
 
             <p>
-              Our mission is to empower people to search on the Web, AI,
-              Metaverse - and more digital spaces on the internet - in healthy
-              ways.
+              We&apos;re introducing a decentralized search experience, where
+              people have control over the search algorithms and sources.
             </p>
 
-            <p>
-              We&apos;re introducing a new search experience, putting control of
-              search algorithms in people hands. Findto is 100% open source,
-              collaborative and free.
-            </p>
+            <p>Findto is made collaboratively, as an open source project.</p>
 
             <br></br>
             <br></br>
@@ -54,9 +46,8 @@ export default function CommunityPage() {
             <h3>Code of Conduct</h3>
 
             <p>
-              Findto is made by individuals, like you. Join us and get involved!
-              Note that all members of the Findto community agree to be kind to
-              each other, following our{' '}
+              Findto is made by individuals, like you. Note that all members of
+              the community agree to be kind to each other, following our{' '}
               <a
                 href="https://www.contributor-covenant.org/version/2/1/code_of_conduct/"
                 target="_blank"
@@ -69,51 +60,60 @@ export default function CommunityPage() {
             <br></br>
             <br></br>
 
-            <h2>Researching for a better internet</h2>
+            <h2>Findto Principles</h2>
+
             <p>
-              We are researching and are interested in partnerships with
-              services, organizations, professionals and volunteers to
-              strengthen open source technologies of:
+              Our mission is to empower people to search on the Web, AI, and
+              more spaces on the internet, in healthy ways.
+            </p>
+
+            <p>
+              We are researching and are interested in partner with services,
+              organizations, and volunteers to strengthen open source
+              technologies of:
             </p>
             <ul>
               <li>Decentralized web</li>
               <li>Open access</li>
               <li>Responsible AI</li>
+              <li>Ubiquitous computing</li>
               <li>Privacy</li>
               <li>Web accessibility</li>
-              <li>Carbon neutrality (UN 2030 Agenda)</li>
-              <li>Digital democracy</li>
-              <li>Blockchain</li>
-              <li>Metaverse</li>
+              <li>Carbon neutrality (United Nations 2030 Agenda)</li>
+              <li>
+                Digital democracy and sovereignty of the peoples (Brazil
+                Diplomacy Principle)
+              </li>
             </ul>
 
             <p>
               If you share this vision, feel free to contribute with Findto
-              project. We are looking for partners to join us.
+              project. We are looking forward to hearing you! Join us and get
+              involved!
             </p>
             <br></br>
             <br></br>
 
-            <h2>Supporting us</h2>
+            <h2>Supporting Findto</h2>
 
             <p>You can choose your favorite platform to support Findto:</p>
 
             <ul>
               <li>
                 <a
-                  href="https://ko-fi.com/findto"
+                  href="https://patreon.com/findto"
                   target="_blank"
                   rel="noreferrer">
-                  Ko-Fi (one-time donation)
+                  Patreon
                 </a>
               </li>
 
               <li>
                 <a
-                  href="https://patreon.com/findto"
+                  href="https://ko-fi.com/findto"
                   target="_blank"
                   rel="noreferrer">
-                  Patreon
+                  Ko-Fi (one-time donation)
                 </a>
               </li>
               <li>

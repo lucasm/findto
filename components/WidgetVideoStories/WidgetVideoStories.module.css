@@ -1,6 +1,10 @@
 .container {
   overflow: hidden;
-  margin: 0 auto;
+  margin: -1rem;
+}
+
+.slide {
+  margin-top: 1rem;
 }
 
 .slide button {
@@ -26,8 +30,8 @@
 }
 
 .slide button figure {
-  width: 132px;
-  height: 132px;
+  width: 6.5rem;
+  height: 6.5rem;
   z-index: 0;
   border-radius: 50%;
   transition: 0.3s all;
@@ -54,7 +58,7 @@
 .videoPlayer {
   position: relative;
   width: 100%;
-  height: 522px;
+  height: 426px;
   border-radius: var(--radius-small);
   max-width: 100%;
   max-height: 100vh;

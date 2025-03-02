@@ -20,21 +20,13 @@
  <br>
 </p>
 
-## 🔎 Decentralized search
+## Decentralized AI Search
 
 Findto is an open source assistant for decentralized search.
 
-Our principles:
+Findto is putting the power of internet into people's hands again! Stay on control of the search algorithms.
 
-- Researching and developing a better search experience on the Web, AI, and more.
-
-- People in control of the search algorithms.
-
-- Free, open source, and responsible.
-
-Findto is putting the power of internet into people's hands!
-
-Quickly search the same term on Web, AI, and more sources. See the estimated privacy level and carbon footprint of selected source. Discover trends and stories. Find anything. More productive and accessible searches - as never before.
+Quickly search the same term on AI, Web, and more sources. Discover trends, stories and information. Find anything. More productive and accessible searches --- as never before.
 
 A new search experience, where the people choices matter. For a healthier internet.
 
@@ -42,18 +34,18 @@ A new search experience, where the people choices matter. For a healthier intern
 
 ## 🟢 Features
 
-| Name                     | Description                                                                  | Status |
-| ------------------------ | ---------------------------------------------------------------------------- | ------ |
-| **Decentralized Search** | Search on diverse sources at once                                            | ✅     |
-| **Trends**               | Explore real-time trends nearby you                                          | ✅     |
-| **Stories**              | Discover newest stories                                                      | ✅     |
-| **Autocomplete**         | Get automatic suggestions of terms as you type                               | ✅     |
-| **Voice Search**         | Search anywhere using your voice                                             | ✅     |
-| **Visual Search**        | Search on supported sources with an image                                    | 🔜     |
-| **Privacy**              | View estimated privacy level of search source                                | 🔜     |
-| **Carbon**               | View estimated carbon footprint of search source                             | ✅     |
-| **Internationalization** | Choose your country for local sources, or international                      | ✅     |
-| **Accessibility**        | Balanced contrast, screen reader support, keyboard navigation and dark theme | ✅     |
+| Name                     | Description                                                                           | Status |
+| ------------------------ | ------------------------------------------------------------------------------------- | ------ |
+| **Decentralized Search** | Search on diverse sources at once                                                     | ✅     |
+| **Protection**           | View estimated security level, carbon footprint and privacy of selected search source | ✅     |
+| **Trends**               | Explore real-time trends nearby you                                                   | ✅     |
+| **Stories**              | Discover newest stories                                                               | ✅     |
+| **Autocomplete**         | Get automatic suggestions of terms as you type                                        | ✅     |
+| **Voice Search**         | Search anywhere using your voice                                                      | ✅     |
+| **Visual Search**        | Search on supported sources with an image                                             | 🔜     |
+| **Internationalization** | Choose your country for local sources, or international                               | ✅     |
+| **Accessibility**        | Balanced contrast, screen reader support, keyboard navigation and dark theme          | ✅     |
+| **Carbon Neutral**       | Finito is carbon neutral software                                                     | ✅     |
 
 ### Criteria
 
@@ -87,6 +79,6 @@ Findto is built with privacy and don't store searches.
 
 Findto also displays content from external services without review and materials protected by intellectual property. Please, respect the terms of use of each source.
 
-[Privacy Policy](https://findto.app/privacy) | [Terms of Service](https://findto.app/terms) | [Contact](mailto:opensource@findto.app)
+[Privacy Policy](https://findto.app/privacy) | [Terms of Service](https://findto.app/terms)
 
-Made by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app) and Open Source Community.
+Made by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app) and community.

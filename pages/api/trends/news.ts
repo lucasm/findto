@@ -12,7 +12,7 @@ const parser = new Parser({
 
 export default async function endpoint(
   request: NextApiRequest,
-  response: NextApiResponse,
+  response: NextApiResponse
 ) {
   const {
     query: { country },
@@ -37,6 +37,14 @@ export default async function endpoint(
         url = 'https://feeds.bbci.co.uk/portuguese/rss.xml'
         credits = ['BBC News Brasil', 'https://www.bbc.com/portuguese']
         break
+      case 'CN':
+        url = 'https://www.chinanews.com.cn/rss/scroll-news.xml'
+        credits = ['China News', 'https://www.chinanews.com.cn/']
+        break
+      case 'RU':
+        url = 'https://lenta.ru/rss'
+        credits = ['Lenta.ru', 'https://lenta.ru']
+        break
       default:
         url = 'https://rss.nytimes.com/services/xml/rss/nyt/World.xml'
         credits = ['The New York Times', 'https://www.nytimes.com/']
@@ -50,7 +58,9 @@ export default async function endpoint(
         image:
           country === 'BR'
             ? item?.thumbnail?.$?.url?.replace('/240/', '/420/')
-            : item?.mediaContent?.$?.url,
+            : country === 'RU'
+              ? item?.enclosure?.url
+              : item?.mediaContent?.$?.url,
         url: item?.link || '#',
       }))
 

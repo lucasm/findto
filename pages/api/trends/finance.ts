@@ -35,7 +35,7 @@ export default async function endpoint(
     switch (country) {
       case 'BR':
         url = 'https://valor.globo.com/rss/valor'
-        credits = ['Exame', 'https://exame.com/']
+        credits = ['Valor Econômico', 'https://valor.globo.com/']
         break
       default:
         url = 'https://techcrunch.com/feed/'
