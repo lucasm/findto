@@ -26,9 +26,9 @@
       "title": "防护",
       "description": "你好。您处于安全的环境中。我们不存储您的信息。但是，所选的搜索源可能会这样做。您可以使用下面的检查器来分析所选的搜索源。",
       "source": "已选择",
-      "carbon": "查看碳足迹",
-      "security": "检查安全性",
-      "privacy": "检查隐私"
+      "carbon": "碳足迹",
+      "security": "安全",
+      "privacy": "隐私"
     },
     "widgetCarbon": { "title": "碳排放" },
     "widgetPrivacy": { "title": "隐私保护" },
