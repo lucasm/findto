@@ -95,6 +95,7 @@ const AppHeader = ({ locale, category }: Props) => {
         {/* Modes */}
         {!isMobileViewport && (
           <button
+            type="button"
             onClick={() => handleOnClick()}
             aria-expanded={isSidebarOpen}
             aria-label={t('categories') ?? 'Categories'}

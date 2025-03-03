@@ -446,6 +446,7 @@ export default function SearchTrends() {
             {dataTrends?.data?.map((item, index) => (
               <li key={index}>
                 <button
+                  type="button"
                   onClick={() =>
                     item.url
                       ? window.open(item.url, '_blank')

@@ -249,6 +249,7 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
             {selectedCategory?.data.map((source, index) => (
               <li key={source?.name + index}>
                 <button
+                  type="button"
                   className={
                     searchSource?.name === source.name
                       ? Style.buttonActive

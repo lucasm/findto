@@ -102,12 +102,12 @@ export default function SearchVoice(
             text={t('componentVoiceSearch.voice')}
             disable={isMobileViewport}>
             <button
+              type="button"
               className={
                 listening
                   ? `${Style.button} ${Style.buttonActive}`
                   : Style.button
               }
-              accessKey="2"
               aria-pressed={listening ? true : false}
               onClick={handleSpeechRecognition}
               style={{ display: display ? 'inline-flex' : 'none' }}>

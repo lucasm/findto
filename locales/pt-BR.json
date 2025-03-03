@@ -2248,12 +2248,8 @@
           "action": "https://apps.microsoft.com/search?query="
         },
         {
-          "name": "AlternativeTo",
-          "action": "https://alternativeto.net/browse/search/?q="
-        },
-        {
-          "name": "Product Hunt",
-          "action": "https://www.producthunt.com/search?q="
+          "name": "Meta Quest",
+          "action": "https://www.meta.com/experiences/search?q="
         },
         {
           "name": "Chrome Web Store",
@@ -2286,6 +2282,14 @@
         {
           "name": "Huawei AppGallery",
           "action": "https://appgallery.huawei.com/#/search/"
+        },
+        {
+          "name": "AlternativeTo",
+          "action": "https://alternativeto.net/browse/search/?q="
+        },
+        {
+          "name": "Product Hunt",
+          "action": "https://www.producthunt.com/search?q="
         }
       ],
       "youtube_channels": [
@@ -2296,6 +2300,10 @@
         {
           "id": "UC_bXJnsgwOqEPA_-6N6faKw",
           "title": "canaltech"
+        },
+        {
+          "id": "UCGV72aVJuWP0QPNGH4YgIww",
+          "title": "OlharDigital"
         },
         {
           "id": "UC6ZImLwiIaVRYIGycqh5iLA",
@@ -2334,15 +2342,15 @@
         },
         {
           "name": "Xbox",
-          "action": "https://apps.microsoft.com/search?hl=pt-br&gl=BR&department=Games&query="
+          "action": "https://www.xbox.com/pt-br/Search/Results?q="
         },
         {
           "name": "Nintendo",
           "action": "https://www.nintendo.com/games/game-guide/?q="
         },
         {
-          "name": "Meta Quest",
-          "action": "https://www.meta.com/experiences/search?q="
+          "name": "Microsoft Store",
+          "action": "https://apps.microsoft.com/search?hl=pt-br&gl=BR&department=Games&query="
         },
         {
           "name": "GOG",
@@ -2383,6 +2391,32 @@
         {
           "name": "Humble Bundle",
           "action": "https://www.humblebundle.com/store/search?search="
+        }
+      ],
+      "youtube_channels": [
+        {
+          "id": "UCupqHNRTEHjNtq9X8djWyaQ",
+          "title": "VOXELOFICIAL"
+        },
+        {
+          "id": "UCYvdGhl2G-M5ojWW1UzODJg",
+          "title": "ColoniaContraAtaca"
+        },
+        {
+          "id": "UCXso4Ho8UARhzS3I_LOVTKA",
+          "title": "Cogumelando"
+        },
+        {
+          "id": "UC6i4mzH3OPrZV0p64zoz-Ww",
+          "title": "PlayStationBR"
+        },
+        {
+          "id": "UCi9Uzh14BHqkN7UO_2lbrMw",
+          "title": "xboxbr"
+        },
+        {
+          "id": "UCZSQe30xJdDSjsHmZt3ZNNA",
+          "title": "canalnerdcronico"
         }
       ]
     },
