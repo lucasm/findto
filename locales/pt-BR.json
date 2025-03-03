@@ -435,10 +435,6 @@
           "action": "https://globoplay.globo.com/busca/?q="
         },
         {
-          "name": "IMDb",
-          "action": "https://www.imdb.com/find/?q="
-        },
-        {
           "name": "Netflix",
           "action": "https://www.netflix.com/search?q="
         },
@@ -493,6 +489,10 @@
         {
           "name": "Letterboxd",
           "action": "https://letterboxd.com/search/"
+        },
+        {
+          "name": "IMDb",
+          "action": "https://www.imdb.com/find/?q="
         },
         {
           "name": "TMDB",
