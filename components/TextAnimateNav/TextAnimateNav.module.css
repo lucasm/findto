@@ -49,7 +49,6 @@
 }
 
 .title {
-  font-size: 14px;
-  font-weight: 500;
-  color: #fff; /* Ajuste conforme o tema */
+  font-size: var(--font-size-min);
+  color: var(--color-white);
 }

@@ -10,7 +10,6 @@ import {
   IconLinkedIn,
 } from '../SvgIcons'
 import { useTranslations } from 'next-intl'
-import CookiesPopup from '../CookiesPopup'
 
 export default function AppFooter() {
   const year = new Date().getFullYear()
@@ -137,8 +136,6 @@ export default function AppFooter() {
           <Youtube />
         </a> */}
       </div>
-
-      <CookiesPopup />
     </footer>
   )
 }

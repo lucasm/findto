@@ -2,6 +2,7 @@ import { AppContextProviders } from '@/components/AppContextProviders'
 import AppHeader from '@/components/Header'
 import AppFooter from '@/components/Footer'
 import { ISearchCategory } from '@/interfaces/search'
+import CookiesPopup from '@/components/CookiesPopup'
 
 export default function AppLayout({
   children,
@@ -20,6 +21,7 @@ export default function AppLayout({
       <div className="sidebar">
         <AppFooter />
       </div>
+      <CookiesPopup />
     </AppContextProviders>
   )
 }

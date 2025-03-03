@@ -149,10 +149,10 @@
 /* App Icon */
 .icon {
   display: inline-block;
-  width: 10rem;
-  height: 10rem;
-  margin: 2rem auto;
-  background-size: 4.5rem;
+  width: 7rem;
+  height: 7rem;
+  margin: 1.5rem auto;
+  background-size: 3.5rem;
   background-image: url('/findto-sparkle.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -203,6 +203,13 @@
   }
   .header ul li a {
     font-size: var(--font-size);
+  }
+
+  .icon {
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem auto;
+    background-size: 4.5rem;
   }
 
   .container {
