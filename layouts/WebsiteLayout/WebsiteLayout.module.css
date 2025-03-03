@@ -120,6 +120,7 @@
 }
 .page section h1 {
   text-wrap: balance;
+  margin-top: 2rem;
 }
 .page section h2 {
   margin-bottom: 2rem;
@@ -208,7 +209,7 @@
   .icon {
     width: 10rem;
     height: 10rem;
-    margin: 2rem auto;
+    margin: 2rem auto 0;
     background-size: 4.5rem;
   }
 

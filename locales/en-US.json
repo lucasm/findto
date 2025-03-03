@@ -60,8 +60,8 @@
       "url": "https://forms.gle/US69JvUT1qxYkiF58"
     },
     "warnings": {
-      "torrent": "Warning: Using torrents to share files is not illegal, but downloading copyrighted content without permission is a crime in many jurisdictions. Check your local laws and abide by them to avoid legal issues.",
-      "darknet": "Warning: The darknet is legal and often used by academics, journalists, activists, and people in censored regions. Use it responsibly. Be cautious of scams, phishing, and illegal activities. To access it, use Tor Browser."
+      "torrent": "Warning: The torrent is legal and often used to share files. Note that downloading copyrighted content without permission is a crime, as described in Digital Millennium Copyright Act (DMCA) law. Check your local laws and abide by them to avoid legal issues.",
+      "darknet": "Warning: The darknet is legal and often used by academics, journalists, activists, and people in censored regions or under mass surveillance. Use it responsibly. Be cautious of scams, phishing, and illegal activities. To access it, you need a special browser, like Tor Browser."
     }
   },
   "categories": [
@@ -794,6 +794,10 @@
           "title": "CNN"
         },
         {
+          "id": "UCUMZ7gohGI9HcU9VNsr2FJQ",
+          "title": "business"
+        },
+        {
           "id": "UC8Su5vZCXWRag13H53zWVwA",
           "title": "TIME"
         },
@@ -818,6 +822,14 @@
           "title": "markets"
         },
         {
+          "id": "UCvJJ_dzjViJCoLf5uKUTwoA",
+          "title": "CNBC"
+        },
+        {
+          "id": "UCBi2mrWuNuyYy4gbM6fU18Q",
+          "title": "ABCNews"
+        },
+        {
           "id": "UCeY0bbntWzzVIaj2z3QigXg",
           "title": "NBCNews"
         },
@@ -828,6 +840,10 @@
         {
           "id": "UCNye-wNBqNL5ZzHSJj3l8Bg",
           "title": "aljazeeraenglish"
+        },
+        {
+          "id": "UCSrZ3UV4jOidv8ppoVuvW9Q",
+          "title": "euronews"
         }
       ]
     },
@@ -1099,6 +1115,10 @@
         {
           "name": "Remote",
           "action": "https://remote.com/jobs/all?query="
+        },
+        {
+          "name": "Freelancer",
+          "action": "https://www.freelancer.com/jobs/?keyword="
         },
         {
           "name": "Monster",

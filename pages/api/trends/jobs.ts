@@ -11,6 +11,16 @@ export default async function endpoint(
     query: { country },
   } = req
 
+  function removeSubstrings(label: string): string {
+    return (
+      label
+        // BR
+        .replace(/^Vagas em\s*/, '')
+        // US
+        .replace(/\s*Jobs$/, '')
+    )
+  }
+
   if (!country) {
     return res
       .status(400)
@@ -32,7 +42,7 @@ export default async function endpoint(
     const { data } = await axios.get(url)
 
     const trends = data.results.slice(0, 22).map((item: { label: string }) => ({
-      title: item.label.replace('Vagas em ', ''),
+      title: removeSubstrings(item.label),
     }))
 
     const responsePayload: ITrends = {

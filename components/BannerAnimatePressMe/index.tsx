@@ -1,10 +1,10 @@
 'use client'
 
 import React, { useState } from 'react'
-import styles from './PressMeNav.module.css'
+import styles from './BannerAnimatePressMe.module.css'
 import confetti from 'canvas-confetti'
 
-export default function PressMeNav() {
+export default function BannerAnimatePressMe() {
   const [pressed, setPressed] = useState(false)
 
   // Função que dispara confetes e muda o estado

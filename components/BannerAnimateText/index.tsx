@@ -1,10 +1,10 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import styles from './TextAnimateNav.module.css'
-import { IconCarbon } from '../SvgIcons'
+import styles from './BannerAnimateText.module.css'
+import { IconCarbon } from '@/components/SvgIcons'
 
-const HomeIcon = () => (
+const IconSecurity = () => (
   <svg
     width="100%"
     height="100%"
@@ -20,7 +20,7 @@ const HomeIcon = () => (
     />
   </svg>
 )
-const CodeIcon = () => (
+const IconPrivacy = () => (
   <svg
     width="100%"
     height="100%"
@@ -36,7 +36,7 @@ const CodeIcon = () => (
     />
   </svg>
 )
-const GhostIcon = () => (
+const IconFreedom = () => (
   <svg
     width="100%"
     height="100%"
@@ -53,13 +53,13 @@ const GhostIcon = () => (
   </svg>
 )
 
-export default function TextAnimateNav() {
+export default function BannerAnimateText() {
   // Array de itens com "icon" (JSX) e "title" (string)
   const navItems = [
-    { icon: <HomeIcon />, title: 'Security' },
-    { icon: <CodeIcon />, title: 'Privacy' },
+    { icon: <IconSecurity />, title: 'Security' },
+    { icon: <IconPrivacy />, title: 'Privacy' },
     { icon: <IconCarbon />, title: 'Carbon footprint' },
-    { icon: <GhostIcon />, title: 'Liberty of expression' },
+    { icon: <IconFreedom />, title: 'Freedom of expression' },
   ]
 
   // Estado para controlar qual item está sendo exibido

@@ -1,13 +1,13 @@
 import Style from '@/layouts/WebsiteLayout/WebsiteLayout.module.css'
 import WebsiteLayout from '@/layouts/WebsiteLayout'
 import { useTranslations } from 'next-intl'
+import Link from 'next/link'
 import CardsFeat from '@/components/CardsFeat'
 import Button from '@/components/Button'
 import SvgLogo from '@/components/SvgLogo'
-import Link from 'next/link'
-import CircleNav from '@/components/CircleNav'
-import TextAnimateNav from '@/components/TextAnimateNav'
-import PressMeNav from '@/components/PressMeNav'
+import BannerAnimateCircleNav from '@/components/BannerAnimateCircleNav'
+import BannerAnimateText from '@/components/BannerAnimateText'
+import BannerAnimatePressMe from '@/components/BannerAnimatePressMe'
 
 export const metadata = {
   title: 'About',
@@ -35,7 +35,7 @@ export default function PageAbout() {
         <div className={Style.container}>
           <div className={Style.cardDuos}>
             <article>
-              <CircleNav />
+              <BannerAnimateCircleNav />
               <div>
                 <h2>Decentralized search</h2>
                 <p>
@@ -46,7 +46,7 @@ export default function PageAbout() {
             </article>
 
             <article>
-              <TextAnimateNav />
+              <BannerAnimateText />
               <div>
                 <h2>Safe search</h2>
                 <p>
@@ -58,7 +58,7 @@ export default function PageAbout() {
             </article>
 
             <article>
-              <PressMeNav />
+              <BannerAnimatePressMe />
               <div>
                 <h2>Open search</h2>
                 <p>

@@ -1,9 +1,9 @@
 'use client'
 
 import { useState } from 'react'
-import styles from './CircleNav.module.css'
+import styles from './BannerAnimateCircleNav.module.css'
 
-export default function CircleNav() {
+export default function BannerAnimateCircleNav() {
   // Array com os dados de cada bola (ícone e título)
   const navItems = [
     { iconUrl: '/images/logos/google.svg', title: 'Google' },

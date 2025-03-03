@@ -1,31 +1,30 @@
 import Style from './SearchNav.module.css'
 import Link from 'next/link'
+import { useLocale } from 'next-intl'
 import {
-  IconSparkle,
-  IconGlobe,
+  IconHome,
+  IconAI,
+  IconWeb,
   IconImage,
   IconVideo,
   IconMusic,
-  IconPeople,
-  IconLocation,
-  IconCart,
+  IconSocial,
+  IconLocal,
+  IconShopping,
   IconCode,
   IconAcademic,
-  IconBriefcase,
+  IconJob,
   IconNews,
-  IconBank,
+  IconLegal,
   IconFinance,
   IconApps,
-  IconDownload,
   IconGames,
+  IconTorrent,
+  IconDarknet,
   Icon,
-  IconMetaverse,
-  IconLock,
-  IconHome,
 } from '@/components/SvgIcons'
 import { normalizeId } from '@/utils/formats'
 import { ISearchCategory } from '@/interfaces/search'
-import { useLocale } from 'next-intl'
 
 interface Props {
   data: { categories: ISearchCategory[] }
@@ -40,9 +39,9 @@ const SearchNav = ({ data, variant, selectedCategory }: Props) => {
       case 'Home':
         return <IconHome />
       case 'AI':
-        return <IconSparkle />
+        return <IconAI />
       case 'Web':
-        return <IconGlobe />
+        return <IconWeb />
       case 'Image':
         return <IconImage />
       case 'Videos':
@@ -50,21 +49,21 @@ const SearchNav = ({ data, variant, selectedCategory }: Props) => {
       case 'Music':
         return <IconMusic />
       case 'Social':
-        return <IconPeople />
+        return <IconSocial />
       case 'Local':
-        return <IconLocation />
+        return <IconLocal />
       case 'Academic':
         return <IconAcademic />
       case 'Shopping':
-        return <IconCart />
+        return <IconShopping />
       case 'News':
         return <IconNews />
       case 'Job':
-        return <IconBriefcase />
+        return <IconJob />
       case 'Code':
         return <IconCode />
       case 'Legal':
-        return <IconBank />
+        return <IconLegal />
       case 'Apps':
         return <IconApps />
       case 'Finance':
@@ -72,11 +71,9 @@ const SearchNav = ({ data, variant, selectedCategory }: Props) => {
       case 'Games':
         return <IconGames />
       case 'Torrent':
-        return <IconDownload />
-      case 'Metaverse':
-        return <IconMetaverse />
+        return <IconTorrent />
       case 'Darknet':
-        return <IconLock />
+        return <IconDarknet />
       default:
         return <Icon />
     }

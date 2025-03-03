@@ -11,7 +11,7 @@ import {
   IconStories,
   IconText,
   IconTrending,
-  IconVisualSearch,
+  IconFileSearch,
 } from '../SvgIcons'
 
 // Define the type for a feature item
@@ -55,9 +55,9 @@ const features: Feature[] = [
     description: 'Search anywhere using your voice.',
   },
   {
-    icon: <IconVisualSearch />,
-    title: 'Visual Search',
-    description: 'Search with an image on supported sources.',
+    icon: <IconFileSearch />,
+    title: 'File Search',
+    description: 'Search with a file on supported sources.',
   },
   {
     icon: <IconLanguage />,
@@ -73,19 +73,19 @@ const features: Feature[] = [
   {
     icon: <IconOpenSource />,
     title: 'Open Source',
-    description: 'Findto is open for contributions.',
+    description: 'An open source software.',
   },
   {
     icon: <IconCarbon />,
     title: 'Carbon Neutral',
-    description: 'Finito is carbon neutral software.',
+    description: 'A carbon neutral software.',
   },
 ]
 
 export default function CardsFeat() {
   return (
     <div className={Style.container}>
-      <h2>Findto features</h2>
+      <h2>Findto top features</h2>
 
       <ul className={Style.card}>
         {features.map((feature, index) => (
@@ -96,7 +96,6 @@ export default function CardsFeat() {
           </li>
         ))}
       </ul>
-      <p>* Some features still in development.</p>
     </div>
   )
 }
