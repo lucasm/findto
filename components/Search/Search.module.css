@@ -195,10 +195,10 @@
     display: inline-block;
   }
   .buttons button {
-    margin: 0.25rem 0;
+    margin: 0;
     font-size: 0.75rem;
     height: 1.5rem;
-    padding: 0 0.625rem;
+    padding: 1rem 0.625rem;
     gap: 0.25rem;
   }
   .buttons figure {

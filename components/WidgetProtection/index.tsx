@@ -55,17 +55,6 @@ export default function WidgetProtection({
                 </h3>
 
                 <a
-                  href={
-                    'https://www.websitecarbon.com/website/' +
-                    domain.replace('.', '-')
-                  }
-                  rel="noreferrer noopener"
-                  target="_blank">
-                  <IconArrowExternal />
-                  {t('widgetProtection.carbon')}
-                </a>
-
-                <a
                   href={'https://sitecheck.sucuri.net/results/' + domain}
                   rel="noreferrer noopener"
                   target="_blank">
@@ -79,6 +68,17 @@ export default function WidgetProtection({
                   target="_blank">
                   <IconArrowExternal />
                   {t('widgetProtection.privacy')}
+                </a>
+
+                <a
+                  href={
+                    'https://www.websitecarbon.com/website/' +
+                    domain.replace('.', '-')
+                  }
+                  rel="noreferrer noopener"
+                  target="_blank">
+                  <IconArrowExternal />
+                  {t('widgetProtection.carbon')}
                 </a>
               </div>
             </div>

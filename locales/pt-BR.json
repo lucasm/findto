@@ -34,9 +34,9 @@
     ],
     "widgetProtection": {
       "title": "Proteção",
-      "description": "Olá. Você está em um ambiente seguro. Não armazenamos suas informações. Contudo a fonte de busca selecionada pode faze-lo. Você pode  usar os verificadores abaixo, para analisar a fonte de busca selecionada.",
+      "description": "Você está em um ambiente seguro. Não armazenamos suas informações, mas a fonte de busca escolhida pode fazê-lo. Confira os verificadores abaixo para analisá-la.",
       "source": "Fonte",
-      "carbon": "Pegada de carbono",
+      "carbon": "Carbono",
       "security": "Segurança",
       "privacy": "Privacidade"
     },
@@ -131,7 +131,8 @@
         },
         {
           "name": "Amazon",
-          "action": "https://www.amazon.com.br/s?k="
+          "action": "https://www.amazon.com.br/s?k=",
+          "additional": "&tag=lucasmdev0d-20"
         },
         {
           "name": "Shopee",
@@ -820,7 +821,12 @@
         },
         {
           "name": "Estadão",
-          "action": "https://www.estadao.com.br/busca/?token=%257B%2522query%2522%253A%2522"
+          "action": "https://www.estadao.com.br/busca/?token={\"query\":\"",
+          "additional": "\"}"
+        },
+        {
+          "name": "Veja",
+          "action": "https://veja.abril.com.br/?s="
         },
         {
           "name": "Poder360",
@@ -831,20 +837,16 @@
           "action": "https://www.nexojornal.com.br/search?term="
         },
         {
-          "name": "Veja",
-          "action": "https://veja.abril.com.br/?s="
-        },
-        {
           "name": "CartaCapital",
           "action": "https://www.cartacapital.com.br/?s="
         },
         {
-          "name": "Terra",
-          "action": "https://www.terra.com.br/busca/?q="
-        },
-        {
           "name": "Metropoles",
           "action": "https://www.metropoles.com/search?q="
+        },
+        {
+          "name": "Terra",
+          "action": "https://www.terra.com.br/busca/?q="
         },
         {
           "name": "Agência Brasil",
@@ -898,10 +900,6 @@
           "title": "veja"
         },
         {
-          "id": "UCFCiSRbCVwQ_BQaDQBYxN_A",
-          "title": "Poder360"
-        },
-        {
           "id": "UCXdXYG8dUmEv6jhEji_lSHg",
           "title": "JornalismoTVCultura"
         },
@@ -912,6 +910,10 @@
         {
           "id": "UCDGz2exMIsPQ4k9VrsuhKTA",
           "title": "CartaCapital"
+        },
+        {
+          "id": "UCFCiSRbCVwQ_BQaDQBYxN_A",
+          "title": "Poder360"
         },
         {
           "id": "UCNqzAD9EiECreuH6LA8IYeA",
@@ -954,7 +956,8 @@
       "data": [
         {
           "name": "Amazon",
-          "action": "https://www.amazon.com.br/s?k="
+          "action": "https://www.amazon.com.br/s?k=",
+          "additional": "&tag=lucasmdev0d-20"
         },
         {
           "name": "Mercado Livre",
@@ -1195,7 +1198,7 @@
         },
         {
           "name": "Sucupira",
-          "action": "https://sucupira.capes.gov.br/observatorio/geral?search=amazonia"
+          "action": "https://sucupira.capes.gov.br/observatorio/geral?search="
         },
         {
           "name": "SciELO",
@@ -1723,7 +1726,7 @@
             },
             {
               "name": "Proposições Legislativas",
-              "action": "https://www.camara.leg.br/buscaProposicoesWeb/resultadoPesquisa?inteiroTeor=amazonia"
+              "action": "https://www.camara.leg.br/buscaProposicoesWeb/resultadoPesquisa?inteiroTeor="
             },
             {
               "name": "Normas ",
@@ -1935,7 +1938,7 @@
             },
             {
               "name": "MG - MP",
-              "action": "https://www.mpmg.mp.br/portal/auxiliar/busca/?query=amazonia"
+              "action": "https://www.mpmg.mp.br/portal/auxiliar/busca/?query="
             },
             {
               "name": "RJ - MP",
@@ -2088,10 +2091,6 @@
           "action": "https://sourcegraph.com/search?q="
         },
         {
-          "name": "GitLab",
-          "action": "https://gitlab.com/public?name="
-        },
-        {
           "name": "CodePen",
           "action": "https://codepen.io/search/pens?q="
         },
@@ -2150,6 +2149,10 @@
         {
           "name": "Tensorflow",
           "action": "https://www.tensorflow.org/s/results?hl=pt-br&q="
+        },
+        {
+          "name": "GitLab",
+          "action": "https://gitlab.com/public?name="
         },
         {
           "name": "Bitbucket",

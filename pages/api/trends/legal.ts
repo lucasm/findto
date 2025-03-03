@@ -13,43 +13,43 @@ export default async function endpoint(
     if (country === 'BR') {
       const mockBrazil: ITrends = {
         title: 'Serviços públicos',
-        credits_title: 'Gov.br',
-        credits_url: 'https://www.gov.br/pt-br',
+        credits_title: 'GOV.BR',
+        credits_url: 'https://www.gov.br/',
         data: [
           {
-            title: 'Assinatura Eletrônica (GOV.BR)',
+            title: 'GOV.BR: Assinatura Eletrônica',
             url: 'https://www.gov.br/pt-br/servicos/assinatura-eletronica',
           },
           {
-            title: 'Consultar Chaves Pix e Contas no meu CPF (Registrato)',
+            title: 'Registrato: chaves Pix, cartões e empréstimos',
             url: 'https://www.bcb.gov.br/meubc/registrato',
           },
           {
-            title: 'Consultar Valores a Receber (Banco Central)',
+            title: 'Banco Central: Valores a Receber',
             url: 'https://www.gov.br/pt-br/servicos/consultar-e-solicitar-a-devolucao-de-valores-a-receber',
           },
           {
-            title: 'Consultar Meu Imposto de Renda (Receita Federal)',
+            title: 'Receita: Consultar Meu Imposto de Renda',
             url: 'https://www.gov.br/pt-br/servicos/consultar-meu-imposto-de-renda',
           },
           {
-            title: 'Consultar Dívidas e Pendências Fiscais (Receita Federal)',
+            title: 'Receita: Consultar Dívidas e Pendências Fiscais',
             url: 'https://www.gov.br/pt-br/servicos/consultar-dividas-e-pendencias-fiscais',
           },
           {
-            title: 'Emitir Certidão de Regularidade Fiscal (Receita Federal)',
+            title: 'Receita: Emitir Certidão de Regularidade Fiscal',
             url: 'https://www.gov.br/pt-br/servicos/emitir-certidao-de-regularidade-fiscal',
           },
           {
-            title: 'Propor ou Apoiar Ideais Legislativas (Senado Federal)',
+            title: 'Senado: Apoiar ou propor ideais Legislativas',
             url: 'https://www12.senado.leg.br/ecidadania/principalideia',
           },
           {
-            title: 'Opinar em Propostas Legislativas (Câmara dos Deputados)',
+            title: 'Câmara: Opinar em propostas Legislativas',
             url: 'https://www.camara.leg.br/enquetes/',
           },
           {
-            title: 'Consultar Gastos Parlamentares (Câmara dos Deputados)',
+            title: 'Câmara: Gastos Parlamentares',
             url: 'https://www.camara.leg.br/transparencia/gastos-parlamentares/',
           },
           {
@@ -57,7 +57,7 @@ export default async function endpoint(
             url: 'https://www.gov.br/pt-br/servicos/consultar-cadastro-de-pessoas-fisicas',
           },
           {
-            title: 'Proteger Meu CPF',
+            title: 'Proteger CPF',
             url: 'https://www.gov.br/pt-br/servicos/impedir-permitir-participacao-do-meu-cpf-no-cadastro-nacional-de-pessoas-juridicas-cnpj',
           },
           {
@@ -65,11 +65,11 @@ export default async function endpoint(
             url: 'https://www.gov.br/pt-br/servicos/consultar-cadastro-nacional-de-pessoas-juridicas',
           },
           {
-            title: 'Obter ou Imprimir CPF',
+            title: 'Obter ou imprimir CPF',
             url: 'https://www.gov.br/pt-br/servicos/obter-cartao-de-cpf',
           },
           {
-            title: 'Obter ou Atualizar CNPJ',
+            title: 'Obter ou atualizar CNPJ',
             url: 'https://www.gov.br/pt-br/servicos/inscrever-ou-atualizar-cadastro-nacional-de-pessoas-juridicas',
           },
           {
@@ -77,26 +77,23 @@ export default async function endpoint(
             url: 'https://www.gov.br/pt-br/servicos/obter-a-carteira-de-trabalho',
           },
           {
-            title:
-              'Solicitar Acesso à Informação ou Denúncia, Elogio, Reclamação, Sugestão ao Governo (Fala.BR)',
+            title: 'Fala.BR: Acesso à informação, denúncia ou elogio',
             url: 'https://falabr.cgu.gov.br/',
           },
           {
-            title:
-              'Abrir Requerimento relacionado à Lei Geral de Proteção de Dados (LGPD)',
+            title: 'LGPD: Abrir requerimento na Lei Geral de Proteção de Dados',
             url: 'https://www.gov.br/pt-br/servicos/abrir-requerimento-relacionado-a-lgpd',
           },
           {
-            title: 'Realizar Autoatendimento Eleitoral (TSE)',
+            title: 'TSE: Autoatendimento Eleitoral',
             url: 'https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/',
           },
           {
-            title: 'Abrir Reclamação contra Empresa (Consumidor.gov.br)',
+            title: 'Consumidor.gov.br: Abrir reclamação contra empresa',
             url: 'https://www.consumidor.gov.br/pages/principal/',
           },
           {
-            title:
-              'Consultar Despesas Públicas do Governo (Portal da Transparência)',
+            title: 'Portal da Transparência: Despesas do Governo',
             url: 'https://portaldatransparencia.gov.br/',
           },
         ],

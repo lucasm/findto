@@ -77,11 +77,11 @@ export default function WidgetVideoStories({ selectedCategory }: Props) {
 
   useEffect(() => {
     if (sizeWindow.width < 480) {
-      setMaxSlides(3.75)
+      setMaxSlides(3.25)
     } else if (sizeWindow.width < 940) {
       setMaxSlides(4.5)
     } else {
-      setMaxSlides(5.5)
+      setMaxSlides(5.25)
     }
   }, [sizeWindow])
 

@@ -23,6 +23,11 @@ export default function WebsiteLayout({
         <li className={Style.hideOnMobile}>
           <Link href="/community">{t('community')}</Link>
         </li>
+        <li className={Style.hideOnMobile}>
+          <a href="https://patreon.com/findto" target="_blank" rel="noopener">
+            {t('donate')}
+          </a>
+        </li>
         <li>
           <Link href="/">{t('openApp')} </Link>
         </li>

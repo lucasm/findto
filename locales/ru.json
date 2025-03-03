@@ -9,8 +9,8 @@
     },
     "componentWelcome": {
       "goodMorning": "Доброе утро",
-      "goodEvening": "Добрый вечер",
-      "goodNight": "Спокойной ночи",
+      "goodEvening": "Добрый день",
+      "goodNight": "Добрый вечер",
       "whatDoYouWant": "Попробуйте что-нибудь новое"
     },
     "componentBanner": {
@@ -42,7 +42,7 @@
     "accept": "Принимать",
     "learnMore": "Познакомьтесь с Findto",
     "viewNearbyPlaces": "View nearby places",
-    "openApp": "Начинать",
+    "openApp": "Открыть Findto",
     "placeholder": "Поиск в",
     "search": "Поиск",
     "clear": "Очистить",

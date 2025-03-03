@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-black);
+  border-radius: 10rem;
+  width: 100%;
+  max-width: 350px;
+  height: 4rem;
+  margin: 0 auto;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+/* Estilos gerais de cada bola */
+.circle {
+  display: flex;
+  flex-direction: column; /* Ícone em cima, texto embaixo (ou pode ser row) */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  color: #ffffff; /* cor do texto quando não selecionado */
+  transition: background-color 0.2s;
+}
+
+/* Bola ativa */
+.active {
+  background-color: #ffffff; /* fica branca ao clicar */
+  color: #000000; /* texto/ícone pode ficar preto ou outra cor */
+}
+
+.active .icon {
+  filter: invert(0);
+}
+
+/* Ícone */
+.icon {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
+}
+
+/* Título */
+.title {
+  font-size: var(--font-size-min);
+  font-weight: 400;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .circle {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}

@@ -2,10 +2,12 @@ import Style from '@/layouts/WebsiteLayout/WebsiteLayout.module.css'
 import WebsiteLayout from '@/layouts/WebsiteLayout'
 import { useTranslations } from 'next-intl'
 import CardsFeat from '@/components/CardsFeat'
-import SvgIllustrations from '@/components/SvgIllustrations'
 import Button from '@/components/Button'
 import SvgLogo from '@/components/SvgLogo'
 import Link from 'next/link'
+import CircleNav from '@/components/CircleNav'
+import TextAnimateNav from '@/components/TextAnimateNav'
+import PressMeNav from '@/components/PressMeNav'
 
 export const metadata = {
   title: 'About',
@@ -32,48 +34,40 @@ export default function PageAbout() {
       <section>
         <div className={Style.container}>
           <div className={Style.cardDuos}>
-            <div>
-              <article>
-                <h2>Multiple sources</h2>
+            <article>
+              <CircleNav />
+              <div>
+                <h2>Decentralized search</h2>
                 <p>
-                  Search the same term between diverse sources, at once. Findto
-                  is an assistant for decentralized search.
+                  Search across multiple sources and modes simultaneously.
+                  Findto is an assistant for decentralized search.
                 </p>
-              </article>
+              </div>
+            </article>
 
-              <figure>
-                <SvgIllustrations type="people" color="fillFindto" />
-              </figure>
-            </div>
-
-            <div>
-              <article>
-                <h2>Freedom of search</h2>
+            <article>
+              <TextAnimateNav />
+              <div>
+                <h2>Safe search</h2>
                 <p>
-                  Findto show estimated carbon footprint, privacy and liberty of
-                  expression level of every search source. Make better choices.
+                  View estimated security, privacy, and carbon footprint level
+                  of every search source. Make better choices with Findto, for
+                  you, and for the planet.
                 </p>
-              </article>
+              </div>
+            </article>
 
-              <figure>
-                <SvgIllustrations type="search" color="fillFindto" />
-              </figure>
-            </div>
-
-            <div>
-              <article>
-                <h2>Made by community</h2>
+            <article>
+              <PressMeNav />
+              <div>
+                <h2>Open search</h2>
                 <p>
-                  Findto is an open source project for an universal search
-                  experience. Where diversity is key. Where people stay on
-                  control of algorithms.
+                  As an open source project, Findto is building an universal
+                  search experience. Where diversity is key. Where people stay
+                  on control of algorithms.
                 </p>
-              </article>
-
-              <figure>
-                <SvgIllustrations type="phone" color="fillFindto" />
-              </figure>
-            </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -87,7 +81,7 @@ export default function PageAbout() {
       <section>
         <div className={Style.container}>
           <div className={Style.actionContainer}>
-            <h2>An ubiquitous and powerful search experience</h2>
+            <h2>A powerful search experience</h2>
             <p>More than search. Decentralized search.</p>
             <Button url="/" color="black">
               <>

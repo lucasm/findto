@@ -401,8 +401,6 @@ export default function SearchTrends() {
     switch (category) {
       case 'Videos':
       case 'Music':
-      case 'News':
-      case 'Finance':
         return Styles.container + ' ' + Styles.grid4
       case 'Apps':
         return Styles.container + ' ' + Styles.grid5 + ' ' + Styles.trendsApps
@@ -413,6 +411,8 @@ export default function SearchTrends() {
       case 'Code':
         return Styles.container + ' ' + Styles.grid2 + ' ' + Styles.trendsCode
       case 'Image':
+      case 'News':
+      case 'Finance':
       case 'Games':
         return Styles.container + ' ' + Styles.grid3
       case 'Local':

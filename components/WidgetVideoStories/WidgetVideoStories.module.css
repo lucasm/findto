@@ -30,8 +30,8 @@
 }
 
 .slide button figure {
-  width: 6.5rem;
-  height: 6.5rem;
+  width: 7rem;
+  height: 7rem;
   z-index: 0;
   border-radius: 50%;
   transition: 0.3s all;
@@ -105,8 +105,8 @@
 
 @media screen and (max-width: 768px) {
   .slide button figure {
-    width: 18vw;
-    height: 18vw;
+    width: 16vw;
+    height: 16vw;
   }
 
   .videoPlayer {
@@ -115,11 +115,13 @@
   }
 }
 @media screen and (max-width: 576px) {
+  .slide button {
+    padding: 1rem 0.5rem;
+  }
   .slide button figure {
     width: 20vw;
     height: 20vw;
   }
-
   .slide button span {
     font-size: 0.6rem;
   }

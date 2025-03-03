@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-black);
+  border-radius: 10rem;
+  width: 100%;
+  max-width: 350px;
+  height: 4rem;
+  margin: 0 auto;
+}
+
+/* Botão com efeito "3D" */
+.button3D {
+  background: var(--color-white);
+  color: var(--color-black);
+  padding: 4px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: var(--font-size);
+  cursor: pointer;
+  margin-top: -3px;
+
+  /* Efeito de “sombra” para simular 3D */
+  box-shadow: 0 4px #bbb;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+/* Quando o botão é pressionado */
+.button3D:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 #bbb;
+}
+
+/* Container dos links */
+.linksContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espaço entre os elementos */
+  font-size: 16px;
+  color: #ffffff;
+}

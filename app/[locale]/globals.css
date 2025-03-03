@@ -2,14 +2,14 @@
   font-size: 16px;
   --color-white: #fff;
   --color-black: #000;
-  --color-gray: #eeeeee;
+  --color-gray: hsla(0, 0%, 88%, 0.5);
   --color-dark: #202124;
   --color-dark-2: #303136;
-  --color-green: #8bf6cf;
   --color-yellow: #fff789;
-  --color-red: #ff8a8a;
-  --color-purple: #f0abff;
+  --color-green: #8bf6cf;
   --color-blue: #6ac3ff;
+  --color-purple: #f0abff;
+  --color-red: #ff8a8a;
   --background-body: var(--color-white);
   --background-surface: var(--color-gray);
   --background-surface-secondary: var(--color-gray);
@@ -18,19 +18,18 @@
   --color-text-black: #000;
   --background-linear-gradient: linear-gradient(
     90deg,
-    #a5acff -5%,
-    #79d0ff 15%,
-    #96ffe3 30%,
-    #fff78d 45%,
-    #ff9898 70%,
-    #f0a4ff 150%
+    var(--color-yellow) 15%,
+    var(--color-green) 30%,
+    var(--color-blue) 50%,
+    var(--color-purple) 70%,
+    var(--color-red) 89%
   );
   --color-white-translucent: rgba(255, 255, 255, 0.5);
   --color-black-translucent: rgba(0, 0, 0, 0.05);
   --color-black-translucent-50: rgba(0, 0, 0, 0.5);
   --box-shadow:
     0 1.8px 3.8px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%);
-  --shadow-2: 0 1.8px 3.8px 0 rgb(0 0 0 / 16%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%);
+  --shadow-2: 0px 15px 50px 0px rgba(27, 32, 50, 0.1);
   --opacity: 0.55;
   --svg-filter: none;
   --font-size: 1rem;
@@ -63,6 +62,7 @@ html[data-theme='dark'] {
   --color-text-black: #fff;
   --svg-filter: invert(1);
   --color-bg-white: var(--color-dark-2);
+  --shadow-2: 0px 15px 50px 0px rgba(198, 208, 244, 0.1);
 }
 
 *,

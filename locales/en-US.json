@@ -14,7 +14,7 @@
       "whatDoYouWant": "Try something new"
     },
     "componentBanner": {
-      "title": "Findto, decentralized search assistant",
+      "title": "Get started with Findto",
       "description": "Search across multiple sources on Web, AI, and more."
     },
     "componentVoiceSearch": {
@@ -24,7 +24,7 @@
     },
     "widgetProtection": {
       "title": "Protection",
-      "description": "You are in a secure environment. We do not store your information. However, the selected search source may do so. You can use the checkers below to analyze the selected search source.",
+      "description": "You are in a secure environment. Findto don’t store your information, but the selected search source might. Use the checkers below to verify it.",
       "source": "Source",
       "carbon": "Carbon footprint",
       "security": "Security",
@@ -42,7 +42,7 @@
     "accept": "Accept",
     "learnMore": "Meet Findto",
     "viewNearbyPlaces": "View nearby places",
-    "openApp": "Open app",
+    "openApp": "Open Findto",
     "placeholder": "Search on",
     "search": "Search",
     "clear": "Clear",
@@ -119,7 +119,8 @@
         },
         {
           "name": "Amazon",
-          "action": "https://www.amazon.com.br/s?k="
+          "action": "https://www.amazon.com.br/s?k=",
+          "additional": "&tag=lucasmdev0d-20"
         },
         {
           "name": "Ebay",
@@ -147,7 +148,8 @@
         },
         {
           "name": "USA.GOV",
-          "action": "https://search.usa.gov/search?query="
+          "action": "https://search.usa.gov/search?query=",
+          "additional": "&affiliate=usagov_all_gov"
         }
       ]
     },
@@ -649,6 +651,48 @@
           "name": "Audius",
           "action": "https://audius.co/search/?q="
         }
+      ],
+      "youtube_channels": [
+        {
+          "id": "UC7kI8WjpCfFoMSNDuRh_4lA",
+          "title": "pitchfork"
+        },
+        {
+          "id": "UC4eYXhJI4-7wSWc8UNRwD4A",
+          "title": "nprmusic"
+        },
+        {
+          "id": "UCRMqQWxCWE0VMvtUElm-rEA",
+          "title": "Spotify"
+        },
+        {
+          "id": "UCBv7HEHuVlNAELGi5XJd85Q",
+          "title": "AppleMusic"
+        },
+        {
+          "id": "UCwaAZDbtjUxxo_38V_dG7Bg",
+          "title": "deezerglobal"
+        },
+        {
+          "id": "UC-JblcinswY50lrUdSaRNEg",
+          "title": "rollingstone"
+        },
+        {
+          "id": "UCZtDUmC3W7j25XHZWFT_XgQ",
+          "title": "BBCMusic"
+        },
+        {
+          "id": "UCyFZMEnm1il5Wv3a6tPscbA",
+          "title": "genius"
+        },
+        {
+          "id": "UCH_TWswNlSRz9LtnpWOmA2Q",
+          "title": "altpress"
+        },
+        {
+          "id": "UCsVcseUYbYjldc-XgcsiEbg",
+          "title": "Billboard"
+        }
       ]
     },
     {
@@ -793,7 +837,8 @@
       "data": [
         {
           "name": "Amazon",
-          "action": "https://www.amazon.com/s?k="
+          "action": "https://www.amazon.com/s?k=",
+          "additional": "&tag=lucasmdev0d-20"
         },
         {
           "name": "Ebay",
@@ -812,20 +857,12 @@
           "action": "https://www.etsy.com/search?q="
         },
         {
-          "name": "Temu",
-          "action": "https://www.temu.com/search_result.html?search_key="
-        },
-        {
-          "name": "SHEIN",
-          "action": "https://shein.com/pdsearch/"
-        },
-        {
           "name": "Homedepot",
           "action": "https://www.homedepot.com/s/"
         },
         {
-          "name": "AliExpress",
-          "action": "https://www.aliexpress.com/wholesale?SearchText="
+          "name": "Costco",
+          "action": "https://www.costco.com/s?keyword="
         },
         {
           "name": "Target",
@@ -836,16 +873,24 @@
           "action": "https://www.macys.com/shop/featured/"
         },
         {
+          "name": "Temu",
+          "action": "https://www.temu.com/search_result.html?search_key="
+        },
+        {
+          "name": "SHEIN",
+          "action": "https://shein.com/pdsearch/"
+        },
+        {
+          "name": "AliExpress",
+          "action": "https://www.aliexpress.com/wholesale?SearchText="
+        },
+        {
           "name": "Craigslist",
           "action": "https://craigslist.org/search/sss?query="
         },
         {
-          "name": "Wish",
-          "action": "https://www.wish.com/search/"
-        },
-        {
           "name": "Groupon",
-          "action": "https://www.groupon.com/browse/?query="
+          "action": "https://www.groupon.com/search?query="
         }
       ]
     },
@@ -894,16 +939,16 @@
           "action": "https://www.yelp.com/search?find_desc="
         },
         {
+          "name": "Mapquest",
+          "action": "https://www.mapquest.com/search/"
+        },
+        {
           "name": "Bing Travel",
           "action": "https://www.bing.com/travel/place-information?q="
         },
         {
           "name": "HERE WeGo",
           "action": "https://wego.here.com/search/"
-        },
-        {
-          "name": "Mapquest",
-          "action": "https://www.mapquest.com/search/results?query="
         },
         {
           "name": "Moovit",
@@ -914,7 +959,7 @@
           "action": "https://uber.com/?q="
         },
         {
-          "name": "Swarm",
+          "name": "Foursquare",
           "action": "https://foursquare.com/explore?q="
         }
       ]
@@ -990,8 +1035,12 @@
       ],
       "youtube_channels": [
         {
-          "id": "UC_xYMXx_-mAzheKyEtwtCAQ",
-          "title": "scientificamerican"
+          "id": "UC7c8mE90qCtu11z47U0KErg",
+          "title": "NatureVideoChannel"
+        },
+        {
+          "id": "UCt5OA3LingpZBeEyPYmputQ",
+          "title": "NewScientist"
         },
         {
           "id": "UCv0aU2eKry3kdSTnFa8QAWA",
@@ -1014,16 +1063,12 @@
           "title": "kurzgesagt"
         },
         {
-          "id": "UC7c8mE90qCtu11z47U0KErg",
-          "title": "NatureVideoChannel"
-        },
-        {
           "id": "UCHnyfMqiRRG1u-2MsSQLbXA",
           "title": "veritasium"
         },
         {
-          "id": "UCt5OA3LingpZBeEyPYmputQ",
-          "title": "NewScientist"
+          "id": "UC_xYMXx_-mAzheKyEtwtCAQ",
+          "title": "scientificamerican"
         }
       ]
     },
@@ -1094,10 +1139,6 @@
           "action": "https://sourcegraph.com/search?q="
         },
         {
-          "name": "GitLab",
-          "action": "https://gitlab.com/public?name="
-        },
-        {
           "name": "CodePen",
           "action": "https://codepen.io/search/pens?q="
         },
@@ -1158,8 +1199,42 @@
           "action": "https://www.tensorflow.org/s/results?hl=pt-br&q="
         },
         {
+          "name": "GitLab",
+          "action": "https://gitlab.com/public?name="
+        },
+        {
           "name": "Bitbucket",
           "action": "https://bitbucket.org/repo/all/?name="
+        }
+      ],
+      "youtube_channels": [
+        {
+          "id": "UC8ENHE5xdFSwx71u3fDH5Xw",
+          "title": "ThePrimeagen"
+        },
+        {
+          "id": "UCsBjURrPoezykLs9EqgamOA",
+          "title": "Fireship"
+        },
+        {
+          "id": "UC8butISFwT-Wl7EV0hUK0BQ",
+          "title": "freecodecamp"
+        },
+        {
+          "id": "UCsMica-v34Irf9KVTh6xx-g",
+          "title": "MicrosoftDeveloper"
+        },
+        {
+          "id": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
+          "title": "GoogleDevelopers"
+        },
+        {
+          "id": "UCwrVwiJllwhJUKXKmjLcckQ",
+          "title": "AppleDeveloper"
+        },
+        {
+          "id": "UC29ju8bIPH5as8OGnQzwJyA",
+          "title": "TraversyMedia"
         }
       ]
     },
@@ -1235,6 +1310,36 @@
         {
           "name": "Indiegogo",
           "action": "https://www.indiegogo.com/explore/all?q="
+        }
+      ],
+      "youtube_channels": [
+        {
+          "id": "UCddiUEpeqJcYeBxX1IVBKvQ",
+          "title": "TheVerge"
+        },
+        {
+          "id": "UCBJycsmduvYEL83R_U4JriQ",
+          "title": "mkbhd"
+        },
+        {
+          "id": "UCOmcA3f_RrH6b9NmcNa4tdg",
+          "title": "CNET"
+        },
+        {
+          "id": "UCeeFfhMcJa1kjtfZAGskOCA",
+          "title": "techlinked"
+        },
+        {
+          "id": "UCftwRNsjfRo08xYE31tkiyw",
+          "title": "WIRED"
+        },
+        {
+          "id": "UCCsREoj8rSRkEvxWqxr74rQ",
+          "title": "cybernews"
+        },
+        {
+          "id": "UCey_c7U86mJGz1VJWH5CYPA",
+          "title": "iJustine"
         }
       ]
     },

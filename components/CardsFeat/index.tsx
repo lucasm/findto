@@ -26,13 +26,13 @@ const features: Feature[] = [
   {
     icon: <IconSearch />,
     title: 'Decentralized Search',
-    description: 'Search on diverse sources at once.',
+    description: 'Search the same term on diverse sources.',
   },
   {
     icon: <IconShield />,
     title: 'Protection',
     description:
-      'Estimated carbon footprint, privacy and liberty of expression level of every search source.',
+      'Check estimated security, privacy and carbon footprint level of every search source.',
   },
   {
     icon: <IconTrending />,

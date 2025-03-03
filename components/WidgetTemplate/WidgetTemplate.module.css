@@ -17,8 +17,8 @@
 }
 .title h3 {
   display: flex;
-  font-size: 1.25rem;
-  font-weight: 400;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 .title svg {
   width: 1.25rem;
@@ -38,8 +38,8 @@
 
 @media screen and (max-width: 576px) {
   .container {
-    padding: 2rem 1.5rem;
-    width: calc(100% - 2rem);
+    padding: 2rem;
+    width: 100%;
     margin: 0 auto 1rem;
   }
 
