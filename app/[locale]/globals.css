@@ -203,25 +203,14 @@ article hr {
     background: var(--color-blue);
   }
 }
-.colorsSvg {
-  animation: colorsAnimationSvg 60s ease alternate infinite;
+
+::-moz-selection {
+  color: var(--color-bg-white);
+  background: var(--color-text-black);
 }
-@keyframes colorsAnimationSvg {
-  0% {
-    fill: var(--color-green);
-  }
-  25% {
-    fill: var(--color-yellow);
-  }
-  50% {
-    fill: var(--color-red);
-  }
-  75% {
-    fill: var(--color-purple);
-  }
-  100% {
-    fill: var(--color-blue);
-  }
+::selection {
+  color: var(--color-bg-white);
+  background: var(--color-text-black);
 }
 
 ::placeholder {

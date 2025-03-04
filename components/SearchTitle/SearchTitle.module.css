@@ -6,9 +6,26 @@
   flex-direction: column;
 }
 
+.title {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.title svg {
+  width: 2rem;
+  height: 2rem;
+}
+
 .container h2 {
   font-weight: 400;
   font-size: var(--font-size-3);
+}
+
+.container h1 {
+  font-size: var(--font-size-2);
 }
 
 .container h1,
@@ -28,8 +45,13 @@
 
 @media screen and (max-width: 576px) {
   .container {
-    padding: 0 1rem;
+    padding: 0 1rem 1rem;
     gap: 0.25rem;
+  }
+
+  .title svg {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   .container h1 {

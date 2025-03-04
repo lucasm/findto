@@ -11,9 +11,8 @@ import SearchVoice from '@/components/SearchVoice'
 import Tooltip from '@/components/Tooltip'
 import SearchTitle from '@/components/SearchTitle'
 import { ISearchCategory, ISearch, ISearchChild } from '@/interfaces/search'
-import Welcome from '../Welcome'
-import SearchOptions from '../SearchOptions'
-import Alert from '../Alert'
+import SearchOptions from '@/components/SearchOptions'
+import Alert from '@/components/Alert'
 
 interface Props {
   selectedCategory: ISearchCategory
@@ -157,18 +156,10 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
   return (
     <section className={Style.section}>
       <div className={Style.container}>
-        <SearchTitle>
-          <div>
-            {selectedCategory?.name == 'Home' ? (
-              <Welcome />
-            ) : (
-              <h1>{searchName}</h1>
-            )}
-          </div>
-          {/* <div>
-            <h2>{t('componentWelcome.whatDoYouWant')}</h2>
-          </div> */}
-        </SearchTitle>
+        <SearchTitle
+          category={selectedCategory?.name}
+          categoryTitle={searchName}
+        />
 
         {/* Input */}
         <div className={Style.containerInput}>

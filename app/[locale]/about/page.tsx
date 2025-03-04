@@ -22,7 +22,7 @@ export default function PageAbout() {
     <WebsiteLayout>
       <section>
         <div className={Style.container}>
-          <Link href="/">
+          <Link href="#more">
             <figure className={Style.icon}></figure>
           </Link>
 
@@ -31,7 +31,7 @@ export default function PageAbout() {
         </div>
       </section>
 
-      <section>
+      <section id="more">
         <div className={Style.container}>
           <div className={Style.cardDuos}>
             <article>

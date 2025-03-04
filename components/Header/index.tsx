@@ -6,7 +6,6 @@ import { useTheme } from 'next-themes'
 import { useTranslations } from 'next-intl'
 import { useSearch } from '@/contexts/SearchContext'
 import { getLocaleData } from '@/utils/getLocaleData'
-import SvgLogo from '@/components/SvgLogo'
 import {
   IconUser,
   IconFeedback,
@@ -88,7 +87,6 @@ const AppHeader = ({ locale, category }: Props) => {
       <div className={Style.buttonsContainer}>
         {/* Logo */}
         <Link href="../" className={Style.logo} translate="no">
-          <SvgLogo />
           Findto
         </Link>
 

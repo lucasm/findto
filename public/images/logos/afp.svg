@@ -1,28 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg viewBox="0 0 32 31.999999" version="1.1" id="svg1" sodipodi:docname="afp.svg" width="32" height="32" inkscape:version="1.4-beta2 (9aaf4f34, 2024-07-30)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <defs id="defs1">
-    <inkscape:path-effect effect="powerclip" message="" id="path-effect16" is_visible="true" lpeversion="1" inverse="true" flatten="false" hide_clip="false" />
-    <inkscape:path-effect effect="powerclip" message="" id="path-effect15" is_visible="true" lpeversion="1" inverse="true" flatten="false" hide_clip="false" />
-    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath15">
-      <path style="display:none;fill:#ffff00" d="M 41.91742,11.7615 H 38.6712 V 7.49179 h 3.24622 c 1.554,0 2.34161,0.701 2.34161,2.15218 0,1.45118 -0.78764,2.11753 -2.34161,2.11753 z" id="path15" />
-      <path id="lpe_path-effect15" style="fill:#ffff00" class="powerclip" d="M 29.72981,-0.99966 H 53.1433 V 25.00039 H 29.72981 Z M 41.91742,11.7615 c 1.55397,0 2.34161,-0.66635 2.34161,-2.11753 0,-1.45118 -0.78761,-2.15218 -2.34161,-2.15218 H 38.6712 v 4.26971 z" />
-    </clipPath>
-    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath16">
-      <path style="display:none;fill:#ffff00" d="m 13.519,7.4813 h -1.017 l -3.82582,5.812 h 4.84286 z" id="path16" />
-      <path id="lpe_path-effect16" style="fill:#ffff00" class="powerclip" d="M -5,-0.9997 H 22.46019 V 25.00039 H -5 Z m 18.519,8.481 h -1.017 l -3.82582,5.812 h 4.84286 z" />
-    </clipPath>
-  </defs>
-  <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="3.8887656" inkscape:cx="30.60097" inkscape:cy="5.7858978" inkscape:window-width="1440" inkscape:window-height="872" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="svg1" />
-  <title id="title1">logo-afp</title>
-  <g id="g17" transform="matrix(0.66468231,0,0,0.66468231,7.2488499e-8,8.0235531)" style="fill:#000000">
-    <path style="fill:#000000" d="M 42.29305,4.0109 34.72981,4.00034 v 16.00005 h 3.94139 v -4.74747 h 3.62185 c 1.75893,0 5.85025,-0.56832 5.85025,-5.62114 0,-5.05282 -4.0913,-5.62088 -5.85025,-5.62088 z" id="path5" clip-path="url(#clipPath15)" inkscape:path-effect="#path-effect15" inkscape:original-d="M 42.29305,4.0109 34.72981,4.00034 v 16.00005 h 3.94139 v -4.74747 h 3.62185 c 1.75893,0 5.85025,-0.56832 5.85025,-5.62114 0,-5.05282 -4.0913,-5.62088 -5.85025,-5.62088 z" />
-    <path style="fill:#000000" d="m 24.68075,11.7615 h 7.278 L 29.66,15.253 h -4.97924 v 4.74748 h -3.9414 V 4.00034 h 11.21937 v 3.49145 h -7.278 z" id="path4" />
-    <path style="fill:#000000" d="M 17.46018,4.0003 V 20.00039 H 13.519 V 16.66171 H 6.45891 l -2.198,3.33868 H 0 L 10.53229,4.00034 h 6.9279 z" id="path3" clip-path="url(#clipPath16)" inkscape:path-effect="#path-effect16" inkscape:original-d="M 17.46018,4.0003 V 20.00039 H 13.519 V 16.66171 H 6.45891 l -2.198,3.33868 H 0 L 10.53229,4.00034 h 6.9279 z" />
-  </g>
+<svg viewBox="0 0 32 32" version="1.1" id="svg1" width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs id="defs1" />
+  <title id="title1">Logo AFP</title>
+  <path d="M 16,2.0795135 C 8.2679195,2.0795135 1.9999995,8.3118346 1.9999995,16 1.9999995,23.688085 8.2679195,29.920486 16,29.920486 23.732,29.920486 30,23.688085 30,16 30,8.3118346 23.732,2.0795135 16,2.0795135 Z" id="path6" style="stroke-width:0.679048" />
   <metadata id="metadata1">
     <rdf:RDF>
       <cc:Work rdf:about="">
-        <dc:title>logo-afp</dc:title>
+        <dc:title>Logo AFP</dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>

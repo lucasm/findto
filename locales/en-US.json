@@ -24,7 +24,7 @@
     },
     "widgetProtection": {
       "title": "Protection",
-      "description": "You are in a secure environment. Findto don’t store your information, but the selected search source might. Use the checkers below to verify it.",
+      "description": "You are in a secure environment. Findto don’t store your data, but the selected search source might. Use the checkers below to verify it.",
       "source": "Source",
       "carbon": "Carbon footprint",
       "security": "Security",
@@ -38,11 +38,11 @@
     "community": "Community",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "donate": "Join",
+    "donate": "Join us",
     "accept": "Accept",
     "learnMore": "Meet Findto",
     "viewNearbyPlaces": "View nearby places",
-    "openApp": "Open Findto",
+    "openApp": "Try Findto",
     "placeholder": "Search on",
     "search": "Search",
     "clear": "Clear",
@@ -273,16 +273,16 @@
           "action": "https://you.com/search?q="
         },
         {
-          "name": "Info",
-          "action": "https://www.info.com/serp?q="
-        },
-        {
           "name": "Ecosia",
           "action": "https://www.ecosia.org/search?q="
         },
         {
           "name": "SearXNG",
           "action": "https://opnxng.com/search?q="
+        },
+        {
+          "name": "Info",
+          "action": "https://www.info.com/serp?q="
         },
         {
           "name": "Swisscows",
@@ -422,6 +422,10 @@
           "action": "https://tv.apple.com/search?term="
         },
         {
+          "name": "MUBI",
+          "action": "https://mubi.com/search/films?query="
+        },
+        {
           "name": "Hulu",
           "action": "https://www.hulu.com/search?q="
         },
@@ -430,12 +434,12 @@
           "action": "https://www.paramountplus.com/search?q="
         },
         {
-          "name": "MUBI",
-          "action": "https://mubi.com/search/films?query="
-        },
-        {
           "name": "Crunchyroll",
           "action": "https://www.crunchyroll.com/pt-br/search?q="
+        },
+        {
+          "name": "JustWatch",
+          "action": "https://www.justwatch.com/us/search?q="
         },
         {
           "name": "TMDB",
@@ -546,16 +550,12 @@
           "action": "https://stock.adobe.com/search?k="
         },
         {
-          "name": "Shutterstock",
-          "action": "https://www.shutterstock.com/search/"
-        },
-        {
           "name": "Getty Images",
           "action": "https://www.gettyimages.com/photos/"
         },
         {
-          "name": "SmugMug",
-          "action": "https://www.smugmug.com/search/?q="
+          "name": "Shutterstock",
+          "action": "https://www.shutterstock.com/search/"
         },
         {
           "name": "500px",
@@ -604,6 +604,14 @@
           "action": "https://music.amazon.com/search/"
         },
         {
+          "name": "Deezer",
+          "action": "https://www.deezer.com/search/"
+        },
+        {
+          "name": "TIDAL",
+          "action": "https://listen.tidal.com/search?q="
+        },
+        {
           "name": "Pandora",
           "action": "https://www.pandora.com/search/"
         },
@@ -614,14 +622,6 @@
         {
           "name": "TuneIn",
           "action": "https://tunein.com/search/?query="
-        },
-        {
-          "name": "Deezer",
-          "action": "https://www.deezer.com/search/"
-        },
-        {
-          "name": "TIDAL",
-          "action": "https://listen.tidal.com/search?q="
         },
         {
           "name": "Lastfm",
@@ -728,10 +728,6 @@
           "action": "https://www.vox.com/search?q="
         },
         {
-          "name": "Aljazeera",
-          "action": "https://www.aljazeera.com/search/?q="
-        },
-        {
           "name": "Economist",
           "action": "https://www.economist.com/search?q="
         },
@@ -744,6 +740,10 @@
           "action": "https://www.bloomberg.com/search?query="
         },
         {
+          "name": "Financial Times",
+          "action": "https://www.ft.com/search?q="
+        },
+        {
           "name": "Washington Post",
           "action": "https://www.washingtonpost.com/search/?query="
         },
@@ -754,6 +754,10 @@
         {
           "name": "Newsweek",
           "action": "https://www.newsweek.com/search/site/?q="
+        },
+        {
+          "name": "Aljazeera",
+          "action": "https://www.aljazeera.com/search/?q="
         },
         {
           "name": "AFP",

@@ -2,6 +2,7 @@
 
 import Styles from './BlurBall.module.css'
 import GradientComponent from '../GradientComponent'
+import SvgLogo from '../SvgLogo'
 
 const BlurBall = () => {
   const color = 'var(--color-text-black)'
@@ -10,9 +11,12 @@ const BlurBall = () => {
   const gradientReverse = `linear-gradient(to left, ${color} 0%, ${color} 100%)`
 
   const ballStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
     borderRadius: '50%',
-    height: '4rem',
-    width: '4rem',
+    height: '3rem',
+    width: '3rem',
     position: 'absolute' as const,
     zIndex: -1,
     backgroundImage: gradient,
@@ -23,7 +27,7 @@ const BlurBall = () => {
     ...ballStyle,
     backgroundImage: gradientReverse,
     position: 'static' as const,
-    filter: 'blur(38px)',
+    filter: 'blur(2rem)',
   }
 
   return (
@@ -42,7 +46,11 @@ const BlurBall = () => {
         }
       `}</style>
       <div className={Styles.container}>
-        <div style={ballStyle} />
+        <div style={ballStyle}>
+          <div className={Styles.icon}>
+            <SvgLogo />
+          </div>
+        </div>
         <div style={ballStyleReverse} />
 
         <GradientComponent />

@@ -75,7 +75,7 @@ export default function WidgetDropdown({
           className={Styles.containerDropdown}
           style={{
             right: position === 'right' ? 0 : 'auto',
-            left: position === 'left' ? '-6.75rem' : 'auto',
+            left: position === 'left' ? '-4.75rem' : 'auto',
           }}>
           <div>{children}</div>
 

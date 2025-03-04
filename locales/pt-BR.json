@@ -58,7 +58,7 @@
     "accept": "Aceitar",
     "learnMore": "Conheça o Findto",
     "viewNearbyPlaces": "Ver locais próximos",
-    "openApp": "Abrir app",
+    "openApp": "Abrir Findto",
     "placeholder": "Buscar em",
     "search": "Buscar",
     "clear": "Limpar",
@@ -151,7 +151,7 @@
           "action": "https://www.jusbrasil.com.br/busca?q="
         },
         {
-          "name": "globo",
+          "name": "Globo",
           "action": "https://www.globo.com/busca/?q="
         },
         {
@@ -515,6 +515,10 @@
           "action": "https://www.clarotvmais.com.br/busca?q="
         },
         {
+          "name": "Vivo play",
+          "action": "https://www.vivoplay.com.br/search?q="
+        },
+        {
           "name": "DAZN",
           "action": "https://www.dazn.com/pt-BR/search?q="
         }
@@ -624,16 +628,16 @@
           "action": "https://stock.adobe.com/search?k="
         },
         {
-          "name": "Shutterstock",
-          "action": "https://www.shutterstock.com/search/"
-        },
-        {
           "name": "Getty Images",
           "action": "https://www.gettyimages.com/photos/"
         },
         {
-          "name": "SmugMug",
-          "action": "https://www.smugmug.com/search/?q="
+          "name": "Shutterstock",
+          "action": "https://www.shutterstock.com/pt/search/"
+        },
+        {
+          "name": "123RF",
+          "action": "https://br.123rf.com/stock-photo/"
         },
         {
           "name": "500px",
@@ -800,7 +804,7 @@
       "active": true,
       "data": [
         {
-          "name": "globo",
+          "name": "Globo",
           "action": "https://www.globo.com/busca/?q="
         },
         {
@@ -997,12 +1001,12 @@
           "action": "https://shopee.com.br/search?keyword="
         },
         {
-          "name": "AliExpress",
-          "action": "https://www.aliexpress.com/wholesale?SearchText="
-        },
-        {
           "name": "Temu",
           "action": "https://www.temu.com/br/search_result.html?search_key="
+        },
+        {
+          "name": "AliExpress",
+          "action": "https://www.aliexpress.com/wholesale?SearchText="
         },
         {
           "name": "SHEIN",
@@ -1250,6 +1254,10 @@
           "action": "https://www.scopus.com/results/authorNamesList.uri?s=AUTHLASTNAME&st1="
         },
         {
+          "name": "ORCID",
+          "action": "https://orcid.org/orcid-search/search?searchQuery="
+        },
+        {
           "name": "WolframAlpha",
           "action": "https://www.wolframalpha.com/input?i="
         },
@@ -1260,10 +1268,6 @@
         {
           "name": "Passei Direto",
           "action": "https://www.passeidireto.com/search?q="
-        },
-        {
-          "name": "ORCID",
-          "action": "https://orcid.org/orcid-search/search?searchQuery="
         },
         {
           "name": "Internet Archive",
