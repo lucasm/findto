@@ -1,13 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg viewBox="0 0 32 32.000001" class="flicon-FlLogo" version="1.1" id="svg3" width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <defs id="defs3" />
-  <title id="title1">Freelancer Logo</title>
-  <path d="M 18.794481,4.1014125 20.973742,7.1577734 32,4.1014125 M 7.3382271,27.898587 13.302901,22.067155 9.712911,18.214627 m 8.17848,-14.1132145 -3.187959,2.8747558 5.361956,0.2000288 M 5.4981597,4.1014125 6.6430613,6.4481318 12.95318,6.8412805 M 8.8762774,16.269611 13.538133,7.5729647 0,6.8412805 M 9.4191187,16.821006 13.822713,21.551293 18.68032,16.789752 20.187774,7.9210411 14.268172,7.619024" fill="#29B2FE" id="path1" style="fill:#000000;stroke-width:0.328995" />
-  <metadata id="metadata3">
-    <rdf:RDF>
-      <cc:Work rdf:about="">
-        <dc:title>Freelancer Logo</dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
+<svg viewBox="0 0 32 32.000001" version="1.1" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 18.794481,4.1014125 20.973742,7.1577734 32,4.1014125 M 7.3382271,27.898587 13.302901,22.067155 9.712911,18.214627 m 8.17848,-14.1132145 -3.187959,2.8747558 5.361956,0.2000288 M 5.4981597,4.1014125 6.6430613,6.4481318 12.95318,6.8412805 M 8.8762774,16.269611 13.538133,7.5729647 0,6.8412805 M 9.4191187,16.821006 13.822713,21.551293 18.68032,16.789752 20.187774,7.9210411 14.268172,7.619024" fill="#000" id="path1" style="stroke-width:0.328995" />
 </svg>

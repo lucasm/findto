@@ -85,7 +85,7 @@ const features: Feature[] = [
 export default function CardsFeat() {
   return (
     <div className={Style.container}>
-      <h2>Findto top features</h2>
+      <h2>Findto features</h2>
 
       <ul className={Style.card}>
         {features.map((feature, index) => (

@@ -1,6 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg aria-hidden="true" class="rkbrtb0 rkbrtb1 rkbrtb3 _1v25wbq5k" fill="currentColor" height="32" viewBox="0 0 32 32" width="32" version="1.1" id="svg6" sodipodi:docname="plex.svg" inkscape:version="1.4-beta2 (9aaf4f34, 2024-07-30)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-  <defs id="defs6" />
-  <sodipodi:namedview id="namedview6" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="1.5315812" inkscape:cx="50.927761" inkscape:cy="54.518822" inkscape:window-width="1440" inkscape:window-height="872" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="svg6" />
-  <path d="M 16.16388,32 H 5.0485935 L 15.837351,16.006575 5.0485935,0 H 16.16388 l 10.787527,16.006575 z" fill="#EBAF00" id="path3" style="fill:#000000;stroke-width:1.11825" />
+<svg aria-hidden="true" fill="currentColor" height="32" viewBox="0 0 32 32" width="32" version="1.1" id="svg6" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">  
+  <path d="M 16.16388,32 H 5.0485935 L 15.837351,16.006575 5.0485935,0 H 16.16388 l 10.787527,16.006575 z" fill="#000" style="stroke-width:1.11825" />
 </svg>

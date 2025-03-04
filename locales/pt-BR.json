@@ -110,20 +110,20 @@
           "action": "https://www.reddit.com/search?q="
         },
         {
-          "name": "LinkedIn",
-          "action": "https://www.linkedin.com/search/results/index/?keywords="
-        },
-        {
           "name": "TikTok",
           "action": "https://www.tiktok.com/search?q="
+        },
+        {
+          "name": "Pinterest",
+          "action": "https://br.pinterest.com/search/pins/?q="
         },
         {
           "name": "Instagram",
           "action": "https://www.instagram.com/explore/tags/"
         },
         {
-          "name": "Pinterest",
-          "action": "https://br.pinterest.com/search/pins/?q="
+          "name": "LinkedIn",
+          "action": "https://www.linkedin.com/search/results/index/?keywords="
         },
         {
           "name": "Mercado Livre",
