@@ -234,6 +234,18 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
           <SearchSuggestions locale={locale} term={inputValue ?? ''} />
         </div>
 
+        {/* Child */}
+        {searchSource?.child && (
+          <SearchOptions
+            options={searchSource?.child.map((item: ISearchChild) => ({
+              label: item.name,
+              value: item.action,
+            }))}
+            id={normalizeId(searchSource?.name)}
+            label={searchSource?.name}
+          />
+        )}
+
         {/* Search Source Buttons */}
         <div className={Style.buttons}>
           <ul>
@@ -269,18 +281,6 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
             ))}
           </ul>
         </div>
-
-        {/* Child */}
-        {searchSource?.child && (
-          <SearchOptions
-            options={searchSource?.child.map((item: ISearchChild) => ({
-              label: item.name,
-              value: item.action,
-            }))}
-            id={normalizeId(searchSource?.name)}
-            label={searchSource?.name}
-          />
-        )}
       </div>
 
       {renderWarnings()}

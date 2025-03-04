@@ -147,16 +147,16 @@
           "action": "https://www.ifood.com.br/busca?q="
         },
         {
-          "name": "Jusbrasil",
-          "action": "https://www.jusbrasil.com.br/busca?q="
-        },
-        {
           "name": "Globo",
           "action": "https://www.globo.com/busca/?q="
         },
         {
           "name": "UOL",
           "action": "https://busca.uol.com.br/result.html?term="
+        },
+        {
+          "name": "Jusbrasil",
+          "action": "https://www.jusbrasil.com.br/busca?q="
         },
         {
           "name": "GOV.BR",
@@ -1515,6 +1515,10 @@
           "action": "https://www.b3.com.br/pt_br/busca/?query="
         },
         {
+          "name": "Banco Central",
+          "action": "https://www.bcb.gov.br/resultadobusca?termo="
+        },
+        {
           "name": "Itaú",
           "action": "https://www.itau.com.br/resultados-de-busca?q="
         },
@@ -1668,35 +1672,10 @@
       "active": true,
       "data": [
         {
-          "name": "Jusbrasil",
-          "action": "https://www.jusbrasil.com.br/busca?q="
-        },
-        {
-          "name": "Escavador",
-          "action": "https://www.escavador.com/busca?q="
-        },
-        {
-          "name": "Reclame Aqui",
-          "action": "https://www.reclameaqui.com.br/busca/?q="
-        },
-        {
-          "name": "Procon",
-          "child": [
-            {
-              "name": "Consumidor.gov.br",
-              "action": "https://www.consumidor.gov.br/pages/principal/?1738764883110/q?="
-            },
-            {
-              "name": "SP - Procon",
-              "action": "https://www.procon.sp.gov.br/?s=oi"
-            }
-          ]
-        },
-        {
           "name": "GOV.BR",
           "child": [
             {
-              "name": "Governo Federal",
+              "name": "Governo do Brasil",
               "action": "https://www.gov.br/pt-br/search?SearchableText="
             },
             {
@@ -1718,140 +1697,140 @@
           ]
         },
         {
-          "name": "Congresso Nacional",
+          "name": "Governos Estaduais",
           "child": [
             {
-              "name": "Congresso Nacional",
-              "action": "https://www6g.senado.leg.br/busca-congresso/?q="
+              "name": "SP - São Paulo",
+              "action": "https://sp.gov.br/sp/resultadoBusca/!ut/p/z1/?search_query="
             },
             {
-              "name": "Camara dos Deputados",
-              "action": "https://www.camara.leg.br/busca-geral?termo="
+              "name": "MG - Minas Gerais",
+              "action": "https://www.mg.gov.br/pesquisaportalmg?termo_buscado="
             },
             {
-              "name": "Senado Federal",
-              "action": "https://www6g.senado.leg.br/busca/?q="
+              "name": "RJ - Rio de Janeiro",
+              "action": "https://www.rj.gov.br/buscar/q="
             },
             {
-              "name": "Proposições Legislativas",
-              "action": "https://www.camara.leg.br/buscaProposicoesWeb/resultadoPesquisa?inteiroTeor="
+              "name": "BA - Bahia",
+              "action": "https://www.ba.gov.br/todoCatalogo/"
             },
             {
-              "name": "Normas ",
-              "action": "https://normas.leg.br/busca?q="
+              "name": "PR - Paraná",
+              "action": "https://www.parana.pr.gov.br/busca?termo="
+            },
+            {
+              "name": "RS - Rio Grande do Sul",
+              "action": "https://www.rs.gov.br/busca-integrada?palavraschave="
+            },
+            {
+              "name": "PE - Pernambuco",
+              "action": "https://www.pe.gov.br/?s="
+            },
+            {
+              "name": "CE - Ceará",
+              "action": "https://www.ceara.gov.br/?s="
+            },
+            {
+              "name": "PA - Pará",
+              "action": "https://www.pa.gov.br/busca?q="
+            },
+            {
+              "name": "SC - Santa Catarina",
+              "action": "https://www.sc.gov.br/index.php/busca?q="
+            },
+            {
+              "name": "GO - Goiás",
+              "action": "https://www.goias.gov.br/?s="
+            },
+            {
+              "name": "DF - Distrito Federal",
+              "action": "https://www.df.gov.br/?s="
+            },
+            {
+              "name": "MA - Maranhão",
+              "action": "https://www.ma.gov.br/?s="
+            },
+            {
+              "name": "PB - Paraíba",
+              "action": "https://www.paraiba.pb.gov.br/?s="
+            },
+            {
+              "name": "AM - Amazonas",
+              "action": "https://www.amazonas.am.gov.br/?s="
+            },
+            {
+              "name": "ES - Espírito Santo",
+              "action": "https://www.es.gov.br/?s="
+            },
+            {
+              "name": "MT - Mato Grosso",
+              "action": "https://www.mt.gov.br/?s="
+            },
+            {
+              "name": "RN - Rio Grande do Norte",
+              "action": "https://www.rn.gov.br/?s="
+            },
+            {
+              "name": "PI - Piauí",
+              "action": "https://www.pi.gov.br/?s="
+            },
+            {
+              "name": "AL - Alagoas",
+              "action": "https://www.alagoas.al.gov.br/?s="
+            },
+            {
+              "name": "MS - Mato Grosso do Sul",
+              "action": "https://www.ms.gov.br/?s="
+            },
+            {
+              "name": "SE - Sergipe",
+              "action": "https://www.se.gov.br/?s="
+            },
+            {
+              "name": "RO - Rondônia",
+              "action": "https://www.rondonia.ro.gov.br/?s="
+            },
+            {
+              "name": "TO - Tocantins",
+              "action": "https://www.to.gov.br/?s="
+            },
+            {
+              "name": "AC - Acre",
+              "action": "https://www.acre.gov.br"
+            },
+            {
+              "name": "AP - Amapá",
+              "action": "https://www.portal.ap.gov.br/?s="
+            },
+            {
+              "name": "RR - Roraima",
+              "action": "https://www.rr.gov.br/?s="
             }
           ]
         },
         {
-          "name": "Governo Estadual",
+          "name": "Jusbrasil",
+          "action": "https://www.jusbrasil.com.br/busca?q="
+        },
+        {
+          "name": "Escavador",
+          "action": "https://www.escavador.com/busca?q="
+        },
+        {
+          "name": "Reclame Aqui",
+          "action": "https://www.reclameaqui.com.br/busca/?q="
+        },
+        {
+          "name": "Procon",
           "child": [
             {
-              "name": "SP - Governo São Paulo",
-              "action": "https://www.saopaulo.sp.gov.br/?s="
+              "name": "Consumidor.gov.br",
+              "action": "https://www.consumidor.gov.br/pages/principal/?1738764883110/q?="
             },
             {
-              "name": "MG (Governo Minas Gerais)",
-              "action": "https://www.mg.gov.br/pesquisaportalmg?termo_buscado="
-            },
-            {
-              "name": "RJ (Governo Rio de Janeiro)",
-              "action": "https://www.rj.gov.br/buscar/q="
-            },
-            {
-              "name": "BA (Governo Bahia)",
-              "action": "https://www.ba.gov.br/todoCatalogo/"
-            },
-            {
-              "name": "PR (Governo Paraná)",
-              "action": "https://www.pr.gov.br/?q="
-            },
-            {
-              "name": "RS (Governo Rio Grande do Sul)",
-              "action": "https://www.rs.gov.br/?q="
-            },
-            {
-              "name": "PE (Governo Pernambuco)",
-              "action": "https://www.pe.gov.br/?q="
-            },
-            {
-              "name": "CE (Governo Ceará)",
-              "action": "https://www.ceara.gov.br/?s="
-            },
-            {
-              "name": "PA (Governo Pará)",
-              "action": "https://www.pa.gov.br/busca?q="
-            },
-            {
-              "name": "SC (Governo Santa Catarina)",
-              "action": "https://www.sc.gov.br/index.php/busca?q="
-            },
-            {
-              "name": "GO (Governo Goiás)",
-              "action": "https://www.goias.gov.br/?s="
-            },
-            {
-              "name": "DF (Governo Distrito Federal)",
-              "action": "https://www.df.gov.br/?s="
-            },
-            {
-              "name": "MA (Governo Maranhão)",
-              "action": "https://www.ma.gov.br/?s="
-            },
-            {
-              "name": "PB (Governo Paraíba)",
-              "action": "https://www.paraiba.pb.gov.br/?s="
-            },
-            {
-              "name": "AM (Governo Amazonas)",
-              "action": "https://www.amazonas.am.gov.br/?s="
-            },
-            {
-              "name": "ES (Governo Espírito Santo)",
-              "action": "https://www.es.gov.br/?s="
-            },
-            {
-              "name": "MT (Governo Mato Grosso)",
-              "action": "https://www.mt.gov.br/?s="
-            },
-            {
-              "name": "RN (Governo Rio Grande do Norte)",
-              "action": "https://www.rn.gov.br/?s="
-            },
-            {
-              "name": "PI (Governo Piauí)",
-              "action": "https://www.pi.gov.br/?s="
-            },
-            {
-              "name": "AL (Governo Alagoas)",
-              "action": "https://www.alagoas.al.gov.br/?s="
-            },
-            {
-              "name": "MS (Governo Mato Grosso do Sul)",
-              "action": "https://www.ms.gov.br/?s="
-            },
-            {
-              "name": "SE (Governo Sergipe)",
-              "action": "https://www.se.gov.br/?s="
-            },
-            {
-              "name": "RO (Governo Rondônia)",
-              "action": "https://www.rondonia.ro.gov.br/?s="
-            },
-            {
-              "name": "TO (Governo Tocantins)",
-              "action": "https://www.to.gov.br/?s="
-            },
-            {
-              "name": "AC (Governo Acre)",
-              "action": "https://www.acre.gov.br"
-            },
-            {
-              "name": "AP (Governo Amapá)",
-              "action": "https://www.portal.ap.gov.br/?s="
-            },
-            {
-              "name": "RR (Governo Roraima)",
-              "action": "https://www.rr.gov.br/?s="
+              "name": "SP - Procon",
+              "action": "https://www.procon.sp.gov.br/?s="
             }
           ]
         },
@@ -1885,15 +1864,32 @@
           ]
         },
         {
-          "name": "Banco Central",
-          "action": "https://www.bcb.gov.br/resultadobusca?termo="
+          "name": "Congresso Nacional",
+          "child": [
+            {
+              "name": "Congresso Nacional",
+              "action": "https://www6g.senado.leg.br/busca-congresso/?q="
+            },
+            {
+              "name": "Camara dos Deputados",
+              "action": "https://www.camara.leg.br/busca-geral?termo="
+            },
+            {
+              "name": "Senado Federal",
+              "action": "https://www6g.senado.leg.br/busca/?q="
+            },
+            {
+              "name": "Proposições Legislativas",
+              "action": "https://www.camara.leg.br/buscaProposicoesWeb/resultadoPesquisa?inteiroTeor="
+            },
+            {
+              "name": "Normas ",
+              "action": "https://normas.leg.br/busca?q="
+            }
+          ]
         },
         {
-          "name": "OAB",
-          "action": "https://www.oab.org.br/noticias/pesquisa?pagina=1&argumento="
-        },
-        {
-          "name": "Tribunal de Contas",
+          "name": "Tribunais de Contas",
           "child": [
             {
               "name": "TCU - Tribunal de Contas da União",
@@ -1953,6 +1949,10 @@
               "action": "https://www.mprj.mp.br/web/guest/busca?q="
             }
           ]
+        },
+        {
+          "name": "OAB",
+          "action": "https://www.oab.org.br/noticias/pesquisa?pagina=1&argumento="
         },
         {
           "name": "Defensoria Pública",

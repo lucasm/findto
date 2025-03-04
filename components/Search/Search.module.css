@@ -103,8 +103,10 @@
 .searchButton svg {
   color: var(--color-bg-white);
   transform: rotate(45deg);
+  width: 16px;
+  height: 16px;
 }
-.searchButton svg,
+
 .resetButton svg {
   width: 18px;
   height: 18px;

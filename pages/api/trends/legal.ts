@@ -25,6 +25,10 @@ export default async function endpoint(
             url: 'https://www.bcb.gov.br/meubc/registrato',
           },
           {
+            title: 'Consumidor.gov.br: Abrir reclamação contra uma empresa',
+            url: 'https://www.consumidor.gov.br/pages/principal/',
+          },
+          {
             title: 'Banco Central: Valores a Receber',
             url: 'https://www.gov.br/pt-br/servicos/consultar-e-solicitar-a-devolucao-de-valores-a-receber',
           },
@@ -87,10 +91,6 @@ export default async function endpoint(
           {
             title: 'TSE: Autoatendimento Eleitoral',
             url: 'https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/',
-          },
-          {
-            title: 'Consumidor.gov.br: Abrir reclamação contra empresa',
-            url: 'https://www.consumidor.gov.br/pages/principal/',
           },
           {
             title: 'Portal da Transparência: Despesas do Governo',
