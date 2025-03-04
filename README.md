@@ -20,15 +20,17 @@
  <br>
 </p>
 
-## Decentralized AI Search
+## Decentralized Search with AI
 
 Findto is an open source assistant for decentralized search.
 
-Findto is putting the power of internet into people's hands again! Stay on control of the search algorithms.
+- _Decentralized search_: Search the same term across multiple sources on AI, Web, and more - simultaneously. Discover trends, stories and information. Find anything. More productive and accessible searches --- as never before.
 
-Quickly search the same term on AI, Web, and more sources. Discover trends, stories and information. Find anything. More productive and accessible searches --- as never before.
+- _Safe search_: View estimated security, privacy, and carbon footprint level of every search source. Make better choices with Findto, for you, and for the planet.
 
-A new search experience, where the people choices matter. For a healthier internet.
+- _Open search_: As an open source project, Findto is building an universal search experience. Where diversity is key. Where people stay on control of algorithms.
+
+A new search experience. For a healthier internet for people.
 
 [▶️ Try it now](https://findto.app/?utm_source=findto_repo)
 
@@ -42,36 +44,36 @@ A new search experience, where the people choices matter. For a healthier intern
 | **Stories**              | Discover newest stories                                                               | ✅     |
 | **Autocomplete**         | Get automatic suggestions of terms as you type                                        | ✅     |
 | **Voice Search**         | Search anywhere using your voice                                                      | ✅     |
-| **Visual Search**        | Search on supported sources with an image                                             | 🔜     |
+| **File Search**          | Search on supported sources with an image or files                                    | 🔜     |
 | **Internationalization** | Choose your country for local sources, or international                               | ✅     |
 | **Accessibility**        | Balanced contrast, screen reader support, keyboard navigation and dark theme          | ✅     |
 | **Carbon Neutral**       | Finito is carbon neutral software                                                     | ✅     |
 
-### Criteria
+## 🔴 Criteria
 
-For selecting external search sources and content available on Findto, we follow these criteria: 1) Service popularity; 2) Open access and accessibility; 3) Service privacy and copyright policies.
+The search sources and external content available on Findto, are selected following these criteria: 1) Service popularity; 2) Open access; 3) Service respect for regulations of copyright, accessibility, and privacy.
 
-## 🟡 Donations
+## 🟡 Donate
 
-If you like Findto, ✨ make a donation ✨ and get benefits. Your support helps to keep the project running.
+If you like Findto, ✨ make a donation ✨ and support the project.
 
-- [Support on Patreon](https://patreon.com/findto)
+- [Patreon](https://patreon.com/findto)
 - [Ko-Fi (one-time donation)](https://ko-fi.com/findto)
 - [GitHub Sponsors](https://github.com/sponsors/lucasm)
 
-## 🔵 Supporters
+#### Supporters
 
 [Donate and get your name / banner here]
 
-## 🔴 Contributions
+## 🔵 Contributions
 
-Contributions are welcome! See the [Projects](https://github.com/lucasm/findto/projects) board to know the current tasks on our roadmap.
+Contributions are welcome! See the [Projects](https://github.com/lucasm/findto/projects) board to know the roadmap.
 
-- Bugfixes: View opened [Issues](https://github.com/lucasm/findto/issues) before send a Pull Request.
+- _Feature or new idea:_ Open a [Issue](https://github.com/lucasm/findto/issues) or [Discussion](https://github.com/lucasm/findto/discussions).
 
-- Feature / New idea? Open a [Issue](https://github.com/lucasm/findto/issues) or [Discussion](https://github.com/lucasm/findto/discussions).
+- _Bugfixes:_ View opened [Issues](https://github.com/lucasm/findto/issues) before send a PR.
 
-- Translations: Translate Findto to your language! Check a how to guide on [Docs](https://github.com/lucasm/findto/wiki).
+- _Translations:_ Do you want to translate Findto? Check a how to guide on [Wiki](https://github.com/lucasm/findto/wiki).
 
 ## 🟣 Legal
 
