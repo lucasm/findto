@@ -13,8 +13,7 @@ import { ITrends } from '@/interfaces/trends'
 
 export default function SearchTrends() {
   const t = useTranslations('t')
-  const { category, putValue, country, locale, latitude, longitude } =
-    useSearch()
+  const { category, putValue, country, locale, userLocation } = useSearch()
   const [dataTrends, setDataTrends] = useState<ITrends | null>(null)
   const [errorTrends, setErrorTrends] = useState<Error | null>(null)
 
@@ -149,7 +148,7 @@ export default function SearchTrends() {
   function useApiLocal() {
     const { data, error } = useSWR(
       category === 'Local'
-        ? `/api/trends/local?latitude=${latitude}&longitude=${longitude}&language=${locale}`
+        ? `/api/trends/local?latitude=${userLocation.latitude}&longitude=${userLocation.longitude}&language=${locale}`
         : null,
       fetcher,
       {
@@ -303,7 +302,7 @@ export default function SearchTrends() {
         break
       case 'Local':
         {
-          if (latitude && longitude) {
+          if (userLocation.latitude && userLocation.longitude) {
             if (dataLocal) setDataTrends(dataLocal)
             if (errorLocal) setErrorTrends(errorLocal)
           }
@@ -375,10 +374,9 @@ export default function SearchTrends() {
     errorAudio,
     dataShopping,
     errorShopping,
+    userLocation,
     dataLocal,
     errorLocal,
-    latitude,
-    longitude,
     dataAcademic,
     errorAcademic,
     dataJobs,

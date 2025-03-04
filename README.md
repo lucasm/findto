@@ -9,10 +9,10 @@
 <p align="center">
 <a href="https://github.com/lucasm/findto/issues" target="_blank"><img alt="Issues" src="https://img.shields.io/github/issues/lucasm/findto?color=ff9191&logo=github&logoColor=white"></a>
 <a href="https://patreon.com/findto" target="_blank"><img alt="Support" src="https://img.shields.io/badge/support-$5-ffff8b?logo=patreon&logoColor=white"></a>
-<a href="https://github.com/lucasm/findto/wiki" target="_blank"><img alt="Translations" src="https://img.shields.io/badge/translations-4-82cdff?logo=json&logoColor=white"></a>
-<a href="https://discord.gg/gEDm5MU6pq" target="_blank"><img alt="Community" src="https://img.shields.io/discord/866829154032812073?color=a5acff&label=community&logo=discord&logoColor=white"></a>
 <a href="https://github.com/lucasm/findto/releases" target="_blank"><img alt="GitHub release" src="https://img.shields.io/github/v/release/lucasm/findto?label=version&color=71f8ce&logo=github&logoColor=white"></a>
 <a href="https://github.com/lucasm/findto" target="_blank"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/lucasm/findto?label=size&color=71f8ce&logo=github&logoColor=white"></a>
+<a href="https://github.com/lucasm/findto/wiki" target="_blank"><img alt="Translations" src="https://img.shields.io/badge/translations-4-82cdff?logo=json&logoColor=white"></a>
+<a href="https://discord.gg/gEDm5MU6pq" target="_blank"><img alt="Community" src="https://img.shields.io/discord/866829154032812073?color=a5acff&label=community&logo=discord&logoColor=white"></a>
 </p>
 
 <p align="center">
@@ -77,9 +77,7 @@ Contributions are welcome! See the [Projects](https://github.com/lucasm/findto/p
 
 ## 🟣 Legal
 
-Findto is built with privacy and don't store searches.
-
-Findto also displays content from external services without review and materials protected by intellectual property. Please, respect the terms of use of each source.
+Findto is built with privacy and don't store searches. Findto also displays content from external services without review and materials protected by intellectual property. Please, respect the terms of use of each source.
 
 [Privacy Policy](https://findto.app/privacy) | [Terms of Service](https://findto.app/terms)
 

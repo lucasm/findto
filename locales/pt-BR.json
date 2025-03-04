@@ -34,9 +34,9 @@
     ],
     "widgetProtection": {
       "title": "Proteção",
-      "description": "Você está em um ambiente seguro. Não armazenamos suas informações, mas a fonte de busca escolhida pode fazê-lo. Confira os verificadores abaixo para analisá-la.",
+      "description": "Você está em um ambiente seguro. Use os verificadores abaixo para obter mais detalhes da fonte de busca escolhida.",
       "source": "Fonte",
-      "carbon": "Carbono",
+      "carbon": "Pegada de carbono",
       "security": "Segurança",
       "privacy": "Privacidade"
     },

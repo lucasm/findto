@@ -24,7 +24,7 @@
     },
     "widgetProtection": {
       "title": "Protection",
-      "description": "You are in a secure environment. Findto don’t store your data, but the selected search source might. Use the checkers below to verify it.",
+      "description": "You are in a secure environment. Use the checkers below to get more details about the selected search source.",
       "source": "Source",
       "carbon": "Carbon footprint",
       "security": "Security",
@@ -83,7 +83,7 @@
         },
         {
           "name": "ChatGPT",
-          "action": "https://chat.openai.com/?q="
+          "action": "https://chatgpt.com/?q="
         },
         {
           "name": "Copilot",
@@ -159,7 +159,7 @@
       "data": [
         {
           "name": "ChatGPT",
-          "action": "https://chat.openai.com/?q="
+          "action": "https://chatgpt.com/?q="
         },
         {
           "name": "Copilot",
@@ -1063,8 +1063,12 @@
           "title": "NewScientist"
         },
         {
-          "id": "UCv0aU2eKry3kdSTnFa8QAWA",
-          "title": "ScienceMagazine"
+          "id": "UC_xYMXx_-mAzheKyEtwtCAQ",
+          "title": "scientificamerican"
+        },
+        {
+          "id": "UCLA_DiR1FfKNvjuUpBHmylQ",
+          "title": "NASA"
         },
         {
           "id": "UCYeF244yNGuFefuFKqxIAXw",
@@ -1087,8 +1091,8 @@
           "title": "veritasium"
         },
         {
-          "id": "UC_xYMXx_-mAzheKyEtwtCAQ",
-          "title": "scientificamerican"
+          "id": "UCv0aU2eKry3kdSTnFa8QAWA",
+          "title": "ScienceMagazine"
         }
       ]
     },

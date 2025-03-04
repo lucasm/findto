@@ -63,14 +63,6 @@ export default function WidgetProtection({
                 </a>
 
                 <a
-                  href={'https://privacyscanner.aesirx.io/result/' + domain}
-                  rel="noreferrer noopener"
-                  target="_blank">
-                  <IconArrowExternal />
-                  {t('widgetProtection.privacy')}
-                </a>
-
-                <a
                   href={
                     'https://www.websitecarbon.com/website/' +
                     domain.replace('.', '-')
@@ -79,6 +71,14 @@ export default function WidgetProtection({
                   target="_blank">
                   <IconArrowExternal />
                   {t('widgetProtection.carbon')}
+                </a>
+
+                <a
+                  href={'https://privacyscanner.aesirx.io/result/' + domain}
+                  rel="noreferrer noopener"
+                  target="_blank">
+                  <IconArrowExternal />
+                  {t('widgetProtection.privacy')}
                 </a>
               </div>
             </div>

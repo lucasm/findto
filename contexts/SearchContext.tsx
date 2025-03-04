@@ -1,7 +1,12 @@
-import { extractDomain, isValidUrl } from '@/utils/url'
+import { createContext, useContext, useState, useEffect, useRef } from 'react'
 import { useLocale, useTranslations } from 'next-intl'
 import { useSearchParams } from 'next/navigation'
-import { createContext, useContext, useState, useEffect, useRef } from 'react'
+import { extractDomain, isValidUrl } from '@/utils/url'
+
+interface UserLocation {
+  latitude: number | undefined
+  longitude: number | undefined
+}
 
 // create Context for global state
 interface SearchContextType {
@@ -22,13 +27,11 @@ interface SearchContextType {
   locale: string
   permissionLocation: boolean
   setPermissionLocation: React.Dispatch<React.SetStateAction<boolean>>
-  latitude: number | undefined
-  setLatitude: React.Dispatch<React.SetStateAction<number | undefined>>
-  longitude: number | undefined
-  setLongitude: React.Dispatch<React.SetStateAction<number | undefined>>
+  userLocation: UserLocation
+  setUserLocation: React.Dispatch<React.SetStateAction<UserLocation>>
+  isMobileViewport: boolean
   isSidebarOpen: boolean
   setIsSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>
-  isMobileViewport: boolean
   sizeWindow: { width: number; height: number }
   titleTrends: string
   setTitleTrends: React.Dispatch<React.SetStateAction<string>>
@@ -41,6 +44,9 @@ const SearchContext = createContext<SearchContextType>({} as SearchContextType)
 export function SearchProvider({ children }: { children: React.ReactNode }) {
   const locale = useLocale()
   const c = useTranslations('country')
+  const searchParams = useSearchParams()
+  const query = searchParams?.get('q')
+
   const [country, setCountry] = useState<string | null>(null)
   const [category, setCategory] = useState<string>('')
   const [search, setSearch] = useState<string>('')
@@ -48,8 +54,10 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
   const [searchUrl, setSearchUrl] = useState<string>('')
   const [titleTrends, setTitleTrends] = useState<string>('')
   const [permissionLocation, setPermissionLocation] = useState<boolean>(false)
-  const [latitude, setLatitude] = useState<number>()
-  const [longitude, setLongitude] = useState<number>()
+  const [userLocation, setUserLocation] = useState<UserLocation>({
+    latitude: undefined,
+    longitude: undefined,
+  })
 
   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(true)
   const [isMobileViewport, setIsMobileViewport] = useState<boolean>(false)
@@ -57,9 +65,6 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
   const refSearchInput = useRef<HTMLTextAreaElement>(null)
   const refButtons = useRef<{ [key: string]: HTMLButtonElement | null }>({})
   const [inputValue, setInputValue] = useState<string | undefined>(undefined)
-
-  const searchParams = useSearchParams()
-  const query = searchParams?.get('q')
 
   const inputFocus = () => {
     const inputElement = refSearchInput.current as HTMLInputElement | null
@@ -180,6 +185,8 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
     }
   }, [searchUrl])
 
+  console.log('userLocation', userLocation)
+
   return (
     <SearchContext.Provider
       value={{
@@ -200,13 +207,11 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
         locale,
         permissionLocation,
         setPermissionLocation,
-        latitude,
-        setLatitude,
-        longitude,
-        setLongitude,
+        userLocation,
+        setUserLocation,
+        isMobileViewport,
         isSidebarOpen,
         setIsSidebarOpen,
-        isMobileViewport,
         sizeWindow,
         titleTrends,
         setTitleTrends,

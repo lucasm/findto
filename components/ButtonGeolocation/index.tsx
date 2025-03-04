@@ -8,12 +8,8 @@ import Button from '@/components/Button'
 export default function ButtonGeolocation() {
   const t = useTranslations('t')
 
-  const {
-    setLatitude,
-    setLongitude,
-    permissionLocation,
-    setPermissionLocation,
-  } = useSearch()
+  const { setUserLocation, permissionLocation, setPermissionLocation } =
+    useSearch()
 
   const [locationError, setLocationError] = useState('')
 
@@ -25,8 +21,12 @@ export default function ButtonGeolocation() {
           const longitude = position.coords.longitude
 
           setPermissionLocation(true)
-          setLatitude(latitude)
-          setLongitude(longitude)
+
+          setUserLocation(() => ({
+            latitude: latitude,
+            longitude: longitude,
+          }))
+
           // console.log(`latitude: ${latitude}, longitude: ${longitude}`)
         },
         (error) => {
