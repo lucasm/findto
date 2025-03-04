@@ -1049,6 +1049,10 @@
           "action": "https://www.academia.edu/search?q="
         },
         {
+          "name": "Brainly",
+          "action": "https://brainly.com/app/ask?q="
+        },
+        {
           "name": "Internet Archive",
           "action": "https://archive.org/search.php?query="
         }

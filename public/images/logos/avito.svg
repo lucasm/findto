@@ -1,10 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" version="1.1" id="svg4" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-  <defs id="defs4" />
-  <g id="g4" transform="matrix(1.077441,0,0,1.077441,7.3898887e-7,1.1851862)">
-    <circle cx="10.595" cy="5.2249999" r="3.325" fill="#965EEB" id="circle1" style="fill:#000000" />
-    <circle cx="22.245001" cy="7.2350001" r="7.2350001" fill="#0AF" id="circle2" style="fill:#000000" />
-    <circle cx="8.8999996" cy="18.6" r="8.8999996" fill="#04E061" id="circle3" style="fill:#000000" />
-    <circle cx="24.325001" cy="21.004999" r="5.375" fill="#FF4053" id="circle4" style="fill:#000000" />
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <g transform="matrix(1.077441,0,0,1.077441,7.3898887e-7,1.1851862)">
+    <circle cx="10.595" cy="5.2249999" r="3.325" fill="#000" id="circle1" />
+    <circle cx="22.245001" cy="7.2350001" r="7.2350001" fill="#000" id="circle2" />
+    <circle cx="8.8999996" cy="18.6" r="8.8999996" fill="#000" id="circle3" />
+    <circle cx="24.325001" cy="21.004999" r="5.375" fill="#000" id="circle4" />
   </g>
 </svg>

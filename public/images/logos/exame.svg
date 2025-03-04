@@ -1,9 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg id="logo-exame-reduzida" width="32" height="32" viewBox="0 0 31.999999 31.999999" version="1.1" sodipodi:docname="exame.svg" inkscape:version="1.4-beta2 (9aaf4f34, 2024-07-30)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-  <defs id="defs1" />
-  <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="3.3404776" inkscape:cx="14.369203" inkscape:cy="28.588727" inkscape:window-width="1440" inkscape:window-height="872" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="logo-exame-reduzida" />
-  <g id="g1" style="fill:#000000" transform="matrix(1.4824818,0,0,1.4824818,5.7753042,-54.538286)">
-    <path id="Caminho_40646" data-name="Caminho 40646" d="m 1224.7,478.174 c 0.167,-5.271 1.2,-6.684 2.449,-6.684 1.27,0 2.484,1.15 2.439,6.684 z m -6.827,1.554 c 0,7.674 7.813,11.544 14.572,8.18 l -0.209,-0.215 c -4.428,1.5 -7.559,-1.8 -7.559,-7.964 q 0,-0.426 0.01,-0.824 h 10.817 c 0,-5.372 -3.053,-8.667 -8.353,-8.667 a 9.488,9.488 0 0 0 -9.276,9.491" transform="translate(-1221.7687,-432.21448)" fill="#ea2300" style="fill:#000000" />
-    <path id="Caminho_40647" data-name="Caminho 40647" d="m 1339.812,576.715 a 2.64,2.64 0 0 0 2.685,-2.687 2.686,2.686 0 1 0 -2.685,2.687" transform="translate(-1324.8077,-519.57648)" fill="#ea2300" style="fill:#000000" />
+<svg id="logo-exame-reduzida" width="32" height="32" viewBox="0 0 31.999999 31.999999" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <g transform="matrix(1.4824818,0,0,1.4824818,5.7753042,-54.538286)">
+    <path d="m 1224.7,478.174 c 0.167,-5.271 1.2,-6.684 2.449,-6.684 1.27,0 2.484,1.15 2.439,6.684 z m -6.827,1.554 c 0,7.674 7.813,11.544 14.572,8.18 l -0.209,-0.215 c -4.428,1.5 -7.559,-1.8 -7.559,-7.964 q 0,-0.426 0.01,-0.824 h 10.817 c 0,-5.372 -3.053,-8.667 -8.353,-8.667 a 9.488,9.488 0 0 0 -9.276,9.491" transform="translate(-1221.7687,-432.21448)" fill="#000" />
+    <path d="m 1339.812,576.715 a 2.64,2.64 0 0 0 2.685,-2.687 2.686,2.686 0 1 0 -2.685,2.687" transform="translate(-1324.8077,-519.57648)" fill="#000" />
   </g>
 </svg>

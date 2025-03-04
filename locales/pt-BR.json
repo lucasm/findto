@@ -459,7 +459,7 @@
           "action": "https://mubi.com/search/films?query="
         },
         {
-          "name": "SBT+",
+          "name": "+SBT",
           "action": "https://mais.sbt.com.br/search?q="
         },
         {
@@ -515,7 +515,7 @@
           "action": "https://www.clarotvmais.com.br/busca?q="
         },
         {
-          "name": "Vivo play",
+          "name": "Vivo Play",
           "action": "https://www.vivoplay.com.br/search?q="
         },
         {
@@ -1268,6 +1268,10 @@
         {
           "name": "Passei Direto",
           "action": "https://www.passeidireto.com/search?q="
+        },
+        {
+          "name": "Brainly",
+          "action": "https://brainly.com.br/app/ask?q="
         },
         {
           "name": "Internet Archive",
