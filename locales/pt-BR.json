@@ -1068,16 +1068,8 @@
           "action": "https://beta.maps.apple.com/?q="
         },
         {
-          "name": "Airbnb",
-          "action": "https://www.airbnb.com/s/"
-        },
-        {
           "name": "Expedia",
           "action": "https://www.expedia.com.br/Hotel-Search?destination="
-        },
-        {
-          "name": "Tripadvisor",
-          "action": "https://www.tripadvisor.com.br/Search?q="
         },
         {
           "name": "Booking",
@@ -1088,8 +1080,16 @@
           "action": "https://www.kayak.com.br/explore/"
         },
         {
-          "name": "Skyscanner",
-          "action": "https://www.skyscanner.com.br/transporte/passagens-aereas-de/"
+          "name": "Tripadvisor",
+          "action": "https://www.tripadvisor.com.br/Search?q="
+        },
+        {
+          "name": "Yelp",
+          "action": "https://www.yelp.com.br/search?find_desc="
+        },
+        {
+          "name": "Bing Travel",
+          "action": "https://www.bing.com/travel/place-information?q="
         },
         {
           "name": "Ingresso",
@@ -1112,22 +1112,81 @@
           "action": "https://www.ticket360.com.br/eventos/pesquisar?s="
         },
         {
-          "name": "Yelp",
-          "action": "https://www.yelp.com.br/search?find_desc="
-        },
-        {
-          "name": "Bing Travel",
-          "action": "https://www.bing.com/travel/place-information?q="
-        },
-        {
-          "name": "Waze",
-          "action": "https://www.waze.com/pt-BR/live-map/directions/"
-        },
-        {
           "name": "HERE WeGo",
           "action": "https://wego.here.com/search/"
         }
       ],
+      "services": [
+        {
+          "name": "Mobilidade",
+          "child": [
+            {
+              "name": "Uber",
+              "action": "https://www.uber.com/br/pt-br/"
+            },
+            {
+              "name": "99",
+              "action": "https://99app.com"
+            },
+            {
+              "name": "Waze",
+              "action": "https://www.waze.com/pt-BR/live-map/"
+            },
+            {
+              "name": "Moovit",
+              "action": "https://moovitapp.com"
+            }
+          ]
+        },
+        {
+          "name": "Avião",
+          "child": [
+            {
+              "name": "Skyscanner",
+              "action": "https://www.skyscanner.com.br/"
+            },
+            {
+              "name": "Azul",
+              "action": "https://www.voeazul.com.br"
+            },
+            {
+              "name": "Latam",
+              "action": "https://www.latamairlines.com/"
+            },
+            {
+              "name": "GOL",
+              "action": "https://www.voegol.com.br"
+            }
+          ]
+        },
+        {
+          "name": "Ônibus",
+          "child": [
+            {
+              "name": "Clickbus",
+              "action": "https://www.clickbus.com.br/"
+            },
+            {
+              "name": "Quero Passagem",
+              "action": "https://queropassagem.com.br/"
+            },
+            {
+              "name": "Buser",
+              "action": "https://www.buser.com.br"
+            }
+          ]
+        },
+        {
+          "name": "Hospedagem",
+          "child": [
+            {
+              "name": "Airbnb",
+              "action": "https://www.airbnb.com.br"
+            }
+          ]
+        }
+      ],
+
       "youtube_channels": [
         {
           "id": "UCOJNw9aHGRkYuIOqwU7yK-Q",
@@ -1517,78 +1576,90 @@
         {
           "name": "Banco Central",
           "action": "https://www.bcb.gov.br/resultadobusca?termo="
+        }
+      ],
+      "services": [
+        {
+          "name": "Bancos",
+          "child": [
+            {
+              "name": "Itaú",
+              "action": "https://www.itau.com.br/resultados-de-busca?q="
+            },
+            {
+              "name": "Nubank",
+              "action": "https://blog.nubank.com.br/busca/?search="
+            },
+            {
+              "name": "BB",
+              "action": "https://www.bb.com.br/site/busca?q="
+            },
+            {
+              "name": "Caixa",
+              "action": "https://www.caixa.gov.br/site/Paginas/Pesquisa.aspx?k="
+            },
+            {
+              "name": "Bradesco",
+              "action": "https://banco.bradesco/html/classic/resultado-busca/index-nova-busca.shtm?termsearched="
+            },
+            {
+              "name": "Santander",
+              "action": "https://www.santander.com.br/resultado-busca?q="
+            },
+            {
+              "name": "BTG Pactual",
+              "action": "https://content.btgpactual.com/resultado-da-busca?texto="
+            },
+            {
+              "name": "XP",
+              "action": "https://conteudos.xpi.com.br/pesquisar/?post_types=any&search="
+            },
+            {
+              "name": "Sicredi",
+              "action": "https://www.sicredi.com.br/site/blog/busca/?search="
+            },
+            {
+              "name": "Inter",
+              "action": "https://blog.inter.co/search?q="
+            },
+            {
+              "name": "C6",
+              "action": "https://www.c6bank.com.br/blog/resultado-de-busca?query="
+            },
+            {
+              "name": "Bmg",
+              "action": "https://www.bancobmg.com.br/como-podemos-te-ajudar.htm?q=cdb"
+            },
+            {
+              "name": "Safra",
+              "action": "https://www.safra.com.br/resultado-de-busca.htm?query="
+            }
+          ]
         },
         {
-          "name": "Itaú",
-          "action": "https://www.itau.com.br/resultados-de-busca?q="
-        },
-        {
-          "name": "Nubank",
-          "action": "https://blog.nubank.com.br/busca/?search="
-        },
-        {
-          "name": "BB",
-          "action": "https://www.bb.com.br/site/busca?q="
-        },
-        {
-          "name": "Caixa",
-          "action": "https://www.caixa.gov.br/site/Paginas/Pesquisa.aspx?k="
-        },
-        {
-          "name": "Bradesco",
-          "action": "https://banco.bradesco/html/classic/resultado-busca/index-nova-busca.shtm?termsearched="
-        },
-        {
-          "name": "Santander",
-          "action": "https://www.santander.com.br/resultado-busca?q="
-        },
-        {
-          "name": "BTG Pactual",
-          "action": "https://content.btgpactual.com/resultado-da-busca?texto="
-        },
-        {
-          "name": "XP",
-          "action": "https://conteudos.xpi.com.br/pesquisar/?post_types=any&search="
-        },
-        {
-          "name": "Sicredi",
-          "action": "https://www.sicredi.com.br/site/blog/busca/?search="
-        },
-        {
-          "name": "Inter",
-          "action": "https://blog.inter.co/search?q="
-        },
-        {
-          "name": "C6",
-          "action": "https://www.c6bank.com.br/blog/resultado-de-busca?query="
-        },
-        {
-          "name": "Bmg",
-          "action": "https://www.bancobmg.com.br/como-podemos-te-ajudar.htm?q=cdb"
-        },
-        {
-          "name": "Safra",
-          "action": "https://www.safra.com.br/resultado-de-busca.htm?query="
-        },
-        {
-          "name": "Toro",
-          "action": "https://blog.toroinvestimentos.com.br/busca/="
-        },
-        {
-          "name": "Rico",
-          "action": "https://riconnect.rico.com.vc/?s="
-        },
-        {
-          "name": "Genial",
-          "action": "https://blog.genialinvestimentos.com.br/?s="
-        },
-        {
-          "name": "Empiricus",
-          "action": "https://www.empiricus.com.br/?buscar="
-        },
-        {
-          "name": "Suno",
-          "action": "https://www.sunoresearch.com.br/?s="
+          "name": "Corretoras",
+          "child": [
+            {
+              "name": "Toro",
+              "action": "https://blog.toroinvestimentos.com.br/busca/="
+            },
+            {
+              "name": "Rico",
+              "action": "https://riconnect.rico.com.vc/?s="
+            },
+            {
+              "name": "Genial",
+              "action": "https://blog.genialinvestimentos.com.br/?s="
+            },
+            {
+              "name": "Empiricus",
+              "action": "https://www.empiricus.com.br/?buscar="
+            },
+            {
+              "name": "Suno",
+              "action": "https://www.sunoresearch.com.br/?s="
+            }
+          ]
         }
       ],
       "youtube_channels": [

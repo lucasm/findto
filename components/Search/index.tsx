@@ -281,6 +281,36 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
             ))}
           </ul>
         </div>
+
+        {/* {Search services} */}
+
+        {selectedCategory?.services && (
+          <div className={Style.servicesContainer}>
+            {selectedCategory?.services?.map((item: ISearch, index) => {
+              return (
+                <div key={index} className={Style.services}>
+                  <h3>{item?.name}</h3>
+                  {item.child?.map((childItem, index) => (
+                    <a key={index} href={childItem?.action} target="_blank">
+                      <figure>
+                        <img
+                          src={
+                            childItem?.name
+                              ? '/images/logos/' +
+                                normalizeId(childItem?.name) +
+                                '.svg'
+                              : undefined
+                          }
+                        />
+                      </figure>
+                      {childItem?.name}
+                    </a>
+                  ))}
+                </div>
+              )
+            })}
+          </div>
+        )}
       </div>
 
       {renderWarnings()}
