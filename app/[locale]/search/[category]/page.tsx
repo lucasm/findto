@@ -28,9 +28,13 @@ export async function generateMetadata({
   const categoryTitle =
     selectedCategory?.name_translated || selectedCategory?.name || 'Findto'
 
+  const categoryDescription =
+    selectedCategory?.description ||
+    `Search decentralized on ${categoryTitle} with the best sources available.`
+
   return {
-    title: `${categoryTitle}`,
-    description: `Search decentralized on ${categoryTitle} with the best sources available.`,
+    title: categoryTitle,
+    description: categoryDescription,
   }
 }
 

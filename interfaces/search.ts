@@ -9,6 +9,7 @@ export interface ISearchCategory {
   name: string
   name_translated: string
   name_trends: string
+  description?: string
   active: boolean
   data: ISearch[]
   youtube_channels: IYoutubeChannels[]

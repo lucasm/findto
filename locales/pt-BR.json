@@ -1401,6 +1401,7 @@
     {
       "name": "Job",
       "name_translated": "Empregos",
+      "description": "Busque e encontre empregos no LinkedIn, Gupy, Infojobs, Catho e mais sites ao mesmo tempo.",
       "active": true,
       "data": [
         {
