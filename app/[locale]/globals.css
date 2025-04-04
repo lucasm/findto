@@ -5,10 +5,12 @@
   --color-gray: hsla(0, 0%, 88%, 0.5);
   --color-dark: #202124;
   --color-dark-2: #303136;
-  --color-yellow: #fff789;
-  --color-green: #8bf6cf;
-  --color-blue: #6ac3ff;
-  --color-purple: #f0abff;
+  --color-yellow: #ffed9b;
+  --color-orange: #ffb68d;
+  --color-green: #b3ffcf;
+  --color-blue: #91d3ff;
+  --color-purple: #dba2ff;
+  --color-pink: #ffaae8;
   --color-red: #ff8a8a;
   --background-body: var(--color-white);
   --background-surface: var(--color-gray);
@@ -18,11 +20,13 @@
   --color-text-black: #000;
   --background-linear-gradient: linear-gradient(
     90deg,
-    var(--color-yellow) 15%,
-    var(--color-green) 30%,
-    var(--color-blue) 50%,
-    var(--color-purple) 70%,
-    var(--color-red) 89%
+    var(--color-blue) 5%,
+    var(--color-green),
+    var(--color-yellow),
+    var(--color-orange),
+    var(--color-red),
+    var(--color-pink),
+    var(--color-purple) 120%
   );
   --color-white-translucent: rgba(255, 255, 255, 0.5);
   --color-black-translucent: rgba(0, 0, 0, 0.05);
@@ -202,6 +206,17 @@ article hr {
   100% {
     background: var(--color-blue);
   }
+}
+
+.blur {
+  position: absolute;
+  width: 539px;
+  height: 330px;
+  left: 0px;
+  top: 93px;
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(77.2327px);
+  border-radius: 37px;
 }
 
 ::-moz-selection {
