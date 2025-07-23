@@ -1,8 +1,8 @@
 .container {
   display: grid;
-  gap: 0;
+  gap: 1.5rem;
   padding: 0;
-  margin: 0 -1rem;
+  /* margin: 0 -1rem; */
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -11,12 +11,12 @@
   display: flex;
   gap: 1rem;
   justify-content: flex-start;
-  padding: 1rem;
+  padding: 1.25rem;
   width: 100%;
   border: 0;
   margin: 0;
-  background: transparent;
-  color: var(--color-black);
+  background: var(--background-surface);
+  color: var(--color-text-black);
   border-radius: var(--radius);
   transition: var(--transition-hover);
   flex-direction: row;
@@ -38,15 +38,15 @@
 }
 .container li button span {
   text-align: left;
-  font-size: var(--font-size);
+  font-size: var(--font-size-big);
 }
-.container li button span:first-of-type {
+/* .container li button span:first-of-type {
   opacity: var(--opacity);
   font-size: var(--font-size-small);
-}
+} */
 
 .grid5 {
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
 .grid4 {
   grid-template-columns: repeat(4, 1fr);
@@ -71,6 +71,9 @@
   width: 100%;
 }
 
+.trendsApps span {
+  font-size: var(--font-size-small) !important;
+}
 .trendsApps li button img {
   border-radius: 1.5rem;
 }
@@ -120,8 +123,10 @@
   .trendsCode button img {
     width: 52px !important;
   }
-
+  .container {
+    gap: 1rem;
+  }
   .container li button {
-    padding: 0.5rem 1rem;
+    padding: 1rem;
   }
 }

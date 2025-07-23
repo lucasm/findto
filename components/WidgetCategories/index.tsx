@@ -2,7 +2,6 @@ import { useLocale, useTranslations } from 'next-intl'
 import WidgetTemplate from '../WidgetTemplate'
 import SearchNav from '../SearchNav'
 import { getLocaleData } from '@/utils/getLocaleData'
-import { IconNew } from '../SvgIcons'
 
 export default function WidgetCategories() {
   const t = useTranslations('t')
@@ -12,7 +11,8 @@ export default function WidgetCategories() {
   return (
     <WidgetTemplate
       title={t('componentWelcome.whatDoYouWant')}
-      icon={<IconNew />}>
+      //   icon={<IconNew />}
+    >
       <SearchNav data={data} variant="cards" />
     </WidgetTemplate>
   )

@@ -1,14 +1,17 @@
 'use client'
 
 import Styles from './BlurBall.module.css'
-import GradientComponent from '../GradientComponent'
-import SvgLogo from '../SvgLogo'
+
+// import SvgLogo from '../SvgLogo'
 
 const BlurBall = () => {
-  const color = 'var(--color-text-black)'
+  const yellow = 'var(--color-yellow)'
+  const green = 'var(--color-green)'
+  const red = '#ff8a8a'
+  const blue = '#91d3ff'
 
-  const gradient = `linear-gradient(to right, ${color} 0%, ${color} 100%)`
-  const gradientReverse = `linear-gradient(to left, ${color} 0%, ${color} 100%)`
+  const gradient = `linear-gradient(to right, ${yellow} 0%, ${green} 50%, ${blue} 75%, ${red} 100%)`
+  const gradientReverse = `linear-gradient(to left, ${blue} 0%, ${red} 100%)`
 
   const ballStyle = {
     display: 'flex',
@@ -38,7 +41,7 @@ const BlurBall = () => {
             transform: translate(0, 0px);
           }
           50% {
-            transform: translate(0, 20px);
+            transform: translate(0, 5px);
           }
           100% {
             transform: translate(0, -0px);
@@ -47,13 +50,9 @@ const BlurBall = () => {
       `}</style>
       <div className={Styles.container}>
         <div style={ballStyle}>
-          <div className={Styles.icon}>
-            <SvgLogo />
-          </div>
+          <div className={Styles.icon}>{/* <SvgLogo /> */}</div>
         </div>
         <div style={ballStyleReverse} />
-
-        <GradientComponent />
       </div>
     </>
   )

@@ -14,7 +14,7 @@
       "whatDoYouWant": "Experimente algo novo"
     },
     "componentBanner": {
-      "title": "Findto, assistente de buscas de código aberto",
+      "title": "Findto, assistente de buscas",
       "description": "Seja livre. Busque na Web, IA e mais."
     },
     "componentVoiceSearch": {
@@ -51,7 +51,6 @@
     "slogan": "Busca descentralizada",
     "copyright": "Criado no Brasil por",
     "about": "Sobre",
-    "community": "Comunidade",
     "privacy": "Política de Privacidade",
     "terms": "Termos de Serviço",
     "donate": "Apoiar",
@@ -110,12 +109,12 @@
           "action": "https://busca.uol.com.br/result.html?term="
         },
         {
-          "name": "X",
-          "action": "https://x.com/search?src=typed_query&q="
-        },
-        {
           "name": "Reddit",
           "action": "https://www.reddit.com/search?q="
+        },
+        {
+          "name": "X",
+          "action": "https://x.com/search?src=typed_query&q="
         },
         {
           "name": "TikTok",
@@ -326,16 +325,16 @@
           "action": "https://www.threads.net/search/?q="
         },
         {
+          "name": "Kwai",
+          "action": "https://www.kwai.com/discover/"
+        },
+        {
           "name": "Medium",
           "action": "https://medium.com/search?q="
         },
         {
           "name": "Discord",
           "action": "https://discord.com/guild-discovery?query="
-        },
-        {
-          "name": "Kwai",
-          "action": "https://www.kwai.com/discover/"
         },
         {
           "name": "Snapchat",
@@ -351,7 +350,7 @@
         },
         {
           "name": "Mastodon",
-          "action": "https://mastodon.social/tags/"
+          "action": "https://mastodon.social/search?q="
         },
         {
           "name": "Meetup",
@@ -432,7 +431,7 @@
         },
         {
           "name": "Disney+",
-          "action": "https://disneyplus.com/?q="
+          "action": "https://www.disneyplus.com/browse/search?q="
         },
         {
           "name": "HBO Max",
@@ -505,10 +504,6 @@
         {
           "name": "Vivo Play",
           "action": "https://www.vivoplay.com.br/search?q="
-        },
-        {
-          "name": "DAZN",
-          "action": "https://www.dazn.com/pt-BR/search?q="
         }
       ],
       "youtube_channels": [
@@ -1843,12 +1838,12 @@
               "action": "https://www.al.sp.gov.br/alesp/busca/?q="
             },
             {
-              "name": "MG - ALMG",
-              "action": "https://www.almg.gov.br/busca/?filtro=&q="
-            },
-            {
               "name": "RJ - Alerj",
               "action": "https://www.alerj.rj.gov.br/ResultadoPesquisa/PesquisarSite/?termoPesquisa="
+            },
+            {
+              "name": "MG - ALMG",
+              "action": "https://www.almg.gov.br/busca/?filtro=&q="
             },
             {
               "name": "BA - Alba",
@@ -1856,11 +1851,15 @@
             },
             {
               "name": "PR - Alep",
-              "action": "https://www.alep.pr.gov.br/busca/?q="
+              "action": "https://consultas.assembleia.pr.leg.br/#/proposicao?q="
             },
             {
               "name": "RS - ALRS",
               "action": "https://www.al.rs.gov.br/busca/?q="
+            },
+            {
+              "name": "PA - ALEPA",
+              "action": "https://alepa.pa.gov.br/Legislativo/Proposicoes?IdTipoProposicao=&texto="
             }
           ]
         },

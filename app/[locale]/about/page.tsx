@@ -8,6 +8,7 @@ import SvgLogo from '@/components/SvgLogo'
 import BannerAnimateCircleNav from '@/components/BannerAnimateCircleNav'
 import BannerAnimateText from '@/components/BannerAnimateText'
 import BannerAnimatePressMe from '@/components/BannerAnimatePressMe'
+import CardsLink from '@/components/CardsLink'
 
 export const metadata = {
   title: 'About',
@@ -28,6 +29,8 @@ export default function PageAbout() {
 
           <h1>{t('componentBanner.title')}</h1>
           <p>{t('componentBanner.description')}</p>
+
+          <CardsLink />
         </div>
       </section>
 

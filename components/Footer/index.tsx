@@ -32,6 +32,15 @@ export default function AppFooter() {
 
           <li>
             <Link
+              href="https://github.com/lucasm/findto"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub">
+              <IconGitHub />
+            </Link>
+          </li>
+          <li>
+            <Link
               href="https://x.com/findtoapp"
               target="_blank"
               rel="noreferrer"
@@ -46,6 +55,15 @@ export default function AppFooter() {
               rel="noreferrer"
               aria-label="Bluesky">
               <IconBluesky />
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://discord.gg/XbZcvNuQ6F"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Discord">
+              <IconDiscord />
             </Link>
           </li>
           <li>
@@ -66,31 +84,13 @@ export default function AppFooter() {
               <IconLinkedIn />
             </Link>
           </li>
-          <li>
-            <Link
-              href="https://discord.gg/XbZcvNuQ6F"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Discord">
-              <IconDiscord />
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://github.com/lucasm/findto"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="GitHub">
-              <IconGitHub />
-            </Link>
-          </li>
 
           <li>
             <Link href="/about">{t('about')}</Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/community">{t('community')}</Link>
-          </li>
+          </li> */}
           <li>
             <a href="https://patreon.com/findto" target="_blank" rel="noopener">
               {t('donate')}

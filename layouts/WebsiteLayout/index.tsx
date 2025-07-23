@@ -21,9 +21,6 @@ export default function WebsiteLayout({
           <Link href="/about">{t('about')}</Link>
         </li>
         <li className={Style.hideOnMobile}>
-          <Link href="/community">{t('community')}</Link>
-        </li>
-        <li className={Style.hideOnMobile}>
           <a href="https://patreon.com/findto" target="_blank" rel="noopener">
             {t('donate')}
           </a>
@@ -39,9 +36,6 @@ export default function WebsiteLayout({
       <ul className={Style.menuMobile}>
         <li>
           <Link href="/about">{t('about')}</Link>
-        </li>
-        <li>
-          <Link href="/community">{t('community')}</Link>
         </li>
         <li>
           <Link href={t('feedback.url')} target="_blank" rel="noopener">

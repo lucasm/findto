@@ -24,11 +24,11 @@
 
 Findto is an open source project.
 
-- **🌎 Decentralized search:** Search the same term across diverse sources on AI and Web - simultaneously. Discover trends, stories and information. Find anything with Findto. More productive and accessible searches than ever.
+- **Decentralized Search:** Search the same term across diverse sources on AI and Web - simultaneously. Discover trends, stories and information. Find anything with Findto. More productive and accessible searches than ever.
 
-- **🔒 Safe search**: View estimated security, privacy, and carbon footprint level of every search source. Make better choices with Findto, for you, and for the planet.
+- **Safe Search**: View estimated security, privacy, and carbon footprint level of every search source. Make better choices with Findto, for you, and for the planet.
 
-- **🌱 Open search**: Findto is building an open, accessible and universal search experience. Where diversity is key. Where people stay on control of algorithms.
+- **Open Search**: Findto is building an open, accessible and universal search experience. Where diversity is key. Where people stay on control of algorithms.
 
 A better search experience. For a healthier internet. For people.
 

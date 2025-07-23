@@ -1,14 +1,15 @@
 .circlePosition {
-  width: 590px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   position: absolute;
   z-index: 0;
-  top: 50%;
+  top: 0%;
   left: 50%;
+  right: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   filter: blur(90px);
-  animation: colorShift 10s ease-in-out infinite;
+  animation: colorShift 20s ease-in-out infinite;
 }
 
 @keyframes colorShift {

@@ -1,3 +1,4 @@
+import GradientBall from '../GradientBall'
 import Welcome from '../Welcome'
 import Style from './SearchTitle.module.css'
 
@@ -13,7 +14,7 @@ export default function SearchTitle({
   return (
     <div className={Style.container}>
       <div className={Style.title}>
-        {/* <SvgLogo /> */}
+        <GradientBall />
         {category == 'Home' ? <Welcome /> : <h1>{categoryTitle}</h1>}
       </div>
       {/* <div>

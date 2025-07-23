@@ -35,7 +35,6 @@
     "slogan": "Decentralized search on Web and AI",
     "copyright": "Made in Brazil by",
     "about": "About",
-    "community": "Community",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "donate": "Donate",
@@ -364,7 +363,7 @@
         },
         {
           "name": "Mastodon",
-          "action": "https://mastodon.social/tags/"
+          "action": "https://mastodon.social/search?q="
         },
         {
           "name": "Meetup",

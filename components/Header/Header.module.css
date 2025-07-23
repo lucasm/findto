@@ -7,7 +7,7 @@
   padding: 0 1rem;
   right: 0;
   left: 0;
-  background: var(--background-body);
+  background: transparent;
   z-index: 999;
 }
 .header svg {
@@ -37,6 +37,7 @@
 }
 .buttonsContainer button figure {
   display: flex;
+  align-items: center;
   gap: 0.5rem;
   padding: 0.5rem;
   border-radius: 0.5rem;

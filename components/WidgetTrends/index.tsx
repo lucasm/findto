@@ -398,7 +398,11 @@ export default function SearchTrends() {
     switch (category) {
       case 'Videos':
       case 'Music':
-        return Styles.container + ' ' + Styles.grid4
+      case 'Image':
+      case 'News':
+      case 'Finance':
+      case 'Games':
+        return Styles.container + ' ' + Styles.grid3
       case 'Apps':
         return Styles.container + ' ' + Styles.grid5 + ' ' + Styles.trendsApps
       case 'Shopping':
@@ -407,11 +411,6 @@ export default function SearchTrends() {
         )
       case 'Code':
         return Styles.container + ' ' + Styles.grid2 + ' ' + Styles.trendsCode
-      case 'Image':
-      case 'News':
-      case 'Finance':
-      case 'Games':
-        return Styles.container + ' ' + Styles.grid3
       case 'Local':
         return Styles.container + ' ' + Styles.grid2 + ' ' + Styles.trendsLocal
       default:
@@ -449,9 +448,9 @@ export default function SearchTrends() {
                       ? window.open(item.url, '_blank')
                       : putValue(item.title)
                   }>
-                  <span>{index + 1}</span>
-                  {item.image && <img src={item.image} alt="" />}
-
+                  {/* <span>{index + 1}</span> */}
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  {item.image && <img src={item.image} alt={item.title} />}
                   {item.title && <span> {item.title}</span>}
                 </button>
               </li>

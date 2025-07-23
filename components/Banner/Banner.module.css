@@ -1,5 +1,5 @@
 .container {
-  margin: 2rem auto;
+  margin: 6rem auto;
   max-width: var(--max-size-container-3);
   width: calc(100% - 4rem);
   background: var(--background-surface);

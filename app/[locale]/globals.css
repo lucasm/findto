@@ -1,3 +1,5 @@
+@import 'tailwindcss';
+
 :root {
   font-size: 16px;
   --color-white: #fff;
@@ -206,17 +208,6 @@ article hr {
   100% {
     background: var(--color-blue);
   }
-}
-
-.blur {
-  position: absolute;
-  width: 539px;
-  height: 330px;
-  left: 0px;
-  top: 93px;
-  background: rgba(255, 255, 255, 0.01);
-  backdrop-filter: blur(77.2327px);
-  border-radius: 37px;
 }
 
 ::-moz-selection {

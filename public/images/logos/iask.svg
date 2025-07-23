@@ -1,11 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" version="1.1" id="svg2" sodipodi:docname="iask.svg" inkscape:version="1.4-beta2 (9aaf4f34, 2024-07-30)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview id="namedview2" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="3.090834" inkscape:cx="41.089234" inkscape:cy="52.574807" inkscape:window-width="1440" inkscape:window-height="872" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="svg2" />
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M 18.187472,30.687529 C 6.9370067,36.157461 1.5368208,22.919997 0.72553426,20.41753 -1.6495521,13.079998 2.1955941,7.7249991 6.6320068,3.5625264 13.819806,-2.5412128 21.873805,0.03503291 27.74907,5.0225262 37.089402,12.952531 29.749137,25.06373 18.187472,30.687529 Z m -2.188866,-4.562533 c 2.685399,0 5.260865,-1.066733 7.159732,-2.965533 1.898866,-1.898799 2.965666,-4.474132 2.965666,-7.159465 0,-2.685267 -1.0668,-5.2606 -2.965666,-7.1593991 C 21.259471,6.9417326 18.684005,5.875026 15.998606,5.875026 c -2.6854,0 -5.260866,1.0667066 -7.1597329,2.9655729 -1.8988664,1.8987991 -2.9656396,4.4741321 -2.9656396,7.1593991 0,2.685333 1.0667732,5.260666 2.9656396,7.159465 1.8988669,1.8988 4.4743329,2.965533 7.1597329,2.965533 z" fill="url(#paint0_linear_2292_2693)" id="path1" style="fill:#000000;stroke-width:0.666667" />
-  <defs id="defs2">
-    <linearGradient id="paint0_linear_2292_2693" x1="0.136718" y1="48" x2="48.3675" y2="0.233044" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F77D8A" id="stop1" />
-      <stop offset="0.987328" stop-color="#6547FD" id="stop2" />
-    </linearGradient>
-  </defs>
+<svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M18.187 30.688C6.937 36.158 1.537 22.92.726 20.418-1.65 13.08 2.196 7.725 6.632 3.563 13.82-2.541 21.874.035 27.749 5.023c9.34 7.93 2 20.04-9.562 25.665ZM16 26.125a10.126 10.126 0 1 0 0-20.251 10.126 10.126 0 0 0 0 20.251z" fill="#000" style="fill:#000;stroke-width:.666667"/>
 </svg>
