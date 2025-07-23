@@ -44,7 +44,7 @@
 .cards ul {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 0;
+  gap: 1.5rem;
   margin: 2rem auto 0;
   padding: 0;
   max-width: var(--max-size-container);
@@ -62,7 +62,7 @@
   font-weight: 400;
   transition: var(--transition);
   width: 100%;
-  background: transparent;
+  background: var(--background-surface);
   color: var(--color-black);
 }
 .cards a:hover,
@@ -89,7 +89,7 @@
 }
 .sidebar a {
   opacity: var(--opacity);
-  padding: 0.6875rem 0.75rem;
+  padding: 0.5rem 0.75rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -126,5 +126,6 @@
 @media screen and (max-width: 576px) {
   .cards ul {
     grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
   }
 }

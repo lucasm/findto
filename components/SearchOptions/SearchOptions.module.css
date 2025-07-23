@@ -1,13 +1,5 @@
 .container select {
-  color: var(--color-text-black);
-  background: var(--background-surface);
-}
-.container select:hover,
-.container select:focus {
-  opacity: 1;
-}
-.container svg {
-  color: var(--color-text-black);
+  background-color: var(--background-body);
 }
 
 @media screen and (max-width: 576px) {

@@ -102,6 +102,10 @@
     font-size: var(--font-size);
   }
 
+  .container li button span {
+    font-size: var(--font-size-small);
+  }
+
   .grid5 {
     grid-template-columns: repeat(4, 1fr);
   }
