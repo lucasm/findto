@@ -1,6 +1,6 @@
 <div align="center">
 <a href="https://findto.app/?utm_source=findto_repo">
-<img height="124" src="https://findto.app/icon.svg">
+<img height="124" src="https://findto.app/Findto-iOS-Default-1024x1024@2x.png" alt="Findto Icon">
 </a>
 </div>
 
@@ -20,19 +20,19 @@
  <br>
 </p>
 
-## Decentralized Search with AI
+## Open Source Decentralized AI Search
 
-Findto is an open source assistant for decentralized search.
+Findto is an open source project.
 
-- _Decentralized search_: Search the same term across multiple sources on AI, Web, and more - simultaneously. Discover trends, stories and information. Find anything. More productive and accessible searches --- as never before.
+- **🌎 Decentralized search:** Search the same term across diverse sources on AI and Web - simultaneously. Discover trends, stories and information. Find anything with Findto. More productive and accessible searches than ever.
 
-- _Safe search_: View estimated security, privacy, and carbon footprint level of every search source. Make better choices with Findto, for you, and for the planet.
+- **🔒 Safe search**: View estimated security, privacy, and carbon footprint level of every search source. Make better choices with Findto, for you, and for the planet.
 
-- _Open search_: As an open source project, Findto is building an universal search experience. Where diversity is key. Where people stay on control of algorithms.
+- **🌱 Open search**: Findto is building an open, accessible and universal search experience. Where diversity is key. Where people stay on control of algorithms.
 
-A new search experience. For a healthier internet for people.
+A better search experience. For a healthier internet. For people.
 
-[▶️ Try it now](https://findto.app/?utm_source=findto_repo)
+[▶️ Try Findto now](https://findto.app/?utm_source=findto_repo)
 
 ## 🟢 Features
 
@@ -49,13 +49,26 @@ A new search experience. For a healthier internet for people.
 | **Accessibility**        | Balanced contrast, screen reader support, keyboard navigation and dark theme          | ✅     |
 | **Carbon Neutral**       | Finito is carbon neutral software                                                     | ✅     |
 
-## 🔴 Criteria
+## 🔵 Criteria
 
-The search sources and external content available on Findto, are selected following these criteria: 1) Service popularity; 2) Open access; 3) Service respect for regulations of copyright, accessibility, and privacy.
+The search sources and external content available on Findto, are selected following these criteria:
+
+1. Service popularity;
+2. Open access;
+3. Service respect for regulations of copyright, accessibility, and privacy.
+
+## 🟣 Contributions
+
+Contributions are welcome!
+
+- Check [Projects](https://github.com/lucasm/findto/projects) board for the backlog.
+- Open a [Issue](https://github.com/lucasm/findto/issues) or [Discussion](https://github.com/lucasm/findto/discussions) for new features.
+- View opened [Issues](https://github.com/lucasm/findto/issues) before send a PR.
+- _Translations:_ Do you want to translate Findto? Check a how to guide on [Wiki](https://github.com/lucasm/findto/wiki).
 
 ## 🟡 Donate
 
-If you like Findto, ✨ make a donation ✨ and support the project.
+If you like Findto ✨ make a donation ✨ and support the project!
 
 - [Patreon](https://patreon.com/findto)
 - [Ko-Fi (one-time donation)](https://ko-fi.com/findto)
@@ -63,22 +76,10 @@ If you like Findto, ✨ make a donation ✨ and support the project.
 
 #### Supporters
 
-[Donate and get your name / banner here]
+[Donate and get your name or banner here]
 
-## 🔵 Contributions
+## 🔴 Legal
 
-Contributions are welcome! See the [Projects](https://github.com/lucasm/findto/projects) board to know the roadmap.
+Findto displays content from external services without review and materials protected by intellectual property. Please, respect the terms of use of each source. Findto is also built with privacy and don't store user searches.
 
-- _Feature or new idea:_ Open a [Issue](https://github.com/lucasm/findto/issues) or [Discussion](https://github.com/lucasm/findto/discussions).
-
-- _Bugfixes:_ View opened [Issues](https://github.com/lucasm/findto/issues) before send a PR.
-
-- _Translations:_ Do you want to translate Findto? Check a how to guide on [Wiki](https://github.com/lucasm/findto/wiki).
-
-## 🟣 Legal
-
-Findto is built with privacy and don't store searches. Findto also displays content from external services without review and materials protected by intellectual property. Please, respect the terms of use of each source.
-
-[Privacy Policy](https://findto.app/privacy) | [Terms of Service](https://findto.app/terms)
-
-Made by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app) and community.
+[Privacy Policy](https://findto.app/privacy) | [Terms of Service](https://findto.app/terms) | Made by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app) and FOSS community | MIT Licensed

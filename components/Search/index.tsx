@@ -13,6 +13,7 @@ import SearchTitle from '@/components/SearchTitle'
 import { ISearchCategory, ISearch, ISearchChild } from '@/interfaces/search'
 import SearchOptions from '@/components/SearchOptions'
 import Alert from '@/components/Alert'
+import Image from 'next/image'
 
 interface Props {
   selectedCategory: ISearchCategory
@@ -179,7 +180,7 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
                 className={Style.searchInput}
                 placeholder={handlePlaceholder()}
                 autoComplete="off"
-                maxLength={2000}
+                maxLength={2500}
                 rows={1}
                 onChange={handleValue}
                 onFocus={handleValue}
@@ -266,14 +267,18 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
                     }
                   }}
                   translate="no">
-                  <figure
-                    style={{
-                      backgroundImage: source?.name
-                        ? 'url(/images/logos/' +
-                          normalizeId(source?.name) +
-                          '.svg)'
-                        : undefined,
-                    }}></figure>
+                  <figure>
+                    <Image
+                      src={
+                        source?.name
+                          ? `/images/logos/${normalizeId(source?.name)}.svg`
+                          : '/images/logos/default.svg'
+                      }
+                      alt={source?.name}
+                      width={24}
+                      height={24}
+                    />
+                  </figure>
 
                   {source.name}
                 </button>

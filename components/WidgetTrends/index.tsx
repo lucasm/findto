@@ -8,7 +8,6 @@ import useSWR from 'swr'
 import { fetcher } from '@/utils/http'
 import ButtonGeolocation from '@/components/ButtonGeolocation'
 import WidgetTemplate from '@/components/WidgetTemplate'
-import { IconTrending } from '@/components/SvgIcons'
 import { ITrends } from '@/interfaces/trends'
 
 export default function SearchTrends() {
@@ -424,7 +423,7 @@ export default function SearchTrends() {
     return (
       <WidgetTemplate
         title={t('trends')}
-        icon={<IconTrending />}
+        // icon={<SvgLogo />}
         credits={
           dataTrends
             ? {

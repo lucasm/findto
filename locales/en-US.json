@@ -38,7 +38,7 @@
     "community": "Community",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "donate": "Join us",
+    "donate": "Donate",
     "accept": "Accept",
     "learnMore": "Meet Findto",
     "viewNearbyPlaces": "View nearby places",
@@ -413,8 +413,8 @@
           "action": "https://disneyplus.com/?q="
         },
         {
-          "name": "Max",
-          "action": "https://play.max.com/search?q="
+          "name": "HBO Max",
+          "action": "https://play.hbomax.com/search?q="
         },
         {
           "name": "Apple TV+",
@@ -769,10 +769,6 @@
         {
           "name": "RT",
           "action": "https://www.rt.com/search?q="
-        },
-        {
-          "name": "Pocket",
-          "action": "https://getpocket.com/search?q="
         },
         {
           "name": "Feedly",
@@ -1182,6 +1178,18 @@
           "action": "https://searchcode.com/?q="
         },
         {
+          "name": "GitLab",
+          "action": "https://gitlab.com/public?name="
+        },
+        {
+          "name": "Bitbucket",
+          "action": "https://bitbucket.org/repo/all/?name="
+        },
+        {
+          "name": "Rapid API",
+          "action": "https://rapidapi.com/search?term="
+        },
+        {
           "name": "Docker Hub",
           "action": "https://hub.docker.com/search?q="
         },
@@ -1228,14 +1236,6 @@
         {
           "name": "Tensorflow",
           "action": "https://www.tensorflow.org/s/results?hl=pt-br&q="
-        },
-        {
-          "name": "GitLab",
-          "action": "https://gitlab.com/public?name="
-        },
-        {
-          "name": "Bitbucket",
-          "action": "https://bitbucket.org/repo/all/?name="
         }
       ],
       "youtube_channels": [

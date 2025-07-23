@@ -185,8 +185,6 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
     }
   }, [searchUrl])
 
-  console.log('userLocation', userLocation)
-
   return (
     <SearchContext.Provider
       value={{

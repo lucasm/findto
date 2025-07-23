@@ -14,8 +14,8 @@
       "whatDoYouWant": "Experimente algo novo"
     },
     "componentBanner": {
-      "title": "Findto, o seu assistente de buscas",
-      "description": "Faça buscas em diversas fontes da Web, IA e mais."
+      "title": "Findto, assistente de buscas de código aberto",
+      "description": "Seja livre. Busque na Web, IA e mais."
     },
     "componentVoiceSearch": {
       "voice": "Voz",
@@ -34,9 +34,9 @@
     ],
     "widgetProtection": {
       "title": "Proteção",
-      "description": "Você está em um ambiente seguro. Use os verificadores abaixo para obter mais detalhes da fonte de busca escolhida.",
+      "description": "O Findto não armazena buscas. Mas a fonte escolhida pode armazenar. Utilize os verificadores abaixo para conferir.",
       "source": "Fonte",
-      "carbon": "Pegada de carbono",
+      "carbon": "Emissão de carbono",
       "security": "Segurança",
       "privacy": "Privacidade"
     },
@@ -54,15 +54,15 @@
     "community": "Comunidade",
     "privacy": "Política de Privacidade",
     "terms": "Termos de Serviço",
-    "donate": "Assinar",
+    "donate": "Apoiar",
     "accept": "Aceitar",
     "learnMore": "Conheça o Findto",
     "viewNearbyPlaces": "Ver locais próximos",
     "openApp": "Abrir Findto",
-    "placeholder": "Buscar em",
+    "placeholder": "Busca",
     "search": "Buscar",
     "clear": "Limpar",
-    "powered": "Fornecido por",
+    "powered": "Dados de",
     "settings": "Ajustes",
     "theme": "Tema",
     "language": "Localidade",
@@ -102,6 +102,14 @@
           "action": "https://www.youtube.com/results?search_query="
         },
         {
+          "name": "globo.com",
+          "action": "https://www.globo.com/busca/?q="
+        },
+        {
+          "name": "UOL",
+          "action": "https://busca.uol.com.br/result.html?term="
+        },
+        {
           "name": "X",
           "action": "https://x.com/search?src=typed_query&q="
         },
@@ -114,16 +122,8 @@
           "action": "https://www.tiktok.com/search?q="
         },
         {
-          "name": "Pinterest",
-          "action": "https://br.pinterest.com/search/pins/?q="
-        },
-        {
           "name": "Instagram",
           "action": "https://www.instagram.com/explore/tags/"
-        },
-        {
-          "name": "LinkedIn",
-          "action": "https://www.linkedin.com/search/results/index/?keywords="
         },
         {
           "name": "Mercado Livre",
@@ -141,18 +141,6 @@
         {
           "name": "OLX",
           "action": "https://www.olx.com.br/brasil?q="
-        },
-        {
-          "name": "iFood",
-          "action": "https://www.ifood.com.br/busca?q="
-        },
-        {
-          "name": "Globo",
-          "action": "https://www.globo.com/busca/?q="
-        },
-        {
-          "name": "UOL",
-          "action": "https://busca.uol.com.br/result.html?term="
         },
         {
           "name": "Jusbrasil",
@@ -447,8 +435,8 @@
           "action": "https://disneyplus.com/?q="
         },
         {
-          "name": "Max",
-          "action": "https://play.max.com/search/result?q="
+          "name": "HBO Max",
+          "action": "https://play.hbomax.com/search/result?q="
         },
         {
           "name": "Apple TV+",
@@ -804,7 +792,7 @@
       "active": true,
       "data": [
         {
-          "name": "Globo",
+          "name": "globo.com",
           "action": "https://www.globo.com/busca/?q="
         },
         {
@@ -864,10 +852,6 @@
         {
           "name": "BBC",
           "action": "https://www.bbc.co.uk/search?q="
-        },
-        {
-          "name": "Pocket",
-          "action": "https://getpocket.com/search?q="
         },
         {
           "name": "Feedly",
@@ -955,7 +939,7 @@
     },
     {
       "name": "Shopping",
-      "name_translated": "Compras",
+      "name_translated": "Shopping",
       "active": true,
       "data": [
         {
@@ -968,12 +952,12 @@
           "action": "https://lista.mercadolivre.com.br/"
         },
         {
-          "name": "OLX",
-          "action": "https://www.olx.com.br/brasil?q="
-        },
-        {
           "name": "Magalu",
           "action": "https://www.magazineluiza.com.br/busca/"
+        },
+        {
+          "name": "OLX",
+          "action": "https://www.olx.com.br/brasil?q="
         },
         {
           "name": "iFood",
@@ -1673,11 +1657,27 @@
       "active": true,
       "data": [
         {
+          "name": "Jusbrasil",
+          "action": "https://www.jusbrasil.com.br/busca?q="
+        },
+        {
+          "name": "Escavador",
+          "action": "https://www.escavador.com/busca?q="
+        },
+        {
+          "name": "Reclame Aqui",
+          "action": "https://www.reclameaqui.com.br/busca/?q="
+        },
+        {
           "name": "GOV.BR",
           "child": [
             {
               "name": "Governo do Brasil",
               "action": "https://www.gov.br/pt-br/search?SearchableText="
+            },
+            {
+              "name": "Consumidor.gov.br",
+              "action": "https://www.consumidor.gov.br/pages/principal/?1738764883110/q?="
             },
             {
               "name": "Portal da Transparência",
@@ -1694,6 +1694,31 @@
             {
               "name": "Dados Abertos",
               "action": "https://dados.gov.br/dados/busca?termo="
+            }
+          ]
+        },
+        {
+          "name": "Congresso Nacional",
+          "child": [
+            {
+              "name": "Congresso Nacional",
+              "action": "https://www6g.senado.leg.br/busca-congresso/?q="
+            },
+            {
+              "name": "Camara dos Deputados",
+              "action": "https://www.camara.leg.br/busca-geral?termo="
+            },
+            {
+              "name": "Senado Federal",
+              "action": "https://www6g.senado.leg.br/busca/?q="
+            },
+            {
+              "name": "Proposições Legislativas",
+              "action": "https://www.camara.leg.br/buscaProposicoesWeb/resultadoPesquisa?inteiroTeor="
+            },
+            {
+              "name": "Normas ",
+              "action": "https://normas.leg.br/busca?q="
             }
           ]
         },
@@ -1811,31 +1836,6 @@
           ]
         },
         {
-          "name": "Jusbrasil",
-          "action": "https://www.jusbrasil.com.br/busca?q="
-        },
-        {
-          "name": "Escavador",
-          "action": "https://www.escavador.com/busca?q="
-        },
-        {
-          "name": "Reclame Aqui",
-          "action": "https://www.reclameaqui.com.br/busca/?q="
-        },
-        {
-          "name": "Procon",
-          "child": [
-            {
-              "name": "Consumidor.gov.br",
-              "action": "https://www.consumidor.gov.br/pages/principal/?1738764883110/q?="
-            },
-            {
-              "name": "SP - Procon",
-              "action": "https://www.procon.sp.gov.br/?s="
-            }
-          ]
-        },
-        {
           "name": "Assembleia Legislativa",
           "child": [
             {
@@ -1861,31 +1861,6 @@
             {
               "name": "RS - ALRS",
               "action": "https://www.al.rs.gov.br/busca/?q="
-            }
-          ]
-        },
-        {
-          "name": "Congresso Nacional",
-          "child": [
-            {
-              "name": "Congresso Nacional",
-              "action": "https://www6g.senado.leg.br/busca-congresso/?q="
-            },
-            {
-              "name": "Camara dos Deputados",
-              "action": "https://www.camara.leg.br/busca-geral?termo="
-            },
-            {
-              "name": "Senado Federal",
-              "action": "https://www6g.senado.leg.br/busca/?q="
-            },
-            {
-              "name": "Proposições Legislativas",
-              "action": "https://www.camara.leg.br/buscaProposicoesWeb/resultadoPesquisa?inteiroTeor="
-            },
-            {
-              "name": "Normas ",
-              "action": "https://normas.leg.br/busca?q="
             }
           ]
         },
@@ -2112,6 +2087,18 @@
           "action": "https://searchcode.com/?q="
         },
         {
+          "name": "GitLab",
+          "action": "https://gitlab.com/public?name="
+        },
+        {
+          "name": "Bitbucket",
+          "action": "https://bitbucket.org/repo/all/?name="
+        },
+        {
+          "name": "Rapid API",
+          "action": "https://rapidapi.com/search?term="
+        },
+        {
           "name": "Docker Hub",
           "action": "https://hub.docker.com/search?q="
         },
@@ -2158,14 +2145,6 @@
         {
           "name": "Tensorflow",
           "action": "https://www.tensorflow.org/s/results?hl=pt-br&q="
-        },
-        {
-          "name": "GitLab",
-          "action": "https://gitlab.com/public?name="
-        },
-        {
-          "name": "Bitbucket",
-          "action": "https://bitbucket.org/repo/all/?name="
         }
       ],
       "youtube_channels": [
@@ -2257,16 +2236,16 @@
           "action": "https://apps.microsoft.com/search?query="
         },
         {
-          "name": "Meta Quest",
-          "action": "https://www.meta.com/experiences/search?q="
-        },
-        {
           "name": "Chrome Web Store",
           "action": "https://chromewebstore.google.com/search/"
         },
         {
           "name": "Firefox Addons",
           "action": "https://addons.mozilla.org/en-US/firefox/search/?q="
+        },
+        {
+          "name": "Meta Quest",
+          "action": "https://www.meta.com/experiences/search?q="
         },
         {
           "name": "Flathub",

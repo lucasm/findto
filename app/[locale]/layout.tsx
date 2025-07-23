@@ -26,7 +26,7 @@ const fontFamily = localFont({
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Findto | Decentralized AI Search',
+    absolute: 'Findto | Open Source Decentralized AI Search',
     default: 'Findto',
     template: 'Findto | %s',
   },

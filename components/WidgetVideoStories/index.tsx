@@ -11,7 +11,7 @@ import { Pagination, Mousewheel } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import { useTranslations } from 'next-intl'
-import { IconClose, IconStories } from '../SvgIcons'
+import { IconClose } from '../SvgIcons'
 import { ISearchCategory } from '@/interfaces/search'
 import WidgetTemplate from '../WidgetTemplate'
 
@@ -89,7 +89,7 @@ export default function WidgetVideoStories({ selectedCategory }: Props) {
     return (
       <WidgetTemplate
         title={t('stories')}
-        icon={<IconStories />}
+        // icon={<IconStories />}
         credits={
           dataTrends
             ? {

@@ -1,4 +1,3 @@
-import SvgLogo from '../SvgLogo'
 import Welcome from '../Welcome'
 import Style from './SearchTitle.module.css'
 
@@ -14,7 +13,7 @@ export default function SearchTitle({
   return (
     <div className={Style.container}>
       <div className={Style.title}>
-        <SvgLogo />
+        {/* <SvgLogo /> */}
         {category == 'Home' ? <Welcome /> : <h1>{categoryTitle}</h1>}
       </div>
       {/* <div>

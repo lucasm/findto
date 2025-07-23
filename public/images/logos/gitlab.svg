@@ -1,10 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg id="Camada_1" data-name="Camada 1" viewBox="0 0 32 32" version="1.1" sodipodi:docname="gitlab.svg" width="32" height="32" inkscape:version="1.4-beta2 (9aaf4f34, 2024-07-30)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview id="namedview7" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="0.325" inkscape:cx="98.461538" inkscape:cy="38.461538" inkscape:window-width="1440" inkscape:window-height="790" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="Camada_1" />
-  <defs id="defs1">
-    <style id="style1">.cls-1{fill:#171321;}</style>
-  </defs>
-  <g id="LOGO" transform="matrix(0.71311399,0,0,0.71311399,-0.02279387,-12.51703)">
-    <path class="cls-1" d="M 44.16,35.5 44.1,35.33 38,19.39 a 1.67,1.67 0 0 0 -0.63,-0.76 1.62,1.62 0 0 0 -2.23,0.49 1.75,1.75 0 0 0 -0.2,0.44 L 30.81,32.19 H 14.1 L 10,19.56 A 1.63,1.63 0 0 0 8,18.44 1.59,1.59 0 0 0 6.94,19.39 l -6.11,16 -0.06,0.16 a 11.34,11.34 0 0 0 3.75,13.06 v 0 0 l 9.3,7 4.61,3.49 2.8,2.12 a 1.91,1.91 0 0 0 2.29,0 l 2.8,-2.12 4.68,-3.47 9.36,-7 v 0 a 11.35,11.35 0 0 0 3.8,-13.13 z" id="path1" />
-  </g>
+<svg data-name="Camada 1" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+  <path d="m44.16 35.5-.06-.17L38 19.39a1.67 1.67 0 0 0-.63-.76 1.62 1.62 0 0 0-2.23.49 1.75 1.75 0 0 0-.2.44l-4.13 12.63H14.1L10 19.56a1.63 1.63 0 0 0-2-1.12 1.59 1.59 0 0 0-1.06.95l-6.11 16-.06.16a11.34 11.34 0 0 0 3.75 13.06l9.3 7 4.61 3.49 2.8 2.12a1.91 1.91 0 0 0 2.29 0l2.8-2.12L31 55.63l9.36-7a11.35 11.35 0 0 0 3.8-13.13z" style="fill:#000" transform="matrix(.71311 0 0 .71311 -.023 -12.517)"/>
 </svg>

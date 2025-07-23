@@ -94,8 +94,8 @@
   align-items: center;
   gap: 1rem;
   display: flex;
-  font-size: var(--font-size-small);
-
+  font-weight: 400;
+  font-size: var(--font-size);
   width: 100%;
   color: var(--color-text-black);
   background: transparent;

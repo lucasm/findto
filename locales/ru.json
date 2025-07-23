@@ -272,10 +272,6 @@
           "action": "https://www.bbc.co.uk/search?q="
         },
         {
-          "name": "Pocket",
-          "action": "https://getpocket.com/search?q="
-        },
-        {
           "name": "Feedly",
           "action": "https://feedly.com/i/discover/sources/search/feed/"
         },
