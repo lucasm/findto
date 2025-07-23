@@ -63,7 +63,7 @@
   transition: var(--transition);
   width: 100%;
   background: var(--background-surface);
-  color: var(--color-black);
+  color: var(--color-text-black);
 }
 .cards a:hover,
 .cards a:focus {
