@@ -1,4 +1,4 @@
-import GradientBall from '../GradientBall'
+import BlurBackground from '../BlurBackground'
 import Welcome from '../Welcome'
 import Style from './SearchTitle.module.css'
 
@@ -14,12 +14,9 @@ export default function SearchTitle({
   return (
     <div className={Style.container}>
       <div className={Style.title}>
-        <GradientBall />
+        <BlurBackground />
         {category == 'Home' ? <Welcome /> : <h1>{categoryTitle}</h1>}
       </div>
-      {/* <div>
-            <h2>{t('componentWelcome.whatDoYouWant')}</h2>
-          </div> */}
     </div>
   )
 }

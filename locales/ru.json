@@ -5,13 +5,12 @@
   },
   "t": {
     "componentCookiesPopup": {
-      "title": "Findto использует файлы cookie для лучшего опыта. Мы уважаем вашу конфиденциальность и не храним личную информацию."
+      "title": "Findto использует файлы cookie. Мы уважаем вашу конфиденциальность и не храним персональные данные."
     },
     "componentWelcome": {
       "goodMorning": "Доброе утро",
       "goodEvening": "Добрый день",
-      "goodNight": "Добрый вечер",
-      "whatDoYouWant": "Попробуйте что-нибудь новое"
+      "goodNight": "Добрый вечер"
     },
     "componentBanner": {
       "title": "Познакомьтесь с Findto, вашим новым помощником по поиску",
@@ -50,6 +49,7 @@
     "theme": "Цвет",
     "language": "Язык",
     "contribute": "Внести вклад",
+    "explore": "Исследуйте",
     "trends": "Тенденции",
     "stories": "Истории",
     "categories": "Режимы поиска",

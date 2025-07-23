@@ -5,7 +5,7 @@ import localFont from 'next/font/local'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 import { ThemeProvider } from 'next-themes'
-import Telemetry from '@/components/Telemetry'
+import ScriptsTelemetry from '@/components/ScriptsTelemetry'
 import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing'
 
@@ -26,12 +26,12 @@ const fontFamily = localFont({
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Findto | Open Source Decentralized AI Search',
+    absolute: 'Findto | Decentralized AI Search',
     default: 'Findto',
     template: 'Findto | %s',
   },
   description:
-    'Findto is an assistant for decentralized AI search. Explore the best of internet, near you.',
+    'Findto is an decentralized search assistant. Be free. Search on the Web, AI, Social, Videos, Images, Music, and more.',
   authors: [
     { name: 'Findto', url: 'https://findto.app' },
     { name: 'Lucas Menezes', url: 'https://lucasm.dev' },
@@ -52,9 +52,10 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://findto.app'),
   alternates: {
     languages: {
-      en: '/en',
+      'en-US': '/en-US',
       'pt-BR': '/pt-BR',
       'zh-CN': '/zh-CN',
+      ru: '/ru',
     },
   },
   openGraph: {
@@ -104,7 +105,7 @@ export default async function Layout({
         </ThemeProvider>
       </body>
 
-      <Telemetry />
+      <ScriptsTelemetry />
     </html>
   )
 }

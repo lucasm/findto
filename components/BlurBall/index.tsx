@@ -53,6 +53,10 @@ const BlurBall = () => {
           <div className={Styles.icon}>{/* <SvgLogo /> */}</div>
         </div>
         <div style={ballStyleReverse} />
+
+        {/* <div className={css.circlePosition}></div> */}
+
+        {/* <div className="w-32 h-32 rounded-full blur-xl animate-float bg-[conic-gradient(var(--color-yellow),var(--color-orange),var(--color-green),var(--color-blue),var(--color-purple),var(--color-pink),var(--color-red),var(--color-yellow))]"></div> */}
       </div>
     </>
   )

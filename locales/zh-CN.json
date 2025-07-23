@@ -5,13 +5,12 @@
   },
   "t": {
     "componentCookiesPopup": {
-      "title": "Findto 使用 cookie 来提供更好的体验。我们尊重您的隐私，不存储个人信息。"
+      "title": "Findto 使用 Cookie。我们尊重您的隐私，不会存储任何个人信息。"
     },
     "componentWelcome": {
       "goodMorning": "早上好",
       "goodEvening": "下午好",
-      "goodNight": "晚安",
-      "whatDoYouWant": "尝试一些新事物"
+      "goodNight": "晚安"
     },
     "componentBanner": {
       "title": "向你的新搜索助手 Findto 问好",
@@ -50,6 +49,7 @@
     "theme": "主题",
     "language": "语言",
     "contribute": "贡献",
+    "explore": "探索",
     "trends": "热门内容",
     "stories": "最新动态",
     "categories": "模块",

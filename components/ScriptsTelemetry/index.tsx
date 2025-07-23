@@ -1,6 +1,6 @@
 import Script from 'next/script'
 
-const Telemetry = () => {
+const ScriptsTelemetry = () => {
   // if is on development mode, do not load telemetry scripts
   if (process.env.NODE_ENV !== 'production') return null
 
@@ -40,4 +40,4 @@ const Telemetry = () => {
   )
 }
 
-export default Telemetry
+export default ScriptsTelemetry

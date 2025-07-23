@@ -10,7 +10,7 @@ export default function WidgetCategories() {
 
   return (
     <WidgetTemplate
-      title={t('componentWelcome.whatDoYouWant')}
+      title={t('explore')}
       //   icon={<IconNew />}
     >
       <SearchNav data={data} variant="cards" />

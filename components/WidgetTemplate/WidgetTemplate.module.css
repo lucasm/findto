@@ -42,8 +42,4 @@
   .container {
     padding: 2rem 1.5rem;
   }
-
-  .title h3 {
-    font-size: var(--font-size);
-  }
 }

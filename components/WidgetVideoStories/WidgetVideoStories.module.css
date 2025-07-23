@@ -1,10 +1,5 @@
 .container {
   overflow: hidden;
-  margin: -1rem;
-}
-
-.slide {
-  margin-top: 1rem;
 }
 
 .slide button {

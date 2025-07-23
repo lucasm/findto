@@ -5,13 +5,12 @@
   },
   "t": {
     "componentCookiesPopup": {
-      "title": "Findto uses cookies for a better experience. We respect your privacy and do not store personal information."
+      "title": "Findto uses cookies. We respect your privacy and do not store personal information."
     },
     "componentWelcome": {
       "goodMorning": "Good morning",
       "goodEvening": "Good evening",
-      "goodNight": "Good night",
-      "whatDoYouWant": "Explore"
+      "goodNight": "Good night"
     },
     "componentBanner": {
       "title": "Get started with Findto",
@@ -50,6 +49,7 @@
     "theme": "Theme",
     "language": "Language",
     "contribute": "Contribute",
+    "explore": "Explore",
     "trends": "Trending",
     "stories": "Stories",
     "categories": "Modes",
