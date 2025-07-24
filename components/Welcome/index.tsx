@@ -8,11 +8,11 @@ const Welcome = () => {
   // Define message based on the time of day
   let message
   if (hours < 12) {
-    message = t('componentWelcome.goodMorning')
+    message = t('welcome.goodMorning')
   } else if (hours < 18) {
-    message = t('componentWelcome.goodEvening')
+    message = t('welcome.goodEvening')
   } else {
-    message = t('componentWelcome.goodNight')
+    message = t('welcome.goodNight')
   }
 
   return <h1>{message}</h1>

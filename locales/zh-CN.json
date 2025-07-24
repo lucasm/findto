@@ -4,19 +4,20 @@
     "code": "CN"
   },
   "t": {
-    "componentCookiesPopup": {
-      "title": "Findto 使用 Cookie。我们尊重您的隐私，不会存储任何个人信息。"
+    "metadata": {
+      "title": "向你的新搜索助手 Findto 问好",
+      "description": "借助 Findto，您可以搜索 Web、AI 和 Metaverse 上的资源。探索最好的互联网。"
     },
-    "componentWelcome": {
+    "feedback": {
+      "title": "发送反馈",
+      "url": "https://forms.gle/US69JvUT1qxYkiF58"
+    },
+    "welcome": {
       "goodMorning": "早上好",
       "goodEvening": "下午好",
       "goodNight": "晚安"
     },
-    "componentBanner": {
-      "title": "向你的新搜索助手 Findto 问好",
-      "description": "借助 Findto，您可以搜索 Web、AI 和 Metaverse 上的资源。探索最好的互联网。"
-    },
-    "componentVoiceSearch": {
+    "voice": {
       "voice": "Voice",
       "speak": "Speak now",
       "allow": "Waiting..."
@@ -29,8 +30,6 @@
       "security": "安全",
       "privacy": "隐私"
     },
-    "widgetCarbon": { "title": "碳排放" },
-    "widgetPrivacy": { "title": "隐私保护" },
     "slogan": "Web、AI 和 Metaverse 上的去中心化搜索",
     "copyright": "创建者",
     "about": "关于",
@@ -54,12 +53,9 @@
     "stories": "最新动态",
     "categories": "模块",
     "category": "选定模式",
-    "feedback": {
-      "title": "发送反馈",
-      "url": "https://forms.gle/US69JvUT1qxYkiF58"
-    },
+
     "warnings": {
-      "torrent": "Notice: Torrent is not illegal. Downloading copyrighted content may be, depending of the local laws. Check your local legislation and respect it. Avoid legal issues."
+      "cookies": "Findto 使用 Cookie。我们尊重您的隐私，不会存储任何个人信息。"
     }
   },
   "categories": [

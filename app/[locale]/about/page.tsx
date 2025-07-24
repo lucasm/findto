@@ -27,8 +27,8 @@ export default function PageAbout() {
             <figure className={Style.icon}></figure>
           </Link>
 
-          <h1>{t('componentBanner.title')}</h1>
-          <p>{t('componentBanner.description')}</p>
+          <h1>{t('metadata.title')}</h1>
+          <p>{t('metadata.description')}</p>
 
           <CardsLink />
         </div>

@@ -4,49 +4,32 @@
     "code": "BR"
   },
   "t": {
-    "componentCookiesPopup": {
-      "title": "O Findto utiliza cookies. Respeitamos a sua privacidade e não armazenamos informações pessoais."
+    "metadata": {
+      "title": "Findto, assistente de buscas",
+      "description": "Seja livre. Busque na Web, IA e mais."
     },
-    "componentWelcome": {
+    "feedback": {
+      "title": "Enviar comentários",
+      "url": "https://forms.gle/r6XAyB1ZLn9qzwp16"
+    },
+    "welcome": {
       "goodMorning": "Bom dia",
       "goodEvening": "Boa tarde",
       "goodNight": "Boa noite"
     },
-    "componentBanner": {
-      "title": "Findto, assistente de buscas",
-      "description": "Seja livre. Busque na Web, IA e mais."
-    },
-    "componentVoiceSearch": {
+    "voice": {
       "voice": "Voz",
       "speak": "Fale",
       "allow": "Aguardando permissão..."
     },
-    "widgetPrivacy": { "title": "Privacidade" },
-    "privacyScore": [
-      "muito pobre",
-      "justa",
-      "boa",
-      "muito boa",
-      "excepcional",
-      "indisponível",
-      "ainda não foi analisado"
-    ],
     "widgetProtection": {
       "title": "Proteção",
-      "description": "O Findto não armazena buscas. Mas a fonte escolhida pode armazenar. Utilize os verificadores abaixo para conferir.",
+      "description": "Você está em um ambiente seguro. Use os verificadores abaixo para obter mais detalhes sobre a fonte de pesquisa selecionada.",
       "source": "Fonte",
       "carbon": "Emissão de carbono",
       "security": "Segurança",
       "privacy": "Privacidade"
     },
-    "widgetCarbon": { "title": "Carbono" },
-    "carbonScore": [
-      "mais limpo que outros sites",
-      "de emissão de carbono por visita",
-      "Energia sustentável",
-      "Energia suja",
-      "ainda não foi analisado"
-    ],
     "slogan": "Busca descentralizada",
     "copyright": "Criado no Brasil por",
     "about": "Sobre",
@@ -70,11 +53,8 @@
     "stories": "Novidades",
     "categories": "Modos",
     "category": "Modo",
-    "feedback": {
-      "title": "Enviar comentários",
-      "url": "https://forms.gle/r6XAyB1ZLn9qzwp16"
-    },
     "warnings": {
+      "cookies": "O Findto utiliza cookies. Respeitamos a sua privacidade e não armazenamos informações pessoais.",
       "torrent": "Aviso: Usar torrent para compartilhar arquivos não é ilegal, mas obter conteúdos protegidos por direitos autorais sem autorização é crime. Respeite a Lei de Direitos Autorais no Brasil (Lei 9.610/98) ou da sua localidade atual."
     }
   },
@@ -155,7 +135,7 @@
       "name": "AI",
       "name_translated": "IA",
       "active": true,
-      "description": "Use várias IAs ao mesmo tempo, como ChatGPT, Copilot, Gemini, Grok, DeepSeek e mais.",
+      "description": "Utilize várias IAs ao mesmo tempo: ChatGPT, Copilot, Gemini, Grok, DeepSeek e mais.",
       "data": [
         {
           "name": "ChatGPT",
@@ -234,7 +214,7 @@
     {
       "name": "Web",
       "active": true,
-      "description": "Busque o mesmo termo em vários mecanismos de busca: Google, Bing, DuckDuckGo, Brave e mais.",
+      "description": "Busque em múltiplos mecanismos de busca: Google, Bing, DuckDuckGo, Brave, Yahoo e mais.",
       "data": [
         {
           "name": "Google",
@@ -293,6 +273,7 @@
     {
       "name": "Social",
       "active": true,
+      "description": "Busque em todas as redes sociais: X, TikTok, Instagram, Facebook, Reddit e mais.",
       "data": [
         {
           "name": "X",
@@ -410,6 +391,7 @@
       "name": "Videos",
       "name_translated": "Vídeos",
       "active": true,
+      "description": "Encontre vídeos em plataformas populares: YouTube, Twitch, Globoplay, Netflix, Prime Video e mais.",
       "data": [
         {
           "name": "YouTube",
@@ -571,6 +553,7 @@
       "name": "Image",
       "name_translated": "Imagens",
       "active": true,
+      "description": "Encontre imagens em diversas fontes: Pinterest, Unsplash, Canva, GIPHY, Pexels e mais.",
       "data": [
         {
           "name": "Pinterest",
@@ -650,6 +633,7 @@
       "name": "Music",
       "name_translated": "Música",
       "active": true,
+      "description": "Busque músicas e letras no: Spotify, Apple Music, SoundCloud, YouTube Music, Amazon Music e mais.",
       "data": [
         {
           "name": "Spotify",
@@ -787,6 +771,7 @@
       "name": "News",
       "name_translated": "Notícias",
       "active": true,
+      "description": "Encontre notícias de fontes confiáveis: Globo, UOL, CNN, Folha, Estadão, Veja e mais.",
       "data": [
         {
           "name": "globo.com",
@@ -938,6 +923,7 @@
       "name": "Shopping",
       "name_translated": "Shopping",
       "active": true,
+      "description": "Encontre produtos em lojas populares: Amazon, Mercado Livre, Magalu, OLX, Americanas e mais.",
       "data": [
         {
           "name": "Amazon",
@@ -1039,6 +1025,7 @@
     {
       "name": "Local",
       "active": true,
+      "description": "Encontre locais e serviços próximos: Google Maps, Apple Maps, Airbnb, Expedia, Tripadvisor e mais.",
       "data": [
         {
           "name": "Google Maps",
@@ -1248,6 +1235,7 @@
       "name": "Academic",
       "name_translated": "Acadêmico",
       "active": true,
+      "description": "Pesquise artigos, livros e publicações acadêmicas em diversas fontes: Google Scholar, ResearchGate, SciELO, arXiv e mais.",
       "data": [
         {
           "name": "Google Scholar",
@@ -1467,6 +1455,7 @@
       "name": "Finance",
       "name_translated": "Finanças",
       "active": true,
+      "description": "Pesquise informações financeiras e econômicas: Google Finance, Mobills, Exame, Valor, Bloomberg, InfoMoney e mais.",
       "data": [
         {
           "name": "Google Finance",
@@ -1652,6 +1641,7 @@
       "name": "Legal",
       "name_translated": "Legal",
       "active": true,
+      "description": "Pesquise informações jurídicas e legais: Jusbrasil, Escavador, Reclame Aqui, GOV.BR, Congresso Nacional e mais.",
       "data": [
         {
           "name": "Jusbrasil",
@@ -2062,6 +2052,7 @@
       "name": "Code",
       "name_translated": "Código",
       "active": true,
+      "description": "Pesquise códigos, repositórios e pacotes: GitHub, Stack Overflow, CodePen, Glitch, Docker, npm, PyPI e mais.",
       "data": [
         {
           "name": "GitHub",
@@ -2223,6 +2214,7 @@
       "name": "Apps",
       "name_translated": "Aplicativos",
       "active": true,
+      "description": "Pesquise aplicativos e extensões: Google Play, App Store, Microsoft Store, Chrome Web Store, e mais.",
       "data": [
         {
           "name": "Google Play",
@@ -2316,6 +2308,7 @@
       "name": "Games",
       "name_translated": "Jogos",
       "active": true,
+      "description": "Pesquise jogos e plataformas: Steam, PlayStation, Xbox, Nintendo, Nuuvem, Epic Games e mais.",
       "data": [
         {
           "name": "Steam",

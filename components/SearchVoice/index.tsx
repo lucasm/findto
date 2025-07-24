@@ -86,9 +86,7 @@ export default function SearchVoice(
             isOpen={listening}
             onClose={() => resetTranscript()}
             title={
-              permission === 'granted'
-                ? t('componentVoiceSearch.speak')
-                : t('componentVoiceSearch.allow')
+              permission === 'granted' ? t('voice.speak') : t('voice.allow')
             }>
             {isMicrophoneAvailable && (
               <>
@@ -98,9 +96,7 @@ export default function SearchVoice(
             )}
           </Modal>
 
-          <Tooltip
-            text={t('componentVoiceSearch.voice')}
-            disable={isMobileViewport}>
+          <Tooltip text={t('voice.voice')} disable={isMobileViewport}>
             <button
               type="button"
               className={
@@ -112,7 +108,7 @@ export default function SearchVoice(
               onClick={handleSpeechRecognition}
               style={{ display: display ? 'inline-flex' : 'none' }}>
               <IconMic />
-              {t('componentVoiceSearch.voice')}
+              {t('voice.voice')}
             </button>
           </Tooltip>
         </div>

@@ -1,22 +1,23 @@
 {
   "country": {
-    "name": "United States of America",
+    "name": "United States",
     "code": "US"
   },
   "t": {
-    "componentCookiesPopup": {
-      "title": "Findto uses cookies. We respect your privacy and do not store personal information."
+    "metadata": {
+      "title": "Get started with Findto",
+      "description": "Search across multiple sources on Web, AI, and more."
     },
-    "componentWelcome": {
+    "feedback": {
+      "title": "Send feedback",
+      "url": "https://forms.gle/US69JvUT1qxYkiF58"
+    },
+    "welcome": {
       "goodMorning": "Good morning",
       "goodEvening": "Good evening",
       "goodNight": "Good night"
     },
-    "componentBanner": {
-      "title": "Get started with Findto",
-      "description": "Search across multiple sources on Web, AI, and more."
-    },
-    "componentVoiceSearch": {
+    "voice": {
       "voice": "Voice",
       "speak": "Speak",
       "allow": "Waiting..."
@@ -29,8 +30,6 @@
       "security": "Security",
       "privacy": "Privacy"
     },
-    "widgetCarbon": { "title": "Carbon" },
-    "widgetPrivacy": { "title": "Privacy" },
     "slogan": "Decentralized search on Web and AI",
     "copyright": "Made in Brazil by",
     "about": "About",
@@ -54,11 +53,8 @@
     "stories": "Stories",
     "categories": "Modes",
     "category": "Mode",
-    "feedback": {
-      "title": "Send feedback",
-      "url": "https://forms.gle/US69JvUT1qxYkiF58"
-    },
     "warnings": {
+      "cookies": "Findto uses cookies. We respect your privacy and do not store personal information.",
       "torrent": "Warning: The torrent is legal and often used to share files. Note that downloading copyrighted content without permission is a crime, as described in Digital Millennium Copyright Act (DMCA) law. Check your local laws and abide by them to avoid legal issues.",
       "darknet": "Warning: The darknet is legal and often used by academics, journalists, activists, and people in censored regions or under mass surveillance. Use it responsibly. Be cautious of scams, phishing, and illegal activities. To access it, you need a special browser, like Tor Browser."
     }
@@ -155,6 +151,7 @@
     {
       "name": "AI",
       "active": true,
+      "description": "Search across AI tools like ChatGPT, Copilot, Grok, Perplexity, DeepSeek, Claude, and more.",
       "data": [
         {
           "name": "ChatGPT",
@@ -229,6 +226,7 @@
     {
       "name": "Web",
       "active": true,
+      "description": "Search across web search engines like Google, Bing, DuckDuckGo, Brave, Yahoo, and more.",
       "data": [
         {
           "name": "Google",
@@ -307,6 +305,7 @@
     {
       "name": "Social",
       "active": true,
+      "description": "Search on social media platforms like X, Reddit, TikTok, Instagram, Facebook, LinkedIn, and more.",
       "data": [
         {
           "name": "X",
@@ -386,6 +385,7 @@
     {
       "name": "Videos",
       "active": true,
+      "description": "Search videos on YouTube, Twitch, IMDb, Netflix, Prime Video, Disney+, HBO Max, and more.",
       "data": [
         {
           "name": "YouTube",
@@ -510,6 +510,7 @@
     {
       "name": "Image",
       "active": true,
+      "description": "Search images on Pinterest, Unsplash, GIPHY, Flickr, Pexels, and more.",
       "data": [
         {
           "name": "Pinterest",
@@ -580,6 +581,7 @@
     {
       "name": "Music",
       "active": true,
+      "description": "Search across music platforms like Spotify, Apple Music, SoundCloud, YouTube Music, Amazon Music, Deezer, and more.",
       "data": [
         {
           "name": "Spotify",
@@ -696,6 +698,7 @@
     {
       "name": "News",
       "active": true,
+      "description": "Search news on CNN, NY Times, Reuters, BBC, Guardian, Forbes, Time, and more.",
       "data": [
         {
           "name": "CNN",
@@ -848,6 +851,7 @@
     {
       "name": "Shopping",
       "active": true,
+      "description": "Search products on Amazon, eBay, Walmart, Best Buy, Etsy,Temu, and more.",
       "data": [
         {
           "name": "Amazon",
@@ -911,6 +915,7 @@
     {
       "name": "Local",
       "active": true,
+      "description": "Search local places and services on Google Maps, Apple Maps, Airbnb, Tripadvisor, Booking, and more.",
       "data": [
         {
           "name": "Google Maps",
@@ -981,6 +986,7 @@
     {
       "name": "Academic",
       "active": true,
+      "description": "Search academic resources on Google Scholar, Wikipedia, ResearchGate, JSTOR, CORE, PLOS ONE, arXiv, and more.",
       "data": [
         {
           "name": "Google Scholar",
@@ -1097,6 +1103,7 @@
     {
       "name": "Job",
       "active": true,
+      "description": "Search job listings on LinkedIn, Indeed, Glassdoor, Upwork, Fiverr, and more.",
       "data": [
         {
           "name": "LinkedIn",
@@ -1151,6 +1158,7 @@
     {
       "name": "Code",
       "active": true,
+      "description": "Search code on GitHub, Stack Overflow, Sourcegraph, CodePen, Glitch, and more.",
       "data": [
         {
           "name": "GitHub",
@@ -1271,6 +1279,7 @@
     {
       "name": "Apps",
       "active": true,
+      "description": "Search apps on Google Play, App Store, Microsoft Store, Chrome Web Store, Meta Quest, Apple Vision Pro, and more.",
       "data": [
         {
           "name": "AlternativeTo",
@@ -1438,6 +1447,7 @@
     {
       "name": "Darknet",
       "active": true,
+      "description": "Search on the dark web using various onion search engines.",
       "data": [
         {
           "name": "DuckDuckGo",

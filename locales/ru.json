@@ -4,19 +4,20 @@
     "code": "RU"
   },
   "t": {
-    "componentCookiesPopup": {
-      "title": "Findto использует файлы cookie. Мы уважаем вашу конфиденциальность и не храним персональные данные."
+    "metadata": {
+      "title": "Познакомьтесь с Findto, вашим новым помощником по поиску",
+      "description": "Децентрализованный поиск в Интернете и ИИ."
     },
-    "componentWelcome": {
+    "feedback": {
+      "title": "Отправить отзыв",
+      "url": "https://forms.gle/US69JvUT1qxYkiF58"
+    },
+    "welcome": {
       "goodMorning": "Доброе утро",
       "goodEvening": "Добрый день",
       "goodNight": "Добрый вечер"
     },
-    "componentBanner": {
-      "title": "Познакомьтесь с Findto, вашим новым помощником по поиску",
-      "description": "Децентрализованный поиск в Интернете и ИИ."
-    },
-    "componentVoiceSearch": {
+    "voice": {
       "voice": "Voice",
       "speak": "Speak now",
       "allow": "Waiting..."
@@ -29,8 +30,6 @@
       "security": "Безопасность",
       "privacy": "Частная жизнь"
     },
-    "widgetCarbon": { "title": "Углерод" },
-    "widgetPrivacy": { "title": "Частная жизнь" },
     "slogan": "Децентрализованный поиск в Интернете и ИИ",
     "copyright": "Сделано в Бразилии компанией",
     "about": "О проекте",
@@ -54,12 +53,8 @@
     "stories": "Истории",
     "categories": "Режимы поиска",
     "category": "Режим поиска",
-    "feedback": {
-      "title": "Отправить отзыв",
-      "url": "https://forms.gle/US69JvUT1qxYkiF58"
-    },
     "warnings": {
-      "torrent": "Notice: Torrent is not illegal. Downloading copyrighted content may be, depending of the local laws. Check your local legislation and respect it. Avoid legal issues."
+      "cookies": "Findto использует файлы cookie. Мы уважаем вашу конфиденциальность и не храним персональные данные."
     }
   },
   "categories": [

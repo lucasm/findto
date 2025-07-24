@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react'
 import Style from './WidgetCarbon.module.css'
 import useSWR from 'swr'
-import { useTranslations } from 'next-intl'
 import { fetcher } from '@/utils/http'
 import { useSearch } from '@/contexts/SearchContext'
 import Donut from '@/components/Donut'
@@ -36,7 +35,6 @@ type DivProps = React.HTMLAttributes<HTMLDivElement>
 
 export default function WidgetCarbon({ className = '', ...props }: DivProps) {
   const { searchUrl, search, domain } = useSearch()
-  const t = useTranslations('t')
 
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
@@ -65,7 +63,7 @@ export default function WidgetCarbon({ className = '', ...props }: DivProps) {
 
   return (
     <WidgetDropdown
-      title={t('widgetCarbon.title') ?? 'Carbon'}
+      title="Carbon"
       //   icon={<IconCarbon />}
       isWidgetOpen={(state) => setIsOpen(state)}
       credits={{

@@ -10,8 +10,8 @@ export default function Banner() {
     <section className={Styles.container}>
       <div className={Styles.containerBanner}>
         <div>
-          <h3>{t('componentBanner.title')}</h3>
-          <p>{t('componentBanner.description')}</p>
+          <h3>{t('metadata.title')}</h3>
+          <p>{t('metadata.description')}</p>
         </div>
 
         <div className={Styles.buttonsContainer}>

@@ -36,7 +36,6 @@
   gap: 0;
   border-radius: 1.5rem;
   background: var(--background-body);
-  /* box-shadow: var(--box-shadow); */
 }
 .searchInput label {
   font-size: 0;
@@ -209,7 +208,6 @@
   }
   .buttons button {
     font-size: 0.65rem;
-    /* height: 1.5rem; */
     width: 5.35rem;
     padding: 0.625rem;
     word-break: break-word;

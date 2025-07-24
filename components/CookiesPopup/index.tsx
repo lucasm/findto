@@ -39,7 +39,7 @@ const CookiesPopup = () => {
       className={`${styles.cookiesPopup} ${
         isVisible ? styles.slideUp : styles.slideDown
       }`}>
-      <p>{t('componentCookiesPopup.title')}</p>
+      <p>{t('warnings.cookies')}</p>
 
       <div>
         <button onClick={handleAccept}>{t('accept')}</button>

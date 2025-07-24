@@ -2,7 +2,6 @@
 import { useEffect, useRef, useState } from 'react'
 import Styles from '../WidgetPrivacy/WidgetPrivacy.module.css'
 import useSWR from 'swr'
-import { useTranslations } from 'next-intl'
 import { useSearch } from '@/contexts/SearchContext'
 import { fetcher } from '@/utils/http'
 import { extractDomain, isValidUrl } from '@/utils/url'
@@ -21,7 +20,6 @@ type DivProps = React.HTMLAttributes<HTMLDivElement>
 
 export default function WidgetPrivacy({ className = '', ...props }: DivProps) {
   const { searchUrl } = useSearch()
-  const t = useTranslations('t')
 
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const containerRef = useRef<HTMLDivElement | null>(null)
@@ -107,7 +105,7 @@ export default function WidgetPrivacy({ className = '', ...props }: DivProps) {
 
   return (
     <WidgetDropdown
-      title={t('widgetPrivacy.title') ?? 'Privacy'}
+      title="Privacy"
       //   icon={<IconShield />}
       isWidgetOpen={(state) => setIsOpen(state)}
       credits={{

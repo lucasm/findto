@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: 'Findto | %s',
   },
   description:
-    'Findto is an decentralized search assistant. Be free. Search on the Web, AI, Social, Videos, Images, Music, and more.',
+    'Decentralized search on AI, Web, Social, Videos, Images, Music, Academic, and more. Be free with Findto search assistant.',
   authors: [
     { name: 'Findto', url: 'https://findto.app' },
     { name: 'Lucas Menezes', url: 'https://lucasm.dev' },
