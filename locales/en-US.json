@@ -24,7 +24,7 @@
     },
     "widgetProtection": {
       "title": "Protection",
-      "description": "You are in a secure environment. Use the checkers below to get more details about the selected search source.",
+      "description": "Findto never tracks your searches. Check the details of your chosen search source in the checkers below.",
       "source": "Source",
       "carbon": "Carbon footprint",
       "security": "Security",

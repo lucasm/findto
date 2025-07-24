@@ -24,7 +24,7 @@
     },
     "widgetProtection": {
       "title": "Proteção",
-      "description": "Você está em um ambiente seguro. Use os verificadores abaixo para obter mais detalhes sobre a fonte de pesquisa selecionada.",
+      "description": "O Findto nunca rastreia suas pesquisas. Confira os detalhes da fonte escolhida nos verificadores abaixo.",
       "source": "Fonte",
       "carbon": "Emissão de carbono",
       "security": "Segurança",
@@ -1262,12 +1262,12 @@
           "action": "https://search.scielo.org/?q="
         },
         {
-          "name": "arXiv",
-          "action": "https://arxiv.org/search/?searchtype=all&query="
-        },
-        {
           "name": "ResearchGate",
           "action": "https://www.researchgate.net/search?q="
+        },
+        {
+          "name": "arXiv",
+          "action": "https://arxiv.org/search/?searchtype=all&query="
         },
         {
           "name": "PubMed",
