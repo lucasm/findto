@@ -10,7 +10,7 @@ interface UserLocation {
 
 // create Context for global state
 interface SearchContextType {
-  refSearchInput: React.RefObject<HTMLTextAreaElement>
+  refSearchInput: React.RefObject<HTMLTextAreaElement | null>
   refButtons: React.RefObject<{ [key: string]: HTMLButtonElement | null }>
   putValue: (value: string) => void
   inputValue: string | undefined

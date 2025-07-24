@@ -1,6 +1,5 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import type { Viewport } from 'next'
+import './global.css'
+import type { Metadata, Viewport } from 'next'
 import localFont from 'next/font/local'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
@@ -73,13 +72,16 @@ export const viewport: Viewport = {
   themeColor: 'white',
 }
 
-export default async function Layout({
-  children,
-  params: { locale },
-}: {
+export default async function Layout(props: {
   children: React.ReactNode
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
+  const params = await props.params
+
+  const { locale } = params
+
+  const { children } = props
+
   // Ensure that the incoming `locale` is valid
   if (!routing.locales.includes(locale as never)) {
     notFound()
@@ -93,7 +95,8 @@ export default async function Layout({
     <html
       lang={locale}
       className={fontFamily.className}
-      suppressHydrationWarning>
+      suppressHydrationWarning
+      data-scroll-behavior="smooth">
       <body>
         <ThemeProvider
           attribute="data-theme"

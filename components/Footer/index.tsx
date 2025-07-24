@@ -1,4 +1,4 @@
-import Style from './Footer.module.css'
+import styles from './Footer.module.css'
 import Link from 'next/link'
 import SvgLogo from '../SvgLogo'
 import {
@@ -16,8 +16,8 @@ export default function AppFooter() {
   const t = useTranslations('t')
 
   return (
-    <footer className={Style.footer}>
-      <div className={Style.container}>
+    <footer className={styles.footer}>
+      <div className={styles.container}>
         <ul>
           <li>
             <Link href="/" title="Findto">

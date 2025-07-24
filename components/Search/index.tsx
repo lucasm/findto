@@ -274,7 +274,7 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
                           ? `/images/logos/${normalizeId(source?.name)}.svg`
                           : '/images/logos/default.svg'
                       }
-                      alt={source?.name}
+                      alt=""
                       width={24}
                       height={24}
                     />

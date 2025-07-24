@@ -13,6 +13,7 @@ import {
   IconTrending,
   IconFileSearch,
 } from '../SvgIcons'
+import { JSX } from 'react'
 
 // Define the type for a feature item
 interface Feature {

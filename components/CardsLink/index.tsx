@@ -9,6 +9,7 @@ import {
   IconInstagram,
 } from '../SvgIcons'
 import { useTranslations } from 'next-intl'
+import { JSX } from 'react'
 
 interface ICardsLink {
   title: string

@@ -29,7 +29,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "next.config.mjs",
+    "next.config.ts",
     ".next/types/**/*.ts",
     "app/[locale]/search/route.js"
   ],

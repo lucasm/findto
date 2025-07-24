@@ -13,12 +13,11 @@ interface PageParams {
 }
 
 interface PageProps {
-  params: PageParams
+  params: Promise<PageParams>
 }
 
-export async function generateMetadata({
-  params,
-}: PageProps): Promise<Metadata> {
+export async function generateMetadata(props: PageProps): Promise<Metadata> {
+  const params = await props.params;
   const data = await getLocaleData(params.locale)
   const selectedCategory = data?.categories?.find(
     (category: ISearchCategory) =>
@@ -38,7 +37,8 @@ export async function generateMetadata({
   }
 }
 
-export default async function Page({ params }: PageProps) {
+export default async function Page(props: PageProps) {
+  const params = await props.params;
   const data = await getLocaleData(params.locale)
   const selectedCategory = data?.categories?.find(
     (category: ISearchCategory) =>
