@@ -105,13 +105,13 @@
           "action": "https://www.instagram.com/explore/tags/"
         },
         {
-          "name": "Mercado Livre",
-          "action": "https://lista.mercadolivre.com.br/"
-        },
-        {
           "name": "Amazon",
           "action": "https://www.amazon.com.br/s?k=",
           "additional": "&tag=lucasmdev0d-20"
+        },
+        {
+          "name": "Mercado Livre",
+          "action": "https://lista.mercadolivre.com.br/"
         },
         {
           "name": "Shopee",
@@ -1084,8 +1084,8 @@
           "action": "https://www.yelp.com.br/search?find_desc="
         },
         {
-          "name": "Bing Travel",
-          "action": "https://www.bing.com/travel/place-information?q="
+          "name": "Bing Maps",
+          "action": "https://www.bing.com/maps?q="
         },
         {
           "name": "Waze",

@@ -69,12 +69,12 @@
           "action": "https://www.google.com/search?q="
         },
         {
-          "name": "Bing",
-          "action": "https://www.bing.com/search?q="
-        },
-        {
           "name": "DuckDuckGo",
           "action": "https://duckduckgo.com/?q="
+        },
+        {
+          "name": "Bing",
+          "action": "https://www.bing.com/search?q="
         },
         {
           "name": "ChatGPT",
@@ -118,16 +118,16 @@
           "additional": "&tag=lucasmdev0d-20"
         },
         {
-          "name": "Ebay",
-          "action": "https://www.ebay.com/sch/i.html?_nkw="
+          "name": "Temu",
+          "action": "https://www.temu.com/search_result.html?search_key="
         },
         {
           "name": "Walmart",
           "action": "https://www.walmart.com/search/?query="
         },
         {
-          "name": "Temu",
-          "action": "https://www.temu.com/search_result.html?search_key="
+          "name": "Ebay",
+          "action": "https://www.ebay.com/sch/i.html?_nkw="
         },
         {
           "name": "Yahoo",
@@ -970,12 +970,12 @@
           "action": "https://www.yelp.com/search?find_desc="
         },
         {
-          "name": "Mapquest",
-          "action": "https://www.mapquest.com/search/"
+          "name": "Bing Maps",
+          "action": "https://www.bing.com/maps?q="
         },
         {
-          "name": "Bing Travel",
-          "action": "https://www.bing.com/travel/place-information?q="
+          "name": "Mapquest",
+          "action": "https://www.mapquest.com/search/"
         },
         {
           "name": "HERE WeGo",
@@ -990,8 +990,8 @@
           "action": "https://uber.com/?q="
         },
         {
-          "name": "Foursquare",
-          "action": "https://foursquare.com/explore?q="
+          "name": "Waze",
+          "action": "https://www.waze.com/live-map/directions/"
         }
       ]
     },
