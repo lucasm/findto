@@ -1,14 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg role="img" itemprop="logo" width="32" height="32" preserveAspectRatio="xMinYMin" viewBox="0 0 34.844444 32" version="1.1" id="svg1" sodipodi:docname="time.com.svg" inkscape:version="1.4-beta2 (9aaf4f34, 2024-07-30)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <defs id="defs1" />
-  <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="2.2994766" inkscape:cx="42.183513" inkscape:cy="30.22427" inkscape:window-width="1440" inkscape:window-height="872" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="svg1" />
-  <title id="title1">TIME logo</title>
-  <path d="M 2.2051,0 H 32.639344 V 6.9431734 H 32.086461 L 32.15075,2.4943993 H 20.128774 V 33.815826 h 3.471586 v 1.028618 H 11.719819 v -1.028618 h 3.214432 V 2.4943993 H 2.7836978 V 6.9431734 H 2.2051 Z" id="path1" style="stroke-width:1.28577;fill:#000000" />
-  <metadata id="metadata1">
-    <rdf:RDF>
-      <cc:Work rdf:about="">
-        <dc:title>TIME logo</dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
+<svg width="32" height="32" preserveAspectRatio="xMinYMin" viewBox="0 0 34.844 32" xmlns="http://www.w3.org/2000/svg">
+  <path d="M2.205 0H32.64v6.943h-.553l.065-4.449H20.129v31.322H23.6v1.028H11.72v-1.028h3.214V2.494H2.784v4.45h-.579Z" style="stroke-width:1.28577;fill:#000"/>
 </svg>

@@ -1,19 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg id="Camada_1" data-name="Camada 1" viewBox="0 0 32 32" version="1.1" sodipodi:docname="flickr.svg" width="32" height="32" inkscape:version="1.4-beta2 (9aaf4f34, 2024-07-30)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <sodipodi:namedview id="namedview3" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="2.771386" inkscape:cx="9.0207573" inkscape:cy="45.645032" inkscape:window-width="1440" inkscape:window-height="790" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="Camada_1" />
+<svg id="Camada_1" data-name="Camada 1" version="1.1" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
   <defs id="defs1">
-    <style id="style1">.cls-1{fill:#000;}</style>
+    <style id="style1">
+      .cls-1{fill:#000}
+    </style>
   </defs>
-  <title id="title1">flickr</title>
-  <g id="g3" transform="matrix(0.43360432,0,0,0.43360432,1.2266669e-6,-11.273711)">
-    <path class="cls-1" d="M 39.6,62.9 A 17.1,17.1 0 1 0 56.7,45.8 17.09,17.09 0 0 0 39.6,62.9 Z" id="path2" />
-    <path class="cls-1" d="M 0,62.9 A 17.1,17.1 0 1 0 17.1,45.8 17.09,17.09 0 0 0 0,62.9 Z" id="path3" />
+  <g id="g3" transform="matrix(.4336 0 0 .4336 0 -11.274)">
+    <path class="cls-1" d="M39.6 62.9a17.1 17.1 0 1 0 17.1-17.1 17.09 17.09 0 0 0-17.1 17.1Z" id="path2"/>
+    <path class="cls-1" d="M0 62.9a17.1 17.1 0 1 0 17.1-17.1A17.09 17.09 0 0 0 0 62.9Z" id="path3"/>
   </g>
-  <metadata id="metadata3">
-    <rdf:RDF>
-      <cc:Work rdf:about="">
-        <dc:title>flickr</dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
 </svg>

@@ -526,7 +526,7 @@
         },
         {
           "name": "Flickr",
-          "action": "https://www.flickr.com/search?q="
+          "action": "https://www.flickr.com/search/?text="
         },
         {
           "name": "Pexels",
@@ -637,7 +637,7 @@
         },
         {
           "name": "Musixmatch",
-          "action": "https://www.musixmatch.com/search/"
+          "action": "https://www.musixmatch.com/search?query="
         },
         {
           "name": "Bandcamp",
@@ -698,7 +698,7 @@
     {
       "name": "News",
       "active": true,
-      "description": "Search news on CNN, NY Times, Reuters, BBC, Guardian, Forbes, Time, and more.",
+      "description": "Search news on CNN, NY Times, Reuters, BBC, Guardian, Forbes, Time, CNBC, and more.",
       "data": [
         {
           "name": "CNN",
@@ -709,12 +709,28 @@
           "action": "https://www.nytimes.com/search?query="
         },
         {
-          "name": "Reuters",
-          "action": "https://www.reuters.com/site-search/?query="
+          "name": "Google News",
+          "action": "https://news.google.com/search?q="
         },
         {
           "name": "BBC",
           "action": "https://www.bbc.co.uk/search?q="
+        },
+        {
+          "name": "Reuters",
+          "action": "https://www.reuters.com/site-search/?query="
+        },
+        {
+          "name": "WSJ",
+          "action": "https://www.wsj.com/search?query="
+        },
+        {
+          "name": "Bloomberg",
+          "action": "https://www.bloomberg.com/search?query="
+        },
+        {
+          "name": "CNBC",
+          "action": "https://www.cnbc.com/search/?query="
         },
         {
           "name": "Guardian",
@@ -722,27 +738,19 @@
         },
         {
           "name": "AP",
-          "action": "https://www.ap.org/search?q="
-        },
-        {
-          "name": "Vox",
-          "action": "https://www.vox.com/search?q="
-        },
-        {
-          "name": "Economist",
-          "action": "https://www.economist.com/search?q="
+          "action": "https://www.ap.org/?s="
         },
         {
           "name": "Forbes",
           "action": "https://www.forbes.com/search/?q="
         },
         {
-          "name": "Bloomberg",
-          "action": "https://www.bloomberg.com/search?query="
-        },
-        {
           "name": "Financial Times",
           "action": "https://www.ft.com/search?q="
+        },
+        {
+          "name": "Economist",
+          "action": "https://www.economist.com/search?q="
         },
         {
           "name": "Washington Post",
@@ -754,7 +762,11 @@
         },
         {
           "name": "Newsweek",
-          "action": "https://www.newsweek.com/search/site/?q="
+          "action": "https://search.newsweek.com/?q="
+        },
+        {
+          "name": "Vox",
+          "action": "https://www.vox.com/search?q="
         },
         {
           "name": "Aljazeera",
@@ -762,7 +774,7 @@
         },
         {
           "name": "AFP",
-          "action": "https://www.afp.com/en/search/results/"
+          "action": "https://factcheck.afp.com/fact-checking-search-results?search_api_fulltext="
         },
         {
           "name": "DW",

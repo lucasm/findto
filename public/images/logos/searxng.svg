@@ -1,10 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="32mm" height="32mm" viewBox="0 0 32 32" version="1.1" id="svg1" sodipodi:docname=" searxng.svg" inkscape:version="1.4-beta2 (9aaf4f34, 2024-07-30)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-  <defs id="defs1" />
-  <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:document-units="mm" inkscape:zoom="0.33011763" inkscape:cx="287.77621" inkscape:cy="380.16751" inkscape:window-width="1440" inkscape:window-height="790" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="svg1" />
-  <g transform="matrix(0.3489253,0,0,0.3489253,-14.278371,-6.3868721)" id="g1">
-    <circle cx="75.920998" cy="53.903" r="30" fill="none" fill-opacity="1" stroke="#3050ff" stroke-width="10" stroke-miterlimit="4" stroke-dasharray="none" stroke-opacity="1" id="circle1" style="stroke:#000000;stroke-opacity:1" />
-    <path d="m 67.515,37.915 a 18,18 0 0 1 21.051,3.313 18,18 0 0 1 3.138,21.078" fill="none" fill-opacity="1" stroke="#3050ff" stroke-width="5" stroke-miterlimit="4" stroke-dasharray="none" stroke-opacity="1" id="path1" style="stroke:#000000;stroke-opacity:1" />
-    <rect width="18.846001" height="39.963001" x="3.7060001" y="122.09" ry="0" transform="rotate(-46.235)" opacity="1" fill="#3050ff" fill-opacity="1" stroke="none" stroke-width="8" stroke-miterlimit="4" stroke-dasharray="none" stroke-opacity="1" id="rect1" style="fill:#000000" />
+<svg width="32mm" height="32mm" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(.34893 0 0 .34893 -14.278 -6.387)">
+    <circle cx="75.921" cy="53.903" r="30" fill="none" stroke="#3050ff" stroke-width="10" style="stroke:#000;stroke-opacity:1"/>
+    <path d="M67.515 37.915a18 18 0 0 1 21.051 3.313 18 18 0 0 1 3.138 21.078" fill="none" stroke="#3050ff" stroke-width="5" style="stroke:#000;stroke-opacity:1"/>
+    <rect width="18.846" height="39.963" x="3.706" y="122.09" ry="0" transform="rotate(-46.235)" fill="#3050ff" style="fill:#000"/>
   </g>
 </svg>

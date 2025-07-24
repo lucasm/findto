@@ -286,9 +286,9 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
             ))}
           </ul>
         </div>
-      </div>
 
-      {renderWarnings()}
+        {renderWarnings()}
+      </div>
     </section>
   )
 }

@@ -1,16 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-
-<svg fill="#000000" width="32" height="32" viewBox="0 0 0.96 0.96" role="img" version="1.1" id="svg1" sodipodi:docname="hulu-svgrepo-com.svg" inkscape:version="1.4-beta2 (9aaf4f34, 2024-07-30)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <defs id="defs1" />
-  <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="0.97353075" inkscape:cx="-29.788479" inkscape:cy="-10.785484" inkscape:window-width="1440" inkscape:window-height="790" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="svg1" />
-  <title id="title1">Hulu icon</title>
-  <path d="m 0.57576055,0.29466334 h -0.1439201 a 0.23581047,0.23581047 0 0 0 -0.082314,0.0161596 V 0 h -0.2310227 v 0.96 h 0.2314215 V 0.58054862 a 0.0642394,0.0642394 0 0 1 0.062244,-0.0678304 h 0.1352618 a 0.0634414,0.0634414 0 0 1 0.063441,0.0622444 v 0.38264337 h 0.2306242 V 0.54144638 c 0,-0.1759601 -0.089776,-0.24586534 -0.2354115,-0.24586534" id="path1" style="stroke-width:0.0399002;fill:#000000" />
-  <metadata id="metadata1">
-    <rdf:RDF>
-      <cc:Work rdf:about="">
-        <dc:title>Hulu icon</dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
+<svg width="32" height="32" viewBox="0 0 0.96 0.96" xmlns="http://www.w3.org/2000/svg">
+  <path d="M.576.295H.432A.236.236 0 0 0 .35.31V0H.119v.96h.23V.58A.064.064 0 0 1 .413.514h.135a.063.063 0 0 1 .064.062v.383h.23V.54C.841.365.751.296.606.296" style="stroke-width:.0399002;fill:#000"/>
 </svg>

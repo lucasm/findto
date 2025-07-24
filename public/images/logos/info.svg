@@ -1,18 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg id="Camada_1" data-name="Camada 1" viewBox="0 0 32 32" version="1.1" width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<svg data-name="Camada 1" version="1.1" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
   <defs id="defs1">
-    <style id="style1">.cls-1{fill:#fff;fill-rule:evenodd;}.cls-2{mask:url(#mask);}.cls-3{mask:url(#mask-2);}.cls-4{mask:url(#mask-3);}.cls-5{mask:url(#mask-4);}</style>
+    <style id="style1">
+      .cls-1{fill:#fff;fill-rule:evenodd}.cls-2{mask:url(#mask)}.cls-3{mask:url(#mask-2)}.cls-4{mask:url(#mask-3)}.cls-5{mask:url(#mask-4)}
+    </style>
   </defs>
-  <title id="title1">info</title>
-  <g id="g1" transform="matrix(2.6772478,0,0,2.6772478,1.3634009,-40.609662)">
-    <path d="m 5.4670319,15.168436 a 2.0258035,2.0258035 0 0 0 0,4.051607 2.0258035,2.0258035 0 0 0 0,-4.051607" id="path16" style="stroke-width:0.167145" />
-    <path d="M 7.2688601,27.121009 V 19.98724 A 3.6220423,3.6220423 0 0 1 3.6652037,19.93208 v 7.188927 z" id="path6" style="stroke-width:0.167145" />
+  <g id="g1" transform="matrix(2.67725 0 0 2.67725 1.363 -40.61)">
+    <path d="M5.467 15.168a2.026 2.026 0 0 0 0 4.052 2.026 2.026 0 0 0 0-4.052" id="path16" style="stroke-width:.167145"/>
+    <path d="M7.269 27.121v-7.134a3.622 3.622 0 0 1-3.604-.055v7.189z" id="path6" style="stroke-width:.167145"/>
   </g>
-  <metadata id="metadata8">
-    <rdf:RDF>
-      <cc:Work rdf:about="">
-        <dc:title>info</dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
 </svg>

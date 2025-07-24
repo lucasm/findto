@@ -132,8 +132,8 @@
           "action": "https://www.wildberries.ru/catalog/0/search.aspx?search="
         },
         {
-          "name": "Government.ru",
-          "action": "http://government.ru/en/search/?q="
+          "name": "Правительстве",
+          "action": "http://government.ru/search/?q="
         }
       ]
     },

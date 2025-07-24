@@ -9,7 +9,7 @@
       "description": "Seja livre. Busque na Web, IA e mais."
     },
     "feedback": {
-      "title": "Enviar comentários",
+      "title": "Reportar erro",
       "url": "https://forms.gle/r6XAyB1ZLn9qzwp16"
     },
     "welcome": {
@@ -577,7 +577,7 @@
         },
         {
           "name": "Flickr",
-          "action": "https://www.flickr.com/search?q="
+          "action": "https://www.flickr.com/search/?text="
         },
         {
           "name": "Openverse",
@@ -689,7 +689,7 @@
         },
         {
           "name": "Musixmatch",
-          "action": "https://www.musixmatch.com/search?q="
+          "action": "https://www.musixmatch.com/search?query="
         },
         {
           "name": "Palco MP3",

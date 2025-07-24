@@ -1,15 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg id="Camada_1" data-name="Camada 1" viewBox="0 0 32 32" version="1.1" width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <defs id="defs1">
-    <style id="style1">.cls-1{fill-rule:evenodd;}</style>
-  </defs>
-  <title id="title1">monster-logo-h-teal</title>
-  <path class="cls-1" d="M 32,0 16,14.967742 0,0 V 32 H 7.2258065 V 16.516129 L 16,24.258065 24.774194,16.516129 V 32 H 32 Z" id="path3" style="fill:#000000;stroke-width:1.03226" />
-  <metadata id="metadata3">
-    <rdf:RDF>
-      <cc:Work rdf:about="">
-        <dc:title>monster-logo-h-teal</dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+  <path d="M32 0 16 14.968 0 0v32h7.226V16.516L16 24.258l8.774-7.742V32H32Z" style="fill:#000;stroke-width:1.03226;fill-rule:evenodd"/>
 </svg>

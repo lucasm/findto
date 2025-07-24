@@ -1,16 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-
-<svg fill="#000000" width="32" height="32" viewBox="0 0 0.96 0.96" role="img" version="1.1" id="svg1" sodipodi:docname="indeed.svg" inkscape:version="1.4-beta2 (9aaf4f34, 2024-07-30)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <defs id="defs1" />
-  <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="0.0325" inkscape:cx="400" inkscape:cy="384.61538" inkscape:window-width="1440" inkscape:window-height="790" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="svg1" />
-  <title id="title1">Indeed icon</title>
-  <path d="m 0.59290294,0.4122831 a 0.12071493,0.12071493 0 1 1 0.0528,-0.161513 0.12023495,0.12023495 0 0 1 -0.0528,0.161753 z m -0.128875,-0.389423 c 0.0988,-0.03604 0.211751,-0.03408 0.296308,0.03928 a 0.14347398,0.14347398 0 0 1 0.04092,0.0548 c 0.0085,0.0276 -0.02996,-0.0028 -0.0352,-0.0067 a 0.3762642,0.3762642 0 0 0 -0.086,-0.0438 c -0.16655,-0.051 -0.324143,0.04184 -0.421499,0.186192 a 0.78016724,0.78016724 0 0 0 -0.08992,0.205031 0.1167151,0.1167151 0 0 1 -0.0085,0.02568 c -0.0043,0.0082 -0.002,-0.02188 -0.002,-0.02288 a 0.63281343,0.63281343 0 0 1 0.0172,-0.08956 c 0.04512,-0.157313 0.145072,-0.288308 0.288666,-0.348305 z m 0.0015,0.839684 v -0.350505 c 0.01,0.001 0.01944,0.0015 0.02944,0.0015 a 0.24666964,0.24666964 0 0 0 0.128755,-0.0358 v 0.384784 c 0,0.03288 -0.006,0.0572 -0.0208,0.07304 a 0.07495685,0.07495685 0 0 1 -0.05808,0.0244 0.07299693,0.07299693 0 0 1 -0.05708,-0.02436 c -0.01474,-0.01616 -0.02242,-0.04052 -0.02242,-0.073 z" id="path1" style="stroke-width:0.0399983" />
-  <metadata id="metadata1">
-    <rdf:RDF>
-      <cc:Work rdf:about="">
-        <dc:title>Indeed icon</dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
+<svg width="32" height="32" viewBox="0 0 0.96 0.96" xmlns="http://www.w3.org/2000/svg">
+  <path d="M.593.412A.12.12 0 1 1 .646.251a.12.12 0 0 1-.053.162zM.464.022C.563-.012.676-.01.76.063a.143.143 0 0 1 .041.055C.81.145.771.114.766.11A.376.376 0 0 0 .68.066C.514.016.356.108.26.253a.78.78 0 0 0-.09.205.117.117 0 0 1-.009.025C.156.492.158.461.158.46A.633.633 0 0 1 .175.37.52.52 0 0 1 .464.024zm.002.84v-.35a.29.29 0 0 0 .029.002.247.247 0 0 0 .129-.036v.385C.624.895.618.92.603.936A.075.075 0 0 1 .545.96.073.073 0 0 1 .488.936C.473.919.465.896.465.863z" style="stroke-width:.0399983"/>
 </svg>

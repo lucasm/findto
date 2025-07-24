@@ -83,21 +83,6 @@ html {
   outline-color: var(--color-black);
   background: var(--background-body);
 }
-main {
-  text-align: center;
-}
-
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
 a,
 button,
@@ -182,13 +167,6 @@ article hr {
 }
 
 /* Colors Animation */
-.backgroundFindto {
-  background: var(--color-findto);
-}
-.fillFindto {
-  fill: var(--color-text-black);
-}
-
 .colors {
   animation: colorsAnimation 60s ease alternate infinite;
 }
@@ -232,19 +210,6 @@ article hr {
 ::-ms-input-placeholder {
   color: var(--color-text-black);
   opacity: var(--opacity);
-}
-
-.container {
-  position: relative;
-  margin: 0 auto;
-  width: 100%;
-  max-width: var(--max-size-container);
-  display: inline-flex;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 1rem 1rem 3rem;
 }
 
 .sidebar {
