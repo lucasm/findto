@@ -1,7 +1,7 @@
 .section {
   margin: 0 auto;
   /* display: flex; */
-  padding: 2rem 0 3rem;
+  padding: 1rem 0 3rem;
   min-height: 75vh;
 }
 .container {
@@ -208,7 +208,10 @@
 
 @media screen and (max-width: 576px) {
   .container {
-    gap: 1.5rem;
+    gap: 1rem;
+  }
+  .section {
+    padding-top: 0;
   }
   /* .buttons ul {
     white-space: nowrap;
