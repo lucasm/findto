@@ -229,6 +229,10 @@
     word-break: break-word;
     text-wrap: wrap;
   }
+  .buttons figure {
+    height: 1.625rem;
+    width: 1.625rem;
+  }
 
   .searchLogo {
     height: 1.25rem;
