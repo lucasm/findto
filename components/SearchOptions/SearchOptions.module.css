@@ -1,9 +1,3 @@
 .container select {
-  background-color: var(--background-body);
-}
-
-@media screen and (max-width: 576px) {
-  .container select {
-    font-size: 0.8rem;
-  }
+  font-size: var(--font-size-small);
 }

@@ -1,7 +1,8 @@
 import './global.css'
 import type { Metadata, Viewport } from 'next'
 import localFont from 'next/font/local'
-import { NextIntlClientProvider } from 'next-intl'
+// import { Manrope } from 'next/font/google'
+import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 import { ThemeProvider } from 'next-themes'
 import ScriptsTelemetry from '@/components/ScriptsTelemetry'
@@ -22,15 +23,20 @@ const fontFamily = localFont({
     },
   ],
 })
+// const fontFamily = Manrope({
+//   subsets: ['latin'],
+//   weight: ['500', '700'],
+//   variable: '--font-family',
+// })
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Findto | Decentralized AI Search',
+    absolute: 'Findto — Decentralized Search with AI',
     default: 'Findto',
-    template: 'Findto | %s',
+    template: 'Findto — %s',
   },
   description:
-    'Decentralized search on AI, Web, Social, Videos, Images, Music, Academic, and more. Be free with Findto search assistant.',
+    'Decentralized search on AI, Web, Social, Videos, Images, Music, Academic, Jobs, and more. Be free with Findto.',
   authors: [
     { name: 'Findto', url: 'https://findto.app' },
     { name: 'Lucas Menezes', url: 'https://lucasm.dev' },
@@ -83,7 +89,7 @@ export default async function Layout(props: {
   const { children } = props
 
   // Ensure that the incoming `locale` is valid
-  if (!routing.locales.includes(locale as never)) {
+  if (!hasLocale(routing.locales, locale)) {
     notFound()
   }
 

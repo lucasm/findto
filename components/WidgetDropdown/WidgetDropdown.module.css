@@ -41,7 +41,7 @@
   align-items: center;
   gap: 0.5rem;
   background: var(--background-body);
-  border-radius: var(--radius);
+  border-radius: var(--radius-liquid-glass);
   box-shadow: var(--shadow-2);
   padding: 2rem;
   width: auto;

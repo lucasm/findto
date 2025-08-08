@@ -1,4 +1,4 @@
-import styles from './Footer.module.css'
+import Style from './Footer.module.css'
 import Link from 'next/link'
 import SvgLogo from '../SvgLogo'
 import {
@@ -11,13 +11,13 @@ import {
 } from '../SvgIcons'
 import { useTranslations } from 'next-intl'
 
-export default function AppFooter() {
+const Footer = () => {
   const year = new Date().getFullYear()
   const t = useTranslations('t')
 
   return (
-    <footer className={styles.footer}>
-      <div className={styles.container}>
+    <footer className={Style.footer}>
+      <div className={Style.container}>
         <ul>
           <li>
             <Link href="/" title="Findto">
@@ -27,6 +27,28 @@ export default function AppFooter() {
           <li>
             <p>
               <Link href="/">Findto</Link> © {year}
+            </p>
+          </li>
+
+          <li>
+            <Link href="/about">{t('about')}</Link>
+          </li>
+          <li>
+            <Link href="/contribute">{t('contribute')}</Link>
+          </li>
+          <li>
+            <Link href="/privacy">{t('privacy')}</Link>
+          </li>
+          <li>
+            <Link href="/terms">{t('terms')}</Link>
+          </li>
+          <li>
+            <p>
+              {t('copyright')}
+              <a href="https://lucasm.dev" target="_blank" rel="noopener">
+                {' '}
+                Lucas Menezes
+              </a>
             </p>
           </li>
 
@@ -84,38 +106,6 @@ export default function AppFooter() {
               <IconLinkedIn />
             </Link>
           </li>
-
-          <li>
-            <Link href="/about">{t('about')}</Link>
-          </li>
-          {/* <li>
-            <Link href="/community">{t('community')}</Link>
-          </li> */}
-          <li>
-            <a href="https://patreon.com/findto" target="_blank" rel="noopener">
-              {t('donate')}
-            </a>
-          </li>
-          <li>
-            <Link href={t('feedback.url')} target="_blank" rel="noopener">
-              {t('feedback.title')}
-            </Link>
-          </li>
-          <li>
-            <Link href="/privacy">{t('privacy')}</Link>
-          </li>
-          <li>
-            <Link href="/terms">{t('terms')}</Link>
-          </li>
-          <li>
-            <p>
-              {t('copyright')}
-              <a href="https://lucasm.dev" target="_blank" rel="noopener">
-                {' '}
-                Lucas Menezes
-              </a>
-            </p>
-          </li>
         </ul>
 
         {/* <a
@@ -139,3 +129,5 @@ export default function AppFooter() {
     </footer>
   )
 }
+
+export default Footer

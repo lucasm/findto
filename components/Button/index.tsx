@@ -17,11 +17,13 @@ export default function Button({
   size,
   children,
   onClick,
-}: Props) {
+}: Readonly<Props>) {
   // Concatena classes manualmente
-  const className = `${Styles.button} ${Styles[color || '']} ${
-    size ? Styles[size] : ''
-  }`.trim()
+  const colorKey = color ?? 'white'
+  const sizeKey = size ?? 'medium'
+  const className = [Styles.button, Styles[colorKey], Styles[sizeKey]]
+    .join(' ')
+    .trim()
 
   if (url) {
     return (

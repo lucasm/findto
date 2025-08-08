@@ -18,20 +18,25 @@ export default function PageTerms() {
       <section>
         <div className={Style.container}>
           <article>
-            <h2>1. Welcome to Findto</h2>
+            <h2>1. Using Findto</h2>
 
             <p>
-              Welcome! Findto is an assistant for decentralized search on Web
-              and AI. Findto redirects to third-party external services. All
-              rights reserved to them and their trademarks.
+              Welcome to Findto, an assistant for decentralized search on Web
+              and AI.
+            </p>
+            <p>
+              Findto redirects to third-party external services. All rights
+              reserved to them and their trademarks.
             </p>
 
             <p>
-              By accessing services at internet domain https://findto.app
-              (&quot;Findto&quot;), you are agreeing to be bound by these terms,
-              and agree that you are responsible for compliance with all
-              applicable laws of Brazil, and local regulations. If you do not
-              agree, please, do not use or access Findto.
+              By accessing or using the services available at the internet
+              domain https://findto.app (&quot;Findto&quot;), you agree to be
+              bound by these Terms of Service and acknowledge that you are
+              responsible for complying with all applicable laws and regulations
+              of Brazil, as well as any local laws relevant to your
+              jurisdiction. If you do not agree with any part of these terms,
+              please do not access or use Findto.
             </p>
 
             <h2>2. Use License and Intellectual Property</h2>
@@ -150,9 +155,9 @@ export default function PageTerms() {
             </p>
 
             <h2>10. Contact</h2>
-            <p>If you have any questions send an email to legal@findto.app.</p>
+            <p>If you have any questions, send an email to legal@findto.app.</p>
 
-            <p>Effective: March 1, 2024.</p>
+            <p>Updated and Effective as of August 8, 2025.</p>
           </article>
         </div>
       </section>

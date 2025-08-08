@@ -15,7 +15,7 @@ const SelectLanguage = () => {
   const options: Option[] = [
     { label: 'English (United States)', value: 'en-US' },
     { label: 'Português (Brasil)', value: 'pt-BR' },
-    { label: '简体中文 (中国)', value: 'zh-CN' },
+    { label: '中文 (简体)', value: 'zh-CN' },
     { label: 'Русский', value: 'ru' },
     // { label: 'हिन्दी (भारत)', value: 'hi-IN' },
     // { label: 'Français (France)', value: 'fr-FR' },

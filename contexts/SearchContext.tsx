@@ -1,3 +1,5 @@
+'use client'
+
 import { createContext, useContext, useState, useEffect, useRef } from 'react'
 import { useLocale, useTranslations } from 'next-intl'
 import { useSearchParams } from 'next/navigation'
@@ -9,7 +11,7 @@ interface UserLocation {
 }
 
 // create Context for global state
-interface SearchContextType {
+interface ISearchContext {
   refSearchInput: React.RefObject<HTMLTextAreaElement | null>
   refButtons: React.RefObject<{ [key: string]: HTMLButtonElement | null }>
   putValue: (value: string) => void
@@ -38,10 +40,16 @@ interface SearchContextType {
   inputFocus: () => void
 }
 
-const SearchContext = createContext<SearchContextType>({} as SearchContextType)
+const SearchContext = createContext<ISearchContext>({} as ISearchContext)
 
 // export as Provider
-export function SearchProvider({ children }: { children: React.ReactNode }) {
+export function SearchProvider({
+  children,
+  isSidebarOpenDefault,
+}: Readonly<{
+  children: React.ReactNode
+  isSidebarOpenDefault: boolean
+}>) {
   const locale = useLocale()
   const c = useTranslations('country')
   const searchParams = useSearchParams()
@@ -59,7 +67,7 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
     longitude: undefined,
   })
 
-  const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(true)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(isSidebarOpenDefault)
   const [isMobileViewport, setIsMobileViewport] = useState<boolean>(false)
 
   const refSearchInput = useRef<HTMLTextAreaElement>(null)
@@ -125,6 +133,12 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
     if (isClientSide) {
       const savedInputValue = window.localStorage.getItem('inputValue')
       setInputValue(savedInputValue ? JSON.parse(savedInputValue) : '')
+
+      const savedSidebarOpen = window.localStorage.getItem('isSidebarOpen')
+
+      if (savedSidebarOpen !== null) {
+        setIsSidebarOpen(savedSidebarOpen === 'true')
+      }
     }
   }, [])
 
@@ -137,7 +151,7 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
   // mobile viewport
   useEffect(() => {
     if (sizeWindow.width) {
-      if (sizeWindow.width <= 768) {
+      if (sizeWindow.width <= 1024) {
         setIsMobileViewport(true)
       } else {
         setIsMobileViewport(false)
@@ -159,16 +173,18 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
   }, [category, search])
 
   // sidebar
-  useEffect(() => {
-    const sidebars = document.querySelectorAll('.sidebar')
-    sidebars.forEach((sidebar) => {
-      if (!isMobileViewport && isSidebarOpen) {
-        sidebar.classList.remove('sidebarClosed')
-      } else {
-        sidebar.classList.add('sidebarClosed')
-      }
-    })
-  }, [isSidebarOpen, isMobileViewport])
+  //   useEffect(() => {
+  //     const app = document.querySelector('.app')
+
+  //     console.log('executou')
+
+  //     if (isMobileViewport && isSidebarOpen) {
+  //       app?.classList.remove('sidebar')
+  //     }
+  //     if (!isMobileViewport && isSidebarOpen) {
+  //       app?.classList.add('sidebar')
+  //     }
+  //   }, [isSidebarOpen, isMobileViewport])
 
   // query
   useEffect(() => {

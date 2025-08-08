@@ -1,6 +1,8 @@
-import BlurBackground from '../BlurBackground'
+import { getCategoryIcon } from '@/utils/handleCategoryIcon'
+import SearchLogo from '../SearchLogo'
 import Welcome from '../Welcome'
 import Style from './SearchTitle.module.css'
+// import BlurBackground from '../BlurBackground'
 
 interface SearchTitleProps {
   category: string
@@ -10,11 +12,12 @@ interface SearchTitleProps {
 export default function SearchTitle({
   category,
   categoryTitle,
-}: SearchTitleProps) {
+}: Readonly<SearchTitleProps>) {
   return (
     <div className={Style.container}>
       <div className={Style.title}>
-        <BlurBackground />
+        {/* <BlurBackground /> */}
+        <SearchLogo externalIcon={getCategoryIcon(category)()} />
         {category == 'Home' ? <Welcome /> : <h1>{categoryTitle}</h1>}
       </div>
     </div>

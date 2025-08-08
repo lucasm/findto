@@ -1,5 +1,5 @@
 import { JSX } from 'react'
-import { IconInfo } from '../SvgIcons'
+import { IconAlert } from '../SvgIcons'
 import Styles from './Alert.module.css'
 
 type Props = {
@@ -9,7 +9,7 @@ type Props = {
 export default function Alert(props: Readonly<Props>) {
   return (
     <div className={Styles.container}>
-      <IconInfo />
+      <IconAlert />
       {props.children}
     </div>
   )

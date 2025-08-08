@@ -22,11 +22,11 @@
 
 ## Open Source Decentralized AI Search
 
-**Decentralized search:** Search the same term across multiple sources on AI and Web. Discover trends, stories and information. Find anything with Findto. More productive searches than ever.
+**Decentralized:** Search the same term across multiple sources on AI and Web. Discover trends, stories and information. Find anything with Findto. More productive searches than ever.
 
-**Safe search**: View estimated Security, Privacy, and Carbon Footprint level of selected search source. Make better choices for you, and for the planet.
+**Safe**: View estimated Security, Privacy, and Carbon Footprint level of selected search source. Make better choices for you, and for the planet.
 
-**Open search**: Findto is building an open, accessible and universal search experience. Where diversity is key. Where people stay on control of algorithms.
+**Open**: Findto is building an open, accessible and universal search experience. Where diversity is key. Where people stay on control of algorithms.
 
 A better search experience. For a healthier internet. For people.
 
@@ -42,8 +42,8 @@ A better search experience. For a healthier internet. For people.
 | **Stories**              | Discover newest stories                                                               | ✅     |
 | **Autocomplete**         | Get automatic suggestions of terms as you type                                        | ✅     |
 | **Voice Search**         | Search anywhere using your voice                                                      | ✅     |
-| **File Search**          | Search on supported sources with an image or files                                    | 🔜     |
-| **Internationalization** | Choose your country for local sources, or international                               | ✅     |
+| **Reverse File Search**  | Search on supported sources with an image or files                                    | 🔜     |
+| **Languages**            | Choose your country for local sources, or international                               | ✅     |
 | **Accessibility**        | Balanced contrast, screen reader support, keyboard navigation and dark theme          | ✅     |
 | **Carbon Neutral**       | Finito is carbon neutral software                                                     | ✅     |
 

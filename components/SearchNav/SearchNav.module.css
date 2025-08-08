@@ -14,63 +14,64 @@
 /* Vertical */
 .vertical ul {
   position: relative;
-  gap: 0.25rem;
   display: grid;
   margin: -1rem;
-  grid-template-columns: repeat(3, 1fr);
+  width: 300px;
+  grid-template-columns: repeat(2, 1fr);
 }
 .vertical a {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
-  padding: 0 0.5rem 0.75rem 0.5rem;
-  gap: 0.25rem;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  gap: 0.5rem;
   width: 100%;
-  border-radius: 1rem;
+  border-radius: var(--radius-full);
   background: transparent;
-  font-size: var(--font-size-small);
+  font-size: var(--font-size);
   font-weight: 400;
 }
 .vertical a:hover,
 .vertical a:focus {
   background: var(--color-black-translucent);
 }
-.vertical svg {
-  margin-top: 1rem;
-}
 
 /* Cards */
 .cards ul {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.25rem;
   margin: 2rem auto 0;
   padding: 0;
   max-width: var(--max-size-container);
 }
 .cards a {
+  position: relative;
   opacity: 1;
-  padding: 1.125rem 0;
+  padding: 1.75rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
-  border-radius: 1.5rem;
-  display: flex;
-  font-size: var(--font-size);
+  gap: 1rem;
+  border-radius: var(--radius-liquid-glass);
+  font-size: 1.2rem;
   font-weight: 400;
-  transition: var(--transition);
   width: 100%;
   background: var(--background-surface);
   color: var(--color-text-black);
 }
 .cards a:hover,
 .cards a:focus {
-  background: var(--color-black-translucent) !important;
+  background: var(--color-text-black);
+  color: var(--color-bg-white);
 }
+
 .cards figure {
   display: flex;
+}
+.cards svg {
+  width: 1.75rem;
+  height: 1.75rem;
 }
 .cards li {
   width: 100%;
@@ -93,13 +94,12 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  display: flex;
   font-weight: 400;
   font-size: var(--font-size);
   width: 100%;
   color: var(--color-text-black);
   background: transparent;
-  border-radius: var(--radius);
+  border-radius: var(--radius-full);
 }
 .sidebar a:hover,
 .sidebar a:focus {
@@ -119,7 +119,11 @@
     grid-template-columns: repeat(4, 1fr);
   }
   .cards a {
-    font-size: var(--font-size-small);
+    font-size: var(--font-size);
+  }
+  .cards svg {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
 
@@ -127,5 +131,12 @@
   .cards ul {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+  }
+  .cards a {
+    font-size: var(--font-size-small);
+  }
+  .cards svg {
+    width: 1.25rem;
+    height: 1.25rem;
   }
 }

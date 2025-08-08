@@ -1,27 +1,29 @@
-import { AppContextProviders } from '@/components/AppContextProviders'
-import AppHeader from '@/components/Header'
-import AppFooter from '@/components/Footer'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import { ISearchCategory } from '@/interfaces/search'
 import CookiesPopup from '@/components/CookiesPopup'
+import { SearchProvider } from '@/contexts/SearchContext'
+import { getBooleanFromCookie } from '@/utils/getBooleanFromCookie'
 
-export default function AppLayout({
+export default async function AppLayout({
   children,
   locale,
   category,
-}: {
+}: Readonly<{
   children: React.ReactNode
   locale: string
   category: ISearchCategory
-}) {
-  return (
-    <AppContextProviders>
-      <AppHeader locale={locale} category={category} />
+}>) {
+  const isSidebarOpenDefault = await getBooleanFromCookie('isSidebarOpen')
 
-      <main className="sidebar">{children}</main>
-      <div className="sidebar">
-        <AppFooter />
+  return (
+    <SearchProvider isSidebarOpenDefault={isSidebarOpenDefault}>
+      <div className={isSidebarOpenDefault ? 'app sidebar' : 'app'}>
+        <Header locale={locale} category={category} />
+        <main>{children}</main>
+        <Footer />
+        <CookiesPopup />
       </div>
-      <CookiesPopup />
-    </AppContextProviders>
+    </SearchProvider>
   )
 }

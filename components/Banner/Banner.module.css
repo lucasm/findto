@@ -1,11 +1,23 @@
 .container {
-  margin: 6rem auto;
+  margin: 4rem auto;
   max-width: var(--max-size-container-3);
   width: calc(100% - 4rem);
   background: var(--background-surface);
-  border-radius: 2rem;
+  border-radius: var(--radius-liquid-glass);
 }
+/* .containerBanner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: var(--radius-liquid-glass);
+  -webkit-box-shadow: var(--box-shadow-liquid-glass);
+  box-shadow: var(--box-shadow-liquid-glass);
+} */
+
 .containerBanner {
+  position: relative;
   padding: 6rem;
   display: flex;
   flex-direction: column;
@@ -46,6 +58,5 @@
   }
   .containerBanner {
     padding: 3rem 2rem;
-    margin: 1rem;
   }
 }

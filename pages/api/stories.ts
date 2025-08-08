@@ -7,14 +7,17 @@ const parser = new Parser({
     item: [
       ['media:group', 'mediaGroup'], // Captura o media:group que contém media:thumbnail
       ['yt:videoId', 'ytVideoId'], // Captura o yt:videoId
+      ['author', 'author'], // Captura o autor
     ],
   },
 })
 
 interface IVideo {
+  author: string
   title: string
   image: string
   url: string
+  rank?: number
 }
 
 async function getYouTubeVideos(urls: string[]): Promise<ITrends> {
@@ -30,13 +33,25 @@ async function getYouTubeVideos(urls: string[]): Promise<ITrends> {
 
         // Extrai a URL da thumbnail de media:thumbnail
         const thumbnailUrl =
-          firstItem.mediaGroup['media:thumbnail']?.[0]?.$.url || ''
+          firstItem.mediaGroup['media:thumbnail']?.[0]?.$.url ||
+          firstItem.enclosure?.url ||
+          ''
+
+        const rank =
+          firstItem.mediaGroup['media:community']?.[0]?.[
+            'media:statistics'
+          ]?.[0]?.$.views
 
         videos.push({
+          author: firstItem.author || '',
           title: firstItem.title || '',
-          image: thumbnailUrl || firstItem.enclosure?.url || '', // fallback para imagem
+          image: thumbnailUrl,
           url: firstItem.ytVideoId || '',
+          rank: rank,
         })
+
+        // reorganiza os vídeos por rank, se disponível
+        videos.sort((a, b) => (b.rank || 0) - (a.rank || 0))
       }
     } catch (error) {
       console.error('Error fetching YouTube feed:', error)

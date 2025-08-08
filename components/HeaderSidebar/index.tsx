@@ -1,5 +1,3 @@
-'use client'
-
 import { useSearch } from '@/contexts/SearchContext'
 import styles from './HeaderSidebar.module.css'
 import SearchNav from '../SearchNav'
@@ -18,16 +16,9 @@ const HeaderSidebar = ({ category }: Props) => {
   const data = getLocaleData(locale)
 
   return (
-    <>
-      {/* Overlay */}
-      {/* {isOpen && (
-        <div className={styles.overlay} onClick={() => setIsOpen(false)} />
-      )} */}
-
-      <nav className={`${styles.sidebar} ${isSidebarOpen ? styles.open : ''}`}>
-        <SearchNav data={data} variant="sidebar" selectedCategory={category} />
-      </nav>
-    </>
+    <nav className={`${styles.nav} ${isSidebarOpen ? styles.open : ''}`}>
+      <SearchNav data={data} variant="sidebar" selectedCategory={category} />
+    </nav>
   )
 }
 

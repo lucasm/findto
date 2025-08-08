@@ -13,7 +13,7 @@ import SearchTitle from '@/components/SearchTitle'
 import { ISearchCategory, ISearch, ISearchChild } from '@/interfaces/search'
 import SearchOptions from '@/components/SearchOptions'
 import Alert from '@/components/Alert'
-import Image from 'next/image'
+import SearchProviderIcon from '../SearchProviderIcon'
 
 interface Props {
   selectedCategory: ISearchCategory
@@ -166,12 +166,6 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
         <div className={Style.containerInput}>
           <div className={Style.searchInput}>
             <div className={Style.textareaContainer}>
-              <label
-                htmlFor="search"
-                style={{ display: inputValue != '' ? 'none' : 'flex' }}>
-                {t('search') + ' ' + searchSource?.name}
-              </label>
-
               <textarea
                 id="search"
                 ref={refSearchInput}
@@ -268,18 +262,8 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
                   }}
                   translate="no">
                   <figure>
-                    <Image
-                      src={
-                        source?.name
-                          ? `/images/logos/${normalizeId(source?.name)}.svg`
-                          : '/images/logos/default.svg'
-                      }
-                      alt=""
-                      width={24}
-                      height={24}
-                    />
+                    <SearchProviderIcon name={source?.name} />
                   </figure>
-
                   {source.name}
                 </button>
               </li>

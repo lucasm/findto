@@ -25,20 +25,20 @@ export default function PrivacyPage() {
               We respect your privacy regarding any information we may collect
               from you across our services at internet domain https://findto.app
               and our communications (&quot;Findto&quot;). Findto are designed
-              on top of privacy principles. Findto endorses user control over
-              their data. We do not store user searches. External services and
-              search providers may collect and store your personal data.
-              Thinking about it, Findto displays a &quot;Protection widget&quot;
-              on every search provider, explore it.
+              on top of privacy. Findto endorses user control over their data.
+              We do not store user searches. External services and search
+              providers may collect and store your personal data. Thinking about
+              it, Findto displays a &quot;Protection widget&quot; on the top
+              every search provider, explore it!
             </p>
-            <p>This privacy policy complies with:</p>
+            <p>This privacy policy complies with the following regulations:</p>
 
             <ul>
               <li>Brazil: General Data Protection Law (LGPD)</li>
               <li>European Union: General Data Protection Regulation (GDPR)</li>
               <li>United States: California Consumer Privacy Act (CCPA)</li>
               <li>
-                China: Personal Information Protection Law (PIPL) and the Data
+                China: Personal Information Protection Law (PIPL) and Data
                 Security Law
               </li>
               <li>
@@ -180,7 +180,7 @@ export default function PrivacyPage() {
               If you have any questions or suggestions, please contact us at
               email legal@findto.app. Happy searches!
             </p>
-            <p>Effective date: March 3, 2025.</p>
+            <p>Updated and Effective as of August 8, 2025.</p>
           </article>
         </div>
       </section>

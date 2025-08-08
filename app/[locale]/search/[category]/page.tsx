@@ -6,6 +6,7 @@ import Banner from '@/components/Banner'
 import { Metadata } from 'next/types'
 import { getLocaleData } from '@/utils/getLocaleData'
 import { ISearchCategory } from '@/interfaces/search'
+import WidgetCategories from '@/components/WidgetCategories'
 
 interface PageParams {
   locale: string
@@ -17,7 +18,7 @@ interface PageProps {
 }
 
 export async function generateMetadata(props: PageProps): Promise<Metadata> {
-  const params = await props.params;
+  const params = await props.params
   const data = await getLocaleData(params.locale)
   const selectedCategory = data?.categories?.find(
     (category: ISearchCategory) =>
@@ -38,7 +39,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
 }
 
 export default async function Page(props: PageProps) {
-  const params = await props.params;
+  const params = await props.params
   const data = await getLocaleData(params.locale)
   const selectedCategory = data?.categories?.find(
     (category: ISearchCategory) =>
@@ -51,6 +52,7 @@ export default async function Page(props: PageProps) {
 
       <WidgetTrends />
       <WidgetVideoStories selectedCategory={selectedCategory} />
+      <WidgetCategories />
       <Banner />
     </AppLayout>
   )

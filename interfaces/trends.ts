@@ -5,6 +5,7 @@ export interface ITrends {
   data: ITrendsItem[]
 }
 export interface ITrendsItem {
+  author?: string
   title: string
   url?: string
   image?: string

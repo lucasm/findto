@@ -264,96 +264,66 @@ export default function SearchTrends() {
       case 'Home':
       case 'Web':
       case 'AI':
-        {
-          if (dataWeb) setDataTrends(dataWeb)
-          if (errorWeb) setErrorTrends(errorWeb)
-        }
+        if (dataWeb) setDataTrends(dataWeb)
+        if (errorWeb) setErrorTrends(errorWeb)
         break
       case 'Social':
-        {
-          if (dataSocial) setDataTrends(dataSocial)
-          if (errorSocial) setErrorTrends(errorSocial)
-        }
+        if (dataSocial) setDataTrends(dataSocial)
+        if (errorSocial) setErrorTrends(errorSocial)
         break
       case 'Videos':
-        {
-          if (dataVideos) setDataTrends(dataVideos)
-          if (errorVideos) setErrorTrends(errorVideos)
-        }
+        if (dataVideos) setDataTrends(dataVideos)
+        if (errorVideos) setErrorTrends(errorVideos)
         break
       case 'Image':
-        {
-          if (dataImages) setDataTrends(dataImages)
-          if (errorImages) setErrorTrends(errorImages)
-        }
+        if (dataImages) setDataTrends(dataImages)
+        if (errorImages) setErrorTrends(errorImages)
         break
       case 'Music':
-        {
-          if (dataAudio) setDataTrends(dataAudio)
-          if (errorAudio) setErrorTrends(errorAudio)
-        }
+        if (dataAudio) setDataTrends(dataAudio)
+        if (errorAudio) setErrorTrends(errorAudio)
         break
       case 'Shopping':
-        {
-          if (dataShopping) setDataTrends(dataShopping)
-          if (errorShopping) setErrorTrends(errorShopping)
-        }
+        if (dataShopping) setDataTrends(dataShopping)
+        if (errorShopping) setErrorTrends(errorShopping)
         break
       case 'Local':
-        {
-          if (userLocation.latitude && userLocation.longitude) {
-            if (dataLocal) setDataTrends(dataLocal)
-            if (errorLocal) setErrorTrends(errorLocal)
-          }
+        if (userLocation.latitude && userLocation.longitude) {
+          if (dataLocal) setDataTrends(dataLocal)
+          if (errorLocal) setErrorTrends(errorLocal)
         }
         break
       case 'Academic':
-        {
-          if (dataAcademic) setDataTrends(dataAcademic)
-          if (errorAcademic) setErrorTrends(errorAcademic)
-        }
+        if (dataAcademic) setDataTrends(dataAcademic)
+        if (errorAcademic) setErrorTrends(errorAcademic)
         break
       case 'Code':
-        {
-          if (dataCode) setDataTrends(dataCode)
-          if (errorCode) setErrorTrends(errorCode)
-        }
+        if (dataCode) setDataTrends(dataCode)
+        if (errorCode) setErrorTrends(errorCode)
         break
       case 'Job':
-        {
-          if (dataJobs) setDataTrends(dataJobs)
-          if (errorJobs) setErrorTrends(errorJobs)
-        }
+        if (dataJobs) setDataTrends(dataJobs)
+        if (errorJobs) setErrorTrends(errorJobs)
         break
       case 'News':
-        {
-          if (dataNews) setDataTrends(dataNews)
-          if (errorNews) setErrorTrends(errorNews)
-        }
+        if (dataNews) setDataTrends(dataNews)
+        if (errorNews) setErrorTrends(errorNews)
         break
       case 'Finance':
-        {
-          if (dataFinance) setDataTrends(dataFinance)
-          if (errorFinance) setErrorTrends(errorFinance)
-        }
+        if (dataFinance) setDataTrends(dataFinance)
+        if (errorFinance) setErrorTrends(errorFinance)
         break
       case 'Legal':
-        {
-          if (dataLegal) setDataTrends(dataLegal)
-          if (errorLegal) setErrorTrends(errorLegal)
-        }
+        if (dataLegal) setDataTrends(dataLegal)
+        if (errorLegal) setErrorTrends(errorLegal)
         break
       case 'Apps':
-        {
-          if (dataApps) setDataTrends(dataApps)
-          if (errorApps) setErrorTrends(errorApps)
-        }
+        if (dataApps) setDataTrends(dataApps)
+        if (errorApps) setErrorTrends(errorApps)
         break
       case 'Games':
-        {
-          if (dataGames) setDataTrends(dataGames)
-          if (errorGames) setErrorTrends(errorGames)
-        }
+        if (dataGames) setDataTrends(dataGames)
+        if (errorGames) setErrorTrends(errorGames)
         break
       default: {
         break
@@ -402,12 +372,12 @@ export default function SearchTrends() {
       case 'News':
       case 'Finance':
       case 'Games':
-        return Styles.container + ' ' + Styles.grid3
+        return Styles.container + ' ' + Styles.grid4
       case 'Apps':
         return Styles.container + ' ' + Styles.grid5 + ' ' + Styles.trendsApps
       case 'Shopping':
         return (
-          Styles.container + ' ' + Styles.grid4 + ' ' + Styles.trendsShopping
+          Styles.container + ' ' + Styles.grid3 + ' ' + Styles.trendsShopping
         )
       case 'Code':
         return Styles.container + ' ' + Styles.grid2 + ' ' + Styles.trendsCode
@@ -422,7 +392,6 @@ export default function SearchTrends() {
     return (
       <WidgetTemplate
         title={t('trends')}
-        // icon={<SvgLogo />}
         credits={
           dataTrends
             ? {
@@ -440,7 +409,7 @@ export default function SearchTrends() {
         {dataTrends && (
           <ul className={handleClassName(category)}>
             {dataTrends?.data?.map((item, index) => (
-              <li key={index}>
+              <li key={item?.title + index}>
                 <button
                   type="button"
                   onClick={() =>
@@ -448,9 +417,9 @@ export default function SearchTrends() {
                       ? window.open(item.url, '_blank')
                       : putValue(item.title)
                   }>
-                  {/* <span>{index + 1}</span> */}
+                  <span>{index + 1}</span>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  {item.image && <img src={item.image} alt={item.title} />}
+                  {item.image && <img src={item.image} alt="" />}
                   {item.title && <span> {item.title}</span>}
                 </button>
               </li>

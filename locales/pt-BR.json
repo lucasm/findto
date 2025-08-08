@@ -5,11 +5,11 @@
   },
   "t": {
     "metadata": {
-      "title": "Findto, assistente de buscas",
+      "title": "Findto é o seu assistente de busca",
       "description": "Seja livre. Busque na Web, IA e mais."
     },
     "feedback": {
-      "title": "Reportar erro",
+      "title": "Enviar feedback",
       "url": "https://forms.gle/r6XAyB1ZLn9qzwp16"
     },
     "welcome": {
@@ -24,18 +24,17 @@
     },
     "widgetProtection": {
       "title": "Proteção",
-      "description": "O Findto nunca rastreia suas pesquisas. Confira os detalhes da fonte escolhida nos verificadores abaixo.",
+      "description": "Verifique a reputação da fonte de busca selecionada abaixo.",
       "source": "Fonte",
-      "carbon": "Emissão de carbono",
+      "carbon": "Carbono",
       "security": "Segurança",
       "privacy": "Privacidade"
     },
-    "slogan": "Busca descentralizada",
-    "copyright": "Criado no Brasil por",
+    "copyright": "Software livre e de código aberto criado por",
     "about": "Sobre",
     "privacy": "Política de Privacidade",
     "terms": "Termos de Serviço",
-    "donate": "Apoiar",
+    "donate": "Fazer doação",
     "accept": "Aceitar",
     "learnMore": "Conheça o Findto",
     "viewNearbyPlaces": "Ver locais próximos",
@@ -43,11 +42,11 @@
     "placeholder": "Busca",
     "search": "Buscar",
     "clear": "Limpar",
-    "powered": "Dados de",
+    "powered": "Fornecido por",
     "settings": "Ajustes",
     "theme": "Tema",
-    "language": "Localidade",
-    "contribute": "Contribuir",
+    "language": "Idioma",
+    "contribute": "Contribua",
     "explore": "Explore",
     "trends": "Tendências",
     "stories": "Novidades",
@@ -55,7 +54,7 @@
     "category": "Modo",
     "warnings": {
       "cookies": "O Findto utiliza cookies. Respeitamos a sua privacidade e não armazenamos informações pessoais.",
-      "torrent": "Aviso: Usar torrent para compartilhar arquivos não é ilegal, mas obter conteúdos protegidos por direitos autorais sem autorização é crime. Respeite a Lei de Direitos Autorais no Brasil (Lei 9.610/98) ou da sua localidade atual."
+      "torrent": "Aviso: Usar Torrent para compartilhar arquivos digitais não é ilegal. Entretanto, obter conteúdos protegidos por direitos autorais sem autorização é crime. Respeite a Lei de Direitos Autorais no Brasil (Lei 9.610/98) ou da sua localidade atual."
     }
   },
   "categories": [
@@ -77,6 +76,10 @@
           "action": "https://copilot.microsoft.com/?q="
         },
         {
+          "name": "Perplexity",
+          "action": "https://www.perplexity.ai/?q="
+        },
+        {
           "name": "YouTube",
           "action": "https://www.youtube.com/results?search_query="
         },
@@ -89,12 +92,12 @@
           "action": "https://busca.uol.com.br/result.html?term="
         },
         {
-          "name": "Reddit",
-          "action": "https://www.reddit.com/search?q="
-        },
-        {
           "name": "X",
           "action": "https://x.com/search?src=typed_query&q="
+        },
+        {
+          "name": "Reddit",
+          "action": "https://www.reddit.com/search?q="
         },
         {
           "name": "TikTok",
@@ -154,10 +157,6 @@
           "action": "https://grok.com/?q="
         },
         {
-          "name": "DeepSeek",
-          "action": "https://chat.deepseek.com/?q="
-        },
-        {
           "name": "Claude",
           "action": "https://claude.ai/new?q="
         },
@@ -166,16 +165,16 @@
           "action": "https://you.com/search?fromSearchBar=true&tbm=youchat&q="
         },
         {
-          "name": "HuggingChat",
-          "action": "https://huggingface.co/chat?q="
+          "name": "Mistral",
+          "action": "https://chat.mistral.ai/chat?q="
+        },
+        {
+          "name": "DeepSeek",
+          "action": "https://chat.deepseek.com/?q="
         },
         {
           "name": "Gemini",
           "action": "https://gemini.google.com/app?q="
-        },
-        {
-          "name": "Mistral",
-          "action": "https://chat.mistral.ai/chat?q="
         },
         {
           "name": "Meta AI",
@@ -183,7 +182,7 @@
         },
         {
           "name": "Phind",
-          "action": "https://www.phind.com/agent?q="
+          "action": "https://www.phind.com/?q="
         },
         {
           "name": "iAsk",
@@ -204,6 +203,10 @@
         {
           "name": "Falcon",
           "action": "https://chat.falconllm.tii.ae/?q="
+        },
+        {
+          "name": "LibreChat",
+          "action": "https://librechat-librechat.hf.space/c/new?q="
         },
         {
           "name": "Maritaca",
@@ -280,10 +283,6 @@
           "action": "https://x.com/search?src=typed_query&q="
         },
         {
-          "name": "Bluesky",
-          "action": "https://bsky.app/search?q="
-        },
-        {
           "name": "Reddit",
           "action": "https://www.reddit.com/search?q="
         },
@@ -304,21 +303,30 @@
           "action": "https://www.linkedin.com/search/results/index/?keywords="
         },
         {
+          "name": "Kwai",
+          "action": "https://www.kwai.com/discover/"
+        },
+        {
           "name": "Threads",
           "action": "https://www.threads.net/search/?q="
         },
         {
-          "name": "Kwai",
-          "action": "https://www.kwai.com/discover/"
+          "name": "Bluesky",
+          "action": "https://bsky.app/search?q="
         },
         {
           "name": "Medium",
           "action": "https://medium.com/search?q="
         },
         {
+          "name": "Twitch",
+          "action": "https://www.twitch.tv/search?term="
+        },
+        {
           "name": "Discord",
           "action": "https://discord.com/guild-discovery?query="
         },
+
         {
           "name": "Snapchat",
           "action": "https://www.snapchat.com/explore/"
@@ -329,7 +337,7 @@
         },
         {
           "name": "Quora",
-          "action": "https://www.quora.com/search?q="
+          "action": "https://quora.com/search?q="
         },
         {
           "name": "Mastodon",
@@ -362,6 +370,14 @@
           "title": "MeteoroBrasil"
         },
         {
+          "id": "UCXWilBOsa-Dm9BJYAJ3TzoQ",
+          "title": "arvro"
+        },
+        {
+          "id": "UCEPRQVF6hxGGM9gi1ELaWHg",
+          "title": "tvglobo"
+        },
+        {
           "id": "UC0f866RMRdL5mSVnipiOHxg",
           "title": "canalgnt"
         },
@@ -378,12 +394,183 @@
           "title": "nostalgia"
         },
         {
+          "id": "UCV306eHqgo0LvBf3Mh36AHg",
+          "title": "felipeneto"
+        },
+        {
           "id": "UCj0O6W8yDuLg3iraAXKgCrQ",
           "title": "vocesabia"
         },
         {
           "id": "UCIJwKI84CglciGM9aC0xcPQ",
           "title": "meioemensagem"
+        }
+      ]
+    },
+    {
+      "name": "News",
+      "name_translated": "Notícias",
+      "active": true,
+      "description": "Encontre notícias de fontes confiáveis: Globo, UOL, CNN, Folha, Estadão, Veja e mais.",
+      "data": [
+        {
+          "name": "Google News",
+          "action": "https://news.google.com/search?q="
+        },
+        {
+          "name": "globo.com",
+          "action": "https://www.globo.com/busca/?q="
+        },
+        {
+          "name": "UOL",
+          "action": "https://busca.uol.com.br/result.html?term="
+        },
+        {
+          "name": "CNN",
+          "action": "https://www.cnnbrasil.com.br/?s="
+        },
+        {
+          "name": "Folha",
+          "action": "https://search.folha.uol.com.br/?q="
+        },
+        {
+          "name": "Estadão",
+          "action": "https://www.estadao.com.br/busca/?token={\"query\":\"",
+          "additional": "\"}"
+        },
+        {
+          "name": "Veja",
+          "action": "https://veja.abril.com.br/?s="
+        },
+        {
+          "name": "Poder360",
+          "action": "https://www.poder360.com.br/?s=search&q="
+        },
+        {
+          "name": "Nexo",
+          "action": "https://www.nexojornal.com.br/search?term="
+        },
+        {
+          "name": "CartaCapital",
+          "action": "https://www.cartacapital.com.br/?s="
+        },
+        {
+          "name": "Metropoles",
+          "action": "https://www.metropoles.com/search?q="
+        },
+        {
+          "name": "Terra",
+          "action": "https://www.terra.com.br/busca/?q="
+        },
+        {
+          "name": "EBC",
+          "action": "https://busca.ebc.com.br/nodes?q="
+        },
+        {
+          "name": "Reuters",
+          "action": "https://www.reuters.com/site-search/?query="
+        },
+        {
+          "name": "BBC",
+          "action": "https://www.bbc.co.uk/search?q="
+        },
+        {
+          "name": "Feedly",
+          "action": "https://feedly.com/i/discover/sources/search/feed/"
+        },
+        {
+          "name": "Flipboard",
+          "action": "https://flipboard.com/search/"
+        }
+      ],
+      "youtube_channels": [
+        {
+          "id": "UCvdwhh_fDyWccR42-rReZLw",
+          "title": "CNNbrasil"
+        },
+        {
+          "id": "UCVFbXI6Gu8U2f9Gjtxw4A-Q",
+          "title": "uol"
+        },
+        {
+          "id": "UCaGmdJSSiR7fkh2A-c6emsA",
+          "title": "g1globo"
+        },
+        {
+          "id": "UCthbIFAxbXTTQEC7EcQvP1Q",
+          "title": "BBCNewsBrasil"
+        },
+        {
+          "id": "UCmYuiV9wAR3i8p19Ygc7izg",
+          "title": "folha"
+        },
+        {
+          "id": "UCV6Ue4o5UIeKQ3IEkjnXRlg",
+          "title": "veja"
+        },
+        {
+          "id": "UCXdXYG8dUmEv6jhEji_lSHg",
+          "title": "JornalismoTVCultura"
+        },
+        {
+          "id": "UCNVsZnDXOM4PodYIEgM2e4w",
+          "title": "rodaviva"
+        },
+        {
+          "id": "UCDGz2exMIsPQ4k9VrsuhKTA",
+          "title": "CartaCapital"
+        },
+        {
+          "id": "UCFCiSRbCVwQ_BQaDQBYxN_A",
+          "title": "Poder360"
+        },
+        {
+          "id": "UCNqzAD9EiECreuH6LA8IYeA",
+          "title": "TheInterceptBrasil"
+        },
+        {
+          "id": "UCrtOL8bJsh-csozGS2aV77Q",
+          "title": "estadao"
+        },
+        {
+          "id": "UCJVTsYjG0KLNWL6OyHx7ZGw",
+          "title": "NexojornalBr"
+        },
+        {
+          "id": "UCRVbqma6TaIHp9E151nC8sA",
+          "title": "apublica"
+        },
+        {
+          "id": "UCuiLR4p6wQ3xLEm15pEn1Xw",
+          "title": "recordnews"
+        },
+        {
+          "id": "UC376n347Ob5Lwzq2WGzF1AA",
+          "title": "SBTNews"
+        },
+        {
+          "id": "UCoa-D_VfMkFrCYodrOC9-mA",
+          "title": "bandjornalismo"
+        },
+        {
+          "id": "UCUmEPYxmnyQDeRUcFkslmQw",
+          "title": "euronewspt"
+        },
+        {
+          "id": "UCkJ8uPxz6UvoI6ihgQJZnww",
+          "title": "DWBrasil"
+        },
+        {
+          "id": "UC9mdw2mmn49ZuqGOpSri7Fw",
+          "title": "MetrópolesTV"
+        },
+        {
+          "id": "UCaIqJHHo9TJiLINzOFJRl2Q",
+          "title": "InstitutoConhecimentoLiberta"
+        },
+        {
+          "id": "UCP391YRAjSOdM_bwievgaZA",
+          "title": "jovempannews"
         }
       ]
     },
@@ -398,8 +585,8 @@
           "action": "https://www.youtube.com/results?search_query="
         },
         {
-          "name": "Twitch",
-          "action": "https://www.twitch.tv/search?term="
+          "name": "JustWatch",
+          "action": "https://www.justwatch.com/br/busca?q="
         },
         {
           "name": "Globoplay",
@@ -454,8 +641,16 @@
           "action": "https://www.crunchyroll.com/pt-br/search?q="
         },
         {
-          "name": "JustWatch",
-          "action": "https://www.justwatch.com/br/busca?q="
+          "name": "Plex",
+          "action": "https://app.plex.tv/desktop#!/search?query="
+        },
+        {
+          "name": "Claro tv+",
+          "action": "https://www.clarotvmais.com.br/busca?q="
+        },
+        {
+          "name": "Vivo Play",
+          "action": "https://www.vivoplay.com.br/search?q="
         },
         {
           "name": "Letterboxd",
@@ -476,18 +671,6 @@
         {
           "name": "Vimeo",
           "action": "https://vimeo.com/search?q="
-        },
-        {
-          "name": "Plex",
-          "action": "https://app.plex.tv/desktop#!/search?query="
-        },
-        {
-          "name": "Claro tv+",
-          "action": "https://www.clarotvmais.com.br/busca?q="
-        },
-        {
-          "name": "Vivo Play",
-          "action": "https://www.vivoplay.com.br/search?q="
         }
       ],
       "youtube_channels": [
@@ -764,158 +947,10 @@
         {
           "id": "UC7kI8WjpCfFoMSNDuRh_4lA",
           "title": "pitchfork"
-        }
-      ]
-    },
-    {
-      "name": "News",
-      "name_translated": "Notícias",
-      "active": true,
-      "description": "Encontre notícias de fontes confiáveis: Globo, UOL, CNN, Folha, Estadão, Veja e mais.",
-      "data": [
-        {
-          "name": "globo.com",
-          "action": "https://www.globo.com/busca/?q="
         },
         {
-          "name": "UOL",
-          "action": "https://busca.uol.com.br/result.html?term="
-        },
-        {
-          "name": "Google News",
-          "action": "https://news.google.com/search?q="
-        },
-        {
-          "name": "CNN",
-          "action": "https://www.cnnbrasil.com.br/?s="
-        },
-        {
-          "name": "Folha",
-          "action": "https://search.folha.uol.com.br/?q="
-        },
-        {
-          "name": "Estadão",
-          "action": "https://www.estadao.com.br/busca/?token={\"query\":\"",
-          "additional": "\"}"
-        },
-        {
-          "name": "Veja",
-          "action": "https://veja.abril.com.br/?s="
-        },
-        {
-          "name": "Poder360",
-          "action": "https://www.poder360.com.br/?s=search&q="
-        },
-        {
-          "name": "Nexo",
-          "action": "https://www.nexojornal.com.br/search?term="
-        },
-        {
-          "name": "CartaCapital",
-          "action": "https://www.cartacapital.com.br/?s="
-        },
-        {
-          "name": "Metropoles",
-          "action": "https://www.metropoles.com/search?q="
-        },
-        {
-          "name": "Terra",
-          "action": "https://www.terra.com.br/busca/?q="
-        },
-        {
-          "name": "Agência Brasil",
-          "action": "https://busca.ebc.com.br/?q=",
-          "additional": "&site_id=agenciabrasil"
-        },
-        {
-          "name": "Reuters",
-          "action": "https://www.reuters.com/site-search/?query="
-        },
-        {
-          "name": "BBC",
-          "action": "https://www.bbc.co.uk/search?q="
-        },
-        {
-          "name": "Feedly",
-          "action": "https://feedly.com/i/discover/sources/search/feed/"
-        },
-        {
-          "name": "Flipboard",
-          "action": "https://flipboard.com/search/"
-        }
-      ],
-      "youtube_channels": [
-        {
-          "id": "UCVFbXI6Gu8U2f9Gjtxw4A-Q",
-          "title": "uol"
-        },
-        {
-          "id": "UCvdwhh_fDyWccR42-rReZLw",
-          "title": "CNNbrasil"
-        },
-        {
-          "id": "UCaGmdJSSiR7fkh2A-c6emsA",
-          "title": "g1globo"
-        },
-        {
-          "id": "UCthbIFAxbXTTQEC7EcQvP1Q",
-          "title": "BBCNewsBrasil"
-        },
-        {
-          "id": "UCmYuiV9wAR3i8p19Ygc7izg",
-          "title": "folha"
-        },
-        {
-          "id": "UCV6Ue4o5UIeKQ3IEkjnXRlg",
-          "title": "veja"
-        },
-        {
-          "id": "UCXdXYG8dUmEv6jhEji_lSHg",
-          "title": "JornalismoTVCultura"
-        },
-        {
-          "id": "UCNVsZnDXOM4PodYIEgM2e4w",
-          "title": "rodaviva"
-        },
-        {
-          "id": "UCDGz2exMIsPQ4k9VrsuhKTA",
-          "title": "CartaCapital"
-        },
-        {
-          "id": "UCFCiSRbCVwQ_BQaDQBYxN_A",
-          "title": "Poder360"
-        },
-        {
-          "id": "UCNqzAD9EiECreuH6LA8IYeA",
-          "title": "TheInterceptBrasil"
-        },
-        {
-          "id": "UCrtOL8bJsh-csozGS2aV77Q",
-          "title": "estadao"
-        },
-        {
-          "id": "UCJVTsYjG0KLNWL6OyHx7ZGw",
-          "title": "NexojornalBr"
-        },
-        {
-          "id": "UCRVbqma6TaIHp9E151nC8sA",
-          "title": "apublica"
-        },
-        {
-          "id": "UCuiLR4p6wQ3xLEm15pEn1Xw",
-          "title": "recordnews"
-        },
-        {
-          "id": "UC376n347Ob5Lwzq2WGzF1AA",
-          "title": "SBTNews"
-        },
-        {
-          "id": "UCoa-D_VfMkFrCYodrOC9-mA",
-          "title": "bandjornalismo"
-        },
-        {
-          "id": "UCUmEPYxmnyQDeRUcFkslmQw",
-          "title": "euronewspt"
+          "id": "UC5o8T-UsVlJjRX2iH1qSKJg",
+          "title": "radiorock89"
         }
       ]
     },
@@ -1246,6 +1281,56 @@
           "action": "https://pt.wikipedia.org/w/index.php?search="
         },
         {
+          "name": "Bibliotecas Públicas",
+          "child": [
+            {
+              "name": "Biblioteca Nacional",
+              "action": "https://bndigital.bn.gov.br/acervodigital?q="
+            },
+            {
+              "name": "Biblioteca da Câmara dos Deputados",
+              "action": "https://bd.camara.leg.br/bd/search?spc.page=1&query="
+            },
+            {
+              "name": "Biblioteca do Senado Federal",
+              "action": "https://www2.senado.leg.br/bdsf/discover?query="
+            },
+            {
+              "name": "SP - Bibliotecas Públicas",
+              "action": "https://bibliotecacircula.prefeitura.sp.gov.br/pesquisa/resultado.jsf#ini&sort=relevancia&e_all=",
+              "additional": "&page=1"
+            },
+            {
+              "name": "USP",
+              "action": "https://www.buscaintegrada.usp.br/primo_library/libweb/action/search.do?fn=search&vl%28freeText0%29="
+            },
+            {
+              "name": "UFRJ",
+              "action": "https://buscaintegrada.ufrj.br/Search/Results?lookfor="
+            },
+            {
+              "name": "UnB",
+              "action": "https://consulta.bce.unb.br/pergamum/biblioteca/index.php?word="
+            },
+            {
+              "name": "UFMG",
+              "action": "https://research.ebsco.com/c/prr7uu/search/results?autocorrect=y&q="
+            },
+            {
+              "name": "UFPA",
+              "action": "https://bibcentral.ufpa.br/?for=LIVRE&q="
+            },
+            {
+              "name": "UFPE",
+              "action": "https://biblioteca.ufpe.br/?for=LIVRE&q="
+            }
+          ]
+        },
+        {
+          "name": "Internet Archive",
+          "action": "https://archive.org/search.php?query="
+        },
+        {
           "name": "Oasisbr",
           "action": "https://oasisbr.ibict.br/vufind/Search/Results?lookfor="
         },
@@ -1274,6 +1359,10 @@
           "action": "https://pubmed.ncbi.nlm.nih.gov/?term="
         },
         {
+          "name": "EBSCO",
+          "action": "https://openurl.ebsco.com/results?bquery="
+        },
+        {
           "name": "JSTOR",
           "action": "https://www.jstor.org/action/doBasicSearch?Query="
         },
@@ -1285,7 +1374,6 @@
           "name": "PLOS ONE",
           "action": "https://journals.plos.org/plosone/search?q="
         },
-
         {
           "name": "ScienceDirect",
           "action": "https://www.sciencedirect.com/search?qs="
@@ -1325,55 +1413,6 @@
         {
           "name": "Brainly",
           "action": "https://brainly.com.br/app/ask?q="
-        },
-        {
-          "name": "Internet Archive",
-          "action": "https://archive.org/search.php?query="
-        },
-        {
-          "name": "Bibliotecas Públicas",
-          "child": [
-            {
-              "name": "Biblioteca Nacional",
-              "action": "https://bndigital.bn.gov.br/acervodigital?q="
-            },
-            {
-              "name": "Biblioteca da Câmara dos Deputados",
-              "action": "https://bd.camara.leg.br/bd/search?query="
-            },
-            {
-              "name": "Biblioteca do Senado Federal",
-              "action": "http://biblioteca2.senado.gov.br:8991/F/XEIFC6YS13NJ6XA2JKTJ7QTRU34SU4DESHX3ILU1HDNPD4V48C-03278?func=find-b&request="
-            },
-            {
-              "name": "SP - Biblioteca Mário de Andrade",
-              "action": "https://bibliotecacircula.prefeitura.sp.gov.br/pesquisa/resultado.jsf#ini&sort=relevancia&e_all="
-            },
-            {
-              "name": "USP",
-              "action": "https://www.buscaintegrada.usp.br/primo_library/libweb/action/search.do?fn=search&vl%28freeText0%29="
-            },
-            {
-              "name": "UFRJ",
-              "action": "https://buscaintegrada.ufrj.br/Search/Results?lookfor="
-            },
-            {
-              "name": "UnB",
-              "action": "https://consulta.bce.unb.br/pergamum/biblioteca/index.php?word="
-            },
-            {
-              "name": "UFMG",
-              "action": "https://research.ebsco.com/c/prr7uu/search/results?autocorrect=y&q="
-            },
-            {
-              "name": "UFPA",
-              "action": "https://research.ebsco.com/c/vx6fwr/search/results?q="
-            },
-            {
-              "name": "UFPE",
-              "action": "https://biblioteca.ufpe.br/?for=LIVRE&q="
-            }
-          ]
         }
       ],
       "youtube_channels": [
@@ -1455,11 +1494,88 @@
       "name": "Finance",
       "name_translated": "Finanças",
       "active": true,
-      "description": "Pesquise informações financeiras e econômicas: Google Finance, Mobills, Exame, Valor, Bloomberg, InfoMoney e mais.",
+      "description": "Pesquise informações financeiras e econômicas: Google Finance, Banco Central, B3, CVM, Exame, Valor, Bloomberg, InfoMoney e mais.",
       "data": [
         {
           "name": "Google Finance",
           "action": "https://google.com/finance/quote/"
+        },
+        {
+          "name": "Banco Central",
+          "child": [
+            {
+              "name": "Banco Central",
+              "action": "https://www.bcb.gov.br/resultadobusca?termo="
+            },
+            {
+              "name": "Itaú",
+              "action": "https://www.itau.com.br/resultados-de-busca?q="
+            },
+            {
+              "name": "Nubank",
+              "action": "https://blog.nubank.com.br/busca/?search="
+            },
+            {
+              "name": "Caixa",
+              "action": "https://www.caixa.gov.br/site/Paginas/Pesquisa.aspx?k="
+            },
+            {
+              "name": "Banco do Brasil",
+              "action": "https://www.bb.com.br/site/busca?q="
+            },
+            {
+              "name": "Bradesco",
+              "action": "https://banco.bradesco/html/classic/resultado-busca/index-nova-busca.shtm?termsearched="
+            },
+            {
+              "name": "Santander",
+              "action": "https://www.santander.com.br/resultado-busca?q="
+            },
+            {
+              "name": "BTG Pactual",
+              "action": "https://content.btgpactual.com/resultado-da-busca?texto="
+            },
+            {
+              "name": "Sicredi",
+              "action": "https://www.sicredi.com.br/site/blog/busca/?search="
+            },
+            {
+              "name": "Sicoob",
+              "action": "https://www.sicoob.com.br/web/sicoob/busca?q="
+            },
+            {
+              "name": "Inter",
+              "action": "https://blog.inter.co/search/?q="
+            },
+            {
+              "name": "C6 Bank",
+              "action": "https://www.c6bank.com.br/blog/resultado-de-busca?query="
+            },
+            {
+              "name": "Banco Bmg",
+              "action": "https://www.bancobmg.com.br/como-podemos-te-ajudar.htm?q="
+            },
+            {
+              "name": "PicPay",
+              "action": "https://blog.picpay.com/?s="
+            },
+            {
+              "name": "Safra",
+              "action": "https://www.safra.com.br/resultado-de-busca.htm?query="
+            },
+            {
+              "name": "BNDES",
+              "action": "https://www.bndes.gov.br/wps/portal/site/home/resultado-da-busca?q="
+            }
+          ]
+        },
+        {
+          "name": "B3",
+          "action": "https://www.b3.com.br/pt_br/busca/?query="
+        },
+        {
+          "name": "CVM",
+          "action": "https://www.gov.br/cvm/en/search?origem=termos&SearchableText="
         },
         {
           "name": "Mobills",
@@ -1482,64 +1598,8 @@
           "action": "https://www.infomoney.com.br/busca/?q="
         },
         {
-          "name": "B3",
-          "action": "https://www.b3.com.br/pt_br/busca/?query="
-        },
-        {
-          "name": "Banco Central",
-          "action": "https://www.bcb.gov.br/resultadobusca?termo="
-        },
-        {
-          "name": "Itaú",
-          "action": "https://www.itau.com.br/resultados-de-busca?q="
-        },
-        {
-          "name": "Nubank",
-          "action": "https://blog.nubank.com.br/busca/?search="
-        },
-        {
-          "name": "BB",
-          "action": "https://www.bb.com.br/site/busca?q="
-        },
-        {
-          "name": "Caixa",
-          "action": "https://www.caixa.gov.br/site/Paginas/Pesquisa.aspx?k="
-        },
-        {
-          "name": "Bradesco",
-          "action": "https://banco.bradesco/html/classic/resultado-busca/index-nova-busca.shtm?termsearched="
-        },
-        {
-          "name": "Santander",
-          "action": "https://www.santander.com.br/resultado-busca?q="
-        },
-        {
-          "name": "BTG Pactual",
-          "action": "https://content.btgpactual.com/resultado-da-busca?texto="
-        },
-        {
           "name": "XP",
           "action": "https://conteudos.xpi.com.br/pesquisar/?post_types=any&search="
-        },
-        {
-          "name": "Sicredi",
-          "action": "https://www.sicredi.com.br/site/blog/busca/?search="
-        },
-        {
-          "name": "Inter",
-          "action": "https://blog.inter.co/search?q="
-        },
-        {
-          "name": "C6",
-          "action": "https://www.c6bank.com.br/blog/resultado-de-busca?query="
-        },
-        {
-          "name": "Bmg",
-          "action": "https://www.bancobmg.com.br/como-podemos-te-ajudar.htm?q=cdb"
-        },
-        {
-          "name": "Safra",
-          "action": "https://www.safra.com.br/resultado-de-busca.htm?query="
         },
         {
           "name": "Toro",
@@ -1634,6 +1694,10 @@
         {
           "id": "UCbTAwyq6nWOLnFag-PR0XVw",
           "title": "NerdsdeNegócios"
+        },
+        {
+          "id": "UCUr0xVzqs1As0C8ydWgjyGg",
+          "title": "cniweb"
         }
       ]
     },
@@ -1659,7 +1723,7 @@
           "name": "GOV.BR",
           "child": [
             {
-              "name": "Governo do Brasil",
+              "name": "GOV.BR - Governo Federal",
               "action": "https://www.gov.br/pt-br/search?SearchableText="
             },
             {
@@ -1710,7 +1774,7 @@
           ]
         },
         {
-          "name": "Governos Estaduais",
+          "name": "Governo Estadual",
           "child": [
             {
               "name": "SP - São Paulo",
@@ -1856,7 +1920,7 @@
           ]
         },
         {
-          "name": "Tribunais de Contas",
+          "name": "Tribunal de Contas",
           "child": [
             {
               "name": "TCU - Tribunal de Contas da União",
@@ -2087,10 +2151,6 @@
           "action": "https://bitbucket.org/repo/all/?name="
         },
         {
-          "name": "Rapid API",
-          "action": "https://rapidapi.com/search?term="
-        },
-        {
           "name": "Docker Hub",
           "action": "https://hub.docker.com/search?q="
         },
@@ -2129,6 +2189,14 @@
         {
           "name": "Pub.dev",
           "action": "https://pub.dev/packages?q="
+        },
+        {
+          "name": "Rapid API",
+          "action": "https://rapidapi.com/search?term="
+        },
+        {
+          "name": "Apify",
+          "action": "https://apify.com/store/categories?search="
         },
         {
           "name": "Kaggle",
@@ -2315,10 +2383,6 @@
           "action": "https://store.steampowered.com/search/?term="
         },
         {
-          "name": "Nuuvem",
-          "action": "https://www.nuuvem.com/br-pt/catalog/page/1/search/"
-        },
-        {
           "name": "PlayStation",
           "action": "https://store.playstation.com/pt-br/search/"
         },
@@ -2329,6 +2393,10 @@
         {
           "name": "Nintendo",
           "action": "https://www.nintendo.com/games/game-guide/?q="
+        },
+        {
+          "name": "Nuuvem",
+          "action": "https://www.nuuvem.com/br-pt/catalog/page/1/search/"
         },
         {
           "name": "Microsoft Store",

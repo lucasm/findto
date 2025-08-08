@@ -8,7 +8,7 @@
   max-width: 20rem;
   gap: 1rem;
   background: var(--color-text-black);
-  border-radius: 24px;
+  border-radius: var(--radius-liquid-glass);
   padding: 2rem;
   text-align: center;
   transition: transform 0.5s ease-in-out;

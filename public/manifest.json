@@ -1,7 +1,7 @@
 {
   "name": "Findto",
   "short_name": "Findto",
-  "description": "Decentralized Search on Web and AI",
+  "description": "Decentralized Search with AI",
   "start_url": "/?utm_source=pwa",
   "id": "/?utm_source=pwa",
   "display": "standalone",
@@ -48,52 +48,52 @@
   "shortcuts": [
     {
       "name": "Web",
-      "url": "/?view=Web",
+      "url": "/search/web",
       "description": "Web search"
     },
     {
       "name": "AI",
-      "url": "/?view=AI",
+      "url": "/search/ai",
       "description": "AI search"
     },
     {
       "name": "Social",
-      "url": "/?view=Social",
+      "url": "/search/social",
       "description": "Social search"
     },
     {
+      "name": "News",
+      "url": "/search/news",
+      "description": "News search"
+    },
+    {
       "name": "Videos",
-      "url": "/?view=Videos",
+      "url": "/search/videos",
       "description": "Videos search"
     },
     {
       "name": "Music",
-      "url": "/?view=Music",
+      "url": "/search/music",
       "description": "Music search"
     },
     {
       "name": "Shopping",
-      "url": "/?view=Shopping",
+      "url": "/search/shopping",
       "description": "Shopping search"
     },
     {
       "name": "Local",
-      "url": "/?view=Local",
+      "url": "/search/local",
       "description": "Local search"
     },
     {
-      "name": "News",
-      "url": "/?view=News",
-      "description": "News search"
-    },
-    {
       "name": "Academic",
-      "url": "/?view=Academic",
+      "url": "/search/academic",
       "description": "Academic search"
     },
     {
       "name": "Job",
-      "url": "/?view=Job",
+      "url": "/search/job",
       "description": "Job search"
     }
   ]

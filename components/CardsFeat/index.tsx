@@ -27,59 +27,60 @@ const features: Feature[] = [
   {
     icon: <IconSearch />,
     title: 'Decentralized Search',
-    description: 'Search the same term on diverse sources.',
+    description: 'Search the same term on multiple sources.',
   },
   {
     icon: <IconShield />,
     title: 'Protection',
     description:
-      'Check estimated security, privacy and carbon footprint level of every search source.',
+      'Check privacy, security and carbon footprint level of search source.',
   },
   {
     icon: <IconTrending />,
     title: 'Trends',
-    description: 'Real-time trends nearby you.',
+    description: 'See real-time trends nearby you.',
   },
   {
     icon: <IconStories />,
     title: 'Stories',
-    description: 'Discover newest stories.',
+    description: 'Discover newest and breaking stories.',
   },
   {
     icon: <IconText />,
     title: 'Autocomplete',
-    description: 'Automatic suggestions of terms as you type.',
+    description: 'Get automatic suggestions of terms as you type.',
   },
   {
     icon: <IconMic />,
     title: 'Voice Search',
-    description: 'Search anywhere using your voice.',
+    description: 'Use your voice to search anywhere.',
   },
   {
     icon: <IconFileSearch />,
-    title: 'File Search',
-    description: 'Search with a file on supported sources.',
+    title: 'Reverse File Search *',
+    description:
+      'Upload files and photos to reverse search on supported sources.',
   },
   {
     icon: <IconLanguage />,
-    title: 'Internationalization',
-    description: 'Choose local search sources, or international.',
+    title: 'Languages',
+    description: 'Access local or international versions.',
   },
   {
     icon: <IconAccessibility />,
     title: 'Accessibility',
     description:
-      'Contrast, dark theme, screen reader, and keyboard navigation support.',
+      'Dark theme, balanced contrast, screen reader support, and keyboard navigation.',
   },
   {
     icon: <IconOpenSource />,
     title: 'Open Source',
-    description: 'An open source software.',
+    description: 'Source code open for revisions and contributions.',
   },
   {
     icon: <IconCarbon />,
     title: 'Carbon Neutral',
-    description: 'A carbon neutral software.',
+    description: 'Carbon neutral software.',
   },
 ]
 
@@ -97,6 +98,8 @@ export default function CardsFeat() {
           </li>
         ))}
       </ul>
+
+      <p>* Some features in development.</p>
     </div>
   )
 }

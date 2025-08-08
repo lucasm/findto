@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.25rem;
   padding: 0;
   /* margin: 0 -1rem; */
   justify-content: center;
@@ -17,7 +17,7 @@
   margin: 0;
   background: var(--background-surface);
   color: var(--color-text-black);
-  border-radius: var(--radius);
+  border-radius: var(--radius-liquid-glass);
   transition: var(--transition-hover);
   flex-direction: row;
   align-items: center;
@@ -33,17 +33,16 @@
   width: 3.5rem;
   background: var(--color-white);
   transition: var(--transition-hover);
-  border-radius: 0.5rem;
+  border-radius: 12px;
   filter: grayscale(100%);
 }
 .container li button span {
   text-align: left;
-  font-size: var(--font-size-big);
+  font-size: 1.1rem;
 }
-/* .container li button span:first-of-type {
+.container li button span:first-of-type {
   opacity: var(--opacity);
-  font-size: var(--font-size-small);
-} */
+}
 
 .grid5 {
   grid-template-columns: repeat(6, 1fr);
@@ -103,7 +102,7 @@
   }
 
   .container li button span {
-    font-size: var(--font-size-small);
+    font-size: var(--font-size);
   }
 
   .grid5 {

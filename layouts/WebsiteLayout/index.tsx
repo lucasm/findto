@@ -8,22 +8,20 @@ import { IconMenu } from '@/components/SvgIcons'
 
 export default function WebsiteLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
   const locale = useLocale()
   const t = useTranslations('t')
 
-  const renderDesktop = () => {
+  const renderDesktop = (): React.ReactElement => {
     return (
       <ul>
         <li className={Style.hideOnMobile}>
           <Link href="/about">{t('about')}</Link>
         </li>
         <li className={Style.hideOnMobile}>
-          <a href="https://patreon.com/findto" target="_blank" rel="noopener">
-            {t('donate')}
-          </a>
+          <Link href="/contribute">{t('contribute')}</Link>
         </li>
         <li>
           <Link href="/">{t('openApp')} </Link>
@@ -37,19 +35,9 @@ export default function WebsiteLayout({
         <li>
           <Link href="/about">{t('about')}</Link>
         </li>
-        <li>
-          <Link href={t('feedback.url')} target="_blank" rel="noopener">
-            {t('feedback.title')}
-          </Link>
+        <li className={Style.hideOnMobile}>
+          <Link href="/contribute">{t('contribute')}</Link>
         </li>
-        <li>
-          <a href="https://patreon.com/findto" target="_blank" rel="noopener">
-            {t('donate')}
-          </a>
-        </li>
-        {/* <li>
-            <Link href="/pro">Pro</Link>
-          </li> */}
       </ul>
     )
   }

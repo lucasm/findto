@@ -13,27 +13,36 @@ import {
   IconMoon,
   IconSun,
   IconThemeSystem,
-  IconArrow,
+  IconSidebar,
   IconCategories,
+  IconArrowExternal,
+  IconShield,
 } from '@/components/SvgIcons'
 import SelectLanguage from '@/components/SelectLanguage'
 import SearchNav from '@/components/SearchNav'
 import HeaderSidebar from '@/components/HeaderSidebar'
 import WidgetDropdown from '@/components/WidgetDropdown'
 import { ISearchCategory } from '@/interfaces/search'
-import WidgetProtection from '../WidgetProtection'
+import { useRouter } from 'next/navigation'
 
 interface Props {
   locale: string
   category: ISearchCategory
 }
 
-const AppHeader = ({ locale, category }: Props) => {
+const Header = ({ locale, category }: Props) => {
+  const router = useRouter()
   const t = useTranslations('t')
   const data = getLocaleData(locale)
-  const { isMobileViewport, isSidebarOpen, setIsSidebarOpen, inputFocus } =
-    useSearch()
   const { theme, setTheme } = useTheme()
+  const {
+    search,
+    domain,
+    isMobileViewport,
+    isSidebarOpen,
+    setIsSidebarOpen,
+    inputFocus,
+  } = useSearch()
 
   const handleTheme = () => {
     if (theme === 'light') {
@@ -49,64 +58,51 @@ const AppHeader = ({ locale, category }: Props) => {
     // Assumindo que se não for 'light' ou 'dark', é 'system'
     setTheme('light')
   }
+  const handleSidebar = () => {
+    const app = document.querySelector('.app')
 
-  const handleOnClick = () => {
+    if (isSidebarOpen) {
+      app?.classList.remove('sidebar')
+    } else {
+      app?.classList.add('sidebar')
+    }
+
+    document.cookie = `isSidebarOpen=${!isSidebarOpen}; path=/; max-age=31536000`
+
     setIsSidebarOpen(!isSidebarOpen)
     inputFocus()
   }
-  const handleFigure = () => {
-    if (!isMobileViewport && isSidebarOpen) {
-      return (
-        <figure>
-          <IconArrow />
-        </figure>
-      )
-    }
 
-    if (!isMobileViewport && !isSidebarOpen && category?.name != 'Home') {
-      return (
-        <figure>
-          <IconCategories />
-          {t('category')}
-          {': '}
-          {category?.name_translated ?? category?.name}
-        </figure>
-      )
-    }
-
-    return (
-      <figure>
-        <IconCategories />
-        {t('categories')}
-      </figure>
-    )
-  }
+  const showTapbar = isMobileViewport || !isSidebarOpen
 
   return (
-    <header className={Style.header + ' sidebar'}>
+    <header className={Style.header}>
       <div className={Style.buttonsContainer}>
         {/* Logo */}
         <Link href="../" className={Style.logo} translate="no">
           Findto
         </Link>
 
-        {/* Modes */}
-        {!isMobileViewport && (
-          <button
-            type="button"
-            onClick={() => handleOnClick()}
-            aria-expanded={isSidebarOpen}
-            aria-label={t('categories') ?? 'Categories'}
-            className={
-              !isMobileViewport && isSidebarOpen ? Style.buttonArrowClose : ''
-            }>
-            {handleFigure()}
-          </button>
-        )}
+        {/* Sidebar */}
+        <button
+          type="button"
+          onClick={() => handleSidebar()}
+          aria-expanded={isSidebarOpen}
+          aria-label={isSidebarOpen ? 'Close sidebar' : 'Open sidebar'}
+          className={
+            Style.buttonSidebar +
+            ' ' +
+            (isSidebarOpen ? Style.buttonSidebarHover : '')
+          }>
+          <figure>
+            <IconSidebar />
+          </figure>
+        </button>
 
-        {isMobileViewport && (
+        {/* Tapbar */}
+        {showTapbar && (
           <WidgetDropdown
-            title={t('categories') ?? 'Categories'}
+            title={t('categories') ?? 'Modes'}
             icon={<IconCategories />}
             position="left">
             <SearchNav
@@ -119,24 +115,58 @@ const AppHeader = ({ locale, category }: Props) => {
       </div>
 
       <div className={Style.buttonsContainer}>
-        <WidgetProtection className={Style.buttonHideMobile} />
+        {/* Protection */}
+        <WidgetDropdown
+          title={t('widgetProtection.title')}
+          ariaLabel={t('widgetProtection.title')}
+          icon={<IconShield />}>
+          <div className={Style.containerSettings}>
+            <p>{t('widgetProtection.description')}</p>
 
-        {/* <WidgetPrivacy className={Style.buttonHideMobile} />
-        <WidgetCarbon className={Style.buttonHideMobile} /> */}
+            <div>
+              <h3>
+                {t('widgetProtection.source')}: {search}
+              </h3>
 
-        {/* Donate */}
+              <a
+                href={'https://sitecheck.sucuri.net/results/' + domain}
+                rel="noreferrer noopener"
+                target="_blank">
+                <IconArrowExternal />
+                {t('widgetProtection.security')}
+              </a>
+
+              <a
+                href={
+                  'https://www.websitecarbon.com/website/' +
+                  domain.replace('.', '-')
+                }
+                rel="noreferrer noopener"
+                target="_blank">
+                <IconArrowExternal />
+                {t('widgetProtection.carbon')}
+              </a>
+
+              <a
+                href={'https://privacyscanner.aesirx.io/result/' + domain}
+                rel="noreferrer noopener"
+                target="_blank">
+                <IconArrowExternal />
+                {t('widgetProtection.privacy')}
+              </a>
+            </div>
+          </div>
+        </WidgetDropdown>
+
+        {/* Contribute */}
         <button
-          className={Style.buttonHideMobile}
+          aria-label={t('contribute')}
           onClick={() => {
-            window.open(
-              'https://www.patreon.com/findto',
-              '_blank',
-              'noopener,noreferrer'
-            )
+            router.push('/contribute')
           }}>
           <figure>
             <IconHeart />
-            {t('donate')}
+            <span>{t('contribute')}</span>
           </figure>
         </button>
 
@@ -169,10 +199,7 @@ const AppHeader = ({ locale, category }: Props) => {
             <div>
               <h3>{t('contribute')}</h3>
               <div>
-                <Link
-                  href="https://ko-fi.com/findto"
-                  target="_blank"
-                  rel="noopener noreferrer">
+                <Link href="/contribute">
                   <IconHeart />
                   {t('donate')}
                 </Link>
@@ -199,4 +226,4 @@ const AppHeader = ({ locale, category }: Props) => {
   )
 }
 
-export default AppHeader
+export default Header

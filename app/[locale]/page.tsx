@@ -5,17 +5,11 @@ import { getLocaleData } from '@/utils/getLocaleData'
 import WidgetTrends from '@/components/WidgetTrends'
 import WidgetCategories from '@/components/WidgetCategories'
 
-export default async function Page(
-  props: {
-    params: Promise<{ locale: string }>
-  }
-) {
-  const params = await props.params;
-
-  const {
-    locale
-  } = params;
-
+export default async function Page(props: {
+  params: Promise<{ locale: string }>
+}) {
+  const params = await props.params
+  const { locale } = params
   const data = getLocaleData(locale)
 
   const selectedCategory = data?.categories?.find(

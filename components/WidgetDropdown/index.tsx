@@ -65,8 +65,8 @@ export default function WidgetDropdown({
         className={isOpen ? Styles.opened : ''}
         aria-label={ariaLabel ?? undefined}>
         <figure>
-          {icon && icon}
-          {title}
+          {icon}
+          {title && <span>{title}</span>}
         </figure>
       </button>
 

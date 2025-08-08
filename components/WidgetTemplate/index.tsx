@@ -1,5 +1,4 @@
 import { useTranslations } from 'next-intl'
-import { ReactElement, ReactNode } from 'react'
 import Styles from './WidgetTemplate.module.css'
 
 export interface ICredits {
@@ -9,8 +8,9 @@ export interface ICredits {
 
 interface WidgetTemplateProps {
   title: string
-  children?: ReactNode
-  icon?: ReactElement
+  children?: React.ReactNode
+  rightChildren?: React.ReactNode
+  icon?: React.ReactNode
   credits?: ICredits
   hideTitle?: boolean
 }
@@ -18,10 +18,11 @@ interface WidgetTemplateProps {
 export default function WidgetTemplate({
   title,
   children,
+  rightChildren,
   credits,
   icon,
   hideTitle,
-}: WidgetTemplateProps) {
+}: Readonly<WidgetTemplateProps>) {
   const t = useTranslations('t')
 
   return (
@@ -29,7 +30,8 @@ export default function WidgetTemplate({
       {!hideTitle && (
         <div className={Styles.title}>
           {icon}
-          <h3>{title}</h3>
+          <h2>{title}</h2>
+          {rightChildren && <div>{rightChildren}</div>}
         </div>
       )}
 

@@ -17,11 +17,11 @@ export default async function endpoint(
         credits_url: 'https://www.gov.br/',
         data: [
           {
-            title: 'GOV.BR - Assinatura Eletrônica',
+            title: 'GOV.BR — Assinatura Eletrônica',
             url: 'https://www.gov.br/pt-br/servicos/assinatura-eletronica',
           },
           {
-            title: 'Registrato - Chaves Pix, contas e empréstimos no meu CPF',
+            title: 'Registrato — Chaves Pix, contas e empréstimos no meu CPF',
             url: 'https://www.bcb.gov.br/meubc/registrato',
           },
           {

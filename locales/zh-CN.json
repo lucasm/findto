@@ -5,8 +5,8 @@
   },
   "t": {
     "metadata": {
-      "title": "向你的新搜索助手 Findto 问好",
-      "description": "借助 Findto，您可以搜索 Web、AI 和 Metaverse 上的资源。探索最好的互联网。"
+      "title": "Findto —— 您的新一代智能搜索助手",
+      "description": "Findto 帮您轻松搜索 Web 与 AI 资源，探索互联网的无限可能。"
     },
     "feedback": {
       "title": "发送反馈",
@@ -24,18 +24,17 @@
     },
     "widgetProtection": {
       "title": "防护",
-      "description": "您处于安全的环境中。使用下面的检查器来获取有关所选搜索源的更多详细信息。",
+      "description": "检查下面选择的搜索源的信誉。",
       "source": "已选择",
       "carbon": "碳足迹",
       "security": "安全",
       "privacy": "隐私"
     },
-    "slogan": "Web、AI 和 Metaverse 上的去中心化搜索",
-    "copyright": "创建者",
-    "about": "关于",
+    "copyright": "来自巴西的开源软件，开发者",
+    "about": "关于项目",
     "privacy": "隐私政策",
     "terms": "服务条款",
-    "donate": "加入会员",
+    "donate": "立即捐赠",
     "accept": "好的",
     "learnMore": "了解更多关于 Findto",
     "viewNearbyPlaces": "View nearby places",
@@ -47,13 +46,12 @@
     "settings": "用户设置",
     "theme": "主题",
     "language": "语言",
-    "contribute": "贡献",
+    "contribute": "贡献你的力量",
     "explore": "探索",
     "trends": "热门内容",
     "stories": "最新动态",
     "categories": "模块",
     "category": "选定模式",
-
     "warnings": {
       "cookies": "Findto 使用 Cookie。我们尊重您的隐私，不会存储任何个人信息。"
     }
@@ -103,6 +101,10 @@
         {
           "name": "Taobao",
           "action": "https://s.taobao.com/search?q="
+        },
+        {
+          "name": "Toutiao",
+          "action": "https://so.toutiao.com/search?dvpf=pc&input&keyword="
         },
         {
           "name": "Xiaohongshu",

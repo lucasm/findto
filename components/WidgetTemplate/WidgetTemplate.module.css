@@ -1,23 +1,23 @@
 .container {
+  position: relative;
   padding: 3rem 1.5rem 2.5rem;
   overflow: hidden;
   margin: 0 auto;
   max-width: var(--max-size-container);
-  /* background: var(--background-linear-gradient); */
   border-radius: var(--radius-big);
   color: var(--color-text-black);
-  /* width: calc(100% - 4rem); */
 }
 
 .title {
+  position: relative;
   display: flex;
   gap: 1.25rem;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
 }
-.title h3 {
+.title h2 {
   display: flex;
-  /* font-size: 1.2rem; */
+  font-size: 1.75rem;
   font-weight: 500;
 }
 .title svg {
@@ -40,6 +40,6 @@
 
 @media screen and (max-width: 576px) {
   .container {
-    padding: 2rem 1.5rem;
+    padding: 2rem 1rem;
   }
 }

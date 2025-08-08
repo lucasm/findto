@@ -1,31 +1,21 @@
-.sidebar {
+.nav {
   position: fixed;
   top: 0;
   left: 0;
   width: var(--container-sidebar);
   height: 100vh;
+  margin: 0;
   background: var(--background-surface-secondary);
   color: white;
-  transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
-  /* border-right: 1px solid var(--background-surface); */
+  transform: translateX(-100%);
 }
-.sidebar.open {
+.nav.open {
   transform: translateX(0);
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 500;
-}
-
-@media screen and (max-width: 768px) {
-  .sidebar {
+@media screen and (max-width: 1024px) {
+  .nav {
     display: none;
   }
 }

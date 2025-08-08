@@ -1,0 +1,46 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  overflow: hidden;
+  padding: 1.25rem;
+  background: var(--background-surface);
+  color: var(--color-text-black);
+  border-radius: var(--radius-liquid-glass);
+  text-align: left;
+}
+.card:hover,
+.card:focus {
+  background: var(--color-text-black);
+  color: var(--color-bg-white);
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Mantém proporção padrão dos vídeos */
+  overflow: hidden;
+  position: relative;
+  display: block;
+  border-radius: 12px;
+  filter: grayscale(100%);
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Imagem cobre todo o container sem distorcer */
+  object-position: center;
+}
+
+.title,
+.author {
+  font-size: 1.125rem;
+  font-weight: 400;
+  filter: grayscale(100%);
+}
+
+.author {
+  font-size: 1rem;
+  opacity: var(--opacity);
+}

@@ -5,8 +5,8 @@
   },
   "t": {
     "metadata": {
-      "title": "Познакомьтесь с Findto, вашим новым помощником по поиску",
-      "description": "Децентрализованный поиск в Интернете и ИИ."
+      "title": "Findto — вашего умного помощника в мире поиска",
+      "description": "Децентрализованный поиск, которому можно доверять. Быстро. Просто. Эффективно."
     },
     "feedback": {
       "title": "Отправить отзыв",
@@ -24,18 +24,17 @@
     },
     "widgetProtection": {
       "title": "Защита",
-      "description": "Вы находитесь в безопасной среде. Используйте проверки ниже, чтобы получить более подробную информацию о выбранном источнике поиска.",
+      "description": "Проверьте репутацию выбранного шрифта.",
       "source": "Источник",
       "carbon": "Углеродный след",
       "security": "Безопасность",
       "privacy": "Частная жизнь"
     },
-    "slogan": "Децентрализованный поиск в Интернете и ИИ",
-    "copyright": "Сделано в Бразилии компанией",
+    "copyright": "Программное обеспечение с открытым исходным кодом, созданное",
     "about": "О проекте",
     "privacy": "Политика конфиденциальности",
     "terms": "Условия эксплуатации",
-    "donate": "Стать участником",
+    "donate": "Поддержать проект",
     "accept": "Принимать",
     "learnMore": "Познакомьтесь с Findto",
     "viewNearbyPlaces": "View nearby places",
@@ -51,8 +50,8 @@
     "explore": "Исследуйте",
     "trends": "Тенденции",
     "stories": "Истории",
-    "categories": "Режимы поиска",
-    "category": "Режим поиска",
+    "categories": "Режимы",
+    "category": "Режим",
     "warnings": {
       "cookies": "Findto использует файлы cookie. Мы уважаем вашу конфиденциальность и не храним персональные данные."
     }
@@ -72,10 +71,6 @@
           "action": "https://www.google.ru/search?q="
         },
         {
-          "name": "Bing",
-          "action": "https://www.bing.com/search?q="
-        },
-        {
           "name": "ChatGPT",
           "action": "https://chatgpt.com/?q="
         },
@@ -90,6 +85,10 @@
         {
           "name": "VK",
           "action": "https://vk.com/search?q="
+        },
+        {
+          "name": "Mail.ru",
+          "action": "https://news.mail.ru/search/?q="
         },
         {
           "name": "Rutube",
@@ -132,8 +131,8 @@
           "action": "https://www.wildberries.ru/catalog/0/search.aspx?search="
         },
         {
-          "name": "Правительстве",
-          "action": "http://government.ru/search/?q="
+          "name": "Government.ru",
+          "action": "http://government.ru/en/search/?q="
         }
       ]
     },
@@ -220,6 +219,10 @@
         {
           "name": "Google News",
           "action": "https://news.google.com/search?q="
+        },
+        {
+          "name": "Mail.ru",
+          "action": "https://news.mail.ru/search/?q="
         },
         {
           "name": "RIA Novosti",

@@ -1,7 +1,7 @@
 import Styles from './Banner.module.css'
 import { useTranslations } from 'next-intl'
-import Button from '../Button'
-import SvgLogo from '../SvgLogo'
+import Button from '@/components/Button'
+import SvgLogo from '@/components/SvgLogo'
 
 export default function Banner() {
   const t = useTranslations('t')

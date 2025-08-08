@@ -20,15 +20,15 @@
   --color-surface-secondary: var(--color-white);
   --color-bg-white: #fff;
   --color-text-black: #000;
-  --background-linear-gradient: linear-gradient(
-    90deg,
-    var(--color-blue) 5%,
+  --background-gradient: linear-gradient(
+    0deg,
+    var(--color-purple) 2%,
+    var(--color-blue),
     var(--color-green),
     var(--color-yellow),
     var(--color-orange),
     var(--color-red),
-    var(--color-pink),
-    var(--color-purple) 120%
+    var(--color-pink) 110%
   );
   --color-white-translucent: rgba(255, 255, 255, 0.5);
   --color-black-translucent: rgba(0, 0, 0, 0.05);
@@ -36,10 +36,14 @@
   --box-shadow:
     0 1.8px 3.8px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%);
   --shadow-2: 0px 15px 50px 0px rgba(27, 32, 50, 0.1);
+  --box-shadow-liquid-glass:
+    inset 4px 4px 0px -4px rgba(255, 255, 255, 0.7),
+    inset 0 0 1px 1px rgba(255, 255, 255, 0.7);
   --opacity: 0.55;
+  --blur: blur(15.75px);
   --svg-filter: invert(1);
   --font-size: 1rem;
-  --font-size-small: 0.8rem;
+  --font-size-small: 0.75rem;
   --font-size-big: 1.15rem;
   --font-size-3: 1.5rem;
   --font-size-2: 2.5rem;
@@ -47,13 +51,14 @@
   --radius: 1rem;
   --radius-small: 0.75rem;
   --radius-big: 1.75rem;
+  --radius-liquid-glass: 28px;
   --radius-full: 75rem;
-  --size-small: 2.625rem;
+  --size-small: 2.5rem;
   --size-large: 3.25rem;
   --size-big: 3rem;
-  --container-sidebar: 15rem;
+  --container-sidebar: 16rem;
   --max-size-container: 1024px;
-  --max-size-container-2: 780px;
+  --max-size-container-2: 768px;
   --max-size-container-3: 820px;
   --transition-hover:
     hover 0.2s, background 0.2s, opacity 0.2s, box-shadow 0.2s;
@@ -147,7 +152,7 @@ h3 {
 article {
   text-align: left;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: var(--max-size-container-2);
   color: var(--color-text-black);
 }
 article h2 {
@@ -166,7 +171,37 @@ article hr {
   border: 0;
 }
 
-/* Colors Animation */
+@keyframes rotateSlowly {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rotateSlowly {
+  animation: rotateSlowly 20s linear infinite;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 25%;
+  }
+  25% {
+    background-position: 50% 25%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.moveGradient {
+  background-size: 400% 400%;
+  animation: moveGradient 60s ease infinite;
+}
+
 .colors {
   animation: colorsAnimation 60s ease alternate infinite;
 }
@@ -215,8 +250,11 @@ article hr {
 .sidebar {
   margin-left: var(--container-sidebar);
 }
-.sidebarClosed {
-  margin-left: 0;
+
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -228,9 +266,5 @@ article hr {
   }
   h3 {
     font-size: 1.25rem;
-  }
-
-  .sidebar {
-    margin-left: 0;
   }
 }

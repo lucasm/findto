@@ -4,25 +4,19 @@ import Styles from './WidgetVideoStories.module.css'
 import { useEffect, useState, useCallback, useRef } from 'react'
 import useSWR from 'swr'
 import { fetcher } from '@/utils/http'
-import { useSearch } from '@/contexts/SearchContext'
 import type { ITrendsItem } from '@/interfaces/trends'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination, Mousewheel } from 'swiper/modules'
-import 'swiper/css'
-import 'swiper/css/navigation'
 import { useTranslations } from 'next-intl'
 import { IconClose } from '../SvgIcons'
 import { ISearchCategory } from '@/interfaces/search'
 import WidgetTemplate from '../WidgetTemplate'
+import Card from '@/components/Card'
 
 interface Props {
   selectedCategory: ISearchCategory
 }
 
-export default function WidgetVideoStories({ selectedCategory }: Props) {
+const WidgetVideoStories = ({ selectedCategory }: Readonly<Props>) => {
   const t = useTranslations('t')
-  const { sizeWindow } = useSearch()
-  const [maxSlides, setMaxSlides] = useState<number>(5.5)
 
   const [videoUrl, setVideoUrl] = useState<string | undefined>(undefined)
   const [channelsIds, setChannelsIds] = useState<string | null>(null)
@@ -57,16 +51,22 @@ export default function WidgetVideoStories({ selectedCategory }: Props) {
     { revalidateOnFocus: false } // evita revalidações desnecessárias
   )
 
+  const credits = dataTrends
+    ? {
+        title: 'YouTube',
+        url: 'https://www.youtube.com/?utm_source=findto_app',
+      }
+    : undefined
+
   const scrollToVideo = () => {
     if (videoPlayer.current) {
       const topPosition =
-        videoPlayer.current.getBoundingClientRect().top + window.scrollY - 32
+        videoPlayer.current.getBoundingClientRect().top + window.scrollY - 24
       window.scrollTo({ top: topPosition, behavior: 'smooth' })
     }
   }
   const openVideo = useCallback((url: string) => {
     setVideoUrl(url)
-
     setTimeout(() => {
       scrollToVideo()
     }, 300) // delay
@@ -75,84 +75,54 @@ export default function WidgetVideoStories({ selectedCategory }: Props) {
     setVideoUrl(undefined)
   }, [])
 
-  useEffect(() => {
-    if (sizeWindow.width < 480) {
-      setMaxSlides(3.25)
-    } else if (sizeWindow.width < 940) {
-      setMaxSlides(4.5)
-    } else {
-      setMaxSlides(5.25)
-    }
-  }, [sizeWindow])
+  if (!shouldFetch || !dataTrends) return null
 
-  if (shouldFetch && dataTrends) {
-    return (
-      <WidgetTemplate
-        title={t('stories')}
-        // icon={<IconStories />}
-        credits={
-          dataTrends
-            ? {
-                title: 'YouTube',
-                url: 'https://www.youtube.com/?utm_source=findto_app',
-              }
-            : undefined
-        }
-        hideTitle={videoUrl ? true : false}>
-        <section className={Styles.container}>
-          {errorTrends && (
-            <p>Error loading content. Please report this feedback.</p>
-          )}
+  return (
+    <WidgetTemplate
+      title={t('stories')}
+      credits={credits}
+      rightChildren={
+        videoUrl ? (
+          <button
+            className={Styles.closeButton}
+            onClick={closeVideo}
+            aria-label="Close">
+            <IconClose />
+          </button>
+        ) : undefined
+      }>
+      <section className={Styles.container}>
+        {errorTrends && (
+          <p>Error loading content. Please report this feedback.</p>
+        )}
 
-          {dataTrends && (
-            <>
-              {videoUrl && (
-                <div ref={videoPlayer} className={Styles.videoPlayer}>
-                  <button className={Styles.closeButton} onClick={closeVideo}>
-                    <div>
-                      <IconClose />
-                      Fechar
-                    </div>
-                  </button>
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src={'https://www.youtube.com/embed/' + videoUrl}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen></iframe>
-                </div>
-              )}
-              <Swiper
-                slidesPerView={maxSlides}
-                mousewheel={true}
-                spaceBetween={0}
-                pagination={{
-                  clickable: true,
-                }}
-                loop={true}
-                modules={[Pagination, Mousewheel]}
-                className={Styles.slide}>
-                {dataTrends?.data?.map((item: ITrendsItem, index: number) => (
-                  <SwiperSlide key={index}>
-                    <button onClick={() => item.url && openVideo(item.url)}>
-                      {item.image && (
-                        <figure
-                          style={{
-                            backgroundImage: `url(${item.image})`,
-                          }}></figure>
-                      )}
-                      {item.title && <span>{item.title}</span>}
-                    </button>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </>
-          )}
-        </section>
-      </WidgetTemplate>
-    )
-  }
+        {videoUrl && (
+          <div ref={videoPlayer} className={Styles.videoPlayer}>
+            <iframe
+              title={`Player ${videoUrl}`}
+              width="100%"
+              height="100%"
+              src={`https://www.youtube.com/embed/${videoUrl}`}
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen></iframe>
+          </div>
+        )}
 
-  return null
+        <ul className={Styles.cards}>
+          {dataTrends?.data?.map((item: ITrendsItem, index: number) => (
+            <li key={item?.title + index}>
+              <Card
+                author={item.author}
+                title={item.title || ''}
+                imageUrl={item.image || ''}
+                onClick={() => item.url && openVideo(item.url)}
+              />
+            </li>
+          ))}
+        </ul>
+      </section>
+    </WidgetTemplate>
+  )
 }
+
+export default WidgetVideoStories

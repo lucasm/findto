@@ -1,15 +1,16 @@
-import Link from 'next/link'
 import Styles from './CardsLink.module.css'
 import {
-  IconHeart,
   IconFeedback,
   IconX,
   IconGitHub,
   IconDiscord,
   IconInstagram,
+  IconPatreon,
+  IconHeart,
 } from '../SvgIcons'
 import { useTranslations } from 'next-intl'
 import { JSX } from 'react'
+import Button from '../Button'
 
 interface ICardsLink {
   title: string
@@ -25,7 +26,7 @@ export default function CardsLink() {
   const cards: ICardsLink[] = [
     {
       title: t('donate'),
-      url: 'https://patreon.com/findto',
+      url: 'https://ko-fi.com/findto',
       icon: <IconHeart />,
       active: true,
     },
@@ -33,6 +34,12 @@ export default function CardsLink() {
       title: t('feedback.title'),
       url: t('feedback.url'),
       icon: <IconFeedback />,
+      active: true,
+    },
+    {
+      title: 'Patreon',
+      url: 'https://patreon.com/findto',
+      icon: <IconPatreon />,
       active: true,
     },
     {
@@ -54,22 +61,9 @@ export default function CardsLink() {
       active: false,
     },
     {
-      title: 'Get Pro version',
-      url: '/pro',
-      icon: <></>,
-      active: false,
-      internal: true,
-    },
-    {
       title: 'Instagram',
       url: 'https://instagram.com/findtoapp',
       icon: <IconInstagram />,
-      active: false,
-    },
-    {
-      title: 'Patreon',
-      url: 'https://patreon.com/findto',
-      icon: <></>,
       active: false,
     },
   ]
@@ -78,14 +72,18 @@ export default function CardsLink() {
     <div className={Styles.cards}>
       {cards
         ?.filter((project) => project.active)
-        .map((item, index) => (
-          <Link
-            key={index}
-            href={item.url}
-            target={item.internal ? '_self' : '_blank'}>
-            <figure>{item.icon}</figure>
-            {item.title}
-          </Link>
+        .map((item) => (
+          <Button
+            size="small"
+            key={item.title}
+            url={item.url}
+            color="white"
+            external={item.internal ? !item.internal : undefined}>
+            <>
+              {item.icon}
+              {item.title}
+            </>
+          </Button>
         ))}
     </div>
   )

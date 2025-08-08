@@ -5,8 +5,8 @@
   },
   "t": {
     "metadata": {
-      "title": "Get started with Findto",
-      "description": "Search across multiple sources on Web, AI, and more."
+      "title": "Findto is your search assistant",
+      "description": "Decentralized search across the Web, AI, and beyond."
     },
     "feedback": {
       "title": "Send feedback",
@@ -14,8 +14,8 @@
     },
     "welcome": {
       "goodMorning": "Good morning",
-      "goodEvening": "Good evening",
-      "goodNight": "Good night"
+      "goodEvening": "Good afternoon",
+      "goodNight": "Good evening"
     },
     "voice": {
       "voice": "Voice",
@@ -24,14 +24,13 @@
     },
     "widgetProtection": {
       "title": "Protection",
-      "description": "Findto never tracks your searches. Check the details of your chosen search source in the checkers below.",
+      "description": "Check the reputation of the search source selected below.",
       "source": "Source",
       "carbon": "Carbon footprint",
       "security": "Security",
       "privacy": "Privacy"
     },
-    "slogan": "Decentralized search on Web and AI",
-    "copyright": "Made in Brazil by",
+    "copyright": "Open source software made by",
     "about": "About",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
@@ -55,8 +54,8 @@
     "category": "Mode",
     "warnings": {
       "cookies": "Findto uses cookies. We respect your privacy and do not store personal information.",
-      "torrent": "Warning: The torrent is legal and often used to share files. Note that downloading copyrighted content without permission is a crime, as described in Digital Millennium Copyright Act (DMCA) law. Check your local laws and abide by them to avoid legal issues.",
-      "darknet": "Warning: The darknet is legal and often used by academics, journalists, activists, and people in censored regions or under mass surveillance. Use it responsibly. Be cautious of scams, phishing, and illegal activities. To access it, you need a special browser, like Tor Browser."
+      "torrent": "Warning: The Torrent protocol is legal and used for sharing files. However, downloading copyrighted content without permission may violate the DMCA law of the United States of America. Always follow your local laws to avoid legal consequences.",
+      "darknet": "Warning: The Darknet is legal and used by researchers, journalists, and people in censored regions or under mass surveillance. Access it responsibly. Avoid scams, phishing, and illegal activities. Use a special browser, like Tor Browser, to open .onion protocol sites."
     }
   },
   "categories": [
@@ -69,12 +68,12 @@
           "action": "https://www.google.com/search?q="
         },
         {
-          "name": "DuckDuckGo",
-          "action": "https://duckduckgo.com/?q="
-        },
-        {
           "name": "Bing",
           "action": "https://www.bing.com/search?q="
+        },
+        {
+          "name": "DuckDuckGo",
+          "action": "https://duckduckgo.com/?q="
         },
         {
           "name": "ChatGPT",
@@ -83,6 +82,10 @@
         {
           "name": "Copilot",
           "action": "https://copilot.microsoft.com/?q="
+        },
+        {
+          "name": "Perplexity",
+          "action": "https://www.perplexity.ai/?q="
         },
         {
           "name": "YouTube",
@@ -130,10 +133,6 @@
           "action": "https://www.ebay.com/sch/i.html?_nkw="
         },
         {
-          "name": "Yahoo",
-          "action": "https://search.yahoo.com/search?p="
-        },
-        {
           "name": "CNN",
           "action": "https://edition.cnn.com/search?q="
         },
@@ -170,10 +169,6 @@
           "action": "https://grok.com/?q="
         },
         {
-          "name": "DeepSeek",
-          "action": "https://chat.deepseek.com/?q="
-        },
-        {
           "name": "Claude",
           "action": "https://claude.ai/new?q="
         },
@@ -182,16 +177,16 @@
           "action": "https://you.com/search?fromSearchBar=true&tbm=youchat&q="
         },
         {
-          "name": "HuggingChat",
-          "action": "https://huggingface.co/chat?q="
+          "name": "Mistral",
+          "action": "https://chat.mistral.ai/chat?q="
+        },
+        {
+          "name": "DeepSeek",
+          "action": "https://chat.deepseek.com/?q="
         },
         {
           "name": "Gemini",
           "action": "https://gemini.google.com/app?q="
-        },
-        {
-          "name": "Mistral",
-          "action": "https://chat.mistral.ai/chat?q="
         },
         {
           "name": "Meta AI",
@@ -210,6 +205,10 @@
           "action": "https://firefly.adobe.com/generate/images?prompt="
         },
         {
+          "name": "Qwen",
+          "action": "https://chat.qwenlm.ai/?q="
+        },
+        {
           "name": "Cohere",
           "action": "https://coral.cohere.com/?q="
         },
@@ -218,8 +217,8 @@
           "action": "https://chat.falconllm.tii.ae/?q="
         },
         {
-          "name": "Qwen",
-          "action": "https://chat.qwenlm.ai/?q="
+          "name": "LibreChat",
+          "action": "https://librechat-librechat.hf.space/c/new?q="
         }
       ]
     },
@@ -327,7 +326,6 @@
           "name": "Facebook",
           "action": "https://www.facebook.com/public?query="
         },
-
         {
           "name": "LinkedIn",
           "action": "https://www.linkedin.com/search/results/index/?keywords="
@@ -339,6 +337,10 @@
         {
           "name": "Threads",
           "action": "https://www.threads.net/search/?q="
+        },
+        {
+          "name": "Twitch",
+          "action": "https://www.twitch.tv/search?term="
         },
         {
           "name": "Bluesky",
@@ -383,6 +385,167 @@
       ]
     },
     {
+      "name": "News",
+      "active": true,
+      "description": "Search news on CNN, NY Times, Reuters, BBC, The Guardian, Forbes, Time, CNBC, and more.",
+      "data": [
+        {
+          "name": "Google News",
+          "action": "https://news.google.com/search?q="
+        },
+        {
+          "name": "CNN",
+          "action": "https://edition.cnn.com/search?q="
+        },
+        {
+          "name": "NY Times",
+          "action": "https://www.nytimes.com/search?query="
+        },
+        {
+          "name": "BBC",
+          "action": "https://www.bbc.co.uk/search?q="
+        },
+        {
+          "name": "Reuters",
+          "action": "https://www.reuters.com/site-search/?query="
+        },
+        {
+          "name": "WSJ",
+          "action": "https://www.wsj.com/search?query="
+        },
+        {
+          "name": "Bloomberg",
+          "action": "https://www.bloomberg.com/search?query="
+        },
+        {
+          "name": "CNBC",
+          "action": "https://www.cnbc.com/search/?query="
+        },
+        {
+          "name": "The Guardian",
+          "action": "https://www.google.co.uk/search?as_sitesearch=www.theguardian.com&q="
+        },
+        {
+          "name": "AP",
+          "action": "https://www.ap.org/?s="
+        },
+        {
+          "name": "Forbes",
+          "action": "https://www.forbes.com/search/?q="
+        },
+        {
+          "name": "Financial Times",
+          "action": "https://www.ft.com/search?q="
+        },
+        {
+          "name": "Economist",
+          "action": "https://www.economist.com/search?q="
+        },
+        {
+          "name": "Washington Post",
+          "action": "https://www.washingtonpost.com/search/?query="
+        },
+        {
+          "name": "Time",
+          "action": "https://time.com/search/?q="
+        },
+        {
+          "name": "Newsweek",
+          "action": "https://search.newsweek.com/?q="
+        },
+        {
+          "name": "Vox",
+          "action": "https://www.vox.com/search?q="
+        },
+        {
+          "name": "Aljazeera",
+          "action": "https://www.aljazeera.com/search/?q="
+        },
+        {
+          "name": "AFP",
+          "action": "https://factcheck.afp.com/fact-checking-search-results?search_api_fulltext="
+        },
+        {
+          "name": "DW",
+          "action": "https://www.dw.com/search/?item="
+        },
+        {
+          "name": "Feedly",
+          "action": "https://feedly.com/i/search/"
+        },
+        {
+          "name": "Flipboard",
+          "action": "https://flipboard.com/search/"
+        }
+      ],
+      "youtube_channels": [
+        {
+          "id": "UCupvZG-5ko_eiXAupbDfxWw",
+          "title": "CNN"
+        },
+        {
+          "id": "UCqnbDFdCpuN8CMEg0VuEBqA",
+          "title": "nytimes"
+        },
+        {
+          "id": "UCQXHTFnQYFTqN0MqmNh9EIA",
+          "title": "BBCWorldService"
+        },
+        {
+          "id": "UCUMZ7gohGI9HcU9VNsr2FJQ",
+          "title": "business"
+        },
+        {
+          "id": "UC8Su5vZCXWRag13H53zWVwA",
+          "title": "TIME"
+        },
+        {
+          "id": "UChqUTb7kYRX8-EiaN3XFrSQ",
+          "title": "Reuters"
+        },
+        {
+          "id": "UC2a35q7eyzkfoIusBzdH4Hw",
+          "title": "NewsweekMag"
+        },
+        {
+          "id": "UCLXo7UDZvByw2ixzpQCufnA",
+          "title": "Vox"
+        },
+        {
+          "id": "UCHpw8xwDNhU9gdohEcJu4aA",
+          "title": "theGuardian"
+        },
+        {
+          "id": "UCIALMKvObZNtJ6AmdCLP7Lg",
+          "title": "markets"
+        },
+        {
+          "id": "UCvJJ_dzjViJCoLf5uKUTwoA",
+          "title": "CNBC"
+        },
+        {
+          "id": "UCBi2mrWuNuyYy4gbM6fU18Q",
+          "title": "ABCNews"
+        },
+        {
+          "id": "UCeY0bbntWzzVIaj2z3QigXg",
+          "title": "NBCNews"
+        },
+        {
+          "id": "UC52X5wxOL_s5yw0dQk7NtgA",
+          "title": "AssociatedPress"
+        },
+        {
+          "id": "UCNye-wNBqNL5ZzHSJj3l8Bg",
+          "title": "aljazeeraenglish"
+        },
+        {
+          "id": "UCSrZ3UV4jOidv8ppoVuvW9Q",
+          "title": "euronews"
+        }
+      ]
+    },
+    {
       "name": "Videos",
       "active": true,
       "description": "Search videos on YouTube, Twitch, IMDb, Netflix, Prime Video, Disney+, HBO Max, and more.",
@@ -392,8 +555,8 @@
           "action": "https://www.youtube.com/results?search_query="
         },
         {
-          "name": "Twitch",
-          "action": "https://www.twitch.tv/search?term="
+          "name": "JustWatch",
+          "action": "https://www.justwatch.com/us/search?q="
         },
         {
           "name": "IMDb",
@@ -434,10 +597,6 @@
         {
           "name": "Crunchyroll",
           "action": "https://www.crunchyroll.com/pt-br/search?q="
-        },
-        {
-          "name": "JustWatch",
-          "action": "https://www.justwatch.com/us/search?q="
         },
         {
           "name": "TMDB",
@@ -692,171 +851,6 @@
         {
           "id": "UCsVcseUYbYjldc-XgcsiEbg",
           "title": "Billboard"
-        }
-      ]
-    },
-    {
-      "name": "News",
-      "active": true,
-      "description": "Search news on CNN, NY Times, Reuters, BBC, Guardian, Forbes, Time, CNBC, and more.",
-      "data": [
-        {
-          "name": "CNN",
-          "action": "https://edition.cnn.com/search?q="
-        },
-        {
-          "name": "NY Times",
-          "action": "https://www.nytimes.com/search?query="
-        },
-        {
-          "name": "Google News",
-          "action": "https://news.google.com/search?q="
-        },
-        {
-          "name": "BBC",
-          "action": "https://www.bbc.co.uk/search?q="
-        },
-        {
-          "name": "Reuters",
-          "action": "https://www.reuters.com/site-search/?query="
-        },
-        {
-          "name": "WSJ",
-          "action": "https://www.wsj.com/search?query="
-        },
-        {
-          "name": "Bloomberg",
-          "action": "https://www.bloomberg.com/search?query="
-        },
-        {
-          "name": "CNBC",
-          "action": "https://www.cnbc.com/search/?query="
-        },
-        {
-          "name": "Guardian",
-          "action": "https://www.google.co.uk/search?as_sitesearch=www.theguardian.com&q="
-        },
-        {
-          "name": "AP",
-          "action": "https://www.ap.org/?s="
-        },
-        {
-          "name": "Forbes",
-          "action": "https://www.forbes.com/search/?q="
-        },
-        {
-          "name": "Financial Times",
-          "action": "https://www.ft.com/search?q="
-        },
-        {
-          "name": "Economist",
-          "action": "https://www.economist.com/search?q="
-        },
-        {
-          "name": "Washington Post",
-          "action": "https://www.washingtonpost.com/search/?query="
-        },
-        {
-          "name": "Time",
-          "action": "https://time.com/search/?q="
-        },
-        {
-          "name": "Newsweek",
-          "action": "https://search.newsweek.com/?q="
-        },
-        {
-          "name": "Vox",
-          "action": "https://www.vox.com/search?q="
-        },
-        {
-          "name": "Aljazeera",
-          "action": "https://www.aljazeera.com/search/?q="
-        },
-        {
-          "name": "AFP",
-          "action": "https://factcheck.afp.com/fact-checking-search-results?search_api_fulltext="
-        },
-        {
-          "name": "DW",
-          "action": "https://www.dw.com/search/?item="
-        },
-        {
-          "name": "RT",
-          "action": "https://www.rt.com/search?q="
-        },
-        {
-          "name": "Feedly",
-          "action": "https://feedly.com/i/search/"
-        },
-        {
-          "name": "Flipboard",
-          "action": "https://flipboard.com/search/"
-        }
-      ],
-      "youtube_channels": [
-        {
-          "id": "UCqnbDFdCpuN8CMEg0VuEBqA",
-          "title": "nytimes"
-        },
-        {
-          "id": "UCQXHTFnQYFTqN0MqmNh9EIA",
-          "title": "BBCWorldService"
-        },
-        {
-          "id": "UCupvZG-5ko_eiXAupbDfxWw",
-          "title": "CNN"
-        },
-        {
-          "id": "UCUMZ7gohGI9HcU9VNsr2FJQ",
-          "title": "business"
-        },
-        {
-          "id": "UC8Su5vZCXWRag13H53zWVwA",
-          "title": "TIME"
-        },
-        {
-          "id": "UChqUTb7kYRX8-EiaN3XFrSQ",
-          "title": "Reuters"
-        },
-        {
-          "id": "UC2a35q7eyzkfoIusBzdH4Hw",
-          "title": "NewsweekMag"
-        },
-        {
-          "id": "UCLXo7UDZvByw2ixzpQCufnA",
-          "title": "Vox"
-        },
-        {
-          "id": "UCHpw8xwDNhU9gdohEcJu4aA",
-          "title": "theGuardian"
-        },
-        {
-          "id": "UCIALMKvObZNtJ6AmdCLP7Lg",
-          "title": "markets"
-        },
-        {
-          "id": "UCvJJ_dzjViJCoLf5uKUTwoA",
-          "title": "CNBC"
-        },
-        {
-          "id": "UCBi2mrWuNuyYy4gbM6fU18Q",
-          "title": "ABCNews"
-        },
-        {
-          "id": "UCeY0bbntWzzVIaj2z3QigXg",
-          "title": "NBCNews"
-        },
-        {
-          "id": "UC52X5wxOL_s5yw0dQk7NtgA",
-          "title": "AssociatedPress"
-        },
-        {
-          "id": "UCNye-wNBqNL5ZzHSJj3l8Bg",
-          "title": "aljazeeraenglish"
-        },
-        {
-          "id": "UCSrZ3UV4jOidv8ppoVuvW9Q",
-          "title": "euronews"
         }
       ]
     },
@@ -1205,10 +1199,6 @@
           "action": "https://bitbucket.org/repo/all/?name="
         },
         {
-          "name": "Rapid API",
-          "action": "https://rapidapi.com/search?term="
-        },
-        {
           "name": "Docker Hub",
           "action": "https://hub.docker.com/search?q="
         },
@@ -1247,6 +1237,14 @@
         {
           "name": "Pub.dev",
           "action": "https://pub.dev/packages?q="
+        },
+        {
+          "name": "Rapid API",
+          "action": "https://rapidapi.com/search?term="
+        },
+        {
+          "name": "Apify",
+          "action": "https://apify.com/store/categories?search="
         },
         {
           "name": "Kaggle",
