@@ -207,6 +207,12 @@
 }
 
 @media screen and (max-width: 576px) {
+  .section {
+    padding-top: 0;
+  }
+  .container {
+    gap: 1.5rem;
+  }
   /* .buttons ul {
     white-space: nowrap;
     overflow-x: auto;
