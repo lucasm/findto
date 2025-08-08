@@ -16,8 +16,8 @@
 
 @media screen and (max-width: 768px) {
   .icon {
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
   }
 
   .icon svg {
