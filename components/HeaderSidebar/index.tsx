@@ -1,9 +1,11 @@
+import { useLocale } from 'next-intl'
+
 import { useSearch } from '@/contexts/SearchContext'
+import { ISearchCategory } from '@/interfaces/search'
+import { getLocaleData } from '@/utils/getLocaleData'
+
 import styles from './HeaderSidebar.module.css'
 import SearchNav from '../SearchNav'
-import { useLocale } from 'next-intl'
-import { getLocaleData } from '@/utils/getLocaleData'
-import { ISearchCategory } from '@/interfaces/search'
 
 interface Props {
   category: ISearchCategory

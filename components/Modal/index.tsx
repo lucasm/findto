@@ -1,4 +1,5 @@
 import React, { useState, useEffect, ReactNode, useRef } from 'react'
+
 import styles from './Modal.module.css'
 import { IconClose } from '../SvgIcons'
 
@@ -25,7 +26,7 @@ const Modal = ({ isOpen, onClose, children, title }: ModalProps) => {
 
     // Encontre todos os elementos clicáveis dentro do modal
     const clickableElements = modalRef.current?.querySelectorAll(
-      'button, a, input, [tabindex]:not([tabindex="-1"])',
+      'button, a, input, [tabindex]:not([tabindex="-1"])'
     )
 
     // Se houver elementos clicáveis, defina o último elemento como ref

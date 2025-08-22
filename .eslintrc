@@ -1,6 +1,6 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "import"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -14,6 +14,26 @@
     ],
     "@typescript-eslint/no-explicit-any": "error",
     "prettier/prettier": "warn",
-    "react/no-unescaped-entities": "error"
+    "react/no-unescaped-entities": "error",
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",      // fs, path, etc
+          "external",     // react, next, etc
+          "internal",     // @/utils, @/components
+          ["parent", "sibling", "index"] // ../ ou ./ arquivos locais
+        ],
+        "pathGroups": [
+          {
+            "pattern": "@/**",
+            "group": "internal"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["builtin"],
+        "newlines-between": "always",
+        "alphabetize": { "order": "asc", "caseInsensitive": true }
+      }
+    ]
   }
 }

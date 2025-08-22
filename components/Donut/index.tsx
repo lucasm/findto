@@ -21,7 +21,9 @@ export default function Donut(props: IDonutProps) {
           <text y="50%" x="50%" transform="translate(0, 2)">
             <tspan textAnchor="middle" className={Styles.donutPercent}>
               {props.showPercent ? props.percent : '?'}
-              {props.showPercent && <tspan className={Styles.donutPercentSymbol}>%</tspan>}
+              {props.showPercent && (
+                <tspan className={Styles.donutPercentSymbol}>%</tspan>
+              )}
             </tspan>
           </text>
         </g>

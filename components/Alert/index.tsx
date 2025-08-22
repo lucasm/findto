@@ -1,4 +1,5 @@
 import { JSX } from 'react'
+
 import { IconAlert } from '../SvgIcons'
 import Styles from './Alert.module.css'
 

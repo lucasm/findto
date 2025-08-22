@@ -1,17 +1,19 @@
 'use client'
 
-import { useEffect, useState } from 'react'
-import styles from './CookiesPopup.module.css'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
+import { useEffect, useState } from 'react'
+
 import { useSearch } from '@/contexts/SearchContext'
+
+import styles from './CookiesPopup.module.css'
 
 const CookiesPopup = () => {
   const t = useTranslations('t')
-  const { inputFocus } = useSearch()
+  const { inputFocus, isBrowserClientSide } = useSearch()
   const [isVisible, setIsVisible] = useState<boolean>(false)
   const [isAccepted, setIsAccepted] = useState<boolean>(() => {
-    if (typeof window !== 'undefined') {
+    if (isBrowserClientSide) {
       const saved = localStorage.getItem('isCookiesAccepted')
       return saved ? JSON.parse(saved) : false
     } else {
@@ -28,7 +30,7 @@ const CookiesPopup = () => {
   const handleAccept = () => {
     setIsAccepted(true)
     setIsVisible(false)
-    if (typeof window !== 'undefined') {
+    if (isBrowserClientSide) {
       localStorage.setItem('isCookiesAccepted', JSON.stringify(true))
     }
     inputFocus()

@@ -1,5 +1,6 @@
-import Styles from './Button.module.css'
 import Link from 'next/link'
+
+import Styles from './Button.module.css'
 
 type Props = {
   url?: string

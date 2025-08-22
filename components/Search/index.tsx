@@ -1,19 +1,21 @@
 'use client'
 
-import { useRef, useState, useEffect, useCallback } from 'react'
 import { useLocale, useTranslations } from 'next-intl'
-import Style from './Search.module.css'
-import { normalizeId } from '@/utils/formats'
-import { useSearch } from '@/contexts/SearchContext'
-import { IconClose, IconSend } from '@/components/SvgIcons'
-import SearchSuggestions from '@/components/SearchSuggestions'
-import SearchVoice from '@/components/SearchVoice'
-import Tooltip from '@/components/Tooltip'
-import SearchTitle from '@/components/SearchTitle'
-import { ISearchCategory, ISearchChild } from '@/interfaces/search'
-import SearchOptions from '@/components/SearchOptions'
+import { useCallback, useEffect, useRef, useState } from 'react'
+
 import Alert from '@/components/Alert'
-import SearchProviderIcon from '../SearchProviderIcon'
+import SearchSourceOptions from '@/components/SearchSourceOptions'
+import SearchSuggestions from '@/components/SearchSuggestions'
+import SearchTitle from '@/components/SearchTitle'
+import SearchVoice from '@/components/SearchVoice'
+import { IconClose, IconSend } from '@/components/SvgIcons'
+import Tooltip from '@/components/Tooltip'
+import { useSearch } from '@/contexts/SearchContext'
+import { ISearchCategory, ISearchChild } from '@/interfaces/search'
+import { normalizeId } from '@/utils/formats'
+
+import SearchSourceIcon from '../SearchSourceIcon'
+import Style from './Search.module.css'
 
 interface Props {
   selectedCategory: ISearchCategory
@@ -27,7 +29,6 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
     setCategory,
     searchSource,
     setSearchSource,
-    setSearch,
     searchUrl,
     setSearchUrl,
     inputValue,
@@ -73,8 +74,7 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
     )
 
     if (source) {
-      setSearchSource(source)
-      setSearch(id)
+      setSearchSource({ ...source, id: id })
       window.localStorage.setItem('search', id)
       inputFocus()
     }
@@ -93,8 +93,7 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
 
     return t('placeholder')
   }
-
-  const renderWarnings = () => {
+  const handleShowWarnings = () => {
     if (selectedCategory?.name === 'Torrent') {
       return <Alert>{t('warnings.torrent')}</Alert>
     }
@@ -167,14 +166,14 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
 
         {/* Input */}
         <div className={Style.containerInput}>
-          <div className={Style.searchInput}>
+          <div className={Style.input}>
             <div className={Style.textareaContainer}>
               <textarea
                 id="search"
                 ref={refSearchInput}
                 value={inputValue}
                 aria-label="Search"
-                className={Style.searchInput}
+                className={Style.input}
                 placeholder={handlePlaceholder()}
                 autoComplete="off"
                 maxLength={2500}
@@ -234,12 +233,11 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
 
         {/* Child */}
         {searchSource?.child && (
-          <SearchOptions
+          <SearchSourceOptions
             options={searchSource?.child.map((item: ISearchChild) => ({
               label: item.name,
               value: item.action,
             }))}
-            id={normalizeId(searchSource?.name)}
             label={searchSource?.name}
           />
         )}
@@ -251,6 +249,7 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
               <li key={source?.name + index}>
                 <button
                   type="button"
+                  translate="no"
                   className={
                     searchSource?.name === source.name
                       ? Style.buttonActive
@@ -262,10 +261,9 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
                       refButtons.current['button_' + normalizeId(source.name)] =
                         element
                     }
-                  }}
-                  translate="no">
+                  }}>
                   <figure>
-                    <SearchProviderIcon name={source?.name} />
+                    <SearchSourceIcon name={source?.name} />
                   </figure>
                   {source.name}
                 </button>
@@ -274,7 +272,7 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
           </ul>
         </div>
 
-        {renderWarnings()}
+        {handleShowWarnings()}
       </div>
     </section>
   )

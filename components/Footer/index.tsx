@@ -1,6 +1,7 @@
-import Style from './Footer.module.css'
 import Link from 'next/link'
-import SvgLogo from '../SvgLogo'
+import { useTranslations } from 'next-intl'
+
+import Style from './Footer.module.css'
 import {
   IconGitHub,
   IconX,
@@ -9,7 +10,7 @@ import {
   IconDiscord,
   IconLinkedIn,
 } from '../SvgIcons'
-import { useTranslations } from 'next-intl'
+import SvgLogo from '../SvgLogo'
 
 const Footer = () => {
   const year = new Date().getFullYear()

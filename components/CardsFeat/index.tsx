@@ -1,5 +1,6 @@
-import Style from './CardsFeat.module.css'
+import { JSX } from 'react'
 
+import Style from './CardsFeat.module.css'
 import {
   IconAccessibility,
   IconLanguage,
@@ -13,7 +14,6 @@ import {
   IconTrending,
   IconFileSearch,
 } from '../SvgIcons'
-import { JSX } from 'react'
 
 // Define the type for a feature item
 interface Feature {

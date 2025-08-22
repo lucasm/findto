@@ -1,5 +1,5 @@
-import Style from '@/layouts/WebsiteLayout/WebsiteLayout.module.css'
 import WebsiteLayout from '@/layouts/WebsiteLayout'
+import Style from '@/layouts/WebsiteLayout/WebsiteLayout.module.css'
 
 export const metadata = {
   title: 'Not Found',

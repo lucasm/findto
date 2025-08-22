@@ -1,7 +1,9 @@
 import { useLocale, useTranslations } from 'next-intl'
-import WidgetTemplate from '../WidgetTemplate'
-import SearchNav from '../SearchNav'
+
 import { getLocaleData } from '@/utils/getLocaleData'
+
+import SearchNav from '../SearchNav'
+import WidgetTemplate from '../WidgetTemplate'
 
 export default function WidgetCategories() {
   const t = useTranslations('t')

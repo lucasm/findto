@@ -1,5 +1,7 @@
 'use client'
 
+import { useSearchParams } from 'next/navigation'
+import { useLocale, useTranslations } from 'next-intl'
 import {
   createContext,
   useContext,
@@ -9,17 +11,11 @@ import {
   useMemo,
   useCallback,
 } from 'react'
-import { useLocale, useTranslations } from 'next-intl'
-import { useSearchParams } from 'next/navigation'
-import { extractDomain, isValidUrl } from '@/utils/url'
+
 import { ISearch } from '@/interfaces/search'
+import { IUserLocation } from '@/interfaces/user'
+import { extractDomain, isValidUrl } from '@/utils/url'
 
-interface UserLocation {
-  latitude: number | undefined
-  longitude: number | undefined
-}
-
-// create Context for global state
 interface ISearchContext {
   refSearchInput: React.RefObject<HTMLTextAreaElement | null>
   refButtons: React.RefObject<{ [key: string]: HTMLButtonElement | null }>
@@ -28,10 +24,6 @@ interface ISearchContext {
   setInputValue: React.Dispatch<React.SetStateAction<string | undefined>>
   searchSource: ISearch | undefined
   setSearchSource: React.Dispatch<React.SetStateAction<ISearch | undefined>>
-  search: string
-  setSearch: React.Dispatch<React.SetStateAction<string>>
-  domain: string
-  setDomain: React.Dispatch<React.SetStateAction<string>>
   searchUrl: string
   setSearchUrl: React.Dispatch<React.SetStateAction<string>>
   category: string
@@ -40,25 +32,28 @@ interface ISearchContext {
   locale: string
   permissionLocation: boolean
   setPermissionLocation: React.Dispatch<React.SetStateAction<boolean>>
-  userLocation: UserLocation
-  setUserLocation: React.Dispatch<React.SetStateAction<UserLocation>>
+  userLocation: IUserLocation
+  setUserLocation: React.Dispatch<React.SetStateAction<IUserLocation>>
+  isBrowserClientSide: boolean
   isMobileViewport: boolean
   isSidebarOpen: boolean
   setIsSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>
   sizeWindow: { width: number; height: number }
   inputFocus: () => void
 }
+interface ISearchContextProvider {
+  children: React.ReactNode
+  isSidebarOpenDefault: boolean
+}
 
+// create Context for global state
 const SearchContext = createContext<ISearchContext>({} as ISearchContext)
 
 // export as Provider
-export function SearchProvider({
+export function SearchContextProvider({
   children,
   isSidebarOpenDefault,
-}: Readonly<{
-  children: React.ReactNode
-  isSidebarOpenDefault: boolean
-}>) {
+}: Readonly<ISearchContextProvider>) {
   const locale = useLocale()
   const c = useTranslations('country')
   const searchParams = useSearchParams()
@@ -66,23 +61,22 @@ export function SearchProvider({
 
   const [country, setCountry] = useState<string | null>(null)
   const [category, setCategory] = useState<string>('')
-  const [searchSource, setSearchSource] = useState<ISearch | undefined>()
-  const [search, setSearch] = useState<string>('')
-  const [domain, setDomain] = useState<string>('')
+  const [searchSource, setSearchSource] = useState<ISearch>()
   const [searchUrl, setSearchUrl] = useState<string>('')
 
   const [permissionLocation, setPermissionLocation] = useState<boolean>(false)
-  const [userLocation, setUserLocation] = useState<UserLocation>({
+  const [userLocation, setUserLocation] = useState<IUserLocation>({
     latitude: undefined,
     longitude: undefined,
   })
 
+  const isBrowserClientSide = typeof window !== 'undefined'
   const [isSidebarOpen, setIsSidebarOpen] = useState(isSidebarOpenDefault)
   const [isMobileViewport, setIsMobileViewport] = useState<boolean>(false)
 
   const refSearchInput = useRef<HTMLTextAreaElement>(null)
   const refButtons = useRef<{ [key: string]: HTMLButtonElement | null }>({})
-  const [inputValue, setInputValue] = useState<string | undefined>(undefined)
+  const [inputValue, setInputValue] = useState<string>()
 
   const inputFocus = useCallback(() => {
     const inputElement = refSearchInput.current as HTMLInputElement | null
@@ -91,8 +85,7 @@ export function SearchProvider({
     }
   }, [refSearchInput])
   const scrollToTop = () => {
-    const isBrowser = () => typeof window !== 'undefined'
-    if (!isBrowser()) return
+    if (!isBrowserClientSide) return
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
   const putValue = (value: string) => {
@@ -134,13 +127,11 @@ export function SearchProvider({
   }
   const sizeWindow = useWindowSize()
 
-  const isClientSide = typeof window !== 'undefined'
-
   // LocalStorage: initial values
   useEffect(() => {
     setCountry(c('code'))
 
-    if (isClientSide) {
+    if (isBrowserClientSide) {
       const savedInputValue = window.localStorage.getItem('inputValue')
       setInputValue(savedInputValue ? JSON.parse(savedInputValue) : '')
 
@@ -158,7 +149,7 @@ export function SearchProvider({
     }
   }, [inputValue])
 
-  // mobile viewport
+  // isMobileViewport
   useEffect(() => {
     if (sizeWindow.width) {
       if (sizeWindow.width <= 1024) {
@@ -169,33 +160,6 @@ export function SearchProvider({
     }
   }, [sizeWindow])
 
-  // LocalStorage: search source
-  useEffect(() => {
-    if (isClientSide) {
-      const storedSearch = window.localStorage.getItem('search')
-
-      if (storedSearch) {
-        setSearch(storedSearch)
-      } else {
-        window.localStorage.setItem('search', search)
-      }
-    }
-  }, [category, search])
-
-  // sidebar
-  //   useEffect(() => {
-  //     const app = document.querySelector('.app')
-
-  //     console.log('executou')
-
-  //     if (isMobileViewport && isSidebarOpen) {
-  //       app?.classList.remove('sidebar')
-  //     }
-  //     if (!isMobileViewport && isSidebarOpen) {
-  //       app?.classList.add('sidebar')
-  //     }
-  //   }, [isSidebarOpen, isMobileViewport])
-
   // query
   useEffect(() => {
     if (query) {
@@ -203,11 +167,10 @@ export function SearchProvider({
     }
   }, [query])
 
+  // searchUrl
   useEffect(() => {
-    if (searchUrl) {
-      if (isValidUrl(searchUrl)) {
-        setDomain(extractDomain(searchUrl))
-      }
+    if (searchUrl && isValidUrl(searchUrl) && searchSource) {
+      setSearchSource({ ...searchSource, domain: extractDomain(searchUrl) })
     }
   }, [searchUrl])
 
@@ -220,12 +183,8 @@ export function SearchProvider({
       setInputValue,
       searchSource,
       setSearchSource,
-      search,
-      setSearch,
       searchUrl,
       setSearchUrl,
-      domain,
-      setDomain,
       category,
       setCategory,
       country,
@@ -234,6 +193,7 @@ export function SearchProvider({
       setPermissionLocation,
       userLocation,
       setUserLocation,
+      isBrowserClientSide,
       isMobileViewport,
       isSidebarOpen,
       setIsSidebarOpen,
@@ -248,12 +208,8 @@ export function SearchProvider({
       setInputValue,
       searchSource,
       setSearchSource,
-      search,
-      setSearch,
       searchUrl,
       setSearchUrl,
-      domain,
-      setDomain,
       category,
       setCategory,
       country,
@@ -262,6 +218,7 @@ export function SearchProvider({
       setPermissionLocation,
       userLocation,
       setUserLocation,
+      isBrowserClientSide,
       isMobileViewport,
       isSidebarOpen,
       setIsSidebarOpen,

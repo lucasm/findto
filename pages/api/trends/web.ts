@@ -1,6 +1,7 @@
-import Parser from 'rss-parser'
-import { ITrends } from '../../../interfaces/trends'
 import type { NextApiRequest, NextApiResponse } from 'next/types'
+import Parser from 'rss-parser'
+
+import { ITrends } from '../../../interfaces/trends'
 
 const parser = new Parser({
   customFields: {

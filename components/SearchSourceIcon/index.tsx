@@ -1,15 +1,16 @@
 'use client'
 
-import { normalizeId } from '@/utils/formats'
-import { useState } from 'react'
 import Image from 'next/image'
+import { useState } from 'react'
+
+import { normalizeId } from '@/utils/formats'
 
 type Props = {
   name: string | undefined
   size?: number
 }
 
-const SearchProviderIcon = ({ name, size = 24 }: Props) => {
+const SearchSourceIcon = ({ name, size = 24 }: Props) => {
   const [hasError, setHasError] = useState(false)
 
   const normalized = name ? normalizeId(name) : ''
@@ -60,4 +61,4 @@ const SearchProviderIcon = ({ name, size = 24 }: Props) => {
   )
 }
 
-export default SearchProviderIcon
+export default SearchSourceIcon

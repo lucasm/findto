@@ -1,20 +1,26 @@
-import Style from './ButtonGeolocation.module.css'
-import React, { useEffect, useState } from 'react'
 import { useTranslations } from 'next-intl'
-import { useSearch } from '@/contexts/SearchContext'
-import { IconLocationGps } from '@/components/SvgIcons'
+import React, { useEffect, useState } from 'react'
+
 import Button from '@/components/Button'
+import { IconLocationGps } from '@/components/SvgIcons'
+import { useSearch } from '@/contexts/SearchContext'
+
+import Style from './ButtonGeolocation.module.css'
 
 export default function ButtonGeolocation() {
   const t = useTranslations('t')
 
-  const { setUserLocation, permissionLocation, setPermissionLocation } =
-    useSearch()
+  const {
+    setUserLocation,
+    permissionLocation,
+    setPermissionLocation,
+    isBrowserClientSide,
+  } = useSearch()
 
   const [locationError, setLocationError] = useState('')
 
   const handleClick = () => {
-    if (typeof window !== 'undefined' && 'geolocation' in navigator) {
+    if (isBrowserClientSide && 'geolocation' in navigator) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
           const latitude = position.coords.latitude

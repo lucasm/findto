@@ -3,14 +3,16 @@
 import 'regenerator-runtime/runtime'
 import { useTranslations } from 'next-intl'
 import { useEffect, useState } from 'react'
-import Style from './SearchVoice.module.css'
 import SpeechRecognition, {
   useSpeechRecognition,
 } from 'react-speech-recognition'
+
 import { useSearch } from '@/contexts/SearchContext'
+
+import Style from './SearchVoice.module.css'
+import Modal from '../Modal'
 import { IconMic } from '../SvgIcons'
 import Tooltip from '../Tooltip'
-import Modal from '../Modal'
 
 interface Props {
   display: boolean
@@ -19,7 +21,7 @@ interface Props {
 export default function SearchVoice(
   { display }: Readonly<Props> = { display: true }
 ) {
-  const { putValue, isMobileViewport } = useSearch()
+  const { putValue, isMobileViewport, isBrowserClientSide } = useSearch()
   const {
     transcript,
     listening,
@@ -55,7 +57,7 @@ export default function SearchVoice(
 
   useEffect(() => {
     if (
-      typeof window !== 'undefined' &&
+      isBrowserClientSide &&
       browserSupportsSpeechRecognition &&
       isMicrophoneAvailable
     ) {

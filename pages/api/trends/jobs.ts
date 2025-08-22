@@ -1,7 +1,8 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
 import axios from 'axios'
-import { ITrends } from '@/interfaces/trends'
+import type { NextApiRequest, NextApiResponse } from 'next'
 import validator from 'validator'
+
+import { ITrends } from '@/interfaces/trends'
 
 export default async function endpoint(
   req: NextApiRequest,

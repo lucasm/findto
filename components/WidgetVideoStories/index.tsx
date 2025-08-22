@@ -1,15 +1,17 @@
 'use client'
 
-import Styles from './WidgetVideoStories.module.css'
+import { useTranslations } from 'next-intl'
 import { useEffect, useState, useCallback, useRef } from 'react'
 import useSWR from 'swr'
-import { fetcher } from '@/utils/http'
-import type { ITrendsItem } from '@/interfaces/trends'
-import { useTranslations } from 'next-intl'
-import { IconClose } from '../SvgIcons'
-import { ISearchCategory } from '@/interfaces/search'
-import WidgetTemplate from '../WidgetTemplate'
+
 import Card from '@/components/Card'
+import { ISearchCategory } from '@/interfaces/search'
+import type { ITrendsItem } from '@/interfaces/trends'
+import { fetcher } from '@/utils/http'
+
+import Styles from './WidgetVideoStories.module.css'
+import { IconClose } from '../SvgIcons'
+import WidgetTemplate from '../WidgetTemplate'
 
 interface Props {
   selectedCategory: ISearchCategory

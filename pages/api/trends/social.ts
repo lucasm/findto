@@ -1,5 +1,6 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
 import axios from 'axios'
+import type { NextApiRequest, NextApiResponse } from 'next'
+
 import { ITrends } from '../../../interfaces/trends'
 import { getWoeid } from '../../../utils/woeid'
 

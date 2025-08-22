@@ -1,8 +1,9 @@
 'use client'
 
-import React, { useEffect, useRef, useState } from 'react'
-import Styles from './WidgetDropdown.module.css'
 import { useTranslations } from 'next-intl'
+import React, { useEffect, useRef, useState } from 'react'
+
+import Styles from './WidgetDropdown.module.css'
 import { ICredits } from '../WidgetTemplate'
 
 type WidgetDropdownProps = {

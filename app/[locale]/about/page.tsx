@@ -1,13 +1,14 @@
-import Style from '@/layouts/WebsiteLayout/WebsiteLayout.module.css'
-import WebsiteLayout from '@/layouts/WebsiteLayout'
-import { useTranslations } from 'next-intl'
 import Link from 'next/link'
-import CardsFeat from '@/components/CardsFeat'
-import Button from '@/components/Button'
-import SvgLogo from '@/components/SvgLogo'
+import { useTranslations } from 'next-intl'
+
 import BannerAnimateCircleNav from '@/components/BannerAnimateCircleNav'
-import BannerAnimateText from '@/components/BannerAnimateText'
 import BannerAnimatePressMe from '@/components/BannerAnimatePressMe'
+import BannerAnimateText from '@/components/BannerAnimateText'
+import Button from '@/components/Button'
+import CardsFeat from '@/components/CardsFeat'
+import SvgLogo from '@/components/SvgLogo'
+import WebsiteLayout from '@/layouts/WebsiteLayout'
+import Style from '@/layouts/WebsiteLayout/WebsiteLayout.module.css'
 
 export const metadata = {
   title: 'About',

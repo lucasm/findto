@@ -1,11 +1,13 @@
 'use client'
 
-import Style from './Header.module.css'
 import Link from 'next/link'
-import { useTheme } from 'next-themes'
+import { useRouter } from 'next/navigation'
 import { useTranslations } from 'next-intl'
-import { useSearch } from '@/contexts/SearchContext'
-import { getLocaleData } from '@/utils/getLocaleData'
+import { useTheme } from 'next-themes'
+
+import HeaderSidebar from '@/components/HeaderSidebar'
+import SearchNav from '@/components/SearchNav'
+import SelectLanguage from '@/components/SelectLanguage'
 import {
   IconUser,
   IconFeedback,
@@ -18,12 +20,12 @@ import {
   IconArrowExternal,
   IconShield,
 } from '@/components/SvgIcons'
-import SelectLanguage from '@/components/SelectLanguage'
-import SearchNav from '@/components/SearchNav'
-import HeaderSidebar from '@/components/HeaderSidebar'
 import WidgetDropdown from '@/components/WidgetDropdown'
+import { useSearch } from '@/contexts/SearchContext'
 import { ISearchCategory } from '@/interfaces/search'
-import { useRouter } from 'next/navigation'
+import { getLocaleData } from '@/utils/getLocaleData'
+
+import Style from './Header.module.css'
 
 interface Props {
   locale: string
@@ -36,7 +38,6 @@ const Header = ({ locale, category }: Props) => {
   const data = getLocaleData(locale)
   const { theme, setTheme } = useTheme()
   const {
-    domain,
     isMobileViewport,
     isSidebarOpen,
     setIsSidebarOpen,
@@ -129,7 +130,9 @@ const Header = ({ locale, category }: Props) => {
               </h3>
 
               <a
-                href={'https://sitecheck.sucuri.net/results/' + domain}
+                href={
+                  'https://sitecheck.sucuri.net/results/' + searchSource?.domain
+                }
                 rel="noreferrer noopener"
                 target="_blank">
                 <IconArrowExternal />
@@ -137,7 +140,10 @@ const Header = ({ locale, category }: Props) => {
               </a>
 
               <a
-                href={'https://privacyscanner.aesirx.io/result/' + domain}
+                href={
+                  'https://privacyscanner.aesirx.io/result/' +
+                  searchSource?.domain
+                }
                 rel="noreferrer noopener"
                 target="_blank">
                 <IconArrowExternal />
@@ -147,7 +153,7 @@ const Header = ({ locale, category }: Props) => {
               <a
                 href={
                   'https://www.websitecarbon.com/website/' +
-                  domain.replace('.', '-')
+                  searchSource?.domain?.replace('.', '-')
                 }
                 rel="noreferrer noopener"
                 target="_blank">

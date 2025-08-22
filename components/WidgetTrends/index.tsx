@@ -1,14 +1,16 @@
 'use client'
 
-import Styles from './WidgetTrends.module.css'
-import { useEffect, useState } from 'react'
 import { useTranslations } from 'next-intl'
-import { useSearch } from '@/contexts/SearchContext'
+import { useEffect, useState } from 'react'
 import useSWR from 'swr'
-import { fetcher } from '@/utils/http'
+
 import ButtonGeolocation from '@/components/ButtonGeolocation'
 import WidgetTemplate from '@/components/WidgetTemplate'
+import { useSearch } from '@/contexts/SearchContext'
 import { ITrends } from '@/interfaces/trends'
+import { fetcher } from '@/utils/http'
+
+import Styles from './WidgetTrends.module.css'
 
 interface Props {
   title: string

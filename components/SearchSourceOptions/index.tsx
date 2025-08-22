@@ -1,7 +1,10 @@
-import Select from '@/components/Select'
-import { IconChevronDown } from '../SvgIcons'
-import { useSearch } from '@/contexts/SearchContext'
 import { useEffect, useState } from 'react'
+
+import Select from '@/components/Select'
+import { useSearch } from '@/contexts/SearchContext'
+import { normalizeId } from '@/utils/formats'
+
+import { IconChevronDown } from '../SvgIcons'
 import Style from './SearchOptions.module.css'
 
 interface Option {
@@ -11,17 +14,15 @@ interface Option {
 
 interface Props {
   options: Option[]
-  id: string
   label: string
 }
 
-const SearchOptions = ({ options, id, label }: Readonly<Props>) => {
+const SearchSourceOptions = ({ options, label }: Readonly<Props>) => {
   const { setSearchUrl, inputValue, inputFocus } = useSearch()
   const [selectedOption, setSelectedOption] = useState<string>(options[0].value)
 
   const handleChange = (value: string) => {
     setSelectedOption(value)
-    // set the searchUrl
     setSearchUrl(value + inputValue)
     inputFocus()
   }
@@ -40,7 +41,7 @@ const SearchOptions = ({ options, id, label }: Readonly<Props>) => {
     <div className={Style.container}>
       <Select
         options={options}
-        id={id}
+        id={normalizeId(label)}
         onChange={handleChange}
         value={options[0].value}
         label={label}
@@ -50,4 +51,4 @@ const SearchOptions = ({ options, id, label }: Readonly<Props>) => {
   )
 }
 
-export default SearchOptions
+export default SearchSourceOptions

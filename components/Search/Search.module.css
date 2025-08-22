@@ -1,6 +1,5 @@
 .section {
   margin: 0 auto;
-  /* display: flex; */
   padding: 1rem 0 3rem;
   min-height: 75vh;
 }
@@ -29,27 +28,25 @@
 .containerInput {
   max-width: var(--max-size-container-2);
   width: 100%;
+  /* background: yellow; */
 }
-
-.searchInput {
+.input {
   position: relative;
   display: flex;
   align-items: center;
-  padding: 0.5rem 1rem 0.5rem 1.25rem;
+  padding: 0.5rem 1rem 0.5rem 1.5rem;
   gap: 0;
   border-radius: 2rem;
   background: var(--background-surface);
 }
-.searchInput label {
+.input label {
   visibility: hidden;
 }
-
 .textareaContainer {
   position: relative;
   width: 100%;
 }
-
-.searchInput textarea {
+.input textarea {
   background: transparent;
   resize: none;
   position: relative;
@@ -57,7 +54,6 @@
   float: none;
   height: auto;
   width: 100%;
-  /* min-height: 3rem; */
   line-height: 1.375rem;
   margin: 0;
   padding: 0.75rem 2.5rem 0.75rem 0;
@@ -72,8 +68,7 @@
   box-shadow: none;
   transition: all ease-in-out 0.25s;
 }
-
-.searchInput textarea::placeholder {
+.input textarea::placeholder {
   color: var(--color-text-black);
   opacity: var(--opacity);
 }
@@ -240,7 +235,7 @@
     background-size: 1.25rem 1.25rem;
   }
 
-  .searchInput {
+  .input {
     padding: 0.25rem 0.75rem 0.25rem 1.25rem;
   }
   .searchButton {

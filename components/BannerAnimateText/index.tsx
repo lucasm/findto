@@ -1,8 +1,10 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import styles from './BannerAnimateText.module.css'
+
 import { IconCarbon } from '@/components/SvgIcons'
+
+import styles from './BannerAnimateText.module.css'
 
 const IconSecurity = () => (
   <svg

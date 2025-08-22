@@ -2,11 +2,12 @@ import './global.css'
 import type { Metadata, Viewport } from 'next'
 import localFont from 'next/font/local'
 // import { Manrope } from 'next/font/google'
+import { notFound } from 'next/navigation'
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 import { ThemeProvider } from 'next-themes'
+
 import ScriptsTelemetry from '@/components/ScriptsTelemetry'
-import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing'
 
 const fontFamily = localFont({

@@ -1,7 +1,8 @@
-import Style from '@/layouts/WebsiteLayout/WebsiteLayout.module.css'
-import WebsiteLayout from '@/layouts/WebsiteLayout'
 import { useTranslations } from 'next-intl'
+
 import CardsLink from '@/components/CardsLink'
+import WebsiteLayout from '@/layouts/WebsiteLayout'
+import Style from '@/layouts/WebsiteLayout/WebsiteLayout.module.css'
 
 export const metadata = {
   title: 'Contribute',

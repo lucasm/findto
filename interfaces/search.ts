@@ -11,10 +11,11 @@ export interface ISearchCategory {
 
 export interface ISearch {
   id?: string
+  domain?: string
   name: string
   action: string
   query: string | boolean
-  color: string
+  color?: string
   child?: ISearchChild[]
   additional?: string
 }

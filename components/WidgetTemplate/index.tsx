@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl'
+
 import Styles from './WidgetTemplate.module.css'
 
 export interface ICredits {

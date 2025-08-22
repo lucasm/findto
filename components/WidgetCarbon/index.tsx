@@ -1,12 +1,14 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import Style from './WidgetCarbon.module.css'
 import useSWR from 'swr'
-import { fetcher } from '@/utils/http'
-import { useSearch } from '@/contexts/SearchContext'
+
 import Donut from '@/components/Donut'
 import WidgetDropdown from '@/components/WidgetDropdown'
+import { useSearch } from '@/contexts/SearchContext'
+import { fetcher } from '@/utils/http'
+
+import Style from './WidgetCarbon.module.css'
 import Loader from '../Loader'
 
 interface IApiCarbon {
@@ -34,14 +36,14 @@ interface IApiCarbon {
 type DivProps = React.HTMLAttributes<HTMLDivElement>
 
 export default function WidgetCarbon({ className = '', ...props }: DivProps) {
-  const { searchUrl, search, domain } = useSearch()
+  const { searchUrl, searchSource } = useSearch()
 
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
   const [percents, setPercents] = useState<string[]>(['30', '70'])
 
   const { data: dataCarbon, error: errorCarbon } = useSWR<IApiCarbon>(
-    isOpen && domain ? '/api/carbon?url=' + searchUrl : null,
+    isOpen && searchSource?.domain ? '/api/carbon?url=' + searchUrl : null,
     fetcher,
     {
       revalidateOnFocus: false,
@@ -86,7 +88,7 @@ export default function WidgetCarbon({ className = '', ...props }: DivProps) {
             />
 
             <h3>
-              {search}
+              {searchSource?.name}
               {' has '}
               {dataCarbon?.statistics?.co2?.grid?.grams
                 ? dataCarbon?.statistics?.co2?.grid?.grams.toFixed(2) + 'g '
@@ -101,7 +103,7 @@ export default function WidgetCarbon({ className = '', ...props }: DivProps) {
 
         {errorCarbon && (
           <h3>
-            Ops, {domain} {"hasn't been analyzed yet"}
+            Ops, {searchSource?.domain} {"hasn't been analyzed yet"}
           </h3>
         )}
       </div>

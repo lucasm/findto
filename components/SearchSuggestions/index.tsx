@@ -1,7 +1,8 @@
-import Styles from './SearchSuggestions.module.css'
 import axios from 'axios'
-import { useSearch } from '../../contexts/SearchContext'
 import { useEffect, useState, useCallback } from 'react'
+
+import Styles from './SearchSuggestions.module.css'
+import { useSearch } from '../../contexts/SearchContext'
 
 type Props = {
   term: string
@@ -25,7 +26,7 @@ export default function SearchSuggestions({ term, locale }: Props) {
     if (locale && validTermLength && term !== prevTerm) {
       try {
         const response = await axios.get(
-          `/api/suggestions/?locale=${locale}&term=${term}`,
+          `/api/suggestions/?locale=${locale}&term=${term}`
         )
         setData(response.data)
         setPrevTerm(term) // Atualiza o termo anterior após uma nova busca

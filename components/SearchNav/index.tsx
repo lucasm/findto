@@ -1,9 +1,11 @@
-import Style from './SearchNav.module.css'
 import Link from 'next/link'
 import { useLocale } from 'next-intl'
-import { normalizeId } from '@/utils/formats'
+
 import { ISearchCategory } from '@/interfaces/search'
+import { normalizeId } from '@/utils/formats'
 import { getCategoryIcon } from '@/utils/handleCategoryIcon'
+
+import Style from './SearchNav.module.css'
 
 interface Props {
   data: { categories: ISearchCategory[] }

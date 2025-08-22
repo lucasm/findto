@@ -1,4 +1,6 @@
-import Styles from './CardsLink.module.css'
+import { useTranslations } from 'next-intl'
+import { JSX } from 'react'
+
 import {
   IconFeedback,
   IconX,
@@ -8,8 +10,7 @@ import {
   IconPatreon,
   IconHeart,
 } from '../SvgIcons'
-import { useTranslations } from 'next-intl'
-import { JSX } from 'react'
+import Styles from './CardsLink.module.css'
 import Button from '../Button'
 
 interface ICardsLink {

@@ -1,12 +1,13 @@
-import AppLayout from '@/layouts/AppLayout'
-import Search from '@/components/Search'
-import WidgetVideoStories from '@/components/WidgetVideoStories'
-import WidgetTrends from '@/components/WidgetTrends'
-import Banner from '@/components/Banner'
 import { Metadata } from 'next/types'
-import { getLocaleData } from '@/utils/getLocaleData'
-import { ISearchCategory } from '@/interfaces/search'
+
+import Banner from '@/components/Banner'
+import Search from '@/components/Search'
 import WidgetCategories from '@/components/WidgetCategories'
+import WidgetTrends from '@/components/WidgetTrends'
+import WidgetVideoStories from '@/components/WidgetVideoStories'
+import { ISearchCategory } from '@/interfaces/search'
+import AppLayout from '@/layouts/AppLayout'
+import { getLocaleData } from '@/utils/getLocaleData'
 
 interface PageParams {
   locale: string

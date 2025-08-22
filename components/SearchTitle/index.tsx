@@ -1,4 +1,5 @@
 import { getCategoryIcon } from '@/utils/handleCategoryIcon'
+
 import SearchLogo from '../SearchLogo'
 import Welcome from '../Welcome'
 import Style from './SearchTitle.module.css'

@@ -1,13 +1,15 @@
 'use client'
 import { useEffect, useRef, useState } from 'react'
-import Styles from '../WidgetPrivacy/WidgetPrivacy.module.css'
 import useSWR from 'swr'
+
+import Donut from '@/components/Donut'
+import WidgetDropdown from '@/components/WidgetDropdown'
 import { useSearch } from '@/contexts/SearchContext'
 import { fetcher } from '@/utils/http'
 import { extractDomain, isValidUrl } from '@/utils/url'
-import Donut from '@/components/Donut'
-import WidgetDropdown from '@/components/WidgetDropdown'
+
 import Loader from '../Loader'
+import Styles from '../WidgetPrivacy/WidgetPrivacy.module.css'
 
 interface IApiPrivacy {
   name: string

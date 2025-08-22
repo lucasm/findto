@@ -1,4 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
+
 import { ITrends } from '../../../interfaces/trends'
 
 export default function endpoint(req: NextApiRequest, res: NextApiResponse) {

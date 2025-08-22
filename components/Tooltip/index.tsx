@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+
 import styles from './Tooltip.module.css'
 
 interface TooltipProps {
@@ -19,7 +20,10 @@ const Tooltip: React.FC<TooltipProps> = ({ text, children, disable }) => {
   }
 
   return (
-    <div className={styles.tooltipContainer} onMouseEnter={showTooltip} onMouseLeave={hideTooltip}>
+    <div
+      className={styles.tooltipContainer}
+      onMouseEnter={showTooltip}
+      onMouseLeave={hideTooltip}>
       {children}
       {!disable && isVisible && <div className={styles.tooltip}>{text}</div>}
     </div>

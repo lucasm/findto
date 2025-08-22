@@ -1,4 +1,5 @@
 import { ReactElement } from 'react'
+
 import SvgLogo from '../SvgLogo'
 import style from './SearchLogo.module.css'
 // import BlurBackground from '../BlurBackground'

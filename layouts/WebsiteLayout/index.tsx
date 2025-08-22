@@ -1,10 +1,12 @@
-import Style from './WebsiteLayout.module.css'
-import { useLocale, useTranslations } from 'next-intl'
 import Link from 'next/link'
+import { useLocale, useTranslations } from 'next-intl'
+
 import AppFooter from '@/components/Footer'
+import { IconMenu } from '@/components/SvgIcons'
 import SvgLogo from '@/components/SvgLogo'
 import WidgetDropdown from '@/components/WidgetDropdown'
-import { IconMenu } from '@/components/SvgIcons'
+
+import Style from './WebsiteLayout.module.css'
 
 export default function WebsiteLayout({
   children,

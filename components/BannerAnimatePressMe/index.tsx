@@ -1,8 +1,9 @@
 'use client'
 
-import React, { useState } from 'react'
-import styles from './BannerAnimatePressMe.module.css'
 import confetti from 'canvas-confetti'
+import React, { useState } from 'react'
+
+import styles from './BannerAnimatePressMe.module.css'
 
 export default function BannerAnimatePressMe() {
   const [pressed, setPressed] = useState(false)
