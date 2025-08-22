@@ -241,7 +241,6 @@ article hr {
   animation: gradient-move 3s ease-in infinite;
   will-change: background-position;
   /* opcional: cantos arredondados/suavização de borda do blur */
-  /* border-radius: 9999px; */
 }
 
 /* animação: faz o gradiente “respirar” verticalmente */
