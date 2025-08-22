@@ -5,8 +5,8 @@
   },
   "t": {
     "metadata": {
-      "title": "Findto is your search assistant",
-      "description": "Decentralized search across the Web, AI, and beyond."
+      "title": "Decentralized Search for Everyone",
+      "description": "Search on multiple Web sources and AI agents simultaneously. That's Findto."
     },
     "feedback": {
       "title": "Send feedback",
@@ -24,13 +24,13 @@
     },
     "widgetProtection": {
       "title": "Protection",
-      "description": "Check the reputation of the search source selected below.",
+      "description": "You can check the reputation of the selected search source.",
       "source": "Source",
-      "carbon": "Carbon footprint",
+      "carbon": "Carbon",
       "security": "Security",
       "privacy": "Privacy"
     },
-    "copyright": "Open source software made by",
+    "copyright": "Open Source Software made by",
     "about": "About",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
@@ -54,7 +54,7 @@
     "category": "Mode",
     "warnings": {
       "cookies": "Findto uses cookies. We respect your privacy and do not store personal information.",
-      "torrent": "Warning: The Torrent protocol is legal and used for sharing files. However, downloading copyrighted content without permission may violate the DMCA law of the United States of America. Always follow your local laws to avoid legal consequences.",
+      "torrent": "Warning: The Torrent protocol is legal and used for sharing files. However, downloading copyrighted content without permission may violate the DMCA law of the United States of America. Avoid legal consequences. Follow the laws.",
       "darknet": "Warning: The Darknet is legal and used by researchers, journalists, and people in censored regions or under mass surveillance. Access it responsibly. Avoid scams, phishing, and illegal activities. Use a special browser, like Tor Browser, to open .onion protocol sites."
     }
   },
@@ -559,10 +559,6 @@
           "action": "https://www.justwatch.com/us/search?q="
         },
         {
-          "name": "IMDb",
-          "action": "https://www.imdb.com/find/?q="
-        },
-        {
           "name": "Netflix",
           "action": "https://www.netflix.com/search?q="
         },
@@ -599,16 +595,20 @@
           "action": "https://www.crunchyroll.com/pt-br/search?q="
         },
         {
-          "name": "TMDB",
-          "action": "https://www.themoviedb.org/search?query="
+          "name": "Plex",
+          "action": "https://app.plex.tv/desktop#!/search?query="
         },
         {
           "name": "Letterboxd",
           "action": "https://letterboxd.com/search/"
         },
         {
-          "name": "Plex",
-          "action": "https://app.plex.tv/desktop#!/search?query="
+          "name": "IMDb",
+          "action": "https://www.imdb.com/find/?q="
+        },
+        {
+          "name": "TMDB",
+          "action": "https://www.themoviedb.org/search?query="
         },
         {
           "name": "Dailymotion",

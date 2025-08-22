@@ -19,7 +19,7 @@ export default async function Page(props: {
   return (
     <AppLayout locale={locale} category={selectedCategory}>
       <Search selectedCategory={selectedCategory} />
-      <WidgetTrends />
+      <WidgetTrends title={selectedCategory?.name_trends} />
       <WidgetCategories />
       <Banner />
     </AppLayout>

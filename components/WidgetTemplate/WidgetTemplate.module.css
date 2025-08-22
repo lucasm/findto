@@ -13,11 +13,11 @@
   display: flex;
   gap: 1.25rem;
   align-items: center;
-  margin-bottom: 1.75rem;
+  margin-bottom: 2rem;
 }
 .title h2 {
   display: flex;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 .title svg {
@@ -41,5 +41,8 @@
 @media screen and (max-width: 576px) {
   .container {
     padding: 2rem 1rem;
+  }
+  .title h2 {
+    font-size: 1.25rem;
   }
 }

@@ -36,12 +36,12 @@ const Header = ({ locale, category }: Props) => {
   const data = getLocaleData(locale)
   const { theme, setTheme } = useTheme()
   const {
-    search,
     domain,
     isMobileViewport,
     isSidebarOpen,
     setIsSidebarOpen,
     inputFocus,
+    searchSource,
   } = useSearch()
 
   const handleTheme = () => {
@@ -125,7 +125,7 @@ const Header = ({ locale, category }: Props) => {
 
             <div>
               <h3>
-                {t('widgetProtection.source')}: {search}
+                {t('widgetProtection.source')}: {searchSource?.name}
               </h3>
 
               <a
@@ -137,6 +137,14 @@ const Header = ({ locale, category }: Props) => {
               </a>
 
               <a
+                href={'https://privacyscanner.aesirx.io/result/' + domain}
+                rel="noreferrer noopener"
+                target="_blank">
+                <IconArrowExternal />
+                {t('widgetProtection.privacy')}
+              </a>
+
+              <a
                 href={
                   'https://www.websitecarbon.com/website/' +
                   domain.replace('.', '-')
@@ -145,14 +153,6 @@ const Header = ({ locale, category }: Props) => {
                 target="_blank">
                 <IconArrowExternal />
                 {t('widgetProtection.carbon')}
-              </a>
-
-              <a
-                href={'https://privacyscanner.aesirx.io/result/' + domain}
-                rel="noreferrer noopener"
-                target="_blank">
-                <IconArrowExternal />
-                {t('widgetProtection.privacy')}
               </a>
             </div>
           </div>

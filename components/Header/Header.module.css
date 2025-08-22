@@ -123,4 +123,9 @@
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
+
+  .logo,
+  .buttonsContainer button {
+    font-size: var(--font-size-small);
+  }
 }

@@ -24,7 +24,7 @@
     },
     "widgetProtection": {
       "title": "防护",
-      "description": "检查下面选择的搜索源的信誉。",
+      "description": "您可以检查所选搜索源的信誉。",
       "source": "已选择",
       "carbon": "碳足迹",
       "security": "安全",

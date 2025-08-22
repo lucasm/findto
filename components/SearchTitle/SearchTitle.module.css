@@ -18,7 +18,6 @@
 
 .container h1 {
   font-size: 2rem;
-  color: var(--color-black);
 }
 
 @media screen and (max-width: 768px) {

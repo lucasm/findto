@@ -1,9 +1,18 @@
 'use client'
 
-import { createContext, useContext, useState, useEffect, useRef } from 'react'
+import {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  useRef,
+  useMemo,
+  useCallback,
+} from 'react'
 import { useLocale, useTranslations } from 'next-intl'
 import { useSearchParams } from 'next/navigation'
 import { extractDomain, isValidUrl } from '@/utils/url'
+import { ISearch } from '@/interfaces/search'
 
 interface UserLocation {
   latitude: number | undefined
@@ -17,6 +26,8 @@ interface ISearchContext {
   putValue: (value: string) => void
   inputValue: string | undefined
   setInputValue: React.Dispatch<React.SetStateAction<string | undefined>>
+  searchSource: ISearch | undefined
+  setSearchSource: React.Dispatch<React.SetStateAction<ISearch | undefined>>
   search: string
   setSearch: React.Dispatch<React.SetStateAction<string>>
   domain: string
@@ -35,8 +46,6 @@ interface ISearchContext {
   isSidebarOpen: boolean
   setIsSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>
   sizeWindow: { width: number; height: number }
-  titleTrends: string
-  setTitleTrends: React.Dispatch<React.SetStateAction<string>>
   inputFocus: () => void
 }
 
@@ -57,10 +66,11 @@ export function SearchProvider({
 
   const [country, setCountry] = useState<string | null>(null)
   const [category, setCategory] = useState<string>('')
+  const [searchSource, setSearchSource] = useState<ISearch | undefined>()
   const [search, setSearch] = useState<string>('')
   const [domain, setDomain] = useState<string>('')
   const [searchUrl, setSearchUrl] = useState<string>('')
-  const [titleTrends, setTitleTrends] = useState<string>('')
+
   const [permissionLocation, setPermissionLocation] = useState<boolean>(false)
   const [userLocation, setUserLocation] = useState<UserLocation>({
     latitude: undefined,
@@ -74,12 +84,12 @@ export function SearchProvider({
   const refButtons = useRef<{ [key: string]: HTMLButtonElement | null }>({})
   const [inputValue, setInputValue] = useState<string | undefined>(undefined)
 
-  const inputFocus = () => {
+  const inputFocus = useCallback(() => {
     const inputElement = refSearchInput.current as HTMLInputElement | null
     if (inputElement) {
       inputElement.focus()
     }
-  }
+  }, [refSearchInput])
   const scrollToTop = () => {
     const isBrowser = () => typeof window !== 'undefined'
     if (!isBrowser()) return
@@ -201,36 +211,67 @@ export function SearchProvider({
     }
   }, [searchUrl])
 
+  const contextValue = useMemo(
+    () => ({
+      refSearchInput,
+      refButtons,
+      putValue,
+      inputValue,
+      setInputValue,
+      searchSource,
+      setSearchSource,
+      search,
+      setSearch,
+      searchUrl,
+      setSearchUrl,
+      domain,
+      setDomain,
+      category,
+      setCategory,
+      country,
+      locale,
+      permissionLocation,
+      setPermissionLocation,
+      userLocation,
+      setUserLocation,
+      isMobileViewport,
+      isSidebarOpen,
+      setIsSidebarOpen,
+      sizeWindow,
+      inputFocus,
+    }),
+    [
+      refSearchInput,
+      refButtons,
+      putValue,
+      inputValue,
+      setInputValue,
+      searchSource,
+      setSearchSource,
+      search,
+      setSearch,
+      searchUrl,
+      setSearchUrl,
+      domain,
+      setDomain,
+      category,
+      setCategory,
+      country,
+      locale,
+      permissionLocation,
+      setPermissionLocation,
+      userLocation,
+      setUserLocation,
+      isMobileViewport,
+      isSidebarOpen,
+      setIsSidebarOpen,
+      sizeWindow,
+      inputFocus,
+    ]
+  )
+
   return (
-    <SearchContext.Provider
-      value={{
-        refSearchInput,
-        refButtons,
-        putValue,
-        inputValue,
-        setInputValue,
-        search,
-        setSearch,
-        searchUrl,
-        setSearchUrl,
-        domain,
-        setDomain,
-        category,
-        setCategory,
-        country,
-        locale,
-        permissionLocation,
-        setPermissionLocation,
-        userLocation,
-        setUserLocation,
-        isMobileViewport,
-        isSidebarOpen,
-        setIsSidebarOpen,
-        sizeWindow,
-        titleTrends,
-        setTitleTrends,
-        inputFocus,
-      }}>
+    <SearchContext.Provider value={contextValue}>
       {children}
     </SearchContext.Provider>
   )

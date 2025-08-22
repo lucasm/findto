@@ -10,7 +10,11 @@ import ButtonGeolocation from '@/components/ButtonGeolocation'
 import WidgetTemplate from '@/components/WidgetTemplate'
 import { ITrends } from '@/interfaces/trends'
 
-export default function SearchTrends() {
+interface Props {
+  title: string
+}
+
+export default function SearchTrends({ title }: Readonly<Props>) {
   const t = useTranslations('t')
   const { category, putValue, country, locale, userLocation } = useSearch()
   const [dataTrends, setDataTrends] = useState<ITrends | null>(null)
@@ -377,7 +381,7 @@ export default function SearchTrends() {
         return Styles.container + ' ' + Styles.grid5 + ' ' + Styles.trendsApps
       case 'Shopping':
         return (
-          Styles.container + ' ' + Styles.grid3 + ' ' + Styles.trendsShopping
+          Styles.container + ' ' + Styles.grid4 + ' ' + Styles.trendsShopping
         )
       case 'Code':
         return Styles.container + ' ' + Styles.grid2 + ' ' + Styles.trendsCode
@@ -391,9 +395,9 @@ export default function SearchTrends() {
   if (dataTrends || errorTrends || category === 'Local') {
     return (
       <WidgetTemplate
-        title={t('trends')}
+        title={title || t('trends')}
         credits={
-          dataTrends
+          dataTrends?.credits_title
             ? {
                 title: dataTrends?.credits_title ?? '',
                 url: dataTrends?.credits_url ?? '',

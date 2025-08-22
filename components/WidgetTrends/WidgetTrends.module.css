@@ -111,12 +111,8 @@
 }
 
 @media screen and (max-width: 576px) {
-  .trendsCode {
+  .container {
     grid-template-columns: 1fr;
-  }
-
-  .grid5 {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .trendsHome li button img,

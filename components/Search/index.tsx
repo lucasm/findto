@@ -10,7 +10,7 @@ import SearchSuggestions from '@/components/SearchSuggestions'
 import SearchVoice from '@/components/SearchVoice'
 import Tooltip from '@/components/Tooltip'
 import SearchTitle from '@/components/SearchTitle'
-import { ISearchCategory, ISearch, ISearchChild } from '@/interfaces/search'
+import { ISearchCategory, ISearchChild } from '@/interfaces/search'
 import SearchOptions from '@/components/SearchOptions'
 import Alert from '@/components/Alert'
 import SearchProviderIcon from '../SearchProviderIcon'
@@ -25,12 +25,13 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
 
   const {
     setCategory,
+    searchSource,
+    setSearchSource,
     setSearch,
     searchUrl,
     setSearchUrl,
     inputValue,
     setInputValue,
-    setTitleTrends,
     isMobileViewport,
     refSearchInput,
     refButtons,
@@ -38,7 +39,7 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
   } = useSearch()
 
   const refSearchButton = useRef<HTMLAnchorElement>(null)
-  const [searchSource, setSearchSource] = useState<ISearch>()
+
   const [isValid, setIsValid] = useState(false)
   const [isFocused, setIsFocused] = useState(false)
   const searchName = selectedCategory?.name_translated || selectedCategory?.name
@@ -70,12 +71,13 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
     const source = selectedCategory.data?.find(
       (item) => normalizeId(item.name) === id
     )
-    setSearchSource(source)
 
-    setSearch(id)
-    window.localStorage.setItem('search', id)
-
-    inputFocus()
+    if (source) {
+      setSearchSource(source)
+      setSearch(id)
+      window.localStorage.setItem('search', id)
+      inputFocus()
+    }
   }
   const handleValue = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setInputValue(event.target.value)
@@ -102,6 +104,8 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
     }
   }
 
+  console.log(searchSource)
+
   // resize
   useEffect(() => {
     if (isMobileViewport) {
@@ -124,7 +128,6 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
   useEffect(() => {
     if (selectedCategory) {
       setCategory(selectedCategory?.name)
-      setTitleTrends(selectedCategory?.name_trends)
 
       const sourceId = normalizeId(selectedCategory?.data[0]?.name)
 

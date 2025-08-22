@@ -27,9 +27,9 @@ export default function PageDonate() {
           <article>
             <h2>Why Support Findto?</h2>
             <p>
-              Findto is free for everyone — but it’s built collectively.
-              We&apos;re an open-source project driven by people who believe in
-              digital freedom, transparency, and technology as a force for good.
+              Findto is free for everyone and built collectively. We&apos;re an
+              open-source project driven by people who believe in digital
+              freedom, transparency, and technology as a force for good.
             </p>
 
             <h3>Our Mission</h3>
@@ -58,10 +58,10 @@ export default function PageDonate() {
               </li>
             </ul>
 
-            <h3>Get involved</h3>
+            <h3>Get Involved</h3>
 
             <p>
-              If you share this vision, feel free to contribute to the Findto
+              If you share Findto vision, feel free to contribute to the
               project.
             </p>
 

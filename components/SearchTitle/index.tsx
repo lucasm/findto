@@ -2,6 +2,7 @@ import { getCategoryIcon } from '@/utils/handleCategoryIcon'
 import SearchLogo from '../SearchLogo'
 import Welcome from '../Welcome'
 import Style from './SearchTitle.module.css'
+import SvgLogo from '../SvgLogo'
 // import BlurBackground from '../BlurBackground'
 
 interface SearchTitleProps {
@@ -17,7 +18,11 @@ export default function SearchTitle({
     <div className={Style.container}>
       <div className={Style.title}>
         {/* <BlurBackground /> */}
-        <SearchLogo externalIcon={getCategoryIcon(category)()} />
+        <SearchLogo
+          externalIcon={
+            category == 'Home' ? <SvgLogo /> : getCategoryIcon(category)()
+          }
+        />
         {category == 'Home' ? <Welcome /> : <h1>{categoryTitle}</h1>}
       </div>
     </div>

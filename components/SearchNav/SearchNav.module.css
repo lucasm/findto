@@ -1,8 +1,17 @@
 .active {
-  background: var(--color-surface-secondary) !important;
+  background: var(--background-surface) !important;
   opacity: 1 !important;
 }
+.sidebar .active {
+  background: var(--color-surface-secondary) !important;
+}
 
+.nav a {
+  position: relative;
+  display: flex;
+  font-weight: 400;
+  line-height: 1;
+}
 .nav li {
   display: inline-block;
 }
@@ -17,19 +26,18 @@
   display: grid;
   margin: -1rem;
   width: 300px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 .vertical a {
-  display: flex;
+  flex-direction: column;
   align-items: center;
-  text-align: left;
-  padding: 0.5rem 1rem;
+  text-align: center;
+  padding: 0.75rem 0.5rem;
   gap: 0.5rem;
   width: 100%;
-  border-radius: var(--radius-full);
+  border-radius: var(--radius);
   background: transparent;
-  font-size: var(--font-size);
-  font-weight: 400;
+  font-size: var(--font-size-small);
 }
 .vertical a:hover,
 .vertical a:focus {
@@ -46,7 +54,6 @@
   max-width: var(--max-size-container);
 }
 .cards a {
-  position: relative;
   opacity: 1;
   padding: 1.75rem 0;
   display: flex;
@@ -54,8 +61,7 @@
   align-items: center;
   gap: 1rem;
   border-radius: var(--radius-liquid-glass);
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: var(--font-size);
   width: 100%;
   background: var(--background-surface);
   color: var(--color-text-black);
@@ -90,11 +96,9 @@
 }
 .sidebar a {
   opacity: var(--opacity);
-  padding: 0.5rem 0.75rem;
-  display: flex;
+  padding: 0.625rem 0.75rem;
   align-items: center;
   gap: 1rem;
-  font-weight: 400;
   font-size: var(--font-size);
   width: 100%;
   color: var(--color-text-black);

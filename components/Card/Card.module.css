@@ -35,12 +35,12 @@
 
 .title,
 .author {
-  font-size: 1.125rem;
+  font-size: 1.1rem;
   font-weight: 400;
   filter: grayscale(100%);
 }
 
 .author {
-  font-size: 1rem;
+  font-size: var(--font-size);
   opacity: var(--opacity);
 }

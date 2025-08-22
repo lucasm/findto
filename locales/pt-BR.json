@@ -5,8 +5,8 @@
   },
   "t": {
     "metadata": {
-      "title": "Findto é o seu assistente de busca",
-      "description": "Seja livre. Busque na Web, IA e mais."
+      "title": "Faça buscas livres com o Findto",
+      "description": "Busque em diversas fontes da Web e agentes de IA ao mesmo tempo. Isso é Findto."
     },
     "feedback": {
       "title": "Enviar feedback",
@@ -23,20 +23,20 @@
       "allow": "Aguardando permissão..."
     },
     "widgetProtection": {
-      "title": "Proteção",
-      "description": "Verifique a reputação da fonte de busca selecionada abaixo.",
+      "title": "Verificar",
+      "description": "Você pode verificar detalhes da fonte de busca selecionada.",
       "source": "Fonte",
       "carbon": "Carbono",
       "security": "Segurança",
       "privacy": "Privacidade"
     },
-    "copyright": "Software livre e de código aberto criado por",
+    "copyright": "Software de código aberto criado por",
     "about": "Sobre",
     "privacy": "Política de Privacidade",
     "terms": "Termos de Serviço",
     "donate": "Fazer doação",
     "accept": "Aceitar",
-    "learnMore": "Conheça o Findto",
+    "learnMore": "Conhecer o Findto",
     "viewNearbyPlaces": "Ver locais próximos",
     "openApp": "Abrir Findto",
     "placeholder": "Busca",
@@ -46,21 +46,22 @@
     "settings": "Ajustes",
     "theme": "Tema",
     "language": "Idioma",
-    "contribute": "Contribua",
-    "explore": "Explore",
+    "contribute": "Contribuir",
+    "explore": "Explore algo novo",
     "trends": "Tendências",
     "stories": "Novidades",
     "categories": "Modos",
     "category": "Modo",
     "warnings": {
       "cookies": "O Findto utiliza cookies. Respeitamos a sua privacidade e não armazenamos informações pessoais.",
-      "torrent": "Aviso: Usar Torrent para compartilhar arquivos digitais não é ilegal. Entretanto, obter conteúdos protegidos por direitos autorais sem autorização é crime. Respeite a Lei de Direitos Autorais no Brasil (Lei 9.610/98) ou da sua localidade atual."
+      "torrent": "Aviso: O protocolo Torrent é legal e usado para compartilhamento de arquivos na internet. Contudo, baixar conteúdo protegido por direitos autorais sem permissão é crime no Brasil. Respeite a Lei de Direitos Autorais (Lei 9.610/98). Evite consequências legais. "
     }
   },
   "categories": [
     {
       "name": "Home",
       "name_translated": "Início",
+      "name_seo": "Buscador",
       "active": true,
       "data": [
         {
@@ -137,6 +138,7 @@
     {
       "name": "AI",
       "name_translated": "IA",
+      "name_seo": "Buscador em IAs",
       "active": true,
       "description": "Utilize várias IAs ao mesmo tempo: ChatGPT, Copilot, Gemini, Grok, DeepSeek e mais.",
       "data": [
@@ -216,6 +218,7 @@
     },
     {
       "name": "Web",
+      "name_seo": "Buscador Web",
       "active": true,
       "description": "Busque em múltiplos mecanismos de busca: Google, Bing, DuckDuckGo, Brave, Yahoo e mais.",
       "data": [
@@ -275,6 +278,7 @@
     },
     {
       "name": "Social",
+      "name_seo": "Buscador Social",
       "active": true,
       "description": "Busque em todas as redes sociais: X, TikTok, Instagram, Facebook, Reddit e mais.",
       "data": [
@@ -410,6 +414,8 @@
     {
       "name": "News",
       "name_translated": "Notícias",
+      "name_seo": "Buscador de Notícias",
+      "name_trends": "Últimas notícias",
       "active": true,
       "description": "Encontre notícias de fontes confiáveis: Globo, UOL, CNN, Folha, Estadão, Veja e mais.",
       "data": [
@@ -577,6 +583,8 @@
     {
       "name": "Videos",
       "name_translated": "Vídeos",
+      "name_seo": "Buscador de Vídeos",
+      "name_trends": "Top filmes e séries",
       "active": true,
       "description": "Encontre vídeos em plataformas populares: YouTube, Twitch, Globoplay, Netflix, Prime Video e mais.",
       "data": [
@@ -735,6 +743,7 @@
     {
       "name": "Image",
       "name_translated": "Imagens",
+      "name_seo": "Buscador de Imagens",
       "active": true,
       "description": "Encontre imagens em diversas fontes: Pinterest, Unsplash, Canva, GIPHY, Pexels e mais.",
       "data": [
@@ -814,7 +823,9 @@
     },
     {
       "name": "Music",
-      "name_translated": "Música",
+      "name_translated": "Músicas",
+      "name_seo": "Buscador de Músicas",
+      "name_trends": "Top álbuns",
       "active": true,
       "description": "Busque músicas e letras no: Spotify, Apple Music, SoundCloud, YouTube Music, Amazon Music e mais.",
       "data": [
@@ -956,9 +967,11 @@
     },
     {
       "name": "Shopping",
-      "name_translated": "Shopping",
+      "name_translated": "Compras",
+      "name_seo": "Buscador de Compras",
+      "name_trends": "Mais vendidos",
       "active": true,
-      "description": "Encontre produtos em lojas populares: Amazon, Mercado Livre, Magalu, OLX, Americanas e mais.",
+      "description": "Busque em lojas populares: Amazon, Mercado Livre, Magalu, Temu, OLX, Americanas e mais.",
       "data": [
         {
           "name": "Amazon",
@@ -1059,6 +1072,7 @@
     },
     {
       "name": "Local",
+      "name_seo": "Buscador Local",
       "active": true,
       "description": "Encontre locais e serviços próximos: Google Maps, Apple Maps, Airbnb, Expedia, Tripadvisor e mais.",
       "data": [
@@ -1185,6 +1199,8 @@
     {
       "name": "Job",
       "name_translated": "Empregos",
+      "name_seo": "Buscador de Empregos",
+      "name_trends": "Vagas populares",
       "description": "Busque e encontre empregos no LinkedIn, Gupy, Infojobs, Catho e mais sites ao mesmo tempo.",
       "active": true,
       "data": [
@@ -1269,6 +1285,8 @@
     {
       "name": "Academic",
       "name_translated": "Acadêmico",
+      "name_seo": "Buscador Acadêmico",
+      "name_trends": "Tópicos mais citados",
       "active": true,
       "description": "Pesquise artigos, livros e publicações acadêmicas em diversas fontes: Google Scholar, ResearchGate, SciELO, arXiv e mais.",
       "data": [
@@ -1279,56 +1297,6 @@
         {
           "name": "Wikipédia",
           "action": "https://pt.wikipedia.org/w/index.php?search="
-        },
-        {
-          "name": "Bibliotecas Públicas",
-          "child": [
-            {
-              "name": "Biblioteca Nacional",
-              "action": "https://bndigital.bn.gov.br/acervodigital?q="
-            },
-            {
-              "name": "Biblioteca da Câmara dos Deputados",
-              "action": "https://bd.camara.leg.br/bd/search?spc.page=1&query="
-            },
-            {
-              "name": "Biblioteca do Senado Federal",
-              "action": "https://www2.senado.leg.br/bdsf/discover?query="
-            },
-            {
-              "name": "SP - Bibliotecas Públicas",
-              "action": "https://bibliotecacircula.prefeitura.sp.gov.br/pesquisa/resultado.jsf#ini&sort=relevancia&e_all=",
-              "additional": "&page=1"
-            },
-            {
-              "name": "USP",
-              "action": "https://www.buscaintegrada.usp.br/primo_library/libweb/action/search.do?fn=search&vl%28freeText0%29="
-            },
-            {
-              "name": "UFRJ",
-              "action": "https://buscaintegrada.ufrj.br/Search/Results?lookfor="
-            },
-            {
-              "name": "UnB",
-              "action": "https://consulta.bce.unb.br/pergamum/biblioteca/index.php?word="
-            },
-            {
-              "name": "UFMG",
-              "action": "https://research.ebsco.com/c/prr7uu/search/results?autocorrect=y&q="
-            },
-            {
-              "name": "UFPA",
-              "action": "https://bibcentral.ufpa.br/?for=LIVRE&q="
-            },
-            {
-              "name": "UFPE",
-              "action": "https://biblioteca.ufpe.br/?for=LIVRE&q="
-            }
-          ]
-        },
-        {
-          "name": "Internet Archive",
-          "action": "https://archive.org/search.php?query="
         },
         {
           "name": "Oasisbr",
@@ -1413,6 +1381,56 @@
         {
           "name": "Brainly",
           "action": "https://brainly.com.br/app/ask?q="
+        },
+        {
+          "name": "Bibliotecas Públicas",
+          "child": [
+            {
+              "name": "Biblioteca Nacional",
+              "action": "https://bndigital.bn.gov.br/acervodigital?q="
+            },
+            {
+              "name": "Biblioteca da Câmara dos Deputados",
+              "action": "https://bd.camara.leg.br/bd/search?spc.page=1&query="
+            },
+            {
+              "name": "Biblioteca do Senado Federal",
+              "action": "https://www2.senado.leg.br/bdsf/discover?query="
+            },
+            {
+              "name": "SP - Bibliotecas Públicas",
+              "action": "https://bibliotecacircula.prefeitura.sp.gov.br/pesquisa/resultado.jsf#ini&sort=relevancia&e_all=",
+              "additional": "&page=1"
+            },
+            {
+              "name": "USP",
+              "action": "https://www.buscaintegrada.usp.br/primo_library/libweb/action/search.do?fn=search&vl%28freeText0%29="
+            },
+            {
+              "name": "UFRJ",
+              "action": "https://buscaintegrada.ufrj.br/Search/Results?lookfor="
+            },
+            {
+              "name": "UnB",
+              "action": "https://consulta.bce.unb.br/pergamum/biblioteca/index.php?word="
+            },
+            {
+              "name": "UFMG",
+              "action": "https://research.ebsco.com/c/prr7uu/search/results?autocorrect=y&q="
+            },
+            {
+              "name": "UFPA",
+              "action": "https://bibcentral.ufpa.br/?for=LIVRE&q="
+            },
+            {
+              "name": "UFPE",
+              "action": "https://biblioteca.ufpe.br/?for=LIVRE&q="
+            }
+          ]
+        },
+        {
+          "name": "Internet Archive",
+          "action": "https://archive.org/search.php?query="
         }
       ],
       "youtube_channels": [
@@ -1492,7 +1510,8 @@
     },
     {
       "name": "Finance",
-      "name_translated": "Finanças",
+      "name_translated": "Financeiro",
+      "name_seo": "Buscador Financeiro",
       "active": true,
       "description": "Pesquise informações financeiras e econômicas: Google Finance, Banco Central, B3, CVM, Exame, Valor, Bloomberg, InfoMoney e mais.",
       "data": [
@@ -1703,7 +1722,9 @@
     },
     {
       "name": "Legal",
-      "name_translated": "Legal",
+      "name_translated": "Jurídico",
+      "name_seo": "Buscador Jurídico",
+      "name_trends": "Serviços populares",
       "active": true,
       "description": "Pesquise informações jurídicas e legais: Jusbrasil, Escavador, Reclame Aqui, GOV.BR, Congresso Nacional e mais.",
       "data": [
@@ -1725,10 +1746,6 @@
             {
               "name": "GOV.BR - Governo Federal",
               "action": "https://www.gov.br/pt-br/search?SearchableText="
-            },
-            {
-              "name": "Consumidor.gov.br",
-              "action": "https://www.consumidor.gov.br/pages/principal/?1738764883110/q?="
             },
             {
               "name": "Portal da Transparência",
@@ -1982,10 +1999,6 @@
           ]
         },
         {
-          "name": "OAB",
-          "action": "https://www.oab.org.br/noticias/pesquisa?pagina=1&argumento="
-        },
-        {
           "name": "Defensoria Pública",
           "child": [
             {
@@ -2005,6 +2018,10 @@
               "action": "https://defensoria.rj.def.br/busca/"
             }
           ]
+        },
+        {
+          "name": "OAB",
+          "action": "https://www.oab.org.br/noticias/pesquisa?pagina=1&argumento="
         },
         {
           "name": "Justiça Estadual",
@@ -2115,6 +2132,8 @@
     {
       "name": "Code",
       "name_translated": "Código",
+      "name_seo": "Buscador de Código",
+      "name_trends": "Repositórios populares",
       "active": true,
       "description": "Pesquise códigos, repositórios e pacotes: GitHub, Stack Overflow, CodePen, Glitch, Docker, npm, PyPI e mais.",
       "data": [
@@ -2213,8 +2232,16 @@
           "title": "codigofontetv"
         },
         {
+          "id": "UCrWvhVmt0Qac3HgsjQK62FQ",
+          "title": "CursoemVídeo"
+        },
+        {
           "id": "UCyHOBY6IDZF9zOKJPou2Rgg",
           "title": "LucasMontano"
+        },
+        {
+          "id": "UCU5JicSrEM5A63jkJ2QvGYw",
+          "title": "FilipeDeschamps"
         },
         {
           "id": "UCetRsdZxDQDcgVDJd6erz6g",
@@ -2257,6 +2284,10 @@
           "title": "ErickWendelTraining"
         },
         {
+          "id": "UCgnACLvM9O5lfm9ZBh_d3cg",
+          "title": "baltaio"
+        },
+        {
           "id": "UC629vKGFPRc1rz6VDm6OZiQ",
           "title": "Diolinuxlabs"
         },
@@ -2281,6 +2312,8 @@
     {
       "name": "Apps",
       "name_translated": "Aplicativos",
+      "name_seo": "Buscador de Aplicativos",
+      "name_trends": "Apps mais baixados",
       "active": true,
       "description": "Pesquise aplicativos e extensões: Google Play, App Store, Microsoft Store, Chrome Web Store, e mais.",
       "data": [
@@ -2375,8 +2408,9 @@
     {
       "name": "Games",
       "name_translated": "Jogos",
+      "name_seo": "Buscador de Jogos",
       "active": true,
-      "description": "Pesquise jogos e plataformas: Steam, PlayStation, Xbox, Nintendo, Nuuvem, Epic Games e mais.",
+      "description": "Pesquise jogos nas plataformas: Steam, PlayStation, Xbox, Nintendo, Nuuvem, Epic e mais.",
       "data": [
         {
           "name": "Steam",
@@ -2472,6 +2506,7 @@
     },
     {
       "name": "Torrent",
+      "name_seo": "Buscador de Torrent",
       "active": true,
       "data": [
         {

@@ -27,13 +27,14 @@
 }
 
 .containerBanner h3 {
+  line-height: 1.2;
   margin-bottom: 2rem;
   font-size: var(--font-size-2);
   color: var(--color-text-black);
 }
 .containerBanner p {
   margin-bottom: 0.75rem;
-  font-size: var(--font-size-big);
+  font-size: var(--font-size);
   color: var(--color-text-black);
 }
 

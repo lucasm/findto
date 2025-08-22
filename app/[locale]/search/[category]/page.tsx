@@ -26,7 +26,10 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   )
 
   const categoryTitle =
-    selectedCategory?.name_translated || selectedCategory?.name || 'Findto'
+    selectedCategory?.name_seo ||
+    selectedCategory?.name_translated ||
+    selectedCategory?.name ||
+    'Findto'
 
   const categoryDescription =
     selectedCategory?.description ||
@@ -50,7 +53,7 @@ export default async function Page(props: PageProps) {
     <AppLayout locale={params.locale} category={selectedCategory}>
       <Search selectedCategory={selectedCategory} />
 
-      <WidgetTrends />
+      <WidgetTrends title={selectedCategory?.name_trends} />
       <WidgetVideoStories selectedCategory={selectedCategory} />
       <WidgetCategories />
       <Banner />
