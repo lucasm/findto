@@ -1,9 +1,10 @@
 .card {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: start;
   gap: 1rem;
+  width: 100%;
   overflow: hidden;
   padding: 1.25rem;
   background: var(--background-surface);
@@ -17,14 +18,19 @@
   color: var(--color-bg-white);
 }
 
+.column {
+  flex-direction: column;
+}
+
 .image {
   width: 100%;
-  aspect-ratio: 16 / 9; /* Mantém proporção padrão dos vídeos */
+  aspect-ratio: auto;
   overflow: hidden;
   position: relative;
   display: block;
   border-radius: 12px;
   filter: grayscale(100%);
+  background: white;
 }
 .image img {
   width: 100%;
@@ -33,14 +39,17 @@
   object-position: center;
 }
 
+.aspectRatioVideo {
+  aspect-ratio: 16 / 9; /* Mantém proporção para vídeos */
+}
+
 .title,
 .author {
-  font-size: 1.1rem;
+  font-size: var(--font-size);
   font-weight: 400;
   filter: grayscale(100%);
 }
 
 .author {
-  font-size: var(--font-size);
   opacity: var(--opacity);
 }

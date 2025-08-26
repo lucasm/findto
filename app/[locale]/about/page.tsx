@@ -83,7 +83,7 @@ export default function PageAbout() {
       <section>
         <div className={Style.container}>
           <div className={Style.actionContainer}>
-            <h2>Start a new search</h2>
+            <h2>Start a better search</h2>
             <p>It’s more than search. It’s decentralized.</p>
             <Button url="/" color="black">
               <>

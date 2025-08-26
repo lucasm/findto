@@ -117,6 +117,8 @@ const WidgetVideoStories = ({ selectedCategory }: Readonly<Props>) => {
                 author={item.author}
                 title={item.title || ''}
                 imageUrl={item.image || ''}
+                imageAspectRatio="aspectRatioVideo"
+                flexDirection="column"
                 onClick={() => item.url && openVideo(item.url)}
               />
             </li>

@@ -103,7 +103,7 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
     }
   }
 
-  console.log(searchSource)
+  console.log('searchSource', searchSource)
 
   // resize
   useEffect(() => {

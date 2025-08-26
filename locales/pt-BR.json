@@ -6,7 +6,7 @@
   "t": {
     "metadata": {
       "title": "Faça buscas livres com o Findto",
-      "description": "Busque em diversas fontes da Web e agentes de IA ao mesmo tempo. Isso é Findto."
+      "description": "Busque em diversas fontes da Web e agentes de IA ao mesmo tempo."
     },
     "feedback": {
       "title": "Enviar feedback",
@@ -584,7 +584,7 @@
       "name": "Videos",
       "name_translated": "Vídeos",
       "name_seo": "Buscador de Vídeos",
-      "name_trends": "Top filmes e séries",
+      "name_trends": "Assista algo popular",
       "active": true,
       "description": "Encontre vídeos em plataformas populares: YouTube, Twitch, Globoplay, Netflix, Prime Video e mais.",
       "data": [
@@ -825,7 +825,7 @@
       "name": "Music",
       "name_translated": "Músicas",
       "name_seo": "Buscador de Músicas",
-      "name_trends": "Top álbuns",
+      "name_trends": "Ouça algo popular",
       "active": true,
       "description": "Busque músicas e letras no: Spotify, Apple Music, SoundCloud, YouTube Music, Amazon Music e mais.",
       "data": [
@@ -1286,7 +1286,7 @@
       "name": "Academic",
       "name_translated": "Acadêmico",
       "name_seo": "Buscador Acadêmico",
-      "name_trends": "Tópicos mais citados",
+      "name_trends": "Tópicos populares",
       "active": true,
       "description": "Pesquise artigos, livros e publicações acadêmicas em diversas fontes: Google Scholar, ResearchGate, SciELO, arXiv e mais.",
       "data": [
@@ -2313,7 +2313,7 @@
       "name": "Apps",
       "name_translated": "Aplicativos",
       "name_seo": "Buscador de Aplicativos",
-      "name_trends": "Apps mais baixados",
+      "name_trends": "Mais baixados",
       "active": true,
       "description": "Pesquise aplicativos e extensões: Google Play, App Store, Microsoft Store, Chrome Web Store, e mais.",
       "data": [

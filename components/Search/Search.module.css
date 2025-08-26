@@ -61,7 +61,6 @@
   color: var(--color-text-black);
   font-weight: 400;
   font-size: var(--font-size);
-  letter-spacing: normal;
   text-align: left;
   border: none;
   border-radius: 0;
@@ -220,13 +219,17 @@
     display: inline-block;
   }
   .buttons button {
-    padding: 0.625rem;
+    padding: 0.5rem;
     word-break: break-word;
     text-wrap: wrap;
   }
   .buttons figure {
-    height: 1.625rem;
-    width: 1.625rem;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .buttons figure img {
+    width: 14px;
+    height: 14px;
   }
 
   .searchLogo {

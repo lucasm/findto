@@ -1,24 +1,36 @@
 .icon {
   position: relative;
   display: flex;
-  width: 5rem;
-  height: 5rem;
+  width: 5.5rem;
+  height: 5.5rem;
   margin: 0 auto;
-  /* background-image: var(--background-gradient); */
   background: var(--background-surface);
+  /* background: var(--background-gradient); */
+  /* color: var(--color-black); */
   border-radius: 33.333%;
   justify-content: center;
   align-items: center;
-  /* color: var(--color-black); */
-  /* background-image: url('/icon.svg');
-  background-size: 3rem;
-  background-repeat: no-repeat; */
 }
 .icon svg {
-  /* display: none; */
   width: 2.75rem;
   height: 2.75rem;
 }
+
+/* .icon:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  margin-top: -0.5rem;
+  margin-left: -0.5rem;
+  width: calc(100% + 1rem);
+  height: calc(100% + 1rem);
+  border-radius: 33.333%;
+  box-shadow: inset 0 0 0 2px var(--color-border);
+  background: var(--background-gradient);
+  pointer-events: none;
+} */
 
 @media screen and (max-width: 768px) {
   .icon {

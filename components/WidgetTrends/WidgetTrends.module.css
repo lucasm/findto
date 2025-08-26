@@ -2,50 +2,12 @@
   display: grid;
   gap: 1.25rem;
   padding: 0;
-  /* margin: 0 -1rem; */
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
 }
-.container li button {
-  position: relative;
-  display: flex;
-  gap: 1rem;
-  justify-content: flex-start;
-  padding: 1.25rem;
-  width: 100%;
-  border: 0;
-  margin: 0;
-  background: var(--background-surface);
-  color: var(--color-text-black);
-  border-radius: var(--radius-liquid-glass);
-  transition: var(--transition-hover);
-  flex-direction: row;
-  align-items: center;
-  overflow: hidden;
-  font-weight: 400;
-}
-.container li button:hover,
-.container li button:focus {
-  background: var(--color-black-translucent);
-}
-
-.container li button img {
-  width: 3.5rem;
-  background: var(--color-white);
-  transition: var(--transition-hover);
-  border-radius: 12px;
-  filter: grayscale(100%);
-}
-.container li button span {
-  text-align: left;
-  font-size: 1.1rem;
-}
-.container li button span:first-of-type {
-  opacity: var(--opacity);
-}
 
 .grid5 {
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 .grid4 {
   grid-template-columns: repeat(4, 1fr);
@@ -57,75 +19,49 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-.grid5 li button,
-.grid4 li button,
-.grid3 li button {
-  gap: 1rem;
-  flex-direction: column;
-  align-items: start;
+.trendsCode button {
+  flex-direction: row;
+  align-items: center;
 }
-.grid5 li button img,
-.grid4 li button img,
-.grid3 li button img {
-  width: 100%;
+.trendsCode button figure {
+  width: 48px;
+}
+.trendsCode div:last-child,
+.trendsApps div:last-child {
+  line-break: anywhere;
 }
 
 .trendsApps span {
   font-size: var(--font-size-small) !important;
 }
-.trendsApps li button img {
+.trendsApps button figure {
   border-radius: 1.5rem;
 }
-.trendsCode li button img {
-  border-radius: 0.25rem;
-}
 
-.trendsSocial li button span,
-.trendsCode li button span {
-  line-break: anywhere;
-}
-
-.trendsShopping li button img {
+.trendsShopping button figure {
   padding: 1rem;
 }
+
 .trendsLocal li button img {
   padding: 0.75rem;
 }
 
 @media screen and (max-width: 768px) {
   .container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
-
   .title h3 {
     font-size: var(--font-size);
   }
 
-  .container li button span {
-    font-size: var(--font-size);
-  }
-
-  .grid5 {
-    grid-template-columns: repeat(4, 1fr);
+  .grid4 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media screen and (max-width: 576px) {
   .container {
-    grid-template-columns: 1fr;
-  }
-
-  .trendsHome li button img,
-  .trendsAI li button img,
-  .trendsWeb li button img,
-  .trendsLocal li button img,
-  .trendsCode button img {
-    width: 52px !important;
-  }
-  .container {
     gap: 1rem;
-  }
-  .container li button {
-    padding: 1rem;
+    grid-template-columns: 1fr;
   }
 }

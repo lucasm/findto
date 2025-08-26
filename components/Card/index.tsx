@@ -4,7 +4,8 @@ interface CardProps {
   title: string
   onClick?: () => void
   imageUrl?: string
-  imageAspectRatio?: '16/9'
+  imageAspectRatio?: 'aspectRatioVideo'
+  flexDirection?: 'row' | 'column'
   author?: string
   description?: string
 }
@@ -15,13 +16,17 @@ const Card = ({
   title,
   description,
   onClick,
+  imageAspectRatio,
+  flexDirection,
 }: Readonly<CardProps>) => {
   return (
-    <button className={styles.card} onClick={onClick}>
+    <button
+      className={`${styles.card} ${flexDirection ? styles[flexDirection] : ''}`}
+      onClick={onClick}>
       {author && <span className={styles.author}>{author}</span>}
       {imageUrl && (
         <figure
-          className={`${styles.image} ${styles.youTube ? 'youtubeCard' : ''}`}>
+          className={`${styles.image} ${imageAspectRatio ? styles[imageAspectRatio] : ''}`}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={imageUrl} alt="" />
         </figure>

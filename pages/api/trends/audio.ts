@@ -15,7 +15,7 @@ export default async function endpoint(
     return res.status(400).json({ message: 'Missing parameter COUNTRY_CODE' })
   }
 
-  const url = `https://rss.applemarketingtools.com/api/v2/${country}/music/most-played/27/albums.json`
+  const url = `https://rss.applemarketingtools.com/api/v2/${country}/music/most-played/28/albums.json`
 
   try {
     const { data } = await axios.get(url)

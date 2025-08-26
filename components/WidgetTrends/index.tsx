@@ -4,7 +4,10 @@ import { useTranslations } from 'next-intl'
 import { useEffect, useState } from 'react'
 import useSWR from 'swr'
 
+import Button from '@/components/Button'
 import ButtonGeolocation from '@/components/ButtonGeolocation'
+import Card from '@/components/Card'
+import { IconFeedback } from '@/components/SvgIcons'
 import WidgetTemplate from '@/components/WidgetTemplate'
 import { useSearch } from '@/contexts/SearchContext'
 import { ITrends } from '@/interfaces/trends'
@@ -373,8 +376,8 @@ export default function SearchTrends({ title }: Readonly<Props>) {
   const handleClassName = (category: string) => {
     switch (category) {
       case 'Videos':
-      case 'Music':
       case 'Image':
+      case 'Music':
       case 'News':
       case 'Finance':
       case 'Games':
@@ -393,8 +396,23 @@ export default function SearchTrends({ title }: Readonly<Props>) {
         return Styles.container
     }
   }
+  const handleFlexDirection = (category: string) => {
+    switch (category) {
+      case 'Videos':
+      case 'Image':
+      case 'Music':
+      case 'News':
+      case 'Finance':
+      case 'Games':
+      case 'Shopping':
+      case 'Apps':
+        return 'column'
+      default:
+        return 'row'
+    }
+  }
 
-  if (dataTrends || errorTrends || category === 'Local') {
+  if (dataTrends) {
     return (
       <WidgetTemplate
         title={title || t('trends')}
@@ -406,32 +424,43 @@ export default function SearchTrends({ title }: Readonly<Props>) {
               }
             : undefined
         }>
-        {/* title: 'Error on Trends API ' + category,
-                url:
-                  'mailto:feedback@findto.app?subject=Error on Trends API' +
-                  category, */}
         {category === 'Local' && <ButtonGeolocation />}
 
-        {dataTrends && (
-          <ul className={handleClassName(category)}>
-            {dataTrends?.data?.map((item, index) => (
-              <li key={item?.title + index}>
-                <button
-                  type="button"
-                  onClick={() =>
-                    item.url
-                      ? window.open(item.url, '_blank')
-                      : putValue(item.title)
-                  }>
-                  <span>{index + 1}</span>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  {item.image && <img src={item.image} alt="" />}
-                  {item.title && <span> {item.title}</span>}
-                </button>
-              </li>
-            ))}
-          </ul>
-        )}
+        <ul className={handleClassName(category)}>
+          {dataTrends?.data?.map((item, index) => (
+            <li key={item?.title + index}>
+              <Card
+                title={item.title}
+                author={(index + 1).toString()}
+                imageUrl={item.image}
+                onClick={() =>
+                  item.url
+                    ? window.open(item.url, '_blank')
+                    : putValue(item.title)
+                }
+                flexDirection={handleFlexDirection(category)}
+              />
+            </li>
+          ))}
+        </ul>
+      </WidgetTemplate>
+    )
+  }
+
+  if (errorTrends) {
+    return (
+      <WidgetTemplate title={title || t('trends')}>
+        <Button
+          color="black"
+          url={
+            'mailto:feedback@findto.app?subject=Error on API of category ' +
+            category
+          }>
+          <>
+            <IconFeedback />
+            {t('feedback.title') + ' API ' + category}
+          </>
+        </Button>
       </WidgetTemplate>
     )
   }
