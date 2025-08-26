@@ -378,8 +378,6 @@ export default function SearchTrends({ title }: Readonly<Props>) {
       case 'Videos':
       case 'Image':
       case 'Music':
-      case 'News':
-      case 'Finance':
       case 'Games':
         return Styles.container + ' ' + Styles.grid4
       case 'Apps':
@@ -392,6 +390,9 @@ export default function SearchTrends({ title }: Readonly<Props>) {
         return Styles.container + ' ' + Styles.grid2 + ' ' + Styles.trendsCode
       case 'Local':
         return Styles.container + ' ' + Styles.grid2 + ' ' + Styles.trendsLocal
+      case 'News':
+      case 'Finance':
+        return Styles.container + ' ' + Styles.grid2 + ' ' + Styles.trendsNews
       default:
         return Styles.container
     }
@@ -401,8 +402,6 @@ export default function SearchTrends({ title }: Readonly<Props>) {
       case 'Videos':
       case 'Image':
       case 'Music':
-      case 'News':
-      case 'Finance':
       case 'Games':
       case 'Shopping':
       case 'Apps':

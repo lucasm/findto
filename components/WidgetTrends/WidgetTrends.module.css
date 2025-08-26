@@ -19,6 +19,12 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.trendsNews button figure {
+  aspect-ratio: 1/1;
+  max-height: 8rem;
+  max-width: 8rem;
+}
+
 .trendsCode button {
   flex-direction: row;
   align-items: center;
