@@ -47,7 +47,7 @@
     "theme": "Tema",
     "language": "Idioma",
     "contribute": "Contribuir",
-    "explore": "Explore algo novo",
+    "explore": "Explore",
     "trends": "Tendências",
     "stories": "Novidades",
     "categories": "Modos",
@@ -390,10 +390,6 @@
           "title": "papelpop"
         },
         {
-          "id": "UClu474HMt895mVxZdlIHXEA",
-          "title": "nerdologia"
-        },
-        {
           "id": "UCH2VZQBLFTOp6I_qgnBJCuQ",
           "title": "nostalgia"
         },
@@ -577,6 +573,14 @@
         {
           "id": "UCP391YRAjSOdM_bwievgaZA",
           "title": "jovempannews"
+        },
+        {
+          "id": "UC-6xqzMBF2CXTImn_a4aCVg",
+          "title": "jornaloglobo"
+        },
+        {
+          "id": "UCUM4-KGZEXC2pk6zRDL9jMQ",
+          "title": "CanalMyNews"
         }
       ]
     },
@@ -737,6 +741,14 @@
         {
           "id": "UCE8deXi-Eea3SuEV1Q1L4ug",
           "title": "otaviouga"
+        },
+        {
+          "id": "UCZq_CYXRoRjKqidapMPujaQ",
+          "title": "EntrePlanosCinema"
+        },
+        {
+          "id": "UC2oZNzo6o37qejkFQE2dIAA",
+          "title": "carolmoreira"
         }
       ]
     },
@@ -1471,6 +1483,10 @@
           "title": "AtilaIamarino"
         },
         {
+          "id": "UClu474HMt895mVxZdlIHXEA",
+          "title": "nerdologia"
+        },
+        {
           "id": "UCZdJE8KpuFm6NRafHTEIC-g",
           "title": "TemperoDrag"
         },
@@ -1518,6 +1534,14 @@
         {
           "name": "Google Finance",
           "action": "https://google.com/finance/quote/"
+        },
+        {
+          "name": "Mobills",
+          "action": "https://www.mobills.com.br/busca/"
+        },
+        {
+          "name": "Investidor10",
+          "action": "https://investidor10.com.br/busca/?s="
         },
         {
           "name": "Banco Central",
@@ -1589,17 +1613,43 @@
           ]
         },
         {
+          "name": "CVM",
+          "child": [
+            {
+              "name": "CVM",
+              "action": "https://www.gov.br/cvm/en/search?origem=termos&SearchableText="
+            },
+            {
+              "name": "XP",
+              "action": "https://conteudos.xpi.com.br/pesquisar/?post_types=any&search="
+            },
+            {
+              "name": "Toro",
+              "action": "https://blog.toroinvestimentos.com.br/busca/="
+            },
+            {
+              "name": "Rico",
+              "action": "https://riconnect.rico.com.vc/?s="
+            },
+            {
+              "name": "Genial",
+              "action": "https://blog.genialinvestimentos.com.br/?s="
+            },
+            {
+              "name": "Empiricus",
+              "action": "https://www.empiricus.com.br/?buscar="
+            },
+            {
+              "name": "Suno",
+              "action": "https://www.sunoresearch.com.br/?s="
+            }
+          ]
+        },
+        {
           "name": "B3",
           "action": "https://www.b3.com.br/pt_br/busca/?query="
         },
-        {
-          "name": "CVM",
-          "action": "https://www.gov.br/cvm/en/search?origem=termos&SearchableText="
-        },
-        {
-          "name": "Mobills",
-          "action": "https://www.mobills.com.br/busca/"
-        },
+
         {
           "name": "Exame",
           "action": "https://exame.com/busca/"
@@ -1615,30 +1665,6 @@
         {
           "name": "InfoMoney",
           "action": "https://www.infomoney.com.br/busca/?q="
-        },
-        {
-          "name": "XP",
-          "action": "https://conteudos.xpi.com.br/pesquisar/?post_types=any&search="
-        },
-        {
-          "name": "Toro",
-          "action": "https://blog.toroinvestimentos.com.br/busca/="
-        },
-        {
-          "name": "Rico",
-          "action": "https://riconnect.rico.com.vc/?s="
-        },
-        {
-          "name": "Genial",
-          "action": "https://blog.genialinvestimentos.com.br/?s="
-        },
-        {
-          "name": "Empiricus",
-          "action": "https://www.empiricus.com.br/?buscar="
-        },
-        {
-          "name": "Suno",
-          "action": "https://www.sunoresearch.com.br/?s="
         }
       ],
       "youtube_channels": [
@@ -1717,6 +1743,10 @@
         {
           "id": "UCUr0xVzqs1As0C8ydWgjyGg",
           "title": "cniweb"
+        },
+        {
+          "id": "UCnBNoed6NaPlpL8blj1yy8Q",
+          "title": "ClubedoValor"
         }
       ]
     },
