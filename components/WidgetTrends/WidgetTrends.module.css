@@ -6,8 +6,8 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-.grid5 {
-  grid-template-columns: repeat(5, 1fr);
+.grid6 {
+  grid-template-columns: repeat(6, 1fr);
 }
 .grid4 {
   grid-template-columns: repeat(4, 1fr);
@@ -60,6 +60,10 @@
     font-size: var(--font-size);
   }
 
+  .grid6 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   .grid4 {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -69,5 +73,9 @@
   .container {
     gap: 1rem;
     grid-template-columns: 1fr;
+  }
+
+  .grid6 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

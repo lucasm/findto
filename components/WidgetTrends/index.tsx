@@ -381,7 +381,7 @@ export default function SearchTrends({ title }: Readonly<Props>) {
       case 'Games':
         return Styles.container + ' ' + Styles.grid4
       case 'Apps':
-        return Styles.container + ' ' + Styles.grid5 + ' ' + Styles.trendsApps
+        return Styles.container + ' ' + Styles.grid6 + ' ' + Styles.trendsApps
       case 'Shopping':
         return (
           Styles.container + ' ' + Styles.grid4 + ' ' + Styles.trendsShopping
