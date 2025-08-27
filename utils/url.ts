@@ -2,7 +2,7 @@ export function isValidUrl(url: string) {
   try {
     new URL(url)
     return true
-  } catch (error) {
+  } catch {
     return false
   }
 }
@@ -29,8 +29,9 @@ export function extractDomain(url: string) {
   const listDomains = ['.com.br', '.co.uk']
 
   if (!listDomains.some((item) => url.includes(item))) {
-    let hostnames = hostname.split('.')
-    hostname = hostnames[hostnames.length - 2] + '.' + hostnames[hostnames.length - 1]
+    const hostnames = hostname.split('.')
+    hostname =
+      hostnames[hostnames.length - 2] + '.' + hostnames[hostnames.length - 1]
   }
 
   return hostname

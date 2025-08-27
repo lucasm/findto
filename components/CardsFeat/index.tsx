@@ -57,7 +57,7 @@ const features: Feature[] = [
   },
   {
     icon: <IconFileSearch />,
-    title: 'Reverse File Search *',
+    title: 'Reverse Search *',
     description:
       'Upload files and photos to reverse search on supported sources.',
   },

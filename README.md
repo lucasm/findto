@@ -20,60 +20,57 @@
  <br>
 </p>
 
-## Open Source Decentralized AI Search
+## Open Source AI Search
 
-**Decentralized:** Search the same term across multiple sources on AI and Web. Discover trends, stories and information. Find anything with Findto. More productive searches than ever.
+Findto is an open source, decentralized search assistant.
 
-**Safe**: View estimated Security, Privacy, and Carbon Footprint level of selected search source. Make better choices for you, and for the planet.
+Search the same term across multiple sources to discover trends, stories, and information. Find anything, anywhere — more productive searches than ever.
 
-**Open**: Findto is building an open, accessible and universal search experience. Where diversity is key. Where people stay on control of algorithms.
+See estimated levels of security, privacy, and carbon footprint for each source — helping you make safer and smarter choices.
 
-A better search experience. For a healthier internet. For people.
+We’re building an accessible, universal, and transparent search experience — where people stay in control of algorithms. For a healthier internet.
 
-[▶️ Try it now](https://findto.app/?utm_source=findto_repo)
+[▶️ Try Findto now](https://findto.app/?utm_source=findto_repo)
 
 ## 🟢 Features
 
-| Name                     | Description                                                                           | Status |
-| ------------------------ | ------------------------------------------------------------------------------------- | ------ |
-| **Decentralized Search** | Search on diverse sources at once                                                     | ✅     |
-| **Protection**           | View estimated security level, carbon footprint and privacy of selected search source | ✅     |
-| **Trends**               | Explore real-time trends nearby you                                                   | ✅     |
-| **Stories**              | Discover newest stories                                                               | ✅     |
-| **Autocomplete**         | Get automatic suggestions of terms as you type                                        | ✅     |
-| **Voice Search**         | Search anywhere using your voice                                                      | ✅     |
-| **Reverse File Search**  | Search on supported sources with an image or files                                    | 🔜     |
-| **Languages**            | Choose your country for local sources, or international                               | ✅     |
-| **Accessibility**        | Balanced contrast, screen reader support, keyboard navigation and dark theme          | ✅     |
-| **Carbon Neutral**       | Finito is carbon neutral software                                                     | ✅     |
+| Feature                  | Description                                                                               | Status |
+| ------------------------ | ----------------------------------------------------------------------------------------- | ------ |
+| **Decentralized Search** | Search the same term on multiple sources.                                                 | ✅     |
+| **Protection**           | View estimated level of security, carbon footprint and privacy of selected search source. | ✅     |
+| **Trends**               | Discover real-time trends nearby you.                                                     | ✅     |
+| **Stories**              | Explore newest stories.                                                                   | ✅     |
+| **Autocomplete**         | Get automatic suggestions of terms as you type.                                           | ✅     |
+| **Voice Search**         | Use your voice to search anywhere.                                                        | ✅     |
+| **Reverse Search**       | Search on supported sources with an image or files.                                       | 🔜     |
+| **Internationalization** | Choose your country for local sources, or international.                                  | ✅     |
+| **Accessibility**        | Dark theme, balanced contrast, screen reader support, and keyboard navigation.            | ✅     |
 
 ## 🔵 Criteria
 
-The search sources and external content available on Findto, are selected following these criteria: 1. Service popularity; 2. Open access; 3. Service respect for copyright, accessibility, and privacy regulations.
+All search sources and external content available on Findto are selected based on the following criteria: 1. Service popularity; 2. Open access; 3. Compliance with copyright, accessibility, and privacy regulations.
 
-## 🟣 Contributions
+## 🔴 Contributions
 
 Contributions are welcome!
 
-- Check [Projects](https://github.com/lucasm/findto/projects) board for the backlog.
-- Open a [Issue](https://github.com/lucasm/findto/issues) or [Discussion](https://github.com/lucasm/findto/discussions) for new features.
-- View opened [Issues](https://github.com/lucasm/findto/issues) before send a PR.
-- Do you want to translate Findto? Check a how to guide on [Wiki](https://github.com/lucasm/findto/wiki).
+[Issues](https://github.com/lucasm/findto/issues) | [Discussions](https://github.com/lucasm/findto/discussions) |
+[Wiki](https://github.com/lucasm/findto/wiki) | [Backlog](https://github.com/lucasm/findto/projects)
 
 ## 🟡 Donate
 
-✨ Make a donation ✨ and support the Findto project!
+Make a donation to support Findto.
 
 - [Patreon](https://patreon.com/findto)
-- [Ko-Fi (one-time donation)](https://ko-fi.com/findto)
+- [One-time donation via Ko-Fi](https://ko-fi.com/findto)
 - [GitHub Sponsors](https://github.com/sponsors/lucasm)
 
 #### Supporters
 
 [Donate and get your name or banner here]
 
-## 🔴 Legal
+## 🟣 Legal
 
-Findto is built with privacy and don't store user searches. Findto displays content from external services without review and materials protected by intellectual property. Please, respect the terms of use of each source.
+Findto is built with privacy in mind and does not store user searches. It also displays content from external services without prior review, which may include materials protected by intellectual property. Please respect the terms of use of each source.
 
 [Privacy Policy](https://findto.app/privacy) | [Terms of Service](https://findto.app/terms) | Made by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app) and community | MIT Licensed

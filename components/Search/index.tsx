@@ -103,8 +103,6 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
     }
   }
 
-  console.log('searchSource', searchSource)
-
   // resize
   useEffect(() => {
     if (isMobileViewport) {

@@ -1,7 +1,7 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
-import { useEffect, useState } from 'react'
+import { useMemo } from 'react'
 import useSWR from 'swr'
 
 import Button from '@/components/Button'
@@ -22,412 +22,140 @@ interface Props {
 export default function SearchTrends({ title }: Readonly<Props>) {
   const t = useTranslations('t')
   const { category, putValue, country, locale, userLocation } = useSearch()
-  const [dataTrends, setDataTrends] = useState<ITrends | null>(null)
-  const [errorTrends, setErrorTrends] = useState<Error | null>(null)
 
-  // Web
-  function useApiWeb() {
-    const isValidCategory =
+  // Chave dinâmica para SWR
+  const swrKey = useMemo<string | null>(() => {
+    const isWebish =
       category === 'Home' || category === 'AI' || category === 'Web'
 
-    const { data, error } = useSWR(
-      !!country && isValidCategory
-        ? `/api/trends/web/?country=${country}`
-        : null,
-      fetcher
-    )
-
-    return {
-      dataWeb: data,
-      errorWeb: error,
+    if (isWebish) {
+      return country ? `/api/trends/web/?country=${country}` : null
     }
-  }
-  const { dataWeb, errorWeb } = useApiWeb()
 
-  // Social
-  function useApiSocial() {
-    const { data, error } = useSWR(
-      () =>
-        category === 'Social' ? `/api/trends/social/?country=${country}` : null,
-      fetcher
-    )
-
-    return {
-      dataSocial: data,
-      errorSocial: error,
+    if (category === 'Social') {
+      return country ? `/api/trends/social/?country=${country}` : null
     }
-  }
-  const { dataSocial, errorSocial } = useApiSocial()
 
-  // Videos
-  function useApiVideos() {
-    const { data, error } = useSWR(
-      () =>
-        locale && category === 'Videos'
-          ? `/api/trends/videos/?country=${locale}`
-          : null,
-      fetcher
-    )
-
-    return {
-      dataVideos: data,
-      errorVideos: error,
+    if (category === 'Videos') {
+      return locale ? `/api/trends/videos/?country=${locale}` : null
     }
-  }
-  const { dataVideos, errorVideos } = useApiVideos()
 
-  // Images
-  function useApiImages() {
-    const { data, error } = useSWR(
-      category === 'Image' && `/api/trends/images`,
-      fetcher
-    )
-
-    return {
-      dataImages: data,
-      errorImages: error,
+    if (category === 'Image') {
+      return `/api/trends/images`
     }
-  }
-  const { dataImages, errorImages } = useApiImages()
 
-  // Music
-  function useApiAudio() {
-    const { data, error } = useSWR(
-      country && category === 'Music' && `/api/trends/audio?country=${country}`,
-      fetcher
-    )
-
-    return {
-      dataAudio: data,
-      errorAudio: error,
+    if (category === 'Music') {
+      return country ? `/api/trends/audio?country=${country}` : null
     }
-  }
-  const { dataAudio, errorAudio } = useApiAudio()
 
-  // News
-  function useApiNews() {
-    const { data, error } = useSWR(
-      country && category === 'News'
-        ? `/api/trends/news?country=${country}`
-        : null,
-      fetcher
-    )
-
-    return {
-      dataNews: data,
-      errorNews: error,
+    if (category === 'Shopping') {
+      return country ? `/api/trends/shopping?country=${country}` : null
     }
-  }
-  const { dataNews, errorNews } = useApiNews()
 
-  // Finance
-  function useApiFinance() {
-    const { data, error } = useSWR(
-      country && category === 'Finance'
-        ? `/api/trends/finance?country=${country}`
-        : null,
-      fetcher
-    )
-
-    return {
-      dataFinance: data,
-      errorFinance: error,
-    }
-  }
-  const { dataFinance, errorFinance } = useApiFinance()
-
-  // Shopping
-  function useApiShopping() {
-    const { data, error } = useSWR(
-      category === 'Shopping'
-        ? `/api/trends/shopping?country=${country}`
-        : null,
-      fetcher
-    )
-
-    return {
-      dataShopping: data,
-      errorShopping: error,
-    }
-  }
-  const { dataShopping, errorShopping } = useApiShopping()
-
-  // Local
-  function useApiLocal() {
-    const { data, error } = useSWR(
-      category === 'Local'
-        ? `/api/trends/local?latitude=${userLocation.latitude}&longitude=${userLocation.longitude}&language=${locale}`
-        : null,
-      fetcher,
-      {
-        revalidateOnFocus: false,
+    if (category === 'Local') {
+      const { latitude, longitude } = userLocation
+      if (latitude && longitude) {
+        return `/api/trends/local?latitude=${latitude}&longitude=${longitude}&language=${locale}`
       }
-    )
-
-    return {
-      dataLocal: data,
-      loadingLocal: !data && !error,
-      errorLocal: error,
+      return null
     }
-  }
-  const { dataLocal, errorLocal } = useApiLocal()
 
-  // Code
-  function useApiCode() {
-    const { data, error } = useSWR(
-      category === 'Code' ? `/api/trends/code` : null,
-      fetcher
-    )
-
-    return {
-      dataCode: data,
-      errorCode: error,
+    if (category === 'Academic') {
+      return country ? `/api/trends/academic?country=${country}` : null
     }
-  }
-  const { dataCode, errorCode } = useApiCode()
 
-  // Academic
-  const useApiAcademic = () => {
-    const { data, error } = useSWR(
-      country && category === 'Academic'
-        ? `/api/trends/academic?country=${country}`
-        : null,
-      fetcher
-    )
-
-    return {
-      dataAcademic: data,
-      errorAcademic: error,
+    if (category === 'Code') {
+      return `/api/trends/code`
     }
-  }
-  const { dataAcademic, errorAcademic } = useApiAcademic()
 
-  // Jobs
-  function useApiJobs() {
-    const { data, error } = useSWR(
-      country && category === 'Job'
-        ? `/api/trends/jobs?country=${country}`
-        : null,
-      fetcher
-    )
-
-    return {
-      dataJobs: data,
-      errorJobs: error,
+    if (category === 'Job') {
+      return country ? `/api/trends/jobs?country=${country}` : null
     }
-  }
-  const { dataJobs, errorJobs } = useApiJobs()
 
-  // Legal
-  function useApiLegal() {
-    const { data, error } = useSWR(
-      country && category === 'Legal'
-        ? `/api/trends/legal?country=${country}`
-        : null,
-      fetcher
-    )
-
-    return {
-      dataLegal: data,
-      errorLegal: error,
+    if (category === 'News') {
+      return country ? `/api/trends/news?country=${country}` : null
     }
-  }
-  const { dataLegal, errorLegal } = useApiLegal()
 
-  // Apps
-  function useApiApps() {
-    const { data, error } = useSWR(
-      country && category === 'Apps'
-        ? `/api/trends/apps?country=${country}`
-        : null,
-      fetcher
-    )
-
-    return {
-      dataApps: data,
-      errorApps: error,
+    if (category === 'Finance') {
+      return country ? `/api/trends/finance?country=${country}` : null
     }
-  }
-  const { dataApps, errorApps } = useApiApps()
 
-  // Games
-  function useApiGames() {
-    const { data, error } = useSWR(
-      country && category === 'Games' ? `/api/trends/games` : null,
-      fetcher
-    )
-
-    return {
-      dataGames: data,
-      errorGames: error,
+    if (category === 'Legal') {
+      return country ? `/api/trends/legal?country=${country}` : null
     }
-  }
-  const { dataGames, errorGames } = useApiGames()
 
-  // call APIs
-  useEffect(() => {
-    setDataTrends(null)
-    setErrorTrends(null)
+    if (category === 'Apps') {
+      return country ? `/api/trends/apps?country=${country}` : null
+    }
 
-    switch (category) {
-      case 'Home':
-      case 'Web':
-      case 'AI':
-        if (dataWeb) setDataTrends(dataWeb)
-        if (errorWeb) setErrorTrends(errorWeb)
-        break
-      case 'Social':
-        if (dataSocial) setDataTrends(dataSocial)
-        if (errorSocial) setErrorTrends(errorSocial)
-        break
-      case 'Videos':
-        if (dataVideos) setDataTrends(dataVideos)
-        if (errorVideos) setErrorTrends(errorVideos)
-        break
-      case 'Image':
-        if (dataImages) setDataTrends(dataImages)
-        if (errorImages) setErrorTrends(errorImages)
-        break
-      case 'Music':
-        if (dataAudio) setDataTrends(dataAudio)
-        if (errorAudio) setErrorTrends(errorAudio)
-        break
-      case 'Shopping':
-        if (dataShopping) setDataTrends(dataShopping)
-        if (errorShopping) setErrorTrends(errorShopping)
-        break
-      case 'Local':
-        if (userLocation.latitude && userLocation.longitude) {
-          if (dataLocal) setDataTrends(dataLocal)
-          if (errorLocal) setErrorTrends(errorLocal)
+    if (category === 'Games') {
+      // Mantém a exigência de `country` como no seu código original
+      return country ? `/api/trends/games` : null
+    }
+
+    return null
+  }, [category, country, locale, userLocation])
+
+  // Opções específicas (ex.: Local não revalida ao focar)
+  const swrOptions =
+    category === 'Local' ? { revalidateOnFocus: false } : undefined
+
+  const { data: dataTrends, error: errorTrends } = useSWR<ITrends>(
+    swrKey,
+    fetcher,
+    swrOptions
+  )
+
+  const classNameContainer = useMemo(() => {
+    const base = [Styles.container]
+
+    const grid4 =
+      category === 'Videos' ||
+      category === 'Image' ||
+      category === 'Music' ||
+      category === 'Games'
+    const isApps = category === 'Apps'
+    const isShopping = category === 'Shopping'
+    const isCode = category === 'Code'
+    const isLocal = category === 'Local'
+    const isNews = category === 'News' || category === 'Finance'
+
+    if (grid4) base.push(Styles.grid4)
+    if (isApps) base.push(Styles.grid6, Styles.trendsApps)
+    if (isShopping) base.push(Styles.grid4, Styles.trendsShopping)
+    if (isCode) base.push(Styles.grid2, Styles.trendsCode)
+    if (isLocal) base.push(Styles.grid2, Styles.trendsLocal)
+    if (isNews) base.push(Styles.grid2, Styles.trendsNews)
+
+    return base.join(' ')
+  }, [category])
+
+  const flexDirection = useMemo<'row' | 'column'>(() => {
+    const isColumn =
+      category === 'Videos' ||
+      category === 'Image' ||
+      category === 'Music' ||
+      category === 'Games' ||
+      category === 'Shopping' ||
+      category === 'Apps'
+    return isColumn ? 'column' : 'row'
+  }, [category])
+
+  if (dataTrends || category === 'Local') {
+    const credits = dataTrends?.credits_title
+      ? {
+          title: dataTrends.credits_title ?? '',
+          url: dataTrends.credits_url ?? '',
         }
-        break
-      case 'Academic':
-        if (dataAcademic) setDataTrends(dataAcademic)
-        if (errorAcademic) setErrorTrends(errorAcademic)
-        break
-      case 'Code':
-        if (dataCode) setDataTrends(dataCode)
-        if (errorCode) setErrorTrends(errorCode)
-        break
-      case 'Job':
-        if (dataJobs) setDataTrends(dataJobs)
-        if (errorJobs) setErrorTrends(errorJobs)
-        break
-      case 'News':
-        if (dataNews) setDataTrends(dataNews)
-        if (errorNews) setErrorTrends(errorNews)
-        break
-      case 'Finance':
-        if (dataFinance) setDataTrends(dataFinance)
-        if (errorFinance) setErrorTrends(errorFinance)
-        break
-      case 'Legal':
-        if (dataLegal) setDataTrends(dataLegal)
-        if (errorLegal) setErrorTrends(errorLegal)
-        break
-      case 'Apps':
-        if (dataApps) setDataTrends(dataApps)
-        if (errorApps) setErrorTrends(errorApps)
-        break
-      case 'Games':
-        if (dataGames) setDataTrends(dataGames)
-        if (errorGames) setErrorTrends(errorGames)
-        break
-      default: {
-        break
-      }
-    }
-  }, [
-    category,
-    dataWeb,
-    errorWeb,
-    dataSocial,
-    errorSocial,
-    dataVideos,
-    errorVideos,
-    dataImages,
-    errorImages,
-    dataAudio,
-    errorAudio,
-    dataShopping,
-    errorShopping,
-    userLocation,
-    dataLocal,
-    errorLocal,
-    dataAcademic,
-    errorAcademic,
-    dataJobs,
-    errorJobs,
-    dataCode,
-    errorCode,
-    dataNews,
-    errorNews,
-    dataFinance,
-    errorFinance,
-    dataApps,
-    errorApps,
-    dataLegal,
-    errorLegal,
-    dataGames,
-    errorGames,
-  ])
+      : undefined
 
-  const handleClassName = (category: string) => {
-    switch (category) {
-      case 'Videos':
-      case 'Image':
-      case 'Music':
-      case 'Games':
-        return Styles.container + ' ' + Styles.grid4
-      case 'Apps':
-        return Styles.container + ' ' + Styles.grid6 + ' ' + Styles.trendsApps
-      case 'Shopping':
-        return (
-          Styles.container + ' ' + Styles.grid4 + ' ' + Styles.trendsShopping
-        )
-      case 'Code':
-        return Styles.container + ' ' + Styles.grid2 + ' ' + Styles.trendsCode
-      case 'Local':
-        return Styles.container + ' ' + Styles.grid2 + ' ' + Styles.trendsLocal
-      case 'News':
-      case 'Finance':
-        return Styles.container + ' ' + Styles.grid2 + ' ' + Styles.trendsNews
-      default:
-        return Styles.container
-    }
-  }
-  const handleFlexDirection = (category: string) => {
-    switch (category) {
-      case 'Videos':
-      case 'Image':
-      case 'Music':
-      case 'Games':
-      case 'Shopping':
-      case 'Apps':
-        return 'column'
-      default:
-        return 'row'
-    }
-  }
-
-  if (dataTrends) {
     return (
-      <WidgetTemplate
-        title={title || t('trends')}
-        credits={
-          dataTrends?.credits_title
-            ? {
-                title: dataTrends?.credits_title ?? '',
-                url: dataTrends?.credits_url ?? '',
-              }
-            : undefined
-        }>
+      <WidgetTemplate title={title || t('trends')} credits={credits}>
         {category === 'Local' && <ButtonGeolocation />}
 
-        <ul className={handleClassName(category)}>
+        <ul className={classNameContainer}>
           {dataTrends?.data?.map((item, index) => (
-            <li key={item?.title + index}>
+            <li key={`${item?.title}-${index}`}>
               <Card
                 title={item.title}
                 author={(index + 1).toString()}
@@ -437,7 +165,7 @@ export default function SearchTrends({ title }: Readonly<Props>) {
                     ? window.open(item.url, '_blank')
                     : putValue(item.title)
                 }
-                flexDirection={handleFlexDirection(category)}
+                flexDirection={flexDirection}
               />
             </li>
           ))}
@@ -451,10 +179,7 @@ export default function SearchTrends({ title }: Readonly<Props>) {
       <WidgetTemplate title={title || t('trends')}>
         <Button
           color="black"
-          url={
-            'mailto:feedback@findto.app?subject=Error on API of category ' +
-            category
-          }>
+          url={`mailto:feedback@findto.app?subject=Error on API of category ${category}`}>
           <>
             <IconFeedback />
             {t('feedback.title') + ' API ' + category}

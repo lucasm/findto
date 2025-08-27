@@ -1085,6 +1085,7 @@
     {
       "name": "Local",
       "name_seo": "Buscador Local",
+      "name_trends": "Locais perto de mim",
       "active": true,
       "description": "Encontre locais e serviços próximos: Google Maps, Apple Maps, Airbnb, Expedia, Tripadvisor e mais.",
       "data": [

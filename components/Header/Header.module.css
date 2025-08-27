@@ -110,9 +110,6 @@
   .header .buttonsContainer:last-of-type button figure span {
     display: none;
   }
-  .header .buttonsContainer:last-of-type button figure {
-    padding: 0.5rem;
-  }
 }
 
 @media screen and (max-width: 576px) {
