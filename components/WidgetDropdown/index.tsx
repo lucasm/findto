@@ -1,18 +1,16 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
 import React, { useEffect, useRef, useState } from 'react'
 
 import Styles from './WidgetDropdown.module.css'
-import { ICredits } from '../WidgetTemplate'
 
 type WidgetDropdownProps = {
   title: string | undefined
+  children: React.ReactNode
   ariaLabel?: string
   icon?: React.ReactNode
-  children: React.ReactNode
-  credits?: ICredits
   isWidgetOpen?: (isOpen: boolean) => void
+  forceClose?: boolean
   className?: string
   position?: 'right' | 'left'
 }
@@ -21,18 +19,15 @@ export default function WidgetDropdown({
   title,
   ariaLabel,
   icon,
-  credits,
   children,
   isWidgetOpen = () => {}, // setting a default value
+  forceClose,
   className = '',
   position = 'right',
   ...props
-}: WidgetDropdownProps) {
-  const t = useTranslations('t')
-
+}: Readonly<WidgetDropdownProps>) {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const containerRef = useRef<HTMLDivElement | null>(null)
-  const showCredits = credits?.title && credits?.url ? true : false
 
   const handleClick = () => {
     setIsOpen(!isOpen)
@@ -54,6 +49,10 @@ export default function WidgetDropdown({
       document.removeEventListener('mousedown', handleOutsideClick)
     }
   }, [isOpen])
+
+  useEffect(() => {
+    if (forceClose) setIsOpen(false)
+  }, [forceClose])
 
   return (
     <div
@@ -79,18 +78,6 @@ export default function WidgetDropdown({
             left: position === 'left' ? '-4.75rem' : 'auto',
           }}>
           <div>{children}</div>
-
-          {showCredits && (
-            <p className={Styles.credits}>
-              {t('powered') ?? 'Powered by'}{' '}
-              <a
-                href={credits?.url + '/?utm_source=findto_app'}
-                target="_blank"
-                rel="noopener">
-                {credits?.title ?? ''}
-              </a>
-            </p>
-          )}
         </div>
       )}
     </div>

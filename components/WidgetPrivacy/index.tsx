@@ -110,10 +110,10 @@ export default function WidgetPrivacy({ className = '', ...props }: DivProps) {
       title="Privacy"
       //   icon={<IconShield />}
       isWidgetOpen={(state) => setIsOpen(state)}
-      credits={{
-        title: 'Privacy Monitor',
-        url: 'https://www.privacymonitor.com/',
-      }}
+      //   credits={{
+      //     title: 'Privacy Monitor',
+      //     url: 'https://www.privacymonitor.com/',
+      //   }}
       className={className}
       {...props}>
       <div className={Styles.container} ref={containerRef}>

@@ -68,10 +68,10 @@ export default function WidgetCarbon({ className = '', ...props }: DivProps) {
       title="Carbon"
       //   icon={<IconCarbon />}
       isWidgetOpen={(state) => setIsOpen(state)}
-      credits={{
-        title: 'Website Carbon',
-        url: 'https://www.websitecarbon.com',
-      }}
+      //   credits={{
+      //     title: 'Website Carbon',
+      //     url: 'https://www.websitecarbon.com',
+      //   }}
       className={className}
       {...props}>
       <div className={Style.container}>

@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 import { useTheme } from 'next-themes'
+import { useState } from 'react'
 
 import HeaderSidebar from '@/components/HeaderSidebar'
 import SearchNav from '@/components/SearchNav'
@@ -47,6 +48,8 @@ const Header = ({ locale, category }: Props) => {
     searchSource,
   } = useSearch()
 
+  const [closeSettings, setCloseSettings] = useState(false)
+
   const handleTheme = () => {
     if (theme === 'light') {
       setTheme('dark')
@@ -74,6 +77,11 @@ const Header = ({ locale, category }: Props) => {
 
     setIsSidebarOpen(!isSidebarOpen)
     inputFocus()
+  }
+  const handleCookiesConsent = () => {
+    openPopup()
+    setCloseSettings(true)
+    setTimeout(() => setCloseSettings(false), 0)
   }
 
   const showTapbar = isMobileViewport || !isSidebarOpen
@@ -182,8 +190,8 @@ const Header = ({ locale, category }: Props) => {
         <WidgetDropdown
           title={undefined}
           icon={<IconUser />}
-          isWidgetOpen={(state) => console.log(state)}
-          ariaLabel={t('settings') ?? 'Settings'}>
+          ariaLabel={t('settings') ?? 'Settings'}
+          forceClose={closeSettings}>
           <div className={Style.containerSettings}>
             <div>
               <h3>{t('settings') ?? 'Settings'}</h3>
@@ -204,7 +212,7 @@ const Header = ({ locale, category }: Props) => {
                     : 'System'}
               </button>
 
-              <button onClick={openPopup}>
+              <button onClick={handleCookiesConsent}>
                 <IconCookie />
                 Cookies
               </button>

@@ -47,19 +47,3 @@
   width: auto;
   z-index: 2;
 }
-
-.credits {
-  width: 100%;
-  text-align: right;
-  font-size: var(--font-size-small);
-  margin-top: 1rem;
-  color: var(--color-text-black);
-  opacity: var(--opacity);
-}
-.credits a {
-  transition: var(--transition);
-}
-.credits a:hover,
-.credits a:focus {
-  opacity: 1;
-}
