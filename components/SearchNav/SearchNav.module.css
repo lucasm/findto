@@ -25,7 +25,7 @@
   position: relative;
   display: grid;
   margin: -1rem;
-  width: 300px;
+  width: 280px;
   grid-template-columns: repeat(3, 1fr);
 }
 .vertical a {
@@ -47,7 +47,7 @@
 /* Cards */
 .cards ul {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1.25rem;
   margin: 2rem auto 0;
   padding: 0;
@@ -76,8 +76,8 @@
   display: flex;
 }
 .cards svg {
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 .cards li {
   width: 100%;
@@ -98,12 +98,12 @@
   opacity: var(--opacity);
   padding: 0.625rem 0.75rem;
   align-items: center;
-  gap: 1rem;
-  font-size: var(--font-size);
+  gap: 0.75rem;
+  font-size: var(--font-size-small);
   width: 100%;
   color: var(--color-text-black);
   background: transparent;
-  border-radius: var(--radius-full);
+  border-radius: var(--radius);
 }
 .sidebar a:hover,
 .sidebar a:focus {

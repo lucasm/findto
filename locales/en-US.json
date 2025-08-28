@@ -9,7 +9,7 @@
       "description": "Search on multiple Web sources and AI agents simultaneously."
     },
     "feedback": {
-      "title": "Send feedback",
+      "title": "Send Feedback",
       "url": "https://forms.gle/US69JvUT1qxYkiF58"
     },
     "welcome": {
@@ -24,7 +24,7 @@
     },
     "widgetProtection": {
       "title": "Protection",
-      "description": "You can check the reputation of the selected search source.",
+      "description": "Check the reputation of the selected search source.",
       "source": "Source",
       "carbon": "Carbon",
       "security": "Security",
@@ -36,6 +36,7 @@
     "terms": "Terms of Service",
     "donate": "Donate",
     "accept": "Accept",
+    "reject": "Decline",
     "learnMore": "Meet Findto",
     "viewNearbyPlaces": "View nearby places",
     "openApp": "Try Findto",
@@ -53,7 +54,7 @@
     "categories": "Modes",
     "category": "Mode",
     "warnings": {
-      "cookies": "Findto uses cookies. We respect your privacy and do not store personal information.",
+      "cookies": "Findto uses cookies only to improve the app. No personal data collected.",
       "torrent": "Warning: The Torrent protocol is legal and used for sharing files. However, downloading copyrighted content without permission may violate the DMCA law of the United States of America. Avoid legal consequences. Follow the laws.",
       "darknet": "Warning: The Darknet is legal and used by researchers, journalists, and people in censored regions or under mass surveillance. Access it responsibly. Avoid scams, phishing, and illegal activities. Use a special browser, like Tor Browser, to open .onion protocol sites."
     }
@@ -387,7 +388,8 @@
     {
       "name": "News",
       "active": true,
-      "description": "Search news on CNN, NY Times, Reuters, BBC, The Guardian, Forbes, Time, CNBC, and more.",
+      "name_trends": "Breaking news",
+      "description": "Search news on CNN, NY Times, Reuters, BBC, Guardian, Forbes, Time, CNBC, and more.",
       "data": [
         {
           "name": "Google News",
@@ -422,7 +424,7 @@
           "action": "https://www.cnbc.com/search/?query="
         },
         {
-          "name": "The Guardian",
+          "name": "Guardian",
           "action": "https://www.google.co.uk/search?as_sitesearch=www.theguardian.com&q="
         },
         {
@@ -434,7 +436,7 @@
           "action": "https://www.forbes.com/search/?q="
         },
         {
-          "name": "Financial Times",
+          "name": "FT",
           "action": "https://www.ft.com/search?q="
         },
         {
@@ -548,6 +550,7 @@
     {
       "name": "Videos",
       "active": true,
+      "name_trends": "Everybody watching",
       "description": "Search videos on YouTube, Twitch, IMDb, Netflix, Prime Video, Disney+, HBO Max, and more.",
       "data": [
         {
@@ -740,6 +743,7 @@
     {
       "name": "Music",
       "active": true,
+      "name_trends": "Everybody listening",
       "description": "Search across music platforms like Spotify, Apple Music, SoundCloud, YouTube Music, Amazon Music, Deezer, and more.",
       "data": [
         {
@@ -857,6 +861,7 @@
     {
       "name": "Shopping",
       "active": true,
+      "name_trends": "Everybody buying",
       "description": "Search products on Amazon, eBay, Walmart, Best Buy, Etsy,Temu, and more.",
       "data": [
         {
@@ -921,6 +926,7 @@
     {
       "name": "Local",
       "active": true,
+      "name_trends": "Nearby places",
       "description": "Search local places and services on Google Maps, Apple Maps, Airbnb, Tripadvisor, Booking, and more.",
       "data": [
         {
@@ -992,6 +998,7 @@
     {
       "name": "Academic",
       "active": true,
+      "name_trends": "Popular topics",
       "description": "Search academic resources on Google Scholar, Wikipedia, ResearchGate, JSTOR, CORE, PLOS ONE, arXiv, and more.",
       "data": [
         {
@@ -1109,6 +1116,7 @@
     {
       "name": "Job",
       "active": true,
+      "name_trends": "Popular jobs",
       "description": "Search job listings on LinkedIn, Indeed, Glassdoor, Upwork, Fiverr, and more.",
       "data": [
         {
@@ -1164,6 +1172,7 @@
     {
       "name": "Code",
       "active": true,
+      "name_trends": "Top repositories",
       "description": "Search code on GitHub, Stack Overflow, Sourcegraph, CodePen, Glitch, and more.",
       "data": [
         {
@@ -1289,6 +1298,7 @@
     {
       "name": "Apps",
       "active": true,
+      "name_trends": "Top downloads",
       "description": "Search apps on Google Play, App Store, Microsoft Store, Chrome Web Store, Meta Quest, Apple Vision Pro, and more.",
       "data": [
         {

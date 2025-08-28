@@ -10,7 +10,6 @@ import SearchNav from '@/components/SearchNav'
 import SelectLanguage from '@/components/SelectLanguage'
 import {
   IconUser,
-  IconFeedback,
   IconHeart,
   IconMoon,
   IconSun,
@@ -19,8 +18,10 @@ import {
   IconCategories,
   IconArrowExternal,
   IconShield,
+  IconCookie,
 } from '@/components/SvgIcons'
 import WidgetDropdown from '@/components/WidgetDropdown'
+import { useCookiesConsent } from '@/contexts/CookiesConsentContext'
 import { useSearch } from '@/contexts/SearchContext'
 import { ISearchCategory } from '@/interfaces/search'
 import { getLocaleData } from '@/utils/getLocaleData'
@@ -37,6 +38,7 @@ const Header = ({ locale, category }: Props) => {
   const t = useTranslations('t')
   const data = getLocaleData(locale)
   const { theme, setTheme } = useTheme()
+  const { openPopup } = useCookiesConsent()
   const {
     isMobileViewport,
     isSidebarOpen,
@@ -184,7 +186,7 @@ const Header = ({ locale, category }: Props) => {
           ariaLabel={t('settings') ?? 'Settings'}>
           <div className={Style.containerSettings}>
             <div>
-              <h3>{t('theme')}</h3>
+              <h3>{t('settings') ?? 'Settings'}</h3>
 
               <button onClick={handleTheme}>
                 {theme === 'dark' ? (
@@ -194,29 +196,18 @@ const Header = ({ locale, category }: Props) => {
                 ) : (
                   <IconThemeSystem />
                 )}
+                {t('theme')}{' '}
                 {theme === 'dark'
                   ? 'Dark'
                   : theme === 'light'
                     ? 'Light'
                     : 'System'}
               </button>
-            </div>
 
-            <div>
-              <h3>{t('contribute')}</h3>
-              <div>
-                <Link href="/contribute">
-                  <IconHeart />
-                  {t('donate')}
-                </Link>
-                <Link
-                  href={t('feedback.url')}
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  <IconFeedback />
-                  {t('feedback.title')}
-                </Link>
-              </div>
+              <button onClick={openPopup}>
+                <IconCookie />
+                Cookies
+              </button>
             </div>
 
             <div>

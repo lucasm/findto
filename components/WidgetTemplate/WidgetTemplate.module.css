@@ -3,7 +3,7 @@
   padding: 3rem 1.5rem 2.5rem;
   overflow: hidden;
   margin: 0 auto;
-  max-width: var(--max-size-container);
+  max-width: var(--max-size-container-3);
   border-radius: var(--radius-big);
   color: var(--color-text-black);
 }

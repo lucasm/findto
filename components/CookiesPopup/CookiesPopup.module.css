@@ -19,7 +19,7 @@
 }
 .cookiesPopup div {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   align-items: center;
 }
 .cookiesPopup p {
@@ -39,7 +39,7 @@
   color: var(--color-text-black);
   border: none;
   padding: 10px 20px;
-  border-radius: var(--radius-small);
+  border-radius: var(--radius-full);
   cursor: pointer;
   font-size: var(--font-size-small);
 }

@@ -2,52 +2,46 @@
 
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
-import { useSearch } from '@/contexts/SearchContext'
+import { useCookiesConsent } from '@/contexts/CookiesConsentContext'
 
 import styles from './CookiesPopup.module.css'
 
+const ANIMATION_DURATION = 300 // ms (igual ao seu CSS transition)
+
 const CookiesPopup = () => {
   const t = useTranslations('t')
-  const { inputFocus, isBrowserClientSide } = useSearch()
-  const [isVisible, setIsVisible] = useState<boolean>(false)
-  const [isAccepted, setIsAccepted] = useState<boolean>(() => {
-    if (isBrowserClientSide) {
-      const saved = localStorage.getItem('isCookiesAccepted')
-      return saved ? JSON.parse(saved) : false
-    } else {
-      return false
-    }
-  })
+  const { isAccepted, isHydrated, accept, reject } = useCookiesConsent()
+  const [isClosing, setIsClosing] = useState(false)
 
-  useEffect(() => {
-    if (!isAccepted) {
-      setIsVisible(true)
-    }
-  }, [isAccepted])
+  if (!isHydrated) return null
+  if (isAccepted !== null && !isClosing) return null
 
-  const handleAccept = () => {
-    setIsAccepted(true)
-    setIsVisible(false)
-    if (isBrowserClientSide) {
-      localStorage.setItem('isCookiesAccepted', JSON.stringify(true))
-    }
-    inputFocus()
+  const handleClose = (action: () => void) => {
+    setIsClosing(true)
+    setTimeout(() => {
+      action()
+      setIsClosing(false) // reseta para próxima vez que abrir
+    }, ANIMATION_DURATION)
   }
 
   return (
     <div
       className={`${styles.cookiesPopup} ${
-        isVisible ? styles.slideUp : styles.slideDown
-      }`}>
+        isClosing ? styles.slideDown : styles.slideUp
+      }`}
+      role="dialog"
+      aria-live="polite"
+      aria-label={t('warnings.cookies')}>
       <p>{t('warnings.cookies')}</p>
 
-      <div>
-        <button onClick={handleAccept}>{t('accept')}</button>
+      <div className={styles.actions}>
+        <button onClick={() => handleClose(accept)}>{t('accept')}</button>
+        <button onClick={() => handleClose(reject)}>{t('reject')}</button>
       </div>
 
-      <div>
+      <div className={styles.links}>
         <p>
           <Link href="/privacy">{t('privacy')}</Link>
         </p>

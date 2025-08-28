@@ -36,6 +36,7 @@
     "terms": "服务条款",
     "donate": "立即捐赠",
     "accept": "好的",
+    "reject": "拒绝",
     "learnMore": "了解更多关于 Findto",
     "viewNearbyPlaces": "View nearby places",
     "openApp": "打开 Findto",
@@ -53,7 +54,7 @@
     "categories": "模块",
     "category": "选定模式",
     "warnings": {
-      "cookies": "Findto 使用 Cookie。我们尊重您的隐私，不会存储任何个人信息。"
+      "cookies": "Findto 仅使用 Cookie 来改进应用。不收集个人数据。"
     }
   },
   "categories": [

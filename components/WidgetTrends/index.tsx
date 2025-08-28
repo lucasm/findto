@@ -109,23 +109,34 @@ export default function SearchTrends({ title }: Readonly<Props>) {
   const classNameContainer = useMemo(() => {
     const base = [Styles.container]
 
-    const grid4 =
-      category === 'Videos' ||
-      category === 'Image' ||
-      category === 'Music' ||
-      category === 'Games'
-    const isApps = category === 'Apps'
-    const isShopping = category === 'Shopping'
-    const isCode = category === 'Code'
-    const isLocal = category === 'Local'
-    const isNews = category === 'News' || category === 'Finance'
+    switch (category) {
+      case 'News':
+      case 'Finance':
+      case 'Code':
+        base.push(Styles.grid1)
+        break
 
-    if (grid4) base.push(Styles.grid4)
-    if (isApps) base.push(Styles.grid6, Styles.trendsApps)
-    if (isShopping) base.push(Styles.grid4, Styles.trendsShopping)
-    if (isCode) base.push(Styles.grid2, Styles.trendsCode)
-    if (isLocal) base.push(Styles.grid2, Styles.trendsLocal)
-    if (isNews) base.push(Styles.grid2, Styles.trendsNews)
+      case 'Local':
+      case 'Music':
+        base.push(Styles.grid3)
+        break
+
+      case 'Videos':
+      case 'Image':
+      case 'Games':
+      case 'Shopping':
+        base.push(Styles.grid4)
+        break
+
+      case 'Apps':
+        base.push(Styles.grid5)
+        break
+    }
+
+    // sempre no final → trends{Categoria}
+    const trendsKey = `trends${category}` as keyof typeof Styles
+    const trendsClass = Styles[trendsKey]
+    if (trendsClass) base.push(trendsClass)
 
     return base.join(' ')
   }, [category])

@@ -2,11 +2,11 @@
   display: grid;
   gap: 1.25rem;
   justify-content: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.grid6 {
-  grid-template-columns: repeat(6, 1fr);
+.grid5 {
+  grid-template-columns: repeat(5, 1fr);
 }
 .grid4 {
   grid-template-columns: repeat(4, 1fr);
@@ -17,9 +17,13 @@
 .grid2 {
   grid-template-columns: repeat(2, 1fr);
 }
+.grid1 {
+  grid-template-columns: 1fr;
+}
 
-.trendsNews button figure {
-  aspect-ratio: 1/1;
+.trendsNews button figure,
+.trendsFinance button figure {
+  aspect-ratio: 1.5/1;
   max-height: 8rem;
   max-width: 8rem;
 }
@@ -30,15 +34,13 @@
 }
 .trendsCode button figure {
   width: 48px;
+  border-radius: 0;
 }
 .trendsCode div:last-child,
 .trendsApps div:last-child {
   line-break: anywhere;
 }
 
-.trendsApps span {
-  font-size: var(--font-size-small) !important;
-}
 .trendsApps button figure {
   border-radius: 1.5rem;
 }
@@ -52,9 +54,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .title h3 {
     font-size: var(--font-size);
   }
@@ -74,7 +73,7 @@
     grid-template-columns: 1fr;
   }
 
-  .grid6 {
+  .grid5 {
     grid-template-columns: repeat(3, 1fr);
   }
 }

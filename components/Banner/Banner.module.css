@@ -1,6 +1,6 @@
 .container {
   margin: 4rem auto;
-  max-width: var(--max-size-container-3);
+  max-width: var(--max-size-container-2);
   width: calc(100% - 4rem);
   background: var(--background-surface);
   border-radius: var(--radius-liquid-glass);

@@ -24,7 +24,7 @@
     },
     "widgetProtection": {
       "title": "Verificar",
-      "description": "Você pode verificar detalhes da fonte de busca selecionada.",
+      "description": "Verifique detalhes da fonte de busca selecionada.",
       "source": "Fonte",
       "carbon": "Carbono",
       "security": "Segurança",
@@ -34,8 +34,9 @@
     "about": "Sobre",
     "privacy": "Política de Privacidade",
     "terms": "Termos de Serviço",
-    "donate": "Fazer doação",
+    "donate": "Doar",
     "accept": "Aceitar",
+    "reject": "Recusar",
     "learnMore": "Conhecer o Findto",
     "viewNearbyPlaces": "Ver locais próximos",
     "openApp": "Abrir Findto",
@@ -53,7 +54,7 @@
     "categories": "Modos",
     "category": "Modo",
     "warnings": {
-      "cookies": "O Findto utiliza cookies. Respeitamos a sua privacidade e não armazenamos informações pessoais.",
+      "cookies": "O Findto utiliza cookies apenas para melhorar o app. Sem coletar dados pessoais.",
       "torrent": "Aviso: O protocolo Torrent é legal e usado para compartilhamento de arquivos na internet. Contudo, baixar conteúdo protegido por direitos autorais sem permissão é crime no Brasil. Respeite a Lei de Direitos Autorais (Lei 9.610/98). Evite consequências legais. "
     }
   },

@@ -9,6 +9,7 @@
 .container ul {
   width: 100%;
   padding-left: 1.25rem;
+  padding-bottom: 1rem;
 }
 .container ul li a {
   float: left;

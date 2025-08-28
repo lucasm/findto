@@ -56,7 +56,7 @@
   --size-small: 2.5rem;
   --size-large: 3.25rem;
   --size-big: 3rem;
-  --container-sidebar: 16rem;
+  --container-sidebar: 15rem;
   --max-size-container: 1024px;
   --max-size-container-2: 768px;
   --max-size-container-3: 820px;
@@ -256,15 +256,6 @@ article hr {
   }
 }
 
-::-moz-selection {
-  color: var(--color-bg-white);
-  background: var(--color-text-black);
-}
-::selection {
-  color: var(--color-bg-white);
-  background: var(--color-text-black);
-}
-
 ::placeholder {
   color: var(--color-text-black);
   opacity: var(--opacity);
@@ -292,12 +283,18 @@ article hr {
 
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   h2 {
     font-size: 1.5rem;
   }
   h3 {
     font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
   }
 }

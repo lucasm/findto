@@ -36,6 +36,7 @@
     "terms": "Условия эксплуатации",
     "donate": "Поддержать проект",
     "accept": "Принимать",
+    "reject": "Отклонять",
     "learnMore": "Познакомьтесь с Findto",
     "viewNearbyPlaces": "View nearby places",
     "openApp": "Открыть Findto",
@@ -46,14 +47,14 @@
     "settings": "Настройки",
     "theme": "Цвет",
     "language": "Язык",
-    "contribute": "Внести вклад",
+    "contribute": "Вклад",
     "explore": "Исследуйте",
     "trends": "Тенденции",
     "stories": "Истории",
     "categories": "Режимы",
     "category": "Режим",
     "warnings": {
-      "cookies": "Findto использует файлы cookie. Мы уважаем вашу конфиденциальность и не храним персональные данные."
+      "cookies": "Findto использует cookies только для улучшения приложения.Личные данные не собираются."
     }
   },
   "categories": [
