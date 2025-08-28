@@ -9,7 +9,7 @@ type Props = {
   locale: string
 }
 
-export default function SearchSuggestions({ term, locale }: Props) {
+export default function SearchSuggestions({ term, locale }: Readonly<Props>) {
   const { putValue } = useSearch()
   const [data, setData] = useState<string[] | null>(null)
   const [prevTerm, setPrevTerm] = useState<string>('')
@@ -57,11 +57,9 @@ export default function SearchSuggestions({ term, locale }: Props) {
     <div className={Styles.container}>
       {validTermLength && data && (
         <ul>
-          {data.slice(0, 6).map((item: string, index: number) => (
-            <li key={index}>
-              <a href="#" onClick={() => handleValue(item)}>
-                {item}
-              </a>
+          {data.slice(0, 7).map((item: string) => (
+            <li key={item}>
+              <button onClick={() => handleValue(item)}>{item}</button>
             </li>
           ))}
         </ul>
