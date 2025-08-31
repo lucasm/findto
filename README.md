@@ -24,9 +24,9 @@
 
 Findto is an open source, decentralized search assistant.
 
-Search the same term across multiple sources to discover trends, stories, and information. Find anything, anywhere — more productive searches than ever.
+Search the same term across multiple sources. Discover trends, stories, and information. Find anything, anywhere — more productive searches than ever.
 
-See estimated levels of security, privacy, and carbon footprint for each source — helping you make safer and smarter choices.
+See estimated levels of security, privacy, and carbon footprint for each source — helping you make safer choices.
 
 We’re building an accessible, universal, and transparent search experience — where people stay in control of algorithms. For a healthier internet.
 
