@@ -1319,16 +1319,16 @@
           "action": "https://apps.microsoft.com/store/search/"
         },
         {
+          "name": "Meta Quest",
+          "action": "https://www.meta.com/experiences/search/?q="
+        },
+        {
           "name": "Chrome Web Store",
           "action": "https://chromewebstore.google.com/search/"
         },
         {
           "name": "Firefox Addons",
           "action": "https://addons.mozilla.org/en-US/firefox/search/?q="
-        },
-        {
-          "name": "Meta Quest",
-          "action": "https://www.meta.com/experiences/search/?q="
         },
         {
           "name": "Apple Vision Pro",

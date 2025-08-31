@@ -1078,8 +1078,7 @@
         },
         {
           "name": "Pelando",
-          "action": "https://www.pelando.com.br/busca?q=",
-          "additional": "&type=publicacoes"
+          "action": "https://www.pelando.com.br/busca/"
         }
       ]
     },
@@ -2366,16 +2365,16 @@
           "action": "https://apps.microsoft.com/search?query="
         },
         {
+          "name": "Meta Quest",
+          "action": "https://www.meta.com/experiences/search?q="
+        },
+        {
           "name": "Chrome Web Store",
           "action": "https://chromewebstore.google.com/search/"
         },
         {
           "name": "Firefox Addons",
           "action": "https://addons.mozilla.org/en-US/firefox/search/?q="
-        },
-        {
-          "name": "Meta Quest",
-          "action": "https://www.meta.com/experiences/search?q="
         },
         {
           "name": "Flathub",

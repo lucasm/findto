@@ -57,7 +57,7 @@ export default function SearchSuggestions({ term, locale }: Readonly<Props>) {
     <div className={Styles.container}>
       {validTermLength && data && (
         <ul>
-          {data.slice(0, 7).map((item: string) => (
+          {data.slice(0, 6).map((item: string) => (
             <li key={item}>
               <button onClick={() => handleValue(item)}>{item}</button>
             </li>
