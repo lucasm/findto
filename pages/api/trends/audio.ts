@@ -3,6 +3,13 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 
 import { ITrends } from '../../../interfaces/trends'
 
+
+// Whitelist of supported country codes (could be expanded as needed)
+const ALLOWED_COUNTRY_CODES = [
+  "us", "gb", "fr", "de", "jp", "ca", "au", "it", "es", "nl", "se", "ch", "no", "dk", "fi", "be", "nz", "br", "tr", "mx", "ru", "pl", "cn", "kr", "hk", "sg", "ie", "pt", "cz", "at", "gr", "hu", "il", "za", "ae", "sa", "ar", "cl", "co", "ec", "fi", "in", "my", "th", "vn"
+  // ... add other supported codes as needed
+];
+
 export default async function endpoint(
   req: NextApiRequest,
   res: NextApiResponse
@@ -15,7 +22,13 @@ export default async function endpoint(
     return res.status(400).json({ message: 'Missing parameter COUNTRY_CODE' })
   }
 
-  const url = `https://rss.applemarketingtools.com/api/v2/${country}/music/most-played/28/albums.json`
+  // Defensive normalization and validation
+  const normCountry = (typeof country === 'string') ? country.toLowerCase() : '';
+  if (!ALLOWED_COUNTRY_CODES.includes(normCountry)) {
+    return res.status(400).json({ message: 'Invalid COUNTRY_CODE' });
+  }
+
+  const url = `https://rss.applemarketingtools.com/api/v2/${normCountry}/music/most-played/28/albums.json`
 
   try {
     const { data } = await axios.get(url)
