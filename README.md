@@ -74,3 +74,8 @@ Make a donation to support Findto.
 Findto is built with privacy in mind and does not store user searches. It also displays content from external services without prior review, which may include materials protected by intellectual property. Please respect the terms of use of each source.
 
 [Privacy Policy](https://findto.app/privacy) | [Terms of Service](https://findto.app/terms) | Made by [Lucas Menezes](https://lucasm.dev/?utm_source=findto_app) and community | MIT Licensed
+
+## 📦 Available on
+
+- [Store.app](https://store.app/findto)
+- [Alternative.to](https://alternativeto.net/software/findto/about/)
