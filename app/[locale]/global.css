@@ -22,13 +22,13 @@
   --color-text-black: #000;
   --background-gradient: linear-gradient(
     0deg,
-    var(--color-purple) 2%,
+    var(--color-pink),
+    var(--color-purple),
     var(--color-blue),
     var(--color-green),
     var(--color-yellow),
     var(--color-orange),
-    var(--color-red),
-    var(--color-pink) 110%
+    var(--color-red)
   );
   --color-white-translucent: rgba(255, 255, 255, 0.5);
   --color-black-translucent: rgba(0, 0, 0, 0.05);
@@ -47,7 +47,7 @@
   --font-size-big: 1.2rem;
   --font-size-3: 1.5rem;
   --font-size-2: 2.5rem;
-  --font-size-1: 5rem;
+  --font-size-1: 4rem;
   --radius: 1rem;
   --radius-small: 0.75rem;
   --radius-big: 1.75rem;
