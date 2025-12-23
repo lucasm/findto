@@ -10,7 +10,7 @@ import HeaderSidebar from '@/components/HeaderSidebar'
 import SearchNav from '@/components/SearchNav'
 import SelectLanguage from '@/components/SelectLanguage'
 import {
-  IconUser,
+  IconSettings,
   IconHeart,
   IconMoon,
   IconSun,
@@ -174,27 +174,15 @@ const Header = ({ locale, category }: Props) => {
           </div>
         </WidgetDropdown>
 
-        {/* Contribute */}
-        <button
-          aria-label={t('contribute')}
-          onClick={() => {
-            router.push('/contribute')
-          }}>
-          <figure>
-            <IconHeart />
-            <span>{t('contribute')}</span>
-          </figure>
-        </button>
-
         {/* Settings */}
         <WidgetDropdown
-          title={undefined}
-          icon={<IconUser />}
+          title={t('settings') ?? 'Settings'}
+          icon={<IconSettings />}
           ariaLabel={t('settings') ?? 'Settings'}
           forceClose={closeSettings}>
           <div className={Style.containerSettings}>
             <div>
-              <h3>{t('settings') ?? 'Settings'}</h3>
+              <h3>{t('theme') ?? 'Theme'}</h3>
 
               <button onClick={handleTheme}>
                 {theme === 'dark' ? (
@@ -211,16 +199,33 @@ const Header = ({ locale, category }: Props) => {
                     ? 'Light'
                     : 'System'}
               </button>
+            </div>
 
-              <button onClick={handleCookiesConsent}>
-                <IconCookie />
-                Cookies
+            <div>
+              <h3>{t('contribute') ?? 'Contribute'}</h3>
+
+              <button
+                aria-label={t('contribute')}
+                onClick={() => {
+                  router.push('/contribute')
+                }}>
+                <IconHeart />
+                {t('donate')}
               </button>
             </div>
 
             <div>
               <h3>{t('language')}</h3>
               <SelectLanguage />
+            </div>
+
+            <div>
+              <h3>{t('privacy') ?? 'Privacy'}</h3>
+
+              <button onClick={handleCookiesConsent}>
+                <IconCookie />
+                Cookies
+              </button>
             </div>
           </div>
         </WidgetDropdown>

@@ -46,9 +46,12 @@ const Footer = () => {
           <li>
             <p>
               {t('copyright')}
-              <a href="https://lucasm.dev" target="_blank" rel="noopener">
+              <a
+                href="https://lucasm.dev/?utm_source=findto&utm_medium=footer"
+                target="_blank"
+                rel="noopener">
                 {' '}
-                Lucas Menezes
+                Lucas Maués
               </a>
             </p>
           </li>

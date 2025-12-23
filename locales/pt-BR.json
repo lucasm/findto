@@ -5,17 +5,17 @@
   },
   "t": {
     "metadata": {
-      "title": "Faça buscas livres com o Findto",
-      "description": "Busque em diversas fontes da Web e agentes de IA ao mesmo tempo."
+      "title": "Busca descentralizada na Web e IA",
+      "description": "O Findto permite buscar em diversas fontes da Web e IA ao mesmo tempo. Rápido e simples."
     },
     "feedback": {
       "title": "Enviar feedback",
       "url": "https://forms.gle/r6XAyB1ZLn9qzwp16"
     },
     "welcome": {
-      "goodMorning": "Bom dia",
-      "goodEvening": "Boa tarde",
-      "goodNight": "Boa noite"
+      "goodMorning": "Bom dia, vamos lá?",
+      "goodEvening": "Boa tarde, o que procuras?",
+      "goodNight": "Boa noite, buscas algo?"
     },
     "voice": {
       "voice": "Voz",
@@ -23,7 +23,7 @@
       "allow": "Aguardando permissão..."
     },
     "widgetProtection": {
-      "title": "Verificar",
+      "title": "Verificações",
       "description": "Verifique detalhes da fonte de busca selecionada.",
       "source": "Fonte",
       "carbon": "Carbono",
@@ -37,24 +37,23 @@
     "donate": "Doar",
     "accept": "Aceitar",
     "reject": "Recusar",
-    "learnMore": "Conhecer o Findto",
+    "learnMore": "Conheça o Findto",
     "viewNearbyPlaces": "Ver locais próximos",
-    "openApp": "Abrir Findto",
-    "placeholder": "Busca",
+    "openApp": "Abrir o Findto",
+    "placeholder": "Buscar em",
     "search": "Buscar",
     "clear": "Limpar",
-    "powered": "Fornecido por",
+    "powered": "Dados fornecidos por",
     "settings": "Ajustes",
     "theme": "Tema",
     "language": "Idioma",
-    "contribute": "Contribuir",
-    "explore": "Explore",
+    "contribute": "Contribua",
     "trends": "Tendências",
     "stories": "Novidades",
-    "categories": "Modos",
+    "categories": "Categorias",
     "category": "Modo",
     "warnings": {
-      "cookies": "O Findto utiliza cookies apenas para melhorar o app. Sem coletar dados pessoais.",
+      "cookies": "Bem vindo(a) ao Findto! Utilizamos cookies somente para melhorar o aplicativo. Sem coletar dados pessoais.",
       "torrent": "Aviso: O protocolo Torrent é legal e usado para compartilhamento de arquivos na internet. Contudo, baixar conteúdo protegido por direitos autorais sem permissão é crime no Brasil. Respeite a Lei de Direitos Autorais (Lei 9.610/98). Evite consequências legais. "
     }
   },
@@ -139,7 +138,7 @@
     {
       "name": "AI",
       "name_translated": "IA",
-      "name_seo": "Buscador em IAs",
+      "name_seo": "Buscador de IA",
       "active": true,
       "description": "Utilize várias IAs ao mesmo tempo: ChatGPT, Copilot, Gemini, Grok, DeepSeek e mais.",
       "data": [
@@ -410,8 +409,8 @@
     },
     {
       "name": "News",
-      "name_translated": "Notícias",
-      "name_seo": "Buscador de Notícias",
+      "name_translated": "Notícia",
+      "name_seo": "Buscador de Notícia",
       "name_trends": "Últimas notícias",
       "active": true,
       "description": "Encontre notícias de fontes confiáveis: Globo, UOL, CNN, Folha, Estadão, Veja e mais.",
@@ -587,8 +586,8 @@
     },
     {
       "name": "Videos",
-      "name_translated": "Vídeos",
-      "name_seo": "Buscador de Vídeos",
+      "name_translated": "Vídeo",
+      "name_seo": "Buscador de Vídeo",
       "name_trends": "Assista algo popular",
       "active": true,
       "description": "Encontre vídeos em plataformas populares: YouTube, Twitch, Globoplay, Netflix, Prime Video e mais.",
@@ -596,10 +595,6 @@
         {
           "name": "YouTube",
           "action": "https://www.youtube.com/results?search_query="
-        },
-        {
-          "name": "JustWatch",
-          "action": "https://www.justwatch.com/br/busca?q="
         },
         {
           "name": "Globoplay",
@@ -622,7 +617,7 @@
           "action": "https://play.hbomax.com/search/result?q="
         },
         {
-          "name": "Apple TV+",
+          "name": "Apple TV",
           "action": "https://tv.apple.com/search?term="
         },
         {
@@ -664,6 +659,10 @@
         {
           "name": "Vivo Play",
           "action": "https://www.vivoplay.com.br/search?q="
+        },
+        {
+          "name": "JustWatch",
+          "action": "https://www.justwatch.com/br/busca?q="
         },
         {
           "name": "Letterboxd",
@@ -755,8 +754,8 @@
     },
     {
       "name": "Image",
-      "name_translated": "Imagens",
-      "name_seo": "Buscador de Imagens",
+      "name_translated": "Imagem",
+      "name_seo": "Buscador de Imagem",
       "active": true,
       "description": "Encontre imagens em diversas fontes: Pinterest, Unsplash, Canva, GIPHY, Pexels e mais.",
       "data": [
@@ -836,8 +835,8 @@
     },
     {
       "name": "Music",
-      "name_translated": "Músicas",
-      "name_seo": "Buscador de Músicas",
+      "name_translated": "Música",
+      "name_seo": "Buscador de Música",
       "name_trends": "Ouça algo popular",
       "active": true,
       "description": "Busque músicas e letras no: Spotify, Apple Music, SoundCloud, YouTube Music, Amazon Music e mais.",
@@ -980,8 +979,8 @@
     },
     {
       "name": "Shopping",
-      "name_translated": "Compras",
-      "name_seo": "Buscador de Compras",
+      "name_translated": "Compra",
+      "name_seo": "Buscador de Compra",
       "name_trends": "Mais vendidos",
       "active": true,
       "description": "Busque em lojas populares: Amazon, Mercado Livre, Magalu, Temu, OLX, Americanas e mais.",
@@ -1211,8 +1210,8 @@
     },
     {
       "name": "Job",
-      "name_translated": "Empregos",
-      "name_seo": "Buscador de Empregos",
+      "name_translated": "Emprego",
+      "name_seo": "Buscador de Emprego",
       "name_trends": "Vagas populares",
       "description": "Busque e encontre empregos no LinkedIn, Gupy, Infojobs, Catho e mais sites ao mesmo tempo.",
       "active": true,
@@ -2168,7 +2167,7 @@
       "name": "Code",
       "name_translated": "Código",
       "name_seo": "Buscador de Código",
-      "name_trends": "Repositórios populares",
+      "name_trends": "Repos mais populares",
       "active": true,
       "description": "Pesquise códigos, repositórios e pacotes: GitHub, Stack Overflow, CodePen, Glitch, Docker, npm, PyPI e mais.",
       "data": [
@@ -2346,9 +2345,9 @@
     },
     {
       "name": "Apps",
-      "name_translated": "Aplicativos",
-      "name_seo": "Buscador de Aplicativos",
-      "name_trends": "Mais baixados",
+      "name_translated": "Apps",
+      "name_seo": "Buscador de Apps",
+      "name_trends": "Apps mais baixados",
       "active": true,
       "description": "Pesquise aplicativos e extensões: Google Play, App Store, Microsoft Store, Chrome Web Store, e mais.",
       "data": [

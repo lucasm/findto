@@ -12,8 +12,7 @@ import Style from '@/layouts/WebsiteLayout/WebsiteLayout.module.css'
 
 export const metadata = {
   title: 'About',
-  description:
-    'Findto is an assistant for decentralized search on Web, AI and Metaverse.',
+  description: 'Findto is an assistant for decentralized search on Web and AI.',
 }
 
 export default function PageAbout() {
@@ -26,7 +25,6 @@ export default function PageAbout() {
           <Link href="#more">
             <figure className={Style.icon}></figure>
           </Link>
-
           <h1>{t('metadata.title')}</h1>
           <p>{t('metadata.description')}</p>
         </div>
@@ -40,9 +38,9 @@ export default function PageAbout() {
               <div>
                 <h2>Choose your search source</h2>
                 <p>
-                  Want to search across multiple sources at once? With Findto,
-                  you can. It’s your assistant for decentralized search —
-                  elevating your search experience.
+                  With Findto you can search across multiple sources at once.
+                  It’s your assistant for decentralized search — elevating your
+                  search experience. Get control of the algorithms.
                 </p>
               </div>
             </article>
@@ -52,9 +50,9 @@ export default function PageAbout() {
               <div>
                 <h2>Protect your searches</h2>
                 <p>
-                  Every search leaves a trace. Check the estimated privacy,
-                  security, and carbon footprint of each search source — and
-                  make smarter, safer choices.
+                  Every search leaves a trace. Check privacy, security, and
+                  carbon footprint of each search source. Make safer choices,
+                  protect your data, and help the environment.
                 </p>
               </div>
             </article>
@@ -62,11 +60,11 @@ export default function PageAbout() {
             <article>
               <BannerAnimatePressMe />
               <div>
-                <h2>Contribute to open source</h2>
+                <h2>Make the open source</h2>
                 <p>
-                  Findto is an open-source project building a universal search
-                  experience — where diversity matters and people stay in
-                  control of search algorithms.
+                  Findto is an open source project building a universal search
+                  experience where diversity is key — and people stay in
+                  control.
                 </p>
               </div>
             </article>
@@ -74,7 +72,7 @@ export default function PageAbout() {
         </div>
       </section>
 
-      <section className={Style.colorfulBackground}>
+      <section className={Style.blueBackground}>
         <div className={Style.container}>
           <CardsFeat />
         </div>
@@ -83,8 +81,8 @@ export default function PageAbout() {
       <section>
         <div className={Style.container}>
           <div className={Style.actionContainer}>
-            <h2>Start a better search</h2>
-            <p>It’s more than search. It’s decentralized.</p>
+            <h2>Find something today</h2>
+            <p>Search decentralized. Truly free.</p>
             <Button url="/" color="black">
               <>
                 <SvgLogo />

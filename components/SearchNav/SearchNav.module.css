@@ -68,8 +68,8 @@
 }
 .cards a:hover,
 .cards a:focus {
-  background: var(--color-text-black);
-  color: var(--color-bg-white);
+  background: var(--color-blue);
+  color: var(--color-black);
 }
 
 .cards figure {
@@ -99,7 +99,7 @@
   padding: 0.625rem 0.75rem;
   align-items: center;
   gap: 0.75rem;
-  font-size: var(--font-size-small);
+  font-size: var(--font-size);
   width: 100%;
   color: var(--color-text-black);
   background: transparent;

@@ -11,6 +11,7 @@ export default function BannerAnimatePressMe() {
   // Função que dispara confetes e muda o estado
   const handleClick = () => {
     confetti({
+      colors: ['#91d3ff'],
       particleCount: 100,
       spread: 70,
       origin: { y: 0.6 },

@@ -32,6 +32,13 @@ export default async function endpoint(
             'https://m.media-amazon.com/images/I/51wwp25UBVL._AC_SX679_.jpg',
         },
         {
+          title:
+            'Mini Projetor Portátil 5G WiFi 6 Bluetooth 5 Android 11 4K 1080P Full HD',
+          url: 'https://amzn.to/4pVb811',
+          image:
+            'https://m.media-amazon.com/images/I/51lMYLxtc7L._AC_SX300_SY300_QL70_ML2_.jpg',
+        },
+        {
           title: 'JBL Go 3 caixa Bluetooth',
           url: 'https://amzn.to/3UwIq8U',
           image:
@@ -55,12 +62,6 @@ export default async function endpoint(
           url: 'https://amzn.to/41Ee6xh',
           image:
             'https://m.media-amazon.com/images/I/416MG51rNgL._AC_SX679_.jpg',
-        },
-        {
-          title: 'Projetor portátil Wi-Fi Bluetooth 5.0 Full HD 4K Android',
-          url: 'https://amzn.to/4ecYYty',
-          image:
-            'https://m.media-amazon.com/images/I/5133wKaOqSL._AC_SX679_.jpg',
         },
         {
           title: 'Smartphone Redmi 14C 256GB',

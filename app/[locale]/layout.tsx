@@ -4,7 +4,7 @@ import localFont from 'next/font/local'
 // import { Manrope } from 'next/font/google'
 import { notFound } from 'next/navigation'
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
-import { getMessages } from 'next-intl/server'
+import { getMessages, getTranslations } from 'next-intl/server'
 import { ThemeProvider } from 'next-themes'
 
 import ScriptsTelemetry from '@/components/ScriptsTelemetry'
@@ -30,53 +30,71 @@ const fontFamily = localFont({
 //   variable: '--font-family',
 // })
 
-export const metadata: Metadata = {
-  title: {
-    absolute: 'Findto — Decentralized Search with AI',
-    default: 'Findto',
-    template: 'Findto — %s',
-  },
-  description:
-    'Decentralized search on AI, Web, Social, Videos, Images, Music, Academic, Jobs, and more. Be free with Findto.',
-  authors: [
-    { name: 'Findto', url: 'https://findto.app' },
-    { name: 'Lucas Menezes', url: 'https://lucasm.dev' },
-  ],
-  icons: {
-    icon: [
-      '/favicon.ico?v=2',
-      '/icon-192x192.png?v=2',
-      '/icon-512x512.png?v=2',
-      '/icon-1024x1024.png?v=2',
-      // 'icon.svg?v=2',
-    ],
-    apple: '/apple-touch-icon.png?v=2',
-  },
-  manifest: '/manifest.json?v=2',
-  applicationName: 'Findto',
-  //   viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
-  metadataBase: new URL('https://findto.app'),
-  alternates: {
-    languages: {
-      'en-US': '/en-US',
-      'pt-BR': '/pt-BR',
-      'zh-CN': '/zh-CN',
-      ru: '/ru',
-    },
-  },
-  openGraph: {
-    images: '/share.png',
-    type: 'website',
-  },
-  twitter: {
-    site: '@findtoapp',
-    creator: '@lucasmezs',
-    card: 'summary_large_image',
-    images: '/share.png',
-  },
-}
 export const viewport: Viewport = {
   themeColor: 'white',
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const p = await params
+  const { locale } = p
+
+  if (!routing.locales.includes(locale)) {
+    notFound()
+  }
+
+  const t = await getTranslations({
+    locale,
+    namespace: 't.metadata',
+  })
+
+  return {
+    title: {
+      absolute: 'Findto — ' + t('title'),
+      default: 'Findto',
+      template: 'Findto — %s',
+    },
+    description: t('description'),
+    authors: [
+      { name: 'Findto', url: 'https://findto.app/' },
+      { name: 'Lucas Maués', url: 'https://lucasm.dev/' },
+    ],
+    icons: {
+      icon: [
+        '/favicon.ico?v=2',
+        '/icon-192x192.png?v=2',
+        '/icon-512x512.png?v=2',
+        '/icon-1024x1024.png?v=2',
+        // 'icon.svg?v=2',
+      ],
+      apple: '/apple-touch-icon.png?v=2',
+    },
+    manifest: '/manifest.json?v=2',
+    applicationName: 'Findto',
+    //   viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+    metadataBase: new URL('https://findto.app'),
+    alternates: {
+      languages: {
+        'en-US': '/en-US',
+        'pt-BR': '/pt-BR',
+        'zh-CN': '/zh-CN',
+        ru: '/ru',
+      },
+    },
+    openGraph: {
+      images: '/share.png',
+      type: 'website',
+    },
+    twitter: {
+      site: '@findtoapp',
+      creator: '@lucasmezs',
+      card: 'summary_large_image',
+      images: '/share.png',
+    },
+  }
 }
 
 export default async function Layout(props: {
@@ -84,9 +102,7 @@ export default async function Layout(props: {
   params: Promise<{ locale: string }>
 }) {
   const params = await props.params
-
   const { locale } = params
-
   const { children } = props
 
   // Ensure that the incoming `locale` is valid

@@ -75,7 +75,7 @@ const features: Feature[] = [
   {
     icon: <IconOpenSource />,
     title: 'Open Source',
-    description: 'Source code open for revisions and contributions.',
+    description: 'Source code is open for contributions.',
   },
   {
     icon: <IconCarbon />,
@@ -87,7 +87,7 @@ const features: Feature[] = [
 export default function CardsFeat() {
   return (
     <div className={Style.container}>
-      <h2>Findto features</h2>
+      <h2>Top features</h2>
 
       <ul className={Style.card}>
         {features.map((feature, index) => (

@@ -5,7 +5,7 @@
   justify-content: center;
   height: 2.25rem;
   width: 2.25rem;
-  background: var(--color-text-black);
+  background: var(--color-blue);
   border-radius: var(--radius-full);
   border: 0;
 }
@@ -16,7 +16,7 @@
 .button svg {
   width: 1.2rem;
   height: 1.2rem;
-  color: var(--color-bg-white);
+  color: var(--color-black);
 }
 
 .buttonActive,

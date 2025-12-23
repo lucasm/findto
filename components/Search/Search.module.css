@@ -104,12 +104,12 @@
   align-items: center;
   justify-content: center;
   height: 2.25rem;
-  background: var(--color-text-black);
+  background: var(--color-blue);
   border-radius: var(--radius-full);
   border: 0;
 }
 .searchButton svg {
-  color: var(--color-bg-white);
+  color: var(--color-black);
   transform: rotate(45deg);
   width: 1.15rem;
   height: 1.15rem;
@@ -205,12 +205,12 @@
   justify-content: center;
   background-color: var(--color-text-black);
   border-radius: 33.333%;
-  height: 1.75rem;
-  width: 1.75rem;
+  height: 2rem;
+  width: 2rem;
 }
 .buttons figure img {
-  height: 1rem;
-  width: 1rem;
+  height: 1.25rem;
+  width: 1.25rem;
   filter: var(--svg-filter);
 }
 

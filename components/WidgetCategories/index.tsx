@@ -12,7 +12,7 @@ export default function WidgetCategories() {
 
   return (
     <WidgetTemplate
-      title={t('explore')}
+      title={t('categories')}
       //   icon={<IconNew />}
     >
       <SearchNav data={data} variant="cards" />

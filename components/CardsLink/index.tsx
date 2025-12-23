@@ -9,6 +9,7 @@ import {
   IconInstagram,
   IconPatreon,
   IconHeart,
+  IconKofi,
 } from '../SvgIcons'
 import Styles from './CardsLink.module.css'
 import Button from '../Button'
@@ -26,21 +27,21 @@ export default function CardsLink() {
 
   const cards: ICardsLink[] = [
     {
-      title: t('donate'),
+      title: 'Ko-fi ',
       url: 'https://ko-fi.com/findto',
-      icon: <IconHeart />,
-      active: true,
-    },
-    {
-      title: t('feedback.title'),
-      url: t('feedback.url'),
-      icon: <IconFeedback />,
+      icon: <IconKofi />,
       active: true,
     },
     {
       title: 'Patreon',
       url: 'https://patreon.com/findto',
       icon: <IconPatreon />,
+      active: true,
+    },
+    {
+      title: t('feedback.title'),
+      url: t('feedback.url'),
+      icon: <IconFeedback />,
       active: true,
     },
     {

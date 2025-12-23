@@ -14,8 +14,8 @@
 }
 .card:hover,
 .card:focus {
-  background: var(--color-text-black);
-  color: var(--color-bg-white);
+  background: var(--color-blue);
+  color: var(--color-black);
 }
 
 .column {

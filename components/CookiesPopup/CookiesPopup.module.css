@@ -43,6 +43,14 @@
   cursor: pointer;
   font-size: var(--font-size-small);
 }
+.cookiesPopup button:last-of-type {
+  background: transparent;
+  color: var(--color-bg-white);
+}
+.cookiesPopup button:hover {
+  background: var(--color-blue);
+  color: var(--color-black);
+}
 
 .cookiesPopup a {
   font-size: var(--font-size-small);

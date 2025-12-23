@@ -49,8 +49,12 @@
   background: var(--background-surface);
 }
 
+.buttonSidebar {
+  cursor: e-resize;
+}
 .buttonSidebarHover {
   opacity: var(--opacity);
+  cursor: w-resize;
 }
 .buttonSidebarHover:hover {
   opacity: 1;
@@ -67,12 +71,11 @@
 .containerSettings {
   min-width: 248px;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   flex-direction: column;
 }
 .containerSettings h3 {
   font-size: var(--font-size);
-
   margin: 0 0 0.5rem 0;
 }
 .containerSettings div {

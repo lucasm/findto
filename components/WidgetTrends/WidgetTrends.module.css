@@ -21,7 +21,6 @@
   grid-template-columns: 1fr;
 }
 
-.trendsNews button figure,
 .trendsFinance button figure {
   aspect-ratio: 1.5/1;
   max-height: 8rem;

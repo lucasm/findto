@@ -5,8 +5,8 @@
   },
   "t": {
     "metadata": {
-      "title": "Decentralized Search for Everyone",
-      "description": "Search on multiple Web sources and AI agents simultaneously."
+      "title": "Decentralized AI and Web Search",
+      "description": "Search on multiple Web sources and AI agents simultaneously. Fast, private, and open source."
     },
     "feedback": {
       "title": "Send Feedback",
@@ -15,7 +15,7 @@
     "welcome": {
       "goodMorning": "Good morning",
       "goodEvening": "Good afternoon",
-      "goodNight": "Good evening"
+      "goodNight": "Good evening, let's go?"
     },
     "voice": {
       "voice": "Voice",
@@ -48,7 +48,6 @@
     "theme": "Theme",
     "language": "Language",
     "contribute": "Contribute",
-    "explore": "Explore",
     "trends": "Trending",
     "stories": "Stories",
     "categories": "Modes",
@@ -743,7 +742,7 @@
     {
       "name": "Music",
       "active": true,
-      "name_trends": "Everybody listening",
+      "name_trends": "Listen something new",
       "description": "Search across music platforms like Spotify, Apple Music, SoundCloud, YouTube Music, Amazon Music, Deezer, and more.",
       "data": [
         {
@@ -861,7 +860,7 @@
     {
       "name": "Shopping",
       "active": true,
-      "name_trends": "Everybody buying",
+      "name_trends": "Everybody is buying",
       "description": "Search products on Amazon, eBay, Walmart, Best Buy, Etsy,Temu, and more.",
       "data": [
         {
