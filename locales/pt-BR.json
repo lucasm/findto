@@ -73,10 +73,6 @@
           "action": "https://chatgpt.com/?q="
         },
         {
-          "name": "Copilot",
-          "action": "https://copilot.microsoft.com/?q="
-        },
-        {
           "name": "Perplexity",
           "action": "https://www.perplexity.ai/?q="
         },
@@ -629,8 +625,8 @@
           "action": "https://mais.sbt.com.br/search?q="
         },
         {
-          "name": "PlayPlus",
-          "action": "https://www.playplus.com/search?q="
+          "name": "RecordPlus",
+          "action": "https://www.recordplus.com/search?q="
         },
         {
           "name": "Paramount+",
@@ -657,8 +653,12 @@
           "action": "https://www.clarotvmais.com.br/busca?q="
         },
         {
-          "name": "Vivo Play",
-          "action": "https://www.vivoplay.com.br/search?q="
+          "name": "Vivo TV",
+          "action": "https://www.vivotv.com.br/search?q="
+        },
+        {
+          "name": "Dailymotion",
+          "action": "https://www.dailymotion.com/search/"
         },
         {
           "name": "JustWatch",
@@ -675,10 +675,6 @@
         {
           "name": "TMDB",
           "action": "https://www.themoviedb.org/search?query="
-        },
-        {
-          "name": "Dailymotion",
-          "action": "https://www.dailymotion.com/search/"
         },
         {
           "name": "Vimeo",
@@ -2357,14 +2353,14 @@
         },
         {
           "name": "App Store",
-          "action": "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?media=software&term="
+          "action": "https://apps.apple.com/iphone/search?term="
         },
         {
           "name": "Microsoft Store",
           "action": "https://apps.microsoft.com/search?query="
         },
         {
-          "name": "Meta Quest",
+          "name": "Meta",
           "action": "https://www.meta.com/experiences/search?q="
         },
         {
@@ -2396,7 +2392,7 @@
           "action": "https://galaxystore.samsung.com/search?q="
         },
         {
-          "name": "Huawei AppGallery",
+          "name": "AppGallery",
           "action": "https://appgallery.huawei.com/#/search/"
         },
         {

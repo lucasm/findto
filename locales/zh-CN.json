@@ -83,10 +83,6 @@
           "action": "https://chat.deepseek.com/?q="
         },
         {
-          "name": "Copilot",
-          "action": "https://copilot.microsoft.com/?q="
-        },
-        {
           "name": "YouTube",
           "action": "https://www.youtube.com/results?search_query="
         },
@@ -125,10 +121,6 @@
         {
           "name": "LinkedIn",
           "action": "https://www.linkedin.com/search/results/index/?keywords="
-        },
-        {
-          "name": "Pinterest",
-          "action": "https://br.pinterest.com/search/pins/?q="
         },
         {
           "name": "Yahoo",

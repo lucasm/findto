@@ -80,10 +80,6 @@
           "action": "https://chatgpt.com/?q="
         },
         {
-          "name": "Copilot",
-          "action": "https://copilot.microsoft.com/?q="
-        },
-        {
           "name": "Perplexity",
           "action": "https://www.perplexity.ai/?q="
         },
@@ -549,7 +545,7 @@
     {
       "name": "Videos",
       "active": true,
-      "name_trends": "Everybody watching",
+      "name_trends": "Watch something new",
       "description": "Search videos on YouTube, Twitch, IMDb, Netflix, Prime Video, Disney+, HBO Max, and more.",
       "data": [
         {
@@ -1305,21 +1301,20 @@
           "action": "https://alternativeto.net/browse/search/?q="
         },
         {
-          "name": "Google Play",
-          "action": "https://play.google.com/store/search?q="
+          "name": "App Store",
+          "action": "https://apps.apple.com/us/iphone/search?term="
         },
         {
-          "name": "App Store",
-          "action": "https://www.apple.com/search/",
-          "additional": "?src=globalnav"
+          "name": "Google Play",
+          "action": "https://play.google.com/store/search?q="
         },
         {
           "name": "Microsoft Store",
           "action": "https://apps.microsoft.com/store/search/"
         },
         {
-          "name": "Meta Quest",
-          "action": "https://www.meta.com/experiences/search/?q="
+          "name": "Meta",
+          "action": "https://www.meta.com/experiences/search?q="
         },
         {
           "name": "Chrome Web Store",
@@ -1328,10 +1323,6 @@
         {
           "name": "Firefox Addons",
           "action": "https://addons.mozilla.org/en-US/firefox/search/?q="
-        },
-        {
-          "name": "Apple Vision Pro",
-          "action": "https://apps.apple.com/vision/search?term="
         },
         {
           "name": "Flathub",
@@ -1354,7 +1345,7 @@
           "action": "https://galaxystore.samsung.com/search?q="
         },
         {
-          "name": "Huawei AppGallery",
+          "name": "AppGallery",
           "action": "https://appgallery.huawei.com/#/search/"
         },
         {

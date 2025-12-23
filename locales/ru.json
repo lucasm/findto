@@ -75,10 +75,6 @@
           "action": "https://chatgpt.com/?q="
         },
         {
-          "name": "Copilot",
-          "action": "https://copilot.microsoft.com/?q="
-        },
-        {
           "name": "YouTube",
           "action": "https://www.youtube.com/results?search_query="
         },
