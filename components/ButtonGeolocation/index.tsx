@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import Button from '@/components/Button'
 import { IconLocationGps } from '@/components/SvgIcons'

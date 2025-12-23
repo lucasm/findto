@@ -8,7 +8,6 @@ import {
   IconDiscord,
   IconInstagram,
   IconPatreon,
-  IconHeart,
   IconKofi,
 } from '../SvgIcons'
 import Styles from './CardsLink.module.css'

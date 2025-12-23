@@ -1,7 +1,7 @@
 'use client'
 
 import confetti from 'canvas-confetti'
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 import styles from './BannerAnimatePressMe.module.css'
 

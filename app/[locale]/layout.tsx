@@ -1,5 +1,5 @@
 import './global.css'
-import type { Metadata, Viewport } from 'next'
+import type { Viewport } from 'next'
 import localFont from 'next/font/local'
 // import { Manrope } from 'next/font/google'
 import { notFound } from 'next/navigation'
