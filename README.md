@@ -2,9 +2,11 @@
 <a href="https://findto.app/?utm_source=findto_repo">
 <img height="124" src="https://findto.app/icon.svg" alt="Findto Icon">
 </a>
-</div>
+<h1>Findto</h1>
 
-<h1 align="center">Findto</h1>
+<a href="https://findto.app/?utm_source=findto_repo" target="_blank">findto.app</a>
+
+</div>
 
 <p align="center">
 <a href="https://github.com/lucasm/findto/issues" target="_blank"><img alt="Issues" src="https://img.shields.io/github/issues/lucasm/findto?color=8eccff&logo=github&logoColor=white"></a>
@@ -12,12 +14,6 @@
 <a href="https://github.com/lucasm/findto/releases" target="_blank"><img alt="GitHub release" src="https://img.shields.io/github/v/release/lucasm/findto?label=version&color=8eccff&logo=github&logoColor=white"></a>
 <a href="https://github.com/lucasm/findto" target="_blank"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/lucasm/findto?label=size&color=8eccff&logo=github&logoColor=white"></a>
 <a href="https://github.com/lucasm/findto/wiki" target="_blank"><img alt="Translations" src="https://img.shields.io/badge/translations-4-8eccff?logo=json&logoColor=white"></a>
-<a href="https://discord.gg/gEDm5MU6pq" target="_blank"><img alt="Discord" src="https://img.shields.io/discord/866829154032812073?color=8eccff&label=discord&logo=discord&logoColor=white"></a>
-</p>
-
-<p align="center">
-<a href="https://findto.app/?utm_source=findto_repo" target="_blank">findto.app</a>
- <br>
 </p>
 
 ## Decentralized search on Web and AI
@@ -75,7 +71,7 @@ Findto is built with privacy in mind and does not store user searches. It also d
 
 [Privacy Policy](https://findto.app/privacy) | [Terms of Service](https://findto.app/terms) | Made by [Lucas Maués](https://lucasm.dev/?utm_source=findto) and community | MIT License
 
-## Available on
+## Findto is available on
 
 - [Store.app](https://store.app/findto)
 - [Alternative.to](https://alternativeto.net/software/findto/about/)
