@@ -83,7 +83,7 @@ const nextConfig: NextConfig = {
       },
     ]
   },
-  productionBrowserSourceMaps: true,
+  productionBrowserSourceMaps: false,
 }
 
 const withNextIntl = createNextIntlPlugin()

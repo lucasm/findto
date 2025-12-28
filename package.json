@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@types/canvas-confetti": "^1.9.0",
-    "@types/node": "^20.11.25",
+    "@types/node": "^24.0.0",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
     "@types/react-speech-recognition": "^3.9.5",
@@ -49,7 +49,7 @@
     "typescript": "^5.7.3"
   },
   "engines": {
-    "node": "22.x"
+    "node": "24.x"
   },
   "overrides": {
     "@types/react": "19.2.7",
