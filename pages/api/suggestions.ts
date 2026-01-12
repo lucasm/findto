@@ -33,6 +33,6 @@ export default async function endpoint(
     // error
     res
       .status(405)
-      .end('Missing parameters. LOCALE: ' + locale + ' TERM: ' + term)
+      .end('Missing parameters. LOCALE and TERM are required.')
   }
 }
