@@ -125,7 +125,9 @@
   }
 
   .logo,
-  .buttonsContainer button {
+  .buttonsContainer a,
+  .buttonsContainer button,
+  .buttonsContainer select {
     font-size: var(--font-size-small);
   }
 }
