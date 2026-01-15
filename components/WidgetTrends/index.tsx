@@ -111,13 +111,6 @@ export default function SearchTrends({ title }: Readonly<Props>) {
 
     switch (category) {
       case 'Finance':
-        base.push(Styles.grid1)
-        break
-
-      case 'Code':
-        base.push(Styles.grid2)
-        break
-
       case 'News':
       case 'Videos':
       case 'Music':
@@ -126,6 +119,10 @@ export default function SearchTrends({ title }: Readonly<Props>) {
       case 'Games':
       case 'Local':
         base.push(Styles.grid3)
+        break
+
+      case 'Code':
+        base.push(Styles.grid2)
         break
 
       // base.push(Styles.grid4)
@@ -146,6 +143,7 @@ export default function SearchTrends({ title }: Readonly<Props>) {
 
   const flexDirection = useMemo<'row' | 'column'>(() => {
     const isColumn =
+      category === 'Finance' ||
       category === 'News' ||
       category === 'Videos' ||
       category === 'Image' ||

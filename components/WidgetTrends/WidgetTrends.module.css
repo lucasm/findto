@@ -21,11 +21,11 @@
   grid-template-columns: 1fr;
 }
 
-.trendsFinance button figure {
+/* .trendsFinance button figure {
   aspect-ratio: 1.5/1;
   max-height: 8rem;
   max-width: 8rem;
-}
+} */
 
 .trendsCode button {
   flex-direction: row;
