@@ -20,27 +20,27 @@
 
 Findto is an open source, decentralized search assistant.
 
-Search the same term across multiple sources. Discover trends, stories, and information. Find anything, anywhere — more productive searches than ever.
+Search the same term across multiple sources. Discover trends, stories, and information. Find anything, anywhere. More productive searches than ever.
 
-See estimated levels of security, privacy, and carbon footprint for each source — helping you make safer choices.
+See also estimated levels of privacy, security and carbon footprint for each search source. Make safer choices.
 
-We’re building an accessible, universal, and transparent search experience — where people stay in control of algorithms. For a healthier internet.
+We’re building an accessible, universal, and transparent search experience. Where people stay in control of algorithms. For a healthier internet.
 
 [▶️ Try Findto now](https://findto.app/?utm_source=findto_repo)
 
 ## Top Features
 
-| Feature                  | Description                                                                               | Status |
-| ------------------------ | ----------------------------------------------------------------------------------------- | ------ |
-| **Decentralized Search** | Search the same term on multiple sources.                                                 | ✅     |
-| **Protection**           | View estimated level of security, carbon footprint and privacy of selected search source. | ✅     |
-| **Trends**               | Discover real-time trends nearby you.                                                     | ✅     |
-| **Stories**              | Explore newest stories.                                                                   | ✅     |
-| **Autocomplete**         | Get automatic suggestions of terms as you type.                                           | ✅     |
-| **Voice Search**         | Use your voice to search anywhere.                                                        | ✅     |
-| **Reverse Search**       | Search on supported sources with an image or files.                                       | 🔜     |
-| **Internationalization** | Choose your country for local sources, or international.                                  | ✅     |
-| **Accessibility**        | Dark theme, balanced contrast, screen reader support, and keyboard navigation.            | ✅     |
+| Feature                  | Description                                                                              | Status |
+| ------------------------ | ---------------------------------------------------------------------------------------- | ------ |
+| **Decentralized Search** | Search the same term on multiple sources                                                 | ✅     |
+| **Protection**           | View estimated level of Security, Carbon footprint and Privacy of selected search source | ✅     |
+| **Trends**               | Discover real-time trends nearby you                                                     | ✅     |
+| **Stories**              | Explore newest stories                                                                   | ✅     |
+| **Autocomplete**         | Automatic suggestions of terms as you type                                               | ✅     |
+| **Voice Search**         | Search using voice anywhere                                                              | ✅     |
+| **Reverse Search**       | Search with an image or files on supported sources                                       | 🔜     |
+| **Internationalization** | Local sources / International sources                                                    | ✅     |
+| **Accessibility**        | Dark theme / Balanced contrast / Keyboard navigation / Screen reader support             | ✅     |
 
 ## Criteria
 
