@@ -1349,6 +1349,15 @@
           "action": "https://appgallery.huawei.com/#/search/"
         },
         {
+          "name": "F-Droid",
+          "action": "https://search.f-droid.org/?q=",
+          "additional": "&lang=en"
+        },
+        {
+          "name": "APKMirror",
+          "action": "https://www.apkmirror.com/?post_type=app_release&searchtype=app&s="
+        },
+        {
           "name": "Product Hunt",
           "action": "https://www.producthunt.com/search?q="
         },
@@ -1359,15 +1368,6 @@
         {
           "name": "Indiegogo",
           "action": "https://www.indiegogo.com/explore/all?q="
-        },
-        {
-          "name": "F-Droid",
-          "action": "https://search.f-droid.org/?q=",
-          "additional": "&lang=en"
-        },
-        {
-          "name": "APKMirror",
-          "action": "https://www.apkmirror.com/?post_type=app_release&searchtype=app&s="
         }
       ],
       "youtube_channels": [
