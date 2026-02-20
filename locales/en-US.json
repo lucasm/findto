@@ -405,6 +405,10 @@
           "action": "https://www.bbc.co.uk/search?q="
         },
         {
+          "name": "AP",
+          "action": "https://www.ap.org/?s="
+        },
+        {
           "name": "Reuters",
           "action": "https://www.reuters.com/site-search/?query="
         },
@@ -413,20 +417,12 @@
           "action": "https://www.wsj.com/search?query="
         },
         {
-          "name": "Bloomberg",
-          "action": "https://www.bloomberg.com/search?query="
-        },
-        {
           "name": "CNBC",
           "action": "https://www.cnbc.com/search/?query="
         },
         {
-          "name": "Guardian",
-          "action": "https://www.google.co.uk/search?as_sitesearch=www.theguardian.com&q="
-        },
-        {
-          "name": "AP",
-          "action": "https://www.ap.org/?s="
+          "name": "Bloomberg",
+          "action": "https://www.bloomberg.com/search?query="
         },
         {
           "name": "Forbes",
@@ -441,7 +437,15 @@
           "action": "https://www.economist.com/search?q="
         },
         {
-          "name": "Washington Post",
+          "name": "Guardian",
+          "action": "https://www.google.co.uk/search?as_sitesearch=www.theguardian.com&q="
+        },
+        {
+          "name": "Fox",
+          "action": "https://www.foxnews.com/search-results/search#q="
+        },
+        {
+          "name": "Wash Post",
           "action": "https://www.washingtonpost.com/search/?query="
         },
         {
@@ -541,6 +545,14 @@
         {
           "id": "UCSrZ3UV4jOidv8ppoVuvW9Q",
           "title": "euronews"
+        },
+        {
+          "id": "UC8p1vwvWtl6T73JiExfWs1g",
+          "title": "CBSNews"
+        },
+        {
+          "id": "UCHd62-u_v4DvJ8TCFtpi4GA",
+          "title": "WashingtonPost"
         }
       ]
     },
