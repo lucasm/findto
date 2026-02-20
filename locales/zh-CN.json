@@ -116,7 +116,7 @@
         },
         {
           "name": "Instagram",
-          "action": "https://www.instagram.com/explore/tags/"
+          "action": "https://www.instagram.com/explore/search/keyword/?q="
         },
         {
           "name": "LinkedIn",

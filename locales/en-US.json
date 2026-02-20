@@ -101,7 +101,7 @@
         },
         {
           "name": "Instagram",
-          "action": "https://www.instagram.com/explore/tags/"
+          "action": "https://www.instagram.com/explore/search/keyword/?q="
         },
         {
           "name": "Pinterest",
@@ -313,7 +313,7 @@
         },
         {
           "name": "Instagram",
-          "action": "https://www.instagram.com/explore/tags/"
+          "action": "https://www.instagram.com/explore/search/keyword/?q="
         },
         {
           "name": "Facebook",
