@@ -851,8 +851,8 @@
     },
     {
       "name": "Music",
-      "name_translated": "Músicas",
-      "name_seo": "Buscador de Músicas",
+      "name_translated": "Música",
+      "name_seo": "Buscador de Música",
       "name_trends": "Ouça algo popular",
       "name_stories": "Na cena musical",
       "active": true,
@@ -1231,6 +1231,7 @@
       "name_translated": "Emprego",
       "name_seo": "Buscador de Emprego",
       "name_trends": "Vagas populares",
+      "name_stories": "Mercado de trabalho",
       "description": "Busque e encontre empregos no LinkedIn, Gupy, Infojobs, Catho e mais sites ao mesmo tempo.",
       "active": true,
       "data": [
@@ -1310,6 +1311,40 @@
           "name": "Concursos no Brasil",
           "action": "https://concursosnobrasil.com/busca/?q="
         }
+      ],
+      "youtube_channels": [
+        {
+          "id": "UCovD5sjBd8Nf-DH3khxSEJA",
+          "title": "lucianarhsincero"
+        },
+        {
+          "id": "UCHEV2oZGEZemybIdmlrl7KA",
+          "title": "canaltrabalho"
+        },
+        {
+          "id": "UC1CnRvokdIDsQMJS3p3Mrjw",
+          "title": "PUCRSOnline"
+        },
+        {
+          "id": "UCb43jd7F3h0FzImIFpKFdCQ",
+          "title": "SenacEADoficial"
+        },
+        {
+          "id": "UC8DhN1cJi0QklBQot5hv_kg",
+          "title": "FGV"
+        },
+        {
+          "id": "UCh_2epgcB2d00cJgKAyqcmw",
+          "title": "HackeandoaCarreira"
+        },
+        {
+          "id": "UCbr6atJma9OiC1w60-YoKwA",
+          "title": "carolina_okubo"
+        },
+        {
+          "id": "UC6pkw1C4ha1cmU9aDJ8OxUw",
+          "title": "jovensdenegocios"
+        }
       ]
     },
     {
@@ -1317,7 +1352,7 @@
       "name_translated": "Acadêmico",
       "name_seo": "Buscador Acadêmico",
       "name_trends": "Tópicos mais citados",
-      "name_stories": "A ciência é agora",
+      "name_stories": "Novidades científicas",
       "active": true,
       "description": "Pesquise artigos, livros e publicações acadêmicas em diversas fontes: Google Scholar, ResearchGate, SciELO, arXiv e mais.",
       "data": [

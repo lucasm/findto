@@ -54,8 +54,8 @@
     "category": "Mode",
     "warnings": {
       "cookies": "Findto uses cookies only to improve the app. No personal data collected.",
-      "torrent": "Warning: The Torrent protocol is legal and used for sharing files. However, downloading copyrighted content without permission may violate the DMCA law of the United States of America. Avoid legal consequences. Follow the laws.",
-      "darknet": "Warning: The Darknet is legal and used by researchers, journalists, and people in censored regions or under mass surveillance. Access it responsibly. Avoid scams, phishing, and illegal activities. Use a special browser, like Tor Browser, to open .onion protocol sites."
+      "torrent": "Warning: The Torrent is a legal protocol for peer-to-peer file sharing. However, downloading copyrighted content without authorization may violate laws such as the DMCA of the United States of America. Be aware that your ISP can track your activity and IP address. Using a VPN is recommended for privacy. Avoid legal consequences. Follow all applicable laws. Use this tool ethically. Make the world a better place.",
+      "darknet": "Warning: The Darknet is a legal network, mostly used by researchers, journalists, and individuals in regions under censorship or mass surveillance. Access it responsibly. Use a specialized browser, such as the Tor Browser, to open .onion protocol sites. Beware of scams and phishing. If you encounter illegal activities, please report them to the appropriate authorities immediately. Follow all applicable laws. Use this tool ethically. Make the world a better place."
     }
   },
   "categories": [
@@ -1343,7 +1343,7 @@
     {
       "name": "Apps",
       "active": true,
-      "name_trends": "Top apps downloads",
+      "name_trends": "Trending apps",
       "name_stories": "Tech news",
       "description": "Search apps on Google Play, App Store, Microsoft Store, Chrome Web Store, Meta Quest, Apple Vision Pro, and more.",
       "data": [
