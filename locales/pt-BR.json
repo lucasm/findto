@@ -14,8 +14,8 @@
     },
     "welcome": {
       "goodMorning": "Bom dia, vamos lá?",
-      "goodEvening": "Boa tarde, o que procuras?",
-      "goodNight": "Boa noite, buscas algo?"
+      "goodEvening": "Boa tarde, o que procura?",
+      "goodNight": "Boa noite, vamos buscar?"
     },
     "voice": {
       "voice": "Voz",
@@ -275,6 +275,8 @@
     {
       "name": "Social",
       "name_seo": "Buscador Social",
+      "name_trends": "Últimas tendências",
+      "name_stories": "Tá todo mundo falando",
       "active": true,
       "description": "Busque em todas as redes sociais: X, TikTok, Instagram, Facebook, Reddit e mais.",
       "data": [
@@ -358,6 +360,10 @@
       ],
       "youtube_channels": [
         {
+          "id": "UChmOR1T5ZNnbRUba3lHRTOg",
+          "title": "republicacoisadenerd"
+        },
+        {
           "id": "UCr3dtVIm3nL7I-Yjn2PxxIQ",
           "title": "cortes-leonenilceoficial4101"
         },
@@ -378,8 +384,20 @@
           "title": "tvglobo"
         },
         {
+          "id": "UCR3TOnFWDeAlT-Ho6LueDmg",
+          "title": "sbt"
+        },
+        {
+          "id": "UCu_a6PAzp30Bn2mM-Ll09LA",
+          "title": "SigaRecord"
+        },
+        {
           "id": "UC0f866RMRdL5mSVnipiOHxg",
           "title": "canalgnt"
+        },
+        {
+          "id": "UCgCKagVhzGnZcuP9bSMgMCg",
+          "title": "getv"
         },
         {
           "id": "UC4_SpEjNNtz6sfG-6uXO09w",
@@ -405,9 +423,10 @@
     },
     {
       "name": "News",
-      "name_translated": "Notícia",
-      "name_seo": "Buscador de Notícia",
+      "name_translated": "Notícias",
+      "name_seo": "Buscador de Notícias",
       "name_trends": "Últimas notícias",
+      "name_stories": "Notícias agora",
       "active": true,
       "description": "Encontre notícias de fontes confiáveis: Globo, UOL, CNN, Folha, Estadão, Veja e mais.",
       "data": [
@@ -582,9 +601,10 @@
     },
     {
       "name": "Videos",
-      "name_translated": "Vídeo",
-      "name_seo": "Buscador de Vídeo",
+      "name_translated": "Vídeos",
+      "name_seo": "Buscador de Vídeos",
       "name_trends": "Assista algo popular",
+      "name_stories": "Novidades na indústria",
       "active": true,
       "description": "Encontre vídeos em plataformas populares: YouTube, Twitch, Globoplay, Netflix, Prime Video e mais.",
       "data": [
@@ -831,9 +851,10 @@
     },
     {
       "name": "Music",
-      "name_translated": "Música",
-      "name_seo": "Buscador de Música",
+      "name_translated": "Músicas",
+      "name_seo": "Buscador de Músicas",
       "name_trends": "Ouça algo popular",
+      "name_stories": "Na cena musical",
       "active": true,
       "description": "Busque músicas e letras no: Spotify, Apple Music, SoundCloud, YouTube Music, Amazon Music e mais.",
       "data": [
@@ -975,8 +996,8 @@
     },
     {
       "name": "Shopping",
-      "name_translated": "Compra",
-      "name_seo": "Buscador de Compra",
+      "name_translated": "Compras",
+      "name_seo": "Buscador de Compras",
       "name_trends": "Mais vendidos",
       "active": true,
       "description": "Busque em lojas populares: Amazon, Mercado Livre, Magalu, Temu, OLX, Americanas e mais.",
@@ -1080,7 +1101,8 @@
     {
       "name": "Local",
       "name_seo": "Buscador Local",
-      "name_trends": "Locais perto de mim",
+      "name_trends": "Locais por perto",
+      "name_stories": "Explore novos locais",
       "active": true,
       "description": "Encontre locais e serviços próximos: Google Maps, Apple Maps, Airbnb, Expedia, Tripadvisor e mais.",
       "data": [
@@ -1294,7 +1316,8 @@
       "name": "Academic",
       "name_translated": "Acadêmico",
       "name_seo": "Buscador Acadêmico",
-      "name_trends": "Tópicos populares",
+      "name_trends": "Tópicos mais citados",
+      "name_stories": "A ciência é agora",
       "active": true,
       "description": "Pesquise artigos, livros e publicações acadêmicas em diversas fontes: Google Scholar, ResearchGate, SciELO, arXiv e mais.",
       "data": [
@@ -1483,16 +1506,24 @@
           "title": "nerdologia"
         },
         {
-          "id": "UCZdJE8KpuFm6NRafHTEIC-g",
-          "title": "TemperoDrag"
+          "id": "UCyTS929PXJSUiBEFSzdypgg",
+          "title": "CanaldoCortella"
         },
         {
           "id": "UCW9jLtlONRp7W-AK9F8M66Q",
           "title": "LuizFelipePondéOficial"
         },
         {
+          "id": "UC4O2eKb8vI4VlMeNp90asfg",
+          "title": "PrazerKarnal"
+        },
+        {
           "id": "UChj-CaMYRpv0-vrqKG0-aEw",
           "title": "LiliSchwarcz"
+        },
+        {
+          "id": "UCZdJE8KpuFm6NRafHTEIC-g",
+          "title": "TemperoDrag"
         },
         {
           "id": "UCn9Erjy00mpnWeLnRqhsA1g",
@@ -1503,8 +1534,12 @@
           "title": "olaciencia"
         },
         {
-          "id": "UCWq1xltHB2fDe6YkYoOrryg",
-          "title": "CanaldoSchwarza"
+          "id": "UCGo3vjM2Ll3XujL-zYT5SMg",
+          "title": "PontoemComum"
+        },
+        {
+          "id": "UCdGpd0gNn38UKwoncZd9rmA",
+          "title": "Pirulla25"
         },
         {
           "id": "UCIvTDL8pbiiWZ821cWvmTsg",
@@ -1522,8 +1557,10 @@
     },
     {
       "name": "Finance",
-      "name_translated": "Financeiro",
-      "name_seo": "Buscador Financeiro",
+      "name_translated": "Finanças",
+      "name_seo": "Buscador de Finanças",
+      "name_trends": "Notícias do mercado",
+      "name_stories": "Finanças e economia",
       "active": true,
       "description": "Pesquise informações financeiras e econômicas: Google Finance, Banco Central, B3, CVM, Exame, Valor, Bloomberg, InfoMoney e mais.",
       "data": [
@@ -1681,6 +1718,10 @@
           "title": "BancoCentralBR"
         },
         {
+          "id": "UCAeQIijec13o8I9xjjdSHWQ",
+          "title": "bolsadobrasil"
+        },
+        {
           "id": "UC_TapH8f4HLLAwPBaXy-Gag",
           "title": "MinFazenda"
         },
@@ -1754,7 +1795,8 @@
       "name": "Legal",
       "name_translated": "Jurídico",
       "name_seo": "Buscador Jurídico",
-      "name_trends": "Serviços populares",
+      "name_trends": "Serviços públicos",
+      "name_stories": "Informação pública",
       "active": true,
       "description": "Pesquise informações jurídicas e legais: Jusbrasil, Escavador, Reclame Aqui, GOV.BR, Congresso Nacional e mais.",
       "data": [
@@ -2154,8 +2196,24 @@
           "title": "justicaeleitoral"
         },
         {
+          "id": "UCsW4QSB1USsu9ouuFUWe4Iw",
+          "title": "STF"
+        },
+        {
+          "id": "UCfO_b7sApXI23VnsljvSAJg",
+          "title": "STJ"
+        },
+        {
+          "id": "UCC6ZtRDGzrqZFElbm_7T4TA",
+          "title": "TCU"
+        },
+        {
+          "id": "UCeqgPoSSsEirBxgbYmZK-4g",
+          "title": "MPF"
+        },
+        {
           "id": "UC6PpjezXs_gRswQtqlo0bHA",
-          "title": "tst"
+          "title": "TST"
         }
       ]
     },
@@ -2163,7 +2221,8 @@
       "name": "Code",
       "name_translated": "Código",
       "name_seo": "Buscador de Código",
-      "name_trends": "Repos mais populares",
+      "name_trends": "Reposistórios em alta",
+      "name_stories": "Novidades da comunidade",
       "active": true,
       "description": "Pesquise códigos, repositórios e pacotes: GitHub, Stack Overflow, CodePen, Glitch, Docker, npm, PyPI e mais.",
       "data": [
@@ -2282,6 +2341,14 @@
           "title": "manodeyvin"
         },
         {
+          "id": "UCLW51-XEzuOm5RwPMChHBMw",
+          "title": "GutoGalego"
+        },
+        {
+          "id": "UC9iusg9ZUmiSqXmppE9J1IQ",
+          "title": "RenatoAugustoTech"
+        },
+        {
           "id": "UCpKvMmsF6QrkVr_zWaLGK-A",
           "title": "kipperdev"
         },
@@ -2343,7 +2410,8 @@
       "name": "Apps",
       "name_translated": "Apps",
       "name_seo": "Buscador de Apps",
-      "name_trends": "Apps mais baixados",
+      "name_trends": "Apps populares",
+      "name_stories": "Novidades em tecnologia",
       "active": true,
       "description": "Pesquise aplicativos e extensões: Google Play, App Store, Microsoft Store, Chrome Web Store, e mais.",
       "data": [

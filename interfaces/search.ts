@@ -2,6 +2,7 @@ export interface ISearchCategory {
   name: string
   name_translated?: string
   name_trends?: string
+  name_stories?: string
   name_seo?: string
   description?: string
   active: boolean

@@ -81,7 +81,7 @@ const WidgetVideoStories = ({ selectedCategory }: Readonly<Props>) => {
 
   return (
     <WidgetTemplate
-      title={t('stories')}
+      title={selectedCategory?.name_stories || t('stories')}
       credits={credits}
       rightChildren={
         videoUrl ? (

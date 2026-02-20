@@ -24,7 +24,7 @@
     },
     "widgetProtection": {
       "title": "Protection",
-      "description": "Check the reputation of the selected search source.",
+      "description": "Verify the reputation of the selected search source.",
       "source": "Source",
       "carbon": "Carbon",
       "security": "Security",
@@ -300,6 +300,7 @@
     {
       "name": "Social",
       "active": true,
+      "name_trends": "Trending topics",
       "description": "Search on social media platforms like X, Reddit, TikTok, Instagram, Facebook, LinkedIn, and more.",
       "data": [
         {
@@ -384,6 +385,7 @@
       "name": "News",
       "active": true,
       "name_trends": "Breaking news",
+      "name_stories": "Top stories",
       "description": "Search news on CNN, NY Times, Reuters, BBC, Guardian, Forbes, Time, CNBC, and more.",
       "data": [
         {
@@ -546,6 +548,7 @@
       "name": "Videos",
       "active": true,
       "name_trends": "Watch something new",
+      "name_stories": "Buzz videos",
       "description": "Search videos on YouTube, Twitch, IMDb, Netflix, Prime Video, Disney+, HBO Max, and more.",
       "data": [
         {
@@ -739,6 +742,7 @@
       "name": "Music",
       "active": true,
       "name_trends": "Listen something new",
+      "name_stories": "Inside the scene",
       "description": "Search across music platforms like Spotify, Apple Music, SoundCloud, YouTube Music, Amazon Music, Deezer, and more.",
       "data": [
         {
@@ -832,6 +836,10 @@
           "title": "deezerglobal"
         },
         {
+          "id": "UCPqftlDSXpl3V4u044KT88w",
+          "title": "amazonmusic"
+        },
+        {
           "id": "UC-JblcinswY50lrUdSaRNEg",
           "title": "rollingstone"
         },
@@ -850,6 +858,26 @@
         {
           "id": "UCsVcseUYbYjldc-XgcsiEbg",
           "title": "Billboard"
+        },
+        {
+          "id": "UCxAICW_LdkfFYwTqTHHE0vg",
+          "title": "MTV"
+        },
+        {
+          "id": "UCYw-R4_yue3aGJu1xDO6cog",
+          "title": "BBC Radio 2"
+        },
+        {
+          "id": "UC4-76M8LX89Notl9sRCD6Zg",
+          "title": "1027KIISFM"
+        },
+        {
+          "id": "UC3I2GFN_F8WudD_2jUZbojA",
+          "title": "kexp"
+        },
+        {
+          "id": "UC3lJL1pUvQ2Ih2qZ-4ozrLw",
+          "title": "SoundGuys"
         }
       ]
     },
@@ -993,7 +1021,8 @@
     {
       "name": "Academic",
       "active": true,
-      "name_trends": "Popular topics",
+      "name_trends": "Most cited topics",
+      "name_stories": "Scientific stories",
       "description": "Search academic resources on Google Scholar, Wikipedia, ResearchGate, JSTOR, CORE, PLOS ONE, arXiv, and more.",
       "data": [
         {
@@ -1168,6 +1197,7 @@
       "name": "Code",
       "active": true,
       "name_trends": "Top repositories",
+      "name_stories": "Community updates",
       "description": "Search code on GitHub, Stack Overflow, Sourcegraph, CodePen, Glitch, and more.",
       "data": [
         {
@@ -1287,13 +1317,34 @@
         {
           "id": "UC29ju8bIPH5as8OGnQzwJyA",
           "title": "TraversyMedia"
+        },
+        {
+          "id": "UCW5YeuERMmlnqo4oq8vwUpg",
+          "title": "NetNinja"
+        },
+        {
+          "id": "UCZgt6AzoyjslHTC9dz0UoTw",
+          "title": "ByteByteGo"
+        },
+        {
+          "id": "UCJZv4d5rbIKd4QHMPkcABCw",
+          "title": "KevinPowell"
+        },
+        {
+          "id": "UC3N9i_KvKZYP4F84FPIzgPQ",
+          "title": "akshaymarch7"
+        },
+        {
+          "id": "UC4JX40jDee_tINbkjycV4Sg",
+          "title": "TechWithTim"
         }
       ]
     },
     {
       "name": "Apps",
       "active": true,
-      "name_trends": "Top downloads",
+      "name_trends": "Top apps downloads",
+      "name_stories": "Tech news",
       "description": "Search apps on Google Play, App Store, Microsoft Store, Chrome Web Store, Meta Quest, Apple Vision Pro, and more.",
       "data": [
         {
@@ -1380,6 +1431,10 @@
           "title": "mkbhd"
         },
         {
+          "id": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+          "title": "LinusTechTips"
+        },
+        {
           "id": "UCOmcA3f_RrH6b9NmcNa4tdg",
           "title": "CNET"
         },
@@ -1392,12 +1447,28 @@
           "title": "WIRED"
         },
         {
-          "id": "UCCsREoj8rSRkEvxWqxr74rQ",
-          "title": "cybernews"
+          "id": "UC-6OW5aJYBFM33zXQlBKPNA",
+          "title": "Engadget"
+        },
+        {
+          "id": "UCMiJRAwDNSNzuYeN2uWa0pA",
+          "title": "Mrwhosetheboss"
         },
         {
           "id": "UCey_c7U86mJGz1VJWH5CYPA",
           "title": "iJustine"
+        },
+        {
+          "id": "UCsTcErHg8oDvUnTzoqsYeNw",
+          "title": "unboxtherapy"
+        },
+        {
+          "id": "UCVYamHliCI9rw1tHR1xbkfw",
+          "title": "Dave2D"
+        },
+        {
+          "id": "UCbfYPyITQ-7l4upoX8nvctg",
+          "title": "TwoMinutePapers"
         }
       ]
     },

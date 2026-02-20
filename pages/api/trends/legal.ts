@@ -16,43 +16,43 @@ export default async function endpoint(
         title: 'Serviços públicos',
         data: [
           {
-            title: 'Assinatura Eletrônica GOV.BR',
+            title: 'Assinatura Eletrônica de documentos do GOV.BR',
             url: 'https://www.gov.br/pt-br/servicos/assinatura-eletronica',
           },
           {
-            title: 'Abrir Reclamação contra Empresa — Consumidor.gov.br',
+            title: 'Abrir reclamação contra empresa no Consumidor.gov.br',
             url: 'https://www.consumidor.gov.br/pages/principal/',
           },
           {
-            title: 'Meu Imposto de Renda — Receita Federal',
+            title: 'Meu Imposto de Renda da Receita Federal',
             url: 'https://www.gov.br/pt-br/servicos/consultar-meu-imposto-de-renda',
           },
           {
-            title: 'Restituição — Receita Federal',
+            title: 'Restituição da Receita Federal',
             url: 'https://www.gov.br/pt-br/servicos/consultar-restituicao-de-imposto-de-renda',
           },
           {
-            title: 'Dívidas e Pendências — Receita Federal',
+            title: 'Dívidas e Pendências Fiscais na Receita Federal',
             url: 'https://www.gov.br/pt-br/servicos/consultar-dividas-e-pendencias-fiscais',
           },
           {
-            title: 'Certidão de Regularidade Fiscal — Receita Federal',
+            title: 'Certidão de Regularidade Fiscal da Receita Federal',
             url: 'https://www.gov.br/pt-br/servicos/emitir-certidao-de-regularidade-fiscal',
           },
           {
-            title: 'Valores a Receber — Banco Central',
+            title: 'Valores a Receber do Banco Central',
             url: 'https://www.gov.br/pt-br/servicos/consultar-e-solicitar-a-devolucao-de-valores-a-receber',
           },
           {
-            title: 'Registrato — Banco Central',
+            title: 'Registrato do Banco Central',
             url: 'https://www.bcb.gov.br/meubc/registrato',
           },
           {
-            title: 'Relatório de Empréstimos e Financiamentos — Banco Central',
+            title: 'Relatório de Empréstimos e Financiamentos do Banco Central',
             url: 'https://www.bcb.gov.br/meubc/relatorioemprestimofinanciamento',
           },
           {
-            title: 'Extrato do FGTS — Caixa',
+            title: 'Extrato do FGTS da Caixa',
             url: 'https://www.caixa.gov.br/beneficios-trabalhador/fgts/extrato-fgts/Paginas/default.aspx',
           },
           {
@@ -64,36 +64,37 @@ export default async function endpoint(
             url: 'https://meususdigital.saude.gov.br/',
           },
           {
-            title: 'Apoiar ou Propor Ideais Legislativas — Senado Federal',
+            title: 'Apoiar ou Propor Ideais Legislativas no Senado Federal',
             url: 'https://www12.senado.leg.br/ecidadania/principalideia',
           },
           {
-            title: 'Opinar em Propostas Legislativas — Câmara dos Deputados',
+            title: 'Opinar em Propostas Legislativas na Câmara dos Deputados',
             url: 'https://www.camara.leg.br/enquetes/',
           },
           {
-            title: 'Transparência — Senado Federal',
+            title: 'Portal da Transparência do Senado Federal',
             url: 'https://senado.leg.br/transparencia',
           },
           {
-            title: 'Transparência — Câmara dos Deputados',
+            title: 'Portal da Transparência da Câmara dos Deputados',
             url: 'https://camara.leg.br/transparencia',
           },
           {
-            title: 'Portal da Transparência — Governo Federal',
+            title: 'Portal da Transparência do Governo Federal',
             url: 'https://portaldatransparencia.gov.br/',
           },
           {
-            title: 'Acesso à Informação, Denúncia ou Elogio — Fala.BR',
+            title:
+              'Acesso à informação, denúncia, crítica ou elogio no Fala.BR',
             url: 'https://falabr.cgu.gov.br/',
           },
           {
             title:
-              'Requerimento à Lei Geral de Proteção de Dados (LGPD) — ANPD',
+              'Requerimento à Lei Geral de Proteção de Dados (LGPD) via ANPD',
             url: 'https://www.gov.br/pt-br/servicos/abrir-requerimento-relacionado-a-lgpd',
           },
           {
-            title: 'Autoatendimento Eleitoral — TSE',
+            title: 'Autoatendimento Eleitoral do TSE',
             url: 'https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/',
           },
           {
@@ -101,7 +102,7 @@ export default async function endpoint(
             url: 'https://www.registrocivil.org.br/',
           },
           {
-            title: 'Obter Passaporte',
+            title: 'Emitir Passaporte',
             url: 'https://www.gov.br/pt-br/servicos/obter-passaporte-comum-para-brasileiro',
           },
           {
