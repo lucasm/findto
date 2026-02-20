@@ -774,6 +774,10 @@
           "action": "https://listen.tidal.com/search?q="
         },
         {
+          "name": "Qobuz",
+          "action": "https://play.qobuz.com/search/all?q="
+        },
+        {
           "name": "Pandora",
           "action": "https://www.pandora.com/search/"
         },
