@@ -127,19 +127,29 @@ export default function Search({ selectedCategory }: Readonly<Props>) {
       setCategory(selectedCategory?.name)
 
       const sourceId = normalizeId(selectedCategory?.data[0]?.name)
-
       const storedSource = window.localStorage.getItem('search')
+      const storedCategory = window.localStorage.getItem('searchCategory')
 
-      const isStoredSourceAvailableOnCurrentCategory =
-        selectedCategory?.data?.some(
-          (item) => normalizeId(item.name) === storedSource
-        )
+      // Se a categoria mudou, sempre selecionar o primeiro item
+      const categoryChanged = storedCategory !== selectedCategory?.name
 
-      if (storedSource && isStoredSourceAvailableOnCurrentCategory) {
-        handleSelectedSource(storedSource)
-      } else {
+      if (categoryChanged) {
         handleSelectedSource(sourceId)
         refButtons?.current?.['button_' + sourceId]?.click()
+        window.localStorage.setItem('searchCategory', selectedCategory?.name)
+      } else {
+        // Se a categoria não mudou (apenas refresh), manter a seleção anterior
+        const isStoredSourceAvailableOnCurrentCategory =
+          selectedCategory?.data?.some(
+            (item) => normalizeId(item.name) === storedSource
+          )
+
+        if (storedSource && isStoredSourceAvailableOnCurrentCategory) {
+          handleSelectedSource(storedSource)
+        } else {
+          handleSelectedSource(sourceId)
+          refButtons?.current?.['button_' + sourceId]?.click()
+        }
       }
     }
   }, [selectedCategory])

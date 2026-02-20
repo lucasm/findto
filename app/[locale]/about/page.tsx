@@ -36,11 +36,12 @@ export default function PageAbout() {
             <article>
               <BannerAnimateCircleNav />
               <div>
-                <h2>Choose your search source</h2>
+                <h2>Choose your source</h2>
                 <p>
-                  With Findto you can search across multiple sources at once.
-                  It’s your assistant for decentralized search — elevating your
-                  search experience. Get control of the algorithms.
+                  With Findto, you can search across multiple sources at once.
+                  It’s your assistant for decentralized search. Elevate your
+                  search experience. Take control of Web search algorithms and
+                  AI models.
                 </p>
               </div>
             </article>
@@ -48,11 +49,12 @@ export default function PageAbout() {
             <article>
               <BannerAnimateText />
               <div>
-                <h2>Protect your searches</h2>
+                <h2>Transparency of search</h2>
                 <p>
-                  Every search leaves a trace. Check privacy, security, and
-                  carbon footprint of each search source. Make safer choices,
-                  protect your data, and help the environment.
+                  Every search leaves a trace in datacenters. With Findto, you
+                  can check the estimated levels of privacy, security, and
+                  carbon footprint of each source. Make safer choices for
+                  yourself and contribute to protecting Planet Earth.
                 </p>
               </div>
             </article>
@@ -60,11 +62,12 @@ export default function PageAbout() {
             <article>
               <BannerAnimatePressMe />
               <div>
-                <h2>Make the open source</h2>
+                <h2>Open source project</h2>
                 <p>
-                  Findto is an open source project building a universal search
-                  experience where diversity is key — and people stay in
-                  control.
+                  Findto is an open source project. We are building a universal
+                  search experience where diversity is key, and people remain in
+                  control every step of the way. Join us, contribute, and help
+                  create a better search experience for everyone.
                 </p>
               </div>
             </article>
@@ -81,8 +84,8 @@ export default function PageAbout() {
       <section>
         <div className={Style.container}>
           <div className={Style.actionContainer}>
-            <h2>Find something today</h2>
-            <p>Search decentralized. Truly free.</p>
+            <h2>Find something new for you</h2>
+            <p>Search decentralized. Truly open.</p>
             <Button url="/" color="black">
               <>
                 <SvgLogo />

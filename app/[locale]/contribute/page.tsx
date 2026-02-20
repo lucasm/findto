@@ -6,10 +6,11 @@ import Style from '@/layouts/WebsiteLayout/WebsiteLayout.module.css'
 
 export const metadata = {
   title: 'Contribute',
-  description: 'Support Findto with a donation or another ways.',
+  description:
+    'Support Findto open source project with a donation or by contributing to the code.',
 }
 
-export default function PageDonate() {
+export default function PageContribute() {
   const t = useTranslations('t')
 
   return (

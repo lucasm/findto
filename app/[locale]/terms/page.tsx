@@ -1,3 +1,5 @@
+import { useTranslations } from 'next-intl'
+
 import WebsiteLayout from '@/layouts/WebsiteLayout'
 import Style from '@/layouts/WebsiteLayout/WebsiteLayout.module.css'
 
@@ -7,11 +9,12 @@ export const metadata = {
 }
 
 export default function PageTerms() {
+  const t = useTranslations('t')
   return (
     <WebsiteLayout>
       <section>
         <div className={Style.container}>
-          <h1>Terms of Service</h1>
+          <h1>{t('terms')}</h1>
         </div>
       </section>
 

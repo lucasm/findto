@@ -6,7 +6,7 @@
   "t": {
     "metadata": {
       "title": "Busca descentralizada na Web e IA",
-      "description": "O Findto permite buscar em diversas fontes da Web e IA ao mesmo tempo. Rápido e simples."
+      "description": "Encontre resultados em diversas fontes da Web e IA ao mesmo tempo. Rápido, privado e livre."
     },
     "feedback": {
       "title": "Enviar feedback",
@@ -39,7 +39,7 @@
     "reject": "Recusar",
     "learnMore": "Conheça o Findto",
     "viewNearbyPlaces": "Ver locais próximos",
-    "openApp": "Abrir o Findto",
+    "openApp": "Abra o Findto",
     "placeholder": "Buscar em",
     "search": "Buscar",
     "clear": "Limpar",
@@ -426,7 +426,7 @@
       "name_translated": "Notícias",
       "name_seo": "Buscador de Notícias",
       "name_trends": "Últimas notícias",
-      "name_stories": "Notícias agora",
+      "name_stories": "Acontecendo agora",
       "active": true,
       "description": "Encontre notícias de fontes confiáveis: Globo, UOL, CNN, Folha, Estadão, Veja e mais.",
       "data": [

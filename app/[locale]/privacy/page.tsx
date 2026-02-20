@@ -1,3 +1,5 @@
+import { useTranslations } from 'next-intl'
+
 import WebsiteLayout from '@/layouts/WebsiteLayout'
 import Style from '@/layouts/WebsiteLayout/WebsiteLayout.module.css'
 
@@ -7,12 +9,13 @@ export const metadata = {
 }
 
 export default function PrivacyPage() {
+  const t = useTranslations('t')
   return (
     <WebsiteLayout>
       <section>
         <div className={Style.container}>
           <div className={Style.pageTitle}>
-            <h1>Privacy Policy</h1>
+            <h1>{t('privacy')}</h1>
           </div>
         </div>
       </section>
