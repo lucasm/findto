@@ -13,9 +13,9 @@
       "url": "https://forms.gle/r6XAyB1ZLn9qzwp16"
     },
     "welcome": {
-      "goodMorning": "Bom dia, vamos lá?",
-      "goodEvening": "Boa tarde, o que procura?",
-      "goodNight": "Boa noite, vamos buscar?"
+      "goodMorning": "Bom dia",
+      "goodEvening": "Boa tarde",
+      "goodNight": "Boa noite"
     },
     "voice": {
       "voice": "Voz",

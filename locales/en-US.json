@@ -15,7 +15,7 @@
     "welcome": {
       "goodMorning": "Good morning",
       "goodEvening": "Good afternoon",
-      "goodNight": "Good evening, let's go?"
+      "goodNight": "Good evening"
     },
     "voice": {
       "voice": "Voice",
@@ -102,10 +102,6 @@
         {
           "name": "Instagram",
           "action": "https://www.instagram.com/explore/tags/"
-        },
-        {
-          "name": "LinkedIn",
-          "action": "https://www.linkedin.com/search/results/index/?keywords="
         },
         {
           "name": "Pinterest",
