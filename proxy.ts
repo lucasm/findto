@@ -1,13 +1,18 @@
 import createMiddleware from 'next-intl/middleware'
+import { NextRequest } from 'next/server'
 
 import { defaultLocale, locales } from './utils/locales'
 
-const middleware = createMiddleware({
+const proxyHandler = createMiddleware({
   locales: locales,
   defaultLocale: defaultLocale,
+  localeDetection: true,
+  localeCookie: false,
 })
 
-export default middleware
+export function proxy(request: NextRequest) {
+  return proxyHandler(request)
+}
 
 export const config = {
   matcher: [
