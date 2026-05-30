@@ -60,7 +60,7 @@ export async function generateMetadata({
     description: t('description'),
     authors: [
       { name: 'Findto', url: 'https://findto.app/' },
-      { name: 'Lucas Maués', url: 'https://lucasm.dev/' },
+      { name: 'Lucas Maués', url: 'https://lucasmaues.com/' },
     ],
     icons: {
       icon: [
@@ -90,7 +90,7 @@ export async function generateMetadata({
     },
     twitter: {
       site: '@findtoapp',
-      creator: '@lucasmezs',
+      creator: '@lucasmmau',
       card: 'summary_large_image',
       images: '/share.png',
     },
